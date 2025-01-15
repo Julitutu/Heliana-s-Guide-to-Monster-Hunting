@@ -57,6 +57,9 @@
 			<!-- Larva Traits -->
 			<grant type="Racial Trait" id="ID_LT_HGTMH_RACIAL_TRAIT_OPTERAN_LARVA" />
 
+			<!-- Metamorphosis choose -->
+			<grant type="Racial Trait" id="ID_LT_HGTMH_RACIAL_TRAIT_OPTERAN_CHOOSE" level="5"/>
+
 			<!-- Metamorphosis -->
 			<grant type="Racial Trait" id="ID_LT_HGTMH_RACIAL_TRAIT_OPTERAN_METAMORPHOSIS" />
 
@@ -95,8 +98,7 @@
 	</element>
 
     <!-- Adult Traits -->
-	<element name="Adult Traits" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OPTERAN_ADULT">
-        <requirements>!ID_LT_HGTMH_RACIAL_TRAIT_OPTERAN_LARVA</requirements>
+	<element name="Adult Traits" type="Racial Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OPTERAN_ADULT">
 		<description>
 			<p>At 5th level you can choose to undergo a metamorphosis over the course of 24 hours. After this period elapses, you emerge as an adult opteran: you lose the Many-Footed and String Shot traits, and you gain the Flight and Radiant Wing traits. You can delay this change until you reach 6th level, at which point it happens spontaneously.</p>
 		</description>
@@ -121,23 +123,38 @@
 			<description>At 1st level, you are a larval opteran. When you reach 5th level, you can choose to undergo a metamorphosis over the course of 24 hours. After this period elapses, you emerge as an adult opteran: you lose the Many-Footed and String Shot traits, and you gain the Flight and Radiant Wing traits. You can delay this change until you reach 6th level, at which point it happens spontaneously.</description>
 		</sheet>
         <rules>
-            <select type="Racial Trait" name="Do you want to undergo a metamorphosis? " supports="Metamorphosis" />
+            <grant type="Racial Feature" id="ID_LT_HGTMH_RACIAL_TRAIT_OPTERAN_ADULT" />
         </rules>
 	</element>
-    <element name="Yes" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OPTERAN_YES">
+    
+	<!-- Metamorphosis choose -->
+	<element name="Do you want to undergo a metamorphosis?" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OPTERAN_CHOOSE">
+        <requirements>![level:6]</requirements>
+		<description>
+			<p>Do you want to undergo a metamorphosis?</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Do you want to undergo a metamorphosis? " supports="Metamorphosis" />
+		</rules>
+	</element>
+	
+	<element name="Yes" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OPTERAN_YES">
         <supports>Metamorphosis</supports>
         <description>
             <p>You undergo into a metamorphosis over the course of 24 hours. After this period elapses, you emerge as an adult opteran: you lose the Many-Footed and String Shot traits, and you gain the Flight and Radiant Wing traits.</p>
         </description>
+		<sheet display="false" />
         <rules>
-            <grant type="Racial Feature" id="ID_LT_HGTMH_RACIAL_TRAIT_OPTERAN_ADULT" />
+            <grant type="Racial Feature" id="ID_LT_HGTMH_RACIAL_TRAIT_OPTERAN_METAMORPHOSIS" />
         </rules>
     </element>
-    <element name="No" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OPTERAN_YES">
+    <element name="No" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OPTERAN_NO">
         <supports>Metamorphosis</supports>
         <description>
             <p>You delay this change</p>
         </description>
+		<sheet display="false" />
     </element>
 
 	<!-- Many-Footed Trait -->
