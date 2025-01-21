@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Circle of the Hive</name>
+		<source>Heliana's Guide to Monster Hunting</source>
+		<update version="0.1.0">
+			<file name="Druid.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Classes/Druid.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of the Hive" type="Archetype" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_DRUID_CIRCLE_OF_THE_HIVE">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>Druids of the Circle of the Hive share their body with a plethora of tiny arthropods—insects, arachnids, or even crustaceans. These symbiotes call such druids home, living within their skin, clothes, and hair. This habitation might manifest as a honeycomb-like hive, a silky subcutaneous trapdoor (below which lurks a spider), or butterfly chrysalids hanging from their hair.</p>
+			<p class="indent">Druids of this circle relish creating a moving biosphere that sustains a variety of organisms, often seeking out new and exotic species as symbiotic lodgers. These creatures are a part of the druid, nourishing and protecting the druid as the druid nourishes and protects its tenants.</p>
+			<div class="sidebar">
+				<description>Damage reduction, such as that in Protect the Monarch, always occurs before damage resistance. If 15 incoming damage were reduced by 7 (down to 8 damage), then a creature with resistance to that damage type would take 4 points of damage (half of 8).</description>
+			</div>
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_CIRCLE_OF_THE_HIVE_SWARM_SHAPE" />
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_CIRCLE_OF_THE_HIVE_SYMBIOTIC_BIOSPHERE" />
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_CIRCLE_OF_THE_HIVE_PROTECT_THE_MONARCH" />
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_CIRCLE_OF_THE_HIVE_HONEYDRENALINE" />
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_CIRCLE_OF_THE_HIVE_SWARMSENSE" />
+		</description>
+		<sheet display="false">
+			<description>Druids of the Circle of the Hive share their body with a plethora of tiny arthropods—insects, arachnids, or even crustaceans.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_CIRCLE_OF_THE_HIVE_SWARM_SHAPE" level="2" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_CIRCLE_OF_THE_HIVE_SYMBIOTIC_BIOSPHERE" level="2" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_CIRCLE_OF_THE_HIVE_PROTECT_THE_MONARCH" level="6" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_CIRCLE_OF_THE_HIVE_HONEYDRENALINE" level="10" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_CIRCLE_OF_THE_HIVE_SWARMSENSE" level="14" />
+		</rules>
+	</element>
+
+	<element name="Swarm Shape" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_CIRCLE_OF_THE_HIVE_SWARM_SHAPE">
+		<description>
+			<p>When you use your Wild Shape feature, you can turn into a swarm of creatures, adhering to the normal limitations on CR and speed.</p>
+		</description>
+		<sheet>
+			<description>When you use your Wild Shape feature, you can turn into a swarm of creatures, adhering to the normal limitations on CR and speed.</description>
+		</sheet>
+	</element>
+
+	<element name="Symbiotic Biosphere" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_CIRCLE_OF_THE_HIVE_SYMBIOTIC_BIOSPHERE">
+		<description>
+			<p>The symbiotes that inhabit your body flit in and around you, harmless until threatened. As a bonus action, you can release pheromones, stimulating hyper-aggression in your symbiotes for the next minute. When you are targeted by a melee attack from a creature within 15 feet of you on its turn, you can cause the swarm to retaliate, forcing the attacker to make a Constitution saving throw against your druid spell save DC. A creature takes {{symbiotic biosphere:damage}} poison damage on a failure, or half as much damage on a success. After the swarm retaliates in this way, it can’t do so again until the start of your next turn.</p>
+			<p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once) and regain all expended uses when you finish a long rest.</p>
+			<p>In addition, you can communicate with arthropods using pheromones, conveying basic emotions and ideas.</p>
+		</description>
+		<sheet usage="{{wisdom:modifier}}/Long Rest" bonus="base" action="Bonus Action">
+			<description>As a bonus action, you can release pheromones, stimulating hyper-aggression in your symbiotes for the next minute. When you are targeted by a melee attack from a creature within 15 feet of you on its turn, you can cause the swarm to retaliate, forcing the attacker to make a DC {{symbiotic biosphere:dc}} Constitution saving throw. A creature takes {{symbiotic biosphere:damage}} poison damage on a failure, or half as much damage on a success. After the swarm retaliates in this way, it can’t do so again until the start of your next turn.</description>
+		</sheet>
+        <rules>
+			<stat name="symbiotic biosphere:dc" value="8" />
+			<stat name="symbiotic biosphere:dc" value="proficiency" />
+			<stat name="symbiotic biosphere:dc" value="wisdom:modifier" />
+
+            <stat name="symbiotic biosphere:damage" value="2" />
+            <stat name="symbiotic biosphere:damage" value="1" level="6"/>
+            <stat name="symbiotic biosphere:damage" value="1" level="10"/>
+            <stat name="symbiotic biosphere:damage" value="1" level="14"/>
+        </rules>
+	</element>
+
+	<element name="Protect the Monarch" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_CIRCLE_OF_THE_HIVE_PROTECT_THE_MONARCH">
+		<description>
+			<p>Your connection to the arthropods you host becomes deeper; they regard you as a worker bee would its queen, and they gladly sacrifice themselves to protect you. While your Symbiotic Biosphere feature is activated, whenever you take damage from a source you can see, you can use your reaction to command the insect symbiotes to swarm in front of you, deflecting some of the incoming energy. You reduce the incoming damage by an amount equal to your Wisdom modifier plus half your druid level.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>While your Symbiotic Biosphere feature is activated, whenever you take damage from a source you can see, you can use your reaction to command the insect symbiotes to swarm in front of you, deflecting some of the incoming energy. You reduce the incoming damage by an amount equal to {{protect the monarch:reduction}}.</description>
+		</sheet>
+        <rules>
+            <stat name="protect the monarch:reduction" value="wisdom:modifier" />
+            <stat name="protect the monarch:reduction" value="level:druid:half" />
+        </rules>
+	</element>
+
+	<element name="Honeydrenaline" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_CIRCLE_OF_THE_HIVE_HONEYDRENALINE">
+		<description>
+			<p>You have attracted a species of flying arthropod that produces a mixture of sugar and adrenaline with amazing, stimulating properties. As a bonus action, you can send these creatures to invigorate a willing creature you can see within 30 feet of you. The creature regains hit points equal to your druid level and can immediately use its reaction to move up to its speed. This movement doesn’t provoke opportunity attacks.</p>
+			<p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{wisdom:modifier}}/Long Rest" bonus="base" action="Bonus Action">
+			<description>As a bonus action, you can send these creatures to invigorate a willing creature you can see within 30 feet of you. The creature regains {{level:druid}} hit points and can immediately use its reaction to move up to its speed. This movement doesn’t provoke opportunity attacks.</description>
+		</sheet>
+	</element>
+
+	<element name="Swarmsense" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_CIRCLE_OF_THE_HIVE_SWARMSENSE">
+		<description>
+			<p>Hosting such a variety of tiny beings has permanently altered your personal biosphere. You gain the following benefits:</p>
+			<ul>
+				<li>Blindsight and tremorsense out to a range of 10 feet.</li>
+				<li>Resistance to poison damage.</li>
+				<li>Immunity to the poisoned condition.</li>
+				<li>Advantage on saving throws made to maintain your concentration.</li>
+				<li>Advantage on initiative rolls.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You gain:&#13;
+			• Immunity to the poisoned condition.&#13;
+			• Advantage on saving throws made to maintain your concentration.&#13;
+			• Advantage on initiative rolls.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+			<stat name="blindsight:range" value="10"/>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+</elements>

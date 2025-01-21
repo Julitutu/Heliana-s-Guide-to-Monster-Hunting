@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Lotol</name>
+		<source>Heliana's Guide to Monster Hunting</source>
+		<update version="0.1.0">
+			<file name="race-lotol.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Races/race-lotol.xml" />
+		</update>
+	</info>
+
+	<!-- Lotol Race -->
+	<element name="Lotol" type="Race" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACE_LOTOL">
+		<description>
+			<p class="flavor">“You’d think the perpetual grin would be a cute thing, but you haven’t seen them on the battlefield. Stuff of nightmares, this kid.” —Grenkogg the Barricade, Barbarian Adventurer</p>
+			<p>Creatures of swamp, river, and lake, these salamander- kin go with the flow—literally. Where the water wends, lotol (LOT-ol) make their home. Despite their shorter lives, lotol rarely rush; they have little to prove and trust in the currents of fate to take them where they need to be. Masters of adaptation, it is the lotol’s propensity to find joy in all things that sets them apart from other races: the croak of a bullfrog, the death of an elder, or the sweet scent of petrichor after a long hot summer; all are accepted with an open, wholesome grace.</p>
+			<h4>LIZARD LEGEND</h4>
+			<p>In lotol legend, the first lotol ancestor, Ablon the Stoney, had magnificently hard scales but was a stoic and unfeeling creature. To teach him a lesson, the great Platinum Dragon cursed him to be more sensitive. Ablon’s scales fell from his body, and his kin would forever bear this soft-skinned nature as a reminder to always be aware of how your actions might affect the world around you. In their own tongue, lotol are known as the ‘lizards without scales’.</p>
+			<p>Consequently, lotol often remark when they meet humanoids that do have scales, such as dragonborn, lizardfolk, or golynn. This reaction varies, from awe to envy, or from open infatuation to a fearful expectation of insensitivity or brutishness (stereotypes some lotol individuals hold). A sect of lotol, The Platinum Apology, dedicate their lives to ending this curse and restoring themselves as scale-wearing reptiles. Whether or not this curse is real, let alone possible, is unknown.</p>
+			<h4>WATER WADERS</h4>
+			<p>The few times lotol ever come into conflict with neighbours, it is almost always to do with water. A growing lotol population creates new wetlands by damming up rivers, sometimes to the chagrin of local trappers and woodsfolk. Following floods, whole pods of lotol can find themselves washed downstream into an entirely new (and often recently- drowned) habitat. Fortunately for those that may be reconstructing their lives following such an inundation, lotol are more than keen to help. Lotol with innate aqueous adaptations can prove a blessing to washed-out villages and offset the enmity villagers may feel towards this newly-arrived population of semi-nomadic salamander-folk.</p>
+			<p>With their supple, permeable skin, lotol are extremely sensitive to pollutants. If a black dragon poisons the water upstream or heavy metals from a dwarven mine begin to leech into the groundwater, lotol are often the first to know. The only record of lotol going to war is recorded in the oral chant The Cleansing Tide. With the help of a bronze dragon, Chionthan the Forgetful, lotol of the Chion Valley snuck upon the cruel and pernicious Ulvik the Black. There they delivered a mighty electric current into his lair, causing him to flee in fear. Lotol believe that their ability to generate electric currents through their skin is a blessing from the great Chionthan.</p>
+			<h4>ADAPTIVE AND ATYPICAL</h4>
+			<p>To call lotol adaptive is an understatement. When required, lotol can change their very physiology, growing gills, improving their eyesight, or even developing long, elastic tongues. Adapting quickly to different environments allows them to explore a gamut of potential habitats, despite their sensitive skin. Some lotol even embark on quests, seeking to put themselves in the most unusual and atypical situations imaginable in order to unlock as-yet-undiscovered adaptations.</p>
+			<h4>LOTOL TRAITS</h4>
+			<p>As a lotol, you have the following racial traits.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2, and your Constitution score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Newborn lotol metamorphose into their adult form in 1 year and reach full maturity after 10 years. They typically live between 40 and 50 years.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and one other language of your choice.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Lotol never stop growing; the larger the lotol, the older it probably is! Lotol typically range from 4 feet to 5 feet tall. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Oblivious.</em></strong> Your mind is a simple place, the influence of outside forces washing over it like crashing waves over smooth sea glass. You have advantage on Wisdom saving throws.</p>
+			<p class="indent"><strong><em>Slippery Skin.</em></strong> You have advantage on ability checks and saving throws made to avoid or end the grappled or restrained conditions on yourself.</p>
+			<p class="indent"><strong><em>Adaptive Polymorphism.</em></strong> Each lotol’s lineage is unique, and certain traits follow clans or families, or mutate by chance in individuals. Choose two of the following adaptations. When you gain a level, you can choose to replace one of these adaptations with another when you finish your next long rest.</p>
+			<ul class="unstyled">
+				<li>• <strong>Aqueous Adaptation.</strong> You gain a swimming speed equal to your walking speed and can breathe underwater.</li>
+				<li>• <strong>Gecko Cling.</strong> You gain a climbing speed of 20 feet and you have advantage on ability checks and saving throws made to maintain grapples and prevent yourself from being disarmed of an object you are holding.</li>
+				<li>• <strong>Darkvision.</strong> Accustomed to life in the murky underbrush, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern colour in darkness, only shades of grey.</li>
+				<li>• <strong>Prehensile Tongue.</strong> Your long, extendable tongue can be used to grab Tiny objects out of arm’s reach. As a bonus action, you can use your tongue to grab a Tiny object within 20 feet of you. If the object weighs less than 10 pounds, isn’t being worn or carried, and isn’t fixed to any surface, you pull the object back to you.</li>
+				<li>• <strong>Shocking Skin.</strong> You learn the shocking grasp cantrip. Constitution is your spellcasting ability for this spell. When a creature within 5 feet of you hits you with a melee attack, you can use a reaction to cast the shocking grasp cantrip, targeting the attacker. You can use it a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height">4'</set>
+			<set name="weight">50 lb.</set>
+		</setters>
+		<rules>
+			<!-- Ability Score Increase (Wisdom +2, Constitution +1) -->
+			<stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase (+2 and +1, or three +1's) -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Lotol)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Lotol)" supports="Custom Ability Score Increase 1" number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Languages (Common, +1 other) -->
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Lotol)" supports="Standard||Exotic" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<!-- Tasha's Cauldron of Everything: Customized Language -->
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<!-- Size (Medium) -->
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+
+			<!-- Speed (30 ft. walking) -->
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<!-- Oblivious -->
+			<grant type="Racial Trait" id="ID_LT_HGTMH_RACIAL_TRAIT_LOTOL_OBLIVIOUS" />
+
+			<!-- Slippery Skin -->
+			<grant type="Racial Trait" id="ID_LT_HGTMH_RACIAL_TRAIT_LOTOL_SLIPPERY_SKIN" />
+
+			<!-- Adaptive Polymorphism -->
+			<grant type="Racial Trait" id="ID_LT_HGTMH_RACIAL_TRAIT_LOTOL_ADAPTIVE_POLYMORPHISM" />
+		</rules>
+	</element>
+
+	<!-- Oblivious Trait -->
+	<element name="Oblivious" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_LOTOL_OBLIVIOUS">
+		<description>
+			<p>Your mind is a simple place, the influence of outside forces washing over it like crashing waves over smooth sea glass. You have advantage on Wisdom saving throws.</p>
+		</description>
+		<sheet>
+			<description>Your mind is a simple place, the influence of outside forces washing over it like crashing waves over smooth sea glass. You have advantage on Wisdom saving throws.</description>
+		</sheet>
+	</element>
+
+	<!-- Slippery Skin Trait -->
+	<element name="Slippery Skin" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_LOTOL_SLIPPERY_SKIN">
+		<description>
+			<p>You have advantage on ability checks and saving throws made to avoid or end the grappled or restrained conditions on yourself.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on ability checks and saving throws made to avoid or end the grappled or restrained conditions on yourself.</description>
+		</sheet>
+	</element>
+
+	<!-- Adaptive Polymorphism Trait -->
+	<element name="Adaptive Polymorphism" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_LOTOL_ADAPTIVE_POLYMORPHISM">
+		<description>
+			<p>Each lotol’s lineage is unique, and certain traits follow clans or families, or mutate by chance in individuals. Choose two of the following adaptations. When you gain a level, you can choose to replace one of these adaptations with another when you finish your next long rest.</p>
+			<ul class="unstyled">
+				<li><strong>Aqueous Adaptation.</strong> You gain a swimming speed equal to your walking speed and can breathe underwater.</li>
+				<li><strong>Gecko Cling.</strong> You gain a climbing speed of 20 feet and you have advantage on ability checks and saving throws made to maintain grapples and prevent yourself from being disarmed of an object you are holding.</li>
+				<li><strong>Darkvision.</strong> Accustomed to life in the murky underbrush, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern colour in darkness, only shades of grey.</li>
+				<li><strong>Prehensile Tongue.</strong> Your long, extendable tongue can be used to grab Tiny objects out of arm’s reach. As a bonus action, you can use your tongue to grab a Tiny object within 20 feet of you. If the object weighs less than 10 pounds, isn’t being worn or carried, and isn’t fixed to any surface, you pull the object back to you.</li>
+				<li><strong>Shocking Skin.</strong> You learn the shocking grasp cantrip. Constitution is your spellcasting ability for this spell. When a creature within 5 feet of you hits you with a melee attack, you can use a reaction to cast the shocking grasp cantrip, targeting the attacker. You can use it a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description>Each lotol’s lineage is unique, and certain traits follow clans or families, or mutate by chance in individuals. Choose two of the following adaptations. When you gain a level, you can choose to replace one of these adaptations with another when you finish your next long rest.</description>
+		</sheet>
+		<rules>
+			<select type="Racial Trait" name="Adaptation (Lotol)" supports="Lotol Adaptation" number="2" />
+		</rules>
+	</element>
+
+	<!-- Aqueous Adaptation -->
+	<element name="Aqueous Adaptation" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_LOTOL_ADAPTATION_AQUEOUS_ADAPTATION">
+		<supports>Lotol Adaptation</supports>
+		<description>
+			<p>You gain a swimming speed equal to your walking speed and can breathe underwater.</p>
+		</description>
+		<sheet>
+			<description>You gain a swimming speed equal to your walking speed and can breathe underwater.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:swim" value="30" bonus="base" />
+		</rules>
+	</element>
+
+	<!-- Gecko Cling Adaptation -->
+	<element name="Gecko Cling" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_LOTOL_ADAPTATION_GECKO_CLING">
+		<supports>Lotol Adaptation</supports>
+		<description>
+			<p>You gain a climbing speed of 20 feet and you have advantage on ability checks and saving throws made to maintain grapples and prevent yourself from being disarmed of an object you are holding.</p>
+		</description>
+		<sheet>
+			<description>You gain a climbing speed of 20 feet and you have advantage on ability checks and saving throws made to maintain grapples and prevent yourself from being disarmed of an object you are holding.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:climb" value="20" bonus="base" />
+		</rules>
+	</element>
+
+	<!-- Darkvision Adaptation -->
+	<element name="Darkvision" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_LOTOL_ADAPTATION_DARKVISION">
+		<supports>Lotol Adaptation</supports>
+		<description>
+			<p>Accustomed to life in the murky underbrush, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern colour in darkness, only shades of grey.</p>
+		</description>
+		<sheet>
+			<description>Accustomed to life in the murky underbrush, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern colour in darkness, only shades of grey.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
+			<stat name="darkvision:range" value="120" bonus="base" />
+		</rules>
+	</element>
+
+	<!-- Prehensile Tongue Adaptation -->
+	<element name="Prehensile Tongue" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_LOTOL_ADAPTATION_PREHENSILE_TONGUE">
+		<supports>Lotol Adaptation</supports>
+		<description>
+			<p>Your long, extendable tongue can be used to grab Tiny objects out of arm’s reach. As a bonus action, you can use your tongue to grab a Tiny object within 20 feet of you. If the object weighs less than 10 pounds, isn’t being worn or carried, and isn’t fixed to any surface, you pull the object back to you.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Your long, extendable tongue can be used to grab Tiny objects out of arm’s reach. As a bonus action, you can use your tongue to grab a Tiny object within 20 feet of you. If the object weighs less than 10 pounds, isn’t being worn or carried, and isn’t fixed to any surface, you pull the object back to you.</description>
+		</sheet>
+	</element>
+
+	<!-- Shocking Skin Adaptation -->
+	<element name="Shocking Skin" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_LOTOL_ADAPTATION_SHOCKING_SKIN">
+		<supports>Lotol Adaptation</supports>
+		<description>
+			<p>You learn the shocking grasp cantrip. Constitution is your spellcasting ability for this spell. When a creature within 5 feet of you hits you with a melee attack, you can use a reaction to cast the shocking grasp cantrip, targeting the attacker. You can use it a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{proficiency}}/Long Rest">
+			<description>You learn the shocking grasp cantrip. When a creature within 5 feet of you hits you with a melee attack, you can use a reaction to cast the shocking grasp cantrip, targeting the attacker. {{shocking skin:hit}} to hit, and deals 1d8 lightning damage</description>
+			<description level="5">You learn the shocking grasp cantrip. When a creature within 5 feet of you hits you with a melee attack, you can use a reaction to cast the shocking grasp cantrip, targeting the attacker. {{shocking skin:hit}} to hit, and deals 2d8 lightning damage</description>
+			<description level="11">You learn the shocking grasp cantrip. When a creature within 5 feet of you hits you with a melee attack, you can use a reaction to cast the shocking grasp cantrip, targeting the attacker. {{shocking skin:hit}} to hit, and deals 3d8 lightning damage</description>
+			<description level="17">You learn the shocking grasp cantrip. When a creature within 5 feet of you hits you with a melee attack, you can use a reaction to cast the shocking grasp cantrip, targeting the attacker. +{{shocking skin:hit}} to hit, and deals 4d8 lightning damage</description>
+		</sheet>
+		<rules>
+			<stat name="shocking skin:ability" value="constitution:modifier" bonus="shocking skin:ability" />
+
+			<stat name="shocking skin:hit" value="proficiency" />
+			<stat name="shocking skin:hit" value="shocking skin:ability" />
+			<grant type="Spell" id="ID_PHB_SPELL_SHOCKING_GRASP" />
+		</rules>
+	</element>
+</elements>

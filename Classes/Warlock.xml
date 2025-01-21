@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>The Parasite</name>
+		<source>Heliana's Guide to Monster Hunting</source>
+		<update version="0.1.0">
+			<file name="Warlock.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Classes/Warlock.xml" />
+		</update>
+	</info>
+
+	<element name="The Parasite" type="Archetype" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_WARLOCK_THE_PARASITE">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>You have bonded, mind and body, with a rare and enigmatic being that calls your body home, whether you like it or not. Its origins are unknown; perhaps it came from a vat of biomantic mut-x, the nightmares of an astral projector, or a subterranean pool of primordial ooze. Survival is its watchword and you are its host.</p>
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_PARASITE_EXPANDED_SPELL_LIST" />
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_PARASITE_PARASITIC_WEAPON" />
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_PARASITE_SYMBIOTIC_REINFORCEMENT" />
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_PARASITE_LIQUEFIED_BODY" />
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_PARASITE_BIRTH_PARASITE" />
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_PARASITE_TRANSMIT_PARASITE" />
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_PARASITE_VIRULENT_FORM" />
+		</description>
+		<sheet display="false">
+			<description>You have bonded, mind and body, with a rare and enigmatic being that calls your body home, whether you like it or not.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_PARASITE_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_PARASITE_PARASITIC_WEAPON" level="1" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_PARASITE_SYMBIOTIC_REINFORCEMENT" level="1" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_PARASITE_LIQUEFIED_BODY" level="6" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_PARASITE_BIRTH_PARASITE" level="6" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_PARASITE_TRANSMIT_PARASITE" level="10" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_PARASITE_VIRULENT_FORM" level="14" />
+		</rules>
+	</element>
+
+	<element name="Expanded Spell List" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_PARASITE_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Parasite lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5>Parasite Expanded Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><i>heroism, sanctuary</i></td></tr>
+				<tr><td>2nd</td><td><i>enhance ability, enlarge/reduce</i></td></tr>
+				<tr><td>3rd</td><td><i>haste, spirit guardians</i></td></tr>
+				<tr><td>4th</td><td><i>black tentacles, freedom of movement</i></td></tr>
+				<tr><td>5th</td><td><i>contagion, dominate person</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Parasite lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_HEROISM</extend>
+			<extend>ID_PHB_SPELL_SANCTUARY</extend>
+			<extend>ID_PHB_SPELL_ENHANCE_ABILITY</extend>
+			<extend>ID_PHB_SPELL_ENLARGE_REDUCE</extend>
+			<extend>ID_PHB_SPELL_HASTE</extend>
+			<extend>ID_PHB_SPELL_SPIRIT_GUARDIANS</extend>
+			<extend>ID_PHB_SPELL_BLACK_TENTACLES</extend>
+			<extend>ID_PHB_SPELL_FREEDOM_OF_MOVEMENT</extend>
+			<extend>ID_PHB_SPELL_CONTAGION</extend>
+			<extend>ID_PHB_SPELL_DOMINATE_PERSON</extend>
+		</spellcasting>
+	</element>
+
+	<element name="Parasitic Weapon" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_PARASITE_PARASITIC_WEAPON">
+		<description>
+			<p>Your patron can manifest on and protrude from your body in the form of a parasitic weapon—claws, teeth, tendrils, or other appendages. As a bonus action, you can manifest this parasitic weapon; you gain a new attack option that you can use when you take the Attack action on your turn. This special attack is a melee spell attack, with a reach equal to five times your proficiency bonus. The attack deals 1d12 bludgeoning, piercing, or slashing damage on a hit (your choice when you manifest the weapon). You don’t add your ability modifier to the damage of the parasitic weapon.</p>
+			<p class="indent">The parasitic weapon retracts back into your body if you are incapacitated or you use a bonus action to end it.</p>
+			<p class="indent"><b><i>Parasitic Flurry.</i></b> The number of attacks you can make with your parasitic weapons when you take the Attack action on your turn increases when you reach certain levels in this class, increasing to two attacks at 5th level, three attacks at 11th level, and four attacks at 17th level. If you have another feature that allows you to make multiple attacks as part of the Attack action (such as Extra Attack), making any of those extra attacks each replace one of these parasitic weapon attacks.</p>
+			<p class="indent"><b><i>Magical Weapons.</i></b> Starting at 6th level, your attacks with your parasitic weapon count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+			<div class="sidebar">
+				<p><b>Opportunity Attacks &amp; Parasitic Weapon</b></p>
+				<p>This parasitic weapon can’t be used for opportunity attacks; it specififies that it is only usable when you take the Attack action. Opportunity attacks are made using reactions. Opportunity attacks with a 30-foot-reach weapon would be hard to keep track of!</p>
+			</div>
+		</description>
+		<sheet action="Bonus Action">
+			<description>As a bonus action, you can manifest this parasitic weapon; you gain a new attack option that you can use when you take the Attack action on your turn. This special attack is a melee spell attack, with a reach equal to five times your proficiency bonus. The attack deals 1d12 bludgeoning, piercing, or slashing damage on a hit (your choice when you manifest the weapon). You don’t add your ability modifier to the damage of the parasitic weapon.&#13;
+            The parasitic weapon retracts back into your body if you are incapacitated or you use a bonus action to end it.</description>
+            <description level="5">As a bonus action, you can manifest this parasitic weapon; you gain a new attack option that you can use when you take the Attack action on your turn. This special attack is a melee spell attack, with a reach equal to five times your proficiency bonus. The attack deals 1d12 bludgeoning, piercing, or slashing damage on a hit (your choice when you manifest the weapon). You don’t add your ability modifier to the damage of the parasitic weapon.&#13;
+            The parasitic weapon retracts back into your body if you are incapacitated or you use a bonus action to end it.&#13;
+            Parasitic Flurry. You can attack {{extra attack:count}}. If you have another feature that allows you to make multiple attacks as part of the Attack action (such as Extra Attack), making any of those extra attacks each replace one of these parasitic weapon attacks.</description>
+            <description level="6">As a bonus action, you can manifest this parasitic weapon; you gain a new attack option that you can use when you take the Attack action on your turn. This special attack is a melee spell attack, with a reach equal to five times your proficiency bonus. The attack deals 1d12 bludgeoning, piercing, or slashing damage on a hit (your choice when you manifest the weapon). You don’t add your ability modifier to the damage of the parasitic weapon.&#13;
+            The parasitic weapon retracts back into your body if you are incapacitated or you use a bonus action to end it.&#13;
+            Parasitic Flurry. You can attack {{extra attack:count}}. If you have another feature that allows you to make multiple attacks as part of the Attack action (such as Extra Attack), making any of those extra attacks each replace one of these parasitic weapon attacks.&#13;
+            Magical Weapons. Your attacks with your parasitic weapon count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+		</sheet>
+        <rules>
+            <stat name="extra attack:count" value="2" level="5"  />
+            <stat name="extra attack:count" value="3" level="11" />
+            <stat name="extra attack:count" value="4" level="17" />
+        </rules>
+	</element>
+
+	<element name="Symbiotic Reinforcement" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_PARASITE_SYMBIOTIC_REINFORCEMENT">
+		<description>
+			<p>Invested in your survival, your patron manifests in protective ways. You can use your Charisma modifier in place of your Strength modifier when making Strength saving throws. In addition, as a bonus action, you can cause your patron to manifest in your free hand as a shield, with which you are proficient. This shield disappears if you are incapacitated or if you dismiss it as a bonus action. When you reach 10th level in this class, this shield increases your AC by 3 instead of 2.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can use your Charisma modifier in place of your Strength modifier when making Strength saving throws. In addition, as a bonus action, you can cause your patron to manifest in your free hand as a shield, with which you are proficient. This shield disappears if you are incapacitated or if you dismiss it as a bonus action.</description>
+            <description level="10">You can use your Charisma modifier in place of your Strength modifier when making Strength saving throws. In addition, as a bonus action, you can cause your patron to manifest in your free hand as a shield, with which you are proficient. This shield disappears if you are incapacitated or if you dismiss it as a bonus action. This shield increases your AC by 3.</description>
+		</sheet>
+	</element>
+
+	<element name="Liquefied Body" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_PARASITE_LIQUEFIED_BODY">
+		<description>
+			<p>As a bonus action, you can transform your body into a viscous, liquid form for 10 minutes. You choose whether your equipment falls to the ground in your space or merges into your new form. For the duration, you can squeeze through a space as narrow as 6 inches wide, and moving through difficult terrain costs you no extra movement. After you use this feature, you can’t do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest" action="Bonus Action">
+			<description>As a bonus action, you can transform your body into a viscous, liquid form for 10 minutes. You choose whether your equipment falls to the ground in your space or merges into your new form. For the duration, you can squeeze through a space as narrow as 6 inches wide, and moving through difficult terrain costs you no extra movement.</description>
+		</sheet>
+	</element>
+
+	<element name="Birth Parasite" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_PARASITE_BIRTH_PARASITE">
+		<description>
+			<p>Over the course of 1 minute, you can extrude an independent piece of your patron, causing it to manifest in an unoccupied space within 5 feet of you. This parasite acts as a familiar, as if with the find familiar spell. See this creature’s game statistics in the parasitic ooze stat block (page 215), which uses your proficiency bonus (PB) in several places.</p>
+			<p class="indent">If you have the Pact of the Chain feature, the parasite counts as a familiar for you for the purpose of applying any benefits from that feature or your invocations.</p>
+			<p class="indent">After you birth a parasite, you can’t do so again until you finish a short or long rest. If you use this feature while you already have a parasite, the previous one dissolves in a puddle of goo.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>Over the course of 1 minute, you can extrude an independent piece of your patron, causing it to manifest in an unoccupied space within 5 feet of you. This parasite acts as a familiar, as if with the find familiar spell.&#13;
+            If you have the Pact of the Chain feature, the parasite counts as a familiar for you for the purpose of applying any benefits from that feature or your invocations.</description>
+		</sheet>
+        <rules>
+            <grant type="Companion" id="ID_LT_HGTMH_CREATURE_PARASITIC_OOZE" />
+        </rules>
+	</element>
+
+	<element name="Transmit Parasite" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_PARASITE_TRANSMIT_PARASITE">
+		<description>
+			<p>At 10th level, you learn new ways to use your parasitic ooze to aid your friends or harm your foes. As a bonus action while your parasitic ooze isn’t incapacitated, you can command it to immediately use one of the options below.</p>
+			<p class="indent"><b><i>Detonate Ooze.</i></b> The ooze moves up to its speed and then explodes, causing it to drop to 0 hit points. Each creature within 10 feet of the ooze must make a Dexterity saving throw against your warlock spell save DC. On a failed save, a creature takes 4d6 necrotic damage and is blinded until the end of your next turn. On a successful save, the creature takes half as much damage and isn’t blinded.</p>
+			<p class="indent"><b><i>Symbiote’s Ward.</i></b> The ooze moves up to its speed and attaches to the body of a willing creature within 5 feet of it. While attached in this way, the ooze is incapacitated, has a speed of 0 feet, and you can communicate telepathically with the creature it’s attached to, whether or not you share a common language. Whenever the creature the ooze is attached to takes damage, the ooze takes the damage instead. As a bonus action, you can command the ooze to detach from the creature.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>As a bonus action while your parasitic ooze isn’t incapacitated, you can command it to immediately use one of the options below.&#13;
+            • Detonate Ooze. The ooze moves up to its speed and then explodes, causing it to drop to 0 hit points. Each creature within 10 feet of the ooze must make a DC {{transmit parasite:dc}} Dexterity saving throw. On a failed save, a creature takes 4d6 necrotic damage and is blinded until the end of your next turn. On a successful save, the creature takes half as much damage and isn’t blinded.&#13;
+            • Symbiote’s Ward. The ooze moves up to its speed and attaches to the body of a willing creature within 5 feet of it. While attached in this way, the ooze is incapacitated, has a speed of 0 feet, and you can communicate telepathically with the creature it’s attached to, whether or not you share a common language. Whenever the creature the ooze is attached to takes damage, the ooze takes the damage instead. As a bonus action, you can command the ooze to detach from the creature.</description>
+		</sheet>
+		<rules>
+			<stat name="transmit parasite:dc" value="8" />
+			<stat name="transmit parasite:dc" value="proficiency" />
+			<stat name="transmit parasite:dc" value="charisma:modifier" />
+		</rules>
+	</element>
+
+	<element name="Virulent Form" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_PARASITE_VIRULENT_FORM">
+		<description>
+			<p>Your patron allows you to unleash a modicum of its true power as it envelops your form. As an action, you can gain the following benefits for 1 minute:</p>
+			<ul>
+				<li>You grow in size by one category—from Medium to Large, for example. If you lack the room to grow, your size doesn’t change.</li>
+				<li>You gain a number of temporary hit points equal to your Charisma modifier (minimum 1) at the start of each of your turns.</li>
+				<li>The damage dice of your parasitic weapon increases to 2d8.</li>
+				<li>Your parasitic weapon attacks score a critical hit on a roll of 19 or 20.</li>
+				<li>Whenever you take damage from a creature within your parasitic weapon’s reach, you can use your reaction to make an attack with the parasitic weapon against that creature.</li>
+			</ul>
+			<p>Once you use this feature, you can’t do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Action">
+			<description>As an action, you can gain the following benefits for 1 minute:&#13;
+            • You grow in size by one category—from Medium to Large, for example. If you lack the room to grow, your size doesn’t change.&#13;
+            • You gain {{charisma:modifier}} temporary hit points at the start of each of your turns.&#13;
+            • The damage dice of your parasitic weapon increases to 2d8.&#13;
+            • Your parasitic weapon attacks score a critical hit on a roll of 19 or 20.&#13;
+            • Whenever you take damage from a creature within your parasitic weapon’s reach, you can use your reaction to make an attack with the parasitic weapon against that creature.</description>
+		</sheet>
+	</element>
+
+
+    <element name="Parasitic Ooze" type="Companion" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_PARASITIC_OOZE">
+        <setters>
+            <set name="size">Tiny</set>
+            <set name="type">Ooze</set>
+            <set name="alignment">unaligned</set>
+            <set name="ac">8 + PB (natural armor)</set>
+            <set name="hp">5 + three times your warlock level</set>
+            <set name="speed">5 + 5 x PB ft., climb 5 + 5 × PB ft.</set>
+            <set name="strength">11</set>
+            <set name="dexterity">6</set>
+            <set name="constitution">16</set>
+            <set name="intelligence">7</set>
+            <set name="wisdom">10</set>
+            <set name="charisma">5</set>
+            <set name="resistances">necrotic</set>
+            <set name="conditionImmunities">blinded, charmed, deafened, exhaustion, frightened, prone</set>            
+            <set name="senses">blindsight 60 ft. (blind beyond this radius), passive Perception 10</set>
+            <set name="languages">understands the languages you speak</set>
+            <set name="challenge">-</set>
+            <set name="traits">ID_LT_HGTMH_COMPANION_TRAIT_PARASITIC_OOZE_AMORPHOUS, ID_LT_HGTMH_COMPANION_TRAIT_PARASITIC_OOZE_FALSE_APPEARANCE, ID_LT_HGTMH_COMPANION_TRAIT_PARASITIC_OOZE_SPIDER_CLIMB</set>
+            <set name="actions">ID_LT_HGTMH_COMPANION_ACTION_PARASITIC_OOZE_PSEUDOPOD</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="8" bonus="base"/>
+            <stat name="companion:ac" value="proficiency" bonus="proficiency" />
+
+            <stat name="companion:hp:max" value="5" />
+            <stat name="companion:hp:max" value="level:warlock" />
+            <stat name="companion:hp:max" value="level:warlock" />
+            <stat name="companion:hp:max" value="level:warlock" />
+
+            <stat name="companion:speed" value="5" bonus="base" />
+            <stat name="companion:speed" value="proficiency" bonus="base" />
+            <stat name="companion:speed" value="proficiency" bonus="base" />
+            <stat name="companion:speed" value="proficiency" bonus="base" />
+            <stat name="companion:speed" value="proficiency" bonus="base" />
+            <stat name="companion:speed" value="proficiency" bonus="base" />
+
+            <stat name="companion:speed:climb" value="5" bonus="base" />
+            <stat name="companion:speed:climb" value="proficiency" bonus="base" />
+            <stat name="companion:speed:climb" value="proficiency" bonus="base" />
+            <stat name="companion:speed:climb" value="proficiency" bonus="base" />
+            <stat name="companion:speed:climb" value="proficiency" bonus="base" />
+            <stat name="companion:speed:climb" value="proficiency" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Pseudopod" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_PARASITIC_OOZE_PSEUDOPOD">
+        <description>
+            <p><i>Melee Weapon Attack:</i> your spell attack modifier to
+hit, reach 5 ft., one target. <i>Hit:</i> 1d6 + PB bludgeoning damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +{{spell:modifier}} to hit, reach 5 ft., one target. Hit: 1d6 + {{proficiency}} bludgeoning damage.</description>
+        </sheet>
+        <rules>
+            <stat name="spell:modifier" value="charisma:modifier" />
+            <stat name="spell:modifier" value="proficiency" />
+        </rules>
+    </element>
+
+    <element name="Amorphous" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_PARASITIC_OOZE_AMORPHOUS">
+        <description>
+            <p>The ooze can move through a space as narrow as 1 inch wide without squeezing.</p>
+        </description>
+        <sheet>
+            <description>The ooze can move through a space as narrow as 1 inch wide without squeezing.</description>
+        </sheet>
+    </element>
+
+    <element name="False Appearance" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_PARASITIC_OOZE_FALSE_APPEARANCE">
+        <description>
+            <p>While the ooze remains motionless, it is indistinguishable from an oily pool or wet rock.</p>
+        </description>
+        <sheet>
+            <description>While the ooze remains motionless, it is indistinguishable from an oily pool or wet rock.</description>
+        </sheet>
+    </element>
+
+    <element name="Spider Climb" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_PARASITIC_OOZE_SPIDER_CLIMB">
+        <description>
+            <p>The ooze can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+        </description>
+        <sheet>
+            <description>The ooze can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</description>
+        </sheet>
+    </element>
+</elements>
