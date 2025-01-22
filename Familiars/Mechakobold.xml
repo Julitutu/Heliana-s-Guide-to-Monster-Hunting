@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Familiars</name>
+        <description>Familiars from Heliana's Guide to Monster Hunting</description>
+        <update version="0.1.0">
+            <file name="Mechakobold.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Mechakobold.xml" />
+        </update>
+    </info>
+
+    <element name="Mechakobold" type="Companion" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MECHAKOBOLD">
+        <supports>Bespoke Companion</supports>
+        <description>
+            <div class="sidebar">
+                <p class="flavor">This little friend is sehr helpful. Sometimes too helpful. Von time, vhen I vas harvestink ein red dragon’s breath sak, I asked for a scalpel und it dropped it. Point down. Into ze sak. My hair’s only just grown back.</p>
+                <p>— Humperdink, Recently Singed</p>
+            </div>
+            <p><b>Type:</b> Construct</p>
+            <p><b>Creature Component:</b> Koboldzilla</p>
+            <p><b>Bonus Tamer Improvement:</b> Pack Tactics and +2 Hit Dice</p>
+            <p>From the crude blood-oil of the mecha koboldzilla can be harnessed the progenitor genetic code of the modern kobold. A combination of flesh and metal, the mechakobold retains much of the modern kobold’s ingenuity and penchant for mischief. Mechakobolds’ belief powers their magical inventions; the force of their personality directly augments their creations. Expect homemade explosions, picked pockets, and the pressing of any big, red buttons.</p>
+            <p>If any of the mechakobold’s traits or actions require a saving throw, it is always against the mechakobold’s save DC, as calculated below.</p>
+            <center>
+                <p><b>Save DC</b> = 8 + the tamer’s proficiency bonus + the mechakobold’s Charisma modifier</p>
+            </center>
+            <h4>Monster Trainer</h4>
+            <p>In addition to the improvements you can normally give your companions, you can choose to grant the mechakobold the following improvements using your Monster Trainer feature:</p>
+            <div class="reference">
+                <div element="ID_LT_HGTMH_MECHAKOBOLD_TRAIT_PACK_TACTICS" />
+                <div element="ID_LT_HGTMH_MECHAKOBOLD_ACTION_PUPPY_DRAGON_EYES" />
+                <div element="ID_LT_HGTMH_MECHAKOBOLD_ACTION_DYNOBOOM_I" />
+                <div element="ID_LT_HGTMH_MECHAKOBOLD_TRAIT_GROWTH" />
+                <div element="ID_LT_HGTMH_MECHAKOBOLD_ACTION_MULTIATTACK" />
+                <div element="ID_LT_HGTMH_MECHAKOBOLD_TRAIT_PREHENSILE_TAIL" />
+                <div element="ID_LT_HGTMH_MECHAKOBOLD_TRAIT_NIMBLE_ESCAPE" />
+                <div element="ID_LT_HGTMH_MECHAKOBOLD_ACTION_DYNOBOOM_II" />
+                <div element="ID_LT_HGTMH_MECHAKOBOLD_TRAIT_UNCANNY_DODGE" />
+                <div element="ID_LT_HGTMH_MECHAKOBOLD_TRAIT_PROTO_ATTUNEMENT" />
+            </div>
+        </description>
+        <setters>
+            <set name="strength">7</set>
+            <set name="dexterity">14</set>
+            <set name="constitution">11</set>
+            <set name="intelligence">12</set>
+            <set name="wisdom">9</set>
+            <set name="charisma">15</set>
+            <set name="ac">12</set>
+            <set name="hp">2 (1d4)</set>
+            <set name="speed">25 ft., climb 25 ft.</set>
+            <set name="senses">darkvision 120 ft., passive Perception 9</set>
+            <set name="languages">—</set>
+            <set name="skills">Deception +4, Investigation +3, Sleight of Hand +4, Stealth +4</set>
+            <set name="type">Construct</set>
+            <set name="size">Tiny</set>
+            <set name="alignment">neutral good</set>
+            <set name="challenge">1/8</set>
+            <set name="proficiency">2</set>
+            <set name="traits">ID_LT_HGTMH_MECHAKOBOLD_TRAIT_HELPFUL_ISH,ID_LT_HGTMH_MECHAKOBOLD_TRAIT_SUNLIGHT_SENSITIVITY,ID_LT_HGTMH_MECHAKOBOLD_TRAIT_PACK_TACTICS,ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_HALF</set>
+            <set name="actions">ID_LT_HGTMH_MECHAKOBOLD_ACTION_SLINGSHOT,ID_LT_HGTMH_MECHAKOBOLD_ACTION_TIE_LACES</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="12" />
+            <stat name="companion:hp:max" value="2" bonus="base" />
+            <stat name="companion:speed" value="25" bonus="base" />
+            <stat name="companion:speed:climb" value="25" bonus="base" />
+            <stat name="companion:deception:proficiency" value="companion:proficiency" bonus="base" />
+            <stat name="companion:investigation:proficiency" value="companion:proficiency" bonus="base" />
+            <stat name="companion:sleight of hand:proficiency" value="companion:proficiency" bonus="base" />
+            <stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
+
+            <stat name="mechakobold:dc" value="8" />
+            <stat name="mechakobold:dc" value="proficiency" bonus="proficiency" />
+            <stat name="mechakobold:dc" value="companion:charisma:modifier" />
+
+            <grant type="Companion Trait" id="ID_LT_HGTMH_MECHAKOBOLD_TRAIT_PACK_TACTICS" requirements="[level:tamer:1]"/>
+        </rules>
+    </element>
+
+    <element name="Helpful-ish" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MECHAKOBOLD_TRAIT_HELPFUL_ISH">
+        <description>
+            <p>The mechakobold desires to help other creatures on their ability checks and will always try to take the Help action in non-combat situations. However, if the check on which the mechakobold helps is a failure, the consequences are always catastrophic (GM’s discretion).</p>
+        </description>
+        <sheet>
+            <description>The mechakobold desires to help other creatures on their ability checks and will always try to take the Help action in non-combat situations. However, if the check on which the mechakobold helps is a failure, the consequences are always catastrophic (GM’s discretion).</description>
+        </sheet>
+    </element>
+
+    <element name="Sunlight Sensitivity" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MECHAKOBOLD_TRAIT_SUNLIGHT_SENSITIVITY">
+        <description>
+            <p>While in sunlight, the mechakobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</p>
+        </description>
+        <sheet>
+            <description>While in sunlight, the mechakobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</description>
+        </sheet>
+    </element>
+
+    <element name="Slingshot" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MECHAKOBOLD_ACTION_SLINGSHOT">
+        <requirements>!ID_LT_HGTMH_MECHAKOBOLD_TRAIT_GROWTH</requirements>
+        <description>
+            <p>Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.</p>
+        </description>
+        <sheet>
+            <description>Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Tie Laces" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MECHAKOBOLD_ACTION_TIE_LACES">
+        <description>
+            <p>The mechakobold attempts to tie together the lower limbs of a creature within 5 feet of it using a pair of spare laces. It makes a Dexterity (Sleight of Hand) check contested by the target’s Dexterity (Acrobatics) or Strength (Athletics) check. On a success, the target’s walking and climbing speeds are halved until it unties its laces as an action, or cuts them with an attack with a slashing weapon.</p>
+        </description>
+        <sheet>
+            <description>The mechakobold attempts to tie together the lower limbs of a creature within 5 feet of it using a pair of spare laces. It makes a Dexterity (Sleight of Hand) check contested by the target’s Dexterity (Acrobatics) or Strength (Athletics) check. On a success, the target’s walking and climbing speeds are halved until it unties its laces as an action, or cuts them with an attack with a slashing weapon.</description>
+        </sheet>
+    </element>
+
+    <!-- Companion's Improvements -->
+    <element name="Pack Tactics" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MECHAKOBOLD_TRAIT_PACK_TACTICS">
+        <supports>Mechakobold, Companion Improvement</supports>
+        <prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
+        <requirements>[level:tamer:1]</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>The mechakobold has advantage on an attack roll against a creature if at least one of the mechakobold’s allies is within 5 feet of the creature and the ally isn’t incapacitated. The mechakobold gains this improvement when it becomes a companion; it doesn’t cost an improvement.</p>
+        </description>
+        <sheet>
+            <description>The mechakobold has advantage on an attack roll against a creature if at least one of the mechakobold’s allies is within 5 feet of the creature and the ally isn’t incapacitated. The mechakobold gains this improvement when it becomes a companion; it doesn’t cost an improvement.</description>
+        </sheet>
+        <rules>
+            <stat name="companion:hp:max" value="5" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+        </rules>
+    </element>
+
+    <element name="Puppy Dragon Eyes" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MECHAKOBOLD_ACTION_PUPPY_DRAGON_EYES">
+        <supports>Mechakobold, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>As an action, the mechakobold can stare endearingly at one creature it can see within 30 feet of it. If the creature can see it, the creature must make a Wisdom saving throw. On a failed save, the creature is charmed by the mechakobold for 1 minute. This effect ends early if the mechakobold harms the creature. If the creature observes the mechakobold acting contrary to the creature’s goals, the creature can repeat the saving throw, ending the effect on a success.</p>
+            <p>After the mechakobold uses this action, it can’t do so again until its tamer finishes a short or long rest.</p>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Short Rest">As an action, the mechakobold can stare endearingly at one creature it can see within 30 feet of it. If the creature can see it, the creature must make a DC {{mechakobold:dc}} Wisdom saving throw. On a failed save, the creature is charmed by the mechakobold for 1 minute. This effect ends early if the mechakobold harms the creature. If the creature observes the mechakobold acting contrary to the creature’s goals, the creature can repeat the saving throw, ending the effect on a success. After the mechakobold uses this action, it can’t do so again until its tamer finishes a short or long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Dynoboom I" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MECHAKOBOLD_ACTION_DYNOBOOM_I">
+        <supports>Mechakobold, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5],!ID_LT_HGTMH_MECHAKOBOLD_ACTION_DYNOBOOM_II</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>As an action, the mechakobold can throw a homemade explosive device at a point it can see within 60 feet of it, where it explodes. Each creature in a 10-foot-radius sphere centred on that point must make a Dexterity saving throw, taking 17 (5d6) thunder damage on a failed save, or half as much damage on a successful one.</p>
+            <p>After the mechakobold uses this action, it can’t do so again until its tamer finishes a short or long rest, during which it crafts a new explosive device using bits, bobs, and pure belief.</p>
+            <p>When the mechakobold’s tamer reaches 9th level in the tamer class, the damage of this action increases to 24 (7d6).</p>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Short Rest">As an action, the mechakobold can throw a homemade explosive device at a point it can see within 60 feet of it, where it explodes. Each creature in a 10-foot-radius sphere centred on that point must make a DC {{mechakobold:dc}} Dexterity saving throw, taking 17 (5d6) thunder damage on a failed save, or half as much damage on a successful one. After the mechakobold uses this action, it can’t do so again until its tamer finishes a short or long rest, during which it crafts a new explosive device using bits, bobs, and pure belief.</description>
+            <description level="9" action="Action" usage="1/Short Rest">As an action, the mechakobold can throw a homemade explosive device at a point it can see within 60 feet of it, where it explodes. Each creature in a 10-foot-radius sphere centred on that point must make a DC {{mechakobold:dc}} Dexterity saving throw, taking 24 (7d6) thunder damage on a failed save, or half as much damage on a successful one. After the mechakobold uses this action, it can’t do so again until its tamer finishes a short or long rest, during which it crafts a new explosive device using bits, bobs, and pure belief.</description>
+        </sheet>
+    </element>
+
+    <element name="Growth" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MECHAKOBOLD_TRAIT_GROWTH">
+        <supports>Mechakobold, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>The mechakobold’s size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage die of its Slingshot attack increases to a d8.</p>
+        </description>
+        <sheet>
+            <description>The mechakobold’s size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage die of its Slingshot attack increases to a d8.</description>
+        </sheet>
+        <rules>
+            <stat name="companion:hp:max" value="2" />
+            <stat name="companion:hp:max" value="5" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+
+            <grant type="Companion Action" id="ID_LT_HGTMH_MECHAKOBOLD_ACTION_SLINGSHOT_GROWTH" />
+        </rules>
+    </element>
+    <element name="Slingshot" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MECHAKOBOLD_ACTION_SLINGSHOT_GROWTH">
+        <description>
+            <p>Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage.</p>
+        </description>
+        <sheet>
+            <description>Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Multiattack" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MECHAKOBOLD_ACTION_MULTIATTACK">
+        <supports>Mechakobold, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>As an action, the mechakobold can make two Slingshot attacks.</p>
+        </description>
+        <sheet>
+            <description>As an action, the mechakobold can make two Slingshot attacks.</description>
+        </sheet>
+    </element>
+
+    <element name="Prehensile Tail" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MECHAKOBOLD_TRAIT_PREHENSILE_TAIL">
+        <supports>Mechakobold, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
+        <requirements>[level:tamer:9]</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion), Active (bonus action)</p>
+            <p>The mechakobold gains proficiency with thieves’ tools. In addition, it can use its bonus action to make a Dexterity (Sleight of Hand) check (for example, to pickpocket a creature), to use a set of thieves’ tools to disarm a trap or open a lock, or to take the Use an Object action.</p>
+        </description>
+        <sheet>
+            <description usage="Bonus Action">It can use its bonus action to make a Dexterity (Sleight of Hand) check (for example, to pickpocket a creature), to use a set of thieves’ tools to disarm a trap or open a lock, or to take the Use an Object action.</description>
+        </sheet>
+    </element>
+
+    <element name="Nimble Escape" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MECHAKOBOLD_TRAIT_NIMBLE_ESCAPE">
+        <supports>Mechakobold, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
+        <requirements>[level:tamer:9]</requirements>
+        <description>
+            <p><b>Type:</b> Active (bonus action)</p>
+            <p>The mechakobold can take the Disengage or Hide action as a bonus action on each of its turns.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action">The mechakobold can take the Disengage or Hide action as a bonus action on each of its turns.</description>
+        </sheet>
+    </element>
+
+    <element name="Dynoboom II" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MECHAKOBOLD_ACTION_DYNOBOOM_II">
+        <supports>Mechakobold, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Dynoboom I</prerequisite>
+        <requirements>[level:tamer:13],ID_LT_HGTMH_MECHAKOBOLD_ACTION_DYNOBOOM_I</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>The damage of the mechakobold’s Dynoboom action increases to 31 (9d6), and the size of the explosion increases to a 20-foot-radius sphere. The mechakobold gains a +1 bonus to the save DC of this action.</p>
+            <p>When the mechakobold’s tamer reaches 17th level in the tamer class, the damage of this action increases to 42 (12d6).</p>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Short Rest">The damage of the mechakobold’s Dynoboom action increases to 31 (9d6), and the size of the explosion increases to a 20-foot-radius sphere. The mechakobold gains a +1 bonus to the save DC of this action.</description>
+            <description level="17" action="Action" usage="1/Short Rest">The damage of the mechakobold’s Dynoboom action increases to 42 (12d6), and the size of the explosion increases to a 20-foot-radius sphere. The mechakobold gains a +1 bonus to the save DC of this action.</description>
+        </sheet>
+        <rules>
+            <stat name="mechakobold:dc" value="1" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Uncanny Dodge" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MECHAKOBOLD_TRAIT_UNCANNY_DODGE">
+        <supports>Mechakobold, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Nimble Escape</prerequisite>
+        <requirements>[level:tamer:13],ID_LT_HGTMH_MECHAKOBOLD_TRAIT_NIMBLE_ESCAPE</requirements>
+        <description>
+            <p><b>Type:</b> Active (reaction)</p>
+            <p>When an attacker that the mechakobold can see hits it with an attack, the mechakobold can use its reaction to halve the attack’s damage against it.</p>
+        </description>
+        <sheet>
+            <description action="Reaction">When an attacker that the mechakobold can see hits it with an attack, the mechakobold can use its reaction to halve the attack’s damage against it.</description>
+        </sheet>
+    </element>
+
+    <element name="Proto-Attunement" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MECHAKOBOLD_TRAIT_PROTO_ATTUNEMENT">
+        <supports>Mechakobold, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 17th-level tamer</prerequisite>
+        <requirements>[level:tamer:17]</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>The mechakobold can attune to one magic item, gaining the magic item’s benefits. If the mechakobold is wearing or holding this item when it is recalled, the item is recalled with it into the vessel. When it attunes to this item, it becomes bonded to it; however this item doesn’t count towards the number of items a companion can be bonded to (see Item Bonding, page 201).</p>
+        </description>
+        <sheet>
+            <description>The mechakobold can attune to one magic item, gaining the magic item’s benefits. If the mechakobold is wearing or holding this item when it is recalled, the item is recalled with it into the vessel. When it attunes to this item, it becomes bonded to it; however this item doesn’t count towards the number of items a companion can be bonded to (see Item Bonding, page 201).</description>
+        </sheet>
+    </element>
+</elements>

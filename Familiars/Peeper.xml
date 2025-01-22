@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Familiars</name>
+        <description>Familiars from Heliana's Guide to Monster Hunting</description>
+        <update version="0.1.0">
+            <file name="Peeper.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Peeper.xml" />
+        </update>
+    </info>
+
+    <element name="Peeper" type="Companion" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_PEEPER">
+        <supports>Bespoke Companion</supports>
+        <description>
+            <div class="sidebar">
+                <p class="flavor">Sometimes, after a trying fight, it’s nice to have a friend tell you that you did well. And if you don’t have a friend—sometimes they get incinerated—a bonded companion that can never leave you will do. Isn’t that right, Peeper? …Peeper? No! I didn’t mean to say you weren’t my friend! Of course you’re my friend. Peeper…</p>
+                <p>— Heliana, Emotionally Supported</p>
+            </div>
+            <p><b>Type:</b> Aberration</p>
+            <p><b>Creature Component:</b> Dreamholder or other ’eye tyrant’</p>
+            <p><b>Bonus Tamer Improvement:</b> Eye Rays I and +2 Hit Dice</p>
+            <p>Peepers are creatures of hope, optimism, and positive vibes. The ultimate cheerleaders, they are as cowardly as they are encouraging. Their overdeveloped survival instincts kick in whenever a large enough source of fear rears its harrowing head, causing them to flee without hesitation.</p>
+            <p>If any of the peeper’s traits or actions require a saving throw, it is always against the peeper’s save DC, as calculated below.</p>
+            <center>
+                <p><b>Save DC</b> = 8 + the tamer’s proficiency bonus + the peeper’s Constitution modifier</p>
+            </center>
+            <h4>Monster Trainer</h4>
+            <p>In addition to the improvements you can normally give your companions, you can choose to grant the peeper the following improvements using your Monster Trainer feature:</p>
+            <div class="reference">
+                <div element="ID_LT_HGTMH_PEEPER_ACTION_EYE_RAYS_I" />
+                <div element="ID_LT_HGTMH_PEEPER_TRAIT_ENCOURAGER_I" />
+                <div element="ID_LT_HGTMH_PEEPER_ACTION_IMMATERIAL" />
+                <div element="ID_LT_HGTMH_PEEPER_TRAIT_GROWTH" />
+                <div element="ID_LT_HGTMH_PEEPER_ACTION_EYE_RAYS_II" />
+                <div element="ID_LT_HGTMH_PEEPER_ACTION_SLOWING_RAY" />
+                <div element="ID_LT_HGTMH_PEEPER_ACTION_TELEKINETIC_RAY" />
+                <div element="ID_LT_HGTMH_PEEPER_TRAIT_ENCOURAGER_II" />
+                <div element="ID_LT_HGTMH_PEEPER_TRAIT_INCORPOREALITY" />
+                <div element="ID_LT_HGTMH_PEEPER_ACTION_DISINTEGRATION_RAY" />
+            </div>
+        </description>
+        <setters>
+            <set name="strength">5</set>
+            <set name="dexterity">14</set>
+            <set name="constitution">14</set>
+            <set name="intelligence">13</set>
+            <set name="wisdom">10</set>
+            <set name="charisma">7</set>
+            <set name="ac">12</set>
+            <set name="hp">4 (1d4+2)</set>
+            <set name="speed">0 ft., fly 30 ft. (hover)</set>
+            <set name="senses">darkvision 60 ft., passive Perception 14</set>
+            <set name="languages">Common</set>
+            <set name="condition immunities">prone</set>
+            <set name="skills">Perception +4</set>
+            <set name="type">Aberration</set>
+            <set name="size">Tiny</set>
+            <set name="alignment">neutral good</set>
+            <set name="challenge">1/8</set>
+            <set name="proficiency">2</set>
+            <set name="traits">ID_LT_HGTMH_PEEPER_TRAIT_CONE_OF_ENCOURAGEMENT,ID_LT_HGTMH_PEEPER_TRAIT_SCAREDY,ID_LT_HGTMH_PEEPER_ACTION_EYE_RAYS_I,ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_HALF</set>
+            <set name="actions">ID_LT_HGTMH_PEEPER_ACTION_BITE</set>
+            <set name="reactions">ID_LT_HGTMH_PEEPER_REACTION_ENCOURAGE</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="12" />
+            <stat name="companion:hp:max" value="4" bonus="base" />
+            <stat name="companion:speed:fly" value="30" bonus="base" />
+            <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+            <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="double" />
+
+            <stat name="peeper:dc" value="8" />
+            <stat name="peeper:dc" value="proficiency" bonus="proficiency" />
+            <stat name="peeper:dc" value="companion:constitution:modifier" />
+
+            <grant type="Companion Action" id="ID_LT_HGTMH_PEEPER_ACTION_EYE_RAYS_I" requirements="[level:tamer:1]"/>
+        </rules>
+    </element>
+
+    <element name="Cone of Encouragement" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_PEEPER_TRAIT_CONE_OF_ENCOURAGEMENT">
+        <description>
+            <p>The peeper’s central eye emits a beatific gaze, creating an area of encouragement in a 30-foot cone. At the end of each of its turns, the peeper decides which way the cone faces. See Reactions for more details.</p>
+        </description>
+        <sheet>
+            <description>The peeper’s central eye emits a beatific gaze, creating an area of encouragement in a 30-foot cone. At the end of each of its turns, the peeper decides which way the cone faces. See Reactions for more details.</description>
+        </sheet>
+    </element>
+
+    <element name="Scaredy" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_PEEPER_TRAIT_SCAREDY">
+        <description>
+            <p>The peeper has disadvantage on ability checks and saving throws against the frightened condition, and automatically fails these saving throws if it can see the source of its fear and the source is two or more size categories larger than it.</p>
+        </description>
+        <sheet>
+            <description>The peeper has disadvantage on ability checks and saving throws against the frightened condition, and automatically fails these saving throws if it can see the source of its fear and the source is two or more size categories larger than it.</description>
+        </sheet>
+    </element>
+
+    <element name="Bite" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_PEEPER_ACTION_BITE">
+        <requirements>!ID_LT_HGTMH_PEEPER_TRAIT_GROWTH</requirements>
+        <description>
+            <p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Encourage" type="Companion Reaction" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_PEEPER_REACTION_ENCOURAGE">
+        <description>
+            <p>As a reaction when a creature within the peeper’s cone of encouragement makes an attack roll or saving throw, the peeper can emit verbal or psychic encouragement, granting the target a bonus d4 to its roll.</p>
+        </description>
+        <sheet usage="2/Day">
+            <description>As a reaction when a creature within the peeper’s cone of encouragement makes an attack roll or saving throw, the peeper can emit verbal or psychic encouragement, granting the target a bonus d4 to its roll.</description>
+        </sheet>
+    </element>
+
+    <!-- Companion's Improvements -->
+    <element name="Eye Rays I" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_PEEPER_ACTION_EYE_RAYS_I">
+        <supports>Peeper, Companion Improvement</supports>
+        <prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
+        <requirements>[level:tamer:1],!ID_LT_HGTMH_PEEPER_ACTION_EYE_RAYS_II</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>The peeper learns to use its eye stalks. As an action, the peeper can shoot one of the following magical eye rays at random (roll a d4), targeting a creature it can see within 60 feet of it:</p>
+                <ul>
+                    <li><b>1. Charm Ray.</b> The target must succeed on a Wisdom saving throw or be charmed by the peeper for 1 minute, or until the peeper harms the target.</li>
+                    <li><b>2. Fear Ray.</b> The target must succeed on a Wisdom saving throw or be frightened of the peeper until the end of the peeper’s next turn.</li>
+                    <li><b>3. Nightmare Ray.</b> The target must succeed on an Intelligence saving throw or take 5 (2d4) psychic damage as it is assailed by illusory manifestations of its fears.</li>
+                    <li><b>4. Wounding Ray.</b> The target must make a Constitution saving throw, taking 7 (3d4) necrotic damage on a failed save, or half as much damage on a successful one.</li>
+                </ul>
+            <p>The peeper gains this improvement when it becomes a companion; it doesn’t cost an improvement.</p>
+        </description>
+        <sheet action="Action">
+            <description>The peeper learns to use its eye stalks. As an action, the peeper can shoot one of the following magical eye rays at random (roll a d4), targeting a creature it can see within 60 feet of it:&#13;
+            1. Charm Ray. The target must succeed on a DC {{peeper:dc}} Wisdom saving throw or be charmed by the peeper for 1 minute, or until the peeper harms the target.&#13;
+            2. Fear Ray. The target must succeed on a DC {{peeper:dc}} Wisdom saving throw or be frightened of the peeper until the end of the peeper’s next turn.&#13;
+            3. Nightmare Ray. The target must succeed on a DC {{peeper:dc}} Intelligence saving throw or take 5 (2d4) psychic damage as it is assailed by illusory manifestations of its fears.&#13;
+            4. Wounding Ray. The target must make a DC {{peeper:dc}} Constitution saving throw, taking 7 (3d4) necrotic damage on a failed save, or half as much damage on a successful one.</description>
+        </sheet>
+        <rules>
+            <stat name="companion:hp:max" value="5" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+        </rules>
+    </element>
+
+    <element name="Encourager I" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_PEEPER_TRAIT_ENCOURAGER_I">
+        <supports>Peeper, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>The size of the peeper’s Cone of Encouragement increases to 60 feet and Encourage’s bonus increases to a d6.</p>
+            <p>When the peeper’s tamer reaches 9th level in the tamer class, the bonus increases to a d8 and the peeper gains one additional use of Encourage (3/Day).</p>
+        </description>
+        <sheet>
+            <description>The size of the peeper’s Cone of Encouragement increases to 60 feet and Encourage’s bonus increases to a d6.</description>
+            <description level="9">The size of the peeper’s Cone of Encouragement increases to 60 feet and Encourage’s bonus increases to a d8.</description>
+        </sheet>
+    </element>
+
+    <element name="Immaterial" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_PEEPER_ACTION_IMMATERIAL">
+        <supports>Peeper, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p><b>Type:</b> Active (bonus action)</p>
+            <p>As a bonus action, the peeper can turn partially incorporeal. Until the start of its next turn, it has resistance to bludgeoning, piercing, and slashing damage.</p>
+            <p>After the peeper uses this action, it can’t do so again until its tamer finishes a short or long rest.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action" usage="1/Short Rest">As a bonus action, the peeper can turn partially incorporeal. Until the start of its next turn, it has resistance to bludgeoning, piercing, and slashing damage. After the peeper uses this action, it can’t do so again until its tamer finishes a short or long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Growth" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_PEEPER_TRAIT_GROWTH">
+        <supports>Peeper, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>The peeper’s size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its bite attack and Eye Rays action increase to a d6.</p>
+        </description>
+        <sheet>
+            <description>The peeper’s size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its bite attack and Eye Rays action increase to a d6.</description>
+        </sheet>
+        <rules>
+            <stat name="companion:hp:max" value="2" />
+            <stat name="companion:hp:max" value="5" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+
+            <grant type="Companion Action" id="ID_LT_HGTMH_PEEPER_ACTION_BITE_GROWTH" />
+            <grant type="Companion Action" id="ID_LT_HGTMH_PEEPER_ACTION_EYE_RAYS_I_GROWTH" />
+        </rules>
+    </element>
+    <element name="Bite" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_PEEPER_ACTION_BITE_GROWTH">
+        <description>
+            <p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</description>
+        </sheet>
+    </element>
+    <element name="Eye Rays I" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_PEEPER_ACTION_EYE_RAYS_I_GROWTH">
+        <description>
+            <p>The peeper learns to use its eye stalks. As an action, the peeper can shoot one of the following magical eye rays at random (roll a d4), targeting a creature it can see within 60 feet of it:</p>
+            <p><b>1. Charm Ray.</b> The target must succeed on a Wisdom saving throw or be charmed by the peeper for 1 minute, or until the peeper harms the target.</p>
+            <p><b>2. Fear Ray.</b> The target must succeed on a Wisdom saving throw or be frightened of the peeper until the end of the peeper’s next turn.</p>
+            <p><b>3. Nightmare Ray.</b> The target must succeed on an Intelligence saving throw or take 6 (2d6) psychic damage as it is assailed by illusory manifestations of its fears.</p>
+            <p><b>4. Wounding Ray.</b> The target must make a Constitution saving throw, taking 10 (3d6) necrotic damage on a failed save, or half as much damage on a successful one.</p>
+        </description>
+        <sheet action="Action">
+            <description>The peeper learns to use its eye stalks. As an action, the peeper can shoot one of the following magical eye rays at random (roll a d4), targeting a creature it can see within 60 feet of it:&#13;
+            1. Charm Ray. The target must succeed on a DC {{peeper:dc}} Wisdom saving throw or be charmed by the peeper for 1 minute, or until the peeper harms the target.&#13;
+            2. Fear Ray. The target must succeed on a DC {{peeper:dc}} Wisdom saving throw or be frightened of the peeper until the end of the peeper’s next turn.&#13;
+            3. Nightmare Ray. The target must succeed on a DC {{peeper:dc}} Intelligence saving throw or take 6 (2d6) psychic damage as it is assailed by illusory manifestations of its fears.&#13;
+            4. Wounding Ray. The target must make a DC {{peeper:dc}} Constitution saving throw, taking 10 (3d6) necrotic damage on a failed save, or half as much damage on a successful one.</description>
+        </sheet>
+    </element>
+
+    <element name="Eye Rays II" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_PEEPER_ACTION_EYE_RAYS_II">
+        <supports>Peeper, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 5th-level tamer, Eye Rays I</prerequisite>
+        <requirements>[level:tamer:5],ID_LT_HGTMH_PEEPER_ACTION_EYE_RAYS_I</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>When the peeper uses its Eye Rays action, it shoots two rays at random instead of one (reroll duplicates), choosing one or two targets it can see within 120 feet of it.</p>
+        </description>
+        <sheet>
+            <description>When the peeper uses its Eye Rays action, it shoots two rays at random instead of one (reroll duplicates), choosing one or two targets it can see within 120 feet of it.</description>
+        </sheet>
+    </element>
+
+    <element name="Slowing Ray" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_PEEPER_ACTION_SLOWING_RAY">
+        <supports>Peeper, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>As an action, the peeper can fire a ray at one creature it can see within range of its eye rays (see Eye Rays I &amp; II). The target must make a Dexterity saving throw. On a failed save, the target’s speed is halved for 1 minute. In addition, the creature can’t take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. To maintain this effect, the peeper must concentrate on it as if it were concentrating on a spell.</p>
+            <p>After the peeper uses this action, it can’t do so again until its tamer finishes a short or long rest.</p>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Short Rest">As an action, the peeper can fire a ray at one creature it can see within range of its eye rays (see Eye Rays I &amp; II). The target must make a DC {{peeper:dc}} Dexterity saving throw. On a failed save, the target’s speed is halved for 1 minute. In addition, the creature can’t take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. To maintain this effect, the peeper must concentrate on it as if it were concentrating on a spell. After the peeper uses this action, it can’t do so again until its tamer finishes a short or long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Telekinetic Ray" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_PEEPER_ACTION_TELEKINETIC_RAY">
+        <supports>Peeper, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
+        <requirements>[level:tamer:9]</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>As an action, the peeper can fire a ray at one object or creature it can see within range of its eye rays (see Eye Rays I &amp; II). If the target is a creature, it must succeed on a Strength saving throw or the peeper can move it up to 30 feet in any direction. It is restrained by the ray’s telekinetic grip until the start of the peeper’s next turn or until the peeper is incapacitated.</p>
+            <p>If the target is an object weighing 300 pounds or less that isn’t being worn or carried, the peeper can move it up to 30 feet in any direction. The peeper can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.</p>
+            <p>After the peeper uses this action, it can’t do so again until its tamer finishes a short or long rest.</p>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Short Rest">As an action, the peeper can fire a ray at one object or creature it can see within range of its eye rays (see Eye Rays I &amp; II). If the target is a creature, it must succeed on a DC {{peeper:dc}} Strength saving throw or the peeper can move it up to 30 feet in any direction. It is restrained by the ray’s telekinetic grip until the start of the peeper’s next turn or until the peeper is incapacitated.&#13;
+            If the target is an object weighing 300 pounds or less that isn’t being worn or carried, the peeper can move it up to 30 feet in any direction. The peeper can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container. After the peeper uses this action, it can’t do so again until its tamer finishes a short or long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Encourager II" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_PEEPER_TRAIT_ENCOURAGER_II">
+        <supports>Peeper, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Encourager I</prerequisite>
+        <requirements>[level:tamer:13],ID_LT_HGTMH_PEEPER_TRAIT_ENCOURAGER_I</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>The size of the peeper’s Cone of Encouragement increases to 120 feet and Encourage’s bonus increases to a d10. The peeper gains one additional use of Encourage (4/Day).</p>
+            <p>When the peeper’s tamer reaches 17th level in the tamer class, Encourage’s bonus increases to a d12 and the peeper gains one additional use of Encourage (5/Day).</p>
+        </description>
+        <sheet>
+            <description>The size of the peeper’s Cone of Encouragement increases to 120 feet and Encourage’s bonus increases to a d10. The peeper gains one additional use of Encourage (4/Day).</description>
+            <description level="17">The size of the peeper’s Cone of Encouragement increases to 120 feet and Encourage’s bonus increases to a d12. The peeper gains one additional use of Encourage (5/Day).</description>
+        </sheet>
+    </element>
+
+    <element name="Incorporeality" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_PEEPER_TRAIT_INCORPOREALITY">
+        <supports>Peeper, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Immaterial</prerequisite>
+        <requirements>[level:tamer:13],ID_LT_HGTMH_PEEPER_ACTION_IMMATERIAL</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>While the peeper is under the effect of its Immaterial trait, it can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</p>
+        </description>
+        <sheet>
+            <description>While the peeper is under the effect of its Immaterial trait, it can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</description>
+        </sheet>
+    </element>
+
+    <element name="Disintegration Ray" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_PEEPER_ACTION_DISINTEGRATION_RAY">
+        <supports>Peeper, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 17th-level tamer</prerequisite>
+        <requirements>[level:tamer:17]</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>As an action, the peeper can fire a ray at one object or creature it can see within range of its eye rays (see Eye Rays I &amp; II). If the target is a creature, it must succeed on a Dexterity saving throw or take 42 (12d6) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine grey dust.</p>
+            <p>If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger nonmagical object or creation of magical force, this ray disintegrates a 10-foot cube of it.</p>
+            <p>After the peeper uses this action, it can’t do so again until its tamer finishes a long rest.</p>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Long Rest">As an action, the peeper can fire a ray at one object or creature it can see within range of its eye rays (see Eye Rays I &amp; II). If the target is a creature, it must succeed on a DC {{peeper:dc}} Dexterity saving throw or take 42 (12d6) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine grey dust.&#13;
+            If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger nonmagical object or creation of magical force, this ray disintegrates a 10-foot cube of it. After the peeper uses this action, it can’t do so again until its tamer finishes a long rest.</description>
+        </sheet>
+    </element>
+</elements>
