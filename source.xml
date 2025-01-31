@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="sources.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/source.xml" />
+		</update>
+	</info>
+	<element name="Heliana's Guide to Monster Hunting" type="Setting" source="Loot Tavern" id="ID_LT_SOURCE_HGTMH">
+		<description>
+			<![CDATA[<p><strong>Heliana’s Guide to Monster Hunting is a collection of ideas.</strong></p><p> You are encouraged to use whichever pieces of this book you like and change the ones you don’t. If there is a DC that seems off, a name that doesn’t fit, or a quest hook that seems incongruous, then make it your own. Remember: if you’re all having fun, you’re doing it right.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">HGTMH</set>
+			<set name="url">https://loottavern.com/product/helianas-guide-to-monster-hunting/</set>
+			<set name="image">https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/BOO_Heliana.jpg</set>
+			<set name="errata">https://loottavern.com/Heliana_Errata/Helianas_Guide_Errata_-_October_9th_2024_-_v1.0.pdf</set>
+			<set name="author" abbreviation="LT" url="https://loottavern.com/">Loot Tavern</set>
+			<set name="third-party">true</set>
+		</setters>
+	</element>
+</elements>

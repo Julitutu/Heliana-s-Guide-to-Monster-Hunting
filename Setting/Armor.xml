@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Heliana's Guide to Monster Hunting</name>
+		<description>Items from Heliana's Guide to Monster Hunting</description>
+		<update version="0.1.0">
+			<file name="Armor.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Setting/Armor.xml" />
+		</update>
+	</info>
+
+	<!-- Armor -->
+	<element name="Breastplank" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BREASTPLANK_UNCOMMON">
+		<description>
+			<p>The mundane appearance of this suit of armour belies the danger of its true nature. The wood feels soft and sticky to the touch, and eyes and teeth spontaneously form all over its surface as the mimic grows bolder… and hungrier.</p>
+			<p><strong><em>Sticky Situation.</em></strong> While you’re wearing this armour, creatures have disadvantage on ability checks made to avoid or escape being grappled by you. A creature grappled by you takes 1d10 acid damage at the start of each of its turns.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="breastplate, half plate, or plate">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="armor">ID_WOTC_ARMOR_MEDIUM_BREASTPLATE||ID_WOTC_ARMOR_MEDIUM_HALF_PLATE||ID_WOTC_ARMOR_HEAVY_PLATE</set>
+		</setters>
+	</element>
+	<element name="Breastplank" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BREASTPLANK_RARE">
+		<description>
+			<p>The mundane appearance of this suit of armour belies the danger of its true nature. The wood feels soft and sticky to the touch, and eyes and teeth spontaneously form all over its surface as the mimic grows bolder… and hungrier.</p>
+			<p><strong><em>Sticky Situation.</em></strong> While you’re wearing this armour, creatures have disadvantage on ability checks made to avoid or escape being grappled by you. A creature grappled by you takes 1d12 acid damage at the start of each of its turns.</p>
+			<p><strong><em>Quick Grip.</em></strong> While wearing this armour, you can attempt to grapple a creature as a bonus action.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="breastplate, half plate, or plate">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="armor">ID_WOTC_ARMOR_MEDIUM_BREASTPLATE||ID_WOTC_ARMOR_MEDIUM_HALF_PLATE||ID_WOTC_ARMOR_HEAVY_PLATE</set>
+		</setters>
+	</element>
+	<element name="Breastplank" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BREASTPLANK_VERY_RARE">
+		<description>
+			<p>The mundane appearance of this suit of armour belies the danger of its true nature. The wood feels soft and sticky to the touch, and eyes and teeth spontaneously form all over its surface as the mimic grows bolder… and hungrier.</p>
+			<p><strong><em>Sticky Situation.</em></strong> While you’re wearing this armour, creatures have disadvantage on ability checks made to avoid or escape being grappled by you. A creature grappled by you takes 1d12 acid damage at the start of each of its turns.</p>
+			<p><strong><em>Quick Grip.</em></strong> While wearing this armour, you can attempt to grapple a creature as a bonus action.</p>
+			<p><strong><em>Tongue Lash.</em></strong> While wearing this armour, you can use a bonus action to cause the mimic’s tongue to elongate and attempt to pull a creature you can see within 15 feet of you. The target must succeed on a DC 16 Strength saving throw or take 1d6 bludgeoning damage and be pulled up to 15 feet towards you. A Huge or larger creature automatically succeeds on this saving throw. If this property pulls a creature to within 5 feet of you, you can immediately attempt to grapple it as part of the same bonus action.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="breastplate, half plate, or plate">Armor</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="armor">ID_WOTC_ARMOR_MEDIUM_BREASTPLATE||ID_WOTC_ARMOR_MEDIUM_HALF_PLATE||ID_WOTC_ARMOR_HEAVY_PLATE</set>
+		</setters>
+	</element>
+	<element name="Haemscale" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_HAEMSCALE_UNCOMMON">
+		<description>
+			<p>Fashioned from the claws and shard-scales of a magnetite dragon, this protective armour can become temporarily weightless when exposed to extreme cold. The wearer of this armour can exert minor control over ferrous metals within a close proximity.</p>
+			<p>This armour has 7 charges and regains 1d4 + 3 expended charges daily at dawn.</p>
+			<p><strong><em>Arcanomagnetic Repulsion.</em></strong> You can expend 1 charge to create one of the following effects while you wear this armour.</p>
+			<ul>
+				<li><strong>Repulse.</strong> When you are targeted by a weapon attack using a ferrous weapon or ammunition, you can use your reaction to cause a pulse of arcanomagnetism to throw the weapon or ammunition off course, imposing disadvantage on the attack roll.</li>
+				<li><strong>Aura.</strong> As a bonus action, you can create an arcanomagnetic aura with a 20-foot radius centred on you that moves with you and that lasts until the start of your next turn. This area is difficult terrain for creatures of your choice that are made of ferrous metal or wearing ferrous armour.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="medium or heavy">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="charges">7</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+		</setters>
+	</element>
+	<element name="Haemscale" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_HAEMSCALE_RARE">
+		<description>
+			<p>Fashioned from the claws and shard-scales of a magnetite dragon, this protective armour can become temporarily weightless when exposed to extreme cold. The wearer of this armour can exert minor control over ferrous metals within a close proximity.</p>
+			<p>This armour has 7 charges and regains 1d4 + 3 expended charges daily at dawn.</p>
+			<p>While you wear this armour, you have resistance to cold damage.</p>
+			<p><strong><em>Arcanomagnetic Repulsion.</em></strong> You can expend 1 charge to create one of the following effects while you wear this armour.</p>
+			<ul>
+				<li><strong>Repulse.</strong> When you are targeted by a weapon attack using a ferrous weapon or ammunition, you can use your reaction to cause a pulse of arcanomagnetism to throw the weapon or ammunition off course, imposing disadvantage on the attack roll.</li>
+				<li><strong>Aura.</strong> As a bonus action, you can create an arcanomagnetic aura with a 30-foot radius centred on you that moves with you and that lasts until the start of your next turn. This area is difficult terrain for creatures of your choice that are made of ferrous metal or wearing ferrous armour.</li>
+			</ul>
+			<p><strong><em>Superconductor.</em></strong> Whenever you take cold damage while you wear this armour, you gain a flying speed of 30 feet until the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="medium or heavy">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="charges">7</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Haemscale" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_HAEMSCALE_VERY_RARE">
+		<description>
+			<p>Fashioned from the claws and shard-scales of a magnetite dragon, this protective armour can become temporarily weightless when exposed to extreme cold. The wearer of this armour can exert minor control over ferrous metals within a close proximity.</p>
+			<p>This armour has 7 charges and regains 1d4 + 3 expended charges daily at dawn.</p>
+			<p>While you wear this armour, you have resistance to cold damage.</p>
+			<p><strong><em>Arcanomagnetic Repulsion.</em></strong> You can expend 1 charge to create one of the following effects while you wear this armour.</p>
+			<ul>
+				<li><strong>Repulse.</strong> When you are targeted by a weapon attack using a ferrous weapon or ammunition, you can use your reaction to cause a pulse of arcanomagnetism to throw the weapon or ammunition off course, imposing disadvantage on the attack roll.</li>
+				<li><strong>Aura.</strong> As a bonus action, you can create an arcanomagnetic aura with a 40-foot radius centred on you that moves with you and that lasts until the start of your next turn. This area is difficult terrain for creatures of your choice that are made of ferrous metal or wearing ferrous armour.</li>
+			</ul>
+			<p><strong><em>Superconductor.</em></strong> Whenever you take cold damage while you wear this armour, you gain a flying speed of 40 feet until the end of your next turn.</p>
+			<p><strong><em>Swordstorm.</em></strong> As an action, you can cast the <em>blade barrier</em> spell (save DC 17), adding any ferrous objects in the vicinity to the barrier. At the GM’s discretion, if there are many ferrous objects in the area, increase the barrier’s damage by 2d10. Once you activate this property, you can’t do so again until the following dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="medium or heavy">Armor</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="charges">7</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Overgrown Barkshield" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_OVERGROWN_BARKSHIELD_UNCOMMON">
+		<description>
+			<p>This crude shield made of bark and wood teems with life as if it were still part of a tree. The smell of sap and various fragrant flowers perfumes the air around you.</p>
+			<p><strong><em>Bark Armour.</em></strong> As an action, you can place the shield on your torso and speak the command word, causing the wood and vines to wrap around your figure. For one hour, or until you end this effect as an action, you are unable to hold a shield and you gain the following benefits:</p>
+			<ul>
+				<li>You gain 1d8 temporary hit points.</li>
+				<li>You gain the benefits of the <i>barkskin</i> spell (no concentration required).</li>
+				<li>You have advantage on saving throws made to resist being poisoned.</li>
+			</ul>
+			<p>When this effect ends, the barkshield falls from its place on your torso, fading to a lifeless shade of grey. This property can’t be used again until you finish a long rest when the shield blooms with life once more.</p>
+			<p><strong><em>Vines and Thorns.</em></strong> While attuned to this shield, you can use an action to animate one of the shield’s thorny vines and make a melee weapon attack (+5 to hit) against one target within 30 feet of you. On a hit, the target takes 2d8 piercing damage, and, if the target is a Large or smaller creature, or an object that weighs less than 500 pounds, you pull it up to 10 feet closer to you.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+	</element>
+	<element name="Overgrown Barkshield" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_OVERGROWN_BARKSHIELD_RARE">
+		<description>
+			<p>This crude shield made of bark and wood teems with life as if it were still part of a tree. The smell of sap and various fragrant flowers perfumes the air around you.</p>
+			<p><strong><em>Bark Armour.</em></strong> As an action, you can place the shield on your torso and speak the command word, causing the wood and vines to wrap around your figure. For one hour, or until you end this effect as an action, you are unable to hold a shield and you gain the following benefits:</p>
+			<ul>
+				<li>You gain 3d8 temporary hit points.</li>
+				<li>You gain the benefits of the <i>barkskin</i> spell (no concentration required).</li>
+				<li>You have advantage on saving throws made to resist being poisoned.</li>
+			</ul>
+			<p>When this effect ends, the barkshield falls from its place on your torso, fading to a lifeless shade of grey. This property can’t be used again until you finish a long rest when the shield blooms with life once more.</p>
+			<p><strong><em>Vines and Thorns.</em></strong> While attuned to this shield, you can use an action to animate one of the shield’s thorny vines and make a melee weapon attack (+8 to hit) against one target within 30 feet of you. On a hit, the target takes 3d8 piercing damage, and, if the target is a Large or smaller creature, or an object that weighs less than 500 pounds, you pull it up to 10 feet closer to you.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+	</element>
+	<element name="Overgrown Barkshield" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_OVERGROWN_BARKSHIELD_VERY_RARE">
+		<description>
+			<p>This crude shield made of bark and wood teems with life as if it were still part of a tree. The smell of sap and various fragrant flowers perfumes the air around you.</p>
+			<p><strong><em>Bark Armour.</em></strong> As an action, you can place the shield on your torso and speak the command word, causing the wood and vines to wrap around your figure. For one hour, or until you end this effect as an action, you are unable to hold a shield and you gain the following benefits:</p>
+			<ul>
+				<li>You gain 5d8 temporary hit points.</li>
+				<li>You gain the benefits of the <i>barkskin</i> spell (no concentration required).</li>
+				<li>You have advantage on saving throws made to resist being poisoned.</li>
+			</ul>
+			<p>When this effect ends, the barkshield falls from its place on your torso, fading to a lifeless shade of grey. This property can’t be used again until you finish a long rest when the shield blooms with life once more.</p>
+			<p><strong><em>Vines and Thorns.</em></strong> While attuned to this shield, you can use an action to animate one of the shield’s thorny vines and make a melee weapon attack (+10 to hit) against one target within 30 feet of you. On a hit, the target takes 4d8 piercing damage, and, if the target is a Large or smaller creature, or an object that weighs less than 500 pounds, you pull it up to 10 feet closer to you.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+	</element>
+	<element name="Dragonmaw Shield" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_DRAGONMAW_SHIELD">
+		<description>
+			<p>With a hinged lower portion, this shield has the appearance of a dragon’s roaring mouth, complete with fiery interior. The dragonmaw shield’s opening is, in fact, a portal to a pocket dimension. This pocket dimension is a 10-foot cube containing a forge that, due to the insulating properties of pocket dimensions, never cools. It’s perfect for getting rid of trash, destroying incriminating evidence, or smelting down looted weapons.</p>
+			<p><strong><em>Gnash.</em></strong> When a creature misses you with a melee weapon attack, you can use your reaction to force the creature to make a DC 15 Dexterity saving throw as the shield chomps at their weapon with its fiery maw. On a failed save, the creature takes 1d10 fire damage as the shield breathes a plume of scalding air at them. In addition, if the creature’s weapon is nonmagical, then any flammable components, such as those made of wood, are destroyed.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+	</element>	
+</elements>

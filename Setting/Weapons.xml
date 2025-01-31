@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Heliana's Guide to Monster Hunting</name>
+		<description>Items from Heliana's Guide to Monster Hunting</description>
+		<update version="0.1.0">
+			<file name="Weapons.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Setting/Weapons.xml" />
+		</update>
+	</info>
+
+	<!-- Weapons -->
+	<element name="Claw" type="Weapon" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WEAPON_CLAW">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_LT_HGTMH_WEAPON_PROPERTY_ATTACHED, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		<description>
+			<p>A claw is a simple, bladed melee weapon worn as a glove that deals 1d6 slashing damage on a hit and has the attached and light properties.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLAW</set>
+		</setters>
+	</element>
+	<element name="Nunchaku" type="Weapon" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WEAPON_NUNCHAKU">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_LT_HGTMH_WEAPON_PROPERTY_FLOURISH</supports>
+		<description>
+			<p>Nunchaku are martial melee weapons composed of two hard batons connected to one another by a short chain or tether. They have the finesse, versatile (1d8), and Special: Flourish properties, and deal 1d6 bludgeoning damage on a hit.</p>
+			<p class="indent"><b>Special: Flourish.</b> When you are wielding the nunchaku in two hands and take the Attack action on your turn, you can attempt to flourish with the weapon immediately before you make your first attack. To flourish, make a DC 13 Dexterity check, adding your proficiency bonus if you are proficient with nunchaku. On a success, you gain a +2 bonus to the first attack roll you make this turn. On a failure, you deal bludgeoning damage to yourself equal to your proficiency bonus and gain no bonus from your flourishes this turn.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d6</set>
+			<set name="versatile">1d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_NUNCHUCKS</set>
+		</setters>
+	</element>
+	<element name="Slingshot" type="Weapon" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WEAPON_SLINGSHOT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p>Slingshots are simple ranged weapons comprising an elasticated material strung between a Y-frame brace. They have the two-handed and ranged (20/60) properties and deal 1d6 bludgeoning damage on a hit. They use the same ammunition as slings and are commonly used by rakins.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">20/60</set>
+			<set name="damage" type="bludgeoning">1d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SLINGSHOT</set>
+		</setters>
+	</element>
+	<element name="Tetherhook" type="Weapon" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WEAPON_TETHERHOOK">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_LT_HGTMH_WEAPON_PROPERTY_HOOKPULL</supports>
+		<description>
+			<p>A tetherhook is a martial melee weapon with the reach, two-handed, and Special: Hookpull properties. It is comprised of a hook attached to a chain or strap and deals 1d8 piercing damage on a hit.</p>
+			<p class="indent"><b>Special: Hookpull.</b> As a bonus action immediately after you hit a target no more than one size larger than you with an attack using the tetherhook, you can attempt to hook the target using the tetherhook’s reach. Make a Strength (Athletics) check contested by the target’s Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use). If you succeed, the target is hooked and can’t move further away from you. A hooked creature is no longer hooked if you release the tether with both hands, but only one hand is required to keep a creature hooked. A hooked creature can use its action to escooze. To do so, it must succeed on a Strength (Athletics) or Dexterity (Acrobatics) check contested by your Strength (Athletics) check.</p>
+			<p class="indent">As part of the bonus action to hook the target, and as a bonus action on any of your subsequent turns while it remains hooked, you can pull the creature 5 feet closer to you. If the target is an object that isn’t fixed in place and that weighs less than your push, drag, or lift capacity, you can pull it 5 feet closer to you as a bonus action after you hit it with an attack.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_TETHERHOOK</set>
+		</setters>
+	</element>
+	<element name="Twinblade" type="Weapon" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WEAPON_TWINBLADE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_LT_HGTMH_WEAPON_PROPERTY_WHIRL</supports>
+		<description>
+			<p>Twinblades are martial melee weapons; double-bladed polearms that rely on the user’s dexterity to keep them in constant motion. They have the finesse and two-handed properties, and deal 2d4 slashing damage on a hit. They also have the Special: Whirl property.</p>
+			<p class="indent"><b>Special: Whirl.</b> When you are wielding the twinblade in two hands, you can use a bonus action to attempt to whirl the weapon. To whirl, make a DC 10 Dexterity check, adding your proficiency bonus if you are proficient with twinblades. On a success, you gain a +1 bonus to your AC until the start of your next turn, the whirling blades acting as a barrier against attacks. On a result of 15 or higher, you gain a +2 bonus, instead. On a failure, you deal slashing damage to yourself equal to your proficiency bonus and gain no bonus to your AC from the whirl this turn.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">2d4</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_TWINBLADE</set>
+		</setters>
+	</element>
+
+	<element name="Tommybows Hand Crossbow (2)" type="Weapon" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WEAPON_TOMMYBOWS2_CROSSBOW_HAND">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_DAMAGE_TYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_2_SHOTS, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS,ID_LT_HGTMH_WEAPON_GROUP_TOMMYBOWS</supports>
+		<description>
+			<p>Tommybows are repeating crossbows that mirror the three types of normal crossbows: hand, heavy, and light. They are composed of vertically-stacked bows upon a crossbow’s chassis, an unwieldy arrangement that reduces their effective range in comparison to their crossbow counterparts.</p>
+			<p class="indent"><b>Reload.</b>Tommybows replace the loading property of their crossbow counterpart with the reload property. The cost of the item is proportional to the amount of ammunition it can hold (the value in parentheses), with the maximum reload (6) tommybow costing six times its crossbow equivalent’s price.</p>
+			<h5>Tommybow Value	</h5>
+			<table>
+				<thead>
+					<tr><td>Base Crossbow</td><td>Reload (2)</td><td>Reload (3)</td><td>Reload (4)</td><td>Reload (5)</td><td>Reload (6)</td><td>Range</td></tr>
+				</thead>
+				<tr><td>Hand crossbow</td><td>150 gp</td><td>225 gp</td><td>300 gp</td><td>375 gp</td><td>450 gp</td><td>30/60 ft.</td></tr>
+				<tr><td>Light crossbow</td><td>50 gp</td><td>75 gp</td><td>100 gp</td><td>125 gp</td><td>150 gp</td><td>80/160 ft.</td></tr>
+				<tr><td>Heavy crossbow</td><td>100 gp</td><td>150 gp</td><td>200 gp</td><td>250 gp</td><td>300 gp</td><td>100/200 ft.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">30/60</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND</set>
+			<set name="reload">2</set>
+		</setters>
+	</element>
+	<element name="Tommybows Hand Crossbow (3)" type="Weapon" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WEAPON_TOMMYBOWS3_CROSSBOW_HAND">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_DAMAGE_TYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_LT_HGTMH_WEAPON_PROPERTY_FIREARM_RELOAD_3_SHOTS, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS,ID_LT_HGTMH_WEAPON_GROUP_TOMMYBOWS</supports>
+		<description>
+			<p>Tommybows are repeating crossbows that mirror the three types of normal crossbows: hand, heavy, and light. They are composed of vertically-stacked bows upon a crossbow’s chassis, an unwieldy arrangement that reduces their effective range in comparison to their crossbow counterparts.</p>
+			<p class="indent"><b>Reload.</b>Tommybows replace the loading property of their crossbow counterpart with the reload property. The cost of the item is proportional to the amount of ammunition it can hold (the value in parentheses), with the maximum reload (6) tommybow costing six times its crossbow equivalent’s price.</p>
+			<h5>Tommybow Value	</h5>
+			<table>
+				<thead>
+					<tr><td>Base Crossbow</td><td>Reload (2)</td><td>Reload (3)</td><td>Reload (4)</td><td>Reload (5)</td><td>Reload (6)</td><td>Range</td></tr>
+				</thead>
+				<tr><td>Hand crossbow</td><td>150 gp</td><td>225 gp</td><td>300 gp</td><td>375 gp</td><td>450 gp</td><td>30/60 ft.</td></tr>
+				<tr><td>Light crossbow</td><td>50 gp</td><td>75 gp</td><td>100 gp</td><td>125 gp</td><td>150 gp</td><td>80/160 ft.</td></tr>
+				<tr><td>Heavy crossbow</td><td>100 gp</td><td>150 gp</td><td>200 gp</td><td>250 gp</td><td>300 gp</td><td>100/200 ft.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">225</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">30/60</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND</set>
+			<set name="reload">3</set>
+		</setters>
+	</element>
+	<element name="Tommybows Hand Crossbow (4)" type="Weapon" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WEAPON_TOMMYBOWS4_CROSSBOW_HAND">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_DAMAGE_TYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_LT_HGTMH_WEAPON_PROPERTY_FIREARM_RELOAD_4_SHOTS, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS,ID_LT_HGTMH_WEAPON_GROUP_TOMMYBOWS</supports>
+		<description>
+			<p>Tommybows are repeating crossbows that mirror the three types of normal crossbows: hand, heavy, and light. They are composed of vertically-stacked bows upon a crossbow’s chassis, an unwieldy arrangement that reduces their effective range in comparison to their crossbow counterparts.</p>
+			<p class="indent"><b>Reload.</b>Tommybows replace the loading property of their crossbow counterpart with the reload property. The cost of the item is proportional to the amount of ammunition it can hold (the value in parentheses), with the maximum reload (6) tommybow costing six times its crossbow equivalent’s price.</p>
+			<h5>Tommybow Value	</h5>
+			<table>
+				<thead>
+					<tr><td>Base Crossbow</td><td>Reload (2)</td><td>Reload (3)</td><td>Reload (4)</td><td>Reload (5)</td><td>Reload (6)</td><td>Range</td></tr>
+				</thead>
+				<tr><td>Hand crossbow</td><td>150 gp</td><td>225 gp</td><td>300 gp</td><td>375 gp</td><td>450 gp</td><td>30/60 ft.</td></tr>
+				<tr><td>Light crossbow</td><td>50 gp</td><td>75 gp</td><td>100 gp</td><td>125 gp</td><td>150 gp</td><td>80/160 ft.</td></tr>
+				<tr><td>Heavy crossbow</td><td>100 gp</td><td>150 gp</td><td>200 gp</td><td>250 gp</td><td>300 gp</td><td>100/200 ft.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">30/60</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND</set>
+			<set name="reload">4</set>
+		</setters>
+	</element>
+	<element name="Tommybows Hand Crossbow (5)" type="Weapon" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WEAPON_TOMMYBOWS5_CROSSBOW_HAND">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_DAMAGE_TYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_5_SHOTS, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS,ID_LT_HGTMH_WEAPON_GROUP_TOMMYBOWS</supports>
+		<description>
+			<p>Tommybows are repeating crossbows that mirror the three types of normal crossbows: hand, heavy, and light. They are composed of vertically-stacked bows upon a crossbow’s chassis, an unwieldy arrangement that reduces their effective range in comparison to their crossbow counterparts.</p>
+			<p class="indent"><b>Reload.</b>Tommybows replace the loading property of their crossbow counterpart with the reload property. The cost of the item is proportional to the amount of ammunition it can hold (the value in parentheses), with the maximum reload (6) tommybow costing six times its crossbow equivalent’s price.</p>
+			<h5>Tommybow Value	</h5>
+			<table>
+				<thead>
+					<tr><td>Base Crossbow</td><td>Reload (2)</td><td>Reload (3)</td><td>Reload (4)</td><td>Reload (5)</td><td>Reload (6)</td><td>Range</td></tr>
+				</thead>
+				<tr><td>Hand crossbow</td><td>150 gp</td><td>225 gp</td><td>300 gp</td><td>375 gp</td><td>450 gp</td><td>30/60 ft.</td></tr>
+				<tr><td>Light crossbow</td><td>50 gp</td><td>75 gp</td><td>100 gp</td><td>125 gp</td><td>150 gp</td><td>80/160 ft.</td></tr>
+				<tr><td>Heavy crossbow</td><td>100 gp</td><td>150 gp</td><td>200 gp</td><td>250 gp</td><td>300 gp</td><td>100/200 ft.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">375</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">30/60</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND</set>
+			<set name="reload">5</set>
+		</setters>
+	</element>
+	<element name="Tommybows Hand Crossbow (6)" type="Weapon" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WEAPON_TOMMYBOWS6_CROSSBOW_HAND">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_DAMAGE_TYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS,ID_LT_HGTMH_WEAPON_GROUP_TOMMYBOWS</supports>
+		<description>
+			<p>Tommybows are repeating crossbows that mirror the three types of normal crossbows: hand, heavy, and light. They are composed of vertically-stacked bows upon a crossbow’s chassis, an unwieldy arrangement that reduces their effective range in comparison to their crossbow counterparts.</p>
+			<p class="indent"><b>Reload.</b>Tommybows replace the loading property of their crossbow counterpart with the reload property. The cost of the item is proportional to the amount of ammunition it can hold (the value in parentheses), with the maximum reload (6) tommybow costing six times its crossbow equivalent’s price.</p>
+			<h5>Tommybow Value	</h5>
+			<table>
+				<thead>
+					<tr><td>Base Crossbow</td><td>Reload (2)</td><td>Reload (3)</td><td>Reload (4)</td><td>Reload (5)</td><td>Reload (6)</td><td>Range</td></tr>
+				</thead>
+				<tr><td>Hand crossbow</td><td>150 gp</td><td>225 gp</td><td>300 gp</td><td>375 gp</td><td>450 gp</td><td>30/60 ft.</td></tr>
+				<tr><td>Light crossbow</td><td>50 gp</td><td>75 gp</td><td>100 gp</td><td>125 gp</td><td>150 gp</td><td>80/160 ft.</td></tr>
+				<tr><td>Heavy crossbow</td><td>100 gp</td><td>150 gp</td><td>200 gp</td><td>250 gp</td><td>300 gp</td><td>100/200 ft.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">450</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">30/60</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND</set>
+			<set name="reload">6</set>
+		</setters>
+	</element>
+	<element name="Tommybows Heavy Crossbow (2)" type="Weapon" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WEAPON_TOMMYBOWS2_CROSSBOW_HEAVY">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS,ID_LT_HGTMH_WEAPON_GROUP_TOMMYBOWS, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_2_SHOTS</supports>
+		<description>
+			<p>Tommybows are repeating crossbows that mirror the three types of normal crossbows: hand, heavy, and light. They are composed of vertically-stacked bows upon a crossbow’s chassis, an unwieldy arrangement that reduces their effective range in comparison to their crossbow counterparts.</p>
+			<p class="indent"><b>Reload.</b>Tommybows replace the loading property of their crossbow counterpart with the reload property. The cost of the item is proportional to the amount of ammunition it can hold (the value in parentheses), with the maximum reload (6) tommybow costing six times its crossbow equivalent’s price.</p>
+			<h5>Tommybow Value	</h5>
+			<table>
+				<thead>
+					<tr><td>Base Crossbow</td><td>Reload (2)</td><td>Reload (3)</td><td>Reload (4)</td><td>Reload (5)</td><td>Reload (6)</td><td>Range</td></tr>
+				</thead>
+				<tr><td>Hand crossbow</td><td>150 gp</td><td>225 gp</td><td>300 gp</td><td>375 gp</td><td>450 gp</td><td>30/60 ft.</td></tr>
+				<tr><td>Light crossbow</td><td>50 gp</td><td>75 gp</td><td>100 gp</td><td>125 gp</td><td>150 gp</td><td>80/160 ft.</td></tr>
+				<tr><td>Heavy crossbow</td><td>100 gp</td><td>150 gp</td><td>200 gp</td><td>250 gp</td><td>300 gp</td><td>100/200 ft.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="18">18 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/120</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY</set>
+			<set name="reload">2</set>
+		</setters>
+	</element>
+	<element name="Tommybows Heavy Crossbow (3)" type="Weapon" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WEAPON_TOMMYBOWS3_CROSSBOW_HEAVY">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS,ID_LT_HGTMH_WEAPON_GROUP_TOMMYBOWS, ID_LT_HGTMH_WEAPON_PROPERTY_FIREARM_RELOAD_3_SHOTS</supports>
+		<description>
+			<p>Tommybows are repeating crossbows that mirror the three types of normal crossbows: hand, heavy, and light. They are composed of vertically-stacked bows upon a crossbow’s chassis, an unwieldy arrangement that reduces their effective range in comparison to their crossbow counterparts.</p>
+			<p class="indent"><b>Reload.</b>Tommybows replace the loading property of their crossbow counterpart with the reload property. The cost of the item is proportional to the amount of ammunition it can hold (the value in parentheses), with the maximum reload (6) tommybow costing six times its crossbow equivalent’s price.</p>
+			<h5>Tommybow Value	</h5>
+			<table>
+				<thead>
+					<tr><td>Base Crossbow</td><td>Reload (2)</td><td>Reload (3)</td><td>Reload (4)</td><td>Reload (5)</td><td>Reload (6)</td><td>Range</td></tr>
+				</thead>
+				<tr><td>Hand crossbow</td><td>150 gp</td><td>225 gp</td><td>300 gp</td><td>375 gp</td><td>450 gp</td><td>30/60 ft.</td></tr>
+				<tr><td>Light crossbow</td><td>50 gp</td><td>75 gp</td><td>100 gp</td><td>125 gp</td><td>150 gp</td><td>80/160 ft.</td></tr>
+				<tr><td>Heavy crossbow</td><td>100 gp</td><td>150 gp</td><td>200 gp</td><td>250 gp</td><td>300 gp</td><td>100/200 ft.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="weight" lb="18">18 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/120</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY</set>
+			<set name="reload">3</set>
+		</setters>
+	</element>
+	<element name="Tommybows Heavy Crossbow (4)" type="Weapon" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WEAPON_TOMMYBOWS4_CROSSBOW_HEAVY">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS,ID_LT_HGTMH_WEAPON_GROUP_TOMMYBOWS, ID_LT_HGTMH_WEAPON_PROPERTY_FIREARM_RELOAD_4_SHOTS</supports>
+		<description>
+			<p>Tommybows are repeating crossbows that mirror the three types of normal crossbows: hand, heavy, and light. They are composed of vertically-stacked bows upon a crossbow’s chassis, an unwieldy arrangement that reduces their effective range in comparison to their crossbow counterparts.</p>
+			<p class="indent"><b>Reload.</b>Tommybows replace the loading property of their crossbow counterpart with the reload property. The cost of the item is proportional to the amount of ammunition it can hold (the value in parentheses), with the maximum reload (6) tommybow costing six times its crossbow equivalent’s price.</p>
+			<h5>Tommybow Value	</h5>
+			<table>
+				<thead>
+					<tr><td>Base Crossbow</td><td>Reload (2)</td><td>Reload (3)</td><td>Reload (4)</td><td>Reload (5)</td><td>Reload (6)</td><td>Range</td></tr>
+				</thead>
+				<tr><td>Hand crossbow</td><td>150 gp</td><td>225 gp</td><td>300 gp</td><td>375 gp</td><td>450 gp</td><td>30/60 ft.</td></tr>
+				<tr><td>Light crossbow</td><td>50 gp</td><td>75 gp</td><td>100 gp</td><td>125 gp</td><td>150 gp</td><td>80/160 ft.</td></tr>
+				<tr><td>Heavy crossbow</td><td>100 gp</td><td>150 gp</td><td>200 gp</td><td>250 gp</td><td>300 gp</td><td>100/200 ft.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="weight" lb="18">18 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/120</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY</set>
+			<set name="reload">4</set>
+		</setters>
+	</element>
+	<element name="Tommybows Heavy Crossbow (5)" type="Weapon" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WEAPON_TOMMYBOWS5_CROSSBOW_HEAVY">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS,ID_LT_HGTMH_WEAPON_GROUP_TOMMYBOWS, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_5_SHOTS</supports>
+		<description>
+			<p>Tommybows are repeating crossbows that mirror the three types of normal crossbows: hand, heavy, and light. They are composed of vertically-stacked bows upon a crossbow’s chassis, an unwieldy arrangement that reduces their effective range in comparison to their crossbow counterparts.</p>
+			<p class="indent"><b>Reload.</b>Tommybows replace the loading property of their crossbow counterpart with the reload property. The cost of the item is proportional to the amount of ammunition it can hold (the value in parentheses), with the maximum reload (6) tommybow costing six times its crossbow equivalent’s price.</p>
+			<h5>Tommybow Value	</h5>
+			<table>
+				<thead>
+					<tr><td>Base Crossbow</td><td>Reload (2)</td><td>Reload (3)</td><td>Reload (4)</td><td>Reload (5)</td><td>Reload (6)</td><td>Range</td></tr>
+				</thead>
+				<tr><td>Hand crossbow</td><td>150 gp</td><td>225 gp</td><td>300 gp</td><td>375 gp</td><td>450 gp</td><td>30/60 ft.</td></tr>
+				<tr><td>Light crossbow</td><td>50 gp</td><td>75 gp</td><td>100 gp</td><td>125 gp</td><td>150 gp</td><td>80/160 ft.</td></tr>
+				<tr><td>Heavy crossbow</td><td>100 gp</td><td>150 gp</td><td>200 gp</td><td>250 gp</td><td>300 gp</td><td>100/200 ft.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="18">18 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/120</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY</set>
+			<set name="reload">5</set>
+		</setters>
+	</element>
+	<element name="Tommybows Heavy Crossbow (6)" type="Weapon" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WEAPON_TOMMYBOWS6_CROSSBOW_HEAVY">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS,ID_LT_HGTMH_WEAPON_GROUP_TOMMYBOWS, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS</supports>
+		<description>
+			<p>Tommybows are repeating crossbows that mirror the three types of normal crossbows: hand, heavy, and light. They are composed of vertically-stacked bows upon a crossbow’s chassis, an unwieldy arrangement that reduces their effective range in comparison to their crossbow counterparts.</p>
+			<p class="indent"><b>Reload.</b>Tommybows replace the loading property of their crossbow counterpart with the reload property. The cost of the item is proportional to the amount of ammunition it can hold (the value in parentheses), with the maximum reload (6) tommybow costing six times its crossbow equivalent’s price.</p>
+			<h5>Tommybow Value	</h5>
+			<table>
+				<thead>
+					<tr><td>Base Crossbow</td><td>Reload (2)</td><td>Reload (3)</td><td>Reload (4)</td><td>Reload (5)</td><td>Reload (6)</td><td>Range</td></tr>
+				</thead>
+				<tr><td>Hand crossbow</td><td>150 gp</td><td>225 gp</td><td>300 gp</td><td>375 gp</td><td>450 gp</td><td>30/60 ft.</td></tr>
+				<tr><td>Light crossbow</td><td>50 gp</td><td>75 gp</td><td>100 gp</td><td>125 gp</td><td>150 gp</td><td>80/160 ft.</td></tr>
+				<tr><td>Heavy crossbow</td><td>100 gp</td><td>150 gp</td><td>200 gp</td><td>250 gp</td><td>300 gp</td><td>100/200 ft.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="weight" lb="18">18 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/120</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY</set>
+			<set name="reload">6</set>
+		</setters>
+	</element>
+	<element name="Tommybows Light Crossbow (2)" type="Weapon" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WEAPON_TOMMYBOWS2_CROSSBOW_LIGHT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS,ID_LT_HGTMH_WEAPON_GROUP_TOMMYBOWS, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_2_SHOTS</supports>
+		<description>
+			<p>Tommybows are repeating crossbows that mirror the three types of normal crossbows: hand, heavy, and light. They are composed of vertically-stacked bows upon a crossbow’s chassis, an unwieldy arrangement that reduces their effective range in comparison to their crossbow counterparts.</p>
+			<p class="indent"><b>Reload.</b>Tommybows replace the loading property of their crossbow counterpart with the reload property. The cost of the item is proportional to the amount of ammunition it can hold (the value in parentheses), with the maximum reload (6) tommybow costing six times its crossbow equivalent’s price.</p>
+			<h5>Tommybow Value	</h5>
+			<table>
+				<thead>
+					<tr><td>Base Crossbow</td><td>Reload (2)</td><td>Reload (3)</td><td>Reload (4)</td><td>Reload (5)</td><td>Reload (6)</td><td>Range</td></tr>
+				</thead>
+				<tr><td>Hand crossbow</td><td>150 gp</td><td>225 gp</td><td>300 gp</td><td>375 gp</td><td>450 gp</td><td>30/60 ft.</td></tr>
+				<tr><td>Light crossbow</td><td>50 gp</td><td>75 gp</td><td>100 gp</td><td>125 gp</td><td>150 gp</td><td>80/160 ft.</td></tr>
+				<tr><td>Heavy crossbow</td><td>100 gp</td><td>150 gp</td><td>200 gp</td><td>250 gp</td><td>300 gp</td><td>100/200 ft.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">80/160</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT</set>
+			<set name="reload">2</set>
+		</setters>
+	</element>
+	<element name="Tommybows Light Crossbow (3)" type="Weapon" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WEAPON_TOMMYBOWS3_CROSSBOW_LIGHT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS,ID_LT_HGTMH_WEAPON_GROUP_TOMMYBOWS, ID_LT_HGTMH_WEAPON_PROPERTY_FIREARM_RELOAD_3_SHOTS</supports>
+		<description>
+			<p>Tommybows are repeating crossbows that mirror the three types of normal crossbows: hand, heavy, and light. They are composed of vertically-stacked bows upon a crossbow’s chassis, an unwieldy arrangement that reduces their effective range in comparison to their crossbow counterparts.</p>
+			<p class="indent"><b>Reload.</b>Tommybows replace the loading property of their crossbow counterpart with the reload property. The cost of the item is proportional to the amount of ammunition it can hold (the value in parentheses), with the maximum reload (6) tommybow costing six times its crossbow equivalent’s price.</p>
+			<h5>Tommybow Value	</h5>
+			<table>
+				<thead>
+					<tr><td>Base Crossbow</td><td>Reload (2)</td><td>Reload (3)</td><td>Reload (4)</td><td>Reload (5)</td><td>Reload (6)</td><td>Range</td></tr>
+				</thead>
+				<tr><td>Hand crossbow</td><td>150 gp</td><td>225 gp</td><td>300 gp</td><td>375 gp</td><td>450 gp</td><td>30/60 ft.</td></tr>
+				<tr><td>Light crossbow</td><td>50 gp</td><td>75 gp</td><td>100 gp</td><td>125 gp</td><td>150 gp</td><td>80/160 ft.</td></tr>
+				<tr><td>Heavy crossbow</td><td>100 gp</td><td>150 gp</td><td>200 gp</td><td>250 gp</td><td>300 gp</td><td>100/200 ft.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">80/160</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT</set>
+			<set name="reload">3</set>
+		</setters>
+	</element>
+	<element name="Tommybows Light Crossbow (4)" type="Weapon" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WEAPON_TOMMYBOWS4_CROSSBOW_LIGHT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS,ID_LT_HGTMH_WEAPON_GROUP_TOMMYBOWS, ID_LT_HGTMH_WEAPON_PROPERTY_FIREARM_RELOAD_4_SHOTS</supports>
+		<description>
+			<p>Tommybows are repeating crossbows that mirror the three types of normal crossbows: hand, heavy, and light. They are composed of vertically-stacked bows upon a crossbow’s chassis, an unwieldy arrangement that reduces their effective range in comparison to their crossbow counterparts.</p>
+			<p class="indent"><b>Reload.</b>Tommybows replace the loading property of their crossbow counterpart with the reload property. The cost of the item is proportional to the amount of ammunition it can hold (the value in parentheses), with the maximum reload (6) tommybow costing six times its crossbow equivalent’s price.</p>
+			<h5>Tommybow Value	</h5>
+			<table>
+				<thead>
+					<tr><td>Base Crossbow</td><td>Reload (2)</td><td>Reload (3)</td><td>Reload (4)</td><td>Reload (5)</td><td>Reload (6)</td><td>Range</td></tr>
+				</thead>
+				<tr><td>Hand crossbow</td><td>150 gp</td><td>225 gp</td><td>300 gp</td><td>375 gp</td><td>450 gp</td><td>30/60 ft.</td></tr>
+				<tr><td>Light crossbow</td><td>50 gp</td><td>75 gp</td><td>100 gp</td><td>125 gp</td><td>150 gp</td><td>80/160 ft.</td></tr>
+				<tr><td>Heavy crossbow</td><td>100 gp</td><td>150 gp</td><td>200 gp</td><td>250 gp</td><td>300 gp</td><td>100/200 ft.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">80/160</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT</set>
+			<set name="reload">4</set>
+		</setters>
+	</element>
+	<element name="Tommybows Light Crossbow (5)" type="Weapon" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WEAPON_TOMMYBOWS5_CROSSBOW_LIGHT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS,ID_LT_HGTMH_WEAPON_GROUP_TOMMYBOWS, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_5_SHOTS</supports>
+		<description>
+			<p>Tommybows are repeating crossbows that mirror the three types of normal crossbows: hand, heavy, and light. They are composed of vertically-stacked bows upon a crossbow’s chassis, an unwieldy arrangement that reduces their effective range in comparison to their crossbow counterparts.</p>
+			<p class="indent"><b>Reload.</b>Tommybows replace the loading property of their crossbow counterpart with the reload property. The cost of the item is proportional to the amount of ammunition it can hold (the value in parentheses), with the maximum reload (6) tommybow costing six times its crossbow equivalent’s price.</p>
+			<h5>Tommybow Value	</h5>
+			<table>
+				<thead>
+					<tr><td>Base Crossbow</td><td>Reload (2)</td><td>Reload (3)</td><td>Reload (4)</td><td>Reload (5)</td><td>Reload (6)</td><td>Range</td></tr>
+				</thead>
+				<tr><td>Hand crossbow</td><td>150 gp</td><td>225 gp</td><td>300 gp</td><td>375 gp</td><td>450 gp</td><td>30/60 ft.</td></tr>
+				<tr><td>Light crossbow</td><td>50 gp</td><td>75 gp</td><td>100 gp</td><td>125 gp</td><td>150 gp</td><td>80/160 ft.</td></tr>
+				<tr><td>Heavy crossbow</td><td>100 gp</td><td>150 gp</td><td>200 gp</td><td>250 gp</td><td>300 gp</td><td>100/200 ft.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">125</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">80/160</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT</set>
+			<set name="reload">5</set>
+		</setters>
+	</element>
+	<element name="Tommybows Light Crossbow (6)" type="Weapon" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WEAPON_TOMMYBOWS6_CROSSBOW_LIGHT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS,ID_LT_HGTMH_WEAPON_GROUP_TOMMYBOWS, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS</supports>
+		<description>
+			<p>Tommybows are repeating crossbows that mirror the three types of normal crossbows: hand, heavy, and light. They are composed of vertically-stacked bows upon a crossbow’s chassis, an unwieldy arrangement that reduces their effective range in comparison to their crossbow counterparts.</p>
+			<p class="indent"><b>Reload.</b>Tommybows replace the loading property of their crossbow counterpart with the reload property. The cost of the item is proportional to the amount of ammunition it can hold (the value in parentheses), with the maximum reload (6) tommybow costing six times its crossbow equivalent’s price.</p>
+			<h5>Tommybow Value	</h5>
+			<table>
+				<thead>
+					<tr><td>Base Crossbow</td><td>Reload (2)</td><td>Reload (3)</td><td>Reload (4)</td><td>Reload (5)</td><td>Reload (6)</td><td>Range</td></tr>
+				</thead>
+				<tr><td>Hand crossbow</td><td>150 gp</td><td>225 gp</td><td>300 gp</td><td>375 gp</td><td>450 gp</td><td>30/60 ft.</td></tr>
+				<tr><td>Light crossbow</td><td>50 gp</td><td>75 gp</td><td>100 gp</td><td>125 gp</td><td>150 gp</td><td>80/160 ft.</td></tr>
+				<tr><td>Heavy crossbow</td><td>100 gp</td><td>150 gp</td><td>200 gp</td><td>250 gp</td><td>300 gp</td><td>100/200 ft.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">80/160</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT</set>
+			<set name="reload">6</set>
+		</setters>
+	</element>	
+
+    <!-- Magitech Firearms (@from Strange_Meta)-->
+    <element name = "Weapon Proficiency (Magitech Firearms)" type = "Proficiency" source = "Heliana's Guide to Monster Hunting" id = "ID_HGTMH_PROFICIENCY_WEAPON_MAGITECH_FIREARMS">
+        <sheet alt = "Magitech Firearms"/>
+        <rules>
+            <grant type = "Proficiency" id = "ID_HGTMH_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_BLUNDERBUSS"/>
+            <grant type = "Proficiency" id = "ID_HGTMH_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_MUSKET"/>
+            <grant type = "Proficiency" id = "ID_HGTMH_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_PISTOL"/>
+            <grant type = "Proficiency" id = "ID_HGTMH_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_REVOLVER"/>
+            <grant type = "Proficiency" id = "ID_HGTMH_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_RIFLE"/>
+        </rules>
+    </element>
+    <append id = "ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_HGTMH_PROFICIENCY_WEAPON_MAGITECH_FIREARMS"/>
+        </rules>
+    </append>
+    
+    <element name = "Blunderbuss" type = "Weapon" source = "Heliana's Guide to Monster Hunting" id = "ID_HGTMH_ITEM_BLUNDERBUSS">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_HGTMH_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_HGTMH_WEAPON_PROPERTY_LOUD_1000, ID_HGTMH_WEAPON_PROPERTY_FIREARM_RELOAD_1_SHOT, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description>
+            <p>Blunderbuss are magitech firearms.</p>
+        </description>
+        <setters>
+            <set name = "category">Weapons</set>
+            <set name = "cost" currency = "gp">50</set>
+            <set name = "weight" lb = "25">5 lb.</set>
+            <set name = "slot">twohand</set>
+            <set name = "range">20/60</set>
+            <set name = "damage" type = "piercing">3d4</set>
+            <set name = "proficiency">ID_HGTMH_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_BLUNDERBUSS</set>
+        </setters>
+    </element>
+    <element name = "Weapon Proficiency (Blunderbuss)" type = "Proficiency" source = "Heliana's Guide to Monster Hunting" id = "ID_HGTMH_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_BLUNDERBUSS">
+        <compendium display = "false"/>
+        <supports>Weapon, Martial, Ranged, Firearm, Magitech Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_HGTMH_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_HGTMH_WEAPON_PROPERTY_LOUD_1000, ID_HGTMH_WEAPON_PROPERTY_FIREARM_RELOAD_1_SHOT, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <sheet alt = "Blunderbuss"/>
+    </element>
+    <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_HGTMH_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_BLUNDERBUSS"/>
+        </rules>
+    </append>
+        
+    <element name = "Musket" type = "Weapon" source = "Heliana's Guide to Monster Hunting" id = "ID_HGTMH_ITEM_MUSKET">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_HGTMH_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_HGTMH_WEAPON_PROPERTY_LOUD_1000, ID_HGTMH_WEAPON_PROPERTY_FIREARM_RELOAD_1_SHOT, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description>
+            <p>Muskets are magitech firearms.</p>
+        </description>
+        <setters>
+            <set name = "category">Weapons</set>
+            <set name = "cost" currency = "gp">100</set>
+            <set name = "weight" lb = "25">10 lb.</set>
+            <set name = "slot">twohand</set>
+            <set name = "range">80/240</set>
+            <set name = "damage" type = "piercing">1d10</set>
+            <set name = "proficiency">ID_HGTMH_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_MUSKET</set>
+        </setters>
+    </element>
+    <element name = "Weapon Proficiency (Musket)" type = "Proficiency" source = "Heliana's Guide to Monster Hunting" id = "ID_HGTMH_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_MUSKET">
+        <compendium display = "false"/>
+        <supports>Weapon, Martial, Ranged, Firearm, Magitech Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_HGTMH_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_HGTMH_WEAPON_PROPERTY_LOUD_1000, ID_HGTMH_WEAPON_PROPERTY_FIREARM_RELOAD_1_SHOT, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <sheet alt = "Musket"/>
+    </element>
+    <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_HGTMH_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_MUSKET"/>
+        </rules>
+    </append>
+    
+    <element name = "Pistol" type = "Weapon" source = "Heliana's Guide to Monster Hunting" id = "ID_HGTMH_ITEM_PISTOL">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_HGTMH_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_HGTMH_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_HGTMH_WEAPON_PROPERTY_LOUD_500, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_2_SHOTS</supports>
+        <description>
+            <p>Pistols are magitech firearms.</p>
+        </description>
+        <setters>
+            <set name = "category">Weapons</set>
+            <set name = "cost" currency = "gp">200</set>
+            <set name = "weight" lb = "25">2 lb.</set>
+            <set name = "slot">onehand</set>
+            <set name = "range">40/120</set>
+            <set name = "damage" type = "piercing">1d8</set>
+            <set name = "proficiency">ID_HGTMH_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_PISTOL</set>
+        </setters>
+    </element>
+    <element name = "Weapon Proficiency (Pistol)" type = "Proficiency" source = "Heliana's Guide to Monster Hunting" id = "ID_HGTMH_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_PISTOL">
+        <compendium display = "false"/>
+        <supports>Weapon, Martial, Ranged, Firearm, Magitech Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_HGTMH_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_HGTMH_WEAPON_PROPERTY_LOUD_500, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_2_SHOTS</supports>
+        <sheet alt = "Pistol"/>
+    </element>
+    <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_HGTMH_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_PISTOL"/>
+        </rules>
+    </append>
+       
+    <element name = "Revolver" type = "Weapon" source = "Heliana's Guide to Monster Hunting" id = "ID_HGTMH_ITEM_REVOLVER">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_HGTMH_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_HGTMH_WEAPON_PROPERTY_LOUD_500, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS</supports>
+        <description>
+            <p>Revolvers are magitech firearms.</p>
+        </description>
+        <setters>
+            <set name = "category">Weapons</set>
+            <set name = "cost" currency = "gp">750</set>
+            <set name = "weight" lb = "25">2 lb.</set>
+            <set name = "slot">onehand</set>
+            <set name = "range">60/240</set>
+            <set name = "damage" type = "piercing">1d10</set>
+            <set name = "proficiency">ID_HGTMH_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_REVOLVER</set>
+        </setters>
+    </element>
+    <element name = "Weapon Proficiency (Revolver)" type = "Proficiency" source = "Heliana's Guide to Monster Hunting" id = "ID_HGTMH_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_REVOLVER">
+        <compendium display = "false"/>
+        <supports>Weapon, Martial, Ranged, Firearm, Magitech Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_HGTMH_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_HGTMH_WEAPON_PROPERTY_LOUD_500, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS</supports>
+        <sheet alt = "Revolver"/>
+    </element>
+    <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_HGTMH_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_REVOLVER"/>
+        </rules>
+    </append>
+        
+    <element name = "Rifle" type = "Weapon" source = "Heliana's Guide to Monster Hunting" id = "ID_HGTMH_ITEM_RIFLE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_HGTMH_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_HGTMH_WEAPON_PROPERTY_LOUD_500, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description>
+            <p>Rifles are magitech firearms.</p>
+        </description>
+        <setters>
+            <set name = "category">Weapons</set>
+            <set name = "cost" currency = "gp">1000</set>
+            <set name = "weight" lb = "25">8 lb.</set>
+            <set name = "slot">onehand</set>
+            <set name = "range">120/480</set>
+            <set name = "damage" type = "piercing">1d12</set>
+            <set name = "proficiency">ID_HGTMH_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_RIFLE</set>
+        </setters>
+    </element>
+    <element name = "Weapon Proficiency (Rifle)" type = "Proficiency" source = "Heliana's Guide to Monster Hunting" id = "ID_HGTMH_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_RIFLE">
+        <compendium display = "false"/>
+        <supports>Weapon, Martial, Ranged, Firearm, Magitech Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_HGTMH_WEAPON_CATEGORY_MAGITECH_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNTION, ID_HGTMH_WEAPON_PROPERTY_LOUD_500, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <sheet alt = "Rifle"/>
+    </element>
+    <append id = "ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+        <rules>
+            <grant type = "Proficiency" id = "ID_HGTMH_PROFICIENCY_WEAPON_MAGITECH_FIREARMS_RIFLE"/>
+        </rules>
+    </append>
+       <!-- /Magictech Firearms -->
+	   
+	<!-- Weapon Groups -->
+	<element name="Tommybows" type="Weapon Group" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WEAPON_GROUP_TOMMYBOWS" />
+
+	<!-- Weapon Properties -->
+	<element name="Attached" type="Weapon Property" source="Internal" id="ID_LT_HGTMH_WEAPON_PROPERTY_ATTACHED">
+		<description>
+			<p>You can’t be disarmed of this weapon, but donning or doffing the weapon takes an action. You can use a hand equipped with this weapon to hold items, but can’t attack with the weapon while doing so. Additionally, you have disadvantage on attack rolls using other weapons held in a hand equipped with this weapon and on Sleight of Hand checks using the hand that is equipped with this weapon.</p>
+		</description>
+	</element>
+	<element name="Loud (X)" type="Weapon Property" source="Internal" id="ID_LT_HGTMH_WEAPON_PROPERTY_LOUD">
+		<description>
+			<p>The sound of the weapon (typically a firearm) discharging alerts all hearing creatures within a number of feet as specified by the number in parentheses after the loud property. This range is doubled in echoey locations, such as cave systems, and where sound travels faster, such as underwater.</p>
+		</description>
+	</element>
+	<element name="Flourish" type="Weapon Property" source="Internal" id="ID_LT_HGTMH_WEAPON_PROPERTY_FLOURISH">
+		<description>
+			<p>When you are wielding the nunchaku in two hands and take the Attack action on your turn, you can attempt to flourish with the weapon immediately before you make your first attack. To flourish, make a DC 13 Dexterity check, adding your proficiency bonus if you are proficient with nunchaku. On a success, you gain a +2 bonus to the first attack roll you make this turn. On a failure, you deal bludgeoning damage to yourself equal to your proficiency bonus and gain no bonus from your flourishes this turn.</p>
+		</description>
+	</element>
+	<element name="Hookpull" type="Weapon Property" source="Internal" id="ID_LT_HGTMH_WEAPON_PROPERTY_HOOKPULL">
+		<description>
+			<p>As a bonus action immediately after you hit a target no more than one size larger than you with an attack using the tetherhook, you can attempt to hook the target using the tetherhook’s reach. Make a Strength (Athletics) check contested by the target’s Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use). If you succeed, the target is hooked and can’t move further away from you. A hooked creature is no longer hooked if you release the tether with both hands, but only one hand is required to keep a creature hooked. A hooked creature can use its action to escooze. To do so, it must succeed on a Strength (Athletics) or Dexterity (Acrobatics) check contested by your Strength (Athletics) check.</p>
+			<p class="indent">As part of the bonus action to hook the target, and as a bonus action on any of your subsequent turns while it remains hooked, you can pull the creature 5 feet closer to you. If the target is an object that isn’t fixed in place and that weighs less than your push, drag, or lift capacity, you can pull it 5 feet closer to you as a bonus action after you hit it with an attack.</p>
+		</description>
+	</element>
+	<element name="Whirl" type="Weapon Property" source="Internal" id="ID_LT_HGTMH_WEAPON_PROPERTY_WHIRL">
+		<description>
+			<p>When you are wielding the twinblade in two hands, you can use a bonus action to attempt to whirl the weapon. To whirl, make a DC 10 Dexterity check, adding your proficiency bonus if you are proficient with twinblades. On a success, you gain a +1 bonus to your AC until the start of your next turn, the whirling blades acting as a barrier against attacks. On a result of 15 or higher, you gain a +2 bonus, instead. On a failure, you deal slashing damage to yourself equal to your proficiency bonus and gain no bonus to your AC from the whirl this turn.</p>
+		</description>
+	</element>
+	<element name="Reload (3 shots)" type="Weapon Property" source="Internal" id="ID_LT_HGTMH_WEAPON_PROPERTY_FIREARM_RELOAD_3_SHOTS">
+		<description>
+			<p>A limited number of shots can be made with a weapon that has the reload property. A character must then reload it using an action or a bonus action (the character's choice).</p>
+		</description>
+	</element>
+	<element name="Reload (4 shots)" type="Weapon Property" source="Internal" id="ID_LT_HGTMH_WEAPON_PROPERTY_FIREARM_RELOAD_4_SHOTS">
+		<description>
+			<p>A limited number of shots can be made with a weapon that has the reload property. A character must then reload it using an action or a bonus action (the character's choice).</p>
+		</description>
+	</element>
+
+	<!-- Weapon Groups -->
+	<element name="Tommybows" type="Weapon Group" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WEAPON_GROUP_TOMMYBOWS" />
+	<element name="Polearm" type="Weapon Group" source="Internal" id="ID_INTERNAL_WEAPON_GROUP_POLEARM" />
+	
+
+	<!-- append to firearms proficiency to martial ranged -->
+	<append id="ID_WOTC_PHB_WEAPON_GLAIVE">
+		<supports>ID_INTERNAL_WEAPON_GROUP_POLEARM</supports>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_HALBERD">
+		<supports>ID_INTERNAL_WEAPON_GROUP_POLEARM</supports>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_LANCE">
+		<supports>ID_INTERNAL_WEAPON_GROUP_POLEARM</supports>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_SPEAR">
+		<supports>ID_INTERNAL_WEAPON_GROUP_POLEARM</supports>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_TRIDENT">
+		<supports>ID_INTERNAL_WEAPON_GROUP_POLEARM</supports>
+	</append>
+</elements>

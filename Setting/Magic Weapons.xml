@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Heliana's Guide to Monster Hunting</name>
+		<description>Items from Heliana's Guide to Monster Hunting</description>
+		<update version="0.1.0">
+			<file name="Magic Weapons.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Setting/Magic Weapons.xml" />
+		</update>
+	</info>
+
+	<!-- Magic Weapons -->
+	<element name="Flooze" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MAGIC_ITEM_FLOOZE_UNCOMMON">
+		<description>
+			<p>The versatility of the magically-enhanced ooze used to craft this flail can’t be overstated. Its high tensile strength allows its ‘chain’ to stretch in response to its wearer’s thoughts, while the flail’s head boasts a hardness and density comparable to steel.</p>
+			<p class="indent">This magic flail deals an extra 1d6 acid damage to the first target it hits on each of your turns. The flail has 8 charges and regains 1d4 + 4 expended charges daily at dawn.</p>
+			<p class="indent"><strong><em>Reachier.</em></strong> While holding the flail, you can expend up to 4 charges (no action required) to increase your reach with this weapon by 5 feet for each charge expended until the end of your turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">flail</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="flail">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Flail</set>
+			<set name="charges">8</set>
+		</setters>
+	</element>
+	<element name="Flooze" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MAGIC_ITEM_FLOOZE_VERY_RARE">
+		<description>
+			<p>The versatility of the magically-enhanced ooze used to craft this flail can’t be overstated. Its high tensile strength allows its ‘chain’ to stretch in response to its wearer’s thoughts, while the flail’s head boasts a hardness and density comparable to steel.</p>
+			<p class="indent">This magic flail deals an extra 1d6 acid damage to the first target it hits on each of your turns. The flail has 8 charges and regains 1d4 + 4 expended charges daily at dawn.</p>
+			<p class="indent"><strong><em>Reachier.</em></strong> While holding the flail, you can expend up to 4 charges (no action required) to increase your reach with this weapon by 5 feet for each charge expended until the end of your turn.</p>
+			<p class="indent"><strong><em>Very rare variant:</em></strong> The flail deals an extra 1d8 acid damage to any target it hits, instead of the first target you hit on each of your turns. The flail gains the Sticky Fingers property.</p>
+			<p class="indent"><strong><em>Sticky Fingers.</em></strong> When you hit a Medium or smaller creature that is holding a weapon or item with an attack using the flooze, you can choose to disarm it of one weapon instead of dealing damage to it. The target must succeed on a DC 16 Strength saving throw or let go of its item, which becomes stuck in the flail. A creature within reach of the flooze can use an action to make a DC 16 Strength check, liberating the stuck weapon on a success. Success or failure, a creature takes 1d4 acid damage when it takes this action. The flail can only hold 2 weapons at a time, and a nonmagical weapon that remains in the flail for 1 minute is completely dissolved. While the flail has weapons in it, you can choose to deal your choice of piercing or slashing damage with it on each hit, instead of the usual bludgeoning damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">flail</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="flail">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">Flail</set>
+			<set name="charges">8</set>
+		</setters>
+	</element>
+	<element name="Bonze's Bokken, Wind Ripper" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BONZE_BOKKEN_WIND_RIPPER_UNCOMMON">
+		<description>
+			<p>Hermits of the Springwood, the bonze have as much in common with a druid’s love of nature as with the discipline and ritual of the monk. They do not deign to shed the blood of other creatures and thus imbue their training swords, known as bokken, with the power to propel them out of harm’s way. The thunderous wind rip is really just a tool for releasing hard-to-reach fruit.</p>
+			<p>This magic weapon has <b>5 charges</b> and regains 1d4 + 1 expended charges daily at dawn. It deals bludgeoning damage instead of a sword’s normal slashing or piercing damage.</p>
+			<p><strong><em>Gale.</em></strong> As an action, you can cause a cube of air up to 15 feet on a side to blow with a strong wind until the end of your next turn, dispersing any gasses.</p>
+			<p><strong><em>Wind Rip.</em></strong> With a swish, you can send a concussive wave of sound streaking towards a target. When you take the Attack action while holding this blade, you can make ranged spell attacks known as ‘wind rips’ with the bokken. Wind rips have a range of 30/60 ft., +5 to hit, deal 1d8 thunder damage on a hit, and can be heard up to 100 feet away. On a critical hit, a creature is deafened until the end of its next turn. You can make as many wind rips as you have attacks.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="charges">5</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="name-format">Bonze's Bokken, Wind Ripper</set>
+		</setters>
+	</element>
+	<element name="Bonze's Bokken, Wind Ripper" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BONZE_BOKKEN_WIND_RIPPER_RARE">
+		<description>
+			<p>Hermits of the Springwood, the bonze have as much in common with a druid’s love of nature as with the discipline and ritual of the monk. They do not deign to shed the blood of other creatures and thus imbue their training swords, known as bokken, with the power to propel them out of harm’s way. The thunderous wind rip is really just a tool for releasing hard-to-reach fruit.</p>
+			<p>This magic weapon has <b>5 charges</b> and regains 1d4 + 1 expended charges daily at dawn. It deals bludgeoning damage instead of a sword’s normal slashing or piercing damage.</p>
+			<p><strong><em>Gale.</em></strong> As an action, you can cause a cube of air up to 15 feet on a side to blow with a strong wind until the end of your next turn, dispersing any gasses.</p>
+			<p><strong><em>Wind Rip.</em></strong> With a swish, you can send a concussive wave of sound streaking towards a target. When you take the Attack action while holding this blade, you can make ranged spell attacks known as ‘wind rips’ with the bokken. Wind rips have a range of 30/60 ft., +7 to hit, deal 1d10 thunder damage on a hit, and can be heard up to 100 feet away. On a critical hit, a creature is deafened until the end of its next turn. You can make as many wind rips as you have attacks.</p>
+			<p><strong><em>Liftoff.</em></strong> As a bonus action, you can expend 1 charge, causing a sustained gust to lift you. Until the end of your current turn, you gain a flying speed of 40 feet. If you are not in contact with the ground or otherwise held aloft at the end of your turn, you fall.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="charges">5</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="name-format">Bonze's Bokken, Wind Ripper</set>
+		</setters>
+	</element>
+	<element name="Bonze's Bokken, Wind Ripper" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BONZE_BOKKEN_WIND_RIPPER_VERY_RARE">
+		<description>
+			<p>Hermits of the Springwood, the bonze have as much in common with a druid’s love of nature as with the discipline and ritual of the monk. They do not deign to shed the blood of other creatures and thus imbue their training swords, known as bokken, with the power to propel them out of harm’s way. The thunderous wind rip is really just a tool for releasing hard-to-reach fruit.</p>
+			<p>You gain a +1 bonus to attack and damage rolls you make with melee attacks using this weapon. This magic weapon has <b>5 charges</b> and regains 1d4 + 1 expended charges daily at dawn. It deals bludgeoning damage instead of a sword’s normal slashing or piercing damage.</p>
+			<p><strong><em>Gale.</em></strong> As an action, you can cause a cube of air up to 15 feet on a side to blow with a strong wind until the end of your next turn, dispersing any gasses.</p>
+			<p><strong><em>Wind Rip.</em></strong> With a swish, you can send a concussive wave of sound streaking towards a target. When you take the Attack action while holding this blade, you can make ranged spell attacks known as ‘wind rips’ with the bokken. Wind rips have a range of 30/60 ft., +8 to hit, deal 1d12 thunder damage on a hit, and can be heard up to 100 feet away. On a critical hit, a creature is deafened until the end of its next turn. You can make as many wind rips as you have attacks.</p>
+			<p><strong><em>Liftoff.</em></strong> As a bonus action, you can expend 1 charge, causing a sustained gust to lift you. Until the end of your current turn, you gain a flying speed of 50 feet. If you are not in contact with the ground or otherwise held aloft at the end of your turn, you fall.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="charges">5</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="enhancement">1</set> 
+			<set name="name-format">Bonze's Bokken, Wind Ripper</set>
+		</setters>
+	</element>
+	<element name="Bonze's Bokken, Wind Ripper" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BONZE_BOKKEN_WIND_RIPPER_LEGENDARY">
+		<description>
+			<p>Hermits of the Springwood, the bonze have as much in common with a druid’s love of nature as with the discipline and ritual of the monk. They do not deign to shed the blood of other creatures and thus imbue their training swords, known as bokken, with the power to propel them out of harm’s way. The thunderous wind rip is really just a tool for releasing hard-to-reach fruit.</p>
+			<p>You gain a +2 bonus to attack and damage rolls you make with melee attacks using this weapon. This magic weapon has <b>5 charges</b> and regains 1d4 + 1 expended charges daily at dawn. It deals bludgeoning damage instead of a sword’s normal slashing or piercing damage. You can speak Auran fluently.</p>
+			<p><strong><em>Gale.</em></strong> As an action, you can cause a cube of air up to 15 feet on a side to blow with a strong wind until the end of your next turn, dispersing any gasses.</p>
+			<p><strong><em>Wind Rip.</em></strong> With a swish, you can send a concussive wave of sound streaking towards a target. When you take the Attack action while holding this blade, you can make ranged spell attacks known as ‘wind rips’ with the bokken. Wind rips have a range of 30/60 ft., +9 to hit, deal 2d8 thunder damage on a hit, and can be heard up to 100 feet away. On a critical hit, a creature is deafened until the end of its next turn. You can make as many wind rips as you have attacks.</p>
+			<p><strong><em>Liftoff.</em></strong> As a bonus action, you can expend 1 charge, causing a sustained gust to lift you. For 1 minute, you gain a flying speed of 60 feet. If you are not in contact with the ground or otherwise held aloft at the end of the duration, you fall.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="charges">5</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="enhancement">2</set>
+			<set name="name-format">Bonze's Bokken, Wind Ripper</set>
+		</setters>
+		<rules>
+			<grant type="Language" id="ID_MM_LANGUAGE_AURAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		</rules>
+	</element>
+	<element name="Sunwing Bow" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SUNWING_BOW_UNCOMMON">
+		<description>
+			<p>Sinew harvested from a suneater owlbear’s spine can imbue arrows with low-level radiation, which is passed onto a target when struck by the ammunition. The magic of suneater respiration lies in their photometabolism; they can convert sunlight into pure, concentrated radiant energy, unleashing unholy beams of destructive force.</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p><strong><em>Sunshot.</em></strong> While in sunlight, this bow doesn’t need ammunition. If you draw this weapon’s bowstring without nocking an arrow, it produces its own ammunition, automatically creating a radiant arrow when you make a ranged attack with it. The attack deals radiant damage instead of the weapon’s normal damage. The arrow created by this weapon vanishes the instant after it hits or misses a target.</p>
+			<p><strong><em>Irradiation.</em></strong> A creature that takes radiant damage from this bow becomes magically marked for 1 hour. During this time, it leaves an invisible trail that can be seen by creatures with truesight or creatures using the <em>detect magic</em> spell. The trail fades after 1 hour.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any bow">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_BOWS</set>
+		</setters>
+	</element>
+	<element name="Sunwing Bow" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SUNWING_BOW_RARE">
+		<description>
+			<p>Sinew harvested from a suneater owlbear’s spine can imbue arrows with low-level radiation, which is passed onto a target when struck by the ammunition. The magic of suneater respiration lies in their photometabolism; they can convert sunlight into pure, concentrated radiant energy, unleashing unholy beams of destructive force.</p>
+			<p>You gain a +2 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p><strong><em>Sunshot.</em></strong> While in sunlight, this bow doesn’t need ammunition. If you draw this weapon’s bowstring without nocking an arrow, it produces its own ammunition, automatically creating a radiant arrow when you make a ranged attack with it. The attack deals radiant damage instead of the weapon’s normal damage. The arrow created by this weapon vanishes the instant after it hits or misses a target.</p>
+			<p><strong><em>Irradiation.</em></strong> A creature that takes radiant damage from this bow becomes magically marked for 1 hour. During this time, it leaves an invisible trail that can be seen by creatures with truesight or creatures using the <em>detect magic</em> spell. The trail fades after 1 hour.</p>
+			<p><strong><em>Optional Attunement.</em></strong> If you choose to attune to this weapon, it gains the Solar Beam property and has <b>3 charges</b>. The sunwing bow regains 1 expended charge daily at dawn. If it is exposed to dawn’s light, it regains all expended charges instead.</p>
+			<p><strong><em>Solar Beam.</em></strong> As an action, you can expend 1 charge to fire a beam of solar energy in a 5-foot-wide, 60-foot-long line originating from you. Each creature in the area must make a DC 15 Dexterity saving throw, taking 3d8 radiant damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any bow">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_BOWS</set>
+			<set name="charges">3</set>
+		</setters>
+	</element>
+	<element name="Sunwing Bow" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SUNWING_BOW_VERY_RARE">
+		<description>
+			<p>Sinew harvested from a suneater owlbear’s spine can imbue arrows with low-level radiation, which is passed onto a target when struck by the ammunition. The magic of suneater respiration lies in their photometabolism; they can convert sunlight into pure, concentrated radiant energy, unleashing unholy beams of destructive force.</p>
+			<p>You gain a +3 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p><strong><em>Sunshot.</em></strong> While in sunlight, this bow doesn’t need ammunition. If you draw this weapon’s bowstring without nocking an arrow, it produces its own ammunition, automatically creating a radiant arrow when you make a ranged attack with it. The attack deals radiant damage instead of the weapon’s normal damage. The arrow created by this weapon vanishes the instant after it hits or misses a target.</p>
+			<p><strong><em>Irradiation.</em></strong> A creature that takes radiant damage from this bow becomes magically marked for 1 hour. During this time, it leaves an invisible trail that can be seen by creatures with truesight or creatures using the <em>detect magic</em> spell. The trail fades after 1 hour.</p>
+			<p><strong><em>Optional Attunement.</em></strong> If you choose to attune to this weapon, it gains the Solar Beam and Daylight properties, and has <b>3 charges</b>. The sunwing bow regains 1 expended charge daily at dawn. If it is exposed to dawn’s light, it regains all expended charges instead.</p>
+			<p><strong><em>Solar Beam.</em></strong> As an action, you can expend 1 charge to fire a beam of solar energy in a 5-foot-wide, 60-foot-long line originating from you. Each creature in the area must make a DC 16 Dexterity saving throw, taking 6d8 radiant damage on a failed save, or half as much damage on a successful one.</p>
+			<p><strong><em>Daylight.</em></strong> When you take the Attack action, you can use one attack to fire a radiant arrow from this bow at a surface within the bow’s range and expend 1 charge. A magical effect identical to the <em>daylight</em> spell manifests for 1 hour, centred wherever the arrow strikes the surface.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any bow">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_BOWS</set>
+			<set name="charges">3</set>
+		</setters>
+	</element>
+	<element name="Headbanger Lute" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_HEADBANGER_LUTE_UNCOMMON">
+		<description>
+			<p>The shapechanging abilities of the mimic infuse this musical instrument, a lute, with the propensity to subtly alter its shape and produce excellent acoustics. It also exudes a corrosive acid that can be a useful addition when the musician’s plan to charm a foe with a sweet serenade doesn’t go to plan.</p>
+			<p>This magic weapon deals an additional 1d8 acid damage to the first target that it hits on a turn. If you have proficiency with lutes, you’re considered proficient with this weapon as well.</p>
+			<p><strong><em>Ventriloquism.</em></strong> As a bonus action while holding the lute, you can command it to mimic simple sounds it has been exposed to, such as a person whispering, swords clashing, or simple melodies. You can choose for the sounds to originate from any point within 30 feet of you that you can see. A creature that hears the sounds can tell they’re imitations with a successful DC 13 Intelligence (Investigation) check.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="club or greatclub">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_CLUBS</set>
+		</setters>
+	</element>
+	<element name="Headbanger Lute" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_HEADBANGER_LUTE_VERY_RARE">
+		<description>
+			<p>The shapechanging abilities of the mimic infuse this musical instrument, a lute, with the propensity to subtly alter its shape and produce excellent acoustics. It also exudes a corrosive acid that can be a useful addition when the musician’s plan to charm a foe with a sweet serenade doesn’t go to plan.</p>
+			<p>This magic weapon deals an additional 1d8 acid damage to the first target that it hits on a turn. If you have proficiency with lutes, you’re considered proficient with this weapon as well.</p>
+			<p><strong><em>Ventriloquism.</em></strong> As a bonus action while holding the lute, you can command it to mimic simple sounds it has been exposed to, such as a person whispering, swords clashing, or simple melodies. You can choose for the sounds to originate from any point within 30 feet of you that you can see. A creature that hears the sounds can tell they’re imitations with a successful DC 16 Intelligence (Investigation) check.</p>
+			<p><strong><em>Club Music.</em></strong> As an action while holding the lute, you can play one of two brief but powerful songs. Once a song has been played, you can’t play that song again until the next dawn.</p>
+			<ol>
+				<li><strong>Panic! at the Tavern.</strong> You let loose a fast, chaotic melody that sows panic in the minds of your foes, forcing each creature of your choice within 15 feet of you that can hear you to make a DC 16 Wisdom saving throw. On a failed save, a creature takes 6d6 psychic damage and is frightened of you for 1 minute. On a success, a creature takes half as much damage and isn’t frightened. A creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.</li>
+				<li><strong>Mithrallica.</strong> You unleash an ear-shattering power chord that blows your foes away, forcing each creature in a 25-foot cone to make a DC 16 Strength saving throw. On a failed save, a creature takes 6d6 thunder damage and is pushed 20 feet away from you, knocked prone, and deafened for 1 minute. On a successful save, a creature takes half as much damage and suffers no other effects. A creature can repeat this saving throw at the end of each of its turns, ending the deafened condition on itself on a success.</li>
+			</ol>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="club or greatclub">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_CLUBS</set>
+		</setters>
+	</element>
+	<element name="Mawling Maul" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MAWLING_MAUL_UNCOMMON">
+		<description>
+			<p>Burning with ravenous hunger and unquenchable hanger, this mimic-infused weapon struggles relentlessly against the sturdy iron chains that bind it. Loosening the chains stimulates the weapon’s digestive juices which, if not quenched, can have caustic consequences for its wielder.</p>
+			<p><strong><em>Mimic Unleashed.</em></strong> As a bonus action while holding the hammer, you can loosen the chains restraining the mimic, leaving it free to mercilessly maul your foes. While the chains are loose, the hammer bites targets that it hits, dealing an extra 1d4 piercing damage.</p>
+			<p>If you end your turn holding the hammer while the chains are loose, and you didn’t hit a creature with an attack using the hammer that turn, the hammer’s excess digestive juices pour down the handle and you take 1d4 acid damage. The chains tighten on their own if the hammer isn’t held for 1 minute or if you use a bonus action to tighten the chains while holding the weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any hammer">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_HAMMERS</set>
+		</setters>
+	</element>
+	<element name="Mawling Maul" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MAWLING_MAUL_RARE">
+		<description>
+			<p>Burning with ravenous hunger and unquenchable hanger, this mimic-infused weapon struggles relentlessly against the sturdy iron chains that bind it. Loosening the chains stimulates the weapon’s digestive juices which, if not quenched, can have caustic consequences for its wielder.</p>
+			<p><strong><em>Mimic Unleashed.</em></strong> As a bonus action while holding the hammer, you can loosen the chains restraining the mimic, leaving it free to mercilessly maul your foes. While the chains are loose, the hammer bites targets that it hits, dealing an extra 1d6 piercing damage.</p>
+			<p>If you end your turn holding the hammer while the chains are loose, and you didn’t hit a creature with an attack using the hammer that turn, the hammer’s excess digestive juices pour down the handle and you take 1d6 acid damage. The chains tighten on their own if the hammer isn’t held for 1 minute or if you use a bonus action to tighten the chains while holding the weapon.</p>
+			<p><strong><em>Bilious Blow.</em></strong> When you roll a 20 on an attack roll made with this hammer, the mimic spews bile all over the target, covering it completely. A creature covered in bile takes 1d4 acid damage at the start of each of its turns until it or another creature uses its action to scrape or wash the bile off. Increase this acid damage to 2d4 if the chains were loose when the hammer hit.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any hammer">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_HAMMERS</set>
+		</setters>
+	</element>
+	<element name="Haemstrike" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_HAEMSTRIKE_UNCOMMON">
+		<description>
+			<p>This weapon is naturally attracted to foes bearing ferrous metals, allowing it to strike them with more force. Those who align themselves more closely with the weapon are granted the ability to manipulate gravity, telekinetically pulling creatures and objects into range of its jagged-faced swings.</p>
+			<p>You gain a +2 bonus to attack and damage rolls made with this magic weapon against targets made of ferrous metal or wearing ferrous armour.</p>
+			<p><strong><em>Optional Attunement.</em></strong> If you choose to attune to this weapon, it gains the Attraction property. When you activate a property granted by this optional attunement, roll a d4. On a 1, haemstrike’s optional attunement properties can’t be activated until the next dawn.</p>
+			<p><strong><em>Attraction.</em></strong> As a bonus action, you can point haemstrike at a target you can see within 30 feet of you. If the target is an object that weighs less than 300 pounds, the object is pulled up to 15 feet towards you. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be pulled up to 15 feet straight towards you. If the creature is made of ferrous metal or is wearing ferrous armour, it has disadvantage on the saving throw. Large or larger creatures automatically succeed on this saving throw.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any hammer">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_HAMMERS</set>
+		</setters>
+	</element>
+	<element name="Haemstrike" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_HAEMSTRIKE_RARE">
+		<description>
+			<p>This weapon is naturally attracted to foes bearing ferrous metals, allowing it to strike them with more force. Those who align themselves more closely with the weapon are granted the ability to manipulate gravity, telekinetically pulling creatures and objects into range of its jagged-faced swings.</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. If the target is made of ferrous metal or is wearing ferrous armour, increase the bonus to +3.</p>
+			<p><strong><em>Optional Attunement.</em></strong> If you choose to attune to this weapon, it gains the Attraction and Magnetic Shockwave properties. When you activate a property granted by this optional attunement, roll a d4. On a 1, haemstrike’s optional attunement properties can’t be activated until the next dawn.</p>
+			<p><strong><em>Attraction.</em></strong> As a bonus action, you can point haemstrike at a target you can see within 30 feet of you. If the target is an object that weighs less than 600 pounds, the object is pulled up to 15 feet towards you. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be pulled up to 15 feet straight towards you. If the creature is made of ferrous metal or is wearing ferrous armour, it has disadvantage on the saving throw. Huge or larger creatures automatically succeed on this saving throw.</p>
+			<p><strong><em>Magnetic Shockwave.</em></strong> Once per turn when you hit a target with haemstrike, you can cause an eruption of supercooled magnetite shards. Each creature other than you within 5 feet of the target must succeed on a DC 15 Dexterity saving throw, taking 1d6 cold damage and 1d6 piercing damage on a failed save, or half as much damage on a success. Creatures made of ferrous metal or wearing ferrous armour have disadvantage on this saving throw.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any hammer">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_HAMMERS</set>
+		</setters>
+	</element>
+	<element name="Haemstrike" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_HAEMSTRIKE_VERY_RARE">
+		<description>
+			<p>This weapon is naturally attracted to foes bearing ferrous metals, allowing it to strike them with more force. Those who align themselves more closely with the weapon are granted the ability to manipulate gravity, telekinetically pulling creatures and objects into range of its jagged-faced swings.</p>
+			<p>You gain a +2 bonus to attack and damage rolls made with this magic weapon. If the target is made of ferrous metal or is wearing ferrous armour, increase the bonus to +3.</p>
+			<p><strong><em>Optional Attunement.</em></strong> If you choose to attune to this weapon, it gains the Attraction, Magnetic Shockwave, and Dragon's Roar properties. When you activate a property granted by this optional attunement, roll a d4. On a 1, haemstrike’s optional attunement properties can’t be activated until the next dawn.</p>
+			<p><strong><em>Attraction.</em></strong> As a bonus action, you can point haemstrike at a target you can see within 30 feet of you. If the target is an object that weighs less than 1000 pounds, the object is pulled up to 15 feet towards you. If the target is a creature, it must succeed on a DC 16 Strength saving throw or be pulled up to 15 feet straight towards you. If the creature is made of ferrous metal or is wearing ferrous armour, it has disadvantage on the saving throw. Gargantuan or larger creatures automatically succeed on this saving throw.</p>
+			<p><strong><em>Magnetic Shockwave.</em></strong> Once per turn when you hit a target with haemstrike, you can cause an eruption of supercooled magnetite shards. Each creature other than you within 5 feet of the target must succeed on a DC 16 Dexterity saving throw, taking 1d6 cold damage and 1d6 piercing damage on a failed save, or half as much damage on a success. Creatures made of ferrous metal or wearing ferrous armour have disadvantage on this saving throw.</p>
+			<p><strong><em>Dragon’s Roar.</em></strong> While holding haemstrike, you can use a bonus action to make it release an intimidating roar. Each creature other than you within 15 feet of you must succeed on a DC 16 Wisdom saving throw or become frightened of you until the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any hammer">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_HAMMERS</set>
+		</setters>
+	</element>
+	<element name="Longspike" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_LONGSPIKE_UNCOMMON">
+		<description>
+			<p>The longspike grants its user the ability to strike from afar, without resorting to the use of unwieldy polearms. When grasped with force, the long, narrow blade extends, increasing the reach of its wielder’s thrust, and can implant a rapidly-growing net of hyphal tethers that can bind and constrict a foe.</p>
+			<p><strong><em>Hyphal Stretch.</em></strong> On your turn, you can squeeze the longspike (no action required), causing it to lengthen and increasing the reach of melee attacks you make with it by 5 feet until the end of your turn.</p>
+			<p><strong><em>Optional Attunement.</em></strong> You can choose to attune to this weapon, causing it to gain the Hyphal Grasp property while you remain attuned to it.</p>
+			<p><strong><em>Hyphal Grasp.</em></strong> As a bonus action while holding the rapier, you can speak its command word to cause writhing hyphal filaments to grow from it. The next time you hit a creature with a weapon attack using longspike within the next minute, the target must succeed on a DC 13 Strength saving throw or be restrained by the magical hyphae for 1 minute. An affected creature can use an action to repeat the saving throw, ending the effect on itself on a success. After you activate this property, roll a d6. On a 1-2, you can’t activate this property again until the following dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="rapier">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_WOTC_PHB_WEAPON_RAPIER</set>
+		</setters>
+	</element>
+	<element name="Longspike" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_LONGSPIKE_VERY_RARE">
+		<description>
+			<p>The longspike grants its user the ability to strike from afar, without resorting to the use of unwieldy polearms. When grasped with force, the long, narrow blade extends, increasing the reach of its wielder’s thrust, and can implant a rapidly-growing net of hyphal tethers that can bind and constrict a foe.</p>
+			<p>You gain a +2 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p><strong><em>Hyphal Stretch.</em></strong> On your turn, you can squeeze the longspike (no action required), causing it to lengthen and increasing the reach of melee attacks you make with it by 5 feet until the end of your turn.</p>
+			<p><strong><em>Optional Attunement.</em></strong> If you choose to attune to this weapon, it gains the Hyphal Grasp and Hyphal Parasite properties while you remain attuned to it.</p>
+			<p><strong><em>Hyphal Grasp.</em></strong> As a bonus action while holding the rapier, you can speak its command word to cause writhing hyphal filaments to grow from it. The next time you hit a creature with a weapon attack using longspike within the next minute, the target must succeed on a DC 16 Strength saving throw or be restrained by the magical hyphae for 1 minute. An affected creature can use an action to repeat the saving throw, ending the effect on itself on a success. After you activate this property, roll a d6. On a 1-2, you can’t activate this property again until the following dawn.</p>
+			<p><strong><em>Hyphal Parasite.</em></strong> When you hit a creature with this weapon you can use a bonus action to cast the <i>fungal infection</i> spell on it (save DC 16, no concentration required). After you activate this property, roll a d6. On a 1-2, you can’t activate this property again until the following dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="rapier">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">ID_WOTC_PHB_WEAPON_RAPIER</set>
+			<set name="enhancement">2</set>
+		</setters>
+	</element>
+	<element name="Painblinder Mycaxe" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_PAINBLINDER_MYCAXE_UNCOMMON">
+		<description>
+			<p>The wood and iron of this once-pristine axe have been utterly devoured and replaced by a variety of fruiting fungi. Gills funnel along the axe’s blade, holding millions of spores in biomantic suspension, ready to unleash their pain-inhibiting effects when inhaled.</p>
+			<p><strong><em>Painblind Spores.</em></strong> As a bonus action while holding this axe, you can inhale its spores, numbing your extremities and stimulating muscle recruitment. Until the start of your next turn, melee weapon attacks you make with this weapon have a +2 bonus to damage rolls and you have resistance to bludgeoning, piercing, and slashing damage. If you use your bonus action to inhale more spores at the beginning of your next turn, the effects continue without interruption. You can prolong the effects in this manner for up to 1 minute, after which the effects end. When the effects end, you become poisoned for a number of minutes equal to ten times the number of rounds you were under the influence of the spores. Once you have benefitted from the Painblind Spores, you can’t benefit from them again until after you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any axe">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_AXES</set>
+			<set name="name-format">Painblinder {{parent}}</set>
+		</setters>
+	</element>
+	<element name="Painblinder Mycaxe" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_PAINBLINDER_MYCAXE_RARE">
+		<description>
+			<p>The wood and iron of this once-pristine axe have been utterly devoured and replaced by a variety of fruiting fungi. Gills funnel along the axe’s blade, holding millions of spores in biomantic suspension, ready to unleash their pain-inhibiting effects when inhaled.</p>
+			<p><strong><em>Painblind Spores.</em></strong> As a bonus action while holding this axe, you can inhale its spores, numbing your extremities and stimulating muscle recruitment. Until the start of your next turn, melee weapon attacks you make with this weapon have a +3 bonus to damage rolls and you have resistance to bludgeoning, piercing, and slashing damage. If you use your bonus action to inhale more spores at the beginning of your next turn, the effects continue without interruption. You can prolong the effects in this manner for up to 1 minute, after which the effects end. When the effects end, you become poisoned for a number of minutes equal to ten times the number of rounds you were under the influence of the spores. Once you have benefitted from the Painblind Spores, you can’t benefit from them again until after you finish a short or long rest.</p>
+			<p>While under the influence of Painblind Spores, you have advantage on Strength and Constitution checks as well as Strength and Constitution saving throws.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any axe">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_AXES</set>
+			<set name="name-format">Painblinder {{parent}}</set>
+		</setters>
+	</element>
+	<element name="Hammer Time" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_HAMMER_TIME_UNCOMMON">
+		<description>
+			<p>Never has the saying “smash something into next week” been so apt. With an hourglass filled with brilliant platinum sand, this magical impact weapon utilises the dreamholder’s command over time dilation to throw its victims forward in time.</p>
+			<p>This weapon has 3 charges and regains all expended charges daily at dawn.</p>
+			<p><strong><em>Chronal Blink.</em></strong> As a bonus action, you can twist the weapon’s pommel, expending 1 charge and causing the sand to begin churning in defiance of gravity. The next creature you hit with an attack using this weapon within the next minute must make a DC 15 Charisma saving throw. On a failed saving throw, the target disappears as it gets shunted forwards in time, reappearing in the space from which it disappeared, or the nearest unoccupied space if that space is occupied, at the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any hammer">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_HAMMERS</set>
+			<set name="charges">3</set>
+		</setters>
+	</element>
+	<element name="Hammer Time" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_HAMMER_TIME_VERY_RARE">
+		<description>
+			<p>Never has the saying “smash something into next week” been so apt. With an hourglass filled with brilliant platinum sand, this magical impact weapon utilises the dreamholder’s command over time dilation to throw its victims forward in time.</p>
+			<p>This weapon has 7 charges and regains all expended charges daily at dawn.</p>
+			<p><strong><em>Chronal Blink.</em></strong> As a bonus action, you can twist the weapon’s pommel, expending 1 charge and causing the sand to begin churning in defiance of gravity. The next creature you hit with an attack using this weapon within the next minute must make a DC 16 Charisma saving throw. On a failed saving throw, the target disappears as it gets shunted forwards in time, reappearing in the space from which it disappeared, or the nearest unoccupied space if that space is occupied, at the end of your next turn.</p>
+			<p><strong><em>Detachable Eye.</em></strong> As an action, you can detach the eye from the centre of the weapon’s shaft, placing it on a surface to which it adheres for the next hour. The eye relays a constant stream of visual information to the larger eye on the weapon, which transforms to become a screen through which you can view what the smaller eye can see. At the end of the hour, the smaller eye teleports back to the weapon. Once you use this property, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any hammer">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_HAMMERS</set>
+			<set name="charges">7</set>
+		</setters>
+	</element>
+	<element name="Time Splitter" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_TIME_SPLITTER_UNCOMMON">
+		<description>
+			<p>The time splitter is just the tool for an almighty adventurer who’s always a little too slow to get where they need to be exactly in the nick of time. Harnessing the time dilative power of the dreamholder, this magic weapon lets its wielder swing back in time, or speed the flow of time for itself, allowing it to act more quickly.</p>
+			<p>This magic weapon has 4 charges and regains 1d4 expended charges daily at dawn.</p>
+			<p><strong><em>Pause.</em></strong> As a bonus action, you can flip the axe around anti-clockwise in your hands, expending 1 charge. Until the end of your next turn, any creature or object that moves leaves a ghostly image of itself at the moment you activated this property. You can target this ghostly image with attacks, spells, and effects as if the creature were still in that space, though the effects appear on the target wherever it is now.</p>
+			<p><strong><em>Time Dilation.</em></strong> As a bonus action, you can tap into this weapon’s chronomantic magic, casting the <i>haste</i> spell on yourself (no concentration required). When you do so, the GM rolls 1d3; the result (which the GM keeps secret) is how many rounds the spell lasts (ending at the end of your turn). After you activate this property, you can’t do so again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any axe">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="charges">4</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_AXES</set>
+		</setters>
+	</element>
+	<element name="Time Splitter" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_TIME_SPLITTER_RARE">
+		<description>
+			<p>The time splitter is just the tool for an almighty adventurer who’s always a little too slow to get where they need to be exactly in the nick of time. Harnessing the time dilative power of the dreamholder, this magic weapon lets its wielder swing back in time, or speed the flow of time for itself, allowing it to act more quickly.</p>
+			<p>This magic weapon has 9 charges and regains 1d6 + 3 expended charges daily at dawn.</p>
+			<p><strong><em>Pause.</em></strong> As a bonus action, you can flip the axe around anti-clockwise in your hands, expending 1 charge. Until the end of your next turn, any creature or object that moves leaves a ghostly image of itself at the moment you activated this property. You can target this ghostly image with attacks, spells, and effects as if the creature were still in that space, though the effects appear on the target wherever it is now.</p>
+			<p><strong><em>Time Dilation.</em></strong> As a bonus action, you can tap into this weapon’s chronomantic magic, casting the <i>haste</i> spell on yourself (no concentration required). When you do so, the GM rolls 1d4 + 1; the result (which the GM keeps secret) is how many rounds the spell lasts (ending at the end of your turn). After you activate this property, you can’t do so again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any axe">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="charges">9</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_AXES</set>
+		</setters>
+	</element>
+	<element name="Claws of Corruption" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLAWS_OF_CORRUPTION_UNCOMMON">
+		<description>
+			<p>These rough, menacing gauntlets, constructed from the razor-sharp claws of the pygmy rakshasa, thrum with the power of its hellish essence. The pointed tips of the claws easily dig into rock and metal alike, letting their wearer climb the roughest surfaces with feline agility.</p>
+			<p>The claws have 4 charges and regain all expended charges daily at dawn.</p>
+			<p><strong><em>Rakshasa’s Corruption.</em></strong> Blows from this weapon can cause a target’s magical energy to turn foul and consume it from within. When you hit a creature with an attack using one of these claws, you can expend 1 charge to attempt to curse it (no action required). The target must succeed on a DC 13 Wisdom saving throw or be cursed for 1 minute. When a cursed creature starts its turn while under the effect of a spell or while concentrating on a spell, it takes 1d6 necrotic damage.</p>
+			<p><strong><em>Catclimb.</em></strong> While wearing a pair of these claws, you gain a climbing speed equal to your walking speed.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="claw">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="charges">4</set>
+		</setters>
+		<rules>
+			<stat name="innate speed:climb" value="innate speed" bonus="base" />
+		</rules>
+	</element>
+	<element name="Claws of Corruption" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLAWS_OF_CORRUPTION_VERY_RARE">
+		<description>
+			<p>These rough, menacing gauntlets, constructed from the razor-sharp claws of the pygmy rakshasa, thrum with the power of its hellish essence. The pointed tips of the claws easily dig into rock and metal alike, letting their wearer climb the roughest surfaces with feline agility.</p>
+			<p>The claws have 5 charges and regain all expended charges daily at dawn.</p>
+			<p><strong><em>Rakshasa’s Corruption.</em></strong> Blows from this weapon can cause a target’s magical energy to turn foul and consume it from within. When you hit a creature with an attack using one of these claws, you can expend 1 charge to attempt to curse it (no action required). The target must succeed on a DC 16 Wisdom saving throw or be cursed for 1 minute. When a cursed creature starts its turn while under the effect of a spell or while concentrating on a spell, it takes 2d6 necrotic damage.</p>
+			<p><strong><em>Catclimb.</em></strong> While wearing a pair of these claws, you gain a climbing speed equal to your walking speed.</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="claw">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="charges">5</set>
+			<set name="enhancement">1</set>
+		</setters>
+		<rules>
+			<stat name="innate speed:climb" value="innate speed" bonus="base" />
+		</rules>
+	</element>
+	<element name="Feline's Fury" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_FELINES_FURY">
+		<description>
+			<p>An ostentatiously ornate tommybow, the goldleaf bows are decorated with an array of bedazzling jewels. Rubies and sapphires sparkle with the fire and ice of the Hells, emeralds carry a vitriolic venom, and the diamonds glow with warm, bright sunlight, a delight peculiar to the pygmy rakshasa.</p>
+			<p>This tommybow consists of five vertically stacked bows, each of which sports a pair of matched, randomly determined gemstones. Roll a d4 to determine each bow’s gemstone pairs: 1, diamonds; 2, emeralds; 3, rubies; 4, sapphires.</p>
+			<p><strong><em>Rakshasa’s Revenge.</em></strong> You can use an action to imbue a piece of ammunition with one of the following spells (save DC 15) and fire the ammunition at a point or target within range: <i>daylight</i> (diamond), <i>fireball</i> (ruby), <i>sleet storm</i> (sapphire), or <i>stench</i> (emerald; see page 515). When the ammunition hits a target or surface, it unleashes the imbued spell centred on that point. These spells do not require concentration. You can choose to fire at a point on a surface or at a target; if you miss the target, the effect is centred on whichever surface the ammunition hits (GM’s discretion). The gems are destroyed when the spell is cast and their pieces fall to the ground.</p>
+			<p><strong><em>Recharge.</em></strong> You can spend 1 minute replacing a pair of gemstones with diamonds, emeralds, rubies, or sapphires worth at least 100 gp each. So long as the gemstones are matching, then, at the next dawn, they sparkle with arcane power and can be used to imbue the bolts with the associated spells.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="tommybow">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_LT_HGTMH_WEAPON_GROUP_TOMMYBOWS</set>
+			<set name="name-format">Feline's Fury</set>
+		</setters>
+	</element>
+	<element name="Splinterspray Tommybow" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SPLINTERSPRAY_TOMMYBOW_UNCOMMON">
+		<description>
+			<p>Originally fashioned for low-accuracy ride-by assassinations in urban settings, this magical tommybow retains its predecessors’ ability to self-load bolts from an attached magazine, while magically enhancing the attacks to spray splinters of wood and metal towards a target.</p>
+			<p>This magical tommybow has 6 charges and regains all expended charges daily at dawn.</p>
+			<p><strong><em>Splinterspray.</em></strong> As an action, you can pull the trigger extra hard, expending 1 charge, and causing the ammunition to splinter into thousands of wood and metal shards. Instead of the normal attack against a single target, make separate attack rolls against two creatures within 5 feet of each other. On a hit, a creature takes piercing damage equal to 2d4 (plus any modifiers normally added).</p>
+			<p><strong><em>Reload (3).</em></strong> After you make three attacks with this weapon, you must reload it using an action.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="tommybow">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_LT_HGTMH_WEAPON_TOMMYBOWS3_CROSSBOW_LIGHT|ID_LT_HGTMH_WEAPON_TOMMYBOWS3_CROSSBOW_HEAVY|ID_LT_HGTMH_WEAPON_TOMMYBOWS3_CROSSBOW_HAND</set>
+			<set name="charges">6</set>
+		</setters>
+	</element>
+	<element name="Splinterspray Tommybow" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SPLINTERSPRAY_TOMMYBOW_RARE">
+		<description>
+			<p>Originally fashioned for low-accuracy ride-by assassinations in urban settings, this magical tommybow retains its predecessors’ ability to self-load bolts from an attached magazine, while magically enhancing the attacks to spray splinters of wood and metal towards a target.</p>
+			<p>This magical tommybow has 9 charges and regains all expended charges daily at dawn.</p>
+			<p><strong><em>Splinterspray.</em></strong> As an action, you can pull the trigger extra hard, expending 1 charge, and causing the ammunition to splinter into thousands of wood and metal shards. Instead of the normal attack against a single target, make separate attack rolls against two creatures within 5 feet of each other. On a hit, a creature takes piercing damage equal to 3d4 (plus any modifiers normally added).</p>
+			<p><strong><em>Reload (3).</em></strong> After you make three attacks with this weapon, you must reload it using an action.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="tommybow">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_LT_HGTMH_WEAPON_TOMMYBOWS3_CROSSBOW_LIGHT|ID_LT_HGTMH_WEAPON_TOMMYBOWS3_CROSSBOW_HEAVY|ID_LT_HGTMH_WEAPON_TOMMYBOWS3_CROSSBOW_HAND</set>
+			<set name="charges">9</set>
+		</setters>
+	</element>
+	<element name="Splinterspray Tommybow" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SPLINTERSPRAY_TOMMYBOW_VERY_RARE">
+		<description>
+			<p>Originally fashioned for low-accuracy ride-by assassinations in urban settings, this magical tommybow retains its predecessors’ ability to self-load bolts from an attached magazine, while magically enhancing the attacks to spray splinters of wood and metal towards a target.</p>
+			<p>This magical tommybow has 12 charges and regains all expended charges daily at dawn.</p>
+			<p><strong><em>Splinterspray.</em></strong> As an action, you can pull the trigger extra hard, expending 1 charge, and causing the ammunition to splinter into thousands of wood and metal shards. Instead of the normal attack against a single target, make separate attack rolls against two creatures within 5 feet of each other. On a hit, a creature takes piercing damage equal to 4d4 (plus any modifiers normally added).</p>
+			<p><strong><em>Reload (3).</em></strong> After you make three attacks with this weapon, you must reload it using an action.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="tommybow">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">ID_LT_HGTMH_WEAPON_TOMMYBOWS3_CROSSBOW_LIGHT|ID_LT_HGTMH_WEAPON_TOMMYBOWS3_CROSSBOW_HEAVY|ID_LT_HGTMH_WEAPON_TOMMYBOWS3_CROSSBOW_HAND</set>
+			<set name="charges">12</set>
+		</setters>
+	</element>
+	<element name="Tail's End" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_TAILS_END_RARE">
+		<description>
+			<p>The blade of this wicked khopesh is composed of several individual sections linked by a sturdy chain running through the weapon’s length. Always dry to the touch, this magical blade appears to continuously absorb any water with which it comes into contact.</p>
+			<p><strong><em>Split at the Seams.</em></strong> As a bonus action, you can press a button hidden on the weapon’s hilt to cause the sections comprising the blade to magically detach from one another, remaining connected by the chain. Until reformed as a sword as a bonus action, this weapon loses its former sword properties and gains those of a whip.</p>
+			<p><strong><em>Unquenchable Thirst.</em></strong> When you roll a 20 on an attack roll made with this weapon, it releases a deadly burst of desiccating, negative energy that drains moisture from a target, forcing it to make a DC 15 Constitution saving throw. On a failed save, the target takes 6d6 necrotic damage and is desiccated for 1 minute. On a successful save, a creature takes half as much damage and isn’t desiccated. A desiccated creature’s skin turns dry and brittle, rupturing with ease, and causing the creature to take an additional 1d4 slashing damage whenever it takes bludgeoning, force, piercing, slashing, or thunder damage. A desiccated creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. This property has no effect on creatures without skin or on those immune to necrotic damage.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="name-format">Tail's End {{parent}} </set>
+		</setters>
+	</element>
+	<element name="Tail's End" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_TAILS_END_VERY_RARE">
+		<description>
+			<p>The blade of this wicked khopesh is composed of several individual sections linked by a sturdy chain running through the weapon’s length. Always dry to the touch, this magical blade appears to continuously absorb any water with which it comes into contact.</p>
+			<p><strong><em>Split at the Seams.</em></strong> As a bonus action, you can press a button hidden on the weapon’s hilt to cause the sections comprising the blade to magically detach from one another, remaining connected by the chain. Until reformed as a sword as a bonus action, this weapon loses its former sword properties and gains those of a whip.</p>
+			<p><strong><em>Unquenchable Thirst.</em></strong> When you roll a 20 on an attack roll made with this weapon, it releases a deadly burst of desiccating, negative energy that drains moisture from a target, forcing it to make a DC 16 Constitution saving throw. On a failed save, the target takes 10d6 necrotic damage and is desiccated for 1 minute. On a successful save, a creature takes half as much damage and isn’t desiccated. A desiccated creature’s skin turns dry and brittle, rupturing with ease, and causing the creature to take an additional 1d8 slashing damage whenever it takes bludgeoning, force, piercing, slashing, or thunder damage. A desiccated creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. This property has no effect on creatures without skin or on those immune to necrotic damage.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="name-format">Tail's End {{parent}}</set>
+		</setters>
+	</element>
+	<element name="Gunnspier" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_GUNNSPIER_RARE">
+		<description>
+			<p><i>“Stab, bang, hope.”</i> If consulted, these are the instructions any kobold will give on using a gunnspier. With a lengthy reload time and complete lack of accuracy, this matchlock-augmented polearm is usable at only one range: point blank. It also comes with a lovely ribbon and a neat basket to hold all your spare shot. Cute.</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p><strong><em>Point Blank Shot.</em></strong> When you hit a target with an attack using a loaded gunnspier, you can use a bonus action to pull the trigger, firing a plum-sized leaden ball at the target. The attack deals an additional 2d8 bludgeoning damage. As an action, you can reload the gunnspier.</p>
+			<p><strong><em>Backfire.</em></strong> When you use Point Blank Shot and roll an 8 on both of the additional bludgeoning damage dice, the gunnspier backfires. Each creature within 10 feet of you (including you) must succeed on a DC 15 Dexterity saving throw or take 4d6 piercing damage as shrapnel erupts from the weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any polearm">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_POLEARM</set>
+			<set name="name-format">Gunnspier {{parent}}</set>
+		</setters>
+	</element>
+	<element name="Gunnspier" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_GUNNSPIER_VERY_RARE">
+		<description>
+			<p>“Stab, bang, hope.” If consulted, these are the instructions any kobold will give on using a gunnspier. With a lengthy reload time and complete lack of accuracy, this matchlock-augmented polearm is usable at only one range: point blank. It also comes with a lovely ribbon and a neat basket to hold all your spare shot. Cute.</p>
+			<p>Three-weapons-in-one, this upgraded gunnspier can slash, shoot, and bite. </p>
+			<p>You gain a +2 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p><strong><em>Point Blank Shot.</em></strong> When you hit a target with an attack using a loaded gunnspier, you can use a bonus action to pull the trigger, firing a plum-sized leaden ball at the target. The attack deals an additional 3d8 bludgeoning damage. As an action, you can reload the gunnspier.</p>
+			<p><strong><em>Chomp.</em></strong> The pneumatic-powered dragon’s maw can run along the length of the gun’s barrel before biting into a target skewered by its point. When you hit a target with an attack using the gunnspier, you can use a bonus action to deal an additional 1d10 piercing damage to it as part of the attack.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any polearm">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_POLEARM</set>
+			<set name="name-format">Gunnspier {{parent}}</set>
+		</setters>
+	</element>	
+	<element name="Kobbold Wristbow" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_KOBBOLD_WRISTBOW">
+		<description>
+			<p>Something about this cobbled-together, wrist-mounted, bow-like contraption looks wrong. It shouldn’t hold together. There’s nothing even holding the string in place. It must be magic. There’s no writing on it but, if there was, you feel it’d be written as: “Kobbold RystBo.”</p>
+			<p><strong><em>Handsfree.</em></strong> The kobold wristbow does not require a free hand to hold or fire.</p>
+			<p><strong><em>Quickshot.</em></strong> In response to your mental command, you can release the bowstring and make a ranged weapon attack with the loaded wristbow as a bonus action. You must reload a wristbow before firing again.</p>
+			<p><strong><em>Reload.</em></strong> You can reload the kobold wristbow using either a bonus action or an action. This requires at least 1 free hand.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="hand crossbow">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_PHB_WEAPON_CROSSBOW_HAND</set>
+		</setters>
+	</element>
+	<element name="Pneuma Blade" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_PNEUMA_BLADE_RARE">
+		<description>
+			<p>This blade shouldn’t work; the pneumatic seals are made of earwax and leather, the sprockets’ teeth are all different sizes, and the structure itself is held together by an adhesive tape decorated with small ducks. The only explanation is that the sheer force of the kobold mechamagicians’ belief is encapsulated within this magic sword, allowing it to chomp at its enemies.</p>
+			<p><strong><em>Pneumatic Strike.</em></strong> After you make an attack roll with this weapon, but before the result of the attack is determined, you can use a bonus action to pull the blade’s trigger. With a pneumatic thrust, the top of the weapon arcs forward and you gain a +4 bonus to the attack roll.</p>
+			<p><strong><em>Tetanus Blade.</em></strong> When you hit a creature with an attack that uses Pneumatic Strike, the pathogens that live within the rusty blade are reinvigorated by its magic, and the attack deals an additional 1d8 poison damage.</p>
+			<p><strong><em>Backfire.</em></strong> When you roll an 8 on Tetanus Blade’s poison damage, dormant pathogens within surrounding creatures become reinvigorated. Each creature within 10 feet of you (including you) must succeed on a DC 15 Constitution saving throw or take 4d6 poison damage and become poisoned until the end of its next turn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="longsword or greatsword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="name-format">Pneuma Blade</set>
+		</setters>
+	</element>
+	<element name="Pneuma Blade" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_PNEUMA_BLADE_VERY_RARE">
+		<description>
+			<p>This blade shouldn’t work; the pneumatic seals are made of earwax and leather, the sprockets’ teeth are all different sizes, and the structure itself is held together by an adhesive tape decorated with small ducks. The only explanation is that the sheer force of the kobold mechamagicians’ belief is encapsulated within this magic sword, allowing it to chomp at its enemies.</p>
+			<p>With a refined pneumatic mechanism, this upgraded version of the pneuma blade is totally, indisputably, and inarguably, 98.4385% guaranteed not to backfire. The new-fangled heating element is also almost absolutely perfect.</p>
+			<p><strong><em>Pneumatic Strike.</em></strong> After you make an attack roll with this weapon, but before the result of the attack is determined, you can use a bonus action to pull the blade’s trigger. With a pneumatic thrust, the top of the weapon arcs forward and you gain a +5 bonus to the attack roll.</p>
+			<p><strong><em>Heated Weapon.</em></strong> When you hit a creature with an attack that uses Pneumatic Strike, the pathogens that live within the rusty blade are reinvigorated by its magic, and the attack deals an additional 2d8 fire damage.</p>
+			<p><strong><em>Burnout.</em></strong> When you use the Heated Weapon property of this weapon and roll an 8 on both of the additional fire damage dice, the heating mechanism backfires. Each creature within 10 feet of you (including you) must succeed on a DC 16 Dexterity saving throw or take 4d6 fire damage as scalding pneumatic fluid bursts out.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="longsword or greatsword">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="name-format">Pneuma Blade</set>
+		</setters>
+	</element>
+	<element name="Jaw Breakers" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_JAW_BREAKERS_UNCOMMON">
+		<description>
+			<p>Forged as a pair, these magic weapons are crafted from the matching upper and lower jaw bones of a tarrasque. Their innate magic—and one of the reasons the tar-rasque’s bite is so powerful—creates an arcanomagnetic pull between the two jawbones, dealing devastating damage to whatever lies between them.</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with each of these magic weapons. These weapons deal piercing damage instead of their usual damage type.</p>
+			<p><strong><em>Chomp.</em></strong> When you engage in two-weapon fighting using these two weapons and hit the same target with both weapons, the attack you make with your second weapon deals an additional 1d8 damage.</p>
+			<p><strong><em>Optional Attunement.</em></strong> You can choose to attune to a pair of jaw breakers. They count as a single magic item with regard to the number of magic items you can attune to. When you do so, the weapons gain the Swirling Dervish property while you are attuned to them.</p>
+			<p><strong><em>Swirling Dervish.</em></strong> Harnessing the power of the blades, you leap over a target, becoming a tornado of lacerating blades. As an action while you wield both jaw breakers, you can perform a magically-enhanced jump, attacking creatures you pass over. This jump has a maximum distance of 20 feet, is a straight line, must end in an unoccupied space, does not provoke opportunity attacks, and each foot you clear on the jump costs one foot of movement. You can make one attack against a creature under you in each 5-foot space over which you jump. These attacks always alternate main-hand, then off-hand.</p>
+			<p>For example, if you jumped over one Huge creature, you could make three attacks against it (the second one dealing Chomp’s extra damage on a hit). If you jumped over three Medium creatures, you could make one attack against each (with no extra damage from Chomp).</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any two melee">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
+			<set name="name-format">Jaw Breakers</set>
+		</setters>
+	</element>
+	<element name="Jaw Breakers" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_JAW_BREAKERS_RARE">
+		<description>
+			<p>Forged as a pair, these magic weapons are crafted from the matching upper and lower jaw bones of a tarrasque. Their innate magic—and one of the reasons the tar-rasque’s bite is so powerful—creates an arcanomagnetic pull between the two jawbones, dealing devastating damage to whatever lies between them.</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with each of these magic weapons. These weapons deal piercing damage instead of their usual damage type.</p>
+			<p><strong><em>Chomp.</em></strong> When you engage in two-weapon fighting using these two weapons and hit the same target with both weapons, the attack you make with your second weapon deals an additional 1d8 damage.</p>
+			<p><strong><em>Optional Attunement.</em></strong> You can choose to attune to a pair of jaw breakers. They count as a single magic item with regard to the number of magic items you can attune to. When you do so, the weapons gain the Swirling Dervish property while you are attuned to them.</p>
+			<p><strong><em>Swirling Dervish.</em></strong> Harnessing the power of the blades, you leap over a target, becoming a tornado of lacerating blades. As an action while you wield both jaw breakers, you can perform a magically-enhanced jump, attacking creatures you pass over. This jump has a maximum distance of 25 feet, is a straight line, must end in an unoccupied space, does not provoke opportunity attacks, and each foot you clear on the jump costs one foot of movement. You can make one attack against a creature under you in each 5-foot space over which you jump. These attacks always alternate main-hand, then off-hand.</p>
+			<p>For example, if you jumped over one Huge creature, you could make three attacks against it (the second one dealing Chomp’s extra damage on a hit). If you jumped over three Medium creatures, you could make one attack against each (with no extra damage from Chomp).</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any two melee">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
+			<set name="name-format">Jaw Breakers</set>
+		</setters>
+	</element>
+	<element name="Jaw Breakers" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_JAW_BREAKERS_VERY_RARE">
+		<description>
+			<p>Forged as a pair, these magic weapons are crafted from the matching upper and lower jaw bones of a tarrasque. Their innate magic—and one of the reasons the tar-rasque’s bite is so powerful—creates an arcanomagnetic pull between the two jawbones, dealing devastating damage to whatever lies between them.</p>
+			<p>You gain a +2 bonus to attack and damage rolls made with each of these magic weapons. These weapons deal piercing damage instead of their usual damage type.</p>
+			<p><strong><em>Chomp.</em></strong> When you engage in two-weapon fighting using these two weapons and hit the same target with both weapons, the attack you make with your second weapon deals an additional 1d8 damage.</p>
+			<p><strong><em>Optional Attunement.</em></strong> You can choose to attune to a pair of jaw breakers. They count as a single magic item with regard to the number of magic items you can attune to. When you do so, the weapons gain the Swirling Dervish property while you are attuned to them.</p>
+			<p><strong><em>Swirling Dervish.</em></strong> Harnessing the power of the blades, you leap over a target, becoming a tornado of lacerating blades. As an action while you wield both jaw breakers, you can perform a magically-enhanced jump, attacking creatures you pass over. This jump has a maximum distance of 25 feet, is a straight line, must end in an unoccupied space, does not provoke opportunity attacks, and each foot you clear on the jump costs one foot of movement. You can make one attack against a creature under you in each 5-foot space over which you jump. These attacks always alternate main-hand, then off-hand.</p>
+			<p>For example, if you jumped over one Huge creature, you could make three attacks against it (the second one dealing Chomp’s extra damage on a hit). If you jumped over three Medium creatures, you could make one attack against each (with no extra damage from Chomp).</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any two melee">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
+			<set name="name-format">Jaw Breakers</set>
+		</setters>
+	</element>
+	<element name="Terrorasque" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_TERRORASQUE_RARE">
+		<description>
+			<p>From the fossilised teeth of a tar-rasque is extracted the magic of rage and ferocity. Upon attuning to this weapon, you gain the ability to unleash terrifyingly monstrous roars and swing the enormous, bone-handled blade with astounding aggression.</p>
+			<p>You gain a +1 bonus to attack and damage rolls you make with this magic weapon. This weapon has 5 charges and regains 1d4 + 1 charges daily at dawn.</p>
+			<p><strong><em>Ferocious Blow.</em></strong> As an action, you can expend 1 charge to call upon the spirit of the tar-rasque and make a mighty swing with this weapon. If the attack hits, roll four times as many damage dice for the weapon as normal for this attack. This dice multiplication does not affect additional damage from abilities such as smite or sneak attack, and is unaffected by critical hits. If the attack misses, you fall prone and your speed is reduced to 0 feet until the start of your next turn.</p>
+			<p><strong><em>Terrorise.</em></strong> As a bonus action, or as part of the bonus action you use to activate the Rage class feature, you can brandish the terrorasque, amplifying your yell with that of a tar-rasque’s. Each hostile creature within 60 feet of you that can hear you must succeed on a DC 15 Wisdom saving throw or be frightened of you for 1 minute. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect for itself on a success. After you use this property, you can’t do so again for 1 hour.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any two-handed melee">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">(ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE), ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</set>
+			<set name="charges">5</set>
+			<set name="name-format">Terrorasque</set>
+		</setters>
+	</element>
+	<element name="Terrorasque" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_TERRORASQUE_VERY_RARE">
+		<description>
+			<p>From the fossilised teeth of a tar-rasque is extracted the magic of rage and ferocity. Upon attuning to this weapon, you gain the ability to unleash terrifyingly monstrous roars and swing the enormous, bone-handled blade with astounding aggression.</p>
+			<p>You gain a +2 bonus to attack and damage rolls you make with this magic weapon. This weapon has 7 charges and regains 1d6 + 1 charges daily at dawn.</p>
+			<p><strong><em>Ferocious Blow.</em></strong> As an action, you can expend 1 charge to call upon the spirit of the tar-rasque and make a mighty swing with this weapon. If the attack hits, roll five times as many damage dice for the weapon as normal for this attack. This dice multiplication does not affect additional damage from abilities such as smite or sneak attack, and is unaffected by critical hits. If the attack misses, you fall prone and your speed is reduced to 0 feet until the start of your next turn.</p>
+			<p><strong><em>Terrorise.</em></strong> As a bonus action, or as part of the bonus action you use to activate the Rage class feature, you can brandish the terrorasque, amplifying your yell with that of a tar-rasque’s. Each hostile creature within 60 feet of you that can hear you must succeed on a DC 16 Wisdom saving throw or be frightened of you for 1 minute. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect for itself on a success. After you use this property, you can’t do so again for 1 hour.</p>
+			<p><strong><em>Tar Strike.</em></strong> As an action, you can mentally command this weapon to ooze tar, expending 1 charge as you make one attack against a creature with it. On a hit, the target suffers the weapon attack’s normal effects and is restrained for 1 minute. The creature can use its action to make a DC 16 Strength check, ending the restrained condition on a success.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any two-handed melee">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">(ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE), ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</set>
+			<set name="charges">7</set>
+			<set name="name-format">Terrorasque</set>
+		</setters>
+	</element>
+</elements>

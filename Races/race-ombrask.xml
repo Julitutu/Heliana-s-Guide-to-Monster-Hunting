@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ombrask</name>
+		<source>Heliana's Guide to Monster Hunting</source>
+		<update version="0.1.0">
+			<file name="race-ombrask.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Races/race-ombrask.xml" />
+		</update>
+	</info>
+
+	<!-- Ombrask Race -->
+	<element name="Ombrask" type="Race" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACE_OMBRASK">
+		<description>
+			<p class="flavor">“By the gods... and I thought that hooded figure in the back o’ the tavern was dark. It don’t get shadier than this.” —Plens Donsu’us, Barista, Wizards of the Roast</p>
+			<p>Those who wander the Shadow Plane are doomed to twisted fates and mired minds. These fading, lost souls begin to manifest monstrous forms, although some especially resilient individuals manage to pull themselves from this dark path before their essence is wiped clean. Known as ombrasks (OM-brask), these translucent creatures hail from a variety of heritages; from elf to dwarf, dragonborn to lotol, and rakin to goblin. All struggle to recall even the simplest memory, such as their former name, and all have a ghostly, colourless appearance.</p>
+			<h4>SHADOW MEMORIES</h4>
+			<p>One of the first things an ombrask forgets is its voice. Though it knows and can understand the meaning of words, its cadence, pitch, and patterns of speech fade from lack of use; the dreary, joyless experience of the Shadow Plane leaves little to talk about. However, ombrasks become especially sensitive to the psychic burst of emotion that accompanies death, the freeing of a soul from its shadow- numbed body. Ombrasks can latch onto the shreds of this psyche and adopt its speech patterns, learning to mimic them perfectly.</p>
+			<p>Next lost is the ability to feel, love, and smile; any emotion associated with joy or excitement is nullified. With prolonged distance from the Shadow Plane, or exposure to realms of strong emotion, such as the Plane of Fey or Springarden, these sensations can make a slow return for a lucky few. What is never lost is the memory of mundane tasks, such as ploughing, chopping wood, or polishing armour. Muscle memory is scarred into the minds of ombrasks, making them particularly deft at tiny, detailed work.</p>
+			<h4>ALMOST UNSEEN</h4>
+			<p>If an ombrask doesn’t find a way to exit the Shadow Plane or isn’t summoned by some novice wizard, it can fade entirely, becoming an invisible, skulking creature bent only on survival. In fact, there is strong evidence to suggest that the creature summoned by the unseen servant spell is one of these invisible creatures, temporarily pulled from the Shadow Plane. The fate of those too far gone is enough to stop most explorers from staying long in that dull and lifeless expanse.</p>
+			<h4>MOMENTO</h4>
+			<p>A sense of adventure, a magical mishap, or a cruel curse, there are a multitude of reasons why a native of the Material Plane might find itself shunned to the Shadow Plane. Discovering who they used to be is a motivator for many ombrasks. Do they have parents? Cultural traditions? What is their history? On the other hand, some ombrasks, perhaps those with a foreboding sense of their past misdeeds, choose to ignore what might have come before and focus on living life anew. That is, if their previous life doesn’t come calling…</p>
+			<h4>OMBRASK TRAITS</h4>
+			<p>As an ombrask, you have the following racial traits.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2, and one other ability score based on your former race increases by 1, as described in the table below.</p>
+				<table class="striped">
+					<thead>
+						<tr>
+							<th>Former Race</th>
+							<th>Ability Increased</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><td>Cnidaran</td><td>+1 Con</td></tr>
+						<tr><td>Cyclopian</td><td>+1 Int</td></tr>
+						<tr><td>Dwarf</td><td>+1 Con</td></tr>
+						<tr><td>Elf</td><td>+1 Int, Wis, or Cha</td></tr>
+						<tr><td>Dragonborn</td><td>+1 Str</td></tr>
+						<tr><td>Gnome</td><td>+1 Int</td></tr>
+						<tr><td>Gobboc</td><td>+1 Wis or Cha</td></tr>
+						<tr><td>Golynn</td><td>+1 Con</td></tr>
+						<tr><td>Half-Elf</td><td>+1 Cha</td></tr>
+						<tr><td>Half-Orc</td><td>+1 Str</td></tr>
+						<tr><td>Halfling</td><td>+1 Cha</td></tr>
+						<tr><td>Human</td><td>+1 any ability except Dex</td></tr>
+						<tr><td>Oozekin</td><td>+1 Con</td></tr>
+						<tr><td>Opteran</td><td>+1 Cha</td></tr>
+						<tr><td>Rakin</td><td>+1 Con, Int, Wis, or Cha*</td></tr>
+						<tr><td>Tiefling</td><td>+1 Cha</td></tr>
+					</tbody>
+				</table>
+			<p class="indent"><strong><em>Age.</em></strong> Ombrasks live as long as the race from which they originated.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can read and write Common and Undercommon, but can speak only using your Voice Thief feature.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Ombrasks retain the general shape of their former race. Your size is either Medium or Small, based on your former race.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> Accustomed to life on the Shadow Plane, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern colour in darkness, only shades of grey.</p>
+			<p class="indent"><strong><em>Fade Away.</em></strong> When you reach 5th level, you can cast the invisibility spell on yourself once with this trait, requiring no material components, and you regain the ability to do so when you finish a long rest. Constitution is your spellcasting ability for this spell. You can also cast this spell using any spell slots you have of the appropriate level.</p>
+			<p class="indent"><strong><em>Lightbender.</em></strong> Light naturally sculpts around your skin. You have advantage on saving throws against being blinded, and you have resistance to radiant damage.</p>
+			<p class="indent"><strong><em>Trackless.</em></strong> The Shadow Plane is a dangerous place and ombrasks quickly learn to move in the shadows, leaving scarce tracks in their wake. You have proficiency in the Stealth skill.</p>
+			<p class="indent"><strong><em>Voice Thief.</em></strong> While an ombrask can potentially understand any number of languages, it is a naturally mute creature. When a creature that can speak dies within 30 feet of you, you can use your reaction to absorb a piece of its psyche. After you have used this reaction, you can’t do so again until you finish a long rest.</p>
+			<p>After you have absorbed a psyche, you can perfectly mimic the creature’s voice, cadence, and speech patterns indefinitely. You can hold a number of pieces of psyche (and mimic a number of voices) equal to your proficiency bonus. If absorbing a new piece of psyche would put you over this limit, you must choose one psyche to be replaced.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height">5'</set>
+			<set name="weight">100 lb.</set>
+		</setters>
+		<rules>
+			<!-- Ability Score Increase (Dexterity +2, +1 based on former race) -->
+			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Racial Trait" name="Former Race" supports="Ombrask Ability Score Increase" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase (+2 and +1, or three +1's) -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Ombrask)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Ombrask)" supports="Custom Ability Score Increase 1" number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Languages (Common, Undercommon) -->
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_UNDERCOMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<!-- Tasha's Cauldron of Everything: Customized Language -->
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<!-- Size (Determined by former race) -->
+            <select type="Racial Trait" name="Size (Ombrask)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+
+			<!-- Speed (30 ft. walking) -->
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<!-- Darkvision -->
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<!-- Fade Away -->
+			<grant type="Racial Trait" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_FADE_AWAY" />
+
+			<!-- Lightbender -->
+			<grant type="Racial Trait" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_LIGHTBENDER" />
+
+			<!-- Trackless -->
+			<grant type="Racial Trait" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_TRACKLESS" />
+
+			<!-- Voice Thief -->
+			<grant type="Racial Trait" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_VOICE_THIEF" />
+		</rules>
+	</element>
+
+	<!-- Ability Score Increase: Cnidaran (+1 Constitution) -->
+	<element name="Cnidaran" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_ASI_CNIDARAN">
+		<supports>Ombrask Ability Score Increase</supports>
+		<description>
+			<p>Your Constitution score increases by 1.</p>
+		</description>
+		<sheet>
+			<description>Your Constitution score increases by 1.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+		</rules>
+	</element>
+
+	<!-- Ability Score Increase: Cyclopian (+1 Intelligence) -->
+	<element name="Cyclopian" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_ASI_CYCLOPIAN">
+		<supports>Ombrask Ability Score Increase</supports>
+		<description>
+			<p>Your Intelligence score increases by 1.</p>
+		</description>
+		<sheet>
+			<description>Your Intelligence score increases by 1.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" />
+		</rules>
+	</element>
+
+	<!-- Ability Score Increase: Dwarf (+1 Constitution) -->
+	<element name="Dwarf" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_ASI_DWARF">
+		<supports>Ombrask Ability Score Increase</supports>
+		<description>
+			<p>Your Constitution score increases by 1.</p>
+		</description>
+		<sheet>
+			<description>Your Constitution score increases by 1.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+		</rules>
+	</element>
+
+	<!-- Ability Score Increase: Elf (+1 Int, Wis, or Cha) -->
+	<element name="Elf" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_ASI_ELF">
+		<supports>Ombrask Ability Score Increase</supports>
+		<description>
+			<p>Your Intelligence, Wisdom, or Charisma score increases by 1.</p>
+		</description>
+		<sheet display="false">
+			<description>Your Intelligence, Wisdom, or Charisma score increases by 1.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Ombrask: Elf)" supports="Ombrask Elf" />
+		</rules>
+	</element>
+
+
+
+	<!-- Elf Ability Score Increase (Intelligence) -->
+	<element name="Intelligence" type="Ability Score Improvement" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_OMBRASK_ELF_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Ombrask Elf</supports>
+		<description>
+			<p>Your Intelligence score increases by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="1" alt="Ombrask Elf" />
+		</rules>
+	</element>
+
+	<!-- Elf Ability Score Increase (Wisdom) -->
+	<element name="Wisdom" type="Ability Score Improvement" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_OMBRASK_ELF_WISDOM">
+		<compendium display="false" />
+		<supports>Ombrask Elf</supports>
+		<description>
+			<p>Your Wisdom score increases by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" alt="Ombrask Elf" />
+		</rules>
+	</element>
+
+	<!-- Elf Ability Score Increase (Charisma) -->
+	<element name="Charisma" type="Ability Score Improvement" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_OMBRASK_ELF_CHARISMA">
+		<compendium display="false" />
+		<supports>Ombrask Elf</supports>
+		<description>
+			<p>Your Charisma score increases by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" alt="Ombrask Elf" />
+		</rules>
+	</element>
+
+	<!-- Ability Score Increase: Dragonborn (+1 Strength) -->
+	<element name="Dragonborn" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_ASI_DRAGONBORN">
+		<supports>Ombrask Ability Score Increase</supports>
+		<description>
+			<p>Your Strength score increases by 1.</p>
+		</description>
+		<sheet>
+			<description>Your Strength score increases by 1.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" />
+		</rules>
+	</element>
+
+	<!-- Ability Score Increase: Gnome (+1 Intelligence) -->
+	<element name="Gnome" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_ASI_GNOME">
+		<supports>Ombrask Ability Score Increase</supports>
+		<description>
+			<p>Your Intelligence score increases by 1.</p>
+		</description>
+		<sheet>
+			<description>Your Intelligence score increases by 1.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" />
+		</rules>
+	</element>
+
+	<!-- Ability Score Increase: Gobboc (+1 Wis or Cha) -->
+	<element name="Gobboc" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_ASI_GOBBOC">
+		<supports>Ombrask Ability Score Increase</supports>
+		<description>
+			<p>Your Wisdom or Charisma score increases by 1.</p>
+		</description>
+		<sheet display="false">
+			<description>Your Wisdom or Charisma score increases by 1.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Ombrask: Gobboc)" supports="Ombrask Gobboc" number="1" />
+		</rules>
+	</element>
+
+	<!-- Gobboc Ability Score Increase (Wisdom) -->
+	<element name="Wisdom" type="Ability Score Improvement" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_OMBRASK_GOBBOC_WISDOM">
+		<compendium display="false" />
+		<supports>Ombrask Gobboc</supports>
+		<description>
+			<p>Your Wisdom score increases by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" alt="Ombrask Gobboc" />
+		</rules>
+	</element>
+
+	<!-- Gobboc Ability Score Increase (Charisma) -->
+	<element name="Charisma" type="Ability Score Improvement" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_OMBRASK_GOBBOC_CHARISMA">
+		<compendium display="false" />
+		<supports>Ombrask Gobboc</supports>
+		<description>
+			<p>Your Charisma score increases by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" alt="Ombrask Gobboc" />
+		</rules>
+	</element>
+
+	<!-- Ability Score Increase: Golynn (+1 Constitution) -->
+	<element name="Golynn" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_ASI_GOLYNN">
+		<supports>Ombrask Ability Score Increase</supports>
+		<description>
+			<p>Your Constitution score increases by 1.</p>
+		</description>
+		<sheet>
+			<description>Your Constitution score increases by 1.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+		</rules>
+	</element>
+
+	<!-- Ability Score Increase: Half-Elf (+1 Charisma) -->
+	<element name="Half-Elf" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_ASI_HALF_ELF">
+		<supports>Ombrask Ability Score Increase</supports>
+		<description>
+			<p>Your Charisma score increases by 1.</p>
+		</description>
+		<sheet>
+			<description>Your Charisma score increases by 1.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" />
+		</rules>
+	</element>
+
+	<!-- Ability Score Increase: Half-Orc (+1 Strength) -->
+	<element name="Half-Orc" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_ASI_HALF_ORC">
+		<supports>Ombrask Ability Score Increase</supports>
+		<description>
+			<p>Your Strength score increases by 1.</p>
+		</description>
+		<sheet>
+			<description>Your Strength score increases by 1.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" />
+		</rules>
+	</element>
+
+	<!-- Ability Score Increase: Halfling (+1 Charisma) -->
+	<element name="Halfling" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_ASI_HALFLING">
+		<supports>Ombrask Ability Score Increase</supports>
+		<description>
+			<p>Your Charisma score increases by 1.</p>
+		</description>
+		<sheet>
+			<description>Your Charisma score increases by 1.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" />
+		</rules>
+	</element>
+
+	<!-- Ability Score Increase: Human (+1 any ability except Dex) -->
+	<element name="Human" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_ASI_HUMAN">
+		<supports>Ombrask Ability Score Increase</supports>
+		<description>
+			<p>One ability score of your choice, other than Dexterity, increases by 1.</p>
+		</description>
+		<sheet display="false">
+			<description>One ability score of your choice, other than Dexterity, increases by 1.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Ombrask: Human)" supports="Ombrask Human" number="1" />
+		</rules>
+	</element>
+
+	<!-- Human Ability Score Increase (Strength) -->
+	<element name="Strength" type="Ability Score Improvement" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_OMBRASK_HUMAN_STRENGTH">
+		<compendium display="false" />
+		<supports>Ombrask Human</supports>
+		<description>
+			<p>Your Strength score increases by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="1" alt="Ombrask Human" />
+		</rules>
+	</element>
+
+	<!-- Human Ability Score Increase (Constitution) -->
+	<element name="Constitution" type="Ability Score Improvement" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_OMBRASK_HUMAN_CONSTITUTION">
+		<compendium display="false" />
+		<supports>Ombrask Human</supports>
+		<description>
+			<p>Your Constitution score increases by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="1" alt="Ombrask Human" />
+		</rules>
+	</element>
+
+	<!-- Human Ability Score Increase (Intelligence) -->
+	<element name="Intelligence" type="Ability Score Improvement" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_OMBRASK_HUMAN_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Ombrask Human</supports>
+		<description>
+			<p>Your Intelligence score increases by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="1" alt="Ombrask Human" />
+		</rules>
+	</element>
+
+	<!-- Human Ability Score Increase (Wisdom) -->
+	<element name="Wisdom" type="Ability Score Improvement" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_OMBRASK_HUMAN_WISDOM">
+		<compendium display="false" />
+		<supports>Ombrask Human</supports>
+		<description>
+			<p>Your Wisdom score increases by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" alt="Ombrask Human" />
+		</rules>
+	</element>
+
+	<!-- Human Ability Score Increase (Charisma) -->
+	<element name="Charisma" type="Ability Score Improvement" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_OMBRASK_HUMAN_CHARISMA">
+		<compendium display="false" />
+		<supports>Ombrask Human</supports>
+		<description>
+			<p>Your Charisma score increases by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" alt="Ombrask Human" />
+		</rules>
+	</element>
+
+	<!-- Ability Score Increase: Oozekin (+1 Constitution) -->
+	<element name="Oozekin" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_ASI_OOZEKIN">
+		<supports>Ombrask Ability Score Increase</supports>
+		<description>
+			<p>Your Constitution score increases by 1.</p>
+		</description>
+		<sheet>
+			<description>Your Constitution score increases by 1.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+		</rules>
+	</element>
+
+	<!-- Ability Score Increase: Opteran (+1 Charisma) -->
+	<element name="Opteran" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_ASI_OPTERAN">
+		<supports>Ombrask Ability Score Increase</supports>
+		<description>
+			<p>Your Charisma score increases by 1.</p>
+		</description>
+		<sheet>
+			<description>Your Charisma score increases by 1.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" />
+		</rules>
+	</element>
+
+	<!-- Ability Score Increase: Rakin (+1 Con, Int, Wis, or Cha) -->
+	<element name="Rakin" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_ASI_RAKIN">
+		<supports>Ombrask Ability Score Increase</supports>
+		<description>
+			<p>Your Constitution, Intelligence, Wisdom, or Charisma score increases by 1.</p>
+		</description>
+		<sheet display="false">
+			<description>Your Constitution, Intelligence, Wisdom, or Charisma score increases by 1.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Ombrask: Rakin)" supports="Ombrask Rakin" number="1" />
+		</rules>
+	</element>
+
+	<!-- Rakin Ability Score Increase (Constitution) -->
+	<element name="Constitution" type="Ability Score Improvement" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_OMBRASK_RAKIN_CONSTITUTION">
+		<compendium display="false" />
+		<supports>Ombrask Rakin</supports>
+		<description>
+			<p>Your Constitution score increases by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="1" alt="Ombrask Rakin" />
+		</rules>
+	</element>
+
+	<!-- Rakin Ability Score Increase (Intelligence) -->
+	<element name="Intelligence" type="Ability Score Improvement" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_OMBRASK_RAKIN_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Ombrask Rakin</supports>
+		<description>
+			<p>Your Intelligence score increases by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="1" alt="Ombrask Rakin" />
+		</rules>
+	</element>
+
+	<!-- Rakin Ability Score Increase (Wisdom) -->
+	<element name="Wisdom" type="Ability Score Improvement" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_OMBRASK_RAKIN_WISDOM">
+		<compendium display="false" />
+		<supports>Ombrask Rakin</supports>
+		<description>
+			<p>Your Wisdom score increases by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" alt="Ombrask Rakin" />
+		</rules>
+	</element>
+
+	<!-- Rakin Ability Score Increase (Charisma) -->
+	<element name="Charisma" type="Ability Score Improvement" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_OMBRASK_RAKIN_CHARISMA">
+		<compendium display="false" />
+		<supports>Ombrask Rakin</supports>
+		<description>
+			<p>Your Charisma score increases by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" alt="Ombrask Rakin" />
+		</rules>
+	</element>
+
+	<!-- Ability Score Increase: Tiefling (+1 Charisma) -->
+	<element name="Tiefling" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_ASI_TIEFLING">
+		<supports>Ombrask Ability Score Increase</supports>
+		<description>
+			<p>Your Charisma score increases by 1.</p>
+		</description>
+		<sheet>
+			<description>Your Charisma score increases by 1.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" />
+		</rules>
+	</element>
+
+	<!-- Fade Away Trait -->
+	<element name="Fade Away" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_FADE_AWAY">
+		<requirements>[level:5]</requirements>
+		<description>
+			<p>When you reach 5th level, you can cast the invisibility spell on yourself once with this trait, requiring no material components, and you regain the ability to do so when you finish a long rest. Constitution is your spellcasting ability for this spell. You can also cast this spell using any spell slots you have of the appropriate level.</p>
+		</description>
+		<sheet>
+			<description level="5" usage="1/Long Rest">When you reach 5th level, you can cast the invisibility spell on yourself once with this trait, requiring no material components, and you regain the ability to do so when you finish a long rest. Constitution is your spellcasting ability for this spell. You can also cast this spell using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" level="5" />
+		</rules>
+	</element>
+
+	<!-- Lightbender Trait -->
+	<element name="Lightbender" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_LIGHTBENDER">
+		<description>
+			<p>Light naturally sculpts around your skin. You have advantage on saving throws against being blinded, and you have resistance to radiant damage.</p>
+		</description>
+		<sheet>
+			<description>Light naturally sculpts around your skin. You have advantage on saving throws against being blinded, and you have resistance to radiant damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+		</rules>
+	</element>
+
+	<!-- Trackless Trait -->
+	<element name="Trackless" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_TRACKLESS">
+		<description>
+			<p>The Shadow Plane is a dangerous place and ombrasks quickly learn to move in the shadows, leaving scarce tracks in their wake. You have proficiency in the Stealth skill.</p>
+		</description>
+		<sheet>
+			<description>The Shadow Plane is a dangerous place and ombrasks quickly learn to move in the shadows, leaving scarce tracks in their wake. You have proficiency in the Stealth skill.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+		</rules>
+	</element>
+
+	<!-- Voice Thief Trait -->
+	<element name="Voice Thief" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RACIAL_TRAIT_OMBRASK_VOICE_THIEF">
+		<description>
+			<p>While an ombrask can potentially understand any number of languages, it is a naturally mute creature. When a creature that can speak dies within 30 feet of you, you can use your reaction to absorb a piece of its psyche. After you have used this reaction, you can’t do so again until you finish a long rest.</p>
+			<p>After you have absorbed a psyche, you can perfectly mimic the creature’s voice, cadence, and speech patterns indefinitely. You can hold a number of pieces of psyche (and mimic a number of voices) equal to your proficiency bonus. If absorbing a new piece of psyche would put you over this limit, you must choose one psyche to be replaced.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Reaction">
+			<description>While an ombrask can potentially understand any number of languages, it is a naturally mute creature. When a creature that can speak dies within 30 feet of you, you can use your reaction to absorb a piece of its psyche. After you have used this reaction, you can’t do so again until you finish a long rest.
+            After you have absorbed a psyche, you can perfectly mimic the creature’s voice, cadence, and speech patterns indefinitely. You can hold a number of pieces of psyche (and mimic a number of voices) equal to your proficiency bonus. If absorbing a new piece of psyche would put you over this limit, you must choose one psyche to be replaced.</description>
+		</sheet>
+	</element>
+</elements>

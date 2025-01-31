@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Heliana's Guide to Monster Hunting</name>
+		<description>Items from Heliana's Guide to Monster Hunting</description>
+		<update version="0.1.0">
+			<file name="Tools.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Setting/Tools.xml" />
+		</update>
+	</info>
+
+	<!-- Tools -->
+	<element name="Surgeon’s Tools" type="Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ITEM_SURGEONS_TOOLS">
+		<description>
+			<p>This set of instruments includes the blades, saws, and sutures needed to remove shrapnel or stitch up wounds. Proficiency with these tools lets you add your proficiency bonus to any checks you make to stabilise a creature or perform other surgery.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_SURGEONS_TOOLS</set>
+		</setters>
+	</element>
+
+	<element name="Tool Proficiency (Surgeon’s Tools)" type="Proficiency" source="Heliana's Guide to Monster Hunting" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SURGEONS_TOOLS">
+        <supports>Tool</supports>
+    </element>
+</elements>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>College of Cuisine and College of Fleshweaving</name>
+		<source>Heliana's Guide to Monster Hunting</source>
+		<update version="0.1.0">
+			<file name="Bard.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Classes/Bard.xml" />
+		</update>
+	</info>
+
+    <!-- College of Cuisine -->
+	<element name="College of Cuisine" type="Archetype" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BARD_ARCHETYPE_COLLEGE_OF_CUISINE">
+		<supports>Bard College</supports>
+		<description>
+			<p class="flavor">Food: it fuels thought, builds bones, and delights the senses. But more than that, breaking bread with a foe can be the beginning of a lasting peace, sculptures of sugar glass can inspire architects to design soaring cities, and the fusion of disparate culinary traditions can tie cultures together. Though we see food every day, it is truly the epitome of inspiration.</p>
+			<p>Bards from the College of Cuisine are as prized in the kitchens of nobles as in the mess halls of the rank and file. While peace treaties might be signed over hoisin-glazed duck with sides of spiced jackfruit and crispy shallots, it is the well-fed army that will win the war on a hearty oat and raisin porridge. Such bards never struggle to find employment; they travel where their work is appreciated, be their diners highborn or down-to-earth.</p>
+			<div element="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_CUISINE_CULINARY_EXPLORATION" />
+			<div element="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_CUISINE_PETIT_FOURS" />
+			<div element="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_CUISINE_CULINARY_SPECIALISATION" />
+			<div element="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_CUISINE_EXECUTIVE_CHEF" />
+		</description>
+		<sheet display="false">
+			<description>Bards from the College of Cuisine are as prized in the kitchens of nobles as in the mess halls of the rank and file.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_CUISINE_CULINARY_EXPLORATION" level="3" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_CUISINE_PETIT_FOURS" level="3" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_CUISINE_CULINARY_SPECIALISATION" level="6" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_CUISINE_EXECUTIVE_CHEF" level="14" />
+		</rules>
+	</element>
+
+    <!-- Culinary Exploration -->
+	<element name="Culinary Exploration" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_CUISINE_CULINARY_EXPLORATION">
+		<description>
+			<p>Years spent adapting recipes allows you to try unheard-of combinations of ingredients. You gain proficiency with cook’s utensils, which you can use as a spellcasting focus, and your proficiency bonus is doubled for any ability checks you make that uses these utensils to prepare food. In addition, whenever you craft a food (see page 141), you can add one additional ingredient to the recipe, conferring the benefits of that ingredient to the dish on a successful Cooking check.</p>
+		</description>
+		<sheet>
+			<description display="false">You gain proficiency with cook’s utensils, which you can use as a spellcasting focus, and your proficiency bonus is doubled for any ability checks you make that uses these utensils to prepare food. In addition, whenever you craft a food, you can add one additional ingredient to the recipe, conferring the benefits of that ingredient to the dish on a successful Cooking check.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+		</rules>
+	</element>
+
+    <!-- Petit Fours -->
+	<element name="Petit Fours" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_CUISINE_PETIT_FOURS">
+		<description>
+			<p>During a short or long rest, you can create a number of magical treats equal to your Charisma modifier (minimum one). Choose one of the flavours from the list below with which to imbue these treats, which remain magical until you finish a short or long rest. A creature can use an action or bonus action to eat a treat, gaining a benefit based on the treat’s flavour which, unless otherwise stated, lasts until the end of its next turn.</p>
+			<p>As a bonus action, you can expend one use of your Bardic Inspiration, teleporting any number of treats on your person next to creatures you can see within 60 feet of you, where they remain, hovering near the creature’s mouth. Such a creature can use its reaction to eat the treat, or it can do so on its next turn as a bonus action. Otherwise, the treat falls to the ground.</p>
+			<ul>
+				<li><b>Bitter.</b> The creature gains resistance to poison damage and has advantage on saving throws made to resist the poisoned condition.</li>
+				<li><b>Salty.</b> The creature gains advantage on Wisdom saving throws and is immune to the charmed condition.</li>
+				<li><b>Sour.</b> The creature’s weapon attacks deal bonus acid damage equal to one roll of your Bardic Inspiration die.</li>
+				<li><b>Sweet.</b> The creature gains temporary hit points equal to one roll of your Bardic Inspiration die plus your Charisma modifier (minimum 1) that last for 1 hour.</li>
+				<li><b>Umami.</b> The creature gains a +2 bonus to its AC.</li>
+			</ul>
+		</description>
+		<sheet usage="{{soulsew}}/Short Rest" bonus="base">
+			<description>During a short or long rest, you can create a number of magical treats equal to your Charisma modifier (minimum one). Choose one of the flavours from the list below with which to imbue these treats, which remain magical until you finish a short or long rest. A creature can use an action or bonus action to eat a treat, gaining a benefit based on the treat’s flavour which, unless otherwise stated, lasts until the end of its next turn.&#13;
+			As a bonus action, you can expend one use of your Bardic Inspiration, teleporting any number of treats on your person next to creatures you can see within 60 feet of you, where they remain, hovering near the creature’s mouth. Such a creature can use its reaction to eat the treat, or it can do so on its next turn as a bonus action. Otherwise, the treat falls to the ground.&#13;
+			• Bitter. The creature gains resistance to poison damage and has advantage on saving throws made to resist the poisoned condition.&#13;
+			• Salty. The creature gains advantage on Wisdom saving throws and is immune to the charmed condition.&#13;
+			• Sour. The creature’s weapon attacks deal bonus acid damage equal to one roll of your Bardic Inspiration die.&#13;
+			• Sweet. The creature gains temporary hit points equal to one roll of your Bardic Inspiration die plus {{petit fours:sweet}} that last for 1 hour.&#13;
+			• Umami. The creature gains a +2 bonus to its AC.</description>
+		</sheet>
+		<rules>
+			<stat name="petit fours:sweet" value="charisma:modifier" bonus="base"/>
+		</rules>
+	</element>
+
+    <!-- Culinary Specialisation -->
+	<element name="Culinary Specialisation" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_CUISINE_CULINARY_SPECIALISATION">
+		<description>
+			<p>You pursue a particular style of cuisine, choosing from the list below and gaining its feature.</p>
+			<div class="reference">
+				<div element="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_CUISINE_CULINARY_SPECIALISATION_SLOW_COOKING" />
+				<div element="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_CUISINE_CULINARY_SPECIALISATION_FAST_FOOD" />
+				<div element="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_CUISINE_CULINARY_SPECIALISATION_PATISSIER" />
+			</div>
+		</description>
+		<sheet>
+			<description>You pursue a particular style of cuisine, choosing from the list below and gaining its feature.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Culinary Specialisation" supports="Culinary Specialisation" />
+		</rules>
+	</element>
+	
+	<element name="Slow Cooking" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_CUISINE_CULINARY_SPECIALISATION_SLOW_COOKING">
+		<supports>Culinary Specialisation</supports>
+		<description>
+			<p>You gain proficiency with medium armour, heavy armour, shields, and martial weapons. At the start of each of your turns, you gain temporary hit points equal to your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description> At the start of each of your turns, you gain {{proficiency}} temporary hit points.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+		</rules>
+	</element>
+	
+	<element name="Fast Food" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_CUISINE_CULINARY_SPECIALISATION_FAST_FOOD">
+		<supports>Culinary Specialisation</supports>
+		<description>
+			<p>You gain proficiency with medium armour and you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency with medium armour and you can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<stat name="extra attack:count" value="2" bonus="extra attack" />
+		</rules>
+	</element>
+	
+	<!-- Arreglar Select... no deja seleccionar más de 1st level -->
+	<element name="Patissier" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_CUISINE_CULINARY_SPECIALISATION_PATISSIER">
+		<supports>Culinary Specialisation</supports>
+		<description>
+			<p>You learn two spells of your choice from any spell list. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. These don’t count against the number of bard spells you know.</p>
+			<p>In addition, when you finish a short rest, you can expend one use of your Bardic Inspiration, rolling the die and recovering a number of levels of spell slots with a combined value equal to or less than the value rolled, and none of the spell slots can be 6th level or higher. Once you use this feature, you can’t do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You learn two spells of your choice from any spell list. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. These don’t count against the number of bard spells you know.&#13;
+			In addition, when you finish a short rest, you can expend one use of your Bardic Inspiration, rolling the die and recovering a number of levels of spell slots with a combined value equal to or less than the value rolled, and none of the spell slots can be 6th level or higher. Once you use this feature, you can’t do so again until you finish a long rest.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Spell (Patissier)" supports="(0)||($(spellcasting:slots))" number="2" level="6" spellcasting="Bard" />
+		</rules>
+	</element>
+
+    <!-- Executive Chef -->
+	<element name="Executive Chef" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_CUISINE_EXECUTIVE_CHEF">
+		<description>
+			<p>Your confidence and authority in the kitchen translates to battlefield command. When a creature that can hear you rolls one of your Bardic Inspiration dice or eats one of your Petit Fours, you can shout authoritative, verbal encouragement (no action required). The creature can immediately use its reaction to either make one weapon attack or move up to its speed without provoking opportunity attacks.</p>
+			<p>A creature that eats a Petit Fours can attack or move as described as part of the same reaction, action, or bonus action used to eat the Petit Fours.</p>
+		</description>
+		<sheet>
+			<description>Your confidence and authority in the kitchen translates to battlefield command. When a creature that can hear you rolls one of your Bardic Inspiration dice or eats one of your Petit Fours, you can shout authoritative, verbal encouragement (no action required). The creature can immediately use its reaction to either make one weapon attack or move up to its speed without provoking opportunity attacks.&#13;
+			A creature that eats a Petit Fours can attack or move as described as part of the same reaction, action, or bonus action used to eat the Petit Fours.</description>
+		</sheet>
+	</element>
+
+    <!-- College of Fleshweaving -->
+	<element name="College of Fleshweaving" type="Archetype" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BARD_ARCHETYPE_COLLEGE_OF_FLESHWEAVING">
+		<supports>Bard College</supports>
+		<description>
+			<p>If leather is a material, then why not skin itself? Students of the College of Fleshweaving make works of art out of weeping wounds, transform disfigurement into displays of transcendent beauty, and mould flesh into innovative adaptations inspired by the flora and fauna around them. A fleshweaver bard down on their luck might find employment as a battlefield surgeon, while the epitome of a fleshweaver’s career is to be the chief facemaker to royalty, altering their visage and physiology through biomantic rituals and deft needlework.</p>
+			<div element="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_FLESHWEAVING_MALLEABLE_VISAGE" />
+			<div element="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_FLESHWEAVING_SUTURER" />
+			<div element="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_FLESHWEAVING_RITUAL_RESKIN" />
+			<div element="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_FLESHWEAVING_SOULSEW" />
+		</description>
+		<sheet display="false">
+			<description>If leather is a material, then why not skin itself? Students of the College of Fleshweaving make works of art out of weeping wounds, transform disfigurement into displays of transcendent beauty, and mould flesh into innovative adaptations inspired by the flora and fauna around them.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_FLESHWEAVING_MALLEABLE_VISAGE" level="3" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_FLESHWEAVING_SUTURER" level="3" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_FLESHWEAVING_RITUAL_RESKIN" level="6" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_FLESHWEAVING_SOULSEW" level="14" />
+		</rules>
+	</element>
+
+    <!-- Malleable Visage -->
+	<element name="Malleable Visage" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_FLESHWEAVING_MALLEABLE_VISAGE">
+		<description>
+			<p>Years spent mending, shaping, and adapting flesh have given you a preternatural ability to modify your own body. You are proficient with surgeon’s tools, which you can use as a spellcasting focus, and you know the <i>alter self</i> spell, which counts as a bard spell for you, but it doesn’t count against the number of bard spells you know. Over the course of 1 minute, you can cast the spell without expending a spell slot, choosing only the Change Appearance option. When you cast the spell in this way, it doesn’t require concentration.</p>
+			<p>In addition, over the course of 10 minutes, you can use your surgeon’s tools to change the appearance of a willing creature. It magically gains the benefits of the Change Appearance effect of the alter self spell, which lasts until it finishes a long rest. After you use your surgeon’s tools in this way, you can’t do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Over the course of 1 minute, you can cast the spell alter self without expending a spell slot, choosing only the Change Appearance option. When you cast the spell in this way, it doesn’t require concentration.&#13;
+            In addition, over the course of 10 minutes, you can use your surgeon’s tools to change the appearance of a willing creature. It magically gains the benefits of the Change Appearance effect of the alter self spell, which lasts until it finishes a long rest. After you use your surgeon’s tools in this way, you can’t do so again until you finish a long rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SURGEONS_TOOLS" />
+			<grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" spellcasting="Bard" prepared="true" />
+		</rules>
+	</element>
+
+    <!-- Suturer -->
+	<element name="Suturer" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_FLESHWEAVING_SUTURER">
+		<description>
+			<p>You know the spiritual weapon spell, which is a bard spell for you, but doesn’t count against the number of spells you know. You can cast this spell once without expending a spell slot, and you regain the ability to cast it in this way when you finish a long rest. When you cast it as a bard spell, the weapon takes the form of a giant needle and thread, and deals piercing damage instead of force damage.</p>
+			<p>You also learn different ways to use this spiritual weapon. You gain the Suture benefit below, and you gain an additional benefit below when you reach 5th level and 10th level in this class.</p>
+			<ul>
+				<li><b>Suture (3rd Level).</b> As a bonus action or an action, you can expend one use of your Bardic Inspiration to move the weapon up to 20 feet and grant temporary hit points equal to one roll of your Bardic Inspiration die to one creature within 5 feet of the weapon. If the creature has 0 hit points, you can stabilise it, instead.</li>
+				<li><b>Unspool (5th Level).</b> As an action, you can expend one use of your Bardic Inspiration to move the weapon up to 20 feet and force one creature within 5 feet of the weapon to make a Strength saving throw against your bard spell save DC. On a failure, magical threads wrap around the creature, which is restrained for 1 minute. The target can use its action to repeat the saving throw, ending the effect on a success.</li>
+				<li><b>Acupuncture (10th Level).</b> As an action, you can expend one use of your Bardic Inspiration to move the weapon up to 20 feet and make a melee spell attack against one creature within 5 feet of it. On a hit, the creature takes piercing damage equal to one roll of your Bardic Inspiration die plus your Charisma modifier, and must make a Constitution saving throw against your bard spell save DC. On a failure, the creature is paralysed until the end of its next turn.</li>
+			</ul>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description> You can cast the spell Spiritual Weapon once without expending a spell slot, and you regain the ability to cast it in this way when you finish a long rest. When you cast it as a bard spell, the weapon takes the form of a giant needle and thread, and deals piercing damage instead of force damage. You also gain:&#13;
+			• Suture benefit. As a bonus action or an action, you can expend one use of your Bardic Inspiration to move the weapon up to 20 feet and grant temporary hit points equal to one roll of your Bardic Inspiration die to one creature within 5 feet of the weapon. If the creature has 0 hit points, you can stabilise it, instead.</description>
+            <description level="5"> You can cast the spell Spiritual Weapon once without expending a spell slot, and you regain the ability to cast it in this way when you finish a long rest. When you cast it as a bard spell, the weapon takes the form of a giant needle and thread, and deals piercing damage instead of force damage. You also gain:&#13;
+			• Suture benefit. As a bonus action or an action, you can expend one use of your Bardic Inspiration to move the weapon up to 20 feet and grant temporary hit points equal to one roll of your Bardic Inspiration die to one creature within 5 feet of the weapon. If the creature has 0 hit points, you can stabilise it, instead&#13;
+			• Unspool benefit. As an action, you can expend one use of your Bardic Inspiration to move the weapon up to 20 feet and force one creature within 5 feet of the weapon to make a DC {{suturer:dc}} Strength saving throw. On a failure, the creature is restrained for 1 minute. The target can use its action to repeat the saving throw, ending the effect on a success.</description>
+            <description level="10"> You can cast the spell Spiritual Weapon once without expending a spell slot, and you regain the ability to cast it in this way when you finish a long rest. When you cast it as a bard spell, the weapon takes the form of a giant needle and thread, and deals piercing damage instead of force damage. You also gain:&#13;
+			• Suture benefit. As a bonus action or an action, you can expend one use of your Bardic Inspiration to move the weapon up to 20 feet and grant temporary hit points equal to one roll of your Bardic Inspiration die to one creature within 5 feet of the weapon. If the creature has 0 hit points, you can stabilise it, instead&#13;
+			• Unspool benefit. As an action, you can expend one use of your Bardic Inspiration to move the weapon up to 20 feet and force one creature within 5 feet of the weapon to make a DC {{suturer:dc}} Strength saving throw. On a failure, the creature is restrained for 1 minute. The target can use its action to repeat the saving throw, ending the effect on a success.&#13;
+			• Acupuncture benefits. As an action, you can expend one use of your Bardic Inspiration to move the weapon up to 20 feet and make a melee spell attack against one creature within 5 feet of it. On a hit, the creature takes {{bardic-inspiration:dice}} + {{charisma:modifier}} piercing damage, and must make a DC {{suturer:dc}} Constitution saving throw. On a failure, the creature is paralysed until the end of its next turn.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPIRITUAL_WEAPON" spellcasting="Bard" prepared="true" />
+
+            <stat name="suturer:dc" value="8" />
+            <stat name="suturer:dc" value="proficiency" />
+            <stat name="suturer:dc" value="charisma:modifier" />
+		</rules>
+	</element>
+
+    <!-- Ritual Reskin -->
+	<element name="Ritual Reskin" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_FLESHWEAVING_RITUAL_RESKIN">
+		<description>
+			<p>Over the course of 10 minutes, you can perform a surgical ritual on creatures that you can see within 60 feet of you (including yourself), up to a number equal to your Charisma modifier (minimum of one creature). The creatures gain one of the following adaptations for the next hour. You choose one adaptation to affect all creatures:</p>
+			<ul>
+				<li><b>Bull’s Buns.</b> The target has advantage on Strength checks, and counts as one size larger when determining its carrying capacity and the weight it can push, drag, or lift.</li>
+				<li ><b>Cactus Skin.</b> The target is covered in razor-sharp spikes. At the end of each of the target’s turns, each creature grappling it must make a Constitution saving throw against your bard spell save DC. On a failure, a creature takes piercing damage equal to your Bardic Inspiration die and releases the target from its grapple. On a success, a creature takes half as much damage and doesn’t have to release the target.</li>
+				<li><b>Cat’s Paws.</b> The target has advantage on Dexterity checks. It also doesn’t take damage from falling 20 feet or less if it isn’t incapacitated.</li>
+				<li><b>Fish Form.</b> The target can breathe underwater and gains a swimming speed equal to its walking speed.</li>
+				<li><b>Owl’s Sight.</b> The target has advantage on Wisdom checks and initiative rolls.</li>
+				<li><b>Rhino’s Hide.</b> The target has advantage on Constitution checks and gains temporary hit points equal to one roll of your Bardic Inspiration die plus your Charisma modifier (minimum 1), which are lost when the effect ends.</li>
+			</ul>
+			<p>After you use this feature, you can’t do so again until you finish a long rest, unless you expend a spell slot of 3rd level or higher to use this feature again.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Over the course of 10 minutes, you can perform a surgical ritual on {{charisma:modifier}} creatures that you can see within 60 feet of you (including yourself). The creatures gain one of the following adaptations for the next hour. You choose one adaptation to affect all creatures:&#13;
+			• Bull’s Buns.The target has advantage on Strength checks, and counts as one size larger when determining its carrying capacity and the weight it can push, drag, or lift.&#13;
+			• Cactus Skin.The target is covered in razor-sharp spikes. At the end of each of the target’s turns, each creature grappling it must make a DC {{ritual reskin:dc}} Constitution saving throw. On a failure, a creature takes 1d{{bardic-inspiration:dice}} piercing damage and releases the target from its grapple. On a success, a creature takes half as much damage and doesn’t have to release the target.&#13;
+			• Cat’s Paws. The target has advantage on Dexterity checks. It also doesn’t take damage from falling 20 feet or less if it isn’t incapacitated.&#13;
+			• Fish Form. The target can breathe underwater and gains a swimming speed equal to its walking speed.&#13;
+			• Owl’s Sight.The target has advantage on Wisdom checks and initiative rolls.&#13;
+			• Rhino’s Hide. The target has advantage on Constitution checks and gains 1d{{bardic-inspiration:dice}} + {{soulsew}} temporary hit points which are lost when the effect ends.&#13;
+			After you use this feature, you can’t do so again until you finish a long rest, unless you expend a spell slot of 3rd level or higher to use this feature again.</description>
+		</sheet>
+		<rules>
+			<stat name="ritual reskin:dc" value="8" />
+            <stat name="ritual reskin:dc" value="proficiency" />
+            <stat name="ritual reskin:dc" value="charisma:modifier" />
+		</rules>
+	</element>
+	
+    <!-- Soulsew -->
+    <element name="Soulsew" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BARD_ARCHETYPE_FEATURE_FLESHWEAVING_SOULSEW">
+		<description>
+			<p>When a creature uses one of your Bardic Inspiration dice, or fails a saving throw against your Suturer feature’s Unspool or Acupuncture effects, it becomes ‘soulsewn’ to you for 1 minute. While soulsewn, an ethereal thread connects you to this creature via a straight line that only you and creatures with truesight can see. This thread breaks if the creature is ever more than 100 feet away from you.</p>
+			<p><b>Spool.</b> You can use a bonus action to teleport to the nearest unoccupied space of a soulsewn creature of your choice, or attempt to switch places with a soulsewn creature. If the creature is unwilling to switch places, you must succeed on a contested Charisma check against the creature. On a success, or if the creature is willing, you and the target teleport, switching places with one another. If there is not enough space for either of you to switch places, you automatically lose the contest.</p>
+			<p>You can teleport using this feature a number of times equal to your Charisma modifier (minimum 1), and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{soulsew}}/Long Rest" action="Bonus Action">
+			<description>When a creature uses one of your Bardic Inspiration dice, or fails a saving throw against your Suturer feature’s Unspool or Acupuncture effects, it becomes ‘soulsewn’ to you for 1 minute.&#13;
+			While soulsewn, you can use a bonus action to teleport to the nearest unoccupied space of a soulsewn creature of your choice, or attempt to switch places with a soulsewn creature. If the creature is unwilling to switch places, you must succeed on a contested Charisma check against the creature. On a success, or if the creature is willing, you and the target teleport, switching places with one another. If there is not enough space for either of you to switch places, you automatically lose the contest.</description>
+		</sheet>
+		<rules>
+			<stat name="soulsew" value="1" bonus="base"/>
+			<stat name="soulsew" value="charisma:modifier" bonus="base"/>
+		</rules>
+	</element>
+</elements>

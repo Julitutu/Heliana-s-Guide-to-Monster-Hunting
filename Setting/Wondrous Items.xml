@@ -1,0 +1,2196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Heliana's Guide to Monster Hunting</name>
+		<description>Items from Heliana's Guide to Monster Hunting</description>
+		<update version="0.1.0">
+			<file name="Wondrous Items.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Setting/Woundrous Items.xml" />
+		</update>
+	</info>
+
+	<!-- Wondrous Items -->
+	<element name="Bombocluster" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MAGIC_ITEM_BOMBOOCLUSTER_RARE">
+		<description>
+			<p>Within this sturdy, corrosion-resistant polyhedron is a phial of ooze acid; a caustic substance with remarkable powers of biological alteration.</p>
+			<p class="indent"><strong><em>Caustic Calamity.</em></strong> As an action, you can press a button on the polyhedron, crushing the phial, and then toss the device up to 60 feet away. The resulting chemical reaction produces an explosion of acid in a 20-foot radius. Each creature in the area must make a DC 15 Dexterity saving throw, taking 4d6 acid damage on a failed save, or half as much damage on a successful one. In addition, the reaction produces unpredictable biomantic effects on a failed saving throw. Roll a d10 and consult the table below to determine the effect. If a creature comes under an effect lasting 1 minute, it can make a DC 15 Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+			<table>
+				<thead>
+					<tr>
+						<td class="col-10">d10</td>
+						<td>Effect</td>
+					</tr>
+				</thead>
+					<tr>
+						<td>1</td>
+						<td>The acid stops regeneration and healing. The creature can’t regain hit points for 1 minute.</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>The acid coats creatures, dissolving them. The creature takes 2d6 acid damage at the start of each of its turns for 1 minute.</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Parts of creatures’ bodies meld together. The creature has disadvantage on attack rolls for 1 minute.</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>The acid fuses feet and footwear to the ground. The creature is restrained until the end of your next turn.</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>The acid fuses the eyelids shut. The creature is blinded until the end of your next turn.</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>The acid causes creatures’ skin to become phosphorescent. The creature is under the effect of the <em>faerie fire</em> spell for 1 minute.</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>The acid causes growths to appear and disappear on creatures’ bodies, hindering their actions. The creature is under the effect of the <em>bane</em> spell for 1 minute.</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>The acid causes creatures to shrink. The creature is under the reduce effect of the <em>enlarge/reduce</em> spell for 1 minute.</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>The acid fuses mouths shut. The creature is under the effect of the <em>zippit!</em> spell for 1 minute.</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>Roll twice on the table, rerolling any further 10s and duplicate results.</td>
+					</tr>
+			</table>
+			<p class="indent">Once this property of the item has been used, it can't be used again until the next dawn and a new phial of ooze acid has been installed in the device.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Bombocluster" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MAGIC_ITEM_BOMBOOCLUSTER_VERY_RARE">
+		<description>
+			<p>Within this sturdy, corrosion-resistant polyhedron is a phial of ooze acid; a caustic substance with remarkable powers of biological alteration.</p>
+			<p class="indent"><strong><em>Caustic Calamity.</em></strong> As an action, you can press a button on the polyhedron, crushing the phial, and then toss the device up to 60 feet away. The resulting chemical reaction produces an explosion of acid in a 20-foot radius. Each creature in the area must make a DC 16 Dexterity saving throw, taking 4d6 acid damage on a failed save, or half as much damage on a successful one. In addition, the reaction produces unpredictable biomantic effects on a failed saving throw. Roll a d10 and consult the table below to determine the effect. If a creature comes under an effect lasting 1 minute, it can make a DC 16 Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+			<table>
+				<thead>
+					<tr>
+						<td class="col-10">d10</td>
+						<td>Effect</td>
+					</tr>
+				</thead>
+					<tr>
+						<td>1</td>
+						<td>The acid stops regeneration and healing. The creature can’t regain hit points for 1 minute.</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>The acid coats creatures, dissolving them. The creature takes 2d6 acid damage at the start of each of its turns for 1 minute.</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Parts of creatures’ bodies meld together. The creature has disadvantage on attack rolls for 1 minute.</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>The acid fuses feet and footwear to the ground. The creature is restrained until the end of your next turn.</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>The acid fuses the eyelids shut. The creature is blinded until the end of your next turn.</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>The acid causes creatures’ skin to become phosphorescent. The creature is under the effect of the <em>faerie fire</em> spell for 1 minute.</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>The acid causes growths to appear and disappear on creatures’ bodies, hindering their actions. The creature is under the effect of the <em>bane</em> spell for 1 minute.</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>The acid causes creatures to shrink. The creature is under the reduce effect of the <em>enlarge/reduce</em> spell for 1 minute.</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>The acid fuses mouths shut. The creature is under the effect of the <em>zippit!</em> spell for 1 minute.</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>Roll twice on the table, rerolling any further 10s and duplicate results.</td>
+					</tr>
+			</table>
+			<p class="indent">Once this property of the item has been used, it can't be used again until the next dawn and a new phial of ooze acid has been installed in the device.</p>
+			<p class="indent"><strong><em>Very rare variant:</em></strong> You can roll twice on the table, ignoring any duplicate results. The item has the Trigger Warning property.</p>
+			<p class="indent"><strong><em>Trigger Warning.</em></strong> Instead of throwing the bomb, you can use an action to plant it on a surface and set it to detonate in a specific situation. As an action, a creature can disarm a bomb set to explode in this way with a successful DC 16 Dexterity (Sleight of Hand) check. On a failed check, the bomb goes off and the creature that made the check automatically fails the saving throw. Choose one of the following detonation options:</p>
+			<ul>
+				<li><strong><em>Proximity Trigger.</em></strong> Choose a range between 0 and 20 feet. The first Small or larger creature to move within that distance of the bomb after you leave the area sets it off. A creature that succeeds on a DC 16 Dexterity (Stealth) check can approach the bomb without triggering it.</li>
+				<li><strong><em>Time Bomb.</em></strong> Choose an amount of time ranging from 1 to 100 rounds. On initiative count 20 of the round you choose, the bomb explodes.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Caltrooze" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MAGIC_ITEM_CALTROOZE">
+		<description>
+			<p>Filled with a caustic mixture that discharges when stepped on, these tetrahedral caltrops present a much more dangerous hazard than their mundane variety. A typical bag of these 1-inch health and safety nightmares contains 20 caltroozes. Small bubbles of acid forming and bursting inside the caltroozes cause them to roll and shift.</p>
+			<p class="indent"><strong>Caltrops.</strong> As an action, you can spread a single bag of caltroozes to cover a 5-foot square. Any creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving and take 1 piercing damage. Until the creature regains at least 1 hit point, its walking speed is reduced by 10 feet. A creature that moves through the area at half speed makes the saving throw against them with advantage.</p>
+			<p class="indent"><strong>Corrosive Chaos.</strong> If a creature fails the Dexterity saving throw, roll a d4 and consult the table below to determine what additional effects take place:</p>
+			<table>
+				<thead>
+					<tr>
+						<td class="col-10">d4</td>
+						<td>Effect</td>
+					</tr>
+				</thead>
+					<tr>
+						<td>1</td>
+						<td>The acid in the caltroozes discharges in a single burst. The creature takes an additional 6d6 acid damage.</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>The acid takes on lubricating qualities. While the creature’s speed is reduced by the caltroozes, it must succeed on a DC 15 Dexterity saving throw at the end of each of its turns or fall prone.</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>The acid coats the creature’s feet, continuously eating away at them. While the creature’s speed is reduced by the caltroozes, it takes 1d4 acid damage for every 5 feet it walks or climbs.</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>The acid causes a creature’s feet to temporarily deform. While the creature’s speed is reduced by the caltroozes, it has disadvantage on Dexterity saving throws.</td>
+					</tr>
+			</table>
+			<p>After a creature fails a saving throw against the caltroozes, they are emptied of acid, and you can’t use this property again until you spend 10 minutes decanting a phial of biomantic acid into all the caltrops. The caltroozes can still be used as regular caltrops that deal magical piercing damage.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Oozemat Coat" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MAGIC_ITEM_OOZEMAT_COAT">
+		<description>
+			<p>Woven from an oozed-based, biosynthetic polymer, this practical garment is the number one choice for field researchers and lab workers alike. It provides the high adaptability and resilience necessary to protect its wearer from any unfortunate accidents that may occur during the noble pursuit of science.</p>
+			<p class="indent"><b><i>Adaptive Resistance.</i></b> The versatile fabric of the coat is capable of modifying itself to best suit your needs. After you finish a long rest while attuned to the coat, choose one of the following damage types: acid, fire, lightning, or poison. You gain resistance to the chosen damage type until you finish your next long rest.</p>
+			<p class="indent"><b><i>Occupational Hazards.</i></b> While you wear this item, you take half of any damage you would take as the result of failing a Harvesting check.</p>
+		</description>
+		<setters>
+			<set name="keywords">armor, resistance</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">body</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Goo Luck Dice" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MAGIC_ITEM_GOO_LUCK_DICE">
+		<description>
+			<p>A sticky string connects this pair of translucent dice, which jiggle enthusiastically with the slightest movement. Their vibrant colour is sure to turn heads, making them an excellent accessory.</p>
+			<p class="indent"><b><i>Lucky.</i></b> These dice impart luck when socketed on weapons, mounts, or vehicles. Once they’ve been used to reroll a 1, they can’t be used again until the next dawn.</p>
+			<ul>
+				<li><b><i>Flashy Fashion.</i></b> When applied to the handle of a weapon, its wielder can reroll a 1 on an attack roll and must use the new result.</li>
+				<li><b><i>Pimp My Ride.</i></b> When hung from a Small or larger object (or willing, non-humanoid creature) that is serving as a mount or vehicle, the vehicle/mount can reroll a 1 on an attack roll, ability check, or saving throw and must use the new result.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">dice, reroll</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+			<set name="socketable">true</set>
+		</setters>
+	</element>
+	<element name="Slime-in-a-Skull" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SLIME_IN_A_SKULL">
+        <description>
+            <p>Within this humanoid skull resides a friendly ooze who wishes only to be helpful to the owner of its home. Joyful gurgling sounds can occasionally be heard emanating from the eye sockets and, very rarely, a curious eye will peek out of the mouth.</p>
+            <p>The skull has <b>2 charges</b> and regains all expended charges daily at dawn.</p>
+            <p><strong><em>Summon Ooze.</em></strong> While holding the skull, you can use an action to expend 1 charge and call forth the ooze that lives within. It expands into its normal Large size in an unoccupied space within 5 feet of you. The ooze uses the saddle slime stat block and returns to the skull when it drops to 0 hit points or after 1 hour. If the ooze is reduced to 0 hit points, it can’t be summoned again for 1 hour. The ooze is an ally to you and your companions. In combat, it shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its move to avoid danger.</p>
+			<div class="reference">
+				<div element="ID_LT_HGTMH_INFO_COMPANION_SADDLE_SLIME" />
+			</div>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+            <set name="charges">2</set>
+        </setters>
+		<rules>
+			<grant type="Companion" id="ID_LT_HGTMH_COMPANION_SADDLE_SLIME" />
+		</rules>
+    </element>
+	 <element name="Slime-in-a-Wyvern Skull" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SLIME_IN_A_WYVERN_SKULL">
+        <description>
+            <p>Within this magically shrunk wyvern’s skull resides a friendly ooze who wishes only to be helpful to the owner of its home. Joyful gurgling sounds can occasionally be heard emanating from the eye sockets and, very rarely, a curious eye will peek out of the mouth.</p>
+            <p>The skull has <b>2 charges</b> and regains all expended charges daily at dawn.</p>
+            <p><strong><em>Summon Ooze.</em></strong> While holding the skull, you can use an action to expend 1 charge and call forth the ooze that lives within.  When the ooze is summoned, the skull is enlarged and serves as a skeletal structure for it. It expands into its normal Huge size in an unoccupied space within 5 feet of you. The ooze uses the wyrmskull ooze stat block and returns to the skull when it drops to 0 hit points or after 1 hour. If the ooze is reduced to 0 hit points, it can’t be summoned again for 1 hour. The ooze is an ally to you and your companions. In combat, it shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its move to avoid danger.</p>
+			<div class="reference">
+				<div element="ID_LT_HGTMH_INFO_COMPANION_WYRMSKULL_OOZE" />
+			</div>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+            <set name="charges">2</set>
+        </setters>
+		<rules>
+			<grant type="Companion" id="ID_LT_HGTMH_COMPANION_WYRMSKULL_OOZE" />
+		</rules>
+    </element>
+	<element name="Ventilation Unit D-20" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_VENTILATION_UNIT_D20">
+    <description>
+        <p>A magically-refilling reservoir of ooze is contained within this icosahedral helmet. Two chemicals are distilled from the ooze, piped through the tubes, and mixed together into an oxygen analogue, allowing its wearer to breathe in otherwise impossible conditions.</p>
+        <p><strong><em>Breathe Easy.</em></strong> While wearing this helmet, you can breathe normally in any environment, and you have advantage on saving throws made against harmful gases and vapors that you inhale (such as the <em>stinking cloud</em> effect, inhaled poisons, and the breath weapons of some dragons, but not contact toxins like <em>cloudkill</em>).</p>
+        <p><strong><em>Biomantic Overload.</em></strong> While wearing this helmet, you can use a bonus action to ingest the chemicals in it before they are combined into a gas, causing your body to go into a mutated state of enhanced adaptability for 1 minute. During this time, immediately after you take damage from any source, you gain resistance to that damage type. This resistance lasts until you take damage of another type (at which point you gain resistance to that new damage type) or until the effect ends. If you take damage of multiple types simultaneously, the damage type to which you become resistant is determined randomly (GM’s discretion). Once this property of the helmet has been used, it can’t be used again until the next dawn.</p>
+    </description>
+    <setters>
+        <set name="category">Wondrous Items</set>
+        <set name="type">Wondrous Item</set>
+        <set name="rarity">Rare</set>
+        <set name="attunement">true</set>
+        <set name="slot">head</set>  
+    </setters>
+	</element>
+	<element name="Ring of Birdseye Maple" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RING_OF_BIRDSEYE_MAPLE">
+		<description>
+			<p>Pale green, eye-like tourmalines have been encapsulated in maple roots sung by seelie fey into pleasing knots and braids.</p>
+			<p>This ring has <b>5 charges</b> and regains 1d4 + 1 expended charges daily at dawn. While wearing the ring, whenever you touch a plant or wooden surface, you can expend 1 charge to cause an eye to grow anywhere on that plant/surface within 60 feet of you. The eye lasts for 1 hour or until you cease touching the plant/surface, whichever comes first. You can see out of the eye, which has darkvision out to 60 feet, for as long as you remain touching the plant/surface. While you look out of the eye, you are blinded with regards to your own senses.</p>
+			<p>The eye has a Dexterity (Stealth) modifier of +8. It has AC 10 and 5 hit points. Any damage dealt to the eye you also take as psychic damage. When the eye is reduced to 0 hit points, it disappears, and the effect ends.</p>
+			<p><strong><em>Optional Attunement.</em></strong> While you are attuned to the ring, if you stop touching the plant/surface in which you have grown an eye, the eye persists for 1 hour or until you create a new eye. In addition, it gains the Eyesoar property.</p>
+			<p><strong><em>Eyesoar.</em></strong> So long as the eye is within 300 feet of you, you can use an action to look through the eye. While looking through the eye, you can use your action to move the eye up to 30 feet along the plant/surface.
+			</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">ring</set>
+			<set name="charges">5</set>
+		</setters>
+	</element>
+	<element name="Suncatcher" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SUNCATCHER_UNCOMMON_ROD">
+		<description>
+			<p>From the beak of the suneater owlbear is extracted its ability to absorb and redirect sunlight. The suneater’s bones imbue this item with the hard-headed arrogance unique to fey that prevents them from succumbing to others’ charms.</p>
+			<p>While attuned to the suncatcher, you have advantage on ability checks and saving throws made to resist being charmed.</p>
+			<p>This weapon has <b>7 charges</b>. It regains 1 expended charge for each hour it spends in direct sunlight and 1d6 + 1 expended charges daily at dawn.</p>
+			<p><strong><em>Radiant Absorption.</em></strong> When a creature within 30 feet of you takes radiant damage, you can use your reaction to expend 1 charge and absorb some of the energy. The damage the creature takes is reduced by 1d8 plus your spellcasting ability modifier (minimum reduction of 1).</p>
+			<p><strong><em>Radiant Deliverance.</em></strong> When you hit a target with a spell attack while holding the suncatcher, you can spend up to 3 charges to imbue the attack with radiant energy. On a hit, the attack deals an additional 1d6 radiant damage per charge expended.</p>
+			<p><strong><em>Dreamcatcher.</em></strong> While attuned to the suncatcher, you are aware when a creature is using the <em>dream</em> spell to contact you and can choose to end the spell early.</p>
+		</description>
+		<setters>
+			<set name="category">Rod</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="type">Rod</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="charges">7</set>
+			<set name="slot">onehand</set>
+			<set name="name-format">Suncatcher</set>
+		</setters>
+	</element>
+	<element name="Suncatcher" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SUNCATCHER_UNCOMMON_STAFF">
+		<description>
+			<p>From the beak of the suneater owlbear is extracted its ability to absorb and redirect sunlight. The suneater’s bones imbue this item with the hard-headed arrogance unique to fey that prevents them from succumbing to others’ charms.</p>
+			<p>While attuned to the suncatcher, you have advantage on ability checks and saving throws made to resist being charmed.</p>
+			<p>This weapon has <b>7 charges</b>. It regains 1 expended charge for each hour it spends in direct sunlight and 1d6 + 1 expended charges daily at dawn.</p>
+			<p><strong><em>Radiant Absorption.</em></strong> When a creature within 30 feet of you takes radiant damage, you can use your reaction to expend 1 charge and absorb some of the energy. The damage the creature takes is reduced by 1d8 plus your spellcasting ability modifier (minimum reduction of 1).</p>
+			<p><strong><em>Radiant Deliverance.</em></strong> When you hit a target with a spell attack while holding the suncatcher, you can spend up to 3 charges to imbue the attack with radiant energy. On a hit, the attack deals an additional 1d6 radiant damage per charge expended.</p>
+			<p><strong><em>Dreamcatcher.</em></strong> While attuned to the suncatcher, you are aware when a creature is using the <em>dream</em> spell to contact you and can choose to end the spell early.</p>
+		</description>
+		<setters>
+			<set name="category">Staffs</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="charges">7</set>
+			<set name="name-format">Suncatcher</set>
+		</setters>
+	</element>
+	<element name="Suncatcher" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SUNCATCHER_UNCOMMON_WAND">
+		<description>
+			<p>From the beak of the suneater owlbear is extracted its ability to absorb and redirect sunlight. The suneater’s bones imbue this item with the hard-headed arrogance unique to fey that prevents them from succumbing to others’ charms.</p>
+			<p>While attuned to the suncatcher, you have advantage on ability checks and saving throws made to resist being charmed.</p>
+			<p>This weapon has <b>7 charges</b>. It regains 1 expended charge for each hour it spends in direct sunlight and 1d6 + 1 expended charges daily at dawn.</p>
+			<p><strong><em>Radiant Absorption.</em></strong> When a creature within 30 feet of you takes radiant damage, you can use your reaction to expend 1 charge and absorb some of the energy. The damage the creature takes is reduced by 1d8 plus your spellcasting ability modifier (minimum reduction of 1).</p>
+			<p><strong><em>Radiant Deliverance.</em></strong> When you hit a target with a spell attack while holding the suncatcher, you can spend up to 3 charges to imbue the attack with radiant energy. On a hit, the attack deals an additional 1d6 radiant damage per charge expended.</p>
+			<p><strong><em>Dreamcatcher.</em></strong> While attuned to the suncatcher, you are aware when a creature is using the <em>dream</em> spell to contact you and can choose to end the spell early.</p>
+		</description>
+		<setters>
+			<set name="category">Wands</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wand</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="charges">7</set>
+			<set name="name-format">Suncatcher</set>
+		</setters>
+	</element>
+	<element name="Suncatcher" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SUNCATCHER_RARE_ROD">
+		<description>
+			<p>From the beak of the suneater owlbear is extracted its ability to absorb and redirect sunlight. The suneater’s bones imbue this item with the hard-headed arrogance unique to fey that prevents them from succumbing to others’ charms.</p>
+			<p>While attuned to the suncatcher, you have advantage on ability checks and saving throws made to resist being charmed.</p>
+			<p>This weapon has <b>7 charges</b>. It regains 1 expended charge for each hour it spends in direct sunlight and 1d6 + 1 expended charges daily at dawn.</p>
+			<p>You know the <em>flare</em> and <em>light</em> cantrips.</p>
+			<p><strong><em>Radiant Absorption.</em></strong> When a creature within 30 feet of you takes radiant damage, you can use your reaction to expend 1 charge and absorb some of the energy. The damage the creature takes is reduced by 2d8 plus your spellcasting ability modifier (minimum reduction of 1).</p>
+			<p><strong><em>Radiant Deliverance.</em></strong> When you hit a target with a spell attack while holding the suncatcher, you can spend up to 3 charges to imbue the attack with radiant energy. On a hit, the attack deals an additional 1d6 radiant damage per charge expended.</p>
+			<p><strong><em>Dreamcatcher.</em></strong> While attuned to the suncatcher, you are aware when a creature is using the <em>dream</em> spell to contact you and can choose to end the spell early.</p>
+			<p>You can expend 1 charge to cast the <em>daydream</em> spell from the suncatcher.</p>
+		</description>
+		<setters>
+			<set name="category">Rod</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="type">Rod</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="charges">7</set>
+			<set name="slot">onehand</set>
+			<set name="name-format">Suncatcher</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_LIGHT" />
+		</rules>
+	</element>
+	<element name="Suncatcher" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SUNCATCHER_RARE_STAFF">
+		<description>
+			<p>From the beak of the suneater owlbear is extracted its ability to absorb and redirect sunlight. The suneater’s bones imbue this item with the hard-headed arrogance unique to fey that prevents them from succumbing to others’ charms.</p>
+			<p>While attuned to the suncatcher, you have advantage on ability checks and saving throws made to resist being charmed.</p>
+			<p>This weapon has <b>7 charges</b>. It regains 1 expended charge for each hour it spends in direct sunlight and 1d6 + 1 expended charges daily at dawn.</p>
+			<p>You know the <em>flare</em> and <em>light</em> cantrips.</p>
+			<p><strong><em>Radiant Absorption.</em></strong> When a creature within 30 feet of you takes radiant damage, you can use your reaction to expend 1 charge and absorb some of the energy. The damage the creature takes is reduced by 2d8 plus your spellcasting ability modifier (minimum reduction of 1).</p>
+			<p><strong><em>Radiant Deliverance.</em></strong> When you hit a target with a spell attack while holding the suncatcher, you can spend up to 3 charges to imbue the attack with radiant energy. On a hit, the attack deals an additional 1d6 radiant damage per charge expended.</p>
+			<p><strong><em>Dreamcatcher.</em></strong> While attuned to the suncatcher, you are aware when a creature is using the <em>dream</em> spell to contact you and can choose to end the spell early.</p>
+			<p>You can expend 1 charge to cast the <em>daydream</em> spell from the suncatcher.</p>
+		</description>
+		<setters>
+			<set name="category">Staffs</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="charges">7</set>
+			<set name="name-format">Suncatcher</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_LIGHT" />
+		</rules>
+	</element>
+	<element name="Suncatcher" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SUNCATCHER_RARE_WAND">
+		<description>
+			<p>From the beak of the suneater owlbear is extracted its ability to absorb and redirect sunlight. The suneater’s bones imbue this item with the hard-headed arrogance unique to fey that prevents them from succumbing to others’ charms.</p>
+			<p>While attuned to the suncatcher, you have advantage on ability checks and saving throws made to resist being charmed.</p>
+			<p>This weapon has <b>7 charges</b>. It regains 1 expended charge for each hour it spends in direct sunlight and 1d6 + 1 expended charges daily at dawn.</p>
+			<p>You know the <em>flare</em> and <em>light</em> cantrips.</p>
+			<p><strong><em>Radiant Absorption.</em></strong> When a creature within 30 feet of you takes radiant damage, you can use your reaction to expend 1 charge and absorb some of the energy. The damage the creature takes is reduced by 2d8 plus your spellcasting ability modifier (minimum reduction of 1).</p>
+			<p><strong><em>Radiant Deliverance.</em></strong> When you hit a target with a spell attack while holding the suncatcher, you can spend up to 3 charges to imbue the attack with radiant energy. On a hit, the attack deals an additional 1d6 radiant damage per charge expended.</p>
+			<p><strong><em>Dreamcatcher.</em></strong> While attuned to the suncatcher, you are aware when a creature is using the <em>dream</em> spell to contact you and can choose to end the spell early.</p>
+			<p>You can expend 1 charge to cast the <em>daydream</em> spell from the suncatcher.</p>
+		</description>
+		<setters>
+			<set name="category">Wands</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wand</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="charges">7</set>
+			<set name="name-format">Suncatcher</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_LIGHT" />
+		</rules>
+	</element>
+	<element name="Suncatcher" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SUNCATCHER_VERY_RARE_ROD">
+		<description>
+			<p>From the beak of the suneater owlbear is extracted its ability to absorb and redirect sunlight. The suneater’s bones imbue this item with the hard-headed arrogance unique to fey that prevents them from succumbing to others’ charms.</p>
+			<p>While attuned to the suncatcher, you have advantage on ability checks and saving throws made to resist being charmed.</p>
+			<p>This weapon has <b>7 charges</b>. It regains 1 expended charge for each hour it spends in direct sunlight and 1d6 + 1 expended charges daily at dawn.</p>
+			<p>You know the <em>flare</em> and <em>light</em> cantrips. When you cast the <em>flare</em> cantrip, you have a +2 bonus to your attack and damage rolls for the spell.</p>
+			<p><strong><em>Radiant Absorption.</em></strong> When a creature within 30 feet of you takes radiant damage, you can use your reaction to expend 1 charge and absorb some of the energy. The damage the creature takes is reduced by 3d8 plus your spellcasting ability modifier (minimum reduction of 1).</p>
+			<p><strong><em>Radiant Deliverance.</em></strong> When you hit a target with a spell attack while holding the suncatcher, you can spend up to 3 charges to imbue the attack with radiant energy. On a hit, the attack deals an additional 1d6 radiant damage per charge expended.</p>
+			<p><strong><em>Dreamcatcher.</em></strong> While attuned to the suncatcher, you are aware when a creature is using the <em>dream</em> spell to contact you and can choose to end the spell early.</p>
+			<p>You can expend 1 charge to cast the <em>daydream</em> spell or 4 charges to cast the <em>blinding radiance</em> spell from the suncatcher.</p>
+		</description>
+		<setters>
+			<set name="category">Rod</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="type">Rod</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="charges">7</set>
+			<set name="slot">onehand</set>
+			<set name="name-format">Suncatcher</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_LIGHT" />	
+		</rules>
+	</element>
+	<element name="Suncatcher" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SUNCATCHER_VERY_RARE_STAFF">
+		<description>
+			<p>From the beak of the suneater owlbear is extracted its ability to absorb and redirect sunlight. The suneater’s bones imbue this item with the hard-headed arrogance unique to fey that prevents them from succumbing to others’ charms.</p>
+			<p>While attuned to the suncatcher, you have advantage on ability checks and saving throws made to resist being charmed.</p>
+			<p>This weapon has <b>7 charges</b>. It regains 1 expended charge for each hour it spends in direct sunlight and 1d6 + 1 expended charges daily at dawn.</p>
+			<p>You know the <em>flare</em> and <em>light</em> cantrips. When you cast the <em>flare</em> cantrip, you have a +2 bonus to your attack and damage rolls for the spell.</p>
+			<p><strong><em>Radiant Absorption.</em></strong> When a creature within 30 feet of you takes radiant damage, you can use your reaction to expend 1 charge and absorb some of the energy. The damage the creature takes is reduced by 3d8 plus your spellcasting ability modifier (minimum reduction of 1).</p>
+			<p><strong><em>Radiant Deliverance.</em></strong> When you hit a target with a spell attack while holding the suncatcher, you can spend up to 3 charges to imbue the attack with radiant energy. On a hit, the attack deals an additional 1d6 radiant damage per charge expended.</p>
+			<p><strong><em>Dreamcatcher.</em></strong> While attuned to the suncatcher, you are aware when a creature is using the <em>dream</em> spell to contact you and can choose to end the spell early.</p>
+			<p>You can expend 1 charge to cast the <em>daydream</em> spell or 4 charges to cast the <em>blinding radiance</em> spell from the suncatcher.</p>
+		</description>
+		<setters>
+			<set name="category">Staffs</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="charges">7</set>
+			<set name="name-format">Suncatcher</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_LIGHT" />	
+		</rules>
+	</element>
+	<element name="Suncatcher" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SUNCATCHER_VERY_RARE_WAND">
+		<description>
+			<p>From the beak of the suneater owlbear is extracted its ability to absorb and redirect sunlight. The suneater’s bones imbue this item with the hard-headed arrogance unique to fey that prevents them from succumbing to others’ charms.</p>
+			<p>While attuned to the suncatcher, you have advantage on ability checks and saving throws made to resist being charmed.</p>
+			<p>This weapon has <b>7 charges</b>. It regains 1 expended charge for each hour it spends in direct sunlight and 1d6 + 1 expended charges daily at dawn.</p>
+			<p>You know the <em>flare</em> and <em>light</em> cantrips. When you cast the <em>flare</em> cantrip, you have a +2 bonus to your attack and damage rolls for the spell.</p>
+			<p><strong><em>Radiant Absorption.</em></strong> When a creature within 30 feet of you takes radiant damage, you can use your reaction to expend 1 charge and absorb some of the energy. The damage the creature takes is reduced by 3d8 plus your spellcasting ability modifier (minimum reduction of 1).</p>
+			<p><strong><em>Radiant Deliverance.</em></strong> When you hit a target with a spell attack while holding the suncatcher, you can spend up to 3 charges to imbue the attack with radiant energy. On a hit, the attack deals an additional 1d6 radiant damage per charge expended.</p>
+			<p><strong><em>Dreamcatcher.</em></strong> While attuned to the suncatcher, you are aware when a creature is using the <em>dream</em> spell to contact you and can choose to end the spell early.</p>
+			<p>You can expend 1 charge to cast the <em>daydream</em> spell or 4 charges to cast the <em>blinding radiance</em> spell from the suncatcher.</p>
+		</description>
+		<setters>
+			<set name="category">Wands</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wand</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="charges">7</set>
+			<set name="name-format">Suncatcher</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_LIGHT" />	
+		</rules>
+	</element>
+	<element name="Suneater Featherfrond" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SUNEATER_FEATHERFROND">
+		<description>
+			<p>When this featherfrond is socketed on a holdable or wearable item, the item becomes augmented and attuneable. The item gains the Sun Torch property for as long as a creature is attuned to it.</p>
+			<p><strong><em>Sun Torch.</em></strong> As a bonus action, you can light or snuff out the featherfrond. While lit, it sheds bright light in a 20-foot radius and dim light for an additional 20 feet.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Sunfeather Shroud" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SUNFEATHER_SHROUD_UNCOMMON">
+		<description>
+			<p>The feathers of a suneater owlbear possess a brilliant dichromatic effect causing it to sparkle in the sunlight, conferring the ability to dance between patches of sunlight. Particularly well-crafted specimens can augment the magic of the featherfronds, allowing them to generate blinding flashes of light.</p>
+			<p><strong><em>Sunstep.</em></strong> When you are in bright light, you can use a bonus action to teleport up to 60 feet to an unoccupied space you can see that is also in bright light. When you do so, roll a d6. On a 1, you can’t use the Sunstep property again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="slot">shoulders</set>
+		</setters>
+	</element>
+	<element name="Sunfeather Shroud" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SUNFEATHER_SHROUD_RARE">
+		<description>
+			<p>The feathers of a suneater owlbear possess a brilliant dichromatic effect causing it to sparkle in the sunlight, conferring the ability to dance between patches of sunlight. Particularly well-crafted specimens can augment the magic of the featherfronds, allowing them to generate blinding flashes of light.</p>
+			<p>While you wear this shroud, you have advantage on Intimidation checks.</p>
+			<p><strong><em>Sunstep.</em></strong> When you are in bright light, you can use a bonus action to teleport up to 60 feet to an unoccupied space you can see that is also in bright light. When you do so, roll a d6. On a 1, you can’t use the Sunstep property again until the next dawn.</p>
+			<p><strong><em>Blinding Flash.</em></strong> As an action, you can cause the featherfronds to erupt in a dazzling display of bright light. Each creature within 15 feet of you must succeed on a DC 15 Constitution saving throw or be blinded for 1 minute. A blinded creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Once you activate this property, you can’t do so again until the shroud spends at least 1 hour absorbing bright, direct daylight.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="slot">shoulders</set>  
+		</setters>
+	</element>
+	<element name="Sunfeather Shroud" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SUNFEATHER_SHROUD_VERY_RARE">
+		<description>
+			<p>The feathers of a suneater owlbear possess a brilliant dichromatic effect causing it to sparkle in the sunlight, conferring the ability to dance between patches of sunlight. Particularly well-crafted specimens can augment the magic of the featherfronds, allowing them to generate blinding flashes of light.</p>
+			<p>While you wear this shroud, you have advantage on Intimidation checks and resistance to radiant damage.</p>
+			<p><strong><em>Sunstep.</em></strong> When you are in bright light, you can use a bonus action to teleport up to 60 feet to an unoccupied space you can see that is also in bright light.</p>
+			<p><strong><em>Blinding Flash.</em></strong> As an action, you can cause the featherfronds to erupt in a dazzling display of bright light. Each creature within 15 feet of you must succeed on a DC 15 Constitution saving throw or be blinded for 1 minute. A blinded creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Once you activate this property, you can’t do so again until the shroud spends at least 1 hour absorbing bright, direct daylight.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="slot">shoulders</set>  
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+		</rules>
+	</element>
+	<element name="Mimickey" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MIMICKEY">
+		<description>
+			<p>This bone and flesh keyring can be socketed on any weapon or held item. As an action, you can hold the item by the keyring and spin it in a circle, causing the socketed item to shrink to the size of a key. Using an action to spin it while key-sized returns it to its normal size.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+			<set name="socketable">true</set>
+		</setters>
+	</element>
+	<element name="Spelleater Tome" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SPELLEATER_TOME_UNCOMMON">
+		<description>
+			<p>Learning and developing new spells can be a tedious and time-consuming process. Luckily, the spelleater tome is a shortcut to becoming a spell-slinging savant. Originally a creation of Jonjo Starr, the tome has become a favourite among lazy wizarding apprentices the world over.</p>
+			<p>This book has 8 charges and regains 1d4 + 4 expended charges daily at dawn. It can be used as a spellbook and as a spellcasting focus by wizards.</p>
+			<p><strong><em>Living Library.</em></strong> This tome is capable of copying and storing magical information. As an action, you can give it a spell scroll of 2nd level or lower, which it devours, destroying the scroll and adding the spell to its pages. While holding the book, you can cast one of the spells stored within it by expending a number of charges equal to the spell’s level (save DC 13, +5 to hit; 1 charge for cantrips). The tome can store up to five spells in this way. If storing a new spell would take it above this maximum, you can choose one of its current spells to be replaced. When found, the book already contains one 1st-level spell and one 2nd-level spell, randomly determined.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="charges">8</set>
+		</setters>
+	</element>
+	<element name="Spelleater Tome" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SPELLEATER_TOME_RARE">
+		<description>
+			<p>Learning and developing new spells can be a tedious and time-consuming process. Luckily, the spelleater tome is a shortcut to becoming a spell-slinging savant. Originally a creation of Jonjo Starr, the tome has become a favourite among lazy wizarding apprentices the world over.</p>
+			<p>This book has 8 charges and regains 1d4 + 4 expended charges daily at dawn. It can be used as a spellbook and as a spellcasting focus by wizards.</p>
+			<p><strong><em>Living Library.</em></strong> This tome is capable of copying and storing magical information. As an action, you can give it a spell scroll of 5th level or lower, which it devours, destroying the scroll and adding the spell to its pages. While holding the book, you can cast one of the spells stored within it by expending a number of charges equal to the spell’s level (save DC 15, +7 to hit; 1 charge for cantrips). The tome can store up to seven spells in this way. If storing a new spell would take it above this maximum, you can choose one of its current spells to be replaced. When found, the book already contains one 1st-level spell and one 2nd-level spell, randomly determined.</p>
+			<p><strong><em>Arcane Feast.</em></strong> You can allow the book to consume the corpse of a spellcaster over the course of 10 minutes, after which it regains 2 expended charges. Once this property of the book has been used, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="charges">8</set>
+		</setters>
+	</element>
+	<element name="Magnetite Horn" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MAGNETITE_HORN">
+		<description>
+			<p>Fashioned from the harvested horn of a magnetite dragon, this charm can be socketed on a ferrous weapon or on a worn item that contains iron, conferring different benefits to each.</p>
+			<p><strong><em>Ferrous Weapon.</em></strong> While you hold the socketed weapon, when you are hit by a weapon attack made with a ferrous weapon or ammunition that you can see, you can use your reaction to activate the magnetic properties of the horn. When you do so, the attack’s weapon or ammunition is pulled towards your own, giving you a +1 bonus to your AC against the attack as you attempt to parry it and possibly turning the hit into a miss.</p>
+			<p><strong><em>Ferrous Worn Item.</em></strong> While you wear the socketed item, when a creature within 5 feet of you is targeted by a weapon attack made with a ferrous weapon or ammunition, you can use your reaction to activate the magnetic properties of the horn. When you do so, roll a d20. On an 11 or higher, you become the target of the attack instead.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Shard Crown" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SHARD_CROWN_RARE">
+		<description>
+			<p>From the horn and eyes of a magnetite dragon is crafted this crown of magnetite. The creature’s commanding presence and power over the blood of others allow the wearer of this object to bend its foes to its will.</p>
+			<p>Critical hits against you made with ferrous weapons or ammunition become normal hits while you wear this crown. In addition, while wearing this crown, you know the <i>magnetobolt</i> cantrip (+7 to hit or your spellcasting attack modifier, whichever is higher) and, in extreme cold, you can cast the <i>levitate</i> spell on yourself at will.</p>
+			<p>The crown has 5 charges and regains 1d4 + 1 expended charges daily at dawn.</p>
+			<p><strong><em>Bloodbend.</em></strong> As an action, you can expend 1 charge as you gesture to a creature you can see within 30 feet of you and speak a one-word command. If the target has blood, it must succeed on a DC 15 Wisdom saving throw or instantly use its reaction to follow the command (GM’s discretion). If the creature has no reaction remaining, it must use its reaction to follow the command the next time it regains it. The property has no effect on a target that doesn’t have blood. Commands include:</p>
+			<ul>
+				<li><strong>Throw.</strong> The creature throws an object it is holding in a direction you choose with all its might.</li>
+				<li><strong>Sit.</strong> The creature sits, falling prone and not moving until the end of its next turn.</li>
+				<li><strong>Attack.</strong> The creature makes one weapon attack against a creature of your choice within its reach/range.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="charges">5</set>
+			<set name="slot">head</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_HGTMH_SPELL_MAGNETOBOLT" />
+		</rules>
+	</element>
+	<element name="Shard Crown" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SHARD_CROWN_VERY_RARE">
+		<description>
+			<p>From the horn and eyes of a magnetite dragon is crafted this crown of magnetite. The creature’s commanding presence and power over the blood of others allow the wearer of this object to bend its foes to its will.</p>
+			<p>Critical hits against you made with ferrous weapons or ammunition become normal hits while you wear this crown. In addition, while wearing this crown, you know the <i>magnetobolt</i> cantrip (+8 to hit or your spellcasting attack modifier, whichever is higher) and, in extreme cold, you can cast the <i>levitate</i> and <i>fly</i> spells on yourself at will.</p>
+			<p>The crown has 8 charges and regains 1d4 + 4 expended charges daily at dawn.</p>
+			<p><strong><em>Bloodbend.</em></strong> As an action, you can expend 1 charge as you gesture to a creature you can see within 30 feet of you and speak a one-word command. If the target has blood, it must succeed on a DC 16 Wisdom saving throw or instantly use its reaction to follow the command (GM’s discretion). If the creature has no reaction remaining, it must use its reaction to follow the command the next time it regains it. The property has no effect on a target that doesn’t have blood. Commands include:</p>
+			<ul>
+				<li><strong>Throw.</strong> The creature throws an object it is holding in a direction you choose with all its might.</li>
+				<li><strong>Sit.</strong> The creature sits, falling prone and not moving until the end of its next turn.</li>
+				<li><strong>Attack.</strong> The creature makes one weapon attack against a creature of your choice within its reach/range.</li>
+			</ul>
+			<p><strong><em>Magnetovision.</em></strong> As a bonus action, you can expend 1 charge allowing you to sense the locations of all ferrous metals within 60 feet of you for the next 10 minutes. This vision is blocked by a thin sheet of lead.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="charges">8</set>
+			<set name="slot">head</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_HGTMH_SPELL_MAGNETOBOLT" />
+		</rules>
+	</element>
+	<element name="Shard Crown" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SHARD_CROWN_LEGENDARY">
+		<description>
+			<p>From the horn and eyes of a magnetite dragon is crafted this crown of magnetite. The creature’s commanding presence and power over the blood of others allow the wearer of this object to bend its foes to its will.</p>
+			<p>Critical hits against you made with ferrous weapons or ammunition become normal hits while you wear this crown. In addition, while wearing this crown, you know the <i>magnetobolt</i> cantrip (+9 to hit or your spellcasting attack modifier, whichever is higher) and, in extreme cold, you can cast the <i>levitate</i> and <i>fly</i> spells on yourself at will.</p>
+			<p>The crown has 12 charges and regains 1d8 + 4 expended charges daily at dawn.</p>
+			<p><strong><em>Bloodbend.</em></strong> As an action, you can expend 1 charge as you gesture to a creature you can see within 30 feet of you and speak a one-word command. If the target has blood, it must succeed on a DC 17 Wisdom saving throw or instantly use its reaction to follow the command (GM’s discretion). If the creature has no reaction remaining, it must use its reaction to follow the command the next time it regains it. The property has no effect on a target that doesn’t have blood. Commands include:</p>
+			<ul>
+				<li><strong>Throw.</strong> The creature throws an object it is holding in a direction you choose with all its might.</li>
+				<li><strong>Sit.</strong> The creature sits, falling prone and not moving until the end of its next turn.</li>
+				<li><strong>Attack.</strong> The creature makes one weapon attack against a creature of your choice within its reach/range.</li>
+			</ul>
+			<p><strong><em>Magnetovision.</em></strong> As a bonus action, you can expend 1 charge allowing you to sense the locations of all ferrous metals within 60 feet of you for the next 10 minutes. This vision is blocked by a thin sheet of lead.</p>
+			<p><strong><em>Crown of Shards.</em></strong>As a bonus action, you can expend 1 charge to shoot a shard of magnetite at a target within 90 feet of you. Make a ranged spell attack (+9 to hit), which deals 4d6 piercing damage on a hit. This shard can bend around corners and ignores half and three-quarters cover.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+			<set name="charges">12</set>
+			<set name="slot">head</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_HGTMH_SPELL_MAGNETOBOLT" />
+		</rules>
+	</element>
+	<element name="Snow Wolf Cowl" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SNOW_WOLF_COWL_UNCOMMON">
+		<description>
+			<p>Few warriors can claim to have single-handedly bested a full-grown snow wolf. Those that do can have the head of such a monster enchanted by a clan shaman, granting them the power to transform into the beast. Such cowls are prized trophies amongst the frozen Norse clans, symbols of might and status.</p>
+			<p><strong><em>Wolf Form.</em></strong> As an action, you can cast the <i>polymorph</i> spell on yourself. When cast in this manner, the spell doesn’t require concentration, and you can only transform into a dire wolf, ignoring the spell’s normal restrictions on CR and creature type, with the following changes:</p>
+			<ul>
+				<li>You can speak Common, Giant, and Winter Wolf in your wolf form.</li>
+				<li>The attack modifier for your attacks in wolf form is +7, and the save DC for your Bite action is 15.</li>
+			</ul>
+			<p>You can end this spell early as a bonus action. Once this property of the cowl has been used, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="slot">head</set>
+		</setters>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_GIANT" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		</rules>
+	</element>
+	<element name="Snow Wolf Cowl" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SNOW_WOLF_COWL_RARE">
+		<description>
+			<p>Few warriors can claim to have single-handedly bested a full-grown snow wolf. Those that do can have the head of such a monster enchanted by a clan shaman, granting them the power to transform into the beast. Such cowls are prized trophies amongst the frozen Norse clans, symbols of might and status.</p>
+			<p><strong><em>Wolf Form.</em></strong> As an action, you can cast the <i>polymorph</i> spell on yourself. When cast in this manner, the spell doesn’t require concentration, and you can only transform into a winter wolf, ignoring the spell’s normal restrictions on CR and creature type, with the following changes:</p>
+			<ul>
+				<li>You can speak Common, Giant, and Winter Wolf in your wolf form.</li>
+				<li>The attack modifier for your attacks in wolf form is +7, and the save DC for your Cold Breath and Bite actions is 15.</li>
+			</ul>
+			<p>You can end this spell early as a bonus action. Once this property of the cowl has been used, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="slot">head</set>
+		</setters>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_GIANT" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		</rules>
+	</element>
+	<element name="Snow Wolf Cowl" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SNOW_WOLF_COWL_VERY_RARE">
+		<description>
+			<p>Few warriors can claim to have single-handedly bested a full-grown snow wolf. Those that do can have the head of such a monster enchanted by a clan shaman, granting them the power to transform into the beast. Such cowls are prized trophies amongst the frozen Norse clans, symbols of might and status.</p>
+			<p>While you wear this cowl, you have resistance to cold damage.</p>
+			<p><strong><em>Wolf Form.</em></strong> As an action, you can cast the <i>polymorph</i> spell on yourself. When cast in this manner, the spell doesn’t require concentration, and you can only transform into a winter wolf, ignoring the spell’s normal restrictions on CR and creature type, with the following changes:</p>
+			<ul>
+				<li>You can speak Common, Giant, and Winter Wolf in your wolf form.</li>
+				<li>The attack modifier for your attacks in wolf form is +9, the DC of your Cold Breath and Bite actions is 16, and your hit points in wolf form are 100.</li>
+			</ul>
+			<p>You can end this spell early as a bonus action. Once this property of the cowl has been used, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="slot">head</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			<grant type="Language" id="ID_LANGUAGE_GIANT" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		</rules>
+	</element>
+	<element name="Wyrm's Breath Grenade, Brass" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WYRMS_BREATH_GRENADE_BRASS">
+		<description>
+			<p>Within the beautifully sculpted exterior is housed a dragon’s biomantically-sustained toxin gland, pungent incense, and crushed diamond. Available in a variety of hues, the metal of this grenade-like contraption matches the dragon from which the organ was harvested.</p>
+			<p>As an action, you can throw this magical device onto a surface you can see within 60 feet. Upon impact, the incense ignites, billowing out in a pungent, 15-foot-radius sphere, carrying with it the dragon’s magic. A creature that starts its turn in the area or enters the area for the first time on its turn must make the associated saving throw, suffering the associated effects on a failure. Creatures are affected even if they hold their breath or don’t need to breathe. The cloud lasts for 1 minute or until a strong wind (at least 20 miles per hour) disperses it. Once a grenade has been used, it can’t be used again until the following dawn, and it must be refilled with 100 gp of good-quality incense, as well as a specified value of diamond dust.</p>
+			<p><b>Brass, Sleep; Very rare.</b> A creature must succeed on a DC 16 Constitution saving throw or be affected by a heavy drowsiness that causes it to fall unconscious until the start of its next turn. A creature with 80 or more hit points is immune to this effect. This effect ends for a creature if the creature takes damage, or if another creature uses an action to wake it. Diamond dust: 600 gp.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Wyrm's Breath Grenade, Bronze" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WYRMS_BREATH_GRENADE_BRONZE">
+		<description>
+			<p>Within the beautifully sculpted exterior is housed a dragon’s biomantically-sustained toxin gland, pungent incense, and crushed diamond. Available in a variety of hues, the metal of this grenade-like contraption matches the dragon from which the organ was harvested.</p>
+			<p>As an action, you can throw this magical device onto a surface you can see within 60 feet. Upon impact, the incense ignites, billowing out in a pungent, 15-foot-radius sphere, carrying with it the dragon’s magic. A creature that starts its turn in the area or enters the area for the first time on its turn must make the associated saving throw, suffering the associated effects on a failure. Creatures are affected even if they hold their breath or don’t need to breathe. The cloud lasts for 1 minute or until a strong wind (at least 20 miles per hour) disperses it. Once a grenade has been used, it can’t be used again until the following dawn, and it must be refilled with 100 gp of good-quality incense, as well as a specified value of diamond dust.</p>
+			<p><b>Bronze, Repulsion; Rare.</b> A creature must succeed on a DC 15 Strength saving throw or be flung up to 60 feet from the centre of the sphere, landing prone and taking 2d6 bludgeoning damage. If a creature collides with another creature, both creatures take an additional 2d6 bludgeoning damage. If a creature collides with a solid object, it takes 4d6 bludgeoning damage instead. Diamond dust: 400 gp.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Wyrm's Breath Grenade, Copper" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WYRMS_BREATH_GRENADE_COPPER">
+		<description>
+			<p>Within the beautifully sculpted exterior is housed a dragon’s biomantically-sustained toxin gland, pungent incense, and crushed diamond. Available in a variety of hues, the metal of this grenade-like contraption matches the dragon from which the organ was harvested.</p>
+			<p>As an action, you can throw this magical device onto a surface you can see within 60 feet. Upon impact, the incense ignites, billowing out in a pungent, 15-foot-radius sphere, carrying with it the dragon’s magic. A creature that starts its turn in the area or enters the area for the first time on its turn must make the associated saving throw, suffering the associated effects on a failure. Creatures are affected even if they hold their breath or don’t need to breathe. The cloud lasts for 1 minute or until a strong wind (at least 20 miles per hour) disperses it. Once a grenade has been used, it can’t be used again until the following dawn, and it must be refilled with 100 gp of good-quality incense, as well as a specified value of diamond dust.</p>
+			<p><b>Copper, Slow; Rare.</b> A creature must succeed on a DC 15 Constitution saving throw or suffer the effects of the slow spell until the start of its next turn. Diamond dust: 300 gp.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Wyrm's Breath Grenade, Gold" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WYRMS_BREATH_GRENADE_GOLD">
+		<description>
+			<p>Within the beautifully sculpted exterior is housed a dragon’s biomantically-sustained toxin gland, pungent incense, and crushed diamond. Available in a variety of hues, the metal of this grenade-like contraption matches the dragon from which the organ was harvested.</p>
+			<p>As an action, you can throw this magical device onto a surface you can see within 60 feet. Upon impact, the incense ignites, billowing out in a pungent, 15-foot-radius sphere, carrying with it the dragon’s magic. A creature that starts its turn in the area or enters the area for the first time on its turn must make the associated saving throw, suffering the associated effects on a failure. Creatures are affected even if they hold their breath or don’t need to breathe. The cloud lasts for 1 minute or until a strong wind (at least 20 miles per hour) disperses it. Once a grenade has been used, it can’t be used again until the following dawn, and it must be refilled with 100 gp of good-quality incense, as well as a specified value of diamond dust.</p>
+			<p><b>Gold, Weakening; Very rare.</b> A creature must succeed on a DC 16 Constitution saving throw or have disadvantage on all ability checks, attack rolls, and saving throws, and also deal half damage with Strength-based attacks until the end of its next turn. Diamond dust: 1200 gp.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Wyrm's Breath Grenade, Silver" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_WYRMS_BREATH_GRENADE_SILVER">
+		<description>
+			<p>Within the beautifully sculpted exterior is housed a dragon’s biomantically-sustained toxin gland, pungent incense, and crushed diamond. Available in a variety of hues, the metal of this grenade-like contraption matches the dragon from which the organ was harvested.</p>
+			<p>As an action, you can throw this magical device onto a surface you can see within 60 feet. Upon impact, the incense ignites, billowing out in a pungent, 15-foot-radius sphere, carrying with it the dragon’s magic. A creature that starts its turn in the area or enters the area for the first time on its turn must make the associated saving throw, suffering the associated effects on a failure. Creatures are affected even if they hold their breath or don’t need to breathe. The cloud lasts for 1 minute or until a strong wind (at least 20 miles per hour) disperses it. Once a grenade has been used, it can’t be used again until the following dawn, and it must be refilled with 100 gp of good-quality incense, as well as a specified value of diamond dust.</p>
+			<p><b>Silver, Paralysing; Legendary.</b> A creature must succeed on a DC 17 Constitution saving throw or be paralysed until the start of its next turn. Diamond dust: 2400 gp.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+	</element>
+	<element name="Infested Cultist's Skull" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_INFESTED_CULTISTS_SKULL_UNCOMMON">
+		<description>
+			<p>This humanoid skull is infested by a parasitic purple plant from an unknown plane. The longer you stare, the more you could swear that the petals sway in response to an unseen wind.</p>
+			<p>The skull contains 7 petals. While holding it, you can use an action to pluck a petal to cast the <i>guiding bolt</i> spell (+5 to hit), dealing necrotic damage instead of radiant. The skull regrows 1d4 plucked petals daily at dawn. If you pluck the last petal, the skull crumbles to dust and is destroyed.</p>
+			<p><strong><em>Curse.</em></strong> This skull is cursed, and plucking 3 or more petals in a day extends this curse to you. Until the curse is broken with <i>remove curse</i> or similar magic, you are unwilling to part with the skull, keeping it within reach at all times.</p>
+			<p>While cursed, whenever you finish a long rest, a black petal grows on your head. These black petals cannot be removed physically, and any attempt to do so causes you to take 2d6 necrotic damage. If you travel to a different plane while cursed, you grow a further 1d4 black petals.</p>
+			<p>When the seventh petal has grown on your skull, you die and your body turns to dust, except for your skull, which becomes a new infested cultist’s skull. If the curse is removed, the petals on your head and the infested cultist’s skull are destroyed and crumble to dust.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="charges">7</set>
+			<set name="cursed">true</set>
+		</setters>
+	</element>
+	<element name="Infested Cultist's Skull" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_INFESTED_CULTISTS_SKULL_VERY_RARE">
+		<description>
+			<p>This humanoid skull is infested by a parasitic purple plant from an unknown plane. The longer you stare, the more you could swear that the petals sway in response to an unseen wind.</p>
+			<p>The skull contains 7 petals. While holding it, you can use an action to pluck a petal to cast the <i>blight</i> spell (save DC 16). The skull regrows 1d4 plucked petals daily at dawn. If you pluck the last petal, the skull crumbles to dust and is destroyed.</p>
+			<p><strong><em>Curse.</em></strong> This skull is cursed, and plucking 3 or more petals in a day extends this curse to you. Until the curse is broken with <i>remove curse</i> or similar magic, you are unwilling to part with the skull, keeping it within reach at all times.</p>
+			<p>While cursed, whenever you finish a long rest, a black petal grows on your head. These black petals cannot be removed physically, and any attempt to do so causes you to take 2d6 necrotic damage. If you travel to a different plane while cursed, you grow a further 1d4 black petals.</p>
+			<p>When the seventh petal has grown on your skull, you die and your body turns to dust, except for your skull, which becomes a new infested cultist’s skull. If the curse is removed, the petals on your head and the infested cultist’s skull are destroyed and crumble to dust.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="charges">7</set>
+			<set name="cursed">true</set>
+		</setters>
+	</element>
+	<element name="Lady's Veil" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_LADYS_VEIL">
+		<description>
+			<p>This fine-meshed shroud can be socketed on any worn headgear or armour, such as a helmet, cloak, breastplate, or crown. Looking through the mesh, an attuned wearer can detect corpses and creatures ripe for decomposition.</p>
+			<p>As an action, you can open your awareness to magically detect corpses and undead. Until the end of your next turn, you know the location of any corpse or undead creature within 60 feet of you that isn’t behind total cover, and that isn’t protected from divination magic. This sense doesn’t tell you anything about a creature’s capabilities or identity. After you activate this property, you can’t do so again until the following dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Mycelial Cloak" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MYCELIAL_CLOAK">
+		<description>
+			<p>This hearty-scented cape is knitted from microscopic threads of autumn-hued mycelia. With alarming rapidity, the hyphae can drain a corpse, leaving it an emaciated husk and restoring its wearer to robust, good health.</p>
+			<p><strong><em>Detritivore.</em></strong> As a bonus action, you can target one Small or larger corpse, or one Small or larger creature with 0 hit points you can see within 15 feet of you, causing your mycelia to burrow over to it and rapidly drain it of nutrients. If the target is alive, it must succeed on a DC 15 Constitution saving throw or fail a death saving throw. Undead have disadvantage on this saving throw. On a failure, or if the target is a corpse, you regain 6d6 hit points. After you activate this feature, you can’t do so again until you finish a short or long rest.</p>
+			<p><strong><em>Mycelial Deconstruction.</em></strong> As an action, you can wrap the cloak around yourself, causing your body, and all the items you are wearing or holding, to dissolve into thousands of mycelial threads. You gain a burrowing speed equal to your walking speed, you can burrow through nonmagical unworked earth and stone, and you don’t disturb the material you move through.</p>
+			<p>While in this form, you can pass through any microscopic gap large enough for a fungal hypha; have resistance to bludgeoning, piercing, and slashing damage; and can’t talk, manipulate objects, cast spells, or attack. You can reform in an unoccupied space as an action. After you activate this feature, you can’t do so again until you finish a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="slot">shoulders</set>
+		</setters>
+	</element>
+	<element name="Ring of Fungal Symbiosis" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RING_OF_FUNGAL_SYMBIOSIS_UNCOMMON">
+		<description>
+			<p>Parasite or symbiote, the exact classification of this loop of living fungus is up for debate. When worn for an extended period, the ring co-opts its host, producing an assortment of fruiting fungal bodies each day. Whether those are of benefit or not is entirely up to how they’re used.</p>
+			<p>Whenever you finish a long rest during which you wear this ring, you find a selection of toadstools has grown on the limb that sports this ring. Roll a d4 twice and consult the list below to determine which two mushrooms have grown.</p>
+			<ol>
+				<li><strong>1. Boomshroom.</strong> As an action, a creature can throw this volatile mushroom at a point it can see within 60 feet of it, where it explodes in a 10-foot-radius sphere of flames. Each creature in the area must make a DC 13 Dexterity saving throw, taking 4d6 fire damage on a failed save, or half as much damage on a successful one. The fire ignites flammable objects in the area that aren’t being worn or carried.</li>
+				<li><strong>2. Bloomshroom.</strong> As an action, a creature can eat this mushroom, regaining 2d4 + 2 hit points and gaining advantage on all Constitution saving throws for 1 minute.</li>
+				<li><strong>3. Doomshroom.</strong> As an action, a creature can throw this dusky mushroom at a point it can see within 60 feet of it, where it explodes in a 10-foot-radius sphere of purple spores. Each creature in the area must succeed on a DC 13 Constitution saving throw or become afflicted by the <i>bane</i> spell for 1 minute. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</li>
+				<li><strong>4. Gloomshroom.</strong> As an action, a creature can eat this mushroom. For the next hour, it gains darkvision out to a range of 60 feet. If it already has darkvision, the range of this vision is increased by 30 feet.</li>
+			</ol>
+			<p>The mushrooms last on your arm until you finish a long rest, but lose all magical effects 10 minutes after they are plucked. You can pluck a mushroom as part of the action to use it.</p>
+			<p><strong><em>Optional Attunement.</em></strong> You can choose to attune to this item. While attuned, you can roll the d4 to determine which mushrooms grew four times instead of twice.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">ring</set>
+		</setters>
+	</element>
+	<element name="Ring of Fungal Symbiosis" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_RING_OF_FUNGAL_SYMBIOSIS_VERY_RARE">
+		<description>
+			<p>Parasite or symbiote, the exact classification of this loop of living fungus is up for debate. When worn for an extended period, the ring co-opts its host, producing an assortment of fruiting fungal bodies each day. Whether those are of benefit or not is entirely up to how they’re used.</p>
+			<p>Whenever you finish a long rest during which you wear this ring, you find a selection of toadstools has grown on the limb that sports this ring. Roll a d6 four times and consult the list below to determine which mushrooms have grown.</p>
+			<ol>
+				<li><strong>1. Boomshroom.</strong> As an action, a creature can throw this volatile mushroom at a point it can see within 60 feet of it, where it explodes in a 10-foot-radius sphere of flames. Each creature in the area must make a DC 16 Dexterity saving throw, taking 4d6 fire damage on a failed save, or half as much damage on a successful one. The fire ignites flammable objects in the area that aren’t being worn or carried.</li>
+				<li><strong>2. Bloomshroom.</strong> As an action, a creature can eat this mushroom, regaining 2d4 + 2 hit points and gaining advantage on all Constitution saving throws for 1 minute.</li>
+				<li><strong>3. Doomshroom.</strong> As an action, a creature can throw this dusky mushroom at a point it can see within 60 feet of it, where it explodes in a 10-foot-radius sphere of purple spores. Each creature in the area must succeed on a DC 16 Constitution saving throw or become afflicted by the <i>bane</i> spell for 1 minute. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</li>
+				<li><strong>4. Gloomshroom.</strong> As an action, a creature can eat this mushroom. For the next hour, it gains darkvision out to a range of 60 feet. If it already has darkvision, the range of this vision is increased by 30 feet.</li>
+				<li><strong>5. Rheumshroom.</strong> As an action, a creature can throw this sticky mushroom at a point it can see within 60 feet of it, where it explodes in a 10-foot-radius sphere of arthritis-inducing spores. Each creature in the area must succeed on a DC 16 Constitution saving throw or suffer the effects of the <i>slow</i> spell for 1 minute. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</li>
+				<li><strong>6. Zoomshroom.</strong> As an action, a creature can eat this mushroom, gaining the benefits of the <i>haste</i> spell for 1 minute. At the start of each of the affected creature’s turns, roll a d6. On a 1, the effect ends and the wave of lethargy described in the spell sweeps over it.</li>
+			</ol>
+			<p>The mushrooms last on your arm until you finish a long rest, but lose all magical effects 10 minutes after they are plucked. You can pluck a mushroom as part of the action to use it.</p>
+			<p><strong><em>Optional Attunement.</em></strong> You can choose to attune to this item. While attuned, you can roll the d6 to determine which mushrooms grew four times instead of twice.</p>
+			<p><strong><em>Fungal Plating.</em></strong> When you finish a long rest while wearing the ring, hard sheets of organic mycoprotein cover your body. You gain the benefits of the <i>barkskin</i> spell for the next 24 hours (no concentration required). While this magical effect persists, you gain 5 temporary hit points at the start of each of your turns.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Very Rare</set>
+			<set name="slot">ring</set>
+		</setters>
+	</element>
+	<element name="Sporespreader" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SPORESPREADER_UNCOMMON_ROD">
+		<description>
+			<p>Used as a magical focus of the more humanoid-esque, ‘customer-facing’ hyphan colonists, sporespreaders are enchanted to facilitate the calming and assimilation of would-be interlopers. The magic in these foci can poison foes with infectious spores or generate obscuring thick black clouds to allow their wielders to flee dangerous situations.</p>
+			<p>This focus has 7 charges and regains 1d4 + 3 expended charges daily at dawn. While holding the sporespreader, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability: <i>calm emotions</i> (2 charges) and <i>charm person</i> (1 charge).</p>
+			<p>You can also cast the <i>spore cloud</i> and <i>smokescreen</i> cantrips from the focus without using any charges.</p>
+		</description>
+		<setters>
+			<set name="category">Rods</set>
+			<set name="type">Rod</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="charges">7</set>
+			<set name="slot">onehand</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_HGTMH_SPELL_SPORE_CLOUD" />
+			<grant type="Spell" id="ID_HGTMH_SPELL_SMOKESCREEN" />
+		</rules>
+	</element>
+	<element name="Sporespreader" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SPORESPREADER_UNCOMMON_STAFF">
+		<description>
+			<p>Used as a magical focus of the more humanoid-esque, ‘customer-facing’ hyphan colonists, sporespreaders are enchanted to facilitate the calming and assimilation of would-be interlopers. The magic in these foci can poison foes with infectious spores or generate obscuring thick black clouds to allow their wielders to flee dangerous situations.</p>
+			<p>This focus has 7 charges and regains 1d4 + 3 expended charges daily at dawn. While holding the sporespreader, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability: <i>calm emotions</i> (2 charges) and <i>charm person</i> (1 charge).</p>
+			<p>You can also cast the <i>spore cloud</i> and <i>smokescreen</i> cantrips from the focus without using any charges.</p>
+		</description>
+		<setters>
+			<set name="category">Staffs</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="charges">7</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_HGTMH_SPELL_SPORE_CLOUD" />
+			<grant type="Spell" id="ID_HGTMH_SPELL_SMOKESCREEN" />
+		</rules>
+	</element>
+	<element name="Sporespreader" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SPORESPREADER_UNCOMMON_WAND">
+		<description>
+			<p>Used as a magical focus of the more humanoid-esque, ‘customer-facing’ hyphan colonists, sporespreaders are enchanted to facilitate the calming and assimilation of would-be interlopers. The magic in these foci can poison foes with infectious spores or generate obscuring thick black clouds to allow their wielders to flee dangerous situations.</p>
+			<p>This focus has 7 charges and regains 1d4 + 3 expended charges daily at dawn. While holding the sporespreader, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability: <i>calm emotions</i> (2 charges) and <i>charm person</i> (1 charge).</p>
+			<p>You can also cast the <i>spore cloud</i> and <i>smokescreen</i> cantrips from the focus without using any charges.</p>
+		</description>
+		<setters>
+			<set name="category">Wands</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wand</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="charges">7</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_HGTMH_SPELL_SPORE_CLOUD" />
+			<grant type="Spell" id="ID_HGTMH_SPELL_SMOKESCREEN" />
+		</rules>
+	</element>
+	<element name="Sporespreader" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SPORESPREADER_RARE_ROD">
+		<description>
+			<p>Used as a magical focus of the more humanoid-esque, ‘customer-facing’ hyphan colonists, sporespreaders are enchanted to facilitate the calming and assimilation of would-be interlopers. The magic in these foci can poison foes with infectious spores or generate obscuring thick black clouds to allow their wielders to flee dangerous situations.</p>
+			<p>This focus has <b>10 charges</b> and regains 1d6 + 4 expended charges daily at dawn. While holding the sporespreader, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability: <i>calm emotions</i> (2 charges), <i>charm person</i> (1 charge), <i>mortiferous pulse</i> (2 charges), and <i>enrage</i> (3 charges).</p>
+			<p>You can also cast the <i>spore cloud</i> and <i>smokescreen</i> cantrips from the focus without using any charges.</p>
+		</description>
+		<setters>
+			<set name="category">Rods</set>
+			<set name="type">Rod</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="charges">10</set>
+			<set name="slot">onehand</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_HGTMH_SPELL_SPORE_CLOUD" />
+			<grant type="Spell" id="ID_HGTMH_SPELL_SMOKESCREEN" />
+		</rules>
+	</element>
+	<element name="Sporespreader" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SPORESPREADER_RARE_STAFF">
+		<description>
+			<p>Used as a magical focus of the more humanoid-esque, ‘customer-facing’ hyphan colonists, sporespreaders are enchanted to facilitate the calming and assimilation of would-be interlopers. The magic in these foci can poison foes with infectious spores or generate obscuring thick black clouds to allow their wielders to flee dangerous situations.</p>
+			<p>This focus has <b>10 charges</b> and regains 1d6 + 4 expended charges daily at dawn. While holding the sporespreader, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability: <i>calm emotions</i> (2 charges), <i>charm person</i> (1 charge), <i>mortiferous pulse</i> (2 charges), and <i>enrage</i> (3 charges).</p>
+			<p>You can also cast the <i>spore cloud</i> and <i>smokescreen</i> cantrips from the focus without using any charges.</p>
+		</description>
+		<setters>
+			<set name="category">Staffs</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="charges">10</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_HGTMH_SPELL_SPORE_CLOUD" />
+			<grant type="Spell" id="ID_HGTMH_SPELL_SMOKESCREEN" />
+		</rules>
+	</element>
+	<element name="Sporespreader" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SPORESPREADER_RARE_WAND">
+		<description>
+			<p>Used as a magical focus of the more humanoid-esque, ‘customer-facing’ hyphan colonists, sporespreaders are enchanted to facilitate the calming and assimilation of would-be interlopers. The magic in these foci can poison foes with infectious spores or generate obscuring thick black clouds to allow their wielders to flee dangerous situations.</p>
+			<p>This focus has <b>10 charges</b> and regains 1d6 + 4 expended charges daily at dawn. While holding the sporespreader, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability: <i>calm emotions</i> (2 charges), <i>charm person</i> (1 charge), <i>mortiferous pulse</i> (2 charges), and <i>enrage</i> (3 charges).</p>
+			<p>You can also cast the <i>spore cloud</i> and <i>smokescreen</i> cantrips from the focus without using any charges.</p>
+		</description>
+		<setters>
+			<set name="category">Wands</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wand</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="charges">10</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_HGTMH_SPELL_SPORE_CLOUD" />
+			<grant type="Spell" id="ID_HGTMH_SPELL_SMOKESCREEN" />
+		</rules>
+	</element>
+	<element name="Broodmother's Embrace" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BROODMOTHERS_EMBRACE_RARE">
+		<description>
+			<p>This thick, rubbery overcoat sports several writhing tentacles that can biomantically fuse with their wearer, acting as gills, propulsion, and a formidable, concealed weapon. When in danger, the coat can encapsulate you in a protective chrysalis, nourishing you with stored regenerative mucous.</p>
+			<p>While wearing the coat underwater, tentacles wrap around your throat, fusing with your vascular system and allowing you to breathe underwater. The tentacles also propel you, giving you a swimming speed of 40 feet.</p>
+			<p><strong><em>Tentacle Lash.</em></strong> As an action, you can make a melee spell attack (+7 to hit) against a creature within 10 feet of you. On a hit, the target takes 3d8 bludgeoning damage, and, if it is Medium or smaller, must make a DC 15 Strength saving throw or be knocked prone.</p>
+			<p><strong><em>Chrysalis.</em></strong> You can use an action to cause the coat to expand and harden, encasing you in a regenerative, chitinous casing which grants you 20 temporary hit points. While encased, your speed is reduced to 0 feet, you can’t take actions or reactions (except the action to emerge from the chrysalis), and you regain 2d6 hit points at the start of each of your turns. You can regain no more than 30 hit points in this way while encased. These effects end when the temporary hit points are lost, after 1 minute, or when you decide to emerge from the chrysalis as an action, whichever comes first. After you activate this property, you can’t do so again until you finish a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="slot">body</set>
+		</setters>
+	</element>
+	<element name="Broodmother's Embrace" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BROODMOTHERS_EMBRACE_VERY_RARE">
+		<description>
+			<p>This thick, rubbery overcoat sports several writhing tentacles that can biomantically fuse with their wearer, acting as gills, propulsion, and a formidable, concealed weapon. When in danger, the coat can encapsulate you in a protective chrysalis, nourishing you with stored regenerative mucous.</p>
+			<p>While wearing the coat underwater, tentacles wrap around your throat, fusing with your vascular system and allowing you to breathe underwater. The tentacles also propel you, giving you a swimming speed of 50 feet.</p>
+			<p><strong><em>Tentacle Lash.</em></strong> As an action, you can make a melee spell attack (+8 to hit) against a creature within 15 feet of you. On a hit, the target takes 4d8 bludgeoning damage, and, if it is Large or smaller, must make a DC 16 Strength saving throw or be knocked prone.</p>
+			<p><strong><em>Chrysalis.</em></strong> You can use an action to cause the coat to expand and harden, encasing you in a regenerative, chitinous casing which grants you 40 temporary hit points. While encased, your speed is reduced to 0 feet, you can’t take actions or reactions (except the action to emerge from the chrysalis), and you regain 4d6 hit points at the start of each of your turns. You can regain no more than 60 hit points in this way while encased. These effects end when the temporary hit points are lost, after 1 minute, or when you decide to emerge from the chrysalis as an action, whichever comes first. After you activate this property, you can’t do so again until you finish a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="slot">body</set>
+		</setters>
+	</element>
+	<element name="Broodmother's Embrace" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BROODMOTHERS_EMBRACE_LEGENDARY">
+		<description>
+			<p>This thick, rubbery overcoat sports several writhing tentacles that can biomantically fuse with their wearer, acting as gills, propulsion, and a formidable, concealed weapon. When in danger, the coat can encapsulate you in a protective chrysalis, nourishing you with stored regenerative mucous.</p>
+			<p>While wearing the coat underwater, tentacles wrap around your throat, fusing with your vascular system and allowing you to breathe underwater. The tentacles also propel you, giving you a swimming speed of 60 feet.</p>
+			<p><strong><em>Tentacle Lash.</em></strong> As an action, you can make a melee spell attack (+9 to hit) against a creature within 20 feet of you. On a hit, the target takes 5d8 bludgeoning damage, and, if it is Large or smaller, must make a DC 17 Strength saving throw or be knocked prone.</p>
+			<p><strong><em>Chrysalis.</em></strong> You can use an action to cause the coat to expand and harden, encasing you in a regenerative, chitinous casing which grants you 60 temporary hit points. While encased, your speed is reduced to 0 feet, you can’t take actions or reactions (except the action to emerge from the chrysalis), and you regain 6d6 hit points at the start of each of your turns. You can regain no more than 90 hit points in this way while encased. These effects end when the temporary hit points are lost, after 1 minute, or when you decide to emerge from the chrysalis as an action, whichever comes first. After you activate this property, you can’t do so again until you finish a short or long rest.</p>
+			<p>The coat’s many eyes enhance your peripheral vision; while wearing the coat you have advantage on initiative checks while not blinded.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+			<set name="slot">body</set>
+		</setters>
+	</element>
+	<element name="Broodmother's Eye" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BROODMOTHERS_EYE">
+		<description>
+			<p>While socketed in an item, the item gains the Intense Stare property.</p>
+			<p><strong><em>Intense Stare.</em></strong> The socketed aboleth’s eye fixes on a humanoid that you can see within 60 feet of you that isn’t hostile towards you, making you seem both alluring and imposing (no action required). For the next minute, you have advantage on all Charisma (Persuasion and Intimidation) checks made to interact with the creature. After this minute elapses, the creature realizes that you used magic to influence its mood. How it reacts is at the GM’s discretion.</p>
+			<p>Once you use this property, you can’t do so again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="Broodslinger" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BROODSLINGER_UNCOMMON">
+		<description>
+			<p>Known fondly by L’Arsène as Ling’s Bane, this forearm-mounted symbiote represents the conquering of the incredibly infectious broodmother strain of aboleths. This blind broodling has been altered to feed off of its host’s nutrients, generating powerfully acidic mucous. A small note attached to one tentacle reads:</p>
+			<p>“Upin Enterprises accepts no responsibility for enslavement caused by accidental generation of new aboleths caused by this item.”</p>
+			<p>This magic item can hold a maximum of 10 charges. Whenever you finish a short or long rest, you can expend any number of Hit Dice to charge the broodslinger. For each Hit Die spent in this way, roll each die and add your Constitution modifier. The broodslinger regains a number of charges equal to the total.</p>
+			<p><strong><em>Spikes.</em></strong> Your unarmed strikes deal 1 additional piercing damage on a hit.</p>
+			<p><strong><em>Mucous Spit.</em></strong> As an action, you can cause the broodslinger to spit a globule of acidic mucous at a target within 60 feet of you. Make a ranged spell attack (+5 to hit). On a hit, the target takes 2d6 acid damage. You can expend charges immediately before making the attack roll to enhance the mucous in the following way (no action required):</p>
+			<p><strong><em>Splashing Mucous (1 Charge).</em></strong> Hit or miss, acid splashes onto adjacent creatures. The target, and each creature within 5 feet of the target, must succeed on a DC 13 Dexterity saving throw or take 1d4 acid damage.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Broodslinger" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BROODSLINGER_RARE">
+		<description>
+			<p>Known fondly by L’Arsène as Ling’s Bane, this forearm-mounted symbiote represents the conquering of the incredibly infectious broodmother strain of aboleths. This blind broodling has been altered to feed off of its host’s nutrients, generating powerfully acidic mucous. A small note attached to one tentacle reads:</p>
+			<p>“Upin Enterprises accepts no responsibility for enslavement caused by accidental generation of new aboleths caused by this item.”</p>
+			<p>This magic item can hold a maximum of 15 charges. Whenever you finish a short or long rest, you can expend any number of Hit Dice to charge the broodslinger. For each Hit Die spent in this way, roll each die and add your Constitution modifier. The broodslinger regains a number of charges equal to the total.</p>
+			<p><strong><em>Spikes.</em></strong> Your unarmed strikes deal 1d4 additional piercing damage on a hit.</p>
+			<p><strong><em>Mucous Spit.</em></strong> As an action, you can cause the broodslinger to spit a globule of acidic mucous at a target within 60 feet of you. Make a ranged spell attack (+7 to hit). On a hit, the target takes 3d6 acid damage. You can expend charges immediately before making the attack roll to enhance the mucous in one the following ways (no action required):</p>
+			<ul>
+				<li><strong>Splashing Mucous (1 Charge).</strong> Hit or miss, acid splashes onto adjacent creatures. The target, and each creature within 5 feet of the target, must succeed on a DC 15 Dexterity saving throw or take 2d4 acid damage.</li>
+				<li><strong>Parasitic Mucous (2 Charges).</strong> Parasites with the potential to poison infest the mucous. On a hit, the target must succeed on a DC 15 Constitution saving throw or be infected with a parasite and become poisoned. While poisoned, the creature can’t regain hit points. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on a success.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Broodslinger" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_BROODSLINGER_VERY_RARE">
+		<description>
+			<p>Known fondly by L’Arsène as Ling’s Bane, this forearm-mounted symbiote represents the conquering of the incredibly infectious broodmother strain of aboleths. This blind broodling has been altered to feed off of its host’s nutrients, generating powerfully acidic mucous. A small note attached to one tentacle reads:</p>
+			<p>“Upin Enterprises accepts no responsibility for enslavement caused by accidental generation of new aboleths caused by this item.”</p>
+			<p>This magic item can hold a maximum of 20 charges. Whenever you finish a short or long rest, you can expend any number of Hit Dice to charge the broodslinger. For each Hit Die spent in this way, roll each die and add your Constitution modifier. The broodslinger regains a number of charges equal to the total.</p>
+			<p><strong><em>Spikes.</em></strong> Your unarmed strikes deal 2d4 additional piercing damage on a hit.</p>
+			<p><strong><em>Mucous Spit.</em></strong> As an action, you can cause the broodslinger to spit a globule of acidic mucous at a target within 60 feet of you. Make a ranged spell attack (+8 to hit). On a hit, the target takes 4d6 acid damage. You can expend charges immediately before making the attack roll to enhance the mucous in one the following ways (no action required):</p>
+			<ul>
+				<li><strong>Splashing Mucous (1 Charge).</strong> Hit or miss, acid splashes onto adjacent creatures. The target, and each creature within 5 feet of the target, must succeed on a DC 16 Dexterity saving throw or take 3d4 acid damage.</li>
+				<li><strong>Parasitic Mucous (2 Charges).</strong> Parasites with the potential to poison infest the mucous. On a hit, the target must succeed on a DC 16 Constitution saving throw or be infected with a parasite and become poisoned. While poisoned, the creature can’t regain hit points. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on a success.</li>
+				<li><strong>Infectious Mucous (4 Charges).</strong> An infectious disease pervades the mucous. On a hit, the target must succeed on a DC 16 Constitution saving throw or be infected and poisoned as if by the <i>contagion</i> spell. Roll a d6 to determine contagion’s disease at random.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Tome of Living Memories" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_TOME_OF_LIVING_MEMORIES_UNCOMMON">
+		<description>
+			<p>The pages of this book are littered with the shifting memories of all the aboleth broodmother’s eyes have seen. This deluge of information includes historical occurrences, the gods, and all things arcane, in addition to several spells. Unfortunately, the script is a shifting mire of letters that only the most astute can decipher.</p>
+			<p><strong><em>Knowledge from Beyond.</em></strong> Over the course of a minute, you can attempt to discern information from the broodmother’s memories. Make a DC 10 Intelligence check. On a success, you gain proficiency in Arcana, History, Nature, and Religion for the next 10 minutes. On a failure, you take psychic damage equal to your level.</p>
+			<p><strong><em>Shrouded Spells.</em></strong> In a similar manner, you can spend 10 minutes attempting to cast one of the following spells, requiring no material components and without expending a spell slot. At the end of the 10 minutes, make an Intelligence check. The DC equals 10 plus the spell’s level. On a success, you cast the spell. On a failure, you don’t cast the spell and you take psychic damage equal to twice the spell’s level.</p>
+			<ul>
+				<li><i>Identify</i> (1st level)</li>
+				<li><i>Augury</i> (2nd level)</li>
+				<li><i>Clairvoyance</i> (3rd level)</li>
+			</ul>
+			<p><strong><em>Optional Attunement.</em></strong> A wizard can attune to this item, which becomes augmented with the Knowing Tome property for the duration.</p>
+			<p><strong><em>Knowing Tome.</em></strong> You can use this tome as a spellbook and an arcane focus. While you use it as your spellbook, you may cast the following spells as if you had them prepared: <i>comprehend languages</i> and <i>detect thoughts</i>.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Tome of Living Memories" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_TOME_OF_LIVING_MEMORIES_RARE">
+		<description>
+			<p>The pages of this book are littered with the shifting memories of all the aboleth broodmother’s eyes have seen. This deluge of information includes historical occurrences, the gods, and all things arcane, in addition to several spells. Unfortunately, the script is a shifting mire of letters that only the most astute can decipher.</p>
+			<p><strong><em>Knowledge from Beyond.</em></strong> Over the course of a minute, you can attempt to discern information from the broodmother’s memories. Make a DC 10 Intelligence check. On a success, you gain proficiency in Arcana, History, Nature, and Religion for the next 10 minutes. On a failure, you take psychic damage equal to your level.</p>
+			<p><strong><em>Shrouded Spells.</em></strong> In a similar manner, you can spend 10 minutes attempting to cast one of the following spells, requiring no material components and without expending a spell slot. At the end of the 10 minutes, make an Intelligence check. The DC equals 10 plus the spell’s level. On a success, you cast the spell. On a failure, you don’t cast the spell and you take psychic damage equal to twice the spell’s level.</p>
+			<ul>
+				<li><i>Identify</i> (1st level)</li>
+				<li><i>Augury</i> (2nd level)</li>
+				<li><i>Clairvoyance</i> (3rd level)</li>
+				<li><i>Divination</i> (4th level)</li>
+				<li><i>Legend Lore</i> (5th level)</li>
+			</ul>
+			<p>When you cast spells from the Shrouded Spells property using this tome, it is the disembodied voice of Slkvol the broodmother that answers.</p>
+			<p><strong><em>Optional Attunement.</em></strong> A wizard can attune to this item, which becomes augmented with the Knowing Tome property for the duration.</p>
+			<p><strong><em>Knowing Tome.</em></strong> You can use this tome as a spellbook and an arcane focus. While you use it as your spellbook, you may cast the following spells as if you had them prepared: <i>comprehend languages</i> and <i>detect thoughts</i>. You can prepare 1 additional wizard spell and you know the guidance cantrip, which is a wizard spell for you.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" />
+
+			<stat name="wizard:spellcasting:prepare" value="1" />
+		</rules>
+	</element>
+	<element name="Tome of Living Memories" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_TOME_OF_LIVING_MEMORIES_VERY_RARE">
+		<description>
+			<p>The pages of this book are littered with the shifting memories of all the aboleth broodmother’s eyes have seen. This deluge of information includes historical occurrences, the gods, and all things arcane, in addition to several spells. Unfortunately, the script is a shifting mire of letters that only the most astute can decipher.</p>
+			<p><strong><em>Knowledge from Beyond.</em></strong> Over the course of a minute, you can attempt to discern information from the broodmother’s memories. Make a DC 10 Intelligence check. On a success, you gain proficiency in Arcana, History, Nature, and Religion for the next 10 minutes. On a failure, you take psychic damage equal to your level.</p>
+			<p><strong><em>Shrouded Spells.</em></strong> In a similar manner, you can spend 10 minutes attempting to cast one of the following spells, requiring no material components and without expending a spell slot. At the end of the 10 minutes, make an Intelligence check. The DC equals 10 plus the spell’s level. On a success, you cast the spell. On a failure, you don’t cast the spell and you take psychic damage equal to twice the spell’s level.</p>
+			<ul>
+				<li><i>Identify</i> (1st level)</li>
+				<li><i>Augury</i> (2nd level)</li>
+				<li><i>Clairvoyance</i> (3rd level)</li>
+				<li><i>Divination</i> (4th level)</li>
+				<li><i>Legend Lore</i> (5th level)</li>
+				<li><i>Contact Other Plane</i> (5th level)</li>
+				<li><i>Find the Path</i> (6th level)</li>
+			</ul>
+			<p>When you cast spells from the Shrouded Spells property using this tome, it is the disembodied voice of Slkvol the broodmother that answers.</p>
+			<p><strong><em>Optional Attunement.</em></strong> A wizard can attune to this item, which becomes augmented with the Knowing Tome property for the duration.</p>
+			<p><strong><em>Knowing Tome.</em></strong> You can use this tome as a spellbook and an arcane focus. While you use it as your spellbook, you may cast the following spells as if you had them prepared: <i>comprehend languages</i> and <i>detect thoughts</i>. You can prepare 2 additional wizard spells and you know the guidance cantrip, which is a wizard spell for you.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" />
+
+			<stat name="wizard:spellcasting:prepare" value="2" />
+		</rules>
+	</element>
+	<element name="Astral Luggage" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ASTRAL_LUGGAGE_UNCOMMON">
+		<description>
+			<p>This luggage contains a filtered portal to the edges of the Astral Plane, specifically the areas where beings from The Anomalies slink from their far-away plane to the timeless astral expanse. As such, you don’t use the astral luggage as actual luggage, not unless you want to lose it.</p>
+			<p><strong><em>Portal.</em></strong> The astral luggage can be opened to a two-foot-by-one-foot opening. This opening repels creatures, prohibiting their entry, but any object you place inside the luggage floats off into the Astral Plane.</p>
+			<p><strong><em>Special Fastenings.</em></strong> On the luggage are several special buckles, zips, or clips, which you can unfasten to cause magical effects. Once you unfasten a fastening, it can’t be unfastened again until the next dawn, at which point it reseals itself. If a save DC is required, use DC 13. You gain the following action options:</p>
+			<ul>
+				<li><strong>Ebony Clasp.</strong> As an action, you can unfasten the clasp and throw the luggage at a point you can see within 30 feet of you, where it instantly opens, spewing squirming ebony tentacles in a 20-foot square. This area becomes affected by the <i>black tentacles</i> spell for 1 minute (no concentration required). If you are attuned to the luggage, you are immune to this spell’s effects. When the spell ends, the tentacles disappear and the luggage closes.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Astral Luggage" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ASTRAL_LUGGAGE_VERY_RARE">
+		<description>
+			<p>This luggage contains a filtered portal to the edges of the Astral Plane, specifically the areas where beings from The Anomalies slink from their far-away plane to the timeless astral expanse. As such, you don’t use the astral luggage as actual luggage, not unless you want to lose it.</p>
+			<p><strong><em>Portal.</em></strong> The astral luggage can be opened to a two-foot-by-one-foot opening. This opening repels creatures, prohibiting their entry, but any object you place inside the luggage floats off into the Astral Plane.</p>
+			<p><strong><em>Optional Attunement.</em></strong> Attuning to this item enhances some of the Special Fastenings properties.</p>
+			<p><strong><em>Special Fastenings.</em></strong> On the luggage are several special buckles, zips, or clips, which you can unfasten to cause magical effects. Once you unfasten a fastening, it can’t be unfastened again until the next dawn, at which point it reseals itself. If a save DC is required, use DC 15. You gain the following action options:</p>
+			<ul>
+				<li><strong>Ebony Clasp.</strong> As an action, you can unfasten the clasp and throw the luggage at a point you can see within 30 feet of you, where it instantly opens, spewing squirming ebony tentacles in a 20-foot square. This area becomes affected by the <i>black tentacles</i> spell for 1 minute (no concentration required). If you are attuned to the luggage, you are immune to this spell’s effects. When the spell ends, the tentacles disappear and the luggage closes.</li>
+				<li><strong>Amethyst Buckle.</strong> As an action, you can unfasten this buckle and throw the luggage at a point you can see within 30 feet of you, where it instantly opens and casts the <i>conjure anomaly</i> spell (no concentration required). If you are attuned to this item, the aberration conjured is under your control; otherwise, the aberration is hostile to all creatures.</li>
+				<li><strong>Moonstone Dial.</strong> As an action, you can turn this dial to a symbol representing a specific plane, and press it, causing it to unfasten. As part of the same action, you can throw it to a point you can see within 30 feet of you, where it instantly opens. Until the end of your next turn, the luggage’s opening becomes a portal to a random location on the chosen plane that Medium or smaller creatures can move through using 5 feet of movement. At the end of your next turn, the luggage folds in on itself and appears at that location on the destination plane. If you are attuned to the luggage, you can attempt to direct the portal to a specific location, as per the <i>teleport</i> spell.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Dreamy the Lucid" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_DREAMY_THE_LUCID">
+		<description>
+			<p>These adorable stuffed toys can be found in bedrooms following the intrusion of a dreamholder into a settlement’s collective dreamscape. Each toy’s magic gives the villagers autonomy over their dreams, and acts as a preventative measure should another aberration try to take over the villagers’ dreams again.</p>
+			<p>While this toy is on your person, magic can’t put you to sleep. If you fall asleep while holding this stuffy, its stimulating enchantment magic activates your psyche, causing you to become a lucid dreamer. While lucid dreaming in this way, you are aware if a creature uses the <i>dream</i> spell to influence you. In addition, if you are asleep when initiative is rolled, you instantly awaken and aren’t surprised.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Robes of Beaurêve" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ROBES_OF_BEAUREVE_RARE">
+		<description>
+			<p>Made from the stuff of dreams, the cuffs and hem of this ethereal robe fade into translucent purple smoke, and the robes’ lining is sewn from the fabric of the night sky. A creature wearing these robes can become temporarily incorporeal, slipping through locked doors, blood-thirsty demons, or out of uncomfortable conversations. Owners of such a garment also find themselves incredibly productive, with dishes cleaned and chainmail oiled each morning... Also, it has pockets.</p>
+			<p>This robe has 3 charges and regains all expended charges daily at dawn.</p>
+			<p><strong><em>Incorporeality.</em></strong> As a bonus action, you can expend 1 charge to become incorporeal until the start of your next turn. While incorporeal, you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks, and can move through other creatures and objects as if they were difficult terrain. If you end your turn inside a creature or object, you are shunted to the nearest unoccupied space, taking 1d10 force damage for every 5 feet you are shunted.</p>
+			<p><strong><em>Spellcasting.</em></strong> You can spend charges to cast the following spells (save DC 15). You must spend a number of charges equal to the level at which you cast the spell.</p>
+			<ul>
+				<li><i>Daydream</i></li>
+				<li><i>Sleep</i></li>
+				<li><i>Dreamwalk</i></li>
+			</ul>
+			<p><strong><em>Sleepwalker.</em></strong> You can’t be put to sleep against your will. When you fall into a nonmagical sleep while wearing these robes, you can specify one intention, such as ‘organising my collection of buttons’ or ‘oiling my chainmail’. While you sleep, you can perform light activities that fulfil this intention while still meeting the requirements of a long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="charges">3</set>
+			<set name="slot">body</set>
+		</setters>
+	</element>
+	<element name="Robes of Beaurêve" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ROBES_OF_BEAUREVE_LEGENDARY">
+		<description>
+			<p>Made from the stuff of dreams, the cuffs and hem of this ethereal robe fade into translucent purple smoke, and the robes’ lining is sewn from the fabric of the night sky. A creature wearing these robes can become temporarily incorporeal, slipping through locked doors, blood-thirsty demons, or out of uncomfortable conversations. Owners of such a garment also find themselves incredibly productive, with dishes cleaned and chainmail oiled each morning... Also, it has pockets.</p>
+			<p>This robe has 9 charges and regains 1d6+3 expended charges daily at dawn.</p>
+			<p><strong><em>Incorporeality.</em></strong> As a bonus action, you can expend 1 charge to become incorporeal until the start of your next turn. While incorporeal, you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks, and can move through other creatures and objects as if they were difficult terrain. If you end your turn inside a creature or object, you are shunted to the nearest unoccupied space, taking 1d10 force damage for every 5 feet you are shunted.</p>
+			<p><strong><em>Spellcasting.</em></strong> You can spend charges to cast the following spells (save DC 17). You must spend a number of charges equal to the level at which you cast the spell.</p>
+			<ul>
+				<li><i>Daydream</i></li>
+				<li><i>Sleep</i></li>
+				<li><i>Dreamwalk</i></li>
+				<li><i>Dream</i></li>
+				<li><i>Astral Projection</i></li>
+			</ul>
+			<p><strong><em>Sleepwalker.</em></strong> You can’t be put to sleep against your will. When you fall into a nonmagical sleep while wearing these robes, you can specify one intention, such as ‘organising my collection of buttons’ or ‘oiling my chainmail’. While you sleep, you can perform light activities that fulfil this intention while still meeting the requirements of a long rest.</p>
+			<p><strong><em>Language of the Anomalies.</em></strong> While you wear these robes, you can speak, read, and write Deep Speech, and have advantage on Charisma checks made to interact with aberrations.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+			<set name="charges">9</set>
+			<set name="slot">body</set>
+		</setters>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_DEEP_SPEECH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		</rules>
+	</element>
+	<element name="Second Chance" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_SECOND_CHANCE">
+		<description>
+			<p>A pocketwatch that keeps perfect time is always a useful bit of kit. Socketed on any clothing or armour, this specimen is even more special, allowing its user a second chance to perform some action.</p>
+			<p>As a bonus action, immediately before you make an ability check or attack roll, you can activate the stopwatch, setting a call-back marker. After you make the ability check or attack roll (and after you know the outcome), you can choose to rewind time by a few seconds to the moment you took the bonus action (no action required). You must then reroll the ability check or attack roll and use the new result. Whether or not you choose to rewind to the call-back marker, after you use this property, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Collar of the Cat" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COLLAR_OF_THE_CAT">
+		<description>
+			<p>While socketed on any worn headgear or armour, such as a helmet, cloak, breastplate, or crown. Looking through the mesh, an attuned wearer can detect corpses and creatures ripe for decomposition.</p>
+			<p>As an action, you can open your awareness to magically detect corpses and undead. Until the end of your next turn, you know the location of any corpse or undead creature within 60 feet of you that isn’t behind total cover, and that isn’t protected from divination magic. This sense doesn’t tell you anything about a creature’s capabilities or identity.</p>
+			<p>After you activate this property, you can’t do so again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+			<set name="socketable">true</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Eye of the Tiger" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_EYE_OF_THE_TIGER_UNCOMMON">
+		<description>
+			<p>The tiger’s eye gemstone at the centre of this ring gleams with the devious malice peculiar to the fiendish pygmy rakshasa. Spinning slowly in its socket, it studies its wearer and surroundings, almost as if waiting for a time to pounce.</p>
+			<p>The ring has 5 charges and regains all expended charges daily at dawn.</p>
+			<p><strong><em>Arcane Interference.</em></strong> While wearing the ring, whenever you are the target of a spell or make a saving throw against a spell’s area of effect, you can use your reaction to tug at the Weave, consuming 1 charge and attempting to unravel the spell’s magic. If the spell is of 2nd level or lower, roll a d4 and consult the table below to determine the effect, which occurs immediately before the spell’s effect. If the spell is 3rd level or higher, this property has no effect.</p>
+			<table>
+				<thead>
+					<tr>
+						<td>d4</td>
+						<td>Effects</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>The caster of the spell must make a DC 13 Wisdom saving throw, taking force damage equal to 1d6 plus an additional 1d6 for each level of the spell on a failed save, or half as much damage on a successful one.</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>The spell’s potency is diminished. If the spell requires an attack roll, the roll is made with disadvantage. If it requires you to make a saving throw, you have advantage on it.</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>You absorb a portion of the spell’s energy, gaining temporary hit points equal to 1d6 plus an additional 1d6 for each level of the spell. These temporary hit points last for 1 minute.</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>You are unaffected by the spell.</td>
+					</tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="charges">5</set>
+			<set name="slot">ring</set>
+		</setters>
+	</element>
+	<element name="Eye of the Tiger" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_EYE_OF_THE_TIGER_VERY_RARE">
+		<description>
+			<p>The tiger’s eye gemstone at the centre of this ring gleams with the devious malice peculiar to the fiendish pygmy rakshasa. Spinning slowly in its socket, it studies its wearer and surroundings, almost as if waiting for a time to pounce.</p>
+			<p>The ring has 6 charges and regains all expended charges daily at dawn.</p>
+			<p><strong><em>Arcane Interference.</em></strong> While wearing the ring, whenever you are the target of a spell or make a saving throw against a spell’s area of effect, you can use your reaction to tug at the Weave, consuming 1 charge and attempting to unravel the spell’s magic. If the spell is of 5th level or lower, roll a d4 and consult the table below to determine the effect, which occurs immediately before the spell’s effect. If the spell is 6th level or higher, this property has no effect.</p>
+			<table>
+				<thead>
+					<tr>
+						<td>d4</td>
+						<td>Effects</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>The caster of the spell must make a DC 16 Wisdom saving throw, taking force damage equal to 1d6 plus an additional 1d6 for each level of the spell on a failed save, or half as much damage on a successful one.</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>The spell’s potency is diminished. If the spell requires an attack roll, the roll is made with disadvantage. If it requires you to make a saving throw, you have advantage on it.</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>You absorb a portion of the spell’s energy, gaining temporary hit points equal to 1d6 plus an additional 1d6 for each level of the spell. These temporary hit points last for 1 minute.</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>You are unaffected by the spell.</td>
+					</tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="charges">6</set>
+			<set name="slot">ring</set>
+		</setters>
+	</element>
+	<element name="Felinobelix" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_FELINOBELIX_RARE">
+		<description>
+			<p>This foot-high, black, stone cat statue has 3 charges and regains all expended charges daily at dawn. Whenever you roll a die, you can expend 1 charge to roll another die of the same size (no action required). You can then choose which of the die rolls to use. You can choose to spend the charge after you roll the die, but before the outcome is determined.</p>
+			<p>If the result of the re-rolled die is a 1, a devil is summoned. Consult the chart below to determine which devil.</p>
+			<table>
+				<thead>
+					<tr>
+						<td>Attuner’s Level</td>
+						<td>Devil (CR)</td>
+					</tr>
+				</thead>
+					<tr>
+						<td>1-4</td>
+						<td>Imp (1)</td>
+					</tr>
+					<tr>
+						<td>5-8</td>
+						<td>Barbed devil (5)</td>
+					</tr>
+					<tr>
+						<td>9-12</td>
+						<td>Bone devil (9)</td>
+					</tr>
+					<tr>
+						<td>13-16</td>
+						<td>Ice devil (14)</td>
+					</tr>
+					<tr>
+						<td>17-20</td>
+						<td>Pit fiend (20)</td>
+					</tr>
+			</table>
+			<p>The devil is always the same individual, who has progressed further in the infernal hierarchy with each visitation. It is hostile towards all creatures, but is especially hateful towards you, as it believes you are stealing its luck.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="charges">3</set>
+		</setters>
+	</element>
+	<element name="Felinobelix" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_FELINOBELIX_LEGENDARY">
+		<description>
+			<p>This foot-high, black, stone cat statue has 6 charges and regains all expended charges daily at dawn. Whenever you roll a die, you can expend 1 charge to roll another die of the same size (no action required). You can then choose which of the die rolls to use. You can choose to spend the charge after you roll the die, but before the outcome is determined.</p>
+			<p>As a reaction when another creature you can see within 30 feet of you rolls a die, you can expend 1 charge to cause it to roll a second die of the same size; you choose which of the dice to use. If the result of the re-rolled die is a 1, a devil is summoned.</p>
+			<p>If the result of the re-rolled die is a 1, a devil is summoned. Consult the chart below to determine which devil.</p>
+			<table>
+				<thead>
+					<tr>
+						<td>Attuner’s Level</td>
+						<td>Devil (CR)</td>
+					</tr>
+				</thead>
+					<tr>
+						<td>1-4</td>
+						<td>Imp (1)</td>
+					</tr>
+					<tr>
+						<td>5-8</td>
+						<td>Barbed devil (5)</td>
+					</tr>
+					<tr>
+						<td>9-12</td>
+						<td>Bone devil (9)</td>
+					</tr>
+					<tr>
+						<td>13-16</td>
+						<td>Ice devil (14)</td>
+					</tr>
+					<tr>
+						<td>17-20</td>
+						<td>Pit fiend (20)</td>
+					</tr>
+			</table>
+			<p>The devil is always the same individual, who has progressed further in the infernal hierarchy with each visitation. It is hostile towards all creatures, but is especially hateful towards you, as it believes you are stealing its luck.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+			<set name="charges">6</set>
+		</setters>
+	</element>
+	<element name="Crawly &amp; Rolly Turrit" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CRAWLY_AND_ROLLY_TURRIT_UNCOMMON">
+		<description>
+			<p>Weighing approximately 10 pounds, this 1-foot-cubed turret is bristling with armaments. From its crudely chiselled ‘bitey-bit’, to the side-mounted ‘kannon-boom’, and the fore-mounted ‘spikeys’, this magically- automated turret has but one key flaw: stairs.</p>
+			<p><b><i>Deploy.</i></b> As an action, you can deploy the rolly turrit, which magically animates for the next 10 minutes. During this time, it is under your mental control while within 100 feet of you. In combat, the turret shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the turret can take any action of its choice, not just Dodge. Once the turret has been activated, it can’t be activated again until the following dawn.</p>
+			<p><b><i>Death &amp; Healing.</i></b> While the turret has at least 1 hit point, it regains 2d6 hit points if the <i>mending</i> spell is cast on it. If the turret is reduced to 0 hit points, it shatters and can’t be activated again until a creature with proficiency in smith’s tools or tinker’s tools spends 1 hour to make a DC 15 Dexterity (smith’s or tinker’s tools) check. On a success, the turret regains 1 hit point and can be activated as normal.</p>
+			<div class="reference">
+				<div element="ID_LT_HGTMH_INFO_COMPANION_ROLLY_TURRIT" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Companion" id="ID_LT_HGTMH_COMPANION_ROLLY_TURRIT" />
+		</rules>
+	</element>
+	<element name="Crawly &amp; Rolly Turrit" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CRAWLY_AND_ROLLY_TURRIT_VERY_RARE">
+		<description>
+			<p>Weighing approximately 10 pounds, this 1-foot-cubed turret is bristling with armaments. From its crudely chiselled ‘bitey-bit’, to the side-mounted ‘kannon-boom’, and the fore-mounted ‘spikeys’, this magically- automated turret has but one key flaw: stairs.</p>
+			<p>Shedding much of the mobility issues of its rolly cousin, the crawly turrit harnesses the hit-and-run tactics of its draconic inspiration. Recycled dragon breath sacs give this five-legged, brass automaton the ability to emulate a dragon’s breath, the pinnacle of kobold bio-engineering.</p>
+			<p><b><i>Deploy.</i></b> As an action, you can deploy the crawly turrit, which magically animates for the next 10 minutes. During this time, it is under your mental control while within 100 feet of you. In combat, the turret shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the turret can take any action of its choice, not just Dodge. Once the turret has been activated, it can’t be activated again until the following dawn.</p>
+			<p><b><i>Death &amp; Healing.</i></b> While the turret has at least 1 hit point, it regains 2d6 hit points if the <i>mending</i> spell is cast on it. If the turret is reduced to 0 hit points, it shatters and can’t be activated again until a creature with proficiency in smith’s tools or tinker’s tools spends 1 hour to make a DC 16 Dexterity (smith’s or tinker’s tools) check. On a success, the turret regains 1 hit point and can be activated as normal.</p>
+			<div class="reference">
+				<div element="ID_LT_HGTMH_INFO_COMPANION_CRAWLY_TURRIT" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Companion" id="ID_LT_HGTMH_COMPANION_CRAWLY_TURRIT" />
+		</rules>
+	</element>
+	<element name="Dimensional Doorknob" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_DIMENSIONAL_DOORKNOB">
+		<description>
+			<p>The dimensional doorknob is a must-have addition to the arsenal of any thief that lacks the necessary dexterity to pick locks themselves. In addition, the doorknob’s built-in escape magic allows for a quick getaway when things go south. As a guard wanders a museum of precious relics, the bowels of a jail, or the vault of a treasury, they might find only unlocked doors and a momentary glowing purple light as a thief teleports from the scene of its crime.</p>
+			<p><strong><em>Skeleton Key.</em></strong> As an action, you can place the doorknob over a keyhole where, for the next minute, it attempts to pick the lock. The dimensional doorknob acts as a set of thieves’ tools and automatically unlocks locks with a DC of 15 or lower. For higher difficulty locks, the doorknob has a +7 modifier to its Dexterity (thieves’ tools) check.</p>
+			<p><strong><em>Dortal.</em></strong> As an action while holding the doorknob, you can cast the <i>dimension door</i> spell. When you do so, a glowing purple portal appears in your space until the start of your next turn. Any creature up to 1 size larger than you can pass through the portal. After you activate this property, you can’t do so again until the following dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Kobbold Flaymefrower" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_KOBBOLD_FLAYMEFROWER_UNCOMMON">
+		<description>
+			<p>What could possibly go wrong carrying a portable furnace on your back? Great for keeping weeds in check, the flaymefrower can be dynamically adjusted to spray in a wide cone or a focused line. Just keep an eye on the pressure, as it looks like the rats have been chewing at the intestine hose again.</p>
+			<p>Worn like a backpack or satchel, this patchwork vessel of scrap metal can hold a maximum of 12 charges. Over the course of an hour, you can feed one of the following fuel options into the backpack, causing it to regain expended charges depending on the fuel’s quality:</p>
+			<ul>
+				<li>1 sp of seasoned wood: 1d4 charges.</li>
+				<li>5 gp of high-quality coal or oil: 1d4 + 3 charges.</li>
+				<li>Core of fire, or breath sac of a red, gold, or brass dragon: all expended charges.</li>
+			</ul>
+			<p><strong><em>Dragon’s Breath.</em></strong> While holding the flaymefrower’s maw, you can use an action to speak one of the flaymefrower’s two command words, expending 1 charge and causing it to spout a gout of flame in a 10-foot cone or a 5-foot-wide, 20-foot-long line (your choice). As part of the same action, you can squeeze the maw, injecting more fuel and expending up to 3 additional charges. The size of the cone increases by 5 feet or the length of the line increases by 20 feet, for each additional charge expended.</p>
+			<p>Each creature in the area must make a DC 13 Dexterity saving throw, taking 2d10 fire damage on a failed save, or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren’t being worn or carried.</p>
+			<p><strong><em>Backfire.</em></strong> When you use Dragon’s Breath and roll a total of 19 or higher on the fire damage dice, the flaymefrower backfires. Each creature within 10 feet of you (including you) must succeed on a DC 13 Dexterity saving throw or take 4d6 fire damage as gouts of flame burst from the make-shift hose.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="charges">12</set>
+		</setters>
+	</element>
+	<element name="Kobbold Flaymefrower" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_KOBBOLD_FLAYMEFROWER_VERY_RARE">
+		<description>
+			<p>What could possibly go wrong carrying a portable furnace on your back? Great for keeping weeds in check, the flaymefrower can be dynamically adjusted to spray in a wide cone or a focused line. Just keep an eye on the pressure, as it looks like the rats have been chewing at the intestine hose again.</p>
+			<p>Kobold ingenuity is excellent, but the execution can be somewhat lacking. Luckily, the original prototype of this flame-filled backpack has undergone some extensive upgrades; it now boasts a nigh-on indestructible braided brass hose and can burn much hotter.</p>
+			<p>Worn like a backpack or satchel, this patchwork vessel of scrap metal can hold a maximum of 12 charges. Over the course of an hour, you can feed one of the following fuel options into the backpack, causing it to regain expended charges depending on the fuel’s quality:</p>
+			<ul>
+				<li>1 sp of seasoned wood: 1d4 charges.</li>
+				<li>5 gp of high-quality coal or oil: 1d4 + 3 charges.</li>
+				<li>Core of fire, or breath sac of a red, gold, or brass dragon: all expended charges.</li>
+			</ul>
+			<p><strong><em>Dragon’s Breath.</em></strong> While holding the flaymefrower’s maw, you can use an action to speak one of the flaymefrower’s two command words, expending 1 charge and causing it to spout a gout of flame in a 10-foot cone or a 5-foot-wide, 20-foot-long line (your choice). As part of the same action, you can squeeze the maw, injecting more fuel and expending up to 3 additional charges. The size of the cone increases by 5 feet or the length of the line increases by 20 feet, for each additional charge expended.</p>
+			<p>Each creature in the area must make a DC 16 Dexterity saving throw, taking 4d6 fire damage on a failed save, or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren’t being worn or carried.</p>
+			<p><strong><em>Coldfire Flame.</em></strong> As a bonus action, you can twist the dragon’s maw 180 degrees, causing the flame to burn blue and deal cold damage instead of fire damage. This change lasts until you use a bonus action to turn it back.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="charges">12</set>
+		</setters>
+	</element>
+	<element name="Magik Oil" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_MAGIK_OIL">
+		<description>
+			<p>This magik oil can be socketed on any item you don’t mind getting oil stains on. The slow drip of oil from its never-closing spout imbues the item to which it is attached with magic, rendering the item much more durable. Metal can’t be corroded by acid and wood &amp; clothing cease being flammable. Strong magic, such as that from a 6th-level spell or higher, can overcome this enhanced resilience. If socketed on a weapon, that weapon’s damage becomes magical. If socketed on armour, the oil lubricates the joints, removing any disadvantage on Dexterity (Stealth) checks the armour normally imposes.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+			<set name="socketable">true</set>
+		</setters>
+	</element>
+	<element name="Tarrobe" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_TARROBE_RARE">
+		<description>
+			<p>Fossilised bones and oilcloth, a lipid-rich mesh of viscous crude oil and lipophilic fibres, forms the basis of this magical robe. In the same way the oil refracts light in rainbow hues, the cloth has a natural resistance to magic, occasionally sending spells ricocheting back at the caster.</p>
+			<p>This robe has <b>7 charges</b> and regains 1d6 + 1 expended charges daily at dawn. While you wear it, you can use an action to expend charges to cast the following spells (save DC 15, +7 to hit):</p>
+			<ul>
+				<li><i>grease</i> (1 charge)</li>
+				<li><i>create or destroy oil</i> (2 charges; as <i>create or destroy water</i>, but oil instead of water)</li>
+				<li><i>mireball</i> (3 charges; instead of mud, thick, rancid fat and oil are conjured)</li>
+			</ul>
+			<p><strong><em>Spell Reflection.</em></strong> While you wear this robe, any time you are targeted by a <i>magic missile</i> spell, a line spell, or a spell that requires a ranged attack roll, roll a d8. On a 1-7, you are affected as normal. On an 8, you are unaffected, and the effect is reflected back at the caster as though it originated from you, turning the caster into the target.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="charges">7</set>
+			<set name="slot">body</set>
+		</setters>
+	</element>
+	<element name="Tarrobe" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_TARROBE_LEGENDARY">
+		<description>
+			<p>Fossilised bones and oilcloth, a lipid-rich mesh of viscous crude oil and lipophilic fibres, forms the basis of this magical robe. In the same way the oil refracts light in rainbow hues, the cloth has a natural resistance to magic, occasionally sending spells ricocheting back at the caster.</p>
+			<p>While you wear the robe you can speak and understand Terran.</p>
+			<p>This robe has <b>12 charges</b> and regains 1d8 + 4 expended charges daily at dawn. While you wear it, you can use an action to expend charges to cast the following spells (save DC 15, +7 to hit):</p>
+			<ul>
+				<li><i>grease</i> (1 charge)</li>
+				<li><i>create or destroy oil</i> (2 charges; as <i>create or destroy water</i>, but oil instead of water)</li>
+				<li><i>mireball</i> (3 charges; instead of mud, thick, rancid fat and oil are conjured)</li>
+				<li><i>bone cage</i> (5 charges)</li>
+				<li><i>conjure elemental</i> (5 charges, tar elemental only)</li>
+			</ul>
+			<p><strong><em>Spell Reflection.</em></strong> While you wear this robe, any time you are targeted by a <i>magic missile</i> spell, a line spell, or a spell that requires a ranged attack roll, roll a d8. On a 1-6, you are affected as normal. On a 7 or 8, you are unaffected, and the effect is reflected back at the caster as though it originated from you, turning the caster into the target.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+			<set name="charges">12</set>
+			<set name="slot">body</set>
+		</setters>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_TERRAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		</rules>
+	</element>
+	<element name="Tinytar" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_TINYTAR">
+		<description>
+			<p>With the sentient tar of a tar elemental and a dose of enchantment magic, one can craft this friendly and amenable little helper. When applied to anything you can hold, the tinytar ensures you don’t accidentally drop it.</p>
+			<p><strong><em>Grippy.</em></strong> This small, magical phial contains an animate and excitable tar. When applied to the handle of a weapon, shield or other held item, the first creature to hold that item can’t be disarmed of the item against its will. The creature can still sheathe or drop the item if it desires; the tinytar is very intuitive. As an action, you can hold the magical phial to the tinytar causing it to shlink back inside.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+			<set name="socketable">true</set>
+		</setters>
+	</element>
+	<element name="Viscous Symbiote" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_VISCOUS_SYMBIOTE_RARE">
+		<description>
+			<p>While unworn, this item appears as a puddle of viscous tar and bone shards. When you attune to this amorphous ooze, it slides up your arms, enhancing them with an extra-cutaneous layer of malleable, oily muscle.</p>
+			<p><strong><em>Armhancements.</em></strong> While attuned to this item, whenever you make an ability check that uses Strength, you can treat a d20 roll of 7 or lower as an 8.</p>
+			<p><strong><em>Malleable Skin.</em></strong> When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Viscous Symbiote" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_VISCOUS_SYMBIOTE_VERY_RARE">
+		<description>
+			<p>While unworn, this item appears as a puddle of viscous tar and bone shards. When you attune to this amorphous ooze, it slides up your arms, enhancing them with an extra-cutaneous layer of malleable, oily muscle.</p>
+			<p><strong><em>Armhancements.</em></strong> While attuned to this item, whenever you make an ability check that uses Strength, you can treat a d20 roll of 7 or lower as an 8.</p>
+			<p><strong><em>Malleable Skin.</em></strong> When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.</p>
+			<p>You gain 3 temporary hit points at the start of each of your turns.</p>
+			<p><strong><em>Claws.</em></strong> Protruding from your tar-coated hands are long claws; natural weapons which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 2d4 + your Strength modifier instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Viscous Symbiote" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_VISCOUS_SYMBIOTE_LEGENDARY">
+		<description>
+			<p>While unworn, this item appears as a puddle of viscous tar and bone shards. When you attune to this amorphous ooze, it slides up your arms, enhancing them with an extra-cutaneous layer of malleable, oily muscle.</p>
+			<p><strong><em>Armhancements.</em></strong> While attuned to this item, whenever you make an ability check that uses Strength, you can treat a d20 roll of 7 or lower as an 8.</p>
+			<p><strong><em>Malleable Skin.</em></strong> When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.</p>
+			<p>You gain 5 temporary hit points at the start of each of your turns.</p>
+			<p><strong><em>Claws.</em></strong> Protruding from your tar-coated hands are long claws; natural weapons which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 2d4 + your Strength modifier instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p><strong><em>Mask.</em></strong> This oily symbiote can react to danger, enhancing your senses. As a reaction when initiative is rolled, you can command the oil to cover your face for the next minute. For the duration, you have advantage on initiative checks and Dexterity saving throws, and gain blindsight out to 30 feet. After you activate this ability, you can’t do so again until the following dawn.</p>
+			<p><strong><em>Reactive Tentacles.</em></strong> Your symbiote protects you from incoming blows. Whenever you are the target of a melee attack by an attacker you can see within 10 feet of you, you can use your reaction to make a melee attack (+9 to hit) against that attacker immediately after its attack concludes. This attack deals 2d8 piercing damage on a hit.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Eyeballs" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_EYEBALLS">
+		<description>
+			<p>Firm, and always slightly moist to the touch, this pair of eyes wanders of their own accord. When placed on a single object that can fit inside a 5-foot cube, the object becomes sentient. It can’t speak, and has statistics the GM deems appropriate.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="Grill of Barbecuing" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_GRILL_OF_BARBECUING">
+		<description>
+			<p>There’s an old adage: “If you can’t stand the heat, get the hell out of the kitchen. If you can stand the heat, make the kitchen portable and take it wherever you go!” To accompany the launch of her book, Heliana commissioned the ever-useful artificer, L’Arsène Upin, to produce a line of portable kitchen backpacks. In addition to improving flavour and nutritional value, the pockets of these grill-backpacks always contain the cumin, shallots, or other ingredients that you forgot to pack. Nice!</p>
+			<p><strong><em>Extra-Dimensional Pantry.</em></strong> One pocket of this grill-backpack is a gateway to a pocket dimension that magically refills with sustenance at dawn each day. It has enough vegetables and sundries for one magical meal or for a day’s rations for one creature. The nature of the food that a creature extracts from the pocket dimension is always a reflection of what the creature desires at that moment. The pocket only allows items to be taken from it; any attempt to put something into this pocket results in the item being fired back out.</p>
+			<p><strong><em>Sous-Chef.</em></strong> The grill’s inbuilt cooking monitor adjusts its own temperature to improve the end result of foods cooked with it. When you cook a magical meal using this grill, it gains one additional boon from the Cooking Boons table at random (page 152).</p>
+			<p><strong><em>Tools for the Job.</em></strong> The grill of barbecuing comes with all the paraphernalia needed for cooking and acts as cook’s utensils.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Heliana's Guide to Monster Hunting" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_HELIANAS_GUIDE_TO_MONSTER_HUNTING_UNCOMMON">
+		<description>
+			<p>Full of useful knowledge and heavy enough to crush a skull, Heliana’s Guide to Monster Hunting is nothing if not handy. The personalised quotes from Heliana, Peeper’s deft proofing and editing, and the numerous ink stains and spilled watercolours give this hefty tome a homemade feel.</p>
+			<p><strong><em>Fantastic Phalanges and Where to Find Them.</em></strong> As an action, you can open this book and stare intently at its pages, which turn of their own accord to settle on an anatomical diagram of the corpse nearest to the book. You immediately learn all the harvestable parts of the corpse, as well as their Component DCs.</p>
+			<p><strong><em>Know Thy Enemy.</em></strong> As an action, you can place an object that belonged to a creature—such as its scat, scales, or clothing— between the pages of this book. One minute later, the book tells you one piece of information about the creature. At the GM’s discretion, this may be: its saving throw proficiencies, damage resistances, immunities, and vulnerabilities; condition immunities; creature’s type; one of its traits; or one of the clues acquired during a hunt. Placing more objects that belonged to that creature (or a creature with the same statblock) yields no further results.</p>
+			<p><strong><em>Weapon of the Learned.</em></strong> This book can be used as a simple melee weapon that deals 1d6 bludgeoning damage on a hit. If you are proficient in Arcana, History, Nature, or Religion, you are proficient with this weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Heliana's Guide to Monster Hunting" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_HELIANAS_GUIDE_TO_MONSTER_HUNTING_VERY_RARE">
+		<description>
+			<p>Full of useful knowledge and heavy enough to crush a skull, Heliana’s Guide to Monster Hunting is nothing if not handy. The personalised quotes from Heliana, Peeper’s deft proofing and editing, and the numerous ink stains and spilled watercolours give this hefty tome a homemade feel.</p>
+			<p>The deluxe, leatherbound version of this book imparts some of Heliana’s own wisdom to those that read it regularly.</p>
+			<p><strong><em>Fantastic Phalanges and Where to Find Them.</em></strong> As an action, you can open this book and stare intently at its pages, which turn of their own accord to settle on an anatomical diagram of the corpse nearest to the book. You immediately learn all the harvestable parts of the corpse, as well as their Component DCs.</p>
+			<p><strong><em>Know Thy Enemy.</em></strong> As an action, you can place an object that belonged to a creature—such as its scat, scales, or clothing— between the pages of this book. One minute later, the book tells you two pieces of information about the creature. At the GM’s discretion, this may be: its saving throw proficiencies, damage resistances, immunities, and vulnerabilities; condition immunities; creature’s type; one of its traits; or one of the clues acquired during a hunt. Placing more objects that belonged to that creature (or a creature with the same statblock) yields no further results.</p>
+			<p><strong><em>Weapon of the Learned.</em></strong> This book can be used as a simple melee weapon that deals 1d6 bludgeoning damage on a hit. If you are proficient in Arcana, History, Nature, or Religion, you are proficient with this weapon.</p>
+			<p><strong><em>Anatomiser.</em></strong> If you read this book for 1 hour, you gain proficiency in one of the following skills of your choice for the next 24 hours: Arcana, Investigation, Nature, Medicine, Religion, or Survival. Once you use this feature, you can’t use it again for 24 hours.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="L'Arsene's Quadnoculars" type="Magic Item" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_LARSENES_QUADNOCULARS">
+		<description>
+			<p>Expecting a flood of adventurers to buy Heliana’s book and begin crafting their own magic items —potentially putting him out of a job!—L’Arsène devised a way he might profit from the book’s popularity. With a series of articulating lenses that filter out threads belonging to different schools of magic, L’Arsène’s Quadnoculars grant their wearer the ability to identify the magic items that could be constructed from a recently slain creature. After all, it’s not much use knowing what you can harvest without knowing how you can use it.</p>
+			<p><strong><em>Spectacular Analytica.</em></strong> As an action, you can flick through the filters of these goggles and stare intently at a corpse within 60 feet of you. You immediately learn the general function (or the specific mechanics, at the GM’s discretion) of the possible magic items that can be crafted from the creature’s harvestable components, as well as the effects of the magical meals you could make from it.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+
+	<!-- Companions and Mounts -->
+	<element name="Saddle Slime" type="Companion" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_SADDLE_SLIME">
+		<description />
+		<setters>
+			<set name="size">Large</set>
+			<set name="type">Ooze</set>
+			<set name="alignment">unaligned</set>
+			<set name="ac">8</set>
+			<set name="hp">51 (6d10 + 18)</set>
+			<set name="speed">30 ft., climb 30 ft.</set>
+			<set name="strength">16</set>
+			<set name="dexterity">6</set>
+			<set name="constitution">16</set>
+			<set name="intelligence">5</set>
+			<set name="wisdom">6</set>
+			<set name="charisma">5</set>
+			<set name="immunities">acid</set>
+			<set name="conditionImmunities">charmed, deafened, exhaustion, frightened, poisoned</set>            
+			<set name="senses">blindsight 10 ft., darkvision 60 ft., passive Perception 8</set>
+			<set name="languages">understands the languages its summoner speaks</set>
+			<set name="challenge">1</set>
+			<set name="traits">ID_LT_HGTMH_COMPANION_TRAIT_SADDLE_SLIME_BORN_FOR_THE_SADDLE, ID_LT_HGTMH_COMPANION_TRAIT_SADDLE_SLIME_SPIDER_CLIMB</set>
+			<set name="actions">ID_LT_HGTMH_COMPANION_ACTION_SADDLE_SLIME_PSEUDOPOD, ID_LT_HGTMH_COMPANION_ACTION_SADDLE_SLIME_CORRODE_OBJECT</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="8" />
+			<stat name="companion:hp:max" value="51" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+			<stat name="companion:speed:climb" value="30" bonus="base" />
+		</rules>
+	</element>
+		<element name="Born for the Saddle" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_SADDLE_SLIME_BORN_FOR_THE_SADDLE">
+			<description>
+				<p>The ooze grips firmly onto any object that is inserted into its body to be used as a saddle. A creature riding the ooze on one such saddle has <b>advantage</b> on saving throws made to avoid being dismounted.</p>
+			</description>
+			<sheet>
+				<description>The ooze grips firmly onto any object that is inserted into its body to be used as a saddle. A creature riding the ooze on one such saddle has advantage on saving throws made to avoid being dismounted.</description>
+			</sheet>
+		</element>
+		<element name="Spider Climb" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_SADDLE_SLIME_SPIDER_CLIMB">
+			<description>
+				<p>The ooze can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+			</description>
+			<sheet>
+				<description>The ooze can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</description>
+			</sheet>
+		</element>
+		<element name="Pseudopod" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_SADDLE_SLIME_PSEUDOPOD">
+			<description>
+				<p><i>Melee Weapon Attack:</i> +5 to hit, reach 5 ft., one target. <i>Hit:</i> 6 (1d6 + 3) bludgeoning damage plus 3 (1d6) acid damage.</p>
+			</description>
+			<sheet>
+				<description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 3 (1d6) acid damage.</description>
+			</sheet>
+		</element>
+		<element name="Corrode Object (3/Day)" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_SADDLE_SLIME_CORRODE_OBJECT">
+			<description>
+				<p>The ooze touches a Medium or smaller nonmagical object that isn’t being worn or carried, causing it to corrode and dissolve over the course of 1 <b>minute</b>.</p>
+			</description>
+			<sheet>
+				<description>The ooze touches a Medium or smaller nonmagical object that isn’t being worn or carried, causing it to corrode and dissolve over the course of 1 minute.</description>
+			</sheet>
+		</element>
+    <element name="Wyrmskull Ooze" type="Companion" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_WYRMSKULL_OOZE">
+		<description />
+		<setters>
+			<set name="size">Large</set>
+			<set name="type">Ooze</set>
+			<set name="alignment">unaligned</set>
+			<set name="ac">13</set>
+			<set name="hp">114 (12d10 + 48)</set>
+			<set name="speed">30 ft., climb 30 ft.</set>
+			<set name="strength">18</set>
+			<set name="dexterity">9</set>
+			<set name="constitution">18</set>
+			<set name="intelligence">7</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">5</set>
+			<set name="immunities">acid</set>
+			<set name="conditionImmunities">charmed, deafened, exhaustion, frightened, poisoned</set>            
+			<set name="senses">blindsight 10 ft., darkvision 60 ft., passive Perception 13</set>
+			<set name="languages">understands the languages its summoner speaks</set>
+			<set name="challenge">3</set>
+			<set name="traits">ID_LT_HGTMH_COMPANION_TRAIT_WYRMSKULL_OOZE_SPIDER_CLIMB</set>
+			<set name="actions">ID_LT_HGTMH_COMPANION_ACTION_WYRMSKULL_OOZE_MULTIATTACK, ID_LT_HGTMH_COMPANION_ACTION_WYRMSKULL_OOZE_BITE, ID_LT_HGTMH_COMPANION_ACTION_WYRMSKULL_OOZE_PSEUDOPOD, ID_LT_HGTMH_COMPANION_ACTION_WYRMSKULL_OOZE_CORRODE_OBJECT</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" />
+			<stat name="companion:hp:max" value="114" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+			<stat name="companion:speed:climb" value="30" bonus="base" />
+		</rules>
+	</element>
+		<element name="Spider Climb" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_WYRMSKULL_OOZE_SPIDER_CLIMB">
+			<description>
+				<p>The ooze can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+			</description>
+			<sheet>
+				<description>The ooze can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</description>
+			</sheet>
+		</element>
+		<element name="Multiattack" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_WYRMSKULL_OOZE_MULTIATTACK">
+			<description>
+				<p>The ooze makes two melee attacks.</p>
+			</description>
+			<sheet>
+				<description>The ooze makes two melee attacks.</description>
+			</sheet>
+		</element>
+		<element name="Bite" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_WYRMSKULL_OOZE_BITE">
+			<description>
+				<p><i>Melee Weapon Attack:</i> +6 to hit, reach 5 ft., one target. <i>Hit:</i> 8 (1d8 + 4) piercing damage, and the target is grappled (escape DC 14). A creature grappled by the ooze takes 3 (1d6) acid damage at the start of each of its turns. The ooze can only grapple one creature at a time and, while it does so, it can’t use its bite against another creature. plus 3 (1d6) acid damage.</p>
+			</description>
+			<sheet>
+				<description>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage, and the target is grappled (escape DC 14). A creature grappled by the ooze takes 3 (1d6) acid damage at the start of each of its turns. The ooze can only grapple one creature at a time and, while it does so, it can’t use its bite against another creature. plus 3 (1d6) acid damage.</description>
+			</sheet>
+		</element>
+		<element name="Pseudopod" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_WYRMSKULL_OOZE_PSEUDOPOD">
+			<description>
+				<p><i>Melee Weapon Attack:</i> +6 to hit, reach 5 ft., one target. <i>Hit:</i> 7 (1d6 + 4) bludgeoning damage plus 3 (1d6) acid damage.</p>
+			</description>
+			<sheet>
+				<description>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage plus 3 (1d6) acid damage.</description>
+			</sheet>
+		</element>
+		<element name="Corrode Object (3/Day)" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_WYRMSKULL_OOZE_CORRODE_OBJECT">
+			<description>
+				<p>The ooze touches a Medium or smaller nonmagical object that isn’t being worn or carried, causing it to corrode and dissolve over the course of 1 <b>minute</b>.</p>
+			</description>
+			<sheet>
+				<description>The ooze touches a Medium or smaller nonmagical object that isn’t being worn or carried, causing it to corrode and dissolve over the course of 1 minute.</description>
+			</sheet>
+		</element>
+	<element name="Crawly Turrit" type="Companion" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_CRAWLY_TURRIT">
+		<description>
+		</description>
+		<setters>
+			<set name="size">Tiny</set>
+			<set name="type">Construct</set>
+			<set name="alignment">Unaligned</set>
+			<set name="ac">17</set>
+			<set name="hp">60 (8d4+40)</set>
+			<set name="speed">40 ft., climb 40 ft.</set>
+			<set name="strength">8</set>
+			<set name="dexterity">18</set>
+			<set name="constitution">20</set>
+			<set name="intelligence">1</set>
+			<set name="wisdom">7</set>
+			<set name="charisma">1</set>
+			<set name="immunities">poison, psychic</set>
+			<set name="conditionImmunities">blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned</set>
+			<set name="senses">darkvision 60 ft., passive Perception 7</set>
+			<set name="languages">---</set>
+			<set name="challenge">3</set>
+			<set name="traits">ID_LT_HGTMH_COMPANION_TRAIT_CRAWLY_TURRIT_DRACONIC_INFUSION, ID_LT_HGTMH_COMPANION_TRAIT_CRAWLY_TURRIT_SPIDER_CLIMB</set>
+			<set name="actions">ID_LT_HGTMH_COMPANION_ACTION_CRAWLY_TURRIT_BITE, ID_LT_HGTMH_COMPANION_ACTION_CRAWLY_TURRIT_BREATH_BOLT, ID_LT_HGTMH_COMPANION_ACTION_CRAWLY_TURRIT_BREATH_WEAPON</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="17" />
+			<stat name="companion:hp:max" value="60" bonus="base" />
+			<stat name="companion:speed" value="40" bonus="base" />
+			<stat name="companion:speed:climb" value="40" bonus="base" />
+		</rules>
+	</element>
+		<element name="Draconic Infusion" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_CRAWLY_TURRIT_DRACONIC_INFUSION">
+			<description>
+				<p>The damage type that the turret’s Bite, Breath Bolt, and Breath Weapon deals depends on the dragon breath sac with which it was infused: acid (black or copper); cold (silver or white); fire (brass, gold, or red); lightning (blue or bronze); or poison (green).</p>
+			</description>
+			<sheet>
+				<description>The damage type that the turret’s Bite, Breath Bolt, and Breath Weapon deals depends on the dragon breath sac with which it was infused: acid (black or copper); cold (silver or white); fire (brass, gold, or red); lightning (blue or bronze); or poison (green).</description>
+			</sheet>
+		</element>
+		<element name="Spider Climb" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_CRAWLY_TURRIT_SPIDER_CLIMB">
+			<description>
+				<p>The turret can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+			</description>
+			<sheet>
+				<description>The turret can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</description>
+			</sheet>
+		</element>
+		<element name="Bite" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_CRAWLY_TURRIT_BITE">
+			<description>
+				<p><i>Melee Weapon Attack:</i> +6 to hit, reach 5ft., one target. <i>Hit:</i> 7 (1d6 + 4) piercing damage plus 3 (1d6) damage (see Draconic Infusion).</p>
+			</description>
+			<sheet>
+				<description>Melee Weapon Attack: +6 to hit, reach 5ft., one target. Hit: 7 (1d6 + 4) piercing damage plus 3 (1d6) damage (see Draconic Infusion).</description>
+			</sheet>
+		</element>
+		<element name="Breath Bolt" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_CRAWLY_TURRIT_BREATH_BOLT">
+			<description>
+				<p><i>Ranged Spell Attack:</i> +7 to hit, range 120 ft., one target. <i>Hit:</i> 11 (2d10) damage (see Draconic Infusion).</p>
+			</description>
+			<sheet>
+				<description>Ranged Spell Attack: +7 to hit, range 120 ft., one target. Hit: 11 (2d10) damage (see Draconic Infusion).</description>
+			</sheet>
+		</element>
+		<element name="Breath Weapon (1/Day)" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_CRAWLY_TURRIT_BREATH_WEAPON">
+			<description>
+				<p>The turret exhales elemental energy in a 20-foot cone. Each creature in that area must make a DC 16 Dexterity saving throw, taking 21 (6d6) damage (see Draconic Infusion) on a failed save, or half as much damage on a successful one.</p>
+			</description>
+			<sheet>
+				<description>The turret exhales elemental energy in a 20-foot cone. Each creature in that area must make a DC 16 Dexterity saving throw, taking 21 (6d6) damage (see Draconic Infusion) on a failed save, or half as much damage on a successful one.</description>
+			</sheet>
+		</element>
+	<element name="Rolly Turrit" type="Companion" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ROLLY_TURRIT">
+		<description>
+		</description>
+		<setters>
+			<set name="size">Tiny</set>
+			<set name="type">Construct</set>
+			<set name="alignment">Unaligned</set>
+			<set name="ac">15</set>
+			<set name="hp">44 (8d4+24)</set>
+			<set name="speed">35 ft.</set>
+			<set name="strength">8</set>
+			<set name="dexterity">16</set>
+			<set name="constitution">17</set>
+			<set name="intelligence">1</set>
+			<set name="wisdom">4</set>
+			<set name="charisma">1</set>
+			<set name="immunities">poison, psychic</set>
+			<set name="conditionImmunities">blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned</set>
+			<set name="senses">darkvision 60 ft., passive Perception 7</set>
+			<set name="languages">---</set>
+			<set name="challenge">2</set>
+			<set name="traits">ID_LT_HGTMH_COMPANION_TRAIT_ROLLY_TURRIT_BACKFIRE, ID_LT_HGTMH_COMPANION_TRAIT_ROLLY_TURRIT_SPIKEY_CHARGE, ID_LT_HGTMH_COMPANION_TRAIT_ROLLY_TURRIT_WHEELS</set>
+			<set name="actions">ID_LT_HGTMH_COMPANION_ACTION_ROLLY_TURRIT_MULTIATTACK, ID_LT_HGTMH_COMPANION_ACTION_ROLLY_TURRIT_CHOMP, ID_LT_HGTMH_COMPANION_ACTION_ROLLY_TURRIT_CANNONETTE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="15" />
+			<stat name="companion:hp:max" value="44" bonus="base" />
+			<stat name="companion:speed" value="35" bonus="base" />
+		</rules>
+	</element>
+		<element name="Backfire" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_ROLLY_TURRIT_BACKFIRE">
+			<description>
+				<p>Whenever the turret is critically hit, it backfires. Each creature within 10 feet of the turret (including the turret) must succeed on a DC 15 Dexterity saving throw or take 14 (4d6) piercing damage as shards of metal shoot outwards. The turret automatically fails this saving throw.</p>
+			</description>
+			<sheet>
+				<description>Whenever the turret is critically hit, it backfires. Each creature within 10 feet of the turret (including the turret) must succeed on a DC 15 Dexterity saving throw or take 14 (4d6) piercing damage as shards of metal shoot outwards. The turret automatically fails this saving throw.</description>
+			</sheet>
+		</element>
+		<element name="Spikey Charge" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_ROLLY_TURRIT_SPIKEY_CHARGE">
+			<description>
+				<p>If the turret moves at least 15 feet straight toward a target and then hits it with a bite attack on the same turn, the target takes an extra 3 (1d6) piercing damage. If the target is a Small or smaller creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.</p>
+			</description>
+			<sheet>
+				<description>If the turret moves at least 15 feet straight toward a target and then hits it with a bite attack on the same turn, the target takes an extra 3 (1d6) piercing damage. If the target is a Small or smaller creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.</description>
+			</sheet>
+		</element>
+		<element name="Wheels" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_ROLLY_TURRIT_WHEELS">
+			<description>
+				<p>The turret can’t navigate over ledges greater than 6 inches in height. If it tries to, it tumbles and is knocked prone.</p>
+			</description>
+			<sheet>
+				<description>The turret can’t navigate over ledges greater than 6 inches in height. If it tries to, it tumbles and is knocked prone.</description>
+			</sheet>
+		</element>
+		<element name="Multiattack" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_ROLLY_TURRIT_MULTIATTACK">
+			<description>
+				<p>The rolly turrit makes two attacks.</p>
+			</description>
+			<sheet>
+				<description>The rolly turrit makes two attacks.</description>
+			</sheet>
+		</element>
+		<element name="Chomp" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_ROLLY_TURRIT_CHOMP">
+			<description>
+				<p><i>Melee Weapon Attack:</i> +5 to hit, reach 5 ft., one target. <i>Hit:</i> 6 (1d6 + 3) piercing damage.</p>
+			</description>
+			<sheet>
+				<description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.</description>
+			</sheet>
+		</element>
+		<element name="Cannonette" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_ROLLY_TURRIT_CANNONETTE">
+			<description>
+				<p><i>Ranged Weapon Attack:</i> +5 to hit, range 30/120 ft., one target. <i>Hit:</i> 6 (1d6 + 3) bludgeoning damage.</p>
+			</description>
+			<sheet>
+				<description>Ranged Weapon Attack: +5 to hit, range 30/120 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.</description>
+			</sheet>
+		</element>
+
+	<element name="Saddle Slime" type="Information" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_INFO_COMPANION_SADDLE_SLIME">
+		<description>
+			<p style="margin-bottom:-5px"><em>Large ooze, unaligned</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 8</li>
+				<li><strong>Hit Points</strong> 51 (6d10 + 18)</li>
+				<li><strong>Speed</strong> 40 ft.</li>
+			</ul>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>16 (+3)</td><td>6 (-2)</td><td>16 (+3)</td><td>5 (-3)</td><td>6 (-2)</td><td>5 (-3)</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Damage Immunities</strong> acid</li>
+				<li><strong>Condition Immunities</strong>charmed, deafened, exhaustion, frightened, poisoned</li>
+				<li><strong>Senses</strong> blindsight 10 ft., darkvision 60 ft., passive Perception 8</li>
+				<li><strong>Languages</strong> understands the languages its summoner speaks</li>
+				<li><strong>Challenge</strong> 1 (200 XP) <strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+			<ul class="unstyled">
+				<li><strong><em>Born for the Saddle.</em></strong> The ooze grips firmly onto any object that is inserted into its body to be used as a saddle. A creature riding the ooze on one such saddle has<strong>advantage</strong> on saving throws made to avoid being dismounted.</li>
+				<li><strong><em>Spider Climb.</em></strong> The ooze can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</li>
+				</ul>
+			<h4 style="margin-top:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Pseudopod.</strong> Melee Weapon Attack:</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> 6 (1d6+3) damage plus 3 (1d6) acid damage.</li>
+				<li><em><strong>Corrode Object (3/Day).</strong></em>The ooze touches a Medium or smaller nonmagical object that isn’t being worn or carried, causing it to corrode and dissolve over the course of 1 <strong>minute</strong></li>
+				</ul>
+		</description>
+    </element>
+	<element name="Wyrmskull Ooze" type="Information" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_INFO_COMPANION_WYRMSKULL_OOZE">
+		<description>
+			<p style="margin-bottom:-5px"><em>Large ooze, unaligned</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 13 (natural armour)</li>
+				<li><strong>Hit Points</strong> 114 (12d10 + 48)</li>
+				<li><strong>Speed</strong> 30 ft., climb 30 ft.</li>
+			</ul>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>18 (+4)</td><td>9 (-1)</td><td>18 (+4)</td><td>7 (-2)</td><td>10 (0)</td><td>5 (-3)</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Damage Immunities</strong> acid</li>
+				<li><strong>Condition Immunities</strong>charmed, deafened, exhaustion, frightened, poisoned</li>
+				<li><strong>Senses</strong> blindsight 30 ft., darkvision 60 ft., passive Perception 13</li>
+				<li><strong>Languages</strong> understands the languages its summoner speaks</li>
+				<li><strong>Challenge</strong> 3 (700 XP) <strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+			<ul class="unstyled">
+				<li><strong><em>Spider Climb.</em></strong> The ooze can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</li>
+			</ul>
+			<h4 style="margin-top:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Multiattack.</strong></em>The ooze makes two melee attacks.</li>
+				<li><em><strong>Bite.</strong> Melee Weapon Attack:</em> +6 to hit, reach 5 ft., one target. <em>Hit:</em> 8 (1d8+4) piercing damage and the target is grappled (escape DC 14). A creature grappled by the ooze takes 3 (1d6) acid damage at the start of each of its turns. The ooze can only grapple one creature at a time and, while it does so, it can’t use its bite against another creature.</li>
+				<li><em><strong>Pseudopod.</strong> Melee Weapon Attack:</em> +6 to hit, reach 5 ft., one target. <em>Hit:</em> 7 (1d6+4) damage plus 3 (1d6) acid damage.</li>
+				<li><em><strong>Corrode Object (3/Day).</strong></em>The ooze touches a Medium or smaller nonmagical object that isn’t being worn or carried, causing it to corrode and dissolve over the course of 1 <strong>minute</strong></li>
+			</ul>
+		</description>
+    </element>
+	<element name="Rolly Turrit" type="Information" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_INFO_COMPANION_ROLLY_TURRIT">
+		<description>
+			<p style="margin-bottom:-5px"><em>Tiny construct, unaligned</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 15 (natural armour)</li>
+				<li><strong>Hit Points</strong> 44 (8d4 + 24)</li>
+				<li><strong>Speed</strong> 35 ft.</li>
+			</ul>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>8 (-1)</td><td>16 (+3)</td><td>17 (+3)</td><td>1 (-5)</td><td>4 (-3)</td><td>1 (-5)</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Damage Immunities</strong> poison, psychic</li>
+				<li><strong>Condition Immunities</strong>blinded, charmed, deafened, exhaustion, frightened, paralysed, petrified, poisoned</li>
+				<li><strong>Senses</strong> darkvision 60 ft., passive Perception 7</li>
+				<li><strong>Languages</strong> -</li>
+				<li><strong>Challenge</strong> 2 (450 XP) <strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+			<ul class="unstyled">
+				<li><strong><em>Backfire.</em></strong> Whenever the turret is critically hit, it backfires. Each creature within <strong>10 feet</strong> of the turret (including the turret) must succeed on a <strong>15 Dexterity saving throw</strong> or take <strong>14 (4d6) piercing damage</strong> as shards of metal shoot outwards. The turret automatically fails this saving throw.</li>
+				<li><strong><em>Spikey Charge.</em></strong> If the turret moves at least <strong>15 feet</strong> straight toward a target and then hits it with a bite attack on the same turn, the target takes an extra <strong>3 (1d6) piercing damage</strong>. If the target is a Small or smaller creature, it must succeed on a <strong>15 Strength saving throw</strong> or be knocked <strong>prone</strong>.</li>
+				<li><strong><em>Wheels.</em></strong> The turret can’t navigate over ledges greater than <strong>6 inches</strong> in height. If it tries to, it tumbles and is knocked <strong>prone</strong>.</li>
+			</ul>
+			<h4 style="margin-top:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Multiattack.</strong></em>The rolly turrit makes two attacks.</li>
+				<li><em><strong>Chomp.</strong> Melee Weapon Attack:</em> +5to hit, reach 5 ft., one target. <em>Hit:</em> 6 (1d6+3) piercing damage</li>
+				<li><em><strong>Cannonette.</strong> Ranged Weapon Attack:</em> +5 to hit, range 30/120 ft., one target. <em>Hit:</em> 6 (1d6+3) bludgeoning damage.</li>
+			</ul>
+		</description>
+    </element>
+	<element name="Crawly Turrit" type="Information" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_INFO_COMPANION_CRAWLY_TURRIT">
+		<description>
+			<p style="margin-bottom:-5px"><em>Tiny construct, unaligned</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 17 (natural armour)</li>
+				<li><strong>Hit Points</strong> 60 (8d4 + 40)</li>
+				<li><strong>Speed</strong> 40 ft., climb 40 ft.</li>
+			</ul>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>8 (-1)</td><td>18 (+4)</td><td>20 (+5)</td><td>1 (-5)</td><td>7 (-2)</td><td>1 (-5)</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Damage Immunities</strong> poison, psychic</li>
+				<li><strong>Condition Immunities</strong>blinded, charmed, deafened, exhaustion, frightened, paralysed, petrified, poisoned</li>
+				<li><strong>Senses</strong> darkvision 60 ft., passive Perception 7</li>
+				<li><strong>Languages</strong> -</li>
+				<li><strong>Challenge</strong> 3 (700 XP) <strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+			<ul class="unstyled">
+				<li><strong><em>Draconic Infusion.</em></strong> The damage type that the turret’s Bite, Breath Bolt, and Breath Weapon deals depends on the dragon breath sac with which it was infused: acid (black or copper); cold (silver or white); fire (brass, gold, or red); lightning (blue or bronze); or poison (green).</li>
+				<li><strong><em>Spider Climb.</em></strong> The turret can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</li>
+			</ul>
+			<h4 style="margin-top:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Bite.</strong> Melee Weapon Attack:</em> +6 to hit, reach 5 ft., one target. <em>Hit:</em> 7 (1d6 + 4) piercing damage plus 3 (1d6) damage (see Draconic Infusion).</li>
+				<li><em><strong>Breath Bolt.</strong> Ranged Spell Attack:</em> +7 to hit, ranged 120 ft., one target. <em>Hit:</em> 11 (2d10) damage (see Draconic Infusion).</li>
+				<li><em><strong>Breath Weapon (1/Day).</strong></em> The turret exhales elemental energy in a <strong>20-foot cone</strong>. Each creature in that area must make a <strong>DC 16 Dexterity saving throw</strong>, taking <strong>21 (6d6) damage</strong> (see Draconic Infusion) on a failed save, or half as much damage on a successful one.</li>
+			</ul>
+		</description>
+    </element>
+</elements>
