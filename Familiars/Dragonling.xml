@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Familiars</name>
+        <description>Familiars from Heliana's Guide to Monster Hunting</description>
+        <update version="0.1.0">
+            <file name="Dragonling.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Dragonling.xml" />
+        </update>
+    </info>
+
+    <element name="Dragonling" type="Companion" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_DRAGONLING">
+        <supports>Familiar, Variant Familiar, Bespoke Companion</supports>
+        <description>
+            <div class="sidebar">
+                <p class="flavor">I did mein best to downplay ze greed tendencies but zese adorable drakes just kan’t help zemselves. If you need ein hot töddy or kold beer in a giffy, chuck von a gold or silver koin und vatch it get to vurk!</p>
+                <p>— Humperdink, Hot Chocolate Aficionado</p>
+            </div>
+            <p><b>Type:</b> Dragon</p>
+            <p><b>Creature Component:</b> Any dragon</p>
+            <p><b>Bonus Tamer Improvement:</b> Growth I and +2 Hit Dice</p>
+            <p>Like a dragon, but a little less greedy and a little more pliant, dragonlings are Humperdink’s attempt at retaining a dragon’s useful characteristics and limiting the more… tyrannical ones. Able to shift its makeup depending on the metals to which it is exposed, the dragonling is an adaptable, if distractable, companion.</p>
+            <p>If any of the dragonling’s traits or actions require a saving throw, it is always against the dragonling’s save DC, as calculated below.</p>
+            <center>
+                <p><b>Save DC</b> = 8 + the tamer’s proficiency bonus + the dragonling’s Constitution modifier</p>
+            </center>
+            <h4>Monster Trainer</h4>
+            <p>In addition to the improvements you can normally give your companions, you can choose to grant the dragonling the following improvements using your Monster Trainer feature:</p>
+            <div class="reference">
+                <div element="ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_GROWTH_I" />
+                <div element="ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_HARDEN_I" />
+                <div element="ID_LT_HGTMH_COMPANION_ACTION_DRAGONLING_BREATH_WEAPON_I" />
+                <div element="ID_LT_HGTMH_COMPANION_ACTION_DRAGONLING_MULTIATTACK" />
+                <div element="ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_GROWTH_II" />
+                <div element="ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_BLINDSIGHT" />
+                <div element="ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_HARDEN_II" />
+                <div element="ID_LT_HGTMH_COMPANION_ACTION_DRAGONLING_BREATH_WEAPON_II" />
+                <div element="ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_GROWTH_III" />
+                <div element="ID_LT_HGTMH_COMPANION_ACTION_DRAGONLING_WING_ATTACK" />
+            </div>
+        </description>
+        <setters>
+            <set name="strength">14</set>
+            <set name="dexterity">10</set>
+            <set name="constitution">12</set>
+            <set name="intelligence">9</set>
+            <set name="wisdom">11</set>
+            <set name="charisma">13</set>
+            <set name="ac">14 (natural armour)</set>
+            <set name="hp">3 (1d4+1)</set>
+            <set name="speed">25 ft., fly 30 ft.</set>
+            <set name="senses">darkvision 60 ft., passive Perception 12</set>
+            <set name="languages">—</set>
+            <set name="skills">Perception +2</set>
+            <set name="type">Dragon</set>
+            <set name="size">Tiny</set>
+            <set name="alignment">lawful good</set>
+            <set name="challenge">1/8</set>
+            <set name="proficiency">2</set>
+            <set name="traits">ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_GREEDY,ID_LT_HGTMH_DRAGONLING_METALLIC_CHARACTER</set>
+            <set name="actions">ID_LT_HGTMH_COMPANION_ACTION_DRAGONLING_BITE</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="14" />
+            <stat name="companion:hp:max" value="3" bonus="base" />
+            <stat name="companion:speed" value="25" bonus="base" />
+            <stat name="companion:speed:fly" value="30" bonus="base" />
+            <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+
+            <stat name="dragonling:dc" value="8" />
+            <stat name="dragonling:dc" value="proficiency" bonus="proficiency" />
+            <stat name="dragonling:dc" value="companion:constitution:modifier" />
+        </rules>
+    </element>
+
+    <element name="Greedy" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_GREEDY">
+        <description>
+            <p>Whenever the dragonling first detects treasure worth 100 gp or more that isn’t being worn or carried, it must succeed on a DC 11 Wisdom saving throw or get distracted. While distracted, it spends its movement and actions trying to get close to, and frolic in, the treasure. A distracted dragonling repeats the saving throw at the end of each of its turns, ending the effect on a success and becoming immune to the allure of that treasure for the next 24 hours.</p>
+        </description>
+        <sheet>
+            <description>Whenever the dragonling first detects treasure worth 100 gp or more that isn’t being worn or carried, it must succeed on a DC 11 Wisdom saving throw or get distracted. While distracted, it spends its movement and actions trying to get close to, and frolic in, the treasure. A distracted dragonling repeats the saving throw at the end of each of its turns, ending the effect on a success and becoming immune to the allure of that treasure for the next 24 hours.</description>
+        </sheet>
+    </element>
+
+    <element name="Metallic Character" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_METALLIC_CHARACTER">
+        <description>
+            <p>When the dragonling’s tamer finishes a long rest, the dragonling gains an affinity for the element associated with the first precious metal it touches. This affinity grants the dragonling resistance to that damage type and lasts until its tamer next finishes a long rest. Copper gives acid affinity, gold gives fire, and magnetite &amp; silver give cold.</p>
+        </description>
+        <sheet>
+            <description>When the dragonling’s tamer finishes a long rest, the dragonling gains an affinity for the element associated with the first precious metal it touches. This affinity grants the dragonling resistance to that damage type and lasts until its tamer next finishes a long rest. Copper gives acid affinity, gold gives fire, and magnetite &amp; silver give cold.</description>
+        </sheet>
+    </element>
+
+    <element name="Bite" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_DRAGONLING_BITE">
+        <requirements>!ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_GROWTH_I|!ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_GROWTH_II|!ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_GROWTH_III</requirements>
+        <description>
+            <p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</description>
+        </sheet>
+    </element>
+
+    <!-- Companion's Improvements -->
+    <element name="Growth I" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_GROWTH_I">
+        <supports>Dragonling, Companion Improvement</supports>
+        <prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
+        <requirements>[level:tamer:1], !ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_GROWTH_II,!ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_GROWTH_III</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>The dragonling’s size increases to Small and its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage die of its Bite attack increases to a d8. The dragonling gains this improvement when it becomes a companion; it doesn’t cost an improvement.</p>
+        </description>
+        <sheet>
+            <description>The dragonling’s size increases to Small and its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage die of its Bite attack increases to a d8. The dragonling gains this improvement when it becomes a companion; it doesn’t cost an improvement.</description>
+        </sheet>
+        <rules>
+            <stat name="companion:hp:max" value="1" />
+            <stat name="companion:hp:max" value="5" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+
+            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_DRAGONLING_BITE_GROWTH_I" />
+        </rules>
+    </element>
+    <element name="Bite" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_DRAGONLING_BITE_GROWTH_I">
+        <requirements>!ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_GROWTH_II|!ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_GROWTH_III</requirements>
+        <description>
+            <p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 2) piercing damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 2) piercing damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Harden I" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_HARDEN_I">
+        <supports>Dragonling, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>The dragonling gains a +2 bonus to its AC while it isn’t wearing armour.</p>
+        </description>
+        <sheet>
+            <description>The dragonling gains a +2 bonus to its AC while it isn’t wearing armour.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:companion:ac" value="2" />
+            <stat name="ac:calculation" value="ac:companion:ac" bonus="calculation" equipped="[armor:none]"/>
+        </rules>
+    </element>
+
+    <element name="Breath Weapon I" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_DRAGONLING_BREATH_WEAPON_I">
+        <supports>Dragonling, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5],!ID_LT_HGTMH_COMPANION_ACTION_DRAGONLING_BREATH_WEAPON_II</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>As an action, the dragonling can unleash a torrent of elemental energy. Each creature in an area must make a saving throw, taking 17 (5d6) damage on a failed save, or half as much damage on a successful one. The area, damage type, and saving throw depend on the dragonling’s affinity (see its Metallic Character trait):</p>
+            <ul>
+                <li><b>Copper.</b> A 5-foot-wide, 30-foot-long line that requires a Dexterity saving throw and deals acid damage.</li>
+                <li><b>Gold.</b> A 20-foot cone that requires a Dexterity saving throw and deals fire damage.</li>
+                <li><b>Magnetite.</b> A 20-foot cone that requires a Dexterity saving throw and deals piercing damage.</li>
+                <li><b>Silver.</b> A 20-foot cone that requires a Constitution saving throw and deals cold damage.</li>
+            </ul>
+            <p>After the dragonling uses this action, it can’t do so again until its tamer finishes a short or long rest.</p>
+            <p>When the dragonling’s tamer reaches 9th level in the tamer class, this action’s damage increases to 24 (7d6).</p>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Short Rest">As an action, the dragonling can unleash a torrent of elemental energy. Each creature in an area must make a DC {{dragonling:dc}} saving throw, taking 17 (5d6) damage on a failed save, or half as much damage on a successful one. The area, damage type, and saving throw depend on the dragonling’s affinity (see its Metallic Character trait)&#13;
+            • Copper. A 5-foot-wide, 30-foot-long line that requires a Dexterity saving throw and deals acid damage.&#13;
+            • Gold. A 20-foot cone that requires a Dexterity saving throw and deals fire damage.&#13;
+            • Magnetite. A 20-foot cone that requires a Dexterity saving throw and deals piercing damage.&#13;
+            • Silver. A 20-foot cone that requires a Constitution saving throw and deals cold damage.&#13;
+            • After the dragonling uses this action, it can’t do so again until its tamer finishes a short or long rest.</description>
+            <description action="Action" usage="1/Short Rest" level="9">As an action, the dragonling can unleash a torrent of elemental energy. Each creature in an area must make a DC {{dragonling:dc}} saving throw, taking 24 (7d6) damage on a failed save, or half as much damage on a successful one. The area, damage type, and saving throw depend on the dragonling’s affinity (see its Metallic Character trait)&#13;
+            • Copper. A 5-foot-wide, 30-foot-long line that requires a Dexterity saving throw and deals acid damage.&#13;
+            • Gold. A 20-foot cone that requires a Dexterity saving throw and deals fire damage.&#13;
+            • Magnetite. A 20-foot cone that requires a Dexterity saving throw and deals piercing damage.&#13;
+            • Silver. A 20-foot cone that requires a Constitution saving throw and deals cold damage.&#13;
+            • After the dragonling uses this action, it can’t do so again until its tamer finishes a short or long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Multiattack" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_DRAGONLING_MULTIATTACK">
+        <supports>Dragonling, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>As an action, the dragonling can make two Bite attacks.</p>
+        </description>
+        <sheet>
+            <description>As an action, the dragonling can make two Bite attacks.</description>
+        </sheet>
+    </element>
+
+    <element name="Growth II" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_GROWTH_II">
+        <supports>Dragonling, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 5th-level tamer, Growth I</prerequisite>
+        <requirements>[level:tamer:5],ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_GROWTH_I,!ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_GROWTH_III</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>The dragonling’s size increases to Medium and its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage die of its Bite attack increases from a d8 to a d10.</p>
+        </description>
+        <sheet>
+            <description>The dragonling’s size increases to Medium and its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage die of its Bite attack increases from a d8 to a d10.</description>
+        </sheet>
+        <rules>
+            <stat name="companion:hp:max" value="2" />
+            <stat name="companion:hp:max" value="5" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+
+            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_DRAGONLING_BITE_GROWTH_II" />
+        </rules>
+    </element>
+    <element name="Bite" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_DRAGONLING_BITE_GROWTH_II">
+        <description>
+            <p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 2) piercing damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 2) piercing damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Blindsight" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_BLINDSIGHT">
+        <supports>Dragonling, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
+        <requirements>[level:tamer:9]</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>The dragonling gains blindsight to a range of 15 feet.</p>
+        </description>
+        <sheet>
+            <description>The dragonling gains blindsight to a range of 15 feet.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+            <stat name="companion:senses:blindsight:range" value="15" />
+        </rules>
+    </element>
+
+    <element name="Harden II" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_HARDEN_II">
+        <supports>Dragonling, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 9th-level tamer, Harden I</prerequisite>
+        <requirements>[level:tamer:9], ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_HARDEN_I</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>The dragonling gains a +2 bonus to its AC while it isn’t wearing armour. This improvement is in addition to the bonus from Harden I.</p>
+        </description>
+        <sheet>
+            <description>The dragonling gains a +2 bonus to its AC while it isn’t wearing armour. This improvement is in addition to the bonus from Harden I.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:companion:ac" value="2" />
+            <stat name="ac:calculation" value="ac:companion:ac" bonus="calculation" equipped="[armor:none]"/>
+        </rules>
+    </element>
+
+    <element name="Breath Weapon II" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_DRAGONLING_BREATH_WEAPON_II">
+        <supports>Dragonling, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Breath Weapon I</prerequisite>
+        <requirements>[level:tamer:13],ID_LT_HGTMH_COMPANION_ACTION_DRAGONLING_BREATH_WEAPON_I</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>The damage of the dragonling’s Breath Weapon action increases to 31 (9d6), the area of the cones increases to 30 feet, and the length of the line increases to 90 feet. The dragonling gains a +1 bonus to the save DC of this action.</p>
+            <p>When the dragonling’s tamer reaches 17th level in the tamer class, the Breath Weapon’s damage increases to 42 (12d6).</p>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Short Rest">As an action, the dragonling can unleash a torrent of elemental energy. Each creature in an area must make a DC {{dragonling:dc}} saving throw, taking 31 (9d6) damage on a failed save, or half as much damage on a successful one. The area, damage type, and saving throw depend on the dragonling’s affinity (see its Metallic Character trait)&#13;
+            • Copper. A 5-foot-wide, 30-foot-long line that requires a Dexterity saving throw and deals acid damage.&#13;
+            • Gold. A 20-foot cone that requires a Dexterity saving throw and deals fire damage.&#13;
+            • Magnetite. A 20-foot cone that requires a Dexterity saving throw and deals piercing damage.&#13;
+            • Silver. A 20-foot cone that requires a Constitution saving throw and deals cold damage.&#13;
+            • After the dragonling uses this action, it can’t do so again until its tamer finishes a short or long rest.</description>
+            <description action="Action" usage="1/Short Rest" level="9">As an action, the dragonling can unleash a torrent of elemental energy. Each creature in an area must make a DC {{dragonling:dc}} saving throw, taking 42 (12d6) damage on a failed save, or half as much damage on a successful one. The area, damage type, and saving throw depend on the dragonling’s affinity (see its Metallic Character trait)&#13;
+            • Copper. A 5-foot-wide, 30-foot-long line that requires a Dexterity saving throw and deals acid damage.&#13;
+            • Gold. A 20-foot cone that requires a Dexterity saving throw and deals fire damage.&#13;
+            • Magnetite. A 20-foot cone that requires a Dexterity saving throw and deals piercing damage.&#13;
+            • Silver. A 20-foot cone that requires a Constitution saving throw and deals cold damage.&#13;
+            • After the dragonling uses this action, it can’t do so again until its tamer finishes a short or long rest.</description>
+        </sheet>
+        <rules>
+            <stat name="dragonling:dc" value="1" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Growth III" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_GROWTH_III">
+        <supports>Dragonling, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Growth II</prerequisite>
+        <requirements>[level:tamer:13],ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_GROWTH_I,ID_LT_HGTMH_COMPANION_TRAIT_DRAGONLING_GROWTH_II</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>The dragonling’s size increases to Large and its Hit Die size increases to a d10 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage die of its Bite attack increases from a d10 to 2d6.</p>
+        </description>
+        <sheet>
+            <description>The dragonling’s size increases to Large and its Hit Die size increases to a d10 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage die of its Bite attack increases from a d10 to 2d6.</description>
+        </sheet>
+        <rules>
+            <stat name="companion:hp:max" value="3" />
+            <stat name="companion:hp:max" value="5" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+
+            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_DRAGONLING_BITE_GROWTH_III" />
+        </rules>
+    </element>
+    <element name="Bite" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_DRAGONLING_BITE_GROWTH_III">
+        <description>
+            <p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) piercing damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 2) piercing damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Wing Attack" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_DRAGONLING_WING_ATTACK">
+        <supports>Dragonling, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 17th-level tamer</prerequisite>
+        <requirements>[level:tamer:17]</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>As an action, the dragonling can beat its wings. Each creature within 10 feet of the dragonling must succeed on a Strength saving throw (DC = 8 + the tamer’s proficiency bonus + the dragonling’s Strength modifier) or take bludgeoning damage and be knocked prone. The damage equals 4d6 plus the dragonling’s Strength modifier. Creatures larger than the dragonling automatically succeed on this saving throw. The dragonling can then fly up to half its flying speed.</p>
+        </description>
+        <sheet>
+            <description action="Action">As an action, the dragonling can beat its wings. Each creature within 10 feet of the dragonling must succeed on a DC {{wing attack:dc}} Strength saving throw or take 4d6 + {{companion:strenght:modifier}} bludgeoning damage and be knocked prone. Creatures larger than the dragonling automatically succeed on this saving throw. The dragonling can then fly up to half its flying speed.</description>
+        </sheet>
+        <rules>
+            <stat name="wing attack:dc" value="8" />
+            <stat name="wing attack:dc" value="proficiency" />
+            <stat name="wing attack:dc" value="companion:strength:modifier" />
+        </rules>
+    </element>
+</elements>

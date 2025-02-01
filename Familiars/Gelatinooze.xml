@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Familiars</name>
+        <description>Familiars from Heliana's Guide to Monster Hunting</description>
+        <update version="0.1.0">
+            <file name="Gelatinooze.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Gelatinooze.xml" />
+        </update>
+    </info>
+
+    <element name="Gelatinooze" type="Companion" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_GELATINOOZE">
+        <supports>Familiar, Variant Familiar, Bespoke Companion</supports>
+        <description>
+            <div class="sidebar">
+                <p class="flavor">You can pet it. But I’d vear gloves. And not your favourite, fancy-pants vons either; you never know vhen its goink to start oozink.</p>
+                <p>— Humperdink, No Longer Has Gloves</p>
+            </div>
+            <p><b>Type:</b> Ooze</p>
+            <p><b>Creature Component:</b> Any polyhedrooze</p>
+            <p><b>Bonus Tamer Improvement:</b> Growth I and +2 Hit Dice</p>
+            <p>A relatively recent creation, the gelatinous polyhedrooze builds on its forebears’ mere six sides. Able to more selectively dissolve the objects it engulfs, this companion makes use of the arms and armour found lying around dungeons to form impenetrable barriers of overlapping shields and phalanx-like spears.</p>
+            <p>If any of the gelatinooze’s traits or actions require a saving throw, it is always against the gelatinooze’s save DC, as calculated below.</p>
+            <center>
+                <p><b>Save DC</b> = 8 + the tamer’s proficiency bonus + the gelatinooze’s Strength modifier</p>
+            </center>
+            <h4>Monster Trainer</h4>
+            <p>In addition to the improvements you can normally give your companions, you can choose to grant the gelatinooze the following improvements using your Monster Trainer feature:</p>
+            <div class="reference">
+                <div element="ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_I" />
+                <div element="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_REACTIVE_MUTATIONS" />
+                <div element="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_ENGULF" />
+                <div element="ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_II" />
+                <div element="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_MULTIATTACK" />
+                <div element="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_SPIT" />
+                <div element="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PHALANX" />
+                <div element="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_TURTLE" />
+                <div element="ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_III" />
+                <div element="ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV" />
+                <div element="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_SANCTUARY" />
+                <div element="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_ERUPT" />
+            </div>
+        </description>
+        <setters>
+            <set name="strength">13</set>
+            <set name="dexterity">6</set>
+            <set name="constitution">16</set>
+            <set name="intelligence">4</set>
+            <set name="wisdom">8</set>
+            <set name="charisma">4</set>
+            <set name="ac">12 (natural armour)</set>
+            <set name="hp">5 (1d4+3)</set>
+            <set name="speed">25 ft., climb 25 ft.</set>
+            <set name="senses">blindsight 60 ft. (blind beyond this radius), passive Perception 9</set>
+            <set name="languages">—</set>
+            <set name="immunities">acid</set>
+            <set name="type">Ooze</set>
+            <set name="size">Tiny</set>
+            <set name="alignment">unaligned</set>
+            <set name="challenge">1/8</set>
+            <set name="proficiency">2</set>
+            <set name="traits">ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_ACIDIC_TOUCH,ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_DISSOLVE_METAL</set>
+            <set name="actions">ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PSEUDOPOD</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="12" />
+            <stat name="companion:hp:max" value="5" bonus="base" />
+            <stat name="companion:speed" value="25" bonus="base" />
+            <stat name="companion:speed:climb" value="25" bonus="base" />
+
+            <stat name="gelatinooze:dc" value="8" />
+            <stat name="gelatinooze:dc" value="proficiency" bonus="proficiency" />
+            <stat name="gelatinooze:dc" value="companion:strength:modifier" />
+        </rules>
+    </element>
+
+    <element name="Acidic Touch" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_ACIDIC_TOUCH">
+        <description>
+            <p>At the start of the gelatinooze’s turn, it can choose to secrete a small dose of acid (no action required). Each creature that is grappling it or that it is grappling takes acid damage equal to the gelatinooze’s Constitution modifier.</p>
+        </description>
+        <sheet>
+            <description>At the start of the gelatinooze’s turn, it can choose to secrete a small dose of acid (no action required). Each creature that is grappling it or that it is grappling takes acid damage equal to the gelatinooze’s Constitution modifier.</description>
+        </sheet>
+    </element>
+
+    <element name="Dissolve Metal" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_DISSOLVE_METAL">
+        <description>
+            <p>Over the course of 1 minute, the gelatinooze can dissolve up to 1 pound of nonmagical metal it is touching.</p>
+        </description>
+        <sheet usage="Recharges after a Short or Long Rest">
+            <description>Over the course of 1 minute, the gelatinooze can dissolve up to 1 pound of nonmagical metal it is touching.</description>
+        </sheet>
+    </element>
+
+    <element name="Pseudopod" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PSEUDOPOD">
+        <requirements>!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_I|!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_II|!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_III|!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
+        <description>
+            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) acid damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) acid damage.</description>
+        </sheet>
+    </element>
+
+    <!-- Companion's Improvements -->
+    <element name="Growth I" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_I">
+        <supports>Gelatinooze, Companion Improvement</supports>
+        <prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
+        <requirements>[level:tamer:1],!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_II,!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_III,!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>The gelatinooze’s size increases to Small, it becomes shaped like a d6, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage die of its pseudopod attack increases to a d6. The gelatinooze gains this improvement when it becomes a companion; it doesn’t cost an improvement.</p>
+        </description>
+        <sheet>
+            <description>The gelatinooze’s size increases to Small, it becomes shaped like a d6, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage die of its pseudopod attack increases to a d6. The gelatinooze gains this improvement when it becomes a companion; it doesn’t cost an improvement.</description>
+        </sheet>
+        <rules>
+            <stat name="companion:hp:max" value="2" />
+            <stat name="companion:hp:max" value="5" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+
+            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PSEUDOPOD_GROWTH_I" />
+        </rules>
+    </element>
+    <element name="Pseudopod" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PSEUDOPOD_GROWTH_I">
+        <requirements>!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_II|!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_III|!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
+        <description>
+            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) acid damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) acid damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Reactive Mutations" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_REACTIVE_MUTATIONS">
+        <supports>Gelatinooze, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p><b>Type:</b> Active (bonus action)</p>
+            <p>As a bonus action, the gelatinooze activates its immune system for the next minute. Immediately after the gelatinooze next takes damage, it gains resistance to that damage type for 1 minute.</p>
+            <p>After the gelatinooze uses this action, it can’t do so again until its tamer finishes a long rest.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action" usage="1/Long Rest">As a bonus action, the gelatinooze activates its immune system for the next minute. Immediately after the gelatinooze next takes damage, it gains resistance to that damage type for 1 minute. After the gelatinooze uses this action, it can’t do so again until its tamer finishes a long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Engulf" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_ENGULF">
+        <supports>Gelatinooze, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3],!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_II,!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_III,!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>As an action, the gelatinooze can move up to its speed. While doing so, it can enter the space of creatures smaller than its size. Whenever the gelatinooze enters a creature’s space, the creature must make a Dexterity saving throw.</p>
+            <p>On a successful save, the creature can choose to be pushed 5 feet back or to the side of the gelatinooze. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.</p>
+            <p>On a failed save, the gelatinooze enters the creature’s space, stops moving, and engulfs the creature, which takes 7 (2d6) acid damage. The engulfed creature can’t breathe, is restrained, and takes 7 (2d6) acid damage at the start of each of the gelatinooze’s turns. When the gelatinooze moves, the engulfed creature moves with it. The gelatinooze can have only one creature engulfed at a time.</p>
+            <p>An engulfed creature can try to escape by taking an action to make a Strength check against the gelatinooze’s save DC. On a success, the creature escapes and enters a space of its choice within 5 feet of the gelatinooze.</p>
+        </description>
+        <sheet>
+            <description action="Action">As an action, the gelatinooze can move up to its speed. While doing so, it can enter the space of creatures smaller than its size. Whenever the gelatinooze enters a creature’s space, the creature must make a DC {{gelatinooze:dc}} Dexterity saving throw.&#13;
+            On a successful save, the creature can choose to be pushed 5 feet back or to the side of the gelatinooze. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.&#13;
+            On a failed save, the gelatinooze enters the creature’s space, stops moving, and engulfs the creature, which takes 7 (2d6) acid damage. The engulfed creature can’t breathe, is restrained, and takes 7 (2d6) acid damage at the start of each of the gelatinooze’s turns. When the gelatinooze moves, the engulfed creature moves with it. The gelatinooze can have only one creature engulfed at a time.&#13;
+            An engulfed creature can try to escape by taking an action to make a Strength check against the gelatinooze’s save DC. On a success, the creature escapes and enters a space of its choice within 5 feet of the gelatinooze.</description>
+        </sheet>
+    </element>
+
+    <element name="Growth II" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_II">
+        <supports>Gelatinooze, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 5th-level tamer, Growth I</prerequisite>
+        <requirements>[level:tamer:5],ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_I,!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_III,!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>The gelatinooze’s size increases to Medium, it becomes shaped like a d8, and its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage dice of its pseudopod and spit attacks increase from a d6 to a d8, and its Engulf action’s damage increases to 10 (3d6).</p>
+        </description>
+        <sheet>
+            <description>The gelatinooze’s size increases to Medium, it becomes shaped like a d8, and its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage dice of its pseudopod and spit attacks increase from a d6 to a d8, and its Engulf action’s damage increases to 10 (3d6).</description>
+        </sheet>
+        <rules>
+            <stat name="companion:hp:max" value="3" />
+            <stat name="companion:hp:max" value="5" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+
+            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PSEUDOPOD_GROWTH_II" />
+            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_ENGULF_GROWTH_II" />
+            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_SPIT_GROWTH_II" />
+        </rules>
+    </element>
+    <element name="Pseudopod" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PSEUDOPOD_GROWTH_II">
+        <requirements>!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_III|!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
+        <description>
+            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) acid damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) acid damage.</description>
+        </sheet>
+    </element>
+    <element name="Engulf" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_ENGULF_GROWTH_II">
+        <supports>Gelatinooze, Companion Improvement</supports>
+        <requirements>!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_III|!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>As an action, the gelatinooze can move up to its speed. While doing so, it can enter the space of creatures smaller than its size. Whenever the gelatinooze enters a creature’s space, the creature must make a Dexterity saving throw.</p>
+            <p>On a successful save, the creature can choose to be pushed 5 feet back or to the side of the gelatinooze. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.</p>
+            <p>On a failed save, the gelatinooze enters the creature’s space, stops moving, and engulfs the creature, which takes 10 (3d6) acid damage. The engulfed creature can’t breathe, is restrained, and takes 10 (3d6) acid damage at the start of each of the gelatinooze’s turns. When the gelatinooze moves, the engulfed creature moves with it. The gelatinooze can have only one creature engulfed at a time.</p>
+            <p>An engulfed creature can try to escape by taking an action to make a Strength check against the gelatinooze’s save DC. On a success, the creature escapes and enters a space of its choice within 5 feet of the gelatinooze.</p>
+        </description>
+        <sheet>
+            <description action="Action">As an action, the gelatinooze can move up to its speed. While doing so, it can enter the space of creatures smaller than its size. Whenever the gelatinooze enters a creature’s space, the creature must make a DC {{gelatinooze:dc}} Dexterity saving throw.&#13;
+            On a successful save, the creature can choose to be pushed 5 feet back or to the side of the gelatinooze. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.&#13;
+            On a failed save, the gelatinooze enters the creature’s space, stops moving, and engulfs the creature, which takes 10 (3d6) acid damage. The engulfed creature can’t breathe, is restrained, and takes 10 (3d6) acid damage at the start of each of the gelatinooze’s turns. When the gelatinooze moves, the engulfed creature moves with it. The gelatinooze can have only one creature engulfed at a time.&#13;
+            An engulfed creature can try to escape by taking an action to make a Strength check against the gelatinooze’s save DC. On a success, the creature escapes and enters a space of its choice within 5 feet of the gelatinooze.</description>
+        </sheet>
+    </element>
+
+    <element name="Multiattack" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_MULTIATTACK">
+        <supports>Gelatinooze, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>As an action, the gelatinooze can make two Pseudopod attacks.</p>
+        </description>
+        <sheet>
+            <description>As an action, the gelatinooze can make two Pseudopod attacks.</description>
+        </sheet>
+    </element>
+
+    <element name="Spit" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_SPIT">
+        <supports>Gelatinooze, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>The gelatinooze gains a ranged weapon attack: Spit. The damage die of the spit attack increases with the specified die size in the gelatinooze’s Growth improvements.</p>
+            <p><b><i>Spit.</i></b> Ranged Weapon Attack: Str or Dex modifier + PB to hit, range 20/60 ft., one target. Hit: 2d6 + Str or Dex modifier acid damage.</p>
+        </description>
+        <sheet>
+            <description>The gelatinooze gains a ranged weapon attack: Spit. The damage die of the spit attack increases with the specified die size in the gelatinooze’s Growth improvements.</description>
+        </sheet>
+    </element>
+    <element name="Spit" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_SPIT_GROWTH_II">
+        <requirements>!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_III|!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
+        <description>
+            <p>Ranged Weapon Attack: Str or Dex modifier + PB to hit, range 20/60 ft., one target. Hit: 2d8 + Str or Dex modifier acid damage.</p>
+        </description>
+        <sheet>
+            <description>Ranged Weapon Attack: Str or Dex modifier + PB to hit, range 20/60 ft., one target. Hit: 2d8 + Str or Dex modifier acid damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Phalanx" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PHALANX">
+        <supports>Gelatinooze, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
+        <requirements>[level:tamer:9]</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>As an action while the gelatinooze is not in its Turtle form, it can brace itself in place, reducing its speed to 0 feet and presenting a phalanx of spiky things it has found. A creature that hits the gelatinooze with a melee attack while within 5 feet of it takes 2d6 piercing damage.</p>
+            <p>As a bonus action, the gelatinooze can return to normal, regaining its normal speed.</p>
+        </description>
+        <sheet>
+            <description action="Action">As an action while the gelatinooze is not in its Turtle form, it can brace itself in place, reducing its speed to 0 feet and presenting a phalanx of spiky things it has found. A creature that hits the gelatinooze with a melee attack while within 5 feet of it takes 2d6 piercing damage. As a bonus action, the gelatinooze can return to normal, regaining its normal speed.</description>
+        </sheet>
+    </element>
+
+    <element name="Turtle" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_TURTLE">
+        <supports>Gelatinooze, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
+        <requirements>[level:tamer:9]</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>As an action while the gelatinooze is not in its Phalanx form, it can hunker in place, reducing its speed to 0 feet and presenting a wall of metal and wood on one of its faces. Choose a direction and project a cone as if casting a cone-shaped spell with infinite length; the gelatinooze gains a +10 bonus to AC against all attacks originating from within that cone.</p>
+            <p>As a bonus action, the gelatinooze can return to normal, regaining its speed and its normal AC.</p>
+        </description>
+        <sheet>
+            <description action="Action">As an action while the gelatinooze is not in its Phalanx form, it can hunker in place, reducing its speed to 0 feet and presenting a wall of metal and wood on one of its faces. Choose a direction and project a cone as if casting a cone-shaped spell with infinite length; the gelatinooze gains a +10 bonus to AC against all attacks originating from within that cone. As a bonus action, the gelatinooze can return to normal, regaining its speed and its normal AC.</description>
+        </sheet>
+    </element>
+
+    <element name="Growth III" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_III">
+        <supports>Gelatinooze, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 9th-level tamer, Growth II</prerequisite>
+        <requirements>[level:tamer:9],ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_I,ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_II,!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>The gelatinooze’s size increases to Large, it becomes shaped like a d10, and its Hit Die size increases to a d10 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage dice of its Pseudopod and Spit attacks increase from a d8 to a d10, and its Engulf action’s damage increases to 14 (4d6). This growth improvement ignores the normal maximum companion size for a tamer.</p>
+        </description>
+        <sheet>
+            <description>The gelatinooze’s size increases to Large, it becomes shaped like a d10, and its Hit Die size increases to a d10 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage dice of its Pseudopod and Spit attacks increase from a d8 to a d10, and its Engulf action’s damage increases to 14 (4d6). This growth improvement ignores the normal maximum companion size for a tamer.</description>
+        </sheet>
+        <rules>
+            <stat name="companion:hp:max" value="4" />
+            <stat name="companion:hp:max" value="5" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+
+            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PSEUDOPOD_GROWTH_III" />
+            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_ENGULF_GROWTH_III" />
+            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_SPIT_GROWTH_III" />
+        </rules>
+    </element>
+    <element name="Pseudopod" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PSEUDOPOD_GROWTH_III">
+        <requirements>!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
+        <description>
+            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d10 + 1) acid damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d10 + 1) acid damage.</description>
+        </sheet>
+    </element>
+    <element name="Engulf" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_ENGULF_GROWTH_III">
+        <supports>Gelatinooze, Companion Improvement</supports>
+        <requirements>!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>As an action, the gelatinooze can move up to its speed. While doing so, it can enter the space of creatures smaller than its size. Whenever the gelatinooze enters a creature’s space, the creature must make a Dexterity saving throw.</p>
+            <p>On a successful save, the creature can choose to be pushed 5 feet back or to the side of the gelatinooze. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.</p>
+            <p>On a failed save, the gelatinooze enters the creature’s space, stops moving, and engulfs the creature, which takes 14 (4d6) acid damage. The engulfed creature can’t breathe, is restrained, and takes 14 (4d6) acid damage at the start of each of the gelatinooze’s turns. When the gelatinooze moves, the engulfed creature moves with it. The gelatinooze can have only one creature engulfed at a time.</p>
+            <p>An engulfed creature can try to escape by taking an action to make a Strength check against the gelatinooze’s save DC. On a success, the creature escapes and enters a space of its choice within 5 feet of the gelatinooze.</p>
+        </description>
+        <sheet>
+            <description action="Action">As an action, the gelatinooze can move up to its speed. While doing so, it can enter the space of creatures smaller than its size. Whenever the gelatinooze enters a creature’s space, the creature must make a DC {{gelatinooze:dc}} Dexterity saving throw.&#13;
+            On a successful save, the creature can choose to be pushed 5 feet back or to the side of the gelatinooze. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.&#13;
+            On a failed save, the gelatinooze enters the creature’s space, stops moving, and engulfs the creature, which takes 14 (4d6) acid damage. The engulfed creature can’t breathe, is restrained, and takes 14 (4d6) acid damage at the start of each of the gelatinooze’s turns. When the gelatinooze moves, the engulfed creature moves with it. The gelatinooze can have only one creature engulfed at a time.&#13;
+            An engulfed creature can try to escape by taking an action to make a Strength check against the gelatinooze’s save DC. On a success, the creature escapes and enters a space of its choice within 5 feet of the gelatinooze.</description>
+        </sheet>
+    </element>
+    <element name="Spit" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_SPIT_GROWTH_III">
+        <requirements>!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
+        <description>
+            <p>Ranged Weapon Attack: Str or Dex modifier + PB to hit, range 20/60 ft., one target. Hit: 2d10 + Str or Dex modifier acid damage.</p>
+        </description>
+        <sheet>
+            <description>Ranged Weapon Attack: Str or Dex modifier + PB to hit, range 20/60 ft., one target. Hit: 2d10 + Str or Dex modifier acid damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Growth IV" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV">
+        <supports>Gelatinooze, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Growth III</prerequisite>
+        <requirements>[level:tamer:13],ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_I,ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_II,ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_III</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>The gelatinooze’s size increases to Huge, it becomes shaped like a d12, and its Hit Die size increases to a d12 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage dice of its Pseudopod and Spit attacks increase from a d10 to a d12, and its Engulf action’s damage increases to 17 (5d6). This growth improvement ignores the normal maximum companion size for a tamer.</p>
+        </description>
+        <sheet>
+            <description>The gelatinooze’s size increases to Huge, it becomes shaped like a d12, and its Hit Die size increases to a d12 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage dice of its Pseudopod and Spit attacks increase from a d10 to a d12, and its Engulf action’s damage increases to 17 (5d6). This growth improvement ignores the normal maximum companion size for a tamer.</description>
+        </sheet>
+        <rules>
+            <stat name="companion:hp:max" value="5" />
+            <stat name="companion:hp:max" value="5" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+
+            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PSEUDOPOD_GROWTH_IV" />
+            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_ENGULF_GROWTH_IV" />
+            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_SPIT_GROWTH_IV" />
+        </rules>
+    </element>
+    <element name="Pseudopod" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PSEUDOPOD_GROWTH_IV">
+        <description>
+            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 7 (1d12 + 1) acid damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 7 (1d12 + 1) acid damage.</description>
+        </sheet>
+    </element>
+    <element name="Engulf" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_ENGULF_GROWTH_IV">
+        <supports>Gelatinooze, Companion Improvement</supports>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>As an action, the gelatinooze can move up to its speed. While doing so, it can enter the space of creatures smaller than its size. Whenever the gelatinooze enters a creature’s space, the creature must make a Dexterity saving throw.</p>
+            <p>On a successful save, the creature can choose to be pushed 5 feet back or to the side of the gelatinooze. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.</p>
+            <p>On a failed save, the gelatinooze enters the creature’s space, stops moving, and engulfs the creature, which takes 17 (5d6) acid damage. The engulfed creature can’t breathe, is restrained, and takes 17 (5d6) acid damage at the start of each of the gelatinooze’s turns. When the gelatinooze moves, the engulfed creature moves with it. The gelatinooze can have only one creature engulfed at a time.</p>
+            <p>An engulfed creature can try to escape by taking an action to make a Strength check against the gelatinooze’s save DC. On a success, the creature escapes and enters a space of its choice within 5 feet of the gelatinooze.</p>
+        </description>
+        <sheet>
+            <description action="Action">As an action, the gelatinooze can move up to its speed. While doing so, it can enter the space of creatures smaller than its size. Whenever the gelatinooze enters a creature’s space, the creature must make a DC {{gelatinooze:dc}} Dexterity saving throw.&#13;
+            On a successful save, the creature can choose to be pushed 5 feet back or to the side of the gelatinooze. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.&#13;
+            On a failed save, the gelatinooze enters the creature’s space, stops moving, and engulfs the creature, which takes 17 (5d6) acid damage. The engulfed creature can’t breathe, is restrained, and takes 17 (5d6) acid damage at the start of each of the gelatinooze’s turns. When the gelatinooze moves, the engulfed creature moves with it. The gelatinooze can have only one creature engulfed at a time.&#13;
+            An engulfed creature can try to escape by taking an action to make a Strength check against the gelatinooze’s save DC. On a success, the creature escapes and enters a space of its choice within 5 feet of the gelatinooze.</description>
+        </sheet>
+    </element>
+    <element name="Spit" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_SPIT_GROWTH_IV">
+        <description>
+            <p>Ranged Weapon Attack: Str or Dex modifier + PB to hit, range 20/60 ft., one target. Hit: 2d12 + Str or Dex modifier acid damage.</p>
+        </description>
+        <sheet>
+            <description>Ranged Weapon Attack: Str or Dex modifier + PB to hit, range 20/60 ft., one target. Hit: 2d12 + Str or Dex modifier acid damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Sanctuary" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_SANCTUARY">
+        <supports>Gelatinooze, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Engulf</prerequisite>
+        <requirements>[level:tamer:13],ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_ENGULF</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>As an action, the gelatinooze can move into the space of an object or willing creature that is smaller than it and encapsulate it within its body. The object or creature can be seen but has total cover. No energy or spell effects that either originate from or target the encapsulated object or creature can pass through the gelatinooze. The gelatinooze naturally diffuses air to the object or creature within it, allowing it to breathe. The gelatinooze can contain up to 1 creature of a size smaller than it, whether it has it engulfed (using the Engulf action) or encapsulated using this trait.</p>
+            <p>An encapsulated creature can exit the polyhedrooze by expending 2 feet of movement for each foot of gelatinooze that it passes through. As a bonus action, the gelatinooze can expel the object or creature into an adjacent, unoccupied space of the gelatinooze’s choice.</p>
+        </description>
+        <sheet>
+            <description action="Action">As an action, the gelatinooze can move into the space of an object or willing creature that is smaller than it and encapsulate it within its body. The object or creature can be seen but has total cover. No energy or spell effects that either originate from or target the encapsulated object or creature can pass through the gelatinooze. The gelatinooze naturally diffuses air to the object or creature within it, allowing it to breathe. The gelatinooze can contain up to 1 creature of a size smaller than it, whether it has it engulfed (using the Engulf action) or encapsulated using this trait. An encapsulated creature can exit the polyhedrooze by expending 2 feet of movement for each foot of gelatinooze that it passes through. As a bonus action, the gelatinooze can expel the object or creature into an adjacent, unoccupied space of the gelatinooze’s choice.</description>
+        </sheet>
+    </element>
+
+    <element name="Erupt" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_ERUPT">
+        <supports>Gelatinooze, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 17th-level tamer, Phalanx or Turtle</prerequisite>
+        <requirements>[level:tamer:17],ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PHALANX|ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_TURTLE</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>As an action, the gelatinooze can fire all the shrapnel, armour, and weapons it has accumulated in its body. It can choose to focus this in a 60-foot cone or erupt in all directions in a 20-foot-radius sphere centred on itself. Each creature in the area other than the gelatinooze must make a Dexterity saving throw.</p>
+            <p>A creature takes 14 (4d6) bludgeoning damage, 14 (4d6) piercing damage, 14 (4d6) slashing damage, and 14 (4d6) acid damage on a failed save, or half as much damage on a successful one.</p>
+            <p>After the gelatinooze uses this action, it can’t use its Erupt, Phalanx, or Turtle actions until it spends 1 hour absorbing rocks, metal, and other bric-a-brac.</p>
+        </description>
+        <sheet>
+            <description action="Action">As an action, the gelatinooze can fire all the shrapnel, armour, and weapons it has accumulated in its body. It can choose to focus this in a 60-foot cone or erupt in all directions in a 20-foot-radius sphere centred on itself. Each creature in the area other than the gelatinooze must make a DC {{gelatinooze:dc}} Dexterity saving throw. A creature takes 14 (4d6) bludgeoning damage, 14 (4d6) piercing damage, 14 (4d6) slashing damage, and 14 (4d6) acid damage on a failed save, or half as much damage on a successful one. After the gelatinooze uses this action, it can’t use its Erupt, Phalanx, or Turtle actions until it spends 1 hour absorbing rocks, metal, and other bric-a-brac.</description>
+        </sheet>
+    </element>
+</elements>

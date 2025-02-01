@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Familiars</name>
+        <description>Familiars from Heliana's Guide to Monster Hunting</description>
+        <update version="0.1.0">
+            <file name="Minimic.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Minimic.xml" />
+        </update>
+    </info>
+
+    <element name="Minimic" type="Companion" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_MINIMIC">
+        <supports>Familiar, Variant Familiar, Bespoke Companion</supports>
+        <description>
+            <div class="sidebar">
+                <p class="flavor">Wait! Not that tankard. And not that plate! It looks like the minimics have been breeding again. You can tell by the eyes. Everyone check your purses for mimic eggs, folks!</p>
+                <p>— Heliana, Wary of Coins</p>
+            </div>
+            <p><b>Type:</b> Monstrosity (shapechanger)</p>
+            <p><b>Creature Component:</b> Any mimic</p>
+            <p><b>Bonus Tamer Improvement:</b> Growth I and +2 Hit Dice</p>
+            <p>With an appearance like regular household objects and the ability to change shape at will, minimics are easy to lose. Their adhesive epidermis sticks to everything; tamers with minimic companions often have a bottle of solvent on hand. A minimic’s ability to keep a foe grappled can be a useful battlefield control tactic, especially when deployed as an inanimate object for ambush operations.</p>
+            <p>If any of the minimic’s traits or actions require a saving throw, it is always against the minimic’s save DC, as calculated below.</p>
+            <center>
+                <p><b>Save DC</b> = 8 + the tamer’s proficiency bonus + the minimic’s Constitution modifier</p>
+            </center>
+            <h4>Monster Trainer</h4>
+            <p>In addition to the improvements you can normally give your companions, you can choose to grant the minimic the following improvements using your Monster Trainer feature:</p>
+            <div class="reference">
+                <div element="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_I" />
+                <div element="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GRAPPLER" />
+                <div element="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_IMPROVED_ADHESIVE" />
+                <div element="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_II" />
+                <div element="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_MULTIATTACK" />
+                <div element="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_REGURGITATE_I" />
+                <div element="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_THICK_SKIN" />
+                <div element="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_ACIDIC_SWEAT" />
+                <div element="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_REGURGITATE_II" />
+                <div element="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_III" />
+            </div>
+        </description>
+        <setters>
+            <set name="strength">12</set>
+            <set name="dexterity">11</set>
+            <set name="constitution">14</set>
+            <set name="intelligence">4</set>
+            <set name="wisdom">10</set>
+            <set name="charisma">6</set>
+            <set name="ac">12 (natural armour)</set>
+            <set name="hp">4 (1d4+2)</set>
+            <set name="speed">25 ft.</set>
+            <set name="senses">darkvision 60 ft., passive Perception 10</set>
+            <set name="languages">—</set>
+            <set name="immunities">acid</set>
+            <set name="condition immunities">prone</set>
+            <set name="skills">Stealth +2</set>
+            <set name="type">Monstrosity (shapechanger)</set>
+            <set name="size">Tiny</set>
+            <set name="alignment">unaligned</set>
+            <set name="challenge">1/8</set>
+            <set name="proficiency">2</set>
+            <set name="traits">ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_ADHESIVE,ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_FALSE_APPEARANCE,ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_SHAPECHANGER</set>
+            <set name="actions">ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_PSEUDOPOD,ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_BITE</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="12" />
+            <stat name="companion:hp:max" value="4" bonus="base" />
+            <stat name="companion:speed" value="25" bonus="base" />
+            <stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
+
+            <stat name="minimic:dc" value="8" />
+            <stat name="minimic:dc" value="proficiency" bonus="proficiency" />
+            <stat name="minimic:dc" value="companion:constitution:modifier" />
+        </rules>
+    </element>
+
+    <element name="Adhesive" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_ADHESIVE">
+        <description>
+            <p>The minimic adheres to anything that touches it. A creature no more than one size larger than the minimic that is adhered to the minimic is also grappled by it (escape DC 12).</p>
+        </description>
+        <sheet>
+            <description>The minimic adheres to anything that touches it. A creature no more than one size larger than the minimic that is adhered to the minimic is also grappled by it (escape DC 12).</description>
+        </sheet>
+    </element>
+
+    <element name="False Appearance" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_FALSE_APPEARANCE">
+        <description>
+            <p>While the minimic remains motionless, it is indistinguishable from an ordinary object.</p>
+        </description>
+        <sheet>
+            <description>While the minimic remains motionless, it is indistinguishable from an ordinary object.</description>
+        </sheet>
+    </element>
+
+    <element name="Shapechanger" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_SHAPECHANGER">
+        <description>
+            <p>The minimic can use its action to polymorph into an object equal to it in size, or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.</p>
+        </description>
+        <sheet>
+            <description>The minimic can use its action to polymorph into an object equal to it in size, or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.</description>
+        </sheet>
+    </element>
+
+    <element name="Pseudopod" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_PSEUDOPOD">
+        <requirements>!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_I|!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_II|!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_III</requirements>
+        <description>
+            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage. The target is subjected to the minimic’s Adhesive trait.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage. The target is subjected to the minimic’s Adhesive trait.</description>
+        </sheet>
+    </element>
+
+    <element name="Bite" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_BITE">
+        <requirements>!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_I|!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_II|!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_III</requirements>
+        <description>
+            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage plus 2 (1d4) acid damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage plus 2 (1d4) acid damage.</description>
+        </sheet>
+    </element>
+
+    <!-- Companion's Improvements -->
+    <element name="Growth I" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_I">
+        <supports>Minimic, Companion Improvement</supports>
+        <prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
+        <requirements>[level:tamer:1],!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_II,!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_III</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>The minimic’s size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its Bite and Pseudopod attacks increase to a d6. The minimic gains this improvement when it becomes a companion; it doesn’t cost an improvement.</p>
+        </description>
+        <sheet>
+            <description>The minimic’s size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its Bite and Pseudopod attacks increase to a d6. The minimic gains this improvement when it becomes a companion; it doesn’t cost an improvement.</description>
+        </sheet>
+        <rules>
+            <stat name="companion:hp:max" value="2" />
+            <stat name="companion:hp:max" value="5" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+
+            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_PSEUDOPOD_GROWTH_I" />
+            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_BITE_GROWTH_I" />
+        </rules>
+    </element>
+    <element name="Pseudopod" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_PSEUDOPOD_GROWTH_I">
+        <requirements>!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_II|!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_III</requirements>
+        <description>
+            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage. The target is subjected to the minimic’s Adhesive trait.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage. The target is subjected to the minimic’s Adhesive trait.</description>
+        </sheet>
+    </element>
+    <element name="Bite" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_BITE_GROWTH_I">
+        <requirements>!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_II|!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_III</requirements>
+        <description>
+            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage plus 3 (1d6) acid damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage plus 3 (1d6) acid damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Grappler" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GRAPPLER">
+        <supports>Minimic, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>The minimic has advantage on attack rolls against any creature grappled by it.</p>
+        </description>
+        <sheet>
+            <description>The minimic has advantage on attack rolls against any creature grappled by it.</description>
+        </sheet>
+    </element>
+
+    <element name="Improved Adhesive" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_IMPROVED_ADHESIVE">
+        <supports>Minimic, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>Creatures grappled by the minimic have disadvantage on ability checks made to escape its grapple.</p>
+        </description>
+        <sheet>
+            <description>Creatures grappled by the minimic have disadvantage on ability checks made to escape its grapple.</description>
+        </sheet>
+    </element>
+
+    <element name="Growth II" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_II">
+        <supports>Minimic, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 5th-level tamer, Growth I</prerequisite>
+        <requirements>[level:tamer:5],ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_I,!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_III</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>The minimic’s size increases to Medium, its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its Bite and Pseudopod attacks increase from a d6 to a d8.</p>
+        </description>
+        <sheet>
+            <description>The minimic’s size increases to Medium, its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its Bite and Pseudopod attacks increase from a d6 to a d8.</description>
+        </sheet>
+        <rules>
+            <stat name="companion:hp:max" value="3" />
+            <stat name="companion:hp:max" value="5" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+
+            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_PSEUDOPOD_GROWTH_II" />
+            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_BITE_GROWTH_II" />
+        </rules>
+    </element>
+    <element name="Pseudopod" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_PSEUDOPOD_GROWTH_II">
+        <requirements>!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_III</requirements>
+        <description>
+            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) bludgeoning damage. The target is subjected to the minimic’s Adhesive trait.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) bludgeoning damage. The target is subjected to the minimic’s Adhesive trait.</description>
+        </sheet>
+    </element>
+    <element name="Bite" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_BITE_GROWTH_II">
+        <requirements>!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_III</requirements>
+        <description>
+            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage plus 4 (1d8) acid damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage plus 4 (1d8) acid damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Multiattack" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_MULTIATTACK">
+        <supports>Minimic, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>As an action, the minimic can make two attacks: one with its Pseudopod and one with its Bite.</p>
+        </description>
+        <sheet>
+            <description>As an action, the minimic can make two attacks: one with its Pseudopod and one with its Bite.</description>
+        </sheet>
+    </element>
+
+    <element name="Regurgitate I" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_REGURGITATE_I">
+        <supports>Minimic, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5],!ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_REGURGITATE_II</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>As an action, the minimic can regurgitate a torrent of acidic bile. Each creature in a 15-foot cone must make a Dexterity saving throw, taking 17 (5d6) acid damage on a failed save, or half as much damage on a successful one.</p>
+            <p>After the minimic uses this action, it can’t do so again until its tamer finishes a short or long rest.</p>
+            <p>When the minimic’s tamer reaches 9th level in the tamer class, the damage of this action increases to 24 (7d6).</p>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Short Rest">As an action, the minimic can regurgitate a torrent of acidic bile. Each creature in a 15-foot cone must make a DC {{minimic:dc}} Dexterity saving throw, taking 17 (5d6) acid damage on a failed save, or half as much damage on a successful one. After the minimic uses this action, it can’t do so again until its tamer finishes a short or long rest.</description>
+            <description level="9" action="Action" usage="1/Short Rest">As an action, the minimic can regurgitate a torrent of acidic bile. Each creature in a 15-foot cone must make a DC {{minimic:dc}} Dexterity saving throw, taking 24 (7d6) acid damage on a failed save, or half as much damage on a successful one. After the minimic uses this action, it can’t do so again until its tamer finishes a short or long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Thick Skin" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_THICK_SKIN">
+        <supports>Minimic, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
+        <requirements>[level:tamer:9]</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>The minimic gains a +2 bonus to its AC while it isn’t wearing armour.</p>
+        </description>
+        <sheet>
+            <description>The minimic gains a +2 bonus to its AC while it isn’t wearing armour.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:companion:ac" value="2" />
+            <stat name="ac:calculation" value="ac:companion:ac" bonus="calculation" equipped="[armor:none]"/>
+        </rules>
+    </element>
+
+    <element name="Acidic Sweat" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_ACIDIC_SWEAT">
+        <supports>Minimic, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 13th-level tamer</prerequisite>
+        <requirements>[level:tamer:13]</requirements>
+        <description>
+            <p><b>Type:</b> Active (bonus action)</p>
+            <p>As a bonus action, the minimic can secrete acid. Each creature grappling or grappled by the minimic takes acid damage equal to the minimic’s current Hit Die size (1d4, or higher, if it has further Growth improvements).</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action">As a bonus action, the minimic can secrete acid. Each creature grappling or grappled by the minimic takes acid damage equal to the minimic’s current Hit Die size (1d4, or higher, if it has further Growth improvements).</description>
+        </sheet>
+    </element>
+
+    <element name="Regurgitate II" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_REGURGITATE_II">
+        <supports>Minimic, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Regurgitate I</prerequisite>
+        <requirements>[level:tamer:13],ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_REGURGITATE_I</requirements>
+        <description>
+            <p><b>Type:</b> Active (action)</p>
+            <p>The damage of the minimic’s Regurgitate action increases to 31 (9d6), and the size of the cone increases to 25 feet. The minmic gains a +1 bonus to the save DC of this action.</p>
+            <p>When the minimic’s tamer reaches 17th level in the tamer class, the damage of this action increases to 42 (12d6).</p>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Short Rest">The damage of the minimic’s Regurgitate action increases to 31 (9d6), and the size of the cone increases to 25 feet. The minmic gains a +1 bonus to the save DC of this action.</description>
+            <description level="17" action="Action" usage="1/Short Rest">The damage of the minimic’s Regurgitate action increases to 42 (12d6), and the size of the cone increases to 25 feet. The minmic gains a +1 bonus to the save DC of this action.</description>
+        </sheet>
+        <rules>
+            <stat name="minimic:dc" value="1" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Growth III" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_III">
+        <supports>Minimic, Companion Improvement</supports>
+        <prerequisite>Prerequisite: 17th-level tamer, Growth II</prerequisite>
+        <requirements>[level:tamer:17],ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_I,ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_II</requirements>
+        <description>
+            <p><b>Type:</b> Passive (companion)</p>
+            <p>The minimic’s size increases to Large, its Hit Die size increases to a d10 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its Bite and Pseudopod attacks increase from a d8 to a d10.</p>
+        </description>
+        <sheet>
+            <description>The minimic’s size increases to Large, its Hit Die size increases to a d10 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its Bite and Pseudopod attacks increase from a d8 to a d10.</description>
+        </sheet>
+        <rules>
+            <stat name="companion:hp:max" value="4" />
+            <stat name="companion:hp:max" value="5" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+
+            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_PSEUDOPOD_GROWTH_III" />
+            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_BITE_GROWTH_III" />
+        </rules>
+    </element>
+    <element name="Pseudopod" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_PSEUDOPOD_GROWTH_III">
+        <description>
+            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d10 + 1) bludgeoning damage. The target is subjected to the minimic’s Adhesive trait.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d10 + 1) bludgeoning damage. The target is subjected to the minimic’s Adhesive trait.</description>
+        </sheet>
+    </element>
+    <element name="Bite" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_BITE_GROWTH_III">
+        <description>
+            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d10 + 1) piercing damage plus 5 (1d10) acid damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d10 + 1) piercing damage plus 5 (1d10) acid damage.</description>
+        </sheet>
+    </element>
+</elements>
