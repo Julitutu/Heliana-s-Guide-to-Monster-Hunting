@@ -4,7 +4,7 @@
 		<name>Heliana's Guide to Monster Hunting</name>
 		<description>Items from Heliana's Guide to Monster Hunting</description>
 		<update version="0.1.0">
-			<file name="Wondrous Items.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Setting/Woundrous Items.xml" />
+			<file name="Wondrous.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Setting/Woundrous.xml" />
 		</update>
 	</info>
 
