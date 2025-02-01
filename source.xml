@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="sources.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/source.xml" />
 		</update>
 	</info>
-	<element name="Heliana's Guide to Monster Hunting" type="Setting" source="Heliana's Guide to Monster Hunting" id="ID_LT_SOURCE_HGTMH">
+	<element name="Heliana's Guide to Monster Hunting" type="Source" source="Heliana's Guide to Monster Hunting" id="ID_LT_SOURCE_HGTMH">
 		<description>
 			<![CDATA[<p><strong>Heliana’s Guide to Monster Hunting is a collection of ideas.</strong></p><p> You are encouraged to use whichever pieces of this book you like and change the ones you don’t. If there is a DC that seems off, a name that doesn’t fit, or a quest hook that seems incongruous, then make it your own. Remember: if you’re all having fun, you’re doing it right.</p>]]>
 		</description>
