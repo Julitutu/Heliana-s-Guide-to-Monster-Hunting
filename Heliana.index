@@ -6,8 +6,7 @@
     </update>
   </info>
   <files>
-
-			<file name="sources.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/source.xml" />
+	<file name="sources.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/source.xml" />
     <!-- Races -->
       <file name="race-cnidaran.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Races/race-cnidaran.xml" />
       <file name="race-cyclopian.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Races/race-cyclopian.xml" />
@@ -30,17 +29,17 @@
       <file name="Wizard.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Classes/Wizard.xml" />
 
     <!-- Familiars -->
-<!--       <file name="Minimic.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Minimic.xml" />
+      <file name="Minimic.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Minimic.xml" />
       <file name="Mechakobold.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Mechakobold.xml" />
       <file name="Hyphan.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Hyphan.xml" />
       <file name="Gelatinooze.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Gelatinooze.xml" />
       <file name="Dragonling.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Dragonling.xml" />
-			<file name="Aboling.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Aboling.xml" /> 
+      <file name="Aboling.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Aboling.xml" /> 
       <file name="Tarling.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Tarling.xml" />
       <file name="Sunsnacker.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Sunsnacker.xml" />
       <file name="Rakitten.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Rakitten.xml" />
       <file name="Peeper.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Peeper.xml" />
- -->
+
     <!-- Settings -->
 			<file name="Armor.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Setting/Armor.xml" />
 			<file name="Monster Components.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Setting/Monster Components.xml" />
