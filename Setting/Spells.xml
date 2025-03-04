@@ -3,7 +3,7 @@
   <info>
     <name>Spells</name>
     <source>Heliana's Guide to Monster Hunting</source>
-    <update version="0.0.1">
+    <update version="0.1.1">
       <file name="Spells.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Setting/Spells.xml" />
     </update>
   </info>
@@ -111,7 +111,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Bone Cage" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_BONE_CAGE">
+  <element name="Bone Cage" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_BONE_CAGE_NECROMANCY">
     <supports>Cleric, Druid, Paladin, Warlock, Wizard</supports>
     <description>
       <p>You draw the bones from all corpses within range, forming a carapace of ribcages and femurs. You gain temporary hit points for each Small or larger corpse wholly or partly within range, according to its size, that last for the duration:</p>
@@ -148,7 +148,56 @@
     </description>
     <setters>
       <set name="level">5</set>
-      <set name="school">Biomancy/Necromancy</set>
+      <set name="school">Necromancy</set>
+      <set name="time">1 action</set>
+      <set name="range">Self (20-foot-radius sphere)</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">the bones of at least one non-animated corpse, which the spell consumes</set>
+      <set name="duration">1 minute</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Bone Cage" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_BONE_CAGE_BIOMANCY">
+    <supports>Cleric, Druid, Paladin, Warlock, Wizard</supports>
+    <description>
+      <p>You draw the bones from all corpses within range, forming a carapace of ribcages and femurs. You gain temporary hit points for each Small or larger corpse wholly or partly within range, according to its size, that last for the duration:</p>
+      <table>
+        <thead>
+          <tr>
+            <td class="left">Size</td>
+            <td class="left">Temporary Hit Points Gained</td>
+          </tr>
+        </thead>
+          <tr>
+            <td class="left">Small</td>
+            <td class="left">1d6+1</td>
+          </tr>
+          <tr>
+            <td class="left">Medium</td>
+            <td class="left">1d8+2</td>
+          </tr>
+          <tr>
+            <td class="left">Large</td>
+            <td class="left">1d10+5</td>
+          </tr>
+          <tr>
+            <td class="left">Huge</td>
+            <td class="left">1d12+12</td>
+          </tr>
+          <tr>
+            <td class="left">Gargantuan</td>
+            <td class="left">1d20+25</td>
+          </tr>
+      </table>
+      <p>As an action on a subsequent turn, you can cause your armour of bones to erupt, expending all remaining temporary hit points. Each other creature within range must make a Dexterity saving throw, taking piercing damage equal to your expended temporary hit points on a failure, or half as much damage on a success. Whatever the manner in which the temporary hit points are lost, the bones shatter and can’t be used in this way again.</p>
+      <p><b>At Higher Levels.</b> When you cast this spell using a spell slot of 6th level or higher, the radius of this spell increases by 10 feet for each slot level above 5th.</p>
+    </description>
+    <setters>
+      <set name="level">5</set>
+      <set name="school">Biomancy</set>
       <set name="time">1 action</set>
       <set name="range">Self (20-foot-radius sphere)</set>
       <set name="hasVerbalComponent">true</set>
@@ -805,7 +854,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Influenza" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_INFLUENZA">
+  <element name="Influenza" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_INFLUENZA_NECROMANCY">
     <supports>Cleric, Druid, Warlock, Spell Saving Throw</supports>
     <description>
       <p>With a mighty sneeze that can be heard up to 300 feet away, you blast forth a 30-foot cone of phlegm, bad breath, and viral pathogens. Each creature in the area must make a Dexterity saving throw. On a failed save, a creature takes 3d6 poison damage and is poisoned for the duration. On a successful save, the creature takes half as much damage and isn’t poisoned.</p>
@@ -815,7 +864,29 @@
     </description>
     <setters>
       <set name="level">3</set>
-      <set name="school">Biomancy/Necromancy</set>
+      <set name="school">Necromancy</set>
+      <set name="time">1 action</set>
+      <set name="range">Self (30-foot cone)</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">some pollen</set>
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Influenza" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_INFLUENZA_BIOMANCY">
+    <supports>Cleric, Druid, Warlock, Spell Saving Throw</supports>
+    <description>
+      <p>With a mighty sneeze that can be heard up to 300 feet away, you blast forth a 30-foot cone of phlegm, bad breath, and viral pathogens. Each creature in the area must make a Dexterity saving throw. On a failed save, a creature takes 3d6 poison damage and is poisoned for the duration. On a successful save, the creature takes half as much damage and isn’t poisoned.</p>
+      <p>A poisoned creature can make a Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+      <p>Whilst poisoned in this way, a creature must roll a d12 at the start of each of its turns. On a 3 or lower, it is racked by a coughing fit and becomes incapacitated until the start of its next turn. Each creature within 5 feet of a creature when it becomes incapacitated in this way must succeed on a Constitution saving throw or also become poisoned in this way for the spell’s duration.</p>
+      <p><b>At Higher Levels.</b> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 and the value a poisoned creature must roll on the d12 to cause a coughing fit increases by 1 for each slot level above 3rd.</p>
+    </description>
+    <setters>
+      <set name="level">3</set>
+      <set name="school">Biomancy</set>
       <set name="time">1 action</set>
       <set name="range">Self (30-foot cone)</set>
       <set name="hasVerbalComponent">true</set>
@@ -847,7 +918,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Lungburst" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_LUNGBURST">
+  <element name="Lungburst" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_LUNGBURST_EVOCATION">
     <supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
     <description>
       <p>You cause rapid unpredictable changes in the internal air pressure of a creature you can see within range, rupturing its breathing apparatus. The creature must make a Constitution saving throw. A creature that is holding its breath makes this saving throw with disadvantage. On a failure, a creature takes 7d6 thunder damage, 7d6 necrotic damage, and immediately begins suffocating. On a success, a creature takes half as much damage and does not begin suffocating. A creature suffocating in this way can repeat the saving throw at the end of each of its turns, ending its suffocation on a success.</p>
@@ -856,7 +927,7 @@
     </description>
     <setters>
       <set name="level">6</set>
-      <set name="school">Biomancy/Evocation</set>
+      <set name="school">Evocation</set>
       <set name="time">1 action</set>
       <set name="range">90 feet</set>
       <set name="hasVerbalComponent">true</set>
@@ -868,6 +939,28 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
+  <element name="Lungburst" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_LUNGBURST_BIOMANCY">
+    <supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+    <description>
+      <p>You cause rapid unpredictable changes in the internal air pressure of a creature you can see within range, rupturing its breathing apparatus. The creature must make a Constitution saving throw. A creature that is holding its breath makes this saving throw with disadvantage. On a failure, a creature takes 7d6 thunder damage, 7d6 necrotic damage, and immediately begins suffocating. On a success, a creature takes half as much damage and does not begin suffocating. A creature suffocating in this way can repeat the saving throw at the end of each of its turns, ending its suffocation on a success.</p>
+      <p>A creature that does not need to breathe is immune to the effects of this spell. A greater restoration, heal, or wish spell can restore a creature’s ability to breathe, and end its suffocation.</p>
+      <p><b>At Higher Levels.</b> When you cast this spell using a spell slot of 7th level or higher, the thunder and necrotic damage both increase by 1d6 for each slot level above 6th.</p>
+    </description>
+    <setters>
+      <set name="level">6</set>
+      <set name="school">Biomancy</set>
+      <set name="time">1 action</set>
+      <set name="range">90 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="duration">Instantaneous</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  
     <element name="Magnetite Shard" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_MAGNETITE_SHARD">
     <supports>Druid, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
     <description>
@@ -978,7 +1071,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Mortiferous Pulse" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_MORTIFEROUS_PULSE">
+  <element name="Mortiferous Pulse" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_MORTIFEROUS_PULSE_NECROMANCY">
     <supports>Druid, Warlock</supports>
     <description>
       <p>You summon a bolt of negative energy to stimulate and transmit necrotic pathogens into those that stand before you, decaying their internal viscera. Each creature in a 5-foot-wide, 50-foot-long line extending from you must make a Dexterity saving throw, taking 3d8 necrotic damage on a failed save, or half as much damage on a successful one.</p>
@@ -986,7 +1079,27 @@
     </description>
     <setters>
       <set name="level">2</set>
-      <set name="school">Biomancy/Necromancy</set>
+      <set name="school">Necromancy</set>
+      <set name="time">1 action</set>
+      <set name="range">Self (50-foot line)</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a dead animal</set>
+      <set name="duration">Instantaneous</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Mortiferous Pulse" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_MORTIFEROUS_PULSE_BIOMANCY">
+    <supports>Druid, Warlock</supports>
+    <description>
+      <p>You summon a bolt of negative energy to stimulate and transmit necrotic pathogens into those that stand before you, decaying their internal viscera. Each creature in a 5-foot-wide, 50-foot-long line extending from you must make a Dexterity saving throw, taking 3d8 necrotic damage on a failed save, or half as much damage on a successful one.</p>
+      <p><b>At Higher Levels.</b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+    </description>
+    <setters>
+      <set name="level">2</set>
+      <set name="school">Biomancy</set>
       <set name="time">1 action</set>
       <set name="range">Self (50-foot line)</set>
       <set name="hasVerbalComponent">true</set>
@@ -1018,7 +1131,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Pins &amp; Needles" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_PINS_AND_NEEDLES">
+  <element name="Pins &amp; Needles" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_PINS_AND_NEEDLES_EVOCATION">
     <supports>Druid, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
     <description>
       <p>You momentarily shut down a small part of the nervous system of a creature you can see within range, before overstimulating it and causing crippling pain. The creature must succeed on a Constitution saving throw or take 1d8 psychic damage. If the target fails its saving throw by 5 or more, it has disadvantage on the next attack roll it makes before the end of its next turn as it temporarily loses full control of a part of its body.</p>
@@ -1026,7 +1139,27 @@
     </description>
     <setters>
       <set name="level">0</set>
-      <set name="school">Biomancy/Evocation</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="range">60 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="duration">Instantaneous</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Pins &amp; Needles" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_PINS_AND_NEEDLES_BIOMANCY">
+    <supports>Druid, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+    <description>
+      <p>You momentarily shut down a small part of the nervous system of a creature you can see within range, before overstimulating it and causing crippling pain. The creature must succeed on a Constitution saving throw or take 1d8 psychic damage. If the target fails its saving throw by 5 or more, it has disadvantage on the next attack roll it makes before the end of its next turn as it temporarily loses full control of a part of its body.</p>
+      <p>This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+    </description>
+    <setters>
+      <set name="level">0</set>
+      <set name="school">Biomancy</set>
       <set name="time">1 action</set>
       <set name="range">60 feet</set>
       <set name="hasVerbalComponent">true</set>
@@ -1057,7 +1190,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Preserve" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_PRESERVE">
+  <element name="Preserve" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_PRESERVE_ABJURATION">
     <supports>Cleric, Druid, Paladin, Ranger, Tamer, Wizard, Spell Saving Throw</supports>
     <description>
       <p>With a flare of brilliant octarine light, each creature within a 10-foot-radius sphere centred on a point you can see within range must succeed on a Charisma saving throw or become soulbound for the duration, its magical essence tied to its physical (or incorporeal) form. If a creature dies while soulbound, its magic is bound to its components for 24 hours allowing harvesting to start at any time within this period (see page 87 for the rules on harvesting). Once harvesting starts on a corpse under the effect of this spell, the spell ends for that corpse. Creatures possessing robust or more powerful essence (typically, those of CR 7 or higher) automatically succeed on this saving throw.</p>
@@ -1065,7 +1198,27 @@
     </description>
     <setters>
       <set name="level">2</set>
-      <set name="school">Biomancy/Abjuration</set>
+      <set name="school">Abjuration</set>
+      <set name="time">1 action</set>
+      <set name="range">60 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">some ether</set>
+      <set name="duration">24 hours</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Preserve" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_PRESERVE_BIOMANCY">
+    <supports>Cleric, Druid, Paladin, Ranger, Tamer, Wizard, Spell Saving Throw</supports>
+    <description>
+      <p>With a flare of brilliant octarine light, each creature within a 10-foot-radius sphere centred on a point you can see within range must succeed on a Charisma saving throw or become soulbound for the duration, its magical essence tied to its physical (or incorporeal) form. If a creature dies while soulbound, its magic is bound to its components for 24 hours allowing harvesting to start at any time within this period (see page 87 for the rules on harvesting). Once harvesting starts on a corpse under the effect of this spell, the spell ends for that corpse. Creatures possessing robust or more powerful essence (typically, those of CR 7 or higher) automatically succeed on this saving throw.</p>
+      <p><b>At Higher Levels.</b> When you cast this spell using a spell slot of 4th level or higher, the strength of the essence possessed by creatures that allows them to automatically succeed on the saving throw increases by one tier for each two slot levels above 2nd. Creatures with potent or more powerful essence (typically CR 12 or higher) automatically succeed at 4th level, mythic (typically CR 18 or higher) at 6th level, and deific (typically CR 25 or higher) at 8th level.</p>
+    </description>
+    <setters>
+      <set name="level">2</set>
+      <set name="school">Biomancy</set>
       <set name="time">1 action</set>
       <set name="range">60 feet</set>
       <set name="hasVerbalComponent">true</set>
@@ -1218,7 +1371,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Spore Cloud" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_SPORE_CLOUD">
+  <element name="Spore Cloud" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_SPORE_CLOUD_CONJURATION">
     <supports>Druid, Sorcerer, Warlock, Spell Saving Throw</supports>
     <description>
       <p>You produce a cloud of virulent spores. Each creature within 5 feet of you, other than you, must succeed on a Constitution saving throw or take 1d4 poison damage. A creature that fails the saving throw by 5 or more is poisoned until the end of its next turn.</p>
@@ -1226,7 +1379,27 @@
     </description>
     <setters>
       <set name="level">0</set>
-      <set name="school">Biomancy/Conjuration</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 action</set>
+      <set name="range">Self (5-foot-radius sphere)</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a toadstool</set>
+      <set name="duration">Instantaneous</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Spore Cloud" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_SPORE_CLOUD_BIOMANCY">
+    <supports>Druid, Sorcerer, Warlock, Spell Saving Throw</supports>
+    <description>
+      <p>You produce a cloud of virulent spores. Each creature within 5 feet of you, other than you, must succeed on a Constitution saving throw or take 1d4 poison damage. A creature that fails the saving throw by 5 or more is poisoned until the end of its next turn.</p>
+      <p>The spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
+    </description>
+    <setters>
+      <set name="level">0</set>
+      <set name="school">Biomancy</set>
       <set name="time">1 action</set>
       <set name="range">Self (5-foot-radius sphere)</set>
       <set name="hasVerbalComponent">true</set>
@@ -1279,7 +1452,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Sugar Rush" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_SUGAR_RUSH">
+  <element name="Sugar Rush" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_SUGAR_RUSH_TRANSMUTATION">
     <supports>Bard, Cleric, Paladin, Sorcerer, Tamer</supports>
     <description>
       <p>Choose a willing creature that you can see within range. Until the spell ends, the target’s speed is increased by 15 feet, and it gains a +1 bonus to AC. As a bonus action on each of its turns, it can take the Dash, Disengage, Hide, or Use an Object action.</p>
@@ -1288,7 +1461,7 @@
     </description>
     <setters>
       <set name="level">2</set>
-      <set name="school">Biomancy/Transmutation</set>
+      <set name="school">Transmutation</set>
       <set name="time">1 action</set>
       <set name="range">30 feet</set>
       <set name="hasVerbalComponent">true</set>
@@ -1300,7 +1473,28 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Swarm" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_SWARM">
+  <element name="Sugar Rush" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_SUGAR_RUSH_BIOMANCY">
+    <supports>Bard, Cleric, Paladin, Sorcerer, Tamer</supports>
+    <description>
+      <p>Choose a willing creature that you can see within range. Until the spell ends, the target’s speed is increased by 15 feet, and it gains a +1 bonus to AC. As a bonus action on each of its turns, it can take the Dash, Disengage, Hide, or Use an Object action.</p>
+      <p>When the spell ends, or if an affected creature does not spend movement up to its walking speed by the end of its turn, it then develops a stomach ache and is poisoned until the end of its next turn</p>
+      <p><b>At Higher Levels.</b> When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>
+    </description>
+    <setters>
+      <set name="level">2</set>
+      <set name="school">Biomancy</set>
+      <set name="time">1 action</set>
+      <set name="range">30 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">some candy</set>
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Swarm" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_SWARM_CONJURATION">
     <supports>Druid, Sorcerer, Warlock</supports>
     <description>
       <p>Choose a target within range; a cloud of minuscule poisonous spiders floats on gossamer strands towards it. The target must succeed on a Dexterity saving throw to avoid the spiders or become poisoned until the end of its next turn.</p>
@@ -1308,7 +1502,27 @@
     </description>
     <setters>
       <set name="level">0</set>
-      <set name="school">Biomancy/Conjuration</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 action</set>
+      <set name="range">90 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a spider sac</set>
+      <set name="duration">1 round</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Swarm" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_SWARM_BIOMANCY">
+    <supports>Druid, Sorcerer, Warlock</supports>
+    <description>
+      <p>Choose a target within range; a cloud of minuscule poisonous spiders floats on gossamer strands towards it. The target must succeed on a Dexterity saving throw to avoid the spiders or become poisoned until the end of its next turn.</p>
+      <p>This spell deals poison damage on a failed saving throw when you reach certain levels. When you reach 5th level, a creature takes 1d10 poison damage; at 11th level this increases to 2d10; and at 17th level this increases to 3d10.</p>
+    </description>
+    <setters>
+      <set name="level">0</set>
+      <set name="school">Biomancy</set>
       <set name="time">1 action</set>
       <set name="range">90 feet</set>
       <set name="hasVerbalComponent">true</set>
@@ -1341,7 +1555,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-    <element name="Tentacle Lash" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_TENTACLE_LASH">
+    <element name="Tentacle Lash" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_TENTACLE_LASH_TRANSMUTATION">
     <supports>Druid, Ranger, Warlock, Wizard, Spell Saving Throw</supports>
     <description>
       <p>One of your arms elongates into a long, wet, suckered tentacle. When you cast this spell, and as an action on each of your turns, you can make a melee spell attack against a creature within 30 feet of you. On a hit, the target takes 5d8 bludgeoning damage and it must make a Strength saving throw if it is Huge or smaller. On a failure, you can choose one of the following effects:</p>
@@ -1355,7 +1569,7 @@
     </description>
     <setters>
       <set name="level">4</set>
-      <set name="school">Biomancy/Transmutation</set>
+      <set name="school">Transmutation</set>
       <set name="time">1 action</set>
       <set name="range">Self</set>
       <set name="hasVerbalComponent">true</set>
@@ -1367,7 +1581,33 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="The Bends" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_THE_BENDS">
+  <element name="Tentacle Lash" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_TENTACLE_LASH_BIOMANCY">
+    <supports>Druid, Ranger, Warlock, Wizard, Spell Saving Throw</supports>
+    <description>
+      <p>One of your arms elongates into a long, wet, suckered tentacle. When you cast this spell, and as an action on each of your turns, you can make a melee spell attack against a creature within 30 feet of you. On a hit, the target takes 5d8 bludgeoning damage and it must make a Strength saving throw if it is Huge or smaller. On a failure, you can choose one of the following effects:</p>
+      <ul>
+        <li>The target is knocked prone.</li>
+        <li>The target is shoved 5 feet in a direction of your choice.</li>
+        <li>You disarm the target; you take one item the target is holding and return it to your person.</li>
+      </ul>
+      <p>The tentacle also serves as an appendage that can be used like a grappling hook or rope (GM’s discretion).</p>
+      <p><b>At Higher Levels.</b> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.</p>
+    </description>
+    <setters>
+      <set name="level">4</set>
+      <set name="school">Biomancy</set>
+      <set name="time">1 action</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a miniature plunger</set>
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="The Bends" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_THE_BENDS_TRANSMUTATION">
     <supports>Druid, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
     <description>
       <p>You assault the internal chemistry of a creature you can see within range, causing bubbles of nitrogen to precipitate in its blood, forcing it to make a Constitution saving throw. On a failed save, the target takes 5d8 poison damage and is poisoned for 1 minute. On a successful save, the target takes half as much damage and isn’t poisoned. If the target is completely submerged in water, increase the damage dice from d8s to d10s.</p>
@@ -1376,7 +1616,28 @@
     </description>
     <setters>
       <set name="level">3</set>
-      <set name="school">Biomancy/Transmutation</set>
+      <set name="school">Transmutation</set>
+      <set name="time">1 action</set>
+      <set name="range">90 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="duration">Instantaneous</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="The Bends" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_THE_BENDS_BIOMANCY">
+    <supports>Druid, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+    <description>
+      <p>You assault the internal chemistry of a creature you can see within range, causing bubbles of nitrogen to precipitate in its blood, forcing it to make a Constitution saving throw. On a failed save, the target takes 5d8 poison damage and is poisoned for 1 minute. On a successful save, the target takes half as much damage and isn’t poisoned. If the target is completely submerged in water, increase the damage dice from d8s to d10s.</p>
+      <p>The target can repeat the saving throw at the end of each of its turns, ending the effect on a success.</p>
+      <p><b>At Higher Levels.</b> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.</p>
+    </description>
+    <setters>
+      <set name="level">3</set>
+      <set name="school">Biomancy</set>
       <set name="time">1 action</set>
       <set name="range">90 feet</set>
       <set name="hasVerbalComponent">true</set>
@@ -1527,7 +1788,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Zippit!" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_ZIPPIT">
+  <element name="Zippit!" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_ZIPPIT_TRANSMUTATION">
     <supports>Bard, Druid, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
     <description>
       <p>In response to a creature vocalizing, you make a sharp sound and hold a finger up in an attempt to interrupt them. The target must succeed on a Constitution saving throw or become silenced as its mouth is fused shut for the duration. If you silence a target that is casting a spell with verbal components, the target’s spell slot isn’t expended, but its action is wasted.</p>
@@ -1536,7 +1797,28 @@
     </description>
     <setters>
       <set name="level">3</set>
-      <set name="school">Biomancy/Transmutation</set>
+      <set name="school">Transmutation</set>
+      <set name="time">1 reaction, which you take when a creature within range vocalises</set>
+      <set name="range">60 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Zippit!" type="Spell" source="Heliana's Guide to Monster Hunting" id="ID_HGTMH_SPELL_ZIPPIT_BIOMANCY">
+    <supports>Bard, Druid, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+    <description>
+      <p>In response to a creature vocalizing, you make a sharp sound and hold a finger up in an attempt to interrupt them. The target must succeed on a Constitution saving throw or become silenced as its mouth is fused shut for the duration. If you silence a target that is casting a spell with verbal components, the target’s spell slot isn’t expended, but its action is wasted.</p>
+      <p>At the end of each of its turns, the target can make a Strength saving throw as it tries to tear open its mouth. On a success, the target takes 1d8 slashing damage and is no longer silenced. Alternatively, as an action, the target can use a bladed implement to cut open its mouth, taking 1d8 slashing damage and ending the silence.</p>
+      <p><b>At Higher Levels.</b> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.</p>
+    </description>
+    <setters>
+      <set name="level">3</set>
+      <set name="school">Biomancy</set>
       <set name="time">1 reaction, which you take when a creature within range vocalises</set>
       <set name="range">60 feet</set>
       <set name="hasVerbalComponent">true</set>
@@ -1549,7 +1831,3 @@
     </setters>
   </element>
 </elements>
-
-
-
-  
