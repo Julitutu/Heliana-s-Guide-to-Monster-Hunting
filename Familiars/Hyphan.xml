@@ -1,289 +1,1966 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <info>
-        <name>Familiars</name>
-        <description>Familiars from Heliana's Guide to Monster Hunting</description>
-        <update version="0.1.0">
-            <file name="Hyphan.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Hyphan.xml" />
-        </update>
-    </info>
+	<info>
+		<name>Familiars</name>
+		<description>Hyphan from Heliana's Guide to Monster Hunting</description>
+		<update version="0.1.0">
+			<file name="Hyphan.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Hyphan.xml" />
+		</update>
+	</info>
 
-    <element name="Hyphan" type="Companion" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_HYPHAN">
-        <supports>Familiar, Variant Familiar, Bespoke Companion</supports>
-        <description>
-            <div class="sidebar">
-                <p class="flavor">A helpful fungal friend, the hyphan’s climbing ability makes it especially useful for dusting those hard-to-reach corners. It’s also very good at stopping bar fights; it has a real calming presence. I just have to remember to put him in the basement when we want to really let loose and break some furniture.</p>
-                <p>— Heliana, Tavern Brawler</p>
-            </div>
-            <p><b>Type:</b> Plant</p>
-            <p><b>Creature Component:</b> Hyphan</p>
-            <p><b>Bonus Tamer Improvement:</b> Helpful and +2 Hit Dice</p>
-            <p>Always keen to offer aid, hyphans make excellent support companions, both on the battlefield and emotionally. Able to calm intense emotions, charm aggressors, and disappear into the earth, they are experts in de-escalation and can aid a party’s escape by lacing large areas with necrotising puffballs.</p>
-            <p>If any of the hyphan’s traits or actions require a saving throw, it is always against the hyphan’s save DC, as calculated below.</p>
-            <center>
-                <p><b>Save DC</b> = 8 + the tamer’s proficiency bonus + the hyphan’s Constitution modifier</p>
-            </center>
-            <h4>Monster Trainer</h4>
-            <p>In addition to the improvements you can normally give your companions, you can choose to grant the hyphan the following improvements using your Monster Trainer feature:</p>
-            <div class="reference">
-                <div element="ID_LT_HGTMH_COMPANION_TRAIT_HYPHAN_HELPFUL" />
-                <div element="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_DETRITIVORE" />
-                <div element="ID_LT_HGTMH_COMPANION_TRAIT_HYPHAN_GROWTH" />
-                <div element="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_HALLUCISPORES" />
-                <div element="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_PUFFBALLS_I" />
-                <div element="ID_LT_HGTMH_COMPANION_TRAIT_HYPHAN_DAMP_DARK_DWELLER" />
-                <div element="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_FUNGAL_FRUITS" />
-                <div element="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_MULTIHELP" />
-                <div element="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_PUFFBALLS_II" />
-                <div element="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_MYCELIAL_RECONSTITUTION" />
-            </div>
-        </description>
-        <setters>
-            <set name="strength">7</set>
-            <set name="dexterity">10</set>
-            <set name="constitution">14</set>
-            <set name="intelligence">12</set>
-            <set name="wisdom">13</set>
-            <set name="charisma">10</set>
-            <set name="ac">11 (natural armour)</set>
-            <set name="hp">4 (1d4+2)</set>
-            <set name="speed">25 ft., climb 25 ft.</set>
-            <set name="senses">darkvision 120 ft., passive Perception 11</set>
-            <set name="languages">—</set>
-            <set name="resistances">necrotic</set>
-            <set name="skills">Medicine +3, Nature +3</set>
-            <set name="type">Plant</set>
-            <set name="size">Tiny</set>
-            <set name="alignment">neutral good</set>
-            <set name="challenge">1/8</set>
-            <set name="proficiency">2</set>
-            <set name="traits">ID_LT_HGTMH_COMPANION_TRAIT_HYPHAN_SPIDER_CLIMB,ID_LT_HGTMH_COMPANION_TRAIT_HYPHAN_SUNLIGHT_SENSITIVITY</set>
-            <set name="actions">ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_POISON_SPRAY,ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_CALMING_SPORES</set>
-        </setters>
-        <rules>
-            <stat name="companion:ac" value="11" />
-            <stat name="companion:hp:max" value="4" bonus="base" />
-            <stat name="companion:speed" value="25" bonus="base" />
-            <stat name="companion:speed:climb" value="25" bonus="base" />
-            <stat name="companion:medicine:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:nature:proficiency" value="companion:proficiency" bonus="base" />
+	<element name="Hyphan" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_HYPHAN">
+		<supports>Familiar, Variant Familiar, Bespoke Companion</supports>
+		<description>
+			<p style="margin-bottom:-5px">
+				<em>Tiny plant, neutral good</em>
+			</p>
+			<h4 style="margin-top:5px" />
+			<p></p>
+			<p>
+				<strong>Armor Class</strong> 11 (natural armour)</p>
+			<p>
+				<strong>Hit Points</strong> 4 (1d4 + 2)</p>
+			<p>
+				<strong>Speed</strong> 25 ft., climb 25 ft.</p>
+			<p></p>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead>
+					<tr>
+						<td>STR</td>
+						<td>DEX</td>
+						<td>CON</td>
+						<td>INT</td>
+						<td>WIS</td>
+						<td>CHA</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>7(-2)</td>
+					<td>10(+0)</td>
+					<td>14(+2)</td>
+					<td>12(+1)</td>
+					<td>13(+1)</td>
+					<td>10(+0)</td>
+				</tr>
+			</table>
+			<p>
+				<strong>Skills</strong> Medicine +3, Nature +3</p>
+			<p>
+				<strong>Damage Resistances</strong> necrotic</p>
+			<p>
+				<strong>Senses</strong> darkvision 120 ft., passive Perception 11</p>
+			<p>
+				<strong>Languages</strong> —</p>
+			<p></p>
+			<h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
+			<p>
+				<strong>
+					<em>Spider Climb.</em>
+				</strong>The hyphan can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+			<p>
+				<strong>
+					<em>Sunlight Sensitivity.</em>
+				</strong>While in sunlight, the hyphan has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</p>
+			<p></p>
+			<h4 style="margin-top:15px">Actions</h4>
+			<p></p>
+			<p>
+				<strong>
+					<em>Poison Spray.</em>
+				</strong>One creature within 15 feet of the hyphan must succeed on a DC 12 Constitution saving throw or take 6 (1d12) poison damage.</p>
+			<p>
+                <strong>
+					<em>Calming Spores.</em>
+				</strong>One creature within 30 feet of the hyphan must succeed on a DC 12 Charisma saving throw or have its emotions calmed for the next minute. A willing creature can choose to fail this saving throw. The hyphan can choose to suppress any effect causing the target to be charmed or frightened. When this effect ends, any suppressed effect resumes, provided that its duration hasn't expired in the meantime.&#13;
+            Alternatively, the hyphan can make the target indifferent about creatures of its choice that the target is hostile toward. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed. When the effect ends, the creature becomes hostile again, unless the GM rules otherwise.</p>
+		</description>
+		<sheet>
+			<description>Hyphan ({{hyphan:size}})- It gains {{hit dice gained:companion:hyphan}}d{{hit dice size:hyphan}} hit dice. DC: {{hyphan:dc}}. Poison Spray: {{hyphan:attack:dice}}.</description>
+		</sheet>
+		<rules>
 
-            <stat name="hyphan:dc" value="8" />
-            <stat name="hyphan:dc" value="proficiency" bonus="proficiency" />
-            <stat name="hyphan:dc" value="companion:constitution:modifier" />
-        </rules>
-    </element>
+			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_HYPHAN" />
 
-    <element name="Spider Climb" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_HYPHAN_SPIDER_CLIMB">
-        <description>
-            <p>The hyphan can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
-        </description>
-        <sheet>
-            <description>The hyphan can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</description>
-        </sheet>
-    </element>
+            <stat name="hit dice gained:companion:hyphan" value="1" level="4" />
+			<stat name="hit dice gained:companion:hyphan" value="1" level="8" />
+			<stat name="hit dice gained:companion:hyphan" value="1" level="12" />
+			<stat name="hit dice gained:companion:hyphan" value="1" level="16" />
+			<stat name="hit dice gained:companion:hyphan" value="1" level="19" />
 
-    <element name="Sunlight Sensitivity" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_HYPHAN_SUNLIGHT_SENSITIVITY">
-        <description>
-            <p>While in sunlight, the hyphan has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</p>
-        </description>
-        <sheet>
-            <description>While in sunlight, the hyphan has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</description>
-        </sheet>
-    </element>
+			<stat name="hyphan:dc" value="8" />
+			<stat name="hyphan:dc" value="proficiency" />
+			<stat name="hyphan:dc" value="hyphan:con:mod" />
 
-    <element name="Poison Spray" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_POISON_SPRAY">
-        <requirements>!ID_LT_HGTMH_COMPANION_TRAIT_HYPHAN_GROWTH</requirements>
-        <description>
-            <p>One creature within 15 feet of the hyphan must succeed on a DC 12 Constitution saving throw or take 6 (1d12) poison damage.</p>
-        </description>
-        <sheet>
-            <description>One creature within 15 feet of the hyphan must succeed on a DC {{hyphan:dc}} Constitution saving throw or take 6 (1d12) poison damage.</description>
-        </sheet>
-    </element>
+            <stat name="hyphan:str" value="7" />
+			<stat name="hyphan:str:mod" value="-2" />
+			<stat name="hyphan:dex" value="10" />
+			<stat name="hyphan:dex:mod" value="0" />
+			<stat name="hyphan:con" value="14" />
+			<stat name="hyphan:con:mod" value="2" />
+			<stat name="hyphan:int" value="12" />
+			<stat name="hyphan:int:mod" value="1" />
+			<stat name="hyphan:wis" value="13" />
+			<stat name="hyphan:wis:mod" value="1" />
+			<stat name="hyphan:cha" value="10" />
+			<stat name="hyphan:cha:mod" value="0" />
 
-    <element name="Calming Spores" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_CALMING_SPORES">
-        <description>
-            <p>One creature within 30 feet of the hyphan must succeed on a DC 12 Charisma saving throw or have its emotions calmed for the next minute. A willing creature can choose to fail this saving throw. The hyphan can choose to suppress any effect causing the target to be charmed or frightened. When this effect ends, any suppressed effect resumes, provided that its duration hasn't expired in the meantime.</p>
-            <p>Alternatively, the hyphan can make the target indifferent about creatures of its choice that the target is hostile toward. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed. When the effect ends, the creature becomes hostile again, unless the GM rules otherwise.</p>
-        </description>
-        <sheet usage="1/Day">
-            <description>One creature within 30 feet of the hyphan must succeed on a DC {{hyphan:dc}} Charisma saving throw or have its emotions calmed for the next minute. A willing creature can choose to fail this saving throw. The hyphan can choose to suppress any effect causing the target to be charmed or frightened. When this effect ends, any suppressed effect resumes, provided that its duration hasn't expired in the meantime.&#13;
-            Alternatively, the hyphan can make the target indifferent about creatures of its choice that the target is hostile toward. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed. When the effect ends, the creature becomes hostile again, unless the GM rules otherwise.</description>
-        </sheet>
-    </element>
+			<stat name="hit dice size:hyphan" value="4" />
+            <stat name="hyphan:size" value="Tiny" inline="true"/>
 
-    <!-- Companion's Improvements -->
-    <element name="Helpful" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_HYPHAN_HELPFUL">
-        <supports>Hyphan, Companion Improvement</supports>
+			
+			<stat name="hyphan:attack:dice" value="1d12" inline="true"/>
+		</rules>
+	</element>
+
+    <!-- Improvement Gained on Taming-->
+	<element name="Hyphan Improvement" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_HYPHAN">
+		<description>
+			<p>Whenever you gain a level beyond 1st in this class, each companion to which you are
+				bonded gains one of the following improvements.
+				Any newly gained companions receive these additional Hit Dice and improvements as if
+				you had them since your 1st level in tamer.</p>
+		</description>
+		<sheet>
+			<description>Your Companion has the following Improvements:</description>
+		</sheet>
+		<rules>
+			<stat name="hit dice gained:companion:hyphan" value="2" />
+
+			<select type="Class Feature" name="Hyphan Improvement"
+				supports="Hyphan" default="ID_LT_HGTMH_COMPANION_TRAIT_HYPHAN_HELPFUL" />
+			<select type="Class Feature" name="Hyphan Improvement (Lvl 2)"
+				supports="Hyphan" level="2" />
+			<select type="Class Feature" name="Hyphan Improvement (Lvl 3)"
+				supports="Hyphan" level="3" />
+			<select type="Class Feature" name="Hyphan Improvement (Lvl 4)"
+				supports="Hyphan" level="4" />
+			<select type="Class Feature" name="Hyphan Improvement (Lvl 5)"
+				supports="Hyphan" level="5" />
+			<select type="Class Feature" name="Hyphan Improvement (Lvl 6)"
+				supports="Hyphan" level="6" />
+			<select type="Class Feature" name="Hyphan Improvement (Lvl 7)"
+				supports="Hyphan" level="7" />
+			<select type="Class Feature" name="Hyphan Improvement (Lvl 8)"
+				supports="Hyphan" level="8" />
+			<select type="Class Feature" name="Hyphan Improvement (Lvl 9)"
+				supports="Hyphan" level="9" />
+			<select type="Class Feature" name="Hyphan Improvement (Lvl 10)"
+				supports="Hyphan" level="10" />
+			<select type="Class Feature" name="Hyphan Improvement (Lvl 11)"
+				supports="Hyphan" level="11" />
+			<select type="Class Feature" name="Hyphan Improvement (Lvl 12)"
+				supports="Hyphan" level="12" />
+			<select type="Class Feature" name="Hyphan Improvement (Lvl 13)"
+				supports="Hyphan" level="13" />
+			<select type="Class Feature" name="Hyphan Improvement (Lvl 14)"
+				supports="Hyphan" level="14" />
+			<select type="Class Feature" name="Hyphan Improvement (Lvl 15)"
+				supports="Hyphan" level="15" />
+			<select type="Class Feature" name="Hyphan Improvement (Lvl 16)"
+				supports="Hyphan" level="16" />
+			<select type="Class Feature" name="Hyphan Improvement (Lvl 17)"
+				supports="Hyphan" level="17" />
+			<select type="Class Feature" name="Hyphan Improvement (Lvl 18)"
+				supports="Hyphan" level="18" />
+			<select type="Class Feature" name="Hyphan Improvement (Lvl 19)"
+				supports="Hyphan" level="19" />
+			<select type="Class Feature" name="Hyphan Improvement (Lvl 20)"
+				supports="Hyphan" level="20" />
+		</rules>
+	</element>
+
+    <!-- Hyphan's Improvements -->
+	<element name="Helpful" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_HYPHAN_HELPFUL">
+		<supports>Hyphan</supports>
         <prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
-        <requirements>[level:tamer:1]</requirements>
-        <description>
-            <p><b>Type:</b> Active (bonus action)</p>
-            <p>As a bonus action, the hyphan takes the Help action. The hyphan gains this improvement when it becomes a companion; it doesn’t cost an improvement.</p>
-        </description>
-        <sheet>
-            <description action="Bonus Action">As a bonus action, the hyphan takes the Help action. The hyphan gains this improvement when it becomes a companion; it doesn’t cost an improvement.</description>
+		<requirements>[level:tamer:1]</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Active (bonus action)</p>
+			<p>As a bonus action, the hyphan takes the Help action. The hyphan gains this improvement when it becomes a companion; it doesn’t cost an improvement.</p>
+		</description>
+		<sheet usage="Bonus Action">
+			<description>Help action</description>
+		</sheet>
+	</element>
+	<element name="Detritivore" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_DETRITIVORE">
+		<supports>Hyphan</supports>
+		<prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+		<requirements>[level:tamer:3]</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Active (action)</p>
+			<p>As an action, the hyphan can drain one Small or larger corpse within its reach, regaining hit points equal to twice its tamer’s level. Once the hyphan has used this action, it can’t do so again until its tamer finishes a long rest. A corpse can be drained by this or similar abilities only once.</p>
+		</description>
+		<sheet>
+            <description action="Action" usage="1/Long Rest">Regain {{detritivore}}</description>
+        </sheet>
+		<rules>
+			<stat name="detritivore" value="level:tamer" />
+			<stat name="detritivore" value="level:tamer" />
+		</rules>
+	</element>
+	<element name="Growth" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_HYPHAN_GROWTH">
+		<supports>Hyphan</supports>
+		<prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+		<requirements>[level:tamer:5]</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Passive (companion)</p>
+			<p>The hyphan’s size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage of its Poison Spray increases to 2d12.</p>
+		</description>
+		<sheet display="false">
+            <description>The hyphan’s size increases to Small, its Hit Die size increases to a d6, and the damage of its Poison Spray increases to 2d12.</description>
+		</sheet>
+        <rules>
+            <stat name="hit dice size:hyphan" value="2" />
+            <stat name="hyphan:attack:dice" value="2d12" inline="true"/>
+            <stat name="hyphan:size" value="Small" inline="true"/>
+        </rules>
+	</element>
+	<element name="Hallucispores" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_HALLUCISPORES">
+		<supports>Hyphan</supports>
+		<prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+		<requirements>[level:tamer:5]</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Active (reaction)</p>
+			<p>As a reaction when the hyphan takes damage, it can jettison out a cloud of spores. Each creature within 10 feet of it must succeed on a Wisdom saving throw or be charmed by the hyphan until the end of its next turn.</p>
+			<p>The hyphan has a number of uses of this ability equal to its Constitution modifier (minimum 1) and regains all expended uses when its tamer finishes a long rest.</p>
+		</description>
+		<sheet>
+            <description action="Reaction">10 feet radius, Wis Save or be charmed until the end of its next turn.</description>
+        </sheet>
+	</element>
+	<element name="Puffballs" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_PUFFBALLS_I">
+		<supports>Hyphan</supports>
+		<prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+		<requirements>[level:tamer:5]</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Active (action)</p>
+			<p>As an action, the hyphan can cause two 10-foot squares of dirt, rock, or wood it can see within 60 feet of it to sprout tiny puffball mushrooms, which last for 1 hour or until the hyphan dismisses them as an action. The squares must be contiguous with one another.</p>
+			<p>When a creature enters the area, the 10-foot square of puffballs explodes, disappearing into a cloud of spores. Each non-hyphan creature in the area or within 5 feet of the area must make a Constitution saving throw, taking 13 (2d12) necrotic damage on a failed save, or half as much damage on a successful one.</p>
+			<p>After the hyphan uses this action, it can’t do so again until the tamer finishes a short or long rest.</p>
+			<p>When the hyphan’s tamer reaches 9th level in the tamer class, the hyphan can create one additional 10-foot square of puffballs (three total), and the damage increases to 19 (3d12).</p>
+		</description>
+		<sheet>
+            <description action="Action" usage="1/Short Rest">Two 10-foot squares (1hr). DC {{puffballs:dc}} Con Save, {{puffball:damage}} or half</description>
+        </sheet>
+		<rules>
+			<stat name="puffballs:squares" inline="true" value="Two" />
+			<stat name="puffballs:squares" inline="true" value="Three" level="9"/>
+			<stat name="puffball:damage" inline="true" value="2d12" />
+			<stat name="puffball:damage" inline="true" value="3d12" level="9"/>
+			<stat name="puffballs:dc" value="hyphan:dc" />
+		</rules>
+	</element>
+	<element name="Damp Dark Dweller" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_HYPHAN_DAMP_DARK_DWELLER">
+		<supports>Hyphan</supports>
+		<prerequisite>Prerequisite: 9th-level tamer, Detritivore</prerequisite>
+		<requirements>[level:tamer:9],ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_DETRITIVORE</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Passive (companion &amp; tamer)</p>
+			<p>The hyphan has immunity to necrotic damage. In addition, while the hyphan is summoned, its tamer has darkvision out to a range of 60 feet. If its tamer already has darkvision, the range is increased by 30 feet.</p>
+		</description>
+		<sheet>
+            <description>Immunity to necrotic damage.</description>
+        </sheet>
+	</element>
+	<element name="Fungal Fruits" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_FUNGAL_FRUITS">
+		<supports>Hyphan</supports>
+		<prerequisite>Prerequisite: 9th-level tamer</prerequisite>
+		<requirements>[level:tamer:9]</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Active (1 minute)</p>
+			<p>Over the course of a minute, the hyphan can grow a random assortment of mushrooms on its body. Each time it does this, roll a d4 twice and consult the options below to determine which two mushrooms grow.</p>
+			<ul>
+				<li>
+					<b>Bloomshroom.</b> As an action, a creature can eat this mushroom, regaining 2d4 + 2 hit points and gaining advantage on all Constitution saving throws for 1 minute.</li>
+				<li>
+					<b>Boomshroom.</b> As an action, a creature can throw this volatile mushroom at a point it can see within 60 feet of it, where it explodes in a 10-foot-radius sphere of flames. Each creature in the area must make a Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one. The fire ignites flammable objects in the area that aren’t being worn or carried.</li>
+				<li>
+					<b>Doomshroom.</b> As an action, a creature can throw this dusky mushroom at a point it can see within 60 feet of it, where it explodes in a 10-foot-radius sphere of purple spores. Each creature in the area must succeed on a Constitution saving throw or become afflicted by the bane spell for 1 minute (concentration not required). An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</li>
+				<li>
+					<b>Gloomshroom.</b> As an action, a creature can eat this mushroom. For the next hour, it gains darkvision out to a range of 60 feet. If it already has darkvision, the range of this vision is increased by 30 feet.</li>
+			</ul>
+			<p>The mushrooms last until the hyphan’s tamer next finishes a long rest, but lose all magical effects 10 minutes after they are plucked. You can pluck a mushroom as part of the action to use it. After the hyphan uses this trait, it can’t do so again until its tamer finishes a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+            <description></description>
+        </sheet>
+	</element>
+	<element name="Multihelp" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_MULTIHELP">
+		<supports>Hyphan</supports>
+		<prerequisite>Prerequisite: 13th-level tamer, Helpful</prerequisite>
+		<requirements>[level:tamer:13],ID_LT_HGTMH_COMPANION_TRAIT_HYPHAN_HELPFUL</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Active (action)</p>
+			<p>When the hyphan takes the Disengage action, it can take the Help action up to three times on that turn as part of the same action. After it uses this action, it can’t do so again until its tamer finishes a short or long rest.</p>
+		</description>
+		<sheet>
+            <description action="Action" usage="1/Short Rest">When Disengage action, Help action up to three times (same action).</description>
+        </sheet>
+	</element>
+	<element name="Puffballs II" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_PUFFBALLS_II">
+		<supports>Hyphan</supports>
+		<prerequisite>Prerequisite: 13th-level tamer, Puffballs I</prerequisite>
+		<requirements>[level:tamer:13],ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_PUFFBALLS_I</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Active (action)</p>
+			<p>When the hyphan uses its Puffballs action, it can create an additional 10-foot square of puffball mushrooms, for a total of four 10-foot squares. The damage they deal increases to 26 (4d12). The hyphan gains a +1 bonus to the save DC of this action.</p>
+			<p>When the hyphan’s tamer reaches 17th level in the tamer class, the hyphan can create one additional 10-foot square of puffballs (five total), and the damage increases to 32 (5d12).</p>
+		</description>
+		<sheet display="false">
+            <description action="Action" usage="1/Short Rest">When the hyphan uses its Puffballs action, it can create an additional 10-foot square of puffball mushrooms, for a total of four 10-foot squares. The damage they deal increases to 26 (4d12). The hyphan gains a +1 bonus to the save DC of this action.</description>
+            <description action="Action" usage="1/Short Rest" level="17">When the hyphan uses its Puffballs action, it can create an additional 10-foot square of puffball mushrooms, for a total of five 10-foot squares. The damage they deal increases to 32 (5d12). The hyphan gains a +1 bonus to the save DC of this action.</description>
         </sheet>
         <rules>
-            <stat name="companion:hp:max" value="5" />
-            <stat name="companion:hp:max" value="companion:constitution:modifier" />
-            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+			<stat name="puffballs:squares" inline="true" value="Four" />
+			<stat name="puffballs:squares" inline="true" value="Five" level="17"/>
+			<stat name="puffball:damage" inline="true" value="4d12" />
+			<stat name="puffball:damage" inline="true" value="5d12" level="17"/>
+            <stat name="puffballs:dc" value="1"/>
         </rules>
-    </element>
-
-    <element name="Detritivore" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_DETRITIVORE">
-        <supports>Hyphan, Companion Improvement</supports>
-        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
-        <requirements>[level:tamer:3]</requirements>
-        <description>
-            <p><b>Type:</b> Active (action)</p>
-            <p>As an action, the hyphan can drain one Small or larger corpse within its reach, regaining hit points equal to twice its tamer’s level. Once the hyphan has used this action, it can’t do so again until its tamer finishes a long rest. A corpse can be drained by this or similar abilities only once.</p>
-        </description>
-        <sheet>
-            <description action="Action" usage="1/Long Rest">As an action, the hyphan can drain one Small or larger corpse within its reach, regaining hit points equal to twice its tamer’s level. Once the hyphan has used this action, it can’t do so again until its tamer finishes a long rest. A corpse can be drained by this or similar abilities only once.</description>
+	</element>
+	<element name="Mycelial Reconstitution" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_MYCELIAL_RECONSTITUTION">
+		<supports>Hyphan</supports>
+		<prerequisite>Prerequisite: 17th-level tamer</prerequisite>
+		<requirements>[level:tamer:17]</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Active (action)</p>
+			<p>As an action, the hyphan can dissolve into mycelia, ending the grappled and restrained conditions on it and reappearing in an unoccupied space on the ground it can see within 30 feet of it.</p>
+		</description>
+		<sheet>
+            <description action="Action">End the grappled and restrained conditions and reappear in an unoccupied space on the ground (within 30 feet).</description>
         </sheet>
-    </element>
+	</element>
 
-    <element name="Growth" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_HYPHAN_GROWTH">
-        <supports>Hyphan, Companion Improvement</supports>
-        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
-        <requirements>[level:tamer:5]</requirements>
-        <description>
-            <p><b>Type:</b> Passive (companion)</p>
-            <p>The hyphan’s size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage of its Poison Spray increases to 2d12.</p>
-        </description>
-        <sheet>
-            <description>The hyphan’s size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage of its Poison Spray increases to 2d12.</description>
-        </sheet>
-        <rules>
-            <stat name="companion:hp:max" value="2" />
-            <stat name="companion:hp:max" value="5" />
-            <stat name="companion:hp:max" value="companion:constitution:modifier" />
-            <stat name="companion:hp:max" value="companion:constitution:modifier" />
+    <!-- General Improvements -->
+	<!-- Speed Training -->
+	<element name="Speed Training" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SPEED_TRAINING_HYPHAN">
+		<supports>Hyphan</supports>
+		<description>
+			<p>Increase one existing speed by 15 feet up to a maximum of 150% of the creature’s base
+				speed, rounded up to the nearest 5-foot increment.</p>
+			<p>E.g., a base speed of 30 feet can be increased to 45 feet maximum, a base speed of 25
+				feet can be increased to 40 feet, and a base speed of 20 feet to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>Increase one existing speed by 15 feet (Max of 150%)</description>
+		</sheet>
+	</element>
 
-            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_POISON_SPRAY_GROWTH" />
-        </rules>
-    </element>
-    <element name="Poison Spray" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_POISON_SPRAY_GROWTH">
-        <description>
-            <p>One creature within 15 feet of the hyphan must succeed on a DC 12 Constitution saving throw or take 13 (2d12) poison damage.</p>
-        </description>
-        <sheet>
-            <description>One creature within 15 feet of the hyphan must succeed on a DC 12 Constitution saving throw or take 13 (2d12) poison damage.</description>
-        </sheet>
-    </element>
+	<!-- Toughen Up -->
+	<element name="Toughen Up" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_HYPHAN">
+		<supports>Hyphan</supports>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false">
+			<description>Your companion gains {{hit dice gained:companion:hyphan}} Hit Die, increasing
+				its hit point maximum</description>
+		</sheet>
+		<rules>
+			<stat name="hit dice gained:companion:hyphan" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (2)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:hyphan" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (3)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:hyphan" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (4)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:hyphan" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (5)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:hyphan" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (6)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:hyphan" value="1" />
+		</rules>
+	</element>
+		<element name="Toughen Up (7)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:hyphan" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (8)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:hyphan" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (9)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:hyphan" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (10)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:hyphan" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (11)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:hyphan" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (12)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:hyphan" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (13)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:hyphan" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (14)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:hyphan" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (15)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:hyphan" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (16)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:hyphan" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (17)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:hyphan" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (18)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:hyphan" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (19)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:hyphan" value="1" />
+		</rules>
+	</element>
 
-    <element name="Hallucispores" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_HALLUCISPORES">
-        <supports>Hyphan, Companion Improvement</supports>
-        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
-        <requirements>[level:tamer:5]</requirements>
-        <description>
-            <p><b>Type:</b> Active (reaction)</p>
-            <p>As a reaction when the hyphan takes damage, it can jettison out a cloud of spores. Each creature within 10 feet of it must succeed on a Wisdom saving throw or be charmed by the hyphan until the end of its next turn.</p>
-            <p>The hyphan has a number of uses of this ability equal to its Constitution modifier (minimum 1) and regains all expended uses when its tamer finishes a long rest.</p>
-        </description>
-        <sheet>
-            <description action="Reaction">As a reaction when the hyphan takes damage, it can jettison out a cloud of spores. Each creature within 10 feet of it must succeed on a DC {{hyphan:dc}} Wisdom saving throw or be charmed by the hyphan until the end of its next turn. The hyphan has a number of uses of this ability equal to its Constitution modifier (minimum 1) and regains all expended uses when its tamer finishes a long rest.</description>
-        </sheet>
-    </element>
+	<!-- Ability Boost -->
+	<element name="Ability Boost" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_HYPHAN">
+		<supports>Hyphan</supports>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Hyphan Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (2)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_HYPHAN</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Hyphan Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (3)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_HYPHAN</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Hyphan Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (4)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_HYPHAN</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Hyphan Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (5)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_HYPHAN</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Hyphan Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (6)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_HYPHAN</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Hyphan Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (7)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_HYPHAN</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Hyphan Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (8)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_HYPHAN</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Hyphan Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (9)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_HYPHAN</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Hyphan Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (10)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_HYPHAN</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Hyphan Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (11)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_HYPHAN</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Hyphan Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (12)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_HYPHAN</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Hyphan Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (13)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_HYPHAN</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Hyphan Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (14)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_HYPHAN</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Hyphan Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (15)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_HYPHAN</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Hyphan Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (16)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_HYPHAN</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Hyphan Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (17)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_HYPHAN</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Hyphan Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (18)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_HYPHAN</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Hyphan Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (19)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_19_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_HYPHAN</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Hyphan Ability Boost" />
+		</rules>
+	</element>
 
-    <element name="Puffballs I" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_PUFFBALLS_I">
-        <supports>Hyphan, Companion Improvement</supports>
-        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
-        <requirements>[level:tamer:5],!ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_PUFFBALLS_II</requirements>
-        <description>
-            <p><b>Type:</b> Active (action)</p>
-            <p>As an action, the hyphan can cause two 10-foot squares of dirt, rock, or wood it can see within 60 feet of it to sprout tiny puffball mushrooms, which last for 1 hour or until the hyphan dismisses them as an action. The squares must be contiguous with one another.</p>
-            <p>When a creature enters the area, the 10-foot square of puffballs explodes, disappearing into a cloud of spores. Each non-hyphan creature in the area or within 5 feet of the area must make a Constitution saving throw, taking 13 (2d12) necrotic damage on a failed save, or half as much damage on a successful one.</p>
-            <p>After the hyphan uses this action, it can’t do so again until the tamer finishes a short or long rest.</p>
-            <p>When the hyphan’s tamer reaches 9th level in the tamer class, the hyphan can create one additional 10-foot square of puffballs (three total), and the damage increases to 19 (3d12).</p>
-        </description>
-        <sheet>
-            <description action="Action" usage="1/Short Rest">As an action, the hyphan can cause two 10-foot squares of dirt, rock, or wood it can see within 60 feet of it to sprout tiny puffball mushrooms, which last for 1 hour or until the hyphan dismisses them as an action. The squares must be contiguous with one another. When a creature enters the area, the 10-foot square of puffballs explodes, disappearing into a cloud of spores. Each non-hyphan creature in the area or within 5 feet of the area must make a DC {{hyphan:dc}} Constitution saving throw, taking 13 (2d12) necrotic damage on a failed save, or half as much damage on a successful one. After the hyphan uses this action, it can’t do so again until the tamer finishes a short or long rest.</description>
-            <description action="Action" usage="1/Short Rest" level="9">As an action, the hyphan can cause three 10-foot squares of dirt, rock, or wood it can see within 60 feet of it to sprout tiny puffball mushrooms, which last for 1 hour or until the hyphan dismisses them as an action. The squares must be contiguous with one another. When a creature enters the area, the 10-foot square of puffballs explodes, disappearing into a cloud of spores. Each non-hyphan creature in the area or within 5 feet of the area must make a DC {{hyphan:dc}} Constitution saving throw, taking 19 (3d12) necrotic damage on a failed save, or half as much damage on a successful one. After the hyphan uses this action, it can’t do so again until the tamer finishes a short or long rest.</description>
-        </sheet>
-    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_HYPHAN">
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan strength becomes {{hyphan:str}} (+{{hyphan:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:str" value="1" />
+			<stat name="hyphan:str:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan strength becomes {{hyphan:str}} (+{{hyphan:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:str" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan strength becomes {{hyphan:str}} (+{{hyphan:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:str" value="1" />
+			<stat name="hyphan:str:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan strength becomes {{hyphan:str}} (+{{hyphan:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:str" value="1" />
+		</rules>
+	</element>
+	    <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan strength becomes {{hyphan:str}} (+{{hyphan:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:str" value="1" />
+			<stat name="hyphan:str:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan strength becomes {{hyphan:str}} (+{{hyphan:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:str" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan strength becomes {{hyphan:str}} (+{{hyphan:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:str" value="1" />
+			<stat name="hyphan:str:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan strength becomes {{hyphan:str}} (+{{hyphan:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:str" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan strength becomes {{hyphan:str}} (+{{hyphan:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:str" value="1" />
+			<stat name="hyphan:str:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan strength becomes {{hyphan:str}} (+{{hyphan:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:str" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_11_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan strength becomes {{hyphan:str}} (+{{hyphan:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:str" value="1" />
+			<stat name="hyphan:str:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_12_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_11_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan strength becomes {{hyphan:str}} (+{{hyphan:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:str" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_13_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_12_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan strength becomes {{hyphan:str}} (+{{hyphan:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:str" value="1" />
+			<stat name="hyphan:str:mod" value="1" />
+		</rules>
+	</element>
 
-    <element name="Damp Dark Dweller" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_HYPHAN_DAMP_DARK_DWELLER">
-        <supports>Hyphan, Companion Improvement</supports>
-        <prerequisite>Prerequisite: 9th-level tamer, Detritivore</prerequisite>
-        <requirements>[level:tamer:9],ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_DETRITIVORE</requirements>
-        <description>
-            <p><b>Type:</b> Passive (companion &amp; tamer)</p>
-            <p>The hyphan has immunity to necrotic damage. In addition, while the hyphan is summoned, its tamer has darkvision out to a range of 60 feet. If its tamer already has darkvision, the range is increased by 30 feet.</p>
-        </description>
-        <sheet>
-            <description>The hyphan has immunity to necrotic damage. In addition, while the hyphan is summoned, its tamer has darkvision out to a range of 60 feet. If its tamer already has darkvision, the range is increased by 30 feet.</description>
-        </sheet>
-    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_HYPHAN">
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan dexterity becomes {{hyphan:dex}} (+{{hyphan:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:dex" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan dexterity becomes {{hyphan:dex}} (+{{hyphan:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:dex" value="1" />
+			<stat name="hyphan:dex:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan dexterity becomes {{hyphan:dex}} (+{{hyphan:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:dex" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan dexterity becomes {{hyphan:dex}} (+{{hyphan:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:dex" value="1" />
+			<stat name="hyphan:dex:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan dexterity becomes {{hyphan:dex}} (+{{hyphan:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:dex" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan dexterity becomes {{hyphan:dex}} (+{{hyphan:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:dex" value="1" />
+			<stat name="hyphan:dex:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan dexterity becomes {{hyphan:dex}} (+{{hyphan:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:dex" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan dexterity becomes {{hyphan:dex}} (+{{hyphan:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:dex" value="1" />
+			<stat name="hyphan:dex:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan dexterity becomes {{hyphan:dex}} (+{{hyphan:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:dex" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_10_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan dexterity becomes {{hyphan:dex}} (+{{hyphan:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:dex" value="1" />
+			<stat name="hyphan:dex:mod" value="1" />
+		</rules>
+	</element>
 
-    <element name="Fungal Fruits" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_FUNGAL_FRUITS">
-        <supports>Hyphan, Companion Improvement</supports>
-        <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
-        <requirements>[level:tamer:9]</requirements>
-        <description>
-            <p><b>Type:</b> Active (1 minute)</p>
-            <p>Over the course of a minute, the hyphan can grow a random assortment of mushrooms on its body. Each time it does this, roll a d4 twice and consult the options below to determine which two mushrooms grow.</p>
-            <ul>
-                <li><b>Bloomshroom.</b> As an action, a creature can eat this mushroom, regaining 2d4 + 2 hit points and gaining advantage on all Constitution saving throws for 1 minute.</li>
-                <li><b>Boomshroom.</b> As an action, a creature can throw this volatile mushroom at a point it can see within 60 feet of it, where it explodes in a 10-foot-radius sphere of flames. Each creature in the area must make a Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one. The fire ignites flammable objects in the area that aren’t being worn or carried.</li>
-                <li><b>Doomshroom.</b> As an action, a creature can throw this dusky mushroom at a point it can see within 60 feet of it, where it explodes in a 10-foot-radius sphere of purple spores. Each creature in the area must succeed on a Constitution saving throw or become afflicted by the bane spell for 1 minute (concentration not required). An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</li>
-                <li><b>Gloomshroom.</b> As an action, a creature can eat this mushroom. For the next hour, it gains darkvision out to a range of 60 feet. If it already has darkvision, the range of this vision is increased by 30 feet.</li>
-            </ul>
-            <p>The mushrooms last until the hyphan’s tamer next finishes a long rest, but lose all magical effects 10 minutes after they are plucked. You can pluck a mushroom as part of the action to use it. After the hyphan uses this trait, it can’t do so again until its tamer finishes a long rest.</p>
-        </description>
-        <sheet usage="1/Long Rest">
-            <description>Over the course of a minute, the hyphan can grow a random assortment of mushrooms on its body. Each time it does this, roll a d4 twice and consult the options below to determine which two mushrooms grow.&#13;
-            1- Bloomshroom. As an action, a creature can eat this mushroom, regaining 2d4 + 2 hit points and gaining advantage on all Constitution saving throws for 1 minute.&#13;
-            2- Boomshroom. As an action, a creature can throw this volatile mushroom at a point it can see within 60 feet of it, where it explodes in a 10-foot-radius sphere of flames. Each creature in the area must make a DC {{hyphan:dc}} Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one. The fire ignites flammable objects in the area that aren’t being worn or carried.&#13;
-            3- Doomshroom. As an action, a creature can throw this dusky mushroom at a point it can see within 60 feet of it, where it explodes in a 10-foot-radius sphere of purple spores. Each creature in the area must succeed on a DC {{hyphan:dc}} Constitution saving throw or become afflicted by the bane spell for 1 minute (concentration not required). An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.&#13;
-            4- Gloomshroom. As an action, a creature can eat this mushroom. For the next hour, it gains darkvision out to a range of 60 feet. If it already has darkvision, the range of this vision is increased by 30 feet.&#13;
-            The mushrooms last until the hyphan’s tamer next finishes a long rest, but lose all magical effects 10 minutes after they are plucked. You can pluck a mushroom as part of the action to use it. After the hyphan uses this trait, it can’t do so again until its tamer finishes a long rest.</description>
-        </sheet>
-    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_HYPHAN">
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan constitution becomes {{hyphan:con}} (+{{hyphan:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:con" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan constitution becomes {{hyphan:con}} (+{{hyphan:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:con" value="1" />
+			<stat name="hyphan:con:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan constitution becomes {{hyphan:con}} (+{{hyphan:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:con" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan constitution becomes {{hyphan:con}} (+{{hyphan:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:con" value="1" />
+			<stat name="hyphan:con:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan constitution becomes {{hyphan:con}} (+{{hyphan:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:con" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan constitution becomes {{hyphan:con}} (+{{hyphan:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:con" value="1" />
+			<stat name="hyphan:con:mod" value="1" />
+		</rules>
+	</element>
 
-    <element name="Multihelp" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_MULTIHELP">
-        <supports>Hyphan, Companion Improvement</supports>
-        <prerequisite>Prerequisite: 13th-level tamer, Helpful</prerequisite>
-        <requirements>[level:tamer:13],ID_LT_HGTMH_COMPANION_TRAIT_HYPHAN_HELPFUL</requirements>
-        <description>
-            <p><b>Type:</b> Active (action)</p>
-            <p>When the hyphan takes the Disengage action, it can take the Help action up to three times on that turn as part of the same action. After it uses this action, it can’t do so again until its tamer finishes a short or long rest.</p>
-        </description>
-        <sheet>
-            <description action="Action" usage="1/Short Rest">When the hyphan takes the Disengage action, it can take the Help action up to three times on that turn as part of the same action. After it uses this action, it can’t do so again until its tamer finishes a short or long rest.</description>
-        </sheet>
-    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_HYPHAN">
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan intelligence becomes {{hyphan:int}} (+{{hyphan:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:int" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan intelligence becomes {{hyphan:int}} (+{{hyphan:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:int" value="1" />
+            <stat name="hyphan:int:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan intelligence becomes {{hyphan:int}} (+{{hyphan:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:int" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan intelligence becomes {{hyphan:int}} (+{{hyphan:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:int" value="1" />			
+            <stat name="hyphan:int:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan intelligence becomes {{hyphan:int}} (+{{hyphan:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:int" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan intelligence becomes {{hyphan:int}} (+{{hyphan:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:int" value="1" />
+            <stat name="hyphan:int:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan intelligence becomes {{hyphan:int}} (+{{hyphan:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:int" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan intelligence becomes {{hyphan:int}} (+{{hyphan:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:int" value="1" />
+            <stat name="hyphan:int:mod" value="1" />
+		</rules>
+	</element>
+	    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_HYPHAN">
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan wisdom becomes {{hyphan:wis}} (+{{hyphan:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:wis" value="1" />
+			<stat name="hyphan:wis:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan wisdom becomes {{hyphan:wis}} (+{{hyphan:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:wis" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan wisdom becomes {{hyphan:wis}} (+{{hyphan:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:wis" value="1" />
+			<stat name="hyphan:wis:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan wisdom becomes {{hyphan:wis}} (+{{hyphan:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:wis" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan wisdom becomes {{hyphan:wis}} (+{{hyphan:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:wis" value="1" />
+			<stat name="hyphan:wis:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan wisdom becomes {{hyphan:wis}} (+{{hyphan:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:wis" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan wisdom becomes {{hyphan:wis}} (+{{hyphan:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:wis" value="1" />
+			<stat name="hyphan:wis:mod" value="1" />
+		</rules>
+	</element>
 
-    <element name="Puffballs II" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_PUFFBALLS_II">
-        <supports>Hyphan, Companion Improvement</supports>
-        <prerequisite>Prerequisite: 13th-level tamer, Puffballs I</prerequisite>
-        <requirements>[level:tamer:13],ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_PUFFBALLS_I</requirements>
-        <description>
-            <p><b>Type:</b> Active (action)</p>
-            <p>When the hyphan uses its Puffballs action, it can create an additional 10-foot square of puffball mushrooms, for a total of four 10-foot squares. The damage they deal increases to 26 (4d12). The hyphan gains a +1 bonus to the save DC of this action.</p>
-            <p>When the hyphan’s tamer reaches 17th level in the tamer class, the hyphan can create one additional 10-foot square of puffballs (five total), and the damage increases to 32 (5d12).</p>
-        </description>
-        <sheet>
-            <description action="Action" usage="1/Short Rest">When the hyphan uses its Puffballs action, it can create an additional 10-foot square of puffball mushrooms, for a total of four 10-foot squares. The damage they deal increases to 26 (4d12). The hyphan gains a +1 bonus to the save DC of this action. When the hyphan’s tamer reaches 17th level in the tamer class, the hyphan can create one additional 10-foot square of puffballs (five total), and the damage increases to 32 (5d12).</description>
-            <description level="17" action="Action" usage="1/Short Rest">When the hyphan uses its Puffballs action, it can create an additional 10-foot square of puffball mushrooms, for a total of five 10-foot squares. The damage they deal increases to 32 (5d12). The hyphan gains a +1 bonus to the save DC of this action.</description>
-        </sheet>
-        <rules>
-            <stat name="hyphan:dc" value="1" bonus="base" />
-        </rules>
-    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_HYPHAN">
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan charisma becomes {{hyphan:cha}} (+{{hyphan:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:cha" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan charisma becomes {{hyphan:cha}} (+{{hyphan:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:cha" value="1" />
+			<stat name="hyphan:cha:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan charisma becomes {{hyphan:cha}} (+{{hyphan:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:cha" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan charisma becomes {{hyphan:cha}} (+{{hyphan:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:cha" value="1" />
+			<stat name="hyphan:cha:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan charisma becomes {{hyphan:cha}} (+{{hyphan:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:cha" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan charisma becomes {{hyphan:cha}} (+{{hyphan:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:cha" value="1" />
+			<stat name="hyphan:cha:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan charisma becomes {{hyphan:cha}} (+{{hyphan:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:cha" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan charisma becomes {{hyphan:cha}} (+{{hyphan:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:cha" value="1" />
+			<stat name="hyphan:cha:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan charisma becomes {{hyphan:cha}} (+{{hyphan:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:cha" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_HYPHAN">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_HYPHAN</requirements>
+		<supports>Hyphan Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Hyphan charisma becomes {{hyphan:cha}} (+{{hyphan:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="hyphan:cha" value="1" />
+			<stat name="hyphan:cha:mod" value="1" />
+		</rules>
+	</element>
 
-    <element name="Mycelial Reconstitution" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_HYPHAN_MYCELIAL_RECONSTITUTION">
-        <supports>Hyphan, Companion Improvement</supports>
-        <prerequisite>Prerequisite: 17th-level tamer</prerequisite>
-        <requirements>[level:tamer:17]</requirements>
-        <description>
-            <p><b>Type:</b> Active (action)</p>
-            <p>As an action, the hyphan can dissolve into mycelia, ending the grappled and restrained conditions on it and reappearing in an unoccupied space on the ground it can see within 30 feet of it.</p>
-        </description>
-        <sheet>
-            <description action="Action">As an action, the hyphan can dissolve into mycelia, ending the grappled and restrained conditions on it and reappearing in an unoccupied space on the ground it can see within 30 feet of it.</description>
-        </sheet>
-    </element>
+	<!-- Go For the Throat -->
+	<element name="Go For the Throat" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_HYPHAN">
+		<supports>Hyphan</supports>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet>
+			<description>Your companion gains a +{{go for the throat:bonus:hyphan}} bonus to its attack
+				and
+				damage rolls made with its natural weapons or unarmed strikes.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="go for the throat:bonus:hyphan" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (2)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>[level:tamer:5],
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:hyphan" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (3)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_3_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			[level:tamer:9],ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:hyphan" value="1" />
+		</rules>
+	</element>
+
+	<!-- Survival Insticts -->
+	<element name="Survival Instincts" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_HYPHAN">
+		<supports>Hyphan</supports>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Hyphan" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (2)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Hyphan" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (3)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Hyphan" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (4)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Hyphan" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (5)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Hyphan" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (6)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_6_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Hyphan" />
+		</rules>
+	</element>
+	<element name="Hyphan Survival Instincts: Strength" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_HYPHAN">
+		<supports>Survival Instinct Hyphan</supports>
+		<description>
+			<p>Your companion gains proficiency in Strength Saving Throws</p>
+		</description>
+		<sheet>
+			<description>Hyphan +{{proficiency}} in Strength Saving Throws</description>
+		</sheet>
+	</element>
+	<element name="Hyphan Survival Instincts: Dexterity" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_HYPHAN">
+		<supports>Survival Instinct Hyphan</supports>
+		<description>
+			<p>Your companion gains proficiency in Dexterity Saving Throws</p>
+		</description>
+		<sheet>
+			<description>Hyphan +{{proficiency}} in Dexterity Saving Throws</description>
+		</sheet>
+	</element>
+	<element name="Hyphan Survival Instincts: Constitution" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_HYPHAN">
+		<supports>Survival Instinct Hyphan</supports>
+		<description>
+			<p>Your companion gains proficiency in Constitution Saving Throws</p>
+		</description>
+		<sheet>
+			<description>Hyphan +{{proficiency}} in Constitution Saving Throws</description>
+		</sheet>
+	</element>
+	<element name="Hyphan Survival Instincts: Intelligence" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_HYPHAN">
+		<supports>Survival Instinct Hyphan</supports>
+		<description>
+			<p>Your companion gains proficiency in Intelligence Saving Throws</p>
+		</description>
+		<sheet>
+			<description>Hyphan +{{proficiency}} in Intelligence Saving Throws</description>
+		</sheet>
+	</element>
+	<element name="Hyphan Survival Instincts: Wisdom" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_HYPHAN">
+		<supports>Survival Instinct Hyphan</supports>
+		<description>
+			<p>Your companion gains proficiency in Wisdom Saving Throws</p>
+		</description>
+		<sheet>
+			<description>Hyphan +{{proficiency}} in Wisdom Saving Throws</description>
+		</sheet>
+	</element>
+	<element name="Hyphan Survival Instincts: Charisma" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_HYPHAN">
+		<supports>Survival Instinct Hyphan</supports>
+		<description>
+			<p>Your companion gains proficiency in Charisma Saving Throws</p>
+		</description>
+		<sheet>
+			<description>Hyphan +{{proficiency}} in Charisma Saving Throws</description>
+		</sheet>
+	</element>
+
+	<!-- War Training -->
+	<element name="War Training" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_HYPHAN">
+		<supports>Hyphan</supports>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet>
+			<description>Hyphan +{{proficiency}} with __________.
+			</description>
+		</sheet>
+	</element>
+	<element name="War Training (2)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Hyphan +{{proficiency}} with __________.
+			</description>
+		</sheet>
+	</element>
+	<element name="War Training (3)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Hyphan +{{proficiency}} with __________.
+			</description>
+		</sheet>
+	</element>
+		<element name="War Training (4)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Hyphan +{{proficiency}} with __________.
+			</description>
+		</sheet>
+	</element>
+	<element name="War Training (5)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Hyphan +{{proficiency}} with __________.
+			</description>
+		</sheet>
+	</element>
+	<element name="War Training (6)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_6_HYPHAN">
+		<supports>Hyphan</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_HYPHAN</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Hyphan +{{proficiency}} with __________.
+			</description>
+		</sheet>
+	</element>
 </elements>

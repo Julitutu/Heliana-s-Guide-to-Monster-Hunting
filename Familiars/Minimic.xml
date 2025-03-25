@@ -2,343 +2,2167 @@
 <elements>
     <info>
         <name>Familiars</name>
-        <description>Familiars from Heliana's Guide to Monster Hunting</description>
+        <description>Minimic from Heliana's Guide to Monster Hunting</description>
         <update version="0.1.0">
             <file name="Minimic.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Minimic.xml" />
         </update>
     </info>
 
-    <element name="Minimic" type="Companion" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_MINIMIC">
+     <element name="Minimic" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_MINIMIC">
         <supports>Familiar, Variant Familiar, Bespoke Companion</supports>
         <description>
-            <div class="sidebar">
-                <p class="flavor">Wait! Not that tankard. And not that plate! It looks like the minimics have been breeding again. You can tell by the eyes. Everyone check your purses for mimic eggs, folks!</p>
-                <p>— Heliana, Wary of Coins</p>
-            </div>
-            <p><b>Type:</b> Monstrosity (shapechanger)</p>
-            <p><b>Creature Component:</b> Any mimic</p>
-            <p><b>Bonus Tamer Improvement:</b> Growth I and +2 Hit Dice</p>
-            <p>With an appearance like regular household objects and the ability to change shape at will, minimics are easy to lose. Their adhesive epidermis sticks to everything; tamers with minimic companions often have a bottle of solvent on hand. A minimic’s ability to keep a foe grappled can be a useful battlefield control tactic, especially when deployed as an inanimate object for ambush operations.</p>
-            <p>If any of the minimic’s traits or actions require a saving throw, it is always against the minimic’s save DC, as calculated below.</p>
-            <center>
-                <p><b>Save DC</b> = 8 + the tamer’s proficiency bonus + the minimic’s Constitution modifier</p>
-            </center>
-            <h4>Monster Trainer</h4>
-            <p>In addition to the improvements you can normally give your companions, you can choose to grant the minimic the following improvements using your Monster Trainer feature:</p>
-            <div class="reference">
-                <div element="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_I" />
-                <div element="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GRAPPLER" />
-                <div element="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_IMPROVED_ADHESIVE" />
-                <div element="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_II" />
-                <div element="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_MULTIATTACK" />
-                <div element="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_REGURGITATE_I" />
-                <div element="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_THICK_SKIN" />
-                <div element="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_ACIDIC_SWEAT" />
-                <div element="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_REGURGITATE_II" />
-                <div element="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_III" />
-            </div>
+            <p style="margin-bottom:-5px">
+                <em>Tiny monstrosity (shapechanger), unaligned</em>
+            </p>
+            <h4 style="margin-top:5px" />
+            <p></p>
+            <p>
+                <strong>Armor Class</strong> 12 (natural armour)</p>
+            <p>
+                <strong>Hit Points</strong> 4 (1d4 + 2)</p>
+            <p>
+                <strong>Speed</strong> 25 ft.</p>
+            <p></p>
+            <table style="text-align:center;margin-top:10px;margin-bottom:10px">
+                <thead>
+                    <tr>
+                        <td>STR</td>
+                        <td>DEX</td>
+                        <td>CON</td>
+                        <td>INT</td>
+                        <td>WIS</td>
+                        <td>CHA</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>12(+1)</td>
+                    <td>11(+0)</td>
+                    <td>14(+2)</td>
+                    <td>4(-3)</td>
+                    <td>10(+0)</td>
+                    <td>6(-2)</td>
+                </tr>
+            </table>
+            <p>
+                <strong>Skills</strong> Stealth +2</p>
+            <p>
+                <strong>Damage Immunities</strong> acid</p>
+            <p>
+                <strong>Condition Immunities</strong> prone</p>
+            <p>
+                <strong>Senses</strong> darkvision 60 ft., passive Perception 10</p>
+            <p>
+                <strong>Languages</strong> —</p>
+            <p></p>
+            <h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
+            <p>
+                <strong>
+                    <em>Adhesive.</em>
+                </strong>The minimic adheres to anything that touches it. A creature no more than one size larger than the minimic that is adhered to the minimic is also grappled by it (escape DC 12).</p>
+            <p>
+                <strong>
+                    <em>False Appearance.</em>
+                </strong>While the minimic remains motionless, it is indistinguishable from an ordinary object.</p>
+            <p>
+                <strong>
+                    <em>Shapechanger.</em>
+                </strong>The minimic can use its action to polymorph into an object equal to it in size, or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.</p>
+            <p></p>
+            <h4 style="margin-top:15px">Actions</h4>
+            <p>
+                <strong>
+                    <em>Pseudopod.</em>
+                </strong>
+                <em>Melee Weapon Attack:</em> +3
+				to hit, reach 5 ft., one target. <em>Hit:</em> 3 (1d4 + 1) bludgeoning damage. The target is subjected to the minimic’s Adhesive trait.</p>
+            <p>
+                <strong>
+                    <em>Bite.</em>
+                </strong>
+                <em>Melee Weapon Attack:</em> +3
+				to hit, reach 5 ft., one target. <em>Hit:</em> 3 (1d4 + 1) piercing damage plus 2 (1d4) acid damage.</p>
+            <p></p>
         </description>
-        <setters>
-            <set name="strength">12</set>
-            <set name="dexterity">11</set>
-            <set name="constitution">14</set>
-            <set name="intelligence">4</set>
-            <set name="wisdom">10</set>
-            <set name="charisma">6</set>
-            <set name="ac">12 (natural armour)</set>
-            <set name="hp">4 (1d4+2)</set>
-            <set name="speed">25 ft.</set>
-            <set name="senses">darkvision 60 ft., passive Perception 10</set>
-            <set name="languages">—</set>
-            <set name="immunities">acid</set>
-            <set name="condition immunities">prone</set>
-            <set name="skills">Stealth +2</set>
-            <set name="type">Monstrosity (shapechanger)</set>
-            <set name="size">Tiny</set>
-            <set name="alignment">unaligned</set>
-            <set name="challenge">1/8</set>
-            <set name="proficiency">2</set>
-            <set name="traits">ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_ADHESIVE,ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_FALSE_APPEARANCE,ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_SHAPECHANGER</set>
-            <set name="actions">ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_PSEUDOPOD,ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_BITE</set>
-        </setters>
+        <sheet>
+            <description>Minimic ({{minimic:size}}) - It gains {{hit dice gained:companion:minimic}}d{{hit dice size:minimic}} hit dice. DC: {{minimic:dc}}. AC: +{{minimic:ac bonus}}. Bite/Pseudopod: +{{minimic:attack:hit}}, DMG: {{minimic:attack:dice}} + {{minimic:attack:damage}}</description>
+        </sheet>
         <rules>
-            <stat name="companion:ac" value="12" />
-            <stat name="companion:hp:max" value="4" bonus="base" />
-            <stat name="companion:speed" value="25" bonus="base" />
-            <stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
+            <grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_MINIMIC" />
+
+            <stat name="hit dice gained:companion:minimic" value="1" level="4" />
+			<stat name="hit dice gained:companion:minimic" value="1" level="8" />
+			<stat name="hit dice gained:companion:minimic" value="1" level="12" />
+			<stat name="hit dice gained:companion:minimic" value="1" level="16" />
+			<stat name="hit dice gained:companion:minimic" value="1" level="19" />
 
             <stat name="minimic:dc" value="8" />
-            <stat name="minimic:dc" value="proficiency" bonus="proficiency" />
-            <stat name="minimic:dc" value="companion:constitution:modifier" />
+            <stat name="minimic:dc" value="proficiency" />
+            <stat name="minimic:dc" value="minimic:con:mod" />
+
+            <stat name="minimic:str" value="12" />
+			<stat name="minimic:str:mod" value="1" />
+			<stat name="minimic:dex" value="11" />
+			<stat name="minimic:dex:mod" value="0" />
+			<stat name="minimic:con" value="14" />
+			<stat name="minimic:con:mod" value="2" />
+			<stat name="minimic:int" value="4" />
+			<stat name="minimic:int:mod" value="-3" />
+			<stat name="minimic:wis" value="10" />
+			<stat name="minimic:wis:mod" value="0" />
+			<stat name="minimic:cha" value="6" />
+			<stat name="minimic:cha:mod" value="-2" />
+
+            <stat name="minimic:ac bonus" value="0" />
+			<stat name="go for the throat:bonus:minimic" value="0" />
+            <stat name="minimic:size" inline="true" value="Tiny" />
+            <stat name="hit dice size:minimic" value="4"/>
+
+			<stat name="minimic:attack:hit" value="proficiency" />
+			<stat name="minimic:attack:hit" value="minimic:str:mod" />
+			<stat name="minimic:attack:hit" value="go for the throat:bonus:minimic" />
+
+			<stat name="minimic:attack:damage" value="minimic:str:mod" />
+			<stat name="minimic:attack:damage" value="go for the throat:bonus:minimic" />
+
+            <stat name="minimic:attack:dice" inline="true" value="1d4" />
         </rules>
     </element>
 
-    <element name="Adhesive" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_ADHESIVE">
-        <description>
-            <p>The minimic adheres to anything that touches it. A creature no more than one size larger than the minimic that is adhered to the minimic is also grappled by it (escape DC 12).</p>
-        </description>
-        <sheet>
-            <description>The minimic adheres to anything that touches it. A creature no more than one size larger than the minimic that is adhered to the minimic is also grappled by it (escape DC 12).</description>
-        </sheet>
-    </element>
+    <!-- Improvement Gained on Taming-->
+	<element name="Minimic Improvement" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_MINIMIC">
+		<description>
+			<p>Whenever you gain a level beyond 1st in this class, each companion to which you are
+				bonded gains one of the following improvements.
+				Any newly gained companions receive these additional Hit Dice and improvements as if
+				you had them since your 1st level in tamer.</p>
+		</description>
+		<sheet>
+			<description>The Minimic has the following Improvements:</description>
+		</sheet>
+		<rules>
+            <stat name="hit dice gained:companion:minimic" value="2" />
 
-    <element name="False Appearance" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_FALSE_APPEARANCE">
-        <description>
-            <p>While the minimic remains motionless, it is indistinguishable from an ordinary object.</p>
-        </description>
-        <sheet>
-            <description>While the minimic remains motionless, it is indistinguishable from an ordinary object.</description>
-        </sheet>
-    </element>
+			<select type="Class Feature" name="Minimic Improvement"
+				supports="Minimic" default="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_I" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 2)"
+				supports="Minimic" level="2" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 3)"
+				supports="Minimic" level="3" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 4)"
+				supports="Minimic" level="4" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 5)"
+				supports="Minimic" level="5" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 6)"
+				supports="Minimic" level="6" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 7)"
+				supports="Minimic" level="7" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 8)"
+				supports="Minimic" level="8" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 9)"
+				supports="Minimic" level="9" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 10)"
+				supports="Minimic" level="10" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 11)"
+				supports="Minimic" level="11" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 12)"
+				supports="Minimic" level="12" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 13)"
+				supports="Minimic" level="13" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 14)"
+				supports="Minimic" level="14" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 15)"
+				supports="Minimic" level="15" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 16)"
+				supports="Minimic" level="16" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 17)"
+				supports="Minimic" level="17" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 18)"
+				supports="Minimic" level="18" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 19)"
+				supports="Minimic" level="19" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 20)"
+				supports="Minimic" level="20" />
+		</rules>
+	</element>
 
-    <element name="Shapechanger" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_SHAPECHANGER">
-        <description>
-            <p>The minimic can use its action to polymorph into an object equal to it in size, or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.</p>
-        </description>
-        <sheet>
-            <description>The minimic can use its action to polymorph into an object equal to it in size, or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.</description>
-        </sheet>
-    </element>
+    <!-- Improvement Gained on Taming-->
+	<element name="Minimic Improvement" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_MINIMIC">
+		<description>
+			<p>Whenever you gain a level beyond 1st in this class, each companion to which you are
+				bonded gains one of the following improvements.
+				Any newly gained companions receive these additional Hit Dice and improvements as if
+				you had them since your 1st level in tamer.</p>
+		</description>
+		<sheet>
+			<description>The Minimic has the following Improvements:</description>
+		</sheet>
+		<rules>
+            <grant type="Class Feature" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_I"/>
+            <stat name="hit dice gained:companion:minimic" value="2" />
 
-    <element name="Pseudopod" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_PSEUDOPOD">
-        <requirements>!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_I|!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_II|!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_III</requirements>
-        <description>
-            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage. The target is subjected to the minimic’s Adhesive trait.</p>
-        </description>
-        <sheet>
-            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage. The target is subjected to the minimic’s Adhesive trait.</description>
-        </sheet>
-    </element>
+			<select type="Class Feature" name="Minimic Improvement (Lvl 2)"
+				supports="Minimic" level="2" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 3)"
+				supports="Minimic" level="3" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 4)"
+				supports="Minimic" level="4" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 5)"
+				supports="Minimic" level="5" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 6)"
+				supports="Minimic" level="6" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 7)"
+				supports="Minimic" level="7" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 8)"
+				supports="Minimic" level="8" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 9)"
+				supports="Minimic" level="9" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 10)"
+				supports="Minimic" level="10" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 11)"
+				supports="Minimic" level="11" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 12)"
+				supports="Minimic" level="12" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 13)"
+				supports="Minimic" level="13" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 14)"
+				supports="Minimic" level="14" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 15)"
+				supports="Minimic" level="15" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 16)"
+				supports="Minimic" level="16" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 17)"
+				supports="Minimic" level="17" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 18)"
+				supports="Minimic" level="18" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 19)"
+				supports="Minimic" level="19" />
+			<select type="Class Feature" name="Minimic Improvement (Lvl 20)"
+				supports="Minimic" level="20" />
+		</rules>
+	</element>
 
-    <element name="Bite" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_BITE">
-        <requirements>!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_I|!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_II|!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_III</requirements>
-        <description>
-            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage plus 2 (1d4) acid damage.</p>
-        </description>
-        <sheet>
-            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage plus 2 (1d4) acid damage.</description>
-        </sheet>
-    </element>
+    <!--Minimic's Improvements -->
 
-    <!-- Companion's Improvements -->
-    <element name="Growth I" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_I">
-        <supports>Minimic, Companion Improvement</supports>
+    <element name="Growth I" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_I">
+        <supports>Minimic</supports>
         <prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
-        <requirements>[level:tamer:1],!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_II,!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_III</requirements>
+        <requirements>[level:tamer:1]</requirements>
         <description>
-            <p><b>Type:</b> Passive (companion)</p>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
             <p>The minimic’s size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its Bite and Pseudopod attacks increase to a d6. The minimic gains this improvement when it becomes a companion; it doesn’t cost an improvement.</p>
         </description>
-        <sheet>
-            <description>The minimic’s size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its Bite and Pseudopod attacks increase to a d6. The minimic gains this improvement when it becomes a companion; it doesn’t cost an improvement.</description>
+        <sheet display="false">
+            <description>The minimic’s size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its Bite and Pseudopod attacks increase to a d6.</description>
         </sheet>
         <rules>
-            <stat name="companion:hp:max" value="2" />
-            <stat name="companion:hp:max" value="5" />
-            <stat name="companion:hp:max" value="companion:constitution:modifier" />
-            <stat name="companion:hp:max" value="companion:constitution:modifier" />
-
-            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_PSEUDOPOD_GROWTH_I" />
-            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_BITE_GROWTH_I" />
+            <stat name="minimic:size" inline="true" value="Small" />
+            <stat name="hit dice size:minimic" value="2"/>
+            <stat name="minimic:attack:dice" inline="true" value="1d6" />
         </rules>
     </element>
-    <element name="Pseudopod" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_PSEUDOPOD_GROWTH_I">
-        <requirements>!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_II|!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_III</requirements>
-        <description>
-            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage. The target is subjected to the minimic’s Adhesive trait.</p>
-        </description>
-        <sheet>
-            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage. The target is subjected to the minimic’s Adhesive trait.</description>
-        </sheet>
-    </element>
-    <element name="Bite" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_BITE_GROWTH_I">
-        <requirements>!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_II|!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_III</requirements>
-        <description>
-            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage plus 3 (1d6) acid damage.</p>
-        </description>
-        <sheet>
-            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage plus 3 (1d6) acid damage.</description>
-        </sheet>
-    </element>
 
-    <element name="Grappler" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GRAPPLER">
-        <supports>Minimic, Companion Improvement</supports>
+    <element name="Grappler" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GRAPPLER">
+        <supports>Minimic</supports>
         <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
         <requirements>[level:tamer:3]</requirements>
         <description>
-            <p><b>Type:</b> Passive (companion)</p>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
             <p>The minimic has advantage on attack rolls against any creature grappled by it.</p>
         </description>
         <sheet>
-            <description>The minimic has advantage on attack rolls against any creature grappled by it.</description>
+            <description>ADV on attack rolls against any creature grappled by it.</description>
         </sheet>
     </element>
 
-    <element name="Improved Adhesive" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_IMPROVED_ADHESIVE">
-        <supports>Minimic, Companion Improvement</supports>
+    <element name="Improved Adhesive" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_IMPROVED_ADHESIVE">
+        <supports>Minimic</supports>
         <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
         <requirements>[level:tamer:3]</requirements>
         <description>
-            <p><b>Type:</b> Passive (companion)</p>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
             <p>Creatures grappled by the minimic have disadvantage on ability checks made to escape its grapple.</p>
         </description>
         <sheet>
-            <description>Creatures grappled by the minimic have disadvantage on ability checks made to escape its grapple.</description>
+            <description>Creatures grappled by the minimic have DISADV to escape.</description>
         </sheet>
     </element>
 
-    <element name="Growth II" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_II">
-        <supports>Minimic, Companion Improvement</supports>
+    <element name="Growth II" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_II">
+        <supports>Minimic</supports>
         <prerequisite>Prerequisite: 5th-level tamer, Growth I</prerequisite>
-        <requirements>[level:tamer:5],ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_I,!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_III</requirements>
+        <requirements>[level:tamer:5],ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_I</requirements>
         <description>
-            <p><b>Type:</b> Passive (companion)</p>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
             <p>The minimic’s size increases to Medium, its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its Bite and Pseudopod attacks increase from a d6 to a d8.</p>
         </description>
-        <sheet>
+        <sheet display="false">
             <description>The minimic’s size increases to Medium, its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its Bite and Pseudopod attacks increase from a d6 to a d8.</description>
         </sheet>
         <rules>
-            <stat name="companion:hp:max" value="3" />
-            <stat name="companion:hp:max" value="5" />
-            <stat name="companion:hp:max" value="companion:constitution:modifier" />
-            <stat name="companion:hp:max" value="companion:constitution:modifier" />
-
-            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_PSEUDOPOD_GROWTH_II" />
-            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_BITE_GROWTH_II" />
+            <stat name="minimic:size" inline="true" value="Medium" />
+            <stat name="hit dice size:minimic" value="2"/>
+            <stat name="minimic:attack:dice" inline="true" value="1d8" />
         </rules>
     </element>
-    <element name="Pseudopod" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_PSEUDOPOD_GROWTH_II">
-        <requirements>!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_III</requirements>
-        <description>
-            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) bludgeoning damage. The target is subjected to the minimic’s Adhesive trait.</p>
-        </description>
-        <sheet>
-            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) bludgeoning damage. The target is subjected to the minimic’s Adhesive trait.</description>
-        </sheet>
-    </element>
-    <element name="Bite" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_BITE_GROWTH_II">
-        <requirements>!ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_III</requirements>
-        <description>
-            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage plus 4 (1d8) acid damage.</p>
-        </description>
-        <sheet>
-            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage plus 4 (1d8) acid damage.</description>
-        </sheet>
-    </element>
 
-    <element name="Multiattack" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_MULTIATTACK">
-        <supports>Minimic, Companion Improvement</supports>
+    <element name="Multiattack" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_MULTIATTACK">
+        <supports>Minimic</supports>
         <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
         <requirements>[level:tamer:5]</requirements>
         <description>
-            <p><b>Type:</b> Active (action)</p>
+            <p>
+                <b>Type:</b> Active (action)</p>
             <p>As an action, the minimic can make two attacks: one with its Pseudopod and one with its Bite.</p>
         </description>
         <sheet>
-            <description>As an action, the minimic can make two attacks: one with its Pseudopod and one with its Bite.</description>
+            <description>Two attacks: one Pseudopod and one Bite.</description>
         </sheet>
     </element>
 
-    <element name="Regurgitate I" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_REGURGITATE_I">
-        <supports>Minimic, Companion Improvement</supports>
+    <element name="Regurgitate" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_REGURGITATE_I">
+        <supports>Minimic</supports>
         <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
-        <requirements>[level:tamer:5],!ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_REGURGITATE_II</requirements>
+        <requirements>[level:tamer:5]</requirements>
         <description>
-            <p><b>Type:</b> Active (action)</p>
+            <p>
+                <b>Type:</b> Active (action)</p>
             <p>As an action, the minimic can regurgitate a torrent of acidic bile. Each creature in a 15-foot cone must make a Dexterity saving throw, taking 17 (5d6) acid damage on a failed save, or half as much damage on a successful one.</p>
             <p>After the minimic uses this action, it can’t do so again until its tamer finishes a short or long rest.</p>
             <p>When the minimic’s tamer reaches 9th level in the tamer class, the damage of this action increases to 24 (7d6).</p>
         </description>
         <sheet>
-            <description action="Action" usage="1/Short Rest">As an action, the minimic can regurgitate a torrent of acidic bile. Each creature in a 15-foot cone must make a DC {{minimic:dc}} Dexterity saving throw, taking 17 (5d6) acid damage on a failed save, or half as much damage on a successful one. After the minimic uses this action, it can’t do so again until its tamer finishes a short or long rest.</description>
-            <description level="9" action="Action" usage="1/Short Rest">As an action, the minimic can regurgitate a torrent of acidic bile. Each creature in a 15-foot cone must make a DC {{minimic:dc}} Dexterity saving throw, taking 24 (7d6) acid damage on a failed save, or half as much damage on a successful one. After the minimic uses this action, it can’t do so again until its tamer finishes a short or long rest.</description>
-        </sheet>
-    </element>
-
-    <element name="Thick Skin" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_THICK_SKIN">
-        <supports>Minimic, Companion Improvement</supports>
-        <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
-        <requirements>[level:tamer:9]</requirements>
-        <description>
-            <p><b>Type:</b> Passive (companion)</p>
-            <p>The minimic gains a +2 bonus to its AC while it isn’t wearing armour.</p>
-        </description>
-        <sheet>
-            <description>The minimic gains a +2 bonus to its AC while it isn’t wearing armour.</description>
+            <description action="Action" usage="1/Short Rest">{{regurgitate:cone}}-foot cone DC {{regurgitate:dc}} DEX Save, taking {{regurgitate:damage}} acid or half </description>
         </sheet>
         <rules>
-            <stat name="ac:companion:ac" value="2" />
-            <stat name="ac:calculation" value="ac:companion:ac" bonus="calculation" equipped="[armor:none]"/>
+            <stat name="regurgitate:dc" value="minimic:dc" />
+
+            <stat name="regurgitate:cone" value="15" />
+        
+            <stat name="regurgitate:damage" inline="true" value="5d6" />
+            <stat name="regurgitate:damage" inline="true" value="7d6" level="9"/>
         </rules>
     </element>
 
-    <element name="Acidic Sweat" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_ACIDIC_SWEAT">
-        <supports>Minimic, Companion Improvement</supports>
+    <element name="Thick Skin" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_THICK_SKIN">
+        <supports>Minimic</supports>
+        <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
+        <requirements>[level:tamer:9]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The minimic gains a +2 bonus to its AC while it isn’t wearing armour.</p>
+        </description>
+        <sheet display="false">
+            <description>The minimic gains a +2 bonus to its AC while it isn’t wearing armour.</description>
+        </sheet>
+        <rules>
+            <stat name="minimic:ac bonus" value="2" />
+        </rules>
+    </element>
+
+    <element name="Acidic Sweat" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_ACIDIC_SWEAT">
+        <supports>Minimic</supports>
         <prerequisite>Prerequisite: 13th-level tamer</prerequisite>
         <requirements>[level:tamer:13]</requirements>
         <description>
-            <p><b>Type:</b> Active (bonus action)</p>
+            <p>
+                <b>Type:</b> Active (bonus action)</p>
             <p>As a bonus action, the minimic can secrete acid. Each creature grappling or grappled by the minimic takes acid damage equal to the minimic’s current Hit Die size (1d4, or higher, if it has further Growth improvements).</p>
         </description>
         <sheet>
-            <description action="Bonus Action">As a bonus action, the minimic can secrete acid. Each creature grappling or grappled by the minimic takes acid damage equal to the minimic’s current Hit Die size (1d4, or higher, if it has further Growth improvements).</description>
+            <description action="Bonus Action">Grappling or grappled creatures takes 1d{{hit dice size:minimic}}acid</description>
         </sheet>
     </element>
 
-    <element name="Regurgitate II" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_REGURGITATE_II">
-        <supports>Minimic, Companion Improvement</supports>
+    <element name="Regurgitate II" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_REGURGITATE_II">
+        <supports>Minimic</supports>
         <prerequisite>Prerequisite: 13th-level tamer, Regurgitate I</prerequisite>
         <requirements>[level:tamer:13],ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_REGURGITATE_I</requirements>
         <description>
-            <p><b>Type:</b> Active (action)</p>
+            <p>
+                <b>Type:</b> Active (action)</p>
             <p>The damage of the minimic’s Regurgitate action increases to 31 (9d6), and the size of the cone increases to 25 feet. The minmic gains a +1 bonus to the save DC of this action.</p>
             <p>When the minimic’s tamer reaches 17th level in the tamer class, the damage of this action increases to 42 (12d6).</p>
         </description>
-        <sheet>
+        <sheet display="false">
             <description action="Action" usage="1/Short Rest">The damage of the minimic’s Regurgitate action increases to 31 (9d6), and the size of the cone increases to 25 feet. The minmic gains a +1 bonus to the save DC of this action.</description>
             <description level="17" action="Action" usage="1/Short Rest">The damage of the minimic’s Regurgitate action increases to 42 (12d6), and the size of the cone increases to 25 feet. The minmic gains a +1 bonus to the save DC of this action.</description>
         </sheet>
         <rules>
-            <stat name="minimic:dc" value="1" bonus="base" />
+            <stat name="regurgitate:dc" value="1" />
+
+            <stat name="regurgitate:cone" value="10" />
+        
+            <stat name="regurgitate:damage" inline="true" value="9d6" />
+            <stat name="regurgitate:damage" inline="true" value="12d6" level="9"/>
         </rules>
     </element>
 
-    <element name="Growth III" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_III">
-        <supports>Minimic, Companion Improvement</supports>
+    <element name="Growth III" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_III">
+        <supports>Minimic</supports>
         <prerequisite>Prerequisite: 17th-level tamer, Growth II</prerequisite>
-        <requirements>[level:tamer:17],ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_I,ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_II</requirements>
+        <requirements>[level:tamer:17],ID_LT_HGTMH_COMPANION_TRAIT_MINIMIC_GROWTH_II</requirements>
         <description>
-            <p><b>Type:</b> Passive (companion)</p>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
             <p>The minimic’s size increases to Large, its Hit Die size increases to a d10 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its Bite and Pseudopod attacks increase from a d8 to a d10.</p>
         </description>
-        <sheet>
+        <sheet display="false">
             <description>The minimic’s size increases to Large, its Hit Die size increases to a d10 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its Bite and Pseudopod attacks increase from a d8 to a d10.</description>
         </sheet>
         <rules>
-            <stat name="companion:hp:max" value="4" />
-            <stat name="companion:hp:max" value="5" />
-            <stat name="companion:hp:max" value="companion:constitution:modifier" />
-            <stat name="companion:hp:max" value="companion:constitution:modifier" />
-
-            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_PSEUDOPOD_GROWTH_III" />
-            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_BITE_GROWTH_III" />
+            <stat name="minimic:size" inline="true" value="Large" />
+            <stat name="hit dice size:minimic" value="2"/>
+            <stat name="minimic:attack:dice" inline="true" value="1d10" />
         </rules>
     </element>
-    <element name="Pseudopod" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_PSEUDOPOD_GROWTH_III">
-        <description>
-            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d10 + 1) bludgeoning damage. The target is subjected to the minimic’s Adhesive trait.</p>
-        </description>
-        <sheet>
-            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d10 + 1) bludgeoning damage. The target is subjected to the minimic’s Adhesive trait.</description>
-        </sheet>
-    </element>
-    <element name="Bite" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_MINIMIC_BITE_GROWTH_III">
-        <description>
-            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d10 + 1) piercing damage plus 5 (1d10) acid damage.</p>
-        </description>
-        <sheet>
-            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d10 + 1) piercing damage plus 5 (1d10) acid damage.</description>
-        </sheet>
-    </element>
+    
+    <!-- General Improvements -->
+	<!-- Speed Training -->
+	<element name="Speed Training" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SPEED_TRAINING_MINIMIC">
+		<supports>Minimic</supports>
+		<description>
+			<p>Increase one existing speed by 15 feet up to a maximum of 150% of the creature’s base
+				speed, rounded up to the nearest 5-foot increment.</p>
+			<p>E.g., a base speed of 30 feet can be increased to 45 feet maximum, a base speed of 25
+				feet can be increased to 40 feet, and a base speed of 20 feet to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>Increase one existing speed by 15 feet (Max of 150%)</description>
+		</sheet>
+	</element>
+
+	<!-- Toughen Up -->
+	<element name="Toughen Up" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_MINIMIC">
+		<supports>Minimic</supports>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false">
+			<description>Your companion gains {{hit dice gained:companion:1}} Hit Die, increasing
+				its hit point maximum</description>
+		</sheet>
+		<rules>
+			<stat name="hit dice gained:companion:minimic" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (2)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:minimic" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (3)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:minimic" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (4)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:minimic" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (5)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:minimic" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (6)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:minimic" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (7)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:minimic" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (8)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:minimic" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (9)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:minimic" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (10)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:minimic" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (11)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:minimic" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (12)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:minimic" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (13)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:minimic" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (14)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:minimic" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (15)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:minimic" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (16)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:minimic" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (17)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:minimic" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (18)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:minimic" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (19)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:minimic" value="1" />
+		</rules>
+	</element>
+
+	<!-- Ability Boost -->
+	<element name="Ability Boost" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_MINIMIC">
+		<supports>Minimic</supports>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Minimic Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (2)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_MINIMIC</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Minimic Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (3)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_MINIMIC</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Minimic Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (4)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_MINIMIC</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Minimic Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (5)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_MINIMIC</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Minimic Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (6)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_MINIMIC</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Minimic Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (7)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_MINIMIC</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Minimic Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (8)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_MINIMIC</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Minimic Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (9)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_MINIMIC</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Minimic Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (10)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_MINIMIC</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Minimic Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (11)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_MINIMIC</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Minimic Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (12)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_MINIMIC</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Minimic Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (13)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_MINIMIC</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Minimic Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (14)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_MINIMIC</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Minimic Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (15)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_MINIMIC</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Minimic Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (16)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_MINIMIC</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Minimic Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (17)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_MINIMIC</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Minimic Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (18)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_MINIMIC</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Minimic Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (19)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_19_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_MINIMIC</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Minimic Ability Boost" />
+		</rules>
+	</element>
+ 
+	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_MINIMIC">
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic strength becomes {{minimic:str}} (+{{minimic:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:str" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic strength becomes {{minimic:str}} (+{{minimic:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:str" value="1" />
+			<stat name="minimic:str:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic strength becomes {{minimic:str}} (+{{minimic:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:str" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic strength becomes {{minimic:str}} (+{{minimic:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:str" value="1" />
+            <stat name="minimic:str:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic strength becomes {{minimic:str}} (+{{minimic:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:str" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic strength becomes {{minimic:str}} (+{{minimic:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:str" value="1" />
+            <stat name="minimic:str:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic strength becomes {{minimic:str}} (+{{minimic:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:str" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic strength becomes {{minimic:str}} (+{{minimic:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:str" value="1" />
+            <stat name="minimic:str:mod" value="1" />
+		</rules>
+	</element>
+	
+	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_MINIMIC">
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic dexterity becomes {{minimic:dex}} (+{{minimic:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:dex" value="1" />
+            <stat name="minimic:dex:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic dexterity becomes {{minimic:dex}} (+{{minimic:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:dex" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic dexterity becomes {{minimic:dex}} (+{{minimic:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:dex" value="1" />
+            <stat name="minimic:dex:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic dexterity becomes {{minimic:dex}} (+{{minimic:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:dex" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic dexterity becomes {{minimic:dex}} (+{{minimic:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:dex" value="1" />
+            <stat name="minimic:dex:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic dexterity becomes {{minimic:dex}} (+{{minimic:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:dex" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic dexterity becomes {{minimic:dex}} (+{{minimic:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:dex" value="1" />
+            <stat name="minimic:dex:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic dexterity becomes {{minimic:dex}} (+{{minimic:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:dex" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic dexterity becomes {{minimic:dex}} (+{{minimic:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:dex" value="1" />
+            <stat name="minimic:dex:mod" value="1" />
+		</rules>
+	</element>
+
+	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_MINIMIC">
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic constitution becomes {{minimic:con}} (+{{minimic:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:con" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic constitution becomes {{minimic:con}} (+{{minimic:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:con" value="1" />
+			<stat name="minimic:con:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic constitution becomes {{minimic:con}} (+{{minimic:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:con" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic constitution becomes {{minimic:con}} (+{{minimic:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:con" value="1" />
+			<stat name="minimic:con:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic constitution becomes {{minimic:con}} (+{{minimic:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:con" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic constitution becomes {{minimic:con}} (+{{minimic:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:con" value="1" />
+			<stat name="minimic:con:mod" value="1" />
+		</rules>
+	</element>
+
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_MINIMIC">
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic intelligence becomes {{minimic:int}} (+{{minimic:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:int" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic intelligence becomes {{minimic:int}} (+{{minimic:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:int" value="1" />
+            <stat name="minimic:int:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic intelligence becomes {{minimic:int}} (+{{minimic:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:int" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic intelligence becomes {{minimic:int}} (+{{minimic:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:int" value="1" />			
+            <stat name="minimic:int:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic intelligence becomes {{minimic:int}} (+{{minimic:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:int" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic intelligence becomes {{minimic:int}} (+{{minimic:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:int" value="1" />
+            <stat name="minimic:int:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic intelligence becomes {{minimic:int}} (+{{minimic:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:int" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic intelligence becomes {{minimic:int}} (+{{minimic:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:int" value="1" />
+            <stat name="minimic:int:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic intelligence becomes {{minimic:int}} (+{{minimic:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:int" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic intelligence becomes {{minimic:int}} (+{{minimic:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:int" value="1" />
+            <stat name="minimic:int:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic intelligence becomes {{minimic:int}} (+{{minimic:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:int" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic intelligence becomes {{minimic:int}} (+{{minimic:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:int" value="1" />
+            <stat name="minimic:int:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_13_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic intelligence becomes {{minimic:int}} (+{{minimic:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:int" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_14_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_13_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic intelligence becomes {{minimic:int}} (+{{minimic:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:int" value="1" />
+            <stat name="minimic:int:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_15_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_14_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic intelligence becomes {{minimic:int}} (+{{minimic:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:int" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_16_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_15_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic intelligence becomes {{minimic:int}} (+{{minimic:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:int" value="1" />
+            <stat name="minimic:int:mod" value="1" />
+		</rules>
+	</element>
+
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_MINIMIC">
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic wisdom becomes {{minimic:wis}} (+{{minimic:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:wis" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic wisdom becomes {{minimic:wis}} (+{{minimic:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:wis" value="1" />
+            <stat name="minimic:wis:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic wisdom becomes {{minimic:wis}} (+{{minimic:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:wis" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic wisdom becomes {{minimic:wis}} (+{{minimic:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:wis" value="1" />
+            <stat name="minimic:wis:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic wisdom becomes {{minimic:wis}} (+{{minimic:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:wis" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic wisdom becomes {{minimic:wis}} (+{{minimic:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:wis" value="1" />
+            <stat name="minimic:wis:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic wisdom becomes {{minimic:wis}} (+{{minimic:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:wis" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic wisdom becomes {{minimic:wis}} (+{{minimic:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:wis" value="1" />
+            <stat name="minimic:wis:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic wisdom becomes {{minimic:wis}} (+{{minimic:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:wis" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_10_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic wisdom becomes {{minimic:wis}} (+{{minimic:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:wis" value="1" />
+            <stat name="minimic:wis:mod" value="1" />
+		</rules>
+	</element>
+
+	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_MINIMIC">
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic charisma becomes {{minimic:cha}} (+{{minimic:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:cha" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic charisma becomes {{minimic:cha}} (+{{minimic:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:cha" value="1" />
+            <stat name="minimic:cha:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic charisma becomes {{minimic:cha}} (+{{minimic:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:cha" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic charisma becomes {{minimic:cha}} (+{{minimic:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:cha" value="1" />
+            <stat name="minimic:cha:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic charisma becomes {{minimic:cha}} (+{{minimic:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:cha" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic charisma becomes {{minimic:cha}} (+{{minimic:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:cha" value="1" />
+            <stat name="minimic:cha:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic charisma becomes {{minimic:cha}} (+{{minimic:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:cha" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic charisma becomes {{minimic:cha}} (+{{minimic:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:cha" value="1" />
+            <stat name="minimic:cha:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic charisma becomes {{minimic:cha}} (+{{minimic:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:cha" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic charisma becomes {{minimic:cha}} (+{{minimic:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:cha" value="1" />
+            <stat name="minimic:cha:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_11_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic charisma becomes {{minimic:cha}} (+{{minimic:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:cha" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_12_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_11_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic charisma becomes {{minimic:cha}} (+{{minimic:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:cha" value="1" />
+            <stat name="minimic:cha:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_13_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_12_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic charisma becomes {{minimic:cha}} (+{{minimic:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:cha" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_14_MINIMIC">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_13_MINIMIC</requirements>
+		<supports>Minimic Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Minimic charisma becomes {{minimic:cha}} (+{{minimic:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="minimic:cha" value="1" />
+            <stat name="minimic:cha:mod" value="1" />
+		</rules>
+	</element>
+
+	<!-- Go For the Throat -->
+	<element name="Go For the Throat" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_MINIMIC">
+		<supports>Minimic</supports>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="go for the throat:bonus:minimic" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (2)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>[level:tamer:5],
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:minimic" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (3)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_3_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			[level:tamer:9],ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:minimic" value="1" />
+		</rules>
+	</element>
+
+	<!-- Survival Insticts -->
+	<element name="Survival Instincts" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_MINIMIC">
+		<supports>Minimic</supports>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Minimic" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (2)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Minimic" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (3)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Minimic" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (4)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Minimic" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (5)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Minimic" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (6)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_6_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Minimic" />
+		</rules>
+	</element>
+	<element name="Minimic Survival Instincts: Strength" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_MINIMIC">
+		<supports>Survival Instinct Minimic</supports>
+		<description>
+			<p>Your companion gains proficiency in Strength Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{proficiency}} in Strength Saving Throws</description>
+		</sheet>
+	</element>
+    <element name="Minimic Survival Instincts: Dexterity" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_MINIMIC">
+		<supports>Survival Instinct Minimic</supports>
+		<description>
+			<p>Your companion gains proficiency in Dexterity Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{proficiency}} in Dexterity Saving Throws</description>
+		</sheet>
+	</element>
+	<element name="Minimic Survival Instincts: Constitution" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_MINIMIC">
+		<supports>Survival Instinct Minimic</supports>
+		<description>
+			<p>Your companion gains proficiency in Constitution Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{proficiency}} in Constitution Saving Throws</description>
+		</sheet>
+	</element>
+	<element name="Minimic Survival Instincts: Intelligence" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_MINIMIC">
+		<supports>Survival Instinct Minimic</supports>
+		<description>
+			<p>Your companion gains proficiency in Intelligence Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{proficiency}} in Intelligence Saving Throws</description>
+		</sheet>
+	</element>
+	<element name="Minimic Survival Instincts: Wisdom" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_MINIMIC">
+		<supports>Survival Instinct Minimic</supports>
+		<description>
+			<p>Your companion gains proficiency in Wisdom Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{proficiency}} in Wisdom Saving Throws</description>
+		</sheet>
+	</element>
+	<element name="Minimic Survival Instincts: Charisma" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_MINIMIC">
+		<supports>Survival Instinct Minimic</supports>
+		<description>
+			<p>Your companion gains proficiency in Charisma Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{proficiency}} in Charisma Saving Throws</description>
+		</sheet>
+	</element>
+
+	<!-- War Training -->
+	<element name="War Training" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_MINIMIC">
+		<supports>Minimic</supports>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet>
+			<description>+{{proficiency}} in ____________-
+			</description>
+		</sheet>
+	</element>
+	<element name="War Training (2)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>
+			</description>
+		</sheet>
+	</element>
+	<element name="War Training (3)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>
+			</description>
+		</sheet>
+	</element>
+	<element name="War Training (4)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>
+			</description>
+		</sheet>
+	</element>
+	<element name="War Training (5)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>
+			</description>
+		</sheet>
+	</element>
+	<element name="War Training (6)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_6_MINIMIC">
+		<supports>Minimic</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_MINIMIC</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>
+			</description>
+		</sheet>
+	</element>
 </elements>

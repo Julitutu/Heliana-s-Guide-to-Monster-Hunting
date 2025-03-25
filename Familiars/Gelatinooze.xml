@@ -1,422 +1,2237 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <info>
-        <name>Familiars</name>
-        <description>Familiars from Heliana's Guide to Monster Hunting</description>
-        <update version="0.1.0">
-            <file name="Gelatinooze.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Gelatinooze.xml" />
-        </update>
-    </info>
+	<info>
+		<name>Familiars</name>
+		<description>Gelatinooze from Heliana's Guide to Monster Hunting</description>
+		<update version="0.1.0">
+			<file name="Gelatinooze.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Gelatinooze.xml" />
+		</update>
+	</info>
 
-    <element name="Gelatinooze" type="Companion" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_GELATINOOZE">
-        <supports>Familiar, Variant Familiar, Bespoke Companion</supports>
-        <description>
-            <div class="sidebar">
-                <p class="flavor">You can pet it. But I’d vear gloves. And not your favourite, fancy-pants vons either; you never know vhen its goink to start oozink.</p>
-                <p>— Humperdink, No Longer Has Gloves</p>
-            </div>
-            <p><b>Type:</b> Ooze</p>
-            <p><b>Creature Component:</b> Any polyhedrooze</p>
-            <p><b>Bonus Tamer Improvement:</b> Growth I and +2 Hit Dice</p>
-            <p>A relatively recent creation, the gelatinous polyhedrooze builds on its forebears’ mere six sides. Able to more selectively dissolve the objects it engulfs, this companion makes use of the arms and armour found lying around dungeons to form impenetrable barriers of overlapping shields and phalanx-like spears.</p>
-            <p>If any of the gelatinooze’s traits or actions require a saving throw, it is always against the gelatinooze’s save DC, as calculated below.</p>
-            <center>
-                <p><b>Save DC</b> = 8 + the tamer’s proficiency bonus + the gelatinooze’s Strength modifier</p>
-            </center>
-            <h4>Monster Trainer</h4>
-            <p>In addition to the improvements you can normally give your companions, you can choose to grant the gelatinooze the following improvements using your Monster Trainer feature:</p>
-            <div class="reference">
-                <div element="ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_I" />
-                <div element="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_REACTIVE_MUTATIONS" />
-                <div element="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_ENGULF" />
-                <div element="ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_II" />
-                <div element="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_MULTIATTACK" />
-                <div element="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_SPIT" />
-                <div element="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PHALANX" />
-                <div element="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_TURTLE" />
-                <div element="ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_III" />
-                <div element="ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV" />
-                <div element="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_SANCTUARY" />
-                <div element="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_ERUPT" />
-            </div>
-        </description>
-        <setters>
-            <set name="strength">13</set>
-            <set name="dexterity">6</set>
-            <set name="constitution">16</set>
-            <set name="intelligence">4</set>
-            <set name="wisdom">8</set>
-            <set name="charisma">4</set>
-            <set name="ac">12 (natural armour)</set>
-            <set name="hp">5 (1d4+3)</set>
-            <set name="speed">25 ft., climb 25 ft.</set>
-            <set name="senses">blindsight 60 ft. (blind beyond this radius), passive Perception 9</set>
-            <set name="languages">—</set>
-            <set name="immunities">acid</set>
-            <set name="type">Ooze</set>
-            <set name="size">Tiny</set>
-            <set name="alignment">unaligned</set>
-            <set name="challenge">1/8</set>
-            <set name="proficiency">2</set>
-            <set name="traits">ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_ACIDIC_TOUCH,ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_DISSOLVE_METAL</set>
-            <set name="actions">ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PSEUDOPOD</set>
-        </setters>
-        <rules>
-            <stat name="companion:ac" value="12" />
-            <stat name="companion:hp:max" value="5" bonus="base" />
-            <stat name="companion:speed" value="25" bonus="base" />
-            <stat name="companion:speed:climb" value="25" bonus="base" />
+	<element name="Gelatinooze" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_GELATINOOZE">
+		<supports>Familiar, Variant Familiar, Bespoke Companion</supports>
+		<description>
+			<p style="margin-bottom:-5px">
+				<em>Tiny ooze, unaligned</em>
+			</p>
+			<h4 style="margin-top:5px" />
+			<p></p>
+			<p>
+				<strong>Armor Class</strong> 12 (natural armour)</p>
+			<p>
+				<strong>Hit Points</strong> 5 (1d4 + 3)</p>
+			<p>
+				<strong>Speed</strong> 25 ft., climb 25 ft.</p>
+			<p></p>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead>
+					<tr>
+						<td>STR</td>
+						<td>DEX</td>
+						<td>CON</td>
+						<td>INT</td>
+						<td>WIS</td>
+						<td>CHA</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>13(+1)</td>
+					<td>6(-2)</td>
+					<td>16(+3)</td>
+					<td>4(-3)</td>
+					<td>8(-1)</td>
+					<td>4(-3)</td>
+				</tr>
+			</table>
+			<p>
+				<strong>Skills</strong> -</p>
+            <p>
+				<strong>Damage Immunities</strong> acid</p>
+			<p>
+				<strong>Senses</strong> blindsight 60 ft. (blind beyond this radius), passive Perception 9</p>
+			<p>
+				<strong>Languages</strong> —</p>
+			<p></p>
+			<h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
+			<p>
+				<strong>
+					<em>Acidic Touch.</em>
+				</strong>At the start of the gelatinooze’s turn, it can choose to secrete a small dose of acid (no action required). Each creature that is grappling it or that it is grappling takes acid damage equal to the gelatinooze’s Constitution modifier.</p>
+			<p>
+				<strong>
+					<em>Dissolve Metal.</em>
+				</strong>Over the course of 1 minute, the gelatinooze can dissolve up to 1 pound of nonmagical metal it is touching.</p>
+			<p></p>
+			<h4 style="margin-top:15px">Actions</h4>
+			<p></p>
+			<p>
+				<strong>
+					<em>Pseudopod.</em>
+				</strong>
+				<em>Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 3 (1d4 + 1) acid damage.</p>
+			<p></p>
+		</description>
+		<sheet>
+			<description>Gelatinooze ({{gelatinooze:size}})- It gains {{hit dice gained:companion:gelatinooze}}d{{hit dice size:gelatinooze}} hit dice. DC: {{gelatinooze:dc}}. Pseudopod: +{{gelatinooze:attack:hit}}, DMG: {{gelatinooze:attack:dice}} + {{gelatinooze:attack:damage}}.</description>
+		</sheet>
+		<rules>
+            <grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GELATINOOZE"/>	
 
-            <stat name="gelatinooze:dc" value="8" />
-            <stat name="gelatinooze:dc" value="proficiency" bonus="proficiency" />
-            <stat name="gelatinooze:dc" value="companion:strength:modifier" />
-        </rules>
-    </element>
+            <stat name="hit dice gained:companion:gelatinooze" value="1" level="4" />
+			<stat name="hit dice gained:companion:gelatinooze" value="1" level="8" />
+			<stat name="hit dice gained:companion:gelatinooze" value="1" level="12" />
+			<stat name="hit dice gained:companion:gelatinooze" value="1" level="16" />
+			<stat name="hit dice gained:companion:gelatinooze" value="1" level="19" />
 
-    <element name="Acidic Touch" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_ACIDIC_TOUCH">
-        <description>
-            <p>At the start of the gelatinooze’s turn, it can choose to secrete a small dose of acid (no action required). Each creature that is grappling it or that it is grappling takes acid damage equal to the gelatinooze’s Constitution modifier.</p>
-        </description>
-        <sheet>
-            <description>At the start of the gelatinooze’s turn, it can choose to secrete a small dose of acid (no action required). Each creature that is grappling it or that it is grappling takes acid damage equal to the gelatinooze’s Constitution modifier.</description>
-        </sheet>
-    </element>
+			<stat name="gelatinooze:dc" value="8" />
+			<stat name="gelatinooze:dc" value="proficiency" />
+			<stat name="gelatinooze:dc" value="gelatinooze:str:mod" />
 
-    <element name="Dissolve Metal" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_DISSOLVE_METAL">
-        <description>
-            <p>Over the course of 1 minute, the gelatinooze can dissolve up to 1 pound of nonmagical metal it is touching.</p>
-        </description>
-        <sheet usage="Recharges after a Short or Long Rest">
-            <description>Over the course of 1 minute, the gelatinooze can dissolve up to 1 pound of nonmagical metal it is touching.</description>
-        </sheet>
-    </element>
 
-    <element name="Pseudopod" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PSEUDOPOD">
-        <requirements>!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_I|!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_II|!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_III|!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
-        <description>
-            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) acid damage.</p>
-        </description>
-        <sheet>
-            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) acid damage.</description>
-        </sheet>
-    </element>
+			<stat name="gelatinooze:str" value="13" />
+			<stat name="gelatinooze:str:mod" value="1" />
+			<stat name="gelatinooze:dex" value="6" />
+			<stat name="gelatinooze:dex:mod" value="-2" />
+			<stat name="gelatinooze:con" value="16" />
+			<stat name="gelatinooze:con:mod" value="3" />
+			<stat name="gelatinooze:int" value="4" />
+			<stat name="gelatinooze:int:mod" value="-3" />
+			<stat name="gelatinooze:wis" value="8" />
+			<stat name="gelatinooze:wis:mod" value="-1" />
+			<stat name="gelatinooze:cha" value="4" />
+			<stat name="gelatinooze:cha:mod" value="-3" />
 
-    <!-- Companion's Improvements -->
-    <element name="Growth I" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_I">
-        <supports>Gelatinooze, Companion Improvement</supports>
+			<stat name="hit dice size:gelatinooze" value="4" />
+			<stat name="go for the throat:bonus:gelatinooze" value="0" />
+			<stat name="gelatinooze:size" value="Tiny" inline="true" />
+
+
+			<stat name="gelatinooze:attack:hit" value="proficiency" />
+            <stat name="gelatinooze:attack:hit" value="gelatinooze:str:mod" />
+            <stat name="gelatinooze:attack:hit" value="go for the throat:bonus:gelatinooze" />
+
+			<stat name="gelatinooze:attack:damage" value="gelatinooze:str:mod" />
+            <stat name="gelatinooze:attack:damage" value="go for the throat:bonus:gelatinooze" />
+
+			<stat name="gelatinooze:attack:dice" inline="true" value="1d4" />
+		</rules>
+	</element>
+
+	<!-- Improvement Gained on Taming-->
+	<element name="Gelatinooze Improvement" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GELATINOOZE">
+		<description>
+			<p>Whenever you gain a level beyond 1st in this class, each companion to which you are
+				bonded gains one of the following improvements.
+				Any newly gained companions receive these additional Hit Dice and improvements as if
+				you had them since your 1st level in tamer.</p>
+		</description>
+		<sheet>
+			<description>Your Companion has the following Improvements:</description>
+		</sheet>
+		<rules>
+			<stat name="hit dice gained:companion:gelatinooze" value="2" />
+
+			<select type="Class Feature" name="Gelatinooze Improvement"
+				supports="Gelatinooze"  default="ID_LT_HGTMH_GELATINOOZE_TRAIT_GROWTH_I"/>
+			<select type="Class Feature" name="Gelatinooze Improvement (Lvl 2)"
+				supports="Gelatinooze" level="2" />
+			<select type="Class Feature" name="Gelatinooze Improvement (Lvl 3)"
+				supports="Gelatinooze" level="3" />
+			<select type="Class Feature" name="Gelatinooze Improvement (Lvl 4)"
+				supports="Gelatinooze" level="4" />
+			<select type="Class Feature" name="Gelatinooze Improvement (Lvl 5)"
+				supports="Gelatinooze" level="5" />
+			<select type="Class Feature" name="Gelatinooze Improvement (Lvl 6)"
+				supports="Gelatinooze" level="6" />
+			<select type="Class Feature" name="Gelatinooze Improvement (Lvl 7)"
+				supports="Gelatinooze" level="7" />
+			<select type="Class Feature" name="Gelatinooze Improvement (Lvl 8)"
+				supports="Gelatinooze" level="8" />
+			<select type="Class Feature" name="Gelatinooze Improvement (Lvl 9)"
+				supports="Gelatinooze" level="9" />
+			<select type="Class Feature" name="Gelatinooze Improvement (Lvl 10)"
+				supports="Gelatinooze" level="10" />
+			<select type="Class Feature" name="Gelatinooze Improvement (Lvl 11)"
+				supports="Gelatinooze" level="11" />
+			<select type="Class Feature" name="Gelatinooze Improvement (Lvl 12)"
+				supports="Gelatinooze" level="12" />
+			<select type="Class Feature" name="Gelatinooze Improvement (Lvl 13)"
+				supports="Gelatinooze" level="13" />
+			<select type="Class Feature" name="Gelatinooze Improvement (Lvl 14)"
+				supports="Gelatinooze" level="14" />
+			<select type="Class Feature" name="Gelatinooze Improvement (Lvl 15)"
+				supports="Gelatinooze" level="15" />
+			<select type="Class Feature" name="Gelatinooze Improvement (Lvl 16)"
+				supports="Gelatinooze" level="16" />
+			<select type="Class Feature" name="Gelatinooze Improvement (Lvl 17)"
+				supports="Gelatinooze" level="17" />
+			<select type="Class Feature" name="Gelatinooze Improvement (Lvl 18)"
+				supports="Gelatinooze" level="18" />
+			<select type="Class Feature" name="Gelatinooze Improvement (Lvl 19)"
+				supports="Gelatinooze" level="19" />
+			<select type="Class Feature" name="Gelatinooze Improvement (Lvl 20)"
+				supports="Gelatinooze" level="20" />
+		</rules>
+	</element>
+
+    <!-- Gelatinooze's Improvements -->
+	<element name="Growth I" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_GELATINOOZE_TRAIT_GROWTH_I">
+		<supports>Gelatinooze</supports>
         <prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
-        <requirements>[level:tamer:1],!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_II,!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_III,!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
-        <description>
-            <p><b>Type:</b> Passive (companion)</p>
-            <p>The gelatinooze’s size increases to Small, it becomes shaped like a d6, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage die of its pseudopod attack increases to a d6. The gelatinooze gains this improvement when it becomes a companion; it doesn’t cost an improvement.</p>
-        </description>
-        <sheet>
-            <description>The gelatinooze’s size increases to Small, it becomes shaped like a d6, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage die of its pseudopod attack increases to a d6. The gelatinooze gains this improvement when it becomes a companion; it doesn’t cost an improvement.</description>
-        </sheet>
+		<requirements>[level:tamer:1]</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Passive (companion)</p>
+			<p>The gelatinooze’s size increases to Small, it becomes shaped like a d6, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage die of its pseudopod attack increases to a d6. The gelatinooze gains this improvement when it becomes a companion; it doesn’t cost an improvement.</p>
+		</description>
+		<sheet display="false">
+			<description>The gelatinooze’s size increases to Small, it becomes shaped like a d6, its Hit Die size increases to a d6, and the damage die of its pseudopod attack increases to a d6.</description>
+		</sheet>
         <rules>
-            <stat name="companion:hp:max" value="2" />
-            <stat name="companion:hp:max" value="5" />
-            <stat name="companion:hp:max" value="companion:constitution:modifier" />
-            <stat name="companion:hp:max" value="companion:constitution:modifier" />
-
-            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PSEUDOPOD_GROWTH_I" />
+            <stat name="hit dice size:gelatinooze" value="2" />
+            <stat name="gelatinooze:attack:dice" value="1d6" inline="true" />
+            <stat name="gelatinooze:size" value="Small" inline="true" />
         </rules>
-    </element>
-    <element name="Pseudopod" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PSEUDOPOD_GROWTH_I">
-        <requirements>!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_II|!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_III|!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
-        <description>
-            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) acid damage.</p>
-        </description>
-        <sheet>
-            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) acid damage.</description>
+	</element>
+	<element name="Reactive Mutations" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_GELATINOOZE_ACTION_REACTIVE_MUTATIONS">
+		<supports>Gelatinooze</supports>
+		<prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+		<requirements>[level:tamer:3]</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Active (bonus action)</p>
+			<p>As a bonus action, the gelatinooze activates its immune system for the next minute. Immediately after the gelatinooze next takes damage, it gains resistance to that damage type for 1 minute.</p>
+			<p>After the gelatinooze uses this action, it can’t do so again until its tamer finishes a long rest.</p>
+		</description>
+		<sheet>
+            <description action="Bonus Action" usage="1/Long Rest">After the gelatinooze next takes damage, gains resistance (1 min).</description>
         </sheet>
-    </element>
-
-    <element name="Reactive Mutations" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_REACTIVE_MUTATIONS">
-        <supports>Gelatinooze, Companion Improvement</supports>
-        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
-        <requirements>[level:tamer:3]</requirements>
-        <description>
-            <p><b>Type:</b> Active (bonus action)</p>
-            <p>As a bonus action, the gelatinooze activates its immune system for the next minute. Immediately after the gelatinooze next takes damage, it gains resistance to that damage type for 1 minute.</p>
-            <p>After the gelatinooze uses this action, it can’t do so again until its tamer finishes a long rest.</p>
-        </description>
-        <sheet>
-            <description action="Bonus Action" usage="1/Long Rest">As a bonus action, the gelatinooze activates its immune system for the next minute. Immediately after the gelatinooze next takes damage, it gains resistance to that damage type for 1 minute. After the gelatinooze uses this action, it can’t do so again until its tamer finishes a long rest.</description>
+	</element>
+	<element name="Engulf" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_GELATINOOZE_ACTION_ENGULF">
+		<supports>Gelatinooze</supports>
+		<prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+		<requirements>[level:tamer:3]</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Active (action)</p>
+			<p>As an action, the gelatinooze can move up to its speed. While doing so, it can enter the space of creatures smaller than its size. Whenever the gelatinooze enters a creature’s space, the creature must make a Dexterity saving throw.</p>
+			<p>On a successful save, the creature can choose to be pushed 5 feet back or to the side of the gelatinooze. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.</p>
+			<p>On a failed save, the gelatinooze enters the creature’s space, stops moving, and engulfs the creature, which takes 7 (2d6) acid damage. The engulfed creature can’t breathe, is restrained, and takes 7 (2d6) acid damage at the start of each of the gelatinooze’s turns. When the gelatinooze moves, the engulfed creature moves with it. The gelatinooze can have only one creature engulfed at a time.</p>
+			<p>An engulfed creature can try to escape by taking an action to make a Strength check against the gelatinooze’s save DC. On a success, the creature escapes and enters a space of its choice within 5 feet of the gelatinooze.</p>
+		</description>
+		<sheet>
+            <description action="Action">Engulf (Only 1): {{gelatinooze:engulf:damage}} acid. Can't breath and restrained. Takes damage each start of the turn.</description>
         </sheet>
-    </element>
-
-    <element name="Engulf" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_ENGULF">
-        <supports>Gelatinooze, Companion Improvement</supports>
-        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
-        <requirements>[level:tamer:3],!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_II,!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_III,!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
-        <description>
-            <p><b>Type:</b> Active (action)</p>
-            <p>As an action, the gelatinooze can move up to its speed. While doing so, it can enter the space of creatures smaller than its size. Whenever the gelatinooze enters a creature’s space, the creature must make a Dexterity saving throw.</p>
-            <p>On a successful save, the creature can choose to be pushed 5 feet back or to the side of the gelatinooze. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.</p>
-            <p>On a failed save, the gelatinooze enters the creature’s space, stops moving, and engulfs the creature, which takes 7 (2d6) acid damage. The engulfed creature can’t breathe, is restrained, and takes 7 (2d6) acid damage at the start of each of the gelatinooze’s turns. When the gelatinooze moves, the engulfed creature moves with it. The gelatinooze can have only one creature engulfed at a time.</p>
-            <p>An engulfed creature can try to escape by taking an action to make a Strength check against the gelatinooze’s save DC. On a success, the creature escapes and enters a space of its choice within 5 feet of the gelatinooze.</p>
-        </description>
-        <sheet>
-            <description action="Action">As an action, the gelatinooze can move up to its speed. While doing so, it can enter the space of creatures smaller than its size. Whenever the gelatinooze enters a creature’s space, the creature must make a DC {{gelatinooze:dc}} Dexterity saving throw.&#13;
-            On a successful save, the creature can choose to be pushed 5 feet back or to the side of the gelatinooze. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.&#13;
-            On a failed save, the gelatinooze enters the creature’s space, stops moving, and engulfs the creature, which takes 7 (2d6) acid damage. The engulfed creature can’t breathe, is restrained, and takes 7 (2d6) acid damage at the start of each of the gelatinooze’s turns. When the gelatinooze moves, the engulfed creature moves with it. The gelatinooze can have only one creature engulfed at a time.&#13;
-            An engulfed creature can try to escape by taking an action to make a Strength check against the gelatinooze’s save DC. On a success, the creature escapes and enters a space of its choice within 5 feet of the gelatinooze.</description>
-        </sheet>
-    </element>
-
-    <element name="Growth II" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_II">
-        <supports>Gelatinooze, Companion Improvement</supports>
-        <prerequisite>Prerequisite: 5th-level tamer, Growth I</prerequisite>
-        <requirements>[level:tamer:5],ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_I,!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_III,!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
-        <description>
-            <p><b>Type:</b> Passive (companion)</p>
-            <p>The gelatinooze’s size increases to Medium, it becomes shaped like a d8, and its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage dice of its pseudopod and spit attacks increase from a d6 to a d8, and its Engulf action’s damage increases to 10 (3d6).</p>
-        </description>
-        <sheet>
-            <description>The gelatinooze’s size increases to Medium, it becomes shaped like a d8, and its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage dice of its pseudopod and spit attacks increase from a d6 to a d8, and its Engulf action’s damage increases to 10 (3d6).</description>
-        </sheet>
+		<rules>
+			<stat name="gelatinooze:engulf:damage" value="2d6" inline="true"/>
+		</rules>
+	</element>
+	<element name="Growth II" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_GELATINOOZE_TRAIT_GROWTH_II">
+		<supports>Gelatinooze</supports>
+		<prerequisite>Prerequisite: 5th-level tamer, Growth I</prerequisite>
+		<requirements>[level:tamer:5],ID_LT_HGTMH_GELATINOOZE_TRAIT_GROWTH_I</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Passive (companion)</p>
+			<p>The gelatinooze’s size increases to Medium, it becomes shaped like a d8, and its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage dice of its pseudopod and spit attacks increase from a d6 to a d8, and its Engulf action’s damage increases to 10 (3d6).</p>
+		</description>
+		<sheet display="false">
+            <description>The gelatinooze’s size increases to Medium, it becomes shaped like a d8, and its Hit Die size increases to a d8. The damage dice of its pseudopod and spit attacks increase from a d6 to a d8, and its Engulf action’s damage increases to 10 (3d6).</description>
+		</sheet>
         <rules>
-            <stat name="companion:hp:max" value="3" />
-            <stat name="companion:hp:max" value="5" />
-            <stat name="companion:hp:max" value="companion:constitution:modifier" />
-            <stat name="companion:hp:max" value="companion:constitution:modifier" />
-
-            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PSEUDOPOD_GROWTH_II" />
-            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_ENGULF_GROWTH_II" />
-            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_SPIT_GROWTH_II" />
+            <stat name="hit dice size:gelatinooze" value="2" />
+            <stat name="gelatinooze:attack:dice" value="1d8" inline="true" />
+            <stat name="gelatinooze:size" value="Medium" inline="true" />
+			<stat name="gelatinooze:engulf:damage" value="3d6" inline="true"/>
         </rules>
-    </element>
-    <element name="Pseudopod" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PSEUDOPOD_GROWTH_II">
-        <requirements>!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_III|!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
-        <description>
-            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) acid damage.</p>
-        </description>
-        <sheet>
-            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) acid damage.</description>
+	</element>
+	<element name="Multiattack" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_GELATINOOZE_ACTION_MULTIATTACK">
+		<supports>Gelatinooze</supports>
+		<prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+		<requirements>[level:tamer:5]</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Active (action)</p>
+			<p>As an action, the gelatinooze can make two Pseudopod attacks.</p>
+		</description>
+		<sheet>
+			<description>Two Pseudopod attacks.</description>
+		</sheet>
+	</element>
+	<element name="Spit" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_GELATINOOZE_ACTION_SPIT">
+		<supports>Gelatinooze</supports>
+		<prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+		<requirements>[level:tamer:5]</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Active (action)</p>
+			<p>The gelatinooze gains a ranged weapon attack: Spit. The damage die of the spit attack increases with the specified die size in the gelatinooze’s Growth improvements.</p>
+			<p>
+				<b>
+					<em>Spit.</em>
+				</b> Ranged Weapon Attack: Str or Dex modifier + PB to hit, range 20/60 ft., one target. Hit: 2d6 + Str or Dex modifier acid damage.</p>
+		</description>
+		<sheet display="false">
+            <description>Ranged Weapon Attack: Str or Dex modifier + PB to hit, range 20/60 ft., one target. Hit: 2d6 + Str or Dex modifier acid damage.</description>
         </sheet>
-    </element>
-    <element name="Engulf" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_ENGULF_GROWTH_II">
-        <supports>Gelatinooze, Companion Improvement</supports>
-        <requirements>!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_III|!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
-        <description>
-            <p><b>Type:</b> Active (action)</p>
-            <p>As an action, the gelatinooze can move up to its speed. While doing so, it can enter the space of creatures smaller than its size. Whenever the gelatinooze enters a creature’s space, the creature must make a Dexterity saving throw.</p>
-            <p>On a successful save, the creature can choose to be pushed 5 feet back or to the side of the gelatinooze. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.</p>
-            <p>On a failed save, the gelatinooze enters the creature’s space, stops moving, and engulfs the creature, which takes 10 (3d6) acid damage. The engulfed creature can’t breathe, is restrained, and takes 10 (3d6) acid damage at the start of each of the gelatinooze’s turns. When the gelatinooze moves, the engulfed creature moves with it. The gelatinooze can have only one creature engulfed at a time.</p>
-            <p>An engulfed creature can try to escape by taking an action to make a Strength check against the gelatinooze’s save DC. On a success, the creature escapes and enters a space of its choice within 5 feet of the gelatinooze.</p>
-        </description>
-        <sheet>
-            <description action="Action">As an action, the gelatinooze can move up to its speed. While doing so, it can enter the space of creatures smaller than its size. Whenever the gelatinooze enters a creature’s space, the creature must make a DC {{gelatinooze:dc}} Dexterity saving throw.&#13;
-            On a successful save, the creature can choose to be pushed 5 feet back or to the side of the gelatinooze. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.&#13;
-            On a failed save, the gelatinooze enters the creature’s space, stops moving, and engulfs the creature, which takes 10 (3d6) acid damage. The engulfed creature can’t breathe, is restrained, and takes 10 (3d6) acid damage at the start of each of the gelatinooze’s turns. When the gelatinooze moves, the engulfed creature moves with it. The gelatinooze can have only one creature engulfed at a time.&#13;
-            An engulfed creature can try to escape by taking an action to make a Strength check against the gelatinooze’s save DC. On a success, the creature escapes and enters a space of its choice within 5 feet of the gelatinooze.</description>
+		<rules>
+			<select type="Class Feature" name="Spit Ability" supports="ID_LT_HGTMH_GELATINOOZE_ACTION_SPIT_STRENGTH|ID_LT_HGTMH_GELATINOOZE_ACTION_SPIT_DEXTERITY" />
+		</rules>
+	</element>
+	<element name="Spit (Str)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_GELATINOOZE_ACTION_SPIT_STRENGTH">
+		<description>
+			<p>
+				<b>Type:</b> Active (action)</p>
+			<p>The gelatinooze gains a ranged weapon attack: Spit. The damage die of the spit attack increases with the specified die size in the gelatinooze’s Growth improvements.</p>
+			<p>
+				<b>
+					<em>Spit.</em>
+				</b> Ranged Weapon Attack: Str or Dex modifier + PB to hit, range 20/60 ft., one target. Hit: 2d6 + Str or Dex modifier acid damage.</p>
+		</description>
+		<sheet>
+            <description>Ranged Weapon Attack:{{spit:attack}} to hit, range 20/60 ft., one target. Hit: 2d6 + {{gelatinooze:str:mod}} acid.</description>
         </sheet>
-    </element>
+		<rules>
+			<stat name="spit:attack" value="gelatinooze:str:mod" />
+			<stat name="spit:attack" value="proficiency" />
+		</rules>
+	</element>
+	<element name="Spit (Dex)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_GELATINOOZE_ACTION_SPIT_DEXTERITY">
+		<description>
+			<p>
+				<b>Type:</b> Active (action)</p>
+			<p>The gelatinooze gains a ranged weapon attack: Spit. The damage die of the spit attack increases with the specified die size in the gelatinooze’s Growth improvements.</p>
+			<p>
+				<b>
+					<em>Spit.</em>
+				</b> Ranged Weapon Attack: Str or Dex modifier + PB to hit, range 20/60 ft., one target. Hit: 2d6 + Str or Dex modifier acid damage.</p>
+		</description>
+		<sheet>
+            <description>Ranged Weapon Attack:{{spit:attack}} to hit, range 20/60 ft., one target. Hit: 2d6 + {{gelatinooze:dex:mod}} acid.</description>
+        </sheet>
+		<rules>
+			<stat name="spit:attack" value="gelatinooze:dex:mod" />
+			<stat name="spit:attack" value="proficiency" />
+		</rules>
+	</element>
 
-    <element name="Multiattack" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_MULTIATTACK">
-        <supports>Gelatinooze, Companion Improvement</supports>
-        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
-        <requirements>[level:tamer:5]</requirements>
-        <description>
-            <p><b>Type:</b> Active (action)</p>
-            <p>As an action, the gelatinooze can make two Pseudopod attacks.</p>
-        </description>
-        <sheet>
-            <description>As an action, the gelatinooze can make two Pseudopod attacks.</description>
+	<element name="Phalanx" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_GELATINOOZE_ACTION_PHALANX">
+		<supports>Gelatinooze</supports>
+		<prerequisite>Prerequisite: 9th-level tamer</prerequisite>
+		<requirements>[level:tamer:9]</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Active (action)</p>
+			<p>As an action while the gelatinooze is not in its Turtle form, it can brace itself in place, reducing its speed to 0 feet and presenting a phalanx of spiky things it has found. A creature that hits the gelatinooze with a melee attack while within 5 feet of it takes 2d6 piercing damage.</p>
+			<p>As a bonus action, the gelatinooze can return to normal, regaining its normal speed.</p>
+		</description>
+		<sheet>
+            <description action="Action">Reduce speed to 0 ft. If recieved melee attack, takes 2d6 piercing. BA: return to normal</description>
         </sheet>
-    </element>
-
-    <element name="Spit" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_SPIT">
-        <supports>Gelatinooze, Companion Improvement</supports>
-        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
-        <requirements>[level:tamer:5]</requirements>
-        <description>
-            <p><b>Type:</b> Active (action)</p>
-            <p>The gelatinooze gains a ranged weapon attack: Spit. The damage die of the spit attack increases with the specified die size in the gelatinooze’s Growth improvements.</p>
-            <p><b><i>Spit.</i></b> Ranged Weapon Attack: Str or Dex modifier + PB to hit, range 20/60 ft., one target. Hit: 2d6 + Str or Dex modifier acid damage.</p>
-        </description>
-        <sheet>
-            <description>The gelatinooze gains a ranged weapon attack: Spit. The damage die of the spit attack increases with the specified die size in the gelatinooze’s Growth improvements.</description>
+	</element>
+	<element name="Turtle" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_GELATINOOZE_ACTION_TURTLE">
+		<supports>Gelatinooze</supports>
+		<prerequisite>Prerequisite: 9th-level tamer</prerequisite>
+		<requirements>[level:tamer:9]</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Active (action)</p>
+			<p>As an action while the gelatinooze is not in its Phalanx form, it can hunker in place, reducing its speed to 0 feet and presenting a wall of metal and wood on one of its faces. Choose a direction and project a cone as if casting a cone-shaped spell with infinite length; the gelatinooze gains a +10 bonus to AC against all attacks originating from within that cone.</p>
+			<p>As a bonus action, the gelatinooze can return to normal, regaining its speed and its normal AC.</p>
+		</description>
+		<sheet>
+            <description action="Action">Reduce speed to 0 ft. AC: +10. BA: return to normal</description>
         </sheet>
-    </element>
-    <element name="Spit" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_SPIT_GROWTH_II">
-        <requirements>!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_III|!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
-        <description>
-            <p>Ranged Weapon Attack: Str or Dex modifier + PB to hit, range 20/60 ft., one target. Hit: 2d8 + Str or Dex modifier acid damage.</p>
-        </description>
-        <sheet>
-            <description>Ranged Weapon Attack: Str or Dex modifier + PB to hit, range 20/60 ft., one target. Hit: 2d8 + Str or Dex modifier acid damage.</description>
-        </sheet>
-    </element>
-
-    <element name="Phalanx" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PHALANX">
-        <supports>Gelatinooze, Companion Improvement</supports>
-        <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
-        <requirements>[level:tamer:9]</requirements>
-        <description>
-            <p><b>Type:</b> Active (action)</p>
-            <p>As an action while the gelatinooze is not in its Turtle form, it can brace itself in place, reducing its speed to 0 feet and presenting a phalanx of spiky things it has found. A creature that hits the gelatinooze with a melee attack while within 5 feet of it takes 2d6 piercing damage.</p>
-            <p>As a bonus action, the gelatinooze can return to normal, regaining its normal speed.</p>
-        </description>
-        <sheet>
-            <description action="Action">As an action while the gelatinooze is not in its Turtle form, it can brace itself in place, reducing its speed to 0 feet and presenting a phalanx of spiky things it has found. A creature that hits the gelatinooze with a melee attack while within 5 feet of it takes 2d6 piercing damage. As a bonus action, the gelatinooze can return to normal, regaining its normal speed.</description>
-        </sheet>
-    </element>
-
-    <element name="Turtle" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_TURTLE">
-        <supports>Gelatinooze, Companion Improvement</supports>
-        <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
-        <requirements>[level:tamer:9]</requirements>
-        <description>
-            <p><b>Type:</b> Active (action)</p>
-            <p>As an action while the gelatinooze is not in its Phalanx form, it can hunker in place, reducing its speed to 0 feet and presenting a wall of metal and wood on one of its faces. Choose a direction and project a cone as if casting a cone-shaped spell with infinite length; the gelatinooze gains a +10 bonus to AC against all attacks originating from within that cone.</p>
-            <p>As a bonus action, the gelatinooze can return to normal, regaining its speed and its normal AC.</p>
-        </description>
-        <sheet>
-            <description action="Action">As an action while the gelatinooze is not in its Phalanx form, it can hunker in place, reducing its speed to 0 feet and presenting a wall of metal and wood on one of its faces. Choose a direction and project a cone as if casting a cone-shaped spell with infinite length; the gelatinooze gains a +10 bonus to AC against all attacks originating from within that cone. As a bonus action, the gelatinooze can return to normal, regaining its speed and its normal AC.</description>
-        </sheet>
-    </element>
-
-    <element name="Growth III" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_III">
-        <supports>Gelatinooze, Companion Improvement</supports>
-        <prerequisite>Prerequisite: 9th-level tamer, Growth II</prerequisite>
-        <requirements>[level:tamer:9],ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_I,ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_II,!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
-        <description>
-            <p><b>Type:</b> Passive (companion)</p>
-            <p>The gelatinooze’s size increases to Large, it becomes shaped like a d10, and its Hit Die size increases to a d10 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage dice of its Pseudopod and Spit attacks increase from a d8 to a d10, and its Engulf action’s damage increases to 14 (4d6). This growth improvement ignores the normal maximum companion size for a tamer.</p>
-        </description>
-        <sheet>
-            <description>The gelatinooze’s size increases to Large, it becomes shaped like a d10, and its Hit Die size increases to a d10 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage dice of its Pseudopod and Spit attacks increase from a d8 to a d10, and its Engulf action’s damage increases to 14 (4d6). This growth improvement ignores the normal maximum companion size for a tamer.</description>
-        </sheet>
+	</element>
+	<element name="Growth III" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_GELATINOOZE_TRAIT_GROWTH_III">
+		<supports>Gelatinooze</supports>
+		<prerequisite>Prerequisite: 9th-level tamer, Growth II</prerequisite>
+		<requirements>[level:tamer:9],ID_LT_HGTMH_GELATINOOZE_TRAIT_GROWTH_II</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Passive (companion)</p>
+			<p>The gelatinooze’s size increases to Large, it becomes shaped like a d10, and its Hit Die size increases to a d10 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage dice of its Pseudopod and Spit attacks increase from a d8 to a d10, and its Engulf action’s damage increases to 14 (4d6). This growth improvement ignores the normal maximum companion size for a tamer.</p>
+		</description>
+		<sheet display="false">
+            <description>The gelatinooze’s size increases to Large, it becomes shaped like a d10, and its Hit Die size increases to a d10. The damage dice of its Pseudopod and Spit attacks increase from a d8 to a d10, and its Engulf action’s damage increases to 14 (4d6).</description>
+		</sheet>
         <rules>
-            <stat name="companion:hp:max" value="4" />
-            <stat name="companion:hp:max" value="5" />
-            <stat name="companion:hp:max" value="companion:constitution:modifier" />
-            <stat name="companion:hp:max" value="companion:constitution:modifier" />
-
-            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PSEUDOPOD_GROWTH_III" />
-            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_ENGULF_GROWTH_III" />
-            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_SPIT_GROWTH_III" />
+            <stat name="hit dice size:gelatinooze" value="2" />
+            <stat name="gelatinooze:attack:dice" value="1d10" inline="true" />
+            <stat name="gelatinooze:size" value="Large" inline="true" />
+			<stat name="gelatinooze:engulf:damage" value="4d6" inline="true"/>
         </rules>
-    </element>
-    <element name="Pseudopod" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PSEUDOPOD_GROWTH_III">
-        <requirements>!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
-        <description>
-            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d10 + 1) acid damage.</p>
-        </description>
-        <sheet>
-            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d10 + 1) acid damage.</description>
-        </sheet>
-    </element>
-    <element name="Engulf" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_ENGULF_GROWTH_III">
-        <supports>Gelatinooze, Companion Improvement</supports>
-        <requirements>!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
-        <description>
-            <p><b>Type:</b> Active (action)</p>
-            <p>As an action, the gelatinooze can move up to its speed. While doing so, it can enter the space of creatures smaller than its size. Whenever the gelatinooze enters a creature’s space, the creature must make a Dexterity saving throw.</p>
-            <p>On a successful save, the creature can choose to be pushed 5 feet back or to the side of the gelatinooze. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.</p>
-            <p>On a failed save, the gelatinooze enters the creature’s space, stops moving, and engulfs the creature, which takes 14 (4d6) acid damage. The engulfed creature can’t breathe, is restrained, and takes 14 (4d6) acid damage at the start of each of the gelatinooze’s turns. When the gelatinooze moves, the engulfed creature moves with it. The gelatinooze can have only one creature engulfed at a time.</p>
-            <p>An engulfed creature can try to escape by taking an action to make a Strength check against the gelatinooze’s save DC. On a success, the creature escapes and enters a space of its choice within 5 feet of the gelatinooze.</p>
-        </description>
-        <sheet>
-            <description action="Action">As an action, the gelatinooze can move up to its speed. While doing so, it can enter the space of creatures smaller than its size. Whenever the gelatinooze enters a creature’s space, the creature must make a DC {{gelatinooze:dc}} Dexterity saving throw.&#13;
-            On a successful save, the creature can choose to be pushed 5 feet back or to the side of the gelatinooze. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.&#13;
-            On a failed save, the gelatinooze enters the creature’s space, stops moving, and engulfs the creature, which takes 14 (4d6) acid damage. The engulfed creature can’t breathe, is restrained, and takes 14 (4d6) acid damage at the start of each of the gelatinooze’s turns. When the gelatinooze moves, the engulfed creature moves with it. The gelatinooze can have only one creature engulfed at a time.&#13;
-            An engulfed creature can try to escape by taking an action to make a Strength check against the gelatinooze’s save DC. On a success, the creature escapes and enters a space of its choice within 5 feet of the gelatinooze.</description>
-        </sheet>
-    </element>
-    <element name="Spit" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_SPIT_GROWTH_III">
-        <requirements>!ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV</requirements>
-        <description>
-            <p>Ranged Weapon Attack: Str or Dex modifier + PB to hit, range 20/60 ft., one target. Hit: 2d10 + Str or Dex modifier acid damage.</p>
-        </description>
-        <sheet>
-            <description>Ranged Weapon Attack: Str or Dex modifier + PB to hit, range 20/60 ft., one target. Hit: 2d10 + Str or Dex modifier acid damage.</description>
-        </sheet>
-    </element>
-
-    <element name="Growth IV" type="Companion Trait" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_IV">
-        <supports>Gelatinooze, Companion Improvement</supports>
-        <prerequisite>Prerequisite: 13th-level tamer, Growth III</prerequisite>
-        <requirements>[level:tamer:13],ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_I,ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_II,ID_LT_HGTMH__COMPANION_TRAIT_GELATINOOZE_GROWTH_III</requirements>
-        <description>
-            <p><b>Type:</b> Passive (companion)</p>
-            <p>The gelatinooze’s size increases to Huge, it becomes shaped like a d12, and its Hit Die size increases to a d12 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage dice of its Pseudopod and Spit attacks increase from a d10 to a d12, and its Engulf action’s damage increases to 17 (5d6). This growth improvement ignores the normal maximum companion size for a tamer.</p>
-        </description>
-        <sheet>
-            <description>The gelatinooze’s size increases to Huge, it becomes shaped like a d12, and its Hit Die size increases to a d12 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage dice of its Pseudopod and Spit attacks increase from a d10 to a d12, and its Engulf action’s damage increases to 17 (5d6). This growth improvement ignores the normal maximum companion size for a tamer.</description>
-        </sheet>
+	</element>
+	<element name="Growth IV" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_GELATINOOZE_TRAIT_GROWTH_IV">
+		<supports>Gelatinooze</supports>
+		<prerequisite>Prerequisite: 13th-level tamer, Growth III</prerequisite>
+		<requirements>[level:tamer:13],ID_LT_HGTMH_GELATINOOZE_TRAIT_GROWTH_III</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Passive (companion)</p>
+			<p>The gelatinooze’s size increases to Huge, it becomes shaped like a d12, and its Hit Die size increases to a d12 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage dice of its Pseudopod and Spit attacks increase from a d10 to a d12, and its Engulf action’s damage increases to 17 (5d6). This growth improvement ignores the normal maximum companion size for a tamer.</p>
+		</description>
+		<sheet display="false">
+            <description>The gelatinooze’s size increases to Huge, it becomes shaped like a d12, and its Hit Die size increases to a d12. The damage dice of its Pseudopod and Spit attacks increase from a d10 to a d12, and its Engulf action’s damage increases to 17 (5d6).</description>
+		</sheet>
         <rules>
-            <stat name="companion:hp:max" value="5" />
-            <stat name="companion:hp:max" value="5" />
-            <stat name="companion:hp:max" value="companion:constitution:modifier" />
-            <stat name="companion:hp:max" value="companion:constitution:modifier" />
-
-            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PSEUDOPOD_GROWTH_IV" />
-            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_ENGULF_GROWTH_IV" />
-            <grant type="Companion Action" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_SPIT_GROWTH_IV" />
+            <stat name="hit dice size:gelatinooze" value="2" />
+            <stat name="gelatinooze:attack:dice" value="1d12" inline="true"/>
+            <stat name="gelatinooze:size" value="Huge" inline="true"/>
+			<stat name="gelatinooze:engulf:damage" value="5d6" inline="true"/>
         </rules>
-    </element>
-    <element name="Pseudopod" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PSEUDOPOD_GROWTH_IV">
-        <description>
-            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 7 (1d12 + 1) acid damage.</p>
-        </description>
-        <sheet>
-            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 7 (1d12 + 1) acid damage.</description>
+	</element>
+	<element name="Sanctuary" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_GELATINOOZE_ACTION_SANCTUARY">
+		<supports>Gelatinooze</supports>
+		<prerequisite>Prerequisite: 13th-level tamer, Engulf</prerequisite>
+		<requirements>[level:tamer:13],ID_LT_HGTMH_GELATINOOZE_ACTION_ENGULF</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Active (action)</p>
+			<p>As an action, the gelatinooze can move into the space of an object or willing creature that is smaller than it and encapsulate it within its body. The object or creature can be seen but has total cover. No energy or spell effects that either originate from or target the encapsulated object or creature can pass through the gelatinooze. The gelatinooze naturally diffuses air to the object or creature within it, allowing it to breathe. The gelatinooze can contain up to 1 creature of a size smaller than it, whether it has it engulfed (using the Engulf action) or encapsulated using this trait.</p>
+			<p>An encapsulated creature can exit the polyhedrooze by expending 2 feet of movement for each foot of gelatinooze that it passes through. As a bonus action, the gelatinooze can expel the object or creature into an adjacent, unoccupied space of the gelatinooze’s choice.</p>
+		</description>
+		<sheet>
+            <description action="Action">Encapsulate an object or willing creature. Can be seen but has total cover. No energy or spell effects can pass</description>
         </sheet>
-    </element>
-    <element name="Engulf" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_ENGULF_GROWTH_IV">
-        <supports>Gelatinooze, Companion Improvement</supports>
-        <description>
-            <p><b>Type:</b> Active (action)</p>
-            <p>As an action, the gelatinooze can move up to its speed. While doing so, it can enter the space of creatures smaller than its size. Whenever the gelatinooze enters a creature’s space, the creature must make a Dexterity saving throw.</p>
-            <p>On a successful save, the creature can choose to be pushed 5 feet back or to the side of the gelatinooze. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.</p>
-            <p>On a failed save, the gelatinooze enters the creature’s space, stops moving, and engulfs the creature, which takes 17 (5d6) acid damage. The engulfed creature can’t breathe, is restrained, and takes 17 (5d6) acid damage at the start of each of the gelatinooze’s turns. When the gelatinooze moves, the engulfed creature moves with it. The gelatinooze can have only one creature engulfed at a time.</p>
-            <p>An engulfed creature can try to escape by taking an action to make a Strength check against the gelatinooze’s save DC. On a success, the creature escapes and enters a space of its choice within 5 feet of the gelatinooze.</p>
-        </description>
-        <sheet>
-            <description action="Action">As an action, the gelatinooze can move up to its speed. While doing so, it can enter the space of creatures smaller than its size. Whenever the gelatinooze enters a creature’s space, the creature must make a DC {{gelatinooze:dc}} Dexterity saving throw.&#13;
-            On a successful save, the creature can choose to be pushed 5 feet back or to the side of the gelatinooze. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.&#13;
-            On a failed save, the gelatinooze enters the creature’s space, stops moving, and engulfs the creature, which takes 17 (5d6) acid damage. The engulfed creature can’t breathe, is restrained, and takes 17 (5d6) acid damage at the start of each of the gelatinooze’s turns. When the gelatinooze moves, the engulfed creature moves with it. The gelatinooze can have only one creature engulfed at a time.&#13;
-            An engulfed creature can try to escape by taking an action to make a Strength check against the gelatinooze’s save DC. On a success, the creature escapes and enters a space of its choice within 5 feet of the gelatinooze.</description>
+	</element>
+	<element name="Erupt" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_GELATINOOZE_ACTION_ERUPT">
+		<supports>Gelatinooze</supports>
+		<prerequisite>Prerequisite: 17th-level tamer, Phalanx or Turtle</prerequisite>
+		<requirements>[level:tamer:17],(ID_LT_HGTMH_GELATINOOZE_ACTION_PHALANX|ID_LT_HGTMH_GELATINOOZE_ACTION_TURTLE)</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Active (action)</p>
+			<p>As an action, the gelatinooze can fire all the shrapnel, armour, and weapons it has accumulated in its body. It can choose to focus this in a 60-foot cone or erupt in all directions in a 20-foot-radius sphere centred on itself. Each creature in the area other than the gelatinooze must make a Dexterity saving throw.</p>
+			<p>A creature takes 14 (4d6) bludgeoning damage, 14 (4d6) piercing damage, 14 (4d6) slashing damage, and 14 (4d6) acid damage on a failed save, or half as much damage on a successful one.</p>
+			<p>After the gelatinooze uses this action, it can’t use its Erupt, Phalanx, or Turtle actions until it spends 1 hour absorbing rocks, metal, and other bric-a-brac.</p>
+		</description>
+		<sheet>
+            <description action="Action">Fire all object accumulated. 60ft cone or 20ft radius sphere,DEX save or 4d6 </description>
         </sheet>
-    </element>
-    <element name="Spit" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_SPIT_GROWTH_IV">
-        <description>
-            <p>Ranged Weapon Attack: Str or Dex modifier + PB to hit, range 20/60 ft., one target. Hit: 2d12 + Str or Dex modifier acid damage.</p>
-        </description>
-        <sheet>
-            <description>Ranged Weapon Attack: Str or Dex modifier + PB to hit, range 20/60 ft., one target. Hit: 2d12 + Str or Dex modifier acid damage.</description>
-        </sheet>
-    </element>
+	</element>
 
-    <element name="Sanctuary" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_SANCTUARY">
-        <supports>Gelatinooze, Companion Improvement</supports>
-        <prerequisite>Prerequisite: 13th-level tamer, Engulf</prerequisite>
-        <requirements>[level:tamer:13],ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_ENGULF</requirements>
-        <description>
-            <p><b>Type:</b> Active (action)</p>
-            <p>As an action, the gelatinooze can move into the space of an object or willing creature that is smaller than it and encapsulate it within its body. The object or creature can be seen but has total cover. No energy or spell effects that either originate from or target the encapsulated object or creature can pass through the gelatinooze. The gelatinooze naturally diffuses air to the object or creature within it, allowing it to breathe. The gelatinooze can contain up to 1 creature of a size smaller than it, whether it has it engulfed (using the Engulf action) or encapsulated using this trait.</p>
-            <p>An encapsulated creature can exit the polyhedrooze by expending 2 feet of movement for each foot of gelatinooze that it passes through. As a bonus action, the gelatinooze can expel the object or creature into an adjacent, unoccupied space of the gelatinooze’s choice.</p>
-        </description>
-        <sheet>
-            <description action="Action">As an action, the gelatinooze can move into the space of an object or willing creature that is smaller than it and encapsulate it within its body. The object or creature can be seen but has total cover. No energy or spell effects that either originate from or target the encapsulated object or creature can pass through the gelatinooze. The gelatinooze naturally diffuses air to the object or creature within it, allowing it to breathe. The gelatinooze can contain up to 1 creature of a size smaller than it, whether it has it engulfed (using the Engulf action) or encapsulated using this trait. An encapsulated creature can exit the polyhedrooze by expending 2 feet of movement for each foot of gelatinooze that it passes through. As a bonus action, the gelatinooze can expel the object or creature into an adjacent, unoccupied space of the gelatinooze’s choice.</description>
-        </sheet>
-    </element>
+    <!-- General Improvements -->
+	<!-- Speed Training -->
+	<element name="Speed Training" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SPEED_TRAINING_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<description>
+			<p>Increase one existing speed by 15 feet up to a maximum of 150% of the creature’s base
+				speed, rounded up to the nearest 5-foot increment.</p>
+			<p>E.g., a base speed of 30 feet can be increased to 45 feet maximum, a base speed of 25
+				feet can be increased to 40 feet, and a base speed of 20 feet to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>Increase one existing speed by 15 feet (Max of 150%)</description>
+		</sheet>
+	</element>
 
-    <element name="Erupt" type="Companion Action" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_ERUPT">
-        <supports>Gelatinooze, Companion Improvement</supports>
-        <prerequisite>Prerequisite: 17th-level tamer, Phalanx or Turtle</prerequisite>
-        <requirements>[level:tamer:17],ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_PHALANX|ID_LT_HGTMH_COMPANION_ACTION_GELATINOOZE_TURTLE</requirements>
-        <description>
-            <p><b>Type:</b> Active (action)</p>
-            <p>As an action, the gelatinooze can fire all the shrapnel, armour, and weapons it has accumulated in its body. It can choose to focus this in a 60-foot cone or erupt in all directions in a 20-foot-radius sphere centred on itself. Each creature in the area other than the gelatinooze must make a Dexterity saving throw.</p>
-            <p>A creature takes 14 (4d6) bludgeoning damage, 14 (4d6) piercing damage, 14 (4d6) slashing damage, and 14 (4d6) acid damage on a failed save, or half as much damage on a successful one.</p>
-            <p>After the gelatinooze uses this action, it can’t use its Erupt, Phalanx, or Turtle actions until it spends 1 hour absorbing rocks, metal, and other bric-a-brac.</p>
-        </description>
-        <sheet>
-            <description action="Action">As an action, the gelatinooze can fire all the shrapnel, armour, and weapons it has accumulated in its body. It can choose to focus this in a 60-foot cone or erupt in all directions in a 20-foot-radius sphere centred on itself. Each creature in the area other than the gelatinooze must make a DC {{gelatinooze:dc}} Dexterity saving throw. A creature takes 14 (4d6) bludgeoning damage, 14 (4d6) piercing damage, 14 (4d6) slashing damage, and 14 (4d6) acid damage on a failed save, or half as much damage on a successful one. After the gelatinooze uses this action, it can’t use its Erupt, Phalanx, or Turtle actions until it spends 1 hour absorbing rocks, metal, and other bric-a-brac.</description>
-        </sheet>
-    </element>
+	<!-- Toughen Up -->
+	<element name="Toughen Up" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false">
+			<description>Your companion gains {{hit dice gained:companion:gelatinooze}} Hit Die, increasing
+				its hit point maximum</description>
+		</sheet>
+		<rules>
+			<stat name="hit dice gained:companion:gelatinooze" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (2)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:gelatinooze" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (3)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:gelatinooze" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (4)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:gelatinooze" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (5)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:gelatinooze" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (6)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:gelatinooze" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (7)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:gelatinooze" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (8)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:gelatinooze" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (9)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:gelatinooze" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (10)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:gelatinooze" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (11)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:gelatinooze" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (12)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:gelatinooze" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (13)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:gelatinooze" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (14)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:gelatinooze" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (15)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:gelatinooze" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (16)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:gelatinooze" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (17)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:gelatinooze" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (18)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:gelatinooze" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (19)" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:gelatinooze" value="1" />
+		</rules>
+	</element>
+
+	<!-- Ability Boost -->
+	<element name="Ability Boost" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Gelatinooze Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (2)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_GELATINOOZE</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Gelatinooze Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (3)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_GELATINOOZE</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Gelatinooze Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (4)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_GELATINOOZE</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Gelatinooze Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (5)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_GELATINOOZE</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Gelatinooze Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (6)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_GELATINOOZE</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Gelatinooze Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (7)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_GELATINOOZE</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Gelatinooze Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (8)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_GELATINOOZE</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Gelatinooze Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (9)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_GELATINOOZE</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Gelatinooze Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (10)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_GELATINOOZE</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Gelatinooze Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (11)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_GELATINOOZE</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Gelatinooze Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (12)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_GELATINOOZE</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Gelatinooze Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (13)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_GELATINOOZE</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Gelatinooze Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (14)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_GELATINOOZE</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Gelatinooze Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (15)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_GELATINOOZE</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Gelatinooze Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (16)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_GELATINOOZE</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Gelatinooze Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (17)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_GELATINOOZE</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Gelatinooze Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (18)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_GELATINOOZE</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Gelatinooze Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (19)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_19_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_GELATINOOZE</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Gelatinooze Ability Boost" />
+		</rules>
+	</element>
+
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_GELATINOOZE">
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze strength becomes {{gelatinooze:str}} (+{{gelatinooze:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:str" value="1" />
+			<stat name="gelatinooze:str:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+					<description>The Gelatinooze strength becomes {{gelatinooze:str}} (+{{gelatinooze:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:str" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze strength becomes {{gelatinooze:str}} (+{{gelatinooze:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:str" value="1" />
+			<stat name="gelatinooze:str:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze strength becomes {{gelatinooze:str}} (+{{gelatinooze:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:str" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze strength becomes {{gelatinooze:str}} (+{{gelatinooze:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:str" value="1" />
+			<stat name="gelatinooze:str:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze strength becomes {{gelatinooze:str}} (+{{gelatinooze:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:str" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze strength becomes {{gelatinooze:str}} (+{{gelatinooze:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:str" value="1" />
+			<stat name="gelatinooze:str:mod" value="1" />
+		</rules>
+	</element>
+
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_GELATINOOZE">
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze dexterity becomes {{gelatinooze:dex}} (+{{gelatinooze:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:dex" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze dexterity becomes {{gelatinooze:dex}} (+{{gelatinooze:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:dex" value="1" />
+			<stat name="gelatinooze:dex:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze dexterity becomes {{gelatinooze:dex}} (+{{gelatinooze:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:dex" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze dexterity becomes {{gelatinooze:dex}} (+{{gelatinooze:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:dex" value="1" />
+			<stat name="gelatinooze:dex:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze dexterity becomes {{gelatinooze:dex}} (+{{gelatinooze:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:dex" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze dexterity becomes {{gelatinooze:dex}} (+{{gelatinooze:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:dex" value="1" />
+			<stat name="gelatinooze:dex:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze dexterity becomes {{gelatinooze:dex}} (+{{gelatinooze:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:dex" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze dexterity becomes {{gelatinooze:dex}} (+{{gelatinooze:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:dex" value="1" />
+			<stat name="gelatinooze:dex:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze dexterity becomes {{gelatinooze:dex}} (+{{gelatinooze:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:dex" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_10_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze dexterity becomes {{gelatinooze:dex}} (+{{gelatinooze:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:dex" value="1" />
+			<stat name="gelatinooze:dex:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_11_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_10_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze dexterity becomes {{gelatinooze:dex}} (+{{gelatinooze:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:dex" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_12_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_11_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze dexterity becomes {{gelatinooze:dex}} (+{{gelatinooze:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:dex" value="1" />
+			<stat name="gelatinooze:dex:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_13_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_12_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze dexterity becomes {{gelatinooze:dex}} (+{{gelatinooze:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:dex" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_14_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_13_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze dexterity becomes {{gelatinooze:dex}} (+{{gelatinooze:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:dex" value="1" />
+			<stat name="gelatinooze:dex:mod" value="1" />
+		</rules>
+	</element>
+
+
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_GELATINOOZE">
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze constitution becomes {{gelatinooze:con}} (+{{gelatinooze:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:con" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze constitution becomes {{gelatinooze:con}} (+{{gelatinooze:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:con" value="1" />
+			<stat name="gelatinooze:con:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze constitution becomes {{gelatinooze:con}} (+{{gelatinooze:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:con" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze constitution becomes {{gelatinooze:con}} (+{{gelatinooze:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:con" value="1" />
+			<stat name="gelatinooze:con:mod" value="1" />
+		</rules>
+	</element>
+
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_GELATINOOZE">
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze intelligence becomes {{gelatinooze:int}} (+{{gelatinooze:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:int" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze intelligence becomes {{gelatinooze:int}} (+{{gelatinooze:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:int" value="1" />
+            <stat name="gelatinooze:int:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze intelligence becomes {{gelatinooze:int}} (+{{gelatinooze:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:int" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze intelligence becomes {{gelatinooze:int}} (+{{gelatinooze:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:int" value="1" />			
+            <stat name="gelatinooze:int:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze intelligence becomes {{gelatinooze:int}} (+{{gelatinooze:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:int" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze intelligence becomes {{gelatinooze:int}} (+{{gelatinooze:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:int" value="1" />
+            <stat name="gelatinooze:int:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze intelligence becomes {{gelatinooze:int}} (+{{gelatinooze:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:int" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze intelligence becomes {{gelatinooze:int}} (+{{gelatinooze:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:int" value="1" />
+            <stat name="gelatinooze:int:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze intelligence becomes {{gelatinooze:int}} (+{{gelatinooze:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:int" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze intelligence becomes {{gelatinooze:int}} (+{{gelatinooze:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:int" value="1" />			
+            <stat name="gelatinooze:int:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze intelligence becomes {{gelatinooze:int}} (+{{gelatinooze:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:int" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze intelligence becomes {{gelatinooze:int}} (+{{gelatinooze:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:int" value="1" />
+            <stat name="gelatinooze:int:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_13_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze intelligence becomes {{gelatinooze:int}} (+{{gelatinooze:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:int" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_14_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_13_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze intelligence becomes {{gelatinooze:int}} (+{{gelatinooze:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:int" value="1" />
+            <stat name="gelatinooze:int:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_15_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_14_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze intelligence becomes {{gelatinooze:int}} (+{{gelatinooze:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:int" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_16_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_15_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze intelligence becomes {{gelatinooze:int}} (+{{gelatinooze:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:int" value="1" />			
+            <stat name="gelatinooze:int:mod" value="1" />
+		</rules>
+	</element>
+
+
+
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_GELATINOOZE">
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze wisdom becomes {{gelatinooze:wis}} (+{{gelatinooze:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:wis" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze wisdom becomes {{gelatinooze:wis}} (+{{gelatinooze:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:wis" value="1" />
+			<stat name="gelatinooze:wis:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze wisdom becomes {{gelatinooze:wis}} (+{{gelatinooze:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:wis" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze wisdom becomes {{gelatinooze:wis}} (+{{gelatinooze:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:wis" value="1" />
+			<stat name="gelatinooze:wis:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze wisdom becomes {{gelatinooze:wis}} (+{{gelatinooze:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:wis" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze wisdom becomes {{gelatinooze:wis}} (+{{gelatinooze:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:wis" value="1" />
+			<stat name="gelatinooze:wis:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze wisdom becomes {{gelatinooze:wis}} (+{{gelatinooze:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:wis" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze wisdom becomes {{gelatinooze:wis}} (+{{gelatinooze:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:wis" value="1" />
+			<stat name="gelatinooze:wis:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze wisdom becomes {{gelatinooze:wis}} (+{{gelatinooze:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:wis" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_10_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze wisdom becomes {{gelatinooze:wis}} (+{{gelatinooze:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:wis" value="1" />
+			<stat name="gelatinooze:wis:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_11_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_10_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze wisdom becomes {{gelatinooze:wis}} (+{{gelatinooze:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:wis" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_12_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_11_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze wisdom becomes {{gelatinooze:wis}} (+{{gelatinooze:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:wis" value="1" />
+			<stat name="gelatinooze:wis:mod" value="1" />
+		</rules>
+	</element>
+
+
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_GELATINOOZE">
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze charisma becomes {{gelatinooze:cha}} (+{{gelatinooze:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:cha" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze charisma becomes {{gelatinooze:cha}} (+{{gelatinooze:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:cha" value="1" />
+			<stat name="gelatinooze:cha:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze charisma becomes {{gelatinooze:cha}} (+{{gelatinooze:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:cha" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze charisma becomes {{gelatinooze:cha}} (+{{gelatinooze:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:cha" value="1" />
+			<stat name="gelatinooze:cha:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze charisma becomes {{gelatinooze:cha}} (+{{gelatinooze:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:cha" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze charisma becomes {{gelatinooze:cha}} (+{{gelatinooze:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:cha" value="1" />
+			<stat name="gelatinooze:cha:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze charisma becomes {{gelatinooze:cha}} (+{{gelatinooze:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:cha" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze charisma becomes {{gelatinooze:cha}} (+{{gelatinooze:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:cha" value="1" />
+			<stat name="gelatinooze:cha:mod" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze charisma becomes {{gelatinooze:cha}} (+{{gelatinooze:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:cha" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze charisma becomes {{gelatinooze:cha}} (+{{gelatinooze:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:cha" value="1" />
+			<stat name="gelatinooze:cha:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_11_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze charisma becomes {{gelatinooze:cha}} (+{{gelatinooze:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:cha" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_12_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_11_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze charisma becomes {{gelatinooze:cha}} (+{{gelatinooze:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:cha" value="1" />
+			<stat name="gelatinooze:cha:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_13_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_12_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze charisma becomes {{gelatinooze:cha}} (+{{gelatinooze:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:cha" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_14_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_13_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze charisma becomes {{gelatinooze:cha}} (+{{gelatinooze:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:cha" value="1" />
+			<stat name="gelatinooze:cha:mod" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_15_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_14_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze charisma becomes {{gelatinooze:cha}} (+{{gelatinooze:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:cha" value="1" />
+		</rules>
+	</element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_12_GELATINOOZE">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_15_GELATINOOZE</requirements>
+		<supports>Gelatinooze Ability Boost</supports>
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Gelatinooze charisma becomes {{gelatinooze:cha}} (+{{gelatinooze:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="gelatinooze:cha" value="1" />
+			<stat name="gelatinooze:cha:mod" value="1" />
+		</rules>
+	</element>
+
+	<!-- Go For the Throat -->
+	<element name="Go For the Throat" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Your companion gains a +{{go for the throat:bonus:gelatinooze}} bonus to its attack
+				and
+				damage rolls made with its natural weapons or unarmed strikes.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="go for the throat:bonus:gelatinooze" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (2)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>[level:tamer:5],
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:gelatinooze" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (3)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_3_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			[level:tamer:9],ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:gelatinooze" value="1" />
+		</rules>
+	</element>
+
+	<!-- Survival Insticts -->
+	<element name="Survival Instincts" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Gelatinooze" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (2)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Gelatinooze" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (3)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Gelatinooze" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (4)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Gelatinooze" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (5)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Gelatinooze" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (6)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_6_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Gelatinooze" />
+		</rules>
+	</element>
+	<element name="Gelatinooze Survival Instincts: Strength" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_GELATINOOZE">
+		<supports>Survival Instinct Gelatinooze</supports>
+		<description>
+			<p>Your companion gains proficiency in Strength Saving Throws</p>
+		</description>
+		<sheet>
+			<description>Gelatinooze +{{proficiency}} in Strength Saving Throws</description>
+		</sheet>
+	</element>
+	<element name="Gelatinooze Survival Instincts: Dexterity" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_GELATINOOZE">
+		<supports>Survival Instinct Gelatinooze</supports>
+		<description>
+			<p>Your companion gains proficiency in Dexterity Saving Throws</p>
+		</description>
+		<sheet>
+			<description>Gelatinooze +{{proficiency}} in Dexterity Saving Throws</description>
+		</sheet>
+	</element>
+	<element name="Gelatinooze Survival Instincts: Constitution" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_GELATINOOZE">
+		<supports>Survival Instinct Gelatinooze</supports>
+		<description>
+			<p>Your companion gains proficiency in Constitution Saving Throws</p>
+		</description>
+		<sheet>
+			<description>Gelatinooze +{{proficiency}} in Constitution Saving Throws</description>
+		</sheet>
+	</element>
+	<element name="Gelatinooze Survival Instincts: Intelligence" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_GELATINOOZE">
+		<supports>Survival Instinct Gelatinooze</supports>
+		<description>
+			<p>Your companion gains proficiency in Intelligence Saving Throws</p>
+		</description>
+		<sheet>
+			<description>Gelatinooze +{{proficiency}} in Intelligence Saving Throws</description>
+		</sheet>
+	</element>
+	<element name="Gelatinooze Survival Instincts: Wisdom" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_GELATINOOZE">
+		<supports>Survival Instinct Gelatinooze</supports>
+		<description>
+			<p>Your companion gains proficiency in Wisdom Saving Throws</p>
+		</description>
+		<sheet>
+			<description>Gelatinooze +{{proficiency}} in Wisdom Saving Throws</description>
+		</sheet>
+	</element>
+	<element name="Gelatinooze Survival Instincts: Charisma" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_GELATINOOZE">
+		<supports>Survival Instinct Gelatinooze</supports>
+		<description>
+			<p>Your companion gains proficiency in Charisma Saving Throws</p>
+		</description>
+		<sheet>
+			<description>Gelatinooze +{{proficiency}} in CHA Saving Throws</description>
+		</sheet>
+	</element>
+
+	<!-- War Training -->
+	<element name="War Training" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet>
+			<description>Gelatinooze +{{proficiency}} with __________.</description>
+			</sheet>
+	</element>
+	<element name="War Training (2)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+			</sheet>
+	</element>
+	<element name="War Training (3)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+			</sheet>
+	</element>
+	<element name="War Training (4)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+			</sheet>
+	</element>
+	<element name="War Training (5)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+			</sheet>
+	</element>
+	<element name="War Training (6)" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_6_GELATINOOZE">
+		<supports>Gelatinooze</supports>
+		<requirements>
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_GELATINOOZE</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+			</sheet>
+	</element>
 </elements>
