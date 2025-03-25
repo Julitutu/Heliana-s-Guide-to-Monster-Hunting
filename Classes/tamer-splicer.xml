@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Training Paradigm: Splicer</name>
+		<description>Splicer from Heliana's Guide to Monster Hunting</description>
+		<update version="0.1.0">
+			<file name="tamer-splicer.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Classes/tamer-splicer.xml" /> 
+		</update>
+	</info>
+
+	<element name="Splicer" type="Archetype" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_TAMER_SPLICER">
+		<supports>Training Paradigm</supports>
+		<description>
+			<p>Through really tiny stitches, you alter the physiology of your subjec– er… companions, in an unending quest for perfection. Many Splicers delve into the world of adventuring in the hopes of discovering exciting new improvements with which to augment their companions. Your foray into the world of biomancy, whether through wizarding school, working with biosmith artificers, or as the surgical assistant to a mad scientist, has resulted in a singular observation: subjects are much more malleable when they’re psychically bonded to you.</p>
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_SPLICER_AUGMENT" />
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_SPLICER_SPLICER_SPELLS" />
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_SPLICER_MODULAR_UPGRADES" />
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_SPLICER_BATTLEFIELD_HARVESTER" />
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_SPLICER_ADRENAL_OVERLOAD" />
+		</description>
+		<sheet display="false">
+			<description>Through really tiny stitches, you alter the physiology of your companions, in an unending quest for perfection.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_SPLICER_AUGMENT" level="3" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_SPLICER_SPLICER_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_SPLICER_MODULAR_UPGRADES" level="7" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_SPLICER_BATTLEFIELD_HARVESTER" level="10" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_SPLICER_ADRENAL_OVERLOAD" level="14" />
+		</rules>
+	</element>
+
+	<element name="Augment" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_SPLICER_AUGMENT">
+		<description>
+			<p>You can fiddle with the very essence of your companions, crafting minor improvements and modifications. When you choose this paradigm, you gain 3 splicer points. Each time you gain a level in the tamer class, you gain 1 additional splicer point. You can spend these points to modify your companions with the following augments—features and traits that take effect when you next finish a long rest. Splicer points are shared across all your companions. If a companion is ever released, it loses any augments it had and the splicer points are refunded. Augments can be gained only once unless otherwise stated. See the Splicer Augments table on the next page for more details.</p>
+			<p class="indent"><b><i>Surgeon’s Tools.</i></b> You also gain proficiency with surgeon’s tools. You can spend 1 hour removing all augments from one companion with your surgeon’s tools, causing it to lose all the associated effects. You regain all splicer points spent on that companion and can re-allocate those points as you see fit.</p>
+			<h5>Splicer Augments</h5>
+			<center>
+			<table>
+				<thead>
+					<tr><td>Augment</td><td>Effect Summary</td><td>Splicer Point Cost</td></tr>
+				</thead>
+                <tr><td><b>Cost: 0 Splicer Points</b></td></tr>
+				<tr><td>Water Breathing</td><td>Can only breathe water</td><td>0</td></tr>
+                <tr><td><b>Cost: 1 Splicer Point</b></td></tr>
+				<tr><td>Amphibious</td><td>Can breathe air and water</td><td>1</td></tr>
+				<tr><td>Darkvision</td><td>Gains or extends darkvision</td><td>1</td></tr>
+				<tr><td>Extra Limb*</td><td>Can grapple more creatures</td><td>1 per limb</td></tr>
+				<tr><td>Fins &amp; Webbing</td><td>Gains 30-foot swimming speed</td><td>1</td></tr>
+				<tr><td>Illumination</td><td>Sheds light (10 ft./10 ft.)</td><td>1</td></tr>
+				<tr><td>Keen Hearing</td><td>Advantage on hearing</td><td>1</td></tr>
+				<tr><td>Keen Sight</td><td>Advantage on sight</td><td>1</td></tr>
+				<tr><td>Keen Smell</td><td>Advantage on smell</td><td>1</td></tr>
+				<tr><td>Powerful Build</td><td>Can push, drag, and carry more</td><td>1</td></tr>
+				<tr><td>Prehensile Tail</td><td>Gains 30-foot climbing speed</td><td>1</td></tr>
+				<tr><td>Slippery</td><td>Advantage to avoid grapples</td><td>1</td></tr>
+				<tr><td>Sure-Footed</td><td>Advantage to resist prone</td><td>1</td></tr>
+				<tr><td>Web Sense + Web Walk</td><td>Can sense and walk on webs</td><td>1</td></tr>
+                <tr><td><b>Cost: 2 Splicer Points</b></td></tr>
+				<tr><td>Burrowing Claws</td><td>Gains 15-foot burrowing speed</td><td>2</td></tr>
+				<tr><td>Long Limbed</td><td>Increases reach of attacks</td><td>2</td></tr>
+				<tr><td>Mimicry</td><td>Can mimic sounds</td><td>2</td></tr>
+				<tr><td>Natural Armour**</td><td>Gains a +1 bonus to AC</td><td>2 per +1</td></tr>
+				<tr><td>Poisonous Touch***</td><td>Deals bonus poison damage</td><td>2</td></tr>
+				<tr><td>Spider Climb</td><td>Can climb without checks</td><td>2</td></tr>
+                <tr><td><b>Cost: 3 Splicer Points</b></td></tr>
+				<tr><td>Camouflage</td><td>Has advantage to hide while motionless</td><td>3</td></tr>
+				<tr><td>Corrosive Touch***</td><td>Deals bonus acid damage</td><td>3</td></tr>
+				<tr><td>Tremorsense</td><td>Gains or extends tremorsense</td><td>3 per 15 ft.</td></tr>
+				<tr><td>Wings</td><td>Gains 30-foot flying speed</td><td>3</td></tr>
+                <tr><td><b>Cost: 4 Splicer Points</b></td></tr>
+				<tr><td>Blindsight + Echolocation</td><td>Gains or extends blindsight</td><td>4 per 15 ft.</td></tr>
+				<tr><td>Decaying Touch***</td><td>Deals bonus necrotic damage</td><td>4</td></tr>
+				<tr><td>Flyby</td><td>Doesn't provoke opportunity attacks</td><td>4</td></tr>
+				<tr><td>Growth Hormone****</td><td>Increases size category and HP</td><td>4</td></tr>
+			</table>
+			</center>
+			<p class="indent">*Each companion can take this augment 4 times.</p>
+			<p class="indent">**Each companion can take this augment up to 3 times.</p>
+			<p class="indent">***A companion can benefit from only one of these three ‘touch’ augments, but can take them up to 2 times (see augment description).</p>
+			<p class="indent">****This augment can be taken multiple times, but can never cause a companion’s size category to increase beyond the maximum size dictated by tamer level (see Tamer Companion Summary table, page 202).</p>
+		</description>
+		<sheet>
+			<description>{{splicer:points}} splicer points. Modify companions (long rest). 1 hr to remove/reallocate.&#13;
+            • Cost 0: Water Breathing&#13;
+            • Cost 1: Amphibious, Darkvision, Extra Limbs, Fins &amp; Webbing, Illumination, Keen Hearing, Keen Sight, Keen Smell, Powerful Build, Prehensile Tail, Slippery, Sure-Footed, Web Sense + Web Walk &#13;
+            • Cost 2: Burrowing Claws, Long Limbed, Mimicry, Natural Armour, Poisonous Touch, Spider Climb &#13;
+            • Cost 3: Camouflage, Corrosive Touch, Tremorsense, Wings &#13;
+            • Cost 4: Blindsight + Echolocation, Decaying Touch, Flyby, Growth Hormone</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SURGEONS_TOOLS" />
+            <stat name="splicer:points" value="level:tamer" />
+
+			<!-- <select type="Class Feature" name="Cost 0 Augment" supports="Splicer 0" optional="true"/>
+			<select type="Class Feature" name="Cost 1 Augment" supports="Splicer 1"  optional="true" />
+            <select type="Class Feature" name="Cost 2 Augment" supports="Splicer 2"  optional="true" />
+            <select type="Class Feature" name="Cost 3 Augment" supports="Splicer 3"  optional="true" />
+            <select type="Class Feature" name="Cost 4 Augment" supports="Splicer 4"  optional="true" /> -->
+		</rules>
+	</element>
+
+	<element name="Splicer Spells" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_SPLICER_SPLICER_SPELLS">
+		<description>
+			<p>You learn additional spells when you reach certain levels in this class, as shown in the Splicer Spells table. Each spell counts as a tamer spell for you, but it doesn’t count against the number of tamer spells you know.</p>
+			<h5>Splicer Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Tamer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><i>chameleon skin*, disguise self</i></td></tr>
+				<tr><td>5th</td><td><i>barkskin, eelskin*</i></td></tr>
+				<tr><td>9th</td><td><i>mass leech*, zippit!*</i></td></tr>
+				<tr><td>13th</td><td><i>frogskin*, stoneskin</i></td></tr>
+				<tr><td>17th</td><td><i>contagion, feverskin*</i></td></tr>
+			</table>
+			<p class="indent">*See Appendix B</p>
+		</description>
+		<sheet display="false">
+			<description>You learn additional spells when you reach certain levels in this class. Each spell counts as a tamer spell for you, but it doesn’t count against the number of tamer spells you know.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_HGTMH_SPELL_CHAMELEON_SKIN" level="3" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" level="3" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BARKSKIN" level="5" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_HGTMH_SPELL_EELSKIN" level="5" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_HGTMH_SPELL_MASS_LEECH" level="9" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_HGTMH_SPELL_ZIPPIT_BIOMANCY" level="9" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_HGTMH_SPELL_ZIPPIT_TRANSMUTATION" level="9" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_HGTMH_SPELL_FROGSKIN" level="13" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_STONESKIN" level="13" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTAGION" level="17" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_HGTMH_SPELL_FEVERSKIN" level="17" spellcasting="Tamer" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Modular Upgrades" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_SPLICER_MODULAR_UPGRADES">
+		<description>
+			<p>You can upgrade each of your companions with exotic organs and appendages. At the start of a long rest, you can choose one of the following upgrades for each of your companions. At the end of the long rest, the biomantic meld completes, and your companion gains the associated action option. The DC for the saving throw equals your tamer spell save DC.</p>
+			<ul>
+				<li><b>Compelling Plumage.</b> Each creature in a 25-foot cone that can see your companion must succeed on a Wisdom saving throw or be charmed by your companion’s dazzling display of colour for the next minute. While charmed in this way, the creature is incapacitated and has a speed of 0 feet. The effect ends for an affected creature if it takes any damage, if someone else uses an action to shake the creature out of its stupor, if it no longer has line of sight to the companion, or is ever more than 25 feet away from the companion.</li>
+				<li><b>Phosphoburst.</b> Each other creature in a 10-foot-radius sphere centred on your companion must make a Constitution saving throw against the dizzying burst of light your companion emits. On a failure, a creature takes 2d10 radiant damage and is blinded until the end of its next turn. On a success, a creature takes half as much damage and isn’t blinded.</li>
+				<li><b>Poison Web.</b> Your companion launches an unfurling web of sticky silk in a 20-foot cube originating from it. All surfaces in the area become lined with webbing for the next minute. Each creature that touches one of these surfaces for the first time on its turn or starts its turn doing so must succeed on a Dexterity saving throw or become restrained for the duration, or until it breaks free. A creature restrained by the webs takes 2d4 poison damage when it becomes restrained and at the start of each of its turns. A creature can use its action to make a Strength check against your tamer spell save DC, freeing itself or another creature restrained by this web on a success.</li>
+				<li><b>Sirenshriek.</b> Each other creature in a 15-foot-radius sphere centred on your companion must make an Intelligence saving throw as your companion lets forth a brain-curdling mental shriek. On a failure, a creature takes 3d8 psychic damage and, if it is concentrating on a spell, loses its concentration. On a success, a creature takes half as much damage and makes saving throws to maintain its concentration as normal.</li>
+			</ul>
+			<p class="indent">Once a companion uses one of these actions, it can’t do so again until it finishes a short or long rest. Starting at 18th level, a companion can use this action twice before a rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>Long rest: Choose upgrade (Compelling Plumage, Phosphoburst, Poison Web, Sirenshriek). DC {{tamer:spellcasting:dc}}.</description>
+            <description level="18" usage="2/Short Rest">Long rest: Choose upgrade (Compelling Plumage, Phosphoburst, Poison Web, Sirenshriek). DC {{tamer:spellcasting:dc}}.</description>
+		</sheet>
+	</element>
+
+	<element name="Battlefield Harvester" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_SPLICER_BATTLEFIELD_HARVESTER">
+		<description>
+			<p>You augment your companions with a highly adaptive mutagen, allowing them to gain the strengths of foes they defeat and confer it to your other companions through a synchronous quantum biomantic link. As an action, you can command your companion to consume the corpse of a non-swarm creature that has been dead for less than 1 minute. Choose one of the consumed creature’s damage resistances, damage immunities, or condition immunities (except immunity to exhaustion). All of your companions gain resistance to one damage type to which the slain creature was resistant or immune, or gain immunity to one condition to which the creature was immune.</p>
+			<p class="indent">After you use this feature, you can’t do so again until you finish a long rest. When you use this feature again, your companions lose any benefit they had previously gained from this feature.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Action">
+			<description>Action: Consume corpse (&gt;1 min). All companions gain 1 resistance/immunity from corpse.</description>
+		</sheet>
+	</element>
+
+	<element name="Adrenal Overload" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_SPLICER_ADRENAL_OVERLOAD">
+		<description>
+			<p>As an action, you trigger a hidden, internal switch within your companion, triggering a cascade of rapid mutations that lasts for the next minute, with the following results:</p>
+			<ul>
+				<li>It immediately grows to Huge size (if it isn’t already).</li>
+				<li>Its weight increases by a factor of 8 per size category increased.</li>
+				<li>It gains temporary hit points equal to ten times your tamer level.</li>
+				<li>Its Strength score increases to 22 (if it isn’t already higher).</li>
+				<li>It gains proficiency in the Athletics skill.</li>
+				<li>It sprouts an appendage with which it can make melee weapon attacks with a reach of 5 feet that deal bludgeoning, piercing, or slashing damage (your choice when you take the action) equal to 3d6 plus its Strength modifier (+6) on a hit.</li>
+				<li>It gains the Multiattack action option: The companion makes three attacks with its appendage.</li>
+			</ul>
+			<p class="indent">After the minute elapses, your companion falls unconscious for 1d4 hours and gains 2 levels of exhaustion. Once you use this feature, you can’t do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Action">
+			<description>Action: Companion Huge, +weight, temp HP, Str 22, Athletics, 3d6+6 attack, Multiattack. 1 min, then unconscious/exhaustion.</description>
+		</sheet>
+	</element>
+
+	<!-- Augments -->
+	<element name="Water Breathing" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_WATER_BREATHING">
+        <description>
+            <p>The creature can breathe only underwater.</p>
+        </description>
+        <sheet display="false">
+            <description>Breathes underwater only.</description>
+        </sheet>
+    </element>
+
+    <element name="Amphibious" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_AMPHIBIOUS">
+        <description>
+            <p>The creature can breathe air and water.</p>
+        </description>
+        <sheet display="false">
+            <description>Breathes air and water.</description>
+        </sheet>
+    </element>
+
+    <element name="Darkvision" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_DARKVISION">
+        <description>
+            <p>The creature gains darkvision out to 60 feet. If it already has darkvision, the range is increased by 60 feet up to a maximum of 120 feet.</p>
+        </description>
+        <sheet display="false">
+            <description>Darkvision 60ft (or +60ft, max 120ft).</description>
+        </sheet>
+    </element>
+
+    <element name="Extra Limb*" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_EXTRA_LIMB">
+        <description>
+            <p>The creature gains an additional limb, allowing it to have one additional target grappled. A creature can gain a total of four extra limbs from this augment.</p>
+        </description>
+        <sheet display="false">
+            <description>+{{extra limb:aboling}} extra limbs grappled target.</description>
+        </sheet>
+    </element>
+
+    <element name="Fins &amp; Webbing" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_FINS_WEBBING">
+        <description>
+            <p>The creature gains a swimming speed of 30 feet. If it already has a slower swimming speed, this speed is increased to 30 feet.</p>
+        </description>
+        <sheet display="false">
+            <description>Swim speed 30ft (or increase to 30ft).</description>
+        </sheet>
+    </element>
+
+    <element name="Illumination" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_ILLUMINATION">
+        <description>
+            <p>The creature sheds bright light in a 10-foot radius and dim light for an additional 10 feet.</p>
+        </description>
+        <sheet display="false">
+            <description>Light: 10ft bright, 10ft dim.</description>
+        </sheet>
+    </element>
+
+    <element name="Keen Hearing" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_KEEN_HEARING">
+        <description>
+            <p>The creature has advantage on Wisdom (Perception) checks that rely on hearing.</p>
+        </description>
+        <sheet display="false">
+            <description>Advantage on hearing Perception.</description>
+        </sheet>
+    </element>
+
+    <element name="Keen Sight" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_KEEN_SIGHT">
+        <description>
+            <p>The creature has advantage on Wisdom (Perception) checks that rely on sight.</p>
+        </description>
+        <sheet display="false">
+            <description>Advantage on sight Perception.</description>
+        </sheet>
+    </element>
+
+    <element name="Keen Smell" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_KEEN_SMELL">
+        <description>
+            <p>The creature has advantage on Wisdom (Perception) checks that rely on smell.</p>
+        </description>
+        <sheet display="false">
+            <description>Advantage on smell Perception.</description>
+        </sheet>
+    </element>
+
+    <element name="Powerful Build" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_POWERFUL_BUILD">
+        <description>
+            <p>The creature counts as one size larger when determining its carrying capacity and the weight it can push, drag, or lift.</p>
+        </description>
+        <sheet display="false">
+            <description>Counts as one size larger (carry/push/drag/lift).</description>
+        </sheet>
+    </element>
+
+    <element name="Prehensile Tail" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_PREHENSILE_TAIL">
+        <description>
+            <p>The creature gains a climbing speed of 30 feet. If it already has a slower climbing speed, this speed is increased to 30 feet.</p>
+        </description>
+        <sheet display="false">
+            <description>Climb speed 30ft (or increase to 30ft).</description>
+        </sheet>
+    </element>
+
+    <element name="Slippery" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_SLIPPERY">
+        <description>
+            <p>The creature has advantage on ability checks and saving throws made to escape a grapple.</p>
+        </description>
+        <sheet display="false">
+            <description>Advantage to escape grapples.</description>
+        </sheet>
+    </element>
+
+    <element name="Sure-Footed" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_SURE_FOOTED">
+        <description>
+            <p>The creature has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.</p>
+        </description>
+        <sheet display="false">
+            <description>Advantage to resist prone.</description>
+        </sheet>
+    </element>
+
+    <element name="Web Sense + Web Walk" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_WEB_SENSE_WEB_WALK">
+        <description>
+            <p>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web. The creature ignores movement restrictions caused by webbing.</p>
+        </description>
+        <sheet display="false">
+            <description>Knows location on web; ignores web movement restrictions.</description>
+        </sheet>
+    </element>
+
+    <element name="Burrowing Claws" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_BURROWING_CLAWS">
+        <description>
+            <p>The creature gains a burrowing speed of 15 feet. If it already has a slower burrowing speed, this speed is increased to 15 feet. It does not leave an opening behind it while burrowing.</p>
+        </description>
+        <sheet display="false">
+            <description>Burrow speed 15ft (or increase to 15ft, no opening).</description>
+        </sheet>
+    </element>
+
+    <element name="Long Limbed" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_LONG_LIMBED">
+        <description>
+            <p>When the creature makes a melee attack on its turn, its reach for it is 5 feet greater than normal.</p>
+        </description>
+        <sheet display="false">
+            <description>Melee attack reach +5ft.</description>
+        </sheet>
+    </element>
+
+    <element name="Mimicry" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_MIMICRY">
+        <description>
+            <p>The creature can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful Wisdom (Insight) check. The DC equals 8 plus your proficiency bonus.</p>
+        </description>
+        <sheet display="false">
+            <description>Mimic sounds. {{mimicry:dc:aboling}} to detect.</description>
+        </sheet>
+    </element>
+
+    <element name="Natural Armour" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_NATURAL_ARMOUR">
+        <description>
+            <p>The creature gains a +1 bonus to its AC. It can take this augment a maximum of 3 times, gaining an additional +1 bonus each time.</p>
+        </description>
+        <sheet display="false">
+            <description>+{{aboling:ac bonus}} AC (max 3 times).</description>
+        </sheet>
+    </element>
+    <element name="Poisonous Touch" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_POISONOUS_TOUCH">
+        <requirements>!ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_CORROSIVE_TOUCH,!ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_DECAYING_TOUCH</requirements>
+        <description>
+            <p>The first time the creature hits with a weapon attack on its turn, it deals an additional 1d4 poison damage. A creature can take this augment again at 9th level, increasing the bonus to 2d4 poison damage. While a creature has this augment, it can’t take the Corrosive Touch or Decaying Touch augments.</p>
+        </description>
+        <sheet display="false">
+            <description>First hit: +1d4 poison</description>
+            <description level="9">First hit: +2d4 poison.</description>
+        </sheet>
+    </element>
+
+    <element name="Spider Climb" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_SPIDER_CLIMB">
+        <description>
+            <p>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+        </description>
+        <sheet display="false">
+            <description>Climb without checks.</description>
+        </sheet>
+    </element>
+
+    <element name="Camouflage" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_CAMOUFLAGE">
+        <description>
+            <p>The creature has advantage on Dexterity (Stealth) checks made while not moving.</p>
+        </description>
+        <sheet display="false">
+            <description>ADV on Stealth while not moving.</description>
+        </sheet>
+    </element>
+
+    <element name="Corrosive Touch" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_CORROSIVE_TOUCH">
+        <requirements>!ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_POISONOUS_TOUCH,!ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_DECAYING_TOUCH</requirements>
+        <description>
+            <p>The first time the creature hits with a weapon attack on its turn, it deals an additional 1d6 acid damage. A creature can take this augment again at 13th level, increasing the bonus to 2d6 acid damage. While a creature has this augment, it can’t take the Poisonous Touch or Decaying Touch augments.</p>
+        </description>
+        <sheet display="false">
+            <description>First hit: +1d6 acid.</description>
+            <description level="13">First hit: +2d6 acid.</description>
+        </sheet>
+    </element>
+
+    <element name="Tremorsense" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_TREMORSENSE">
+        <description>
+            <p>The creature gains tremorsense out to 15 feet. If it already has tremorsense, the range is increased by 15 feet up to a maximum of 30 feet. A creature with tremorsense can detect and pinpoint the origin of vibrations within a specific radius, provided that the monster and the source of the vibrations are in contact with the same ground or substance. Tremorsense can’t be used to detect flying or incorporeal creatures.</p>
+        </description>
+        <sheet display="false">
+            <description>Tremorsense 15ft (or +15ft, max 30ft).</description>
+        </sheet>
+    </element>
+
+    <element name="Wings" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_WINGS">
+        <description>
+            <p>The creature gains a flying speed of 30 feet. If it already has a slower flying speed, this speed is increased to 30 feet.</p>
+        </description>
+        <sheet display="false">
+            <description>Fly speed 30ft (or increase to 30ft).</description>
+        </sheet>
+    </element>
+
+    <element name="Blindsight + Echolocation" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_BLINDSIGHT_ECHOLOCATION">
+        <description>
+            <p>The creature gains blindsight out to 15 feet. If it already has blindsight, the range is increased by 15 feet up to a maximum of 30 feet. A creature with blindsight can perceive its surroundings without relying on sight, within a specific radius. The creature can’t use its blindsight while deafened.</p>
+        </description>
+        <sheet display="false">
+            <description>Blindsight 15ft (or +15ft, max 30ft). Can't use while deafened.</description>
+        </sheet>
+    </element>
+
+    <element name="Decaying Touch" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_DECAYING_TOUCH">
+        <requirements>!ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_POISONOUS_TOUCH,!ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_CORROSIVE_TOUCH</requirements>
+        <description>
+            <p>The first time the creature hits with a weapon attack on its turn, it deals an additional 1d8 necrotic damage. A creature can take this augment again at 17th level, increasing the bonus to 2d8 necrotic damage. While a creature has this augment, it can’t take the Poisonous Touch or Corrosive Touch augments.</p>
+        </description>
+        <sheet display="false">
+            <description>First hit: +1d8 necrotic.</description>
+            <description level="17">First hit: +2d8 necrotic.</description>
+        </sheet>
+    </element>
+
+    <element name="Flyby" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_FLYBY">
+        <description>
+            <p>The creature doesn’t provoke opportunity attacks when it flies out of an enemy’s reach.</p>
+        </description>
+        <sheet display="false">
+            <description>No opportunity attacks when flying.</description>
+        </sheet>
+    </element>
+
+    <element name="Growth Hormone" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_COMPANION_SPLICE_GROWTH_HORMONE">
+        <description>
+            <p>The creature’s size is increased by one category. In addition, the size of its Hit Die is increased by 1; add 1 to the creature’s maximum hit points for each Hit Die it has when it gains this augment. Note, this augment can be taken multiple times but can’t increase a companion’s size beyond that permitted by your tamer level (see Tamer Companion Summary table, page 202).</p>
+        </description>
+        <sheet display="false">
+            <description>+{{growth hormone:size:6}} size, +{{growth hormone:hd:6}} HP.</description>
+        </sheet>
+    </element>
+</elements>
+	

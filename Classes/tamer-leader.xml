@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Training Paradigm: Leader</name>
+		<description>Leader from Heliana's Guide to Monster Hunting</description>
+		<update version="0.1.0">
+			<file name="tamer-leader.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Classes/tamer-leader.xml" /> 
+		</update>
+	</info>
+
+	<element name="Leader" type="Archetype" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_TAMER_LEADER">
+		<supports>Training Paradigm</supports>
+		<description>
+			<p>Whether it be through a non-stop litany of encouraging aphorisms, exaggerated movements, and hand signals, or through a calm, telepathic reinforcement, a leader exhorts their companions to ever greater feats of brilliance. Leaders believe that with the right support and teamwork, no task is impossible for their menagerie of companions. Whether you swear by positive reinforcement, craft meticulous pre-fight gameplans, or ruthlessly punish mistakes, communication and motivation are your watchwords.</p>
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_LEADER_INSPIRE" />
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_LEADER_LEADER_SPELLS" />
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_LEADER_ACTION_BURST" />
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_LEADER_LEADERS_FORTITUDE" />
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_LEADER_COMBO" />
+		</description>
+		<sheet display="false">
+			<description>Whether it be through a non-stop litany of encouraging aphorisms, exaggerated movements, and hand signals, or through a calm, telepathic reinforcement, a leader exhorts their companions to ever greater feats of brilliance.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_LEADER_INSPIRE" level="3" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_LEADER_LEADER_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_LEADER_ACTION_BURST" level="7" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_LEADER_LEADERS_FORTITUDE" level="10" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_LEADER_COMBO" level="14" />
+		</rules>
+	</element>
+
+	<element name="Inspire" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_LEADER_INSPIRE">
+		<description>
+			<p>As an action, you can inspire your companion through shouts, gestures, and mental encouragement. Until the beginning of your next turn, whenever your companion makes a saving throw or attack roll, it can add a d6 to its result.</p>
+			<p class="indent">You can use this feature a number of times equal to your tamer spellcasting ability modifier (a minimum of once). You regain any expended uses when you finish a short or long rest.</p>
+			<p class="indent">The die you grant when you use this feature changes when you reach certain levels in this class. The die becomes a d8 at 6th level, a d10 at 10th level, and a d12 at 14th level.</p>
+		</description>
+		<sheet usage="{{tamer:spellcasting:min}}/Short Rest" action="Action">
+			<description>Companion +d{{inspire:die}} to attack/save until your next turn.</description>
+		</sheet>
+        <rules>
+            <stat name="inspire:die" value="6" />
+            <stat name="inspire:die" value="2" level="6"/>
+            <stat name="inspire:die" value="2" level="10"/>
+            <stat name="inspire:die" value="2" level="14"/>
+        </rules>
+	</element>
+
+	<element name="Leader Spells" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_LEADER_LEADER_SPELLS">
+		<description>
+			<p>You learn additional spells when you reach certain levels in this class, as shown in the Leader Spells table. Each spell counts as a tamer spell for you, but it doesn’t count against the number of tamer spells you know.</p>
+			<h5>Leader Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Tamer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><i>divine favor, protection from evil and good</i></td></tr>
+				<tr><td>5th</td><td><i>inequality*, warding bond</i></td></tr>
+				<tr><td>9th</td><td><i>beacon of hope, haste</i></td></tr>
+				<tr><td>13th</td><td><i>death ward, freedom of movement</i></td></tr>
+				<tr><td>17th</td><td><i>dispel evil and good, endure*</i></td></tr>
+			</table>
+			<p class="indent">*See Appendix B</p>
+		</description>
+		<sheet display="false">
+			<description>You learn additional spells when you reach certain levels in this class. Each spell counts as a tamer spell for you, but it doesn’t count against the number of tamer spells you know.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DIVINE_FAVOR" level="3" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" level="3" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_HGTMH_SPELL_INEQUALITY" level="5" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WARDING_BOND" level="5" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BEACON_OF_HOPE" level="9" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="9" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="13" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="13" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD" level="17" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_HGTMH_SPELL_ENDURE" level="17" spellcasting="Tamer" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Action Burst" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_LEADER_ACTION_BURST">
+		<description>
+			<p>You can push your companion beyond its normal limits for a moment. When you use an action or bonus action to command your companion, you can extol it to exert greater effort. On your companion’s turn, it can take one additional action of your choice.</p>
+			<p class="indent">Once your companion has benefited from your use of this feature, you must finish a short or long rest before that same companion can benefit from it again. Starting at 18th level, your companions can benefit from Action Burst twice before a rest, but only once on the same turn.</p>
+		</description>
+		<sheet usage="1/Short Rest/Per Companion">
+			<description>Companion takes extra action. </description>
+            <description usage="2/Short Rest/Per Companion" level="18">Companion takes extra action.</description>
+		</sheet>
+	</element>
+
+	<element name="Leader’s Fortitude" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_LEADER_LEADERS_FORTITUDE">
+		<description>
+			<p>When an attacker that you can see hits your companion with an attack, you can use both your and your companion’s reactions to bolster its resilience. Your companion fortifies itself, halving the attack’s damage against it.</p>
+		</description>
+		<sheet action="Both Reactions">
+			<description>Halve companion's attack damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Combo" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_LEADER_COMBO">
+		<description>
+			<p>As an action, you can summon a second companion from a vessel you are holding to an unoccupied space you can see within 30 feet of you. When you use an action or bonus action to command your companion, you can command both of them simultaneously, giving a different command to each.</p>
+			<p class="indent">The two companions take their turns in an order of your choice, directly after your turn. At the start of their turns, you can mentally choose one creature you can see (no action required). If your first companion makes an attack against the chosen target, the second companion gains advantage on its attack rolls against this creature until the end of its turn.</p>
+			<p class="indent">After being summoned for 1 minute, or if your second companion is ever more than 100 feet away from you, the second companion is dismissed. Once you use this feature, you can’t do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Action">
+			<description>Summon 2nd companion. Command both. Advantage if attacking same target. 1 min or 100ft.</description>
+		</sheet>
+	</element>
+</elements>

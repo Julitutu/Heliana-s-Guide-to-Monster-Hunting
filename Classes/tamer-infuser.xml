@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Training Paradigm: Infuser</name>
+		<description>Infuser from Heliana's Guide to Monster Hunting</description>
+		<update version="0.1.0">
+			<file name="tamer-infuser.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Classes/tamer-infuser.xml" /> 
+		</update>
+	</info>
+
+	<element name="Infuser" type="Archetype" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_TAMER_INFUSER">
+		<supports>Training Paradigm</supports>
+		<description>
+			<p>Infusers meld the power of the elements with their companions through the act of summoning. How you came across this power is anyone’s guess. Perhaps you took a tumble across the Elemental Flux during an inter-planar voyage, were born with some primordial heritage, or were tutored by an elementalist wizard. However it happened, you have the ability to empower those with which you are most closely bonded: your companions.</p>
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_INFUSER_INFUSE" />
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_INFUSER_INFUSER_SPELLS" />
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_INFUSER_ELEMENTAL_DISCHARGE" />
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_INFUSER_PRIMORDIAL_SHIELD" />
+			<div element="ID_LT_HGTMH_ARCHETYPE_FEATURE_INFUSER_UNSTABLE_FUSION" />
+		</description>
+		<sheet display="false">
+			<description>Infusers meld the power of the elements with their companions through the act of summoning.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_INFUSER_INFUSE" level="3" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_INFUSER_INFUSER_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_INFUSER_ELEMENTAL_DISCHARGE" level="7" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_INFUSER_PRIMORDIAL_SHIELD" level="10" />
+			<grant type="Archetype Feature" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_INFUSER_UNSTABLE_FUSION" level="14" />
+		</rules>
+	</element>
+
+	<element name="Infuse" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_INFUSER_INFUSE">
+		<description>
+			<p>You have a deep connection with the elements and can infuse your companions with primordial energy. When you finish a long rest, you can choose one of the following elements with which to individually infuse each of your companions: acid, cold, fire, or lightning. When you do so, any previous infusion on those companions end. The first time your companion hits a target with an attack on its turn, it deals 1d4 additional damage of the infused type. This damage increases when you reach certain levels in this class: 1d6 at 6th level, 1d8 at 10th level, and 1d10 at 14th level.</p>
+		</description>
+		<sheet>
+			<description>Long rest: Infuse companions (acid, cold, fire, lightning). First hit: +1d{{infuse:die}} infused damage.</description>
+		</sheet>
+        <rules>
+            <stat name="infuse:die" value="4" />
+            <stat name="infuse:die" value="2" level="6"/>
+            <stat name="infuse:die" value="2" level="10"/>
+            <stat name="infuse:die" value="2" level="14"/>
+        </rules>
+	</element>
+
+	<element name="Infuser Spells" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_INFUSER_INFUSER_SPELLS">
+		<description>
+			<p>You learn additional spells when you reach certain levels in this class, as shown in the Infuser Spells table. Each spell counts as a tamer spell for you, but it doesn’t count against the number of tamer spells you know.</p>
+			<h5>Infuser Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Tamer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><i>hellish rebuke, peppermint plate*</i></td></tr>
+				<tr><td>5th</td><td><i>eelskin*, riptide*</i></td></tr>
+				<tr><td>9th</td><td><i>protection from energy, wind wall</i></td></tr>
+				<tr><td>13th</td><td><i>control water, fire shield</i></td></tr>
+				<tr><td>17th</td><td><i>feverskin*, wall of stone</i></td></tr>
+			</table>
+			<p class="indent">*See Appendix B</p>
+		</description>
+		<sheet display="false">
+			<description>You learn additional spells when you reach certain levels in this class. Each spell counts as a tamer spell for you, but it doesn’t count against the number of tamer spells you know.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_HELLISH_REBUKE" level="3" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_HGTMH_SPELL_PEPPERMINT_PLATE" level="3" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_HGTMH_SPELL_EELSKIN" level="5" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_HGTMH_SPELL_RIPTIDE" level="5" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" level="9" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WIND_WALL" level="9" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTROL_WATER" level="13" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" level="13" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_HGTMH_SPELL_FEVERSKIN" level="17" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" level="17" spellcasting="Tamer" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Elemental Discharge" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_INFUSER_ELEMENTAL_DISCHARGE">
+		<description>
+			<p>Your companions gain the ability to unleash a torrent of elemental energy in a devastating blow. When you infuse a companion at the end of a long rest, it gains an action option corresponding to the chosen element. The DC for the saving throw equals your tamer spell save DC.</p>
+			<ul>
+				<li><b>Acid: Caustic Mist.</b> Your companion disperses an acidic vapour into a 20-foot cube originating from it that lasts for 1 minute, or until dispersed by a wind of moderate or greater speed (at least 10 miles per hour). Each other creature that starts its turn in the area must make a Constitution saving throw, taking 4d4 acid damage on a failure, or half as much damage on a success.</li>
+				<li><b>Cold: Snap Freeze.</b> Your companion absorbs the heat in a 10-foot-radius sphere around it. Each other creature in the area must make a Constitution saving throw. On a failed save, a creature takes 4d8 cold damage and its speed is halved until the end of its next turn. On a successful save, it takes half as much damage and its speed isn’t affected.</li>
+				<li><b>Fire: Flametongue.</b> Your companion unleashes a raging inferno in a 25-foot cone. Each creature in the area must make a Dexterity saving throw, taking 6d6 fire damage on a failure, or half as much damage on a success. The fire ignites any flammable objects in the area that aren’t being worn or carried.</li>
+				<li><b>Lightning: Sparkstep.</b> Your companion discharges lightning in a 10-foot-radius sphere centred on itself. Each other creature in the area must make a Dexterity saving throw. On a failure, a creature takes 4d6 lightning damage and it can’t take reactions until the start of its next turn. On a success, it takes half as much damage and can take reactions as normal. After the saving throws are resolved, your companion can immediately fly up to 30 feet as part of this action.</li>
+			</ul>
+			<p class="indent">Once a companion uses one of these actions, it can’t use any action granted by this feature again until you finish a short or long rest. Starting at 18th level, a companion can use this action twice before a rest, but only once on the same turn.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>Infused companion gains action (Acid, Cold, Fire, Lightning). DC {{tamer:spellcasting:dc}}.</description>
+            <description level="18" usage="2/Short Rest">Infused companion gains action (Acid, Cold, Fire, Lightning). DC {{tamer:spellcasting:dc}}.</description>
+		</sheet>
+	</element>
+
+	<element name="Primordial Shield" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_INFUSER_PRIMORDIAL_SHIELD">
+		<description>
+			<p>Your companion gains resistance to the element with which it is infused. When your companion takes damage of that type, you can use your reaction to bolster its defences, granting it immunity to that damage type, including against the triggering damage, until the start of your next turn. Once you use this reaction, you can’t do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest" action="Reaction">
+			<description>Companion resistant to infused element.  Use reaction for immunity until next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Unstable Fusion" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_INFUSER_UNSTABLE_FUSION">
+		<description>
+			<p>Sometimes, more is better. As an action, you can infuse your companion with a second element for 1 minute, choosing from the options in the Infuse feature. Your companion gains the benefits of the Infuse, Elemental Discharge, and Primordial Shield features for both of the elements with which it is infused. If you activate your Primordial Shield feature while Unstable Fusion is active, your companion gains immunity to both damage types. Once you use this feature, you can’t do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Action">
+			<description>Infuse 2nd element (1 min). Benefits of both. Primordial Shield = immunity to both.</description>
+		</sheet>
+	</element>
+</elements>
