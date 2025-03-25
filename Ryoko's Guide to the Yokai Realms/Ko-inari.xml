@@ -1,0 +1,1924 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Ko-inari</name>
+        <description>Ko-inari familiar from Ryoko's Guide to the Yokai Realms</description>
+        <update version="0.1.0">
+            <file name="Ko-inari.xml" url="YOUR_URL_HERE" />  <!-- Replace with actual URL -->
+        </update>
+    </info>
+
+    <element name="Ko-inari" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_KO_INARI">
+        <supports>Familiar, Variant Familiar, Bespoke Companion</supports>
+        <description>
+            <p style="margin-bottom:-5px">
+                <em>Tiny celestial (yokai), lawful good</em>
+            </p>
+            <h4 style="margin-top:5px" />
+            <p></p>
+            <p>
+                <strong>Armor Class</strong> 12</p>
+            <p>
+                <strong>Hit Points</strong> 3 (1d4 + 1)</p>
+            <p>
+                <strong>Speed</strong> 30 ft.</p>
+            <p></p>
+            <table style="text-align:center;margin-top:10px;margin-bottom:10px">
+                <thead>
+                    <tr>
+                        <td>STR</td>
+                        <td>DEX</td>
+                        <td>CON</td>
+                        <td>INT</td>
+                        <td>WIS</td>
+                        <td>CHA</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>9(-1)</td>
+                    <td>14(+2)</td>
+                    <td>13(+1)</td>
+                    <td>10(+0)</td>
+                    <td>14(+2)</td>
+                    <td>12(+1)</td>
+                </tr>
+            </table>
+            <p>
+                <strong>Skills</strong>  </p>
+            <p>
+                <strong>Damage Immunities</strong> radiant</p>
+            <p>
+                <strong>Senses</strong> darkvision 60 ft., passive Perception 12</p>
+            <p>
+                <strong>Languages</strong> Common, Celestial, Kitsune</p>
+            <p></p>
+            <h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
+            <p>
+                <strong>
+                    <em>Divine Reproach.</em>
+                </strong>When a koinari witnesses one of its allies commit an evil deed, it takes the earliest possible opportunity to scold them (typically waiting until a combat concludes). The koinari’s scolding takes 1 minute and requires the koinari to be within 10 feet of its ally for the duration, after which the ally must succeed on a DC 11 Wisdom saving throw or take 4 (1d8) psychic damage. Once a creature has failed this saving throw, it can’t be affected by this trait again until it finishes a long rest.</p>
+            <p>
+                <strong>
+                    <em>Fortified Mind.</em>
+                </strong>The koinari is immune to magic that allows other creatures to read its thoughts, determine whether it’s lying, know its alignment, or know its creature type.</p>
+            <p></p>
+            <h4 style="margin-top:15px">Actions</h4>
+            <p>
+                <strong>
+                    <em>Radiant Strike.</em>
+                </strong>
+                <em>Melee or Ranged Spell Attack:</em> +4 to hit, reach 5 ft. or range 20 ft., one target. <em>Hit:</em> 4 (1d4 + 2) radiant damage.</p>
+            <p></p>
+        </description>
+        <sheet>
+            <description>Ko-inari ({{koinari:size}})- It gains {{hit dice gained:companion:koinari}}d{{hit dice size:koinari}} hit dice. DC: {{koinari:dc}}. AC: +{{koinari:ac bonus}}. Radiant Strike: +{{koinari:attack:hit}} DMG: {{koinari:attack:dice}} + {{koinari:attack:damage}}</description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_KO_INARI" />
+
+            <stat name="hit dice gained:companion:koinari" value="1" level="4" />
+            <stat name="hit dice gained:companion:koinari" value="1" level="8" />
+            <stat name="hit dice gained:companion:koinari" value="1" level="12" />
+            <stat name="hit dice gained:companion:koinari" value="1" level="16" />
+            <stat name="hit dice gained:companion:koinari" value="1" level="19" />
+
+            <stat name="koinari:dc" value="8" />
+            <stat name="koinari:dc" value="proficiency" />
+            <stat name="koinari:dc" value="koinari:wis:mod" />
+
+            <stat name="koinari:str" value="9" />
+            <stat name="koinari:str:mod" value="-1" />
+            <stat name="koinari:dex" value="14" />
+            <stat name="koinari:dex:mod" value="2" />
+            <stat name="koinari:con" value="13" />
+            <stat name="koinari:con:mod" value="1" />
+            <stat name="koinari:int" value="10" />
+            <stat name="koinari:int:mod" value="0" />
+            <stat name="koinari:wis" value="14" />
+            <stat name="koinari:wis:mod" value="2" />
+            <stat name="koinari:cha" value="12" />
+            <stat name="koinari:cha:mod" value="1" />
+
+            <stat name="koinari:ac bonus" value="0" />
+            <stat name="go for the throat:bonus:koinari" value="0" />
+            <stat name="koinari:size" inline="true" value="Tiny" />
+            <stat name="hit dice size:koinari" value="4" />
+
+
+            <stat name="koinari:attack:hit" value="proficiency" />
+            <stat name="koinari:attack:hit" value="koinari:wis:mod" />
+            <stat name="koinari:attack:hit" value="go for the throat:bonus:koinari" />
+            
+            <stat name="koinari:attack:damage" value="koinari:wis:mod" />
+            <stat name="koinari:attack:damage" value="go for the throat:bonus:koinari" />
+            <stat name="koinari:attack:dice" inline="true" value="1d4" />
+        </rules>
+    </element>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Improvement Gained on Taming-->
+    <element name="Ko-inari Improvement" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_KO_INARI">
+        <description>
+            <p>Whenever you gain a level beyond 1st in this class, each companion to which you are
+                bonded gains one of the following improvements.
+                Any newly gained companions receive these additional Hit Dice and improvements as if
+                you had them since your 1st level in tamer.</p>
+        </description>
+        <sheet>
+            <description>The Ko-inari has the following Improvements:</description>
+        </sheet>
+        <rules>
+            <stat name="hit dice gained:companion:koinari" value="2" />
+
+            <select type="Class Feature" name="Ko-inari Improvement"
+                supports="Ko-inari" default="ID_LT_RGTTYR_COMPANION_ACTION_KO_INARI_MESSENGER_I" />
+            <select type="Class Feature" name="Ko-inari Improvement (Lvl 2)"
+                supports="Ko-inari" level="2" />
+            <select type="Class Feature" name="Ko-inari Improvement (Lvl 3)"
+                supports="Ko-inari" level="3" />
+            <select type="Class Feature" name="Ko-inari Improvement (Lvl 4)"
+                supports="Ko-inari" level="4" />
+            <select type="Class Feature" name="Ko-inari Improvement (Lvl 5)"
+                supports="Ko-inari" level="5" />
+            <select type="Class Feature" name="Ko-inari Improvement (Lvl 6)"
+                supports="Ko-inari" level="6" />
+            <select type="Class Feature" name="Ko-inari Improvement (Lvl 7)"
+                supports="Ko-inari" level="7" />
+            <select type="Class Feature" name="Ko-inari Improvement (Lvl 8)"
+                supports="Ko-inari" level="8" />
+            <select type="Class Feature" name="Ko-inari Improvement (Lvl 9)"
+                supports="Ko-inari" level="9" />
+            <select type="Class Feature" name="Ko-inari Improvement (Lvl 10)"
+                supports="Ko-inari" level="10" />
+            <select type="Class Feature" name="Ko-inari Improvement (Lvl 11)"
+                supports="Ko-inari" level="11" />
+            <select type="Class Feature" name="Ko-inari Improvement (Lvl 12)"
+                supports="Ko-inari" level="12" />
+            <select type="Class Feature" name="Ko-inari Improvement (Lvl 13)"
+                supports="Ko-inari" level="13" />
+            <select type="Class Feature" name="Ko-inari Improvement (Lvl 14)"
+                supports="Ko-inari" level="14" />
+            <select type="Class Feature" name="Ko-inari Improvement (Lvl 15)"
+                supports="Ko-inari" level="15" />
+            <select type="Class Feature" name="Ko-inari Improvement (Lvl 16)"
+                supports="Ko-inari" level="16" />
+            <select type="Class Feature" name="Ko-inari Improvement (Lvl 17)"
+                supports="Ko-inari" level="17" />
+            <select type="Class Feature" name="Ko-inari Improvement (Lvl 18)"
+                supports="Ko-inari" level="18" />
+            <select type="Class Feature" name="Ko-inari Improvement (Lvl 19)"
+                supports="Ko-inari" level="19" />
+            <select type="Class Feature" name="Ko-inari Improvement (Lvl 20)"
+                supports="Ko-inari" level="20" />
+        </rules>
+    </element>
+
+    <element name="Messenger I" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_ACTION_KO_INARI_MESSENGER_I">
+        <supports>Ko-inari</supports>
+        <prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
+        <requirements>[level:tamer:1]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>The ko-inari can cast the <i>message</i> cantrip, requiring no material components. When targeting its tamer with the spell, the ko-inari also doesn’t require verbal or somatic components to cast it.</p>
+        </description>
+        <sheet>
+            <description action="Action">Can cast the <i>message</i> cantrip (no materials).</description>
+        </sheet>
+    </element>
+
+    <element name="Divine Seal I" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_ACTION_KO_INARI_DIVINE_SEAL_I">
+        <supports>Ko-inari</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (bonus action)</p>
+            <p>As a bonus action, the ko-inari can use one of the following seals, inscribing it upon a creature within 5 feet of it. A creature can only bear one of the ko-inari’s seals on it at a time. If a new one is inscribed, the effects of the older one cease.</p>
+            <ul>
+                <li><b>Seal of Healing.</b> The ko-inari can only adorn a willing creature with this seal. At the end of that creature’s next turn, it regains 7 (2d6) hit points.</li>
+                <li><b>Seal of Strength.</b> The ko-inari can only adorn a willing creature with this seal. That creature is under the effects of the bless spell for 1 minute.</li>
+            </ul>
+            <p>After the ko-inari uses a seal, it can’t use that seal again until its tamer finishes a long rest.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action" usage="1/Long Rest">Within 5 ft with a seal. Healing: regains 7 (2d6) HP at the end of their next turn. Strength: Bless effect (1 min).</description>
+        </sheet>
+    </element>
+
+    <element name="Growth I" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_TRAIT_KO_INARI_GROWTH_I">
+        <supports>Ko-inari</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The ko-inari’s size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage die of its Radiant Strike attack increases to a d6.</p>
+        </description>
+        <sheet display="false">
+            <description>Size: Small. Hit Die: d6. Radiant Strike: 1d6.</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:size" inline="true" value="Small" />
+            <stat name="hit dice size:koinari" value="2"/>
+            <stat name="koinari:attack:dice" inline="true" value="1d6" />
+        </rules>
+    </element>
+
+    <element name="Scout" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_TRAIT_KO_INARI_SCOUT">
+        <supports>Ko-inari</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The ko-inari gains proficiency in the Perception and Survival skills. In addition, its walking speed increases by 10 feet.</p>
+        </description>
+        <sheet>
+            <description>Prof in Perception and Survival. Walking speed increases by 10 feet.</description>
+        </sheet>
+    </element>
+
+    <element name="Messenger II" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_ACTION_KO_INARI_MESSENGER_II">
+        <supports>Ko-inari</supports>
+        <prerequisite>Prerequisite: 5th-level tamer, Messenger I</prerequisite>
+        <requirements>[level:tamer:5],ID_LT_RGTTYR_COMPANION_ACTION_KO_INARI_MESSENGER_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>The ko-inari can cast the comprehend languages, locate creature, and sending spells, requiring no material components. After it casts a spell in this way, it can’t cast any spell with the Messenger II improvement again until its tamer finishes a short or long rest.</p>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Short Rest">Can cast comprehend languages, locate creature, and sending (no materials).</description>
+        </sheet>
+    </element>
+
+    <element name="Multiattack" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_ACTION_KO_INARI_MULTIATTACK">
+        <supports>Ko-inari</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action, the ko-inari can make two attacks.</p>
+        </description>
+        <sheet>
+            <description>Two attacks</description>
+        </sheet>
+    </element>
+
+    <element name="Shapeshifter" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_ACTION_KO_INARI_SHAPESHIFTER">
+        <supports>Ko-inari</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action, the ko-inari takes on the shape of a fox. When it does, its equipment melds into its form. While in fox form, the ko-inari can’t wield weapons or tools, it can't use its Divine Seal improvements, it can take the Dash action as a bonus action, it loses its Radiant Strike, and it gains the Radiant Bite attack.</p>
+            <p><em>Radiant Bite.</em> Melee Weapon Attack: Dex + PB to hit, reach 5 ft., one target. Hit: 4 (1d4 + Dex) piercing damage plus 2 (1d4) radiant damage.</p>
+            <p>It otherwise retains all its game statistics. This transformation lasts for 1 hour or until the ko-inari reverts to its true form as an action or dies.</p>
+        </description>
+        <sheet>
+            <description action="Action">Transform into fox form (1 hour). Loses radiant strike. Gains: +5 ft, Bite: +{{koinari:bite:hit}}, DMG: {{koinari:bite:damage:dice}} + {{koinari:bite:damage}} + {{koinari:bite:damage:dice}} radiant</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:bite:damage:dice" inline="true" value="1d4" />
+            <stat name="koinari:bite:damage" value="go for the throat:bonus:koinari" />
+            <stat name="koinari:bite:damage" value="koinari:dex:mod" />
+
+            <stat name="koinari:bite:hit" value="go for the throat:bonus:koinari" />
+            <stat name="koinari:bite:hit" value="koinari:dex:mod" />
+			<stat name="koinari:bite:hit" value="proficiency" />
+            <stat name="koinari:bite:hit" value="go for the throat:bonus:koinari" />
+        </rules>
+    </element>
+
+    <element name="Divine Seal II" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_ACTION_KO_INARI_DIVINE_SEAL_II">
+        <supports>Ko-inari</supports>
+        <prerequisite>Prerequisite: 9th-level tamer, Divine Seal I</prerequisite>
+        <requirements>[level:tamer:9],ID_LT_RGTTYR_COMPANION_ACTION_KO_INARI_DIVINE_SEAL_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (bonus action)</p>
+            <p>The ko-inari learns two new seals to hinder its enemies with its Divine Seal I improvement:</p>
+            <ul>
+                <li><b>Seal of Disruption.</b> A creature the ko-inari adorns with this seal must succeed on a Wisdom saving throw or have disadvantage on the first attack roll it makes on each of its turns for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</li>
+                <li><b>Seal of Purification.</b> A creature the ko-inari adorns with this seal must succeed on a Wisdom saving throw or take 3 (1d6) radiant damage at the start of each of its turns for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</li>
+            </ul>
+            <p>In addition, the ko-inari regains the use of all of its seals when its tamer finishes a short or long rest.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action">Learn Seal of Disruption and Seal of Purification. Regain all seals to use each Short Rest.</description>
+        </sheet>
+    </element>
+    <element name="Growth II" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_TRAIT_KO_INARI_GROWTH_II">
+        <supports>Ko-inari</supports>
+        <prerequisite>Prerequisite: 9th-level tamer, Growth I</prerequisite>
+        <requirements>[level:tamer:9],ID_LT_RGTTYR_COMPANION_TRAIT_KO_INARI_GROWTH_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The ko-inari’s size increases to Medium, its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice), the damage die of its Radiant Strike attack increases to a d8, and the damage dice of its Radiant Bite attack (see Shapeshifter improvement) both increase to a d8.</p>
+        </description>
+        <sheet display="false">
+            <description>Size: Medium. Hit Die: d8. Radiant Strike/Bite damage: d8</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:size" inline="true" value="Medium" />
+            <stat name="hit dice size:koinari" value="2" />
+            <stat name="koinari:attack:dice" inline="true" value="1d8" />
+        </rules>
+    </element>
+    <element name="Messenger III" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_ACTION_KO_INARI_MESSENGER_III">
+        <supports>Ko-inari</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Messenger II</prerequisite>
+        <requirements>[level:tamer:13],ID_LT_RGTTYR_COMPANION_ACTION_KO_INARI_MESSENGER_II</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion), Active (action)</p>
+            <p>The ko-inari is always under the effects of the nondetection spell.</p>
+            <p>In addition, the ko-inari can cast the telepathic bond spell, requiring no material components. Creatures under the effect of this spell are immune to magic that allows other creatures to read their thoughts, determine whether they’re lying, know their alignment, or know their creature type.</p>
+            <p>After the ko-inari casts the spell in this way, it can’t do so again until its tamer finishes a long rest.</p>
+        </description>
+        <sheet>
+            <description>Under the effects of the nondetection spell. Casts telepathic bond spell (immune magic effects)</description>
+        </sheet>
+    </element>
+    <element name="Divine Seal III" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_ACTION_KO_INARI_DIVINE_SEAL_III">
+        <supports>Ko-inari</supports>
+        <prerequisite>Prerequisite: 17th-level tamer, Divine Seal II</prerequisite>
+        <requirements>[level:tamer:17],ID_LT_RGTTYR_COMPANION_ACTION_KO_INARI_DIVINE_SEAL_II</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (bonus action)</p>
+            <p>When the ko-inari uses a seal as part of its Divine Seal I improvement, it can adorn one additional creature within 5 feet of it with that seal. In addition, the ko-inari learns two more seals:</p>
+            <ul>
+                <li><b>Seal of Protection.</b> The ko-inari can only adorn a willing creature with this seal. That creature gains a +1 bonus to AC for 1 minute.</li>
+                <li><b>Seal of Weakness.</b> A creature the ko-inari adorns with this seal must succeed on a Wisdom saving throw or have disadvantage on the next saving throw it makes within 1 minute.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description action="Bonus Action">Can adorn 1 additional creature within 5ft. Add Seal of Protection or Seal of Weakness</description>
+        </sheet>
+    </element>  
+
+
+
+
+
+
+
+
+
+        <!-- General Improvements -->
+    <!-- Speed Training -->
+    <element name="Speed Training" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SPEED_TRAINING_KO_INARI">
+        <supports>Ko-inari</supports>
+        <description>
+            <p>Increase one existing speed by 15 feet up to a maximum of 150% of the creature’s base
+                speed, rounded up to the nearest 5-foot increment.</p>
+            <p>E.g., a base speed of 30 feet can be increased to 45 feet maximum, a base speed of 25
+                feet can be increased to 40 feet, and a base speed of 20 feet to 30 feet.</p>
+        </description>
+        <sheet>
+            <description>Increase one existing speed by 15 feet (Max of 150%)</description>
+        </sheet>
+    </element>
+
+    <!-- Toughen Up -->
+    <element name="Toughen Up" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_KO_INARI">
+        <supports>Ko-inari</supports>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false">
+            <description>Your companion gains {{hit dice gained:companion:koinari}} Hit Die, increasing
+                its hit point maximum</description>
+        </sheet>
+        <rules>
+            <stat name="hit dice gained:companion:koinari" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (2)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:koinari" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (3)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:koinari" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (4)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:koinari" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (5)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:koinari" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (6)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:koinari" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (7)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:koinari" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (8)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:koinari" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (9)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:koinari" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (10)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:koinari" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (11)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:koinari" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (12)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:koinari" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (13)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:koinari" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (14)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:koinari" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (15)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:koinari" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (16)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:koinari" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (17)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:koinari" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (18)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:koinari" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (19)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:koinari" value="1" />
+        </rules>
+    </element>
+
+        <!-- Ability Boost -->
+    <element name="Ability Boost" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_KO_INARI">
+        <supports>Ko-inari</supports>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Ko-inari Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (2)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_KO_INARI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Ko-inari Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (3)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_KO_INARI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Ko-inari Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (4)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_KO_INARI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Ko-inari Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (5)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_KO_INARI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Ko-inari Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (6)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_KO_INARI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Ko-inari Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (7)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_KO_INARI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Ko-inari Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (8)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_KO_INARI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Ko-inari Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (9)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_KO_INARI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Ko-inari Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (10)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_KO_INARI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Ko-inari Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (11)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_KO_INARI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Ko-inari Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (12)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_KO_INARI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Ko-inari Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (13)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_KO_INARI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Ko-inari Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (14)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_KO_INARI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Ko-inari Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (15)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_KO_INARI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Ko-inari Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (16)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_KO_INARI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Ko-inari Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (17)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_KO_INARI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Ko-inari Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (18)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_KO_INARI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Ko-inari Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (19)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_19_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_KO_INARI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Ko-inari Ability Boost" />
+        </rules>
+    </element>
+
+    <!-- Strength Ability Boost -->
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_KO_INARI">
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari strength becomes {{koinari:str}} (+{{koinari:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:str" value="1" />
+            <stat name="koinari:str:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari strength becomes {{koinari:str}} (+{{koinari:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:str" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari strength becomes {{koinari:str}} (+{{koinari:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:str" value="1" />
+             <stat name="koinari:str:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari strength becomes {{koinari:str}} (+{{koinari:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:str" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari strength becomes {{koinari:str}} (+{{koinari:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:str" value="1" />
+            <stat name="koinari:str:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari strength becomes {{koinari:str}} (+{{koinari:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:str" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari strength becomes {{koinari:str}} (+{{koinari:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:str" value="1" />
+            <stat name="koinari:str:mod" value="1" />
+        </rules>
+    </element>
+        <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari strength becomes {{koinari:str}} (+{{koinari:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:str" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari strength becomes {{koinari:str}} (+{{koinari:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:str" value="1" />
+            <stat name="koinari:str:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari strength becomes {{koinari:str}} (+{{koinari:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:str" value="1" />
+        </rules>
+    </element>
+      <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_11_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari strength becomes {{koinari:str}} (+{{koinari:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:str" value="1" />
+            <stat name="koinari:str:mod" value="1" />
+        </rules>
+    </element>
+
+       <!-- Dexterity Ability Boost -->
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_KO_INARI">
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari dexterity becomes {{koinari:dex}} (+{{koinari:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:dex" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari dexterity becomes {{koinari:dex}} (+{{koinari:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:dex" value="1" />
+            <stat name="koinari:dex:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari dexterity becomes {{koinari:dex}} (+{{koinari:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:dex" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari dexterity becomes {{koinari:dex}} (+{{koinari:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:dex" value="1" />
+            <stat name="koinari:dex:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari dexterity becomes {{koinari:dex}} (+{{koinari:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:dex" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari dexterity becomes {{koinari:dex}} (+{{koinari:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:dex" value="1" />
+            <stat name="koinari:dex:mod" value="1" />
+        </rules>
+    </element>
+     <!-- Constitution Ability Boost -->
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_KO_INARI">
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari constitution becomes {{koinari:con}} (+{{koinari:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:con" value="1" />
+            <stat name="koinari:con:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari constitution becomes {{koinari:con}} (+{{koinari:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:con" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari constitution becomes {{koinari:con}} (+{{koinari:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:con" value="1" />
+            <stat name="koinari:con:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari constitution becomes {{koinari:con}} (+{{koinari:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:con" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari constitution becomes {{koinari:con}} (+{{koinari:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:con" value="1" />
+            <stat name="koinari:con:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari constitution becomes {{koinari:con}} (+{{koinari:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:con" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_7_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari constitution becomes {{koinari:con}} (+{{koinari:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:con" value="1" />
+            <stat name="koinari:con:mod" value="1" />
+        </rules>
+    </element>
+
+        <!-- Intelligence Ability Boost -->
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_KO_INARI">
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari intelligence becomes {{koinari:int}} (+{{koinari:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:int" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari intelligence becomes {{koinari:int}} (+{{koinari:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:int" value="1" />
+            <stat name="koinari:int:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari intelligence becomes {{koinari:int}} (+{{koinari:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:int" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari intelligence becomes {{koinari:int}} (+{{koinari:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:int" value="1" />
+            <stat name="koinari:int:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari intelligence becomes {{koinari:int}} (+{{koinari:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:int" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari intelligence becomes {{koinari:int}} (+{{koinari:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:int" value="1" />
+            <stat name="koinari:int:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari intelligence becomes {{koinari:int}} (+{{koinari:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:int" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari intelligence becomes {{koinari:int}} (+{{koinari:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:int" value="1" />
+            <stat name="koinari:int:mod" value="1"/>
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari intelligence becomes {{koinari:int}} (+{{koinari:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:int" value="1" />
+        </rules>
+    </element>
+     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari intelligence becomes {{koinari:int}} (+{{koinari:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:int" value="1" />
+            <stat name="koinari:int:mod" value="1" />
+        </rules>
+    </element>
+ <!-- Wisdom Ability Boost -->
+ <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_KO_INARI">
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari wisdom becomes {{koinari:wis}} (+{{koinari:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:wis" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari wisdom becomes {{koinari:wis}} (+{{koinari:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:wis" value="1" />
+            <stat name="koinari:wis:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari wisdom becomes {{koinari:wis}} (+{{koinari:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:wis" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari wisdom becomes {{koinari:wis}} (+{{koinari:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:wis" value="1" />
+            <stat name="koinari:wis:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari wisdom becomes {{koinari:wis}} (+{{koinari:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:wis" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari wisdom becomes {{koinari:wis}} (+{{koinari:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:wis" value="1" />
+            <stat name="koinari:wis:mod" value="1" />
+        </rules>
+    </element>
+     <!-- Charisma Ability Boost -->
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_KO_INARI">
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari charisma becomes {{koinari:cha}} (+{{koinari:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:cha" value="1" />
+            <stat name="koinari:cha:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari charisma becomes {{koinari:cha}} (+{{koinari:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:cha" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari charisma becomes {{koinari:cha}} (+{{koinari:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:cha" value="1" />
+            <stat name="koinari:cha:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari charisma becomes {{koinari:cha}} (+{{koinari:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:cha" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_KO_INARI">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari charisma becomes {{koinari:cha}} (+{{koinari:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:cha" value="1" />
+            <stat name="koinari:cha:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_KO_INARI">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari charisma becomes {{koinari:cha}} (+{{koinari:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:cha" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_KO_INARI">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari charisma becomes {{koinari:cha}} (+{{koinari:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:cha" value="1" />
+            <stat name="koinari:cha:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_KO_INARI">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_KO_INARI</requirements>
+        <supports>Ko-inari Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Ko-inari charisma becomes {{koinari:cha}} (+{{koinari:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="koinari:cha" value="1" />
+        </rules>
+    </element>
+
+    
+    <!-- Go For the Throat -->
+    <element name="Go For the Throat" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_KO_INARI">
+        <supports>Ko-inari</supports>
+        <description>
+            <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+                weapons or unarmed strikes.</p>
+            <p>
+                <i>Your companions can each benefit from this feature once. When you reach 5th level
+                    in this class, your companions can each benefit from this feature twice. When
+                    you reach 9th level in this class, your companions can each benefit from this
+                    feature three times. This improvement does not affect attacks made with weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>Your companion gains a +{{go for the throat:bonus:koinari}} bonus to its attack
+                and
+                damage rolls made with its natural weapons or unarmed strikes.
+            </description>
+        </sheet>
+        <rules>
+            <stat name="go for the throat:bonus:koinari" value="1" />
+        </rules>
+    </element>
+    <element name="Go For the Throat (2)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>[level:tamer:5],
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+                weapons or unarmed strikes.</p>
+            <p>
+                <i>Your companions can each benefit from this feature once. When you reach 5th level
+                    in this class, your companions can each benefit from this feature twice. When
+                    you reach 9th level in this class, your companions can each benefit from this
+                    feature three times. This improvement does not affect attacks made with weapons.</i>
+            </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="go for the throat:bonus:koinari" value="1" />
+        </rules>
+    </element>
+    <element name="Go For the Throat (3)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_3_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            [level:tamer:9],ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+                weapons or unarmed strikes.</p>
+            <p>
+                <i>Your companions can each benefit from this feature once. When you reach 5th level
+                    in this class, your companions can each benefit from this feature twice. When
+                    you reach 9th level in this class, your companions can each benefit from this
+                    feature three times. This improvement does not affect attacks made with weapons.</i>
+            </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="go for the throat:bonus:koinari" value="1" />
+        </rules>
+    </element>
+
+    <!-- Survival Instincts -->
+    <element name="Survival Instincts" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_KO_INARI">
+        <supports>Ko-inari</supports>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Ko-inari" />
+        </rules>
+    </element>
+    <element name="Survival Instincts (2)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Ko-inari" />
+        </rules>
+    </element>
+    <element name="Survival Instincts (3)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Ko-inari" />
+        </rules>
+    </element>
+    <element name="Survival Instincts (4)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Ko-inari" />
+        </rules>
+    </element>
+    <element name="Survival Instincts (5)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Ko-inari" />
+        </rules>
+    </element>
+    <element name="Survival Instincts (6)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_6_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Ko-inari" />
+        </rules>
+    </element>
+        <element name="Sunsnacker Survival Instincts: Strength" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_KO_INARI">
+        <supports>Survival Instinct Ko-inari</supports>
+        <description>
+            <p>Your companion gains proficiency in Strength Saving Throws</p>
+        </description>
+        <sheet>
+            <description>Ko-inari +{{proficiency}} in Strength Saving Throws</description>
+        </sheet>
+    </element>
+    <element name="Sunsnacker Survival Instincts: Dexterity" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_KO_INARI">
+        <supports>Survival Instinct Ko-inari</supports>
+        <description>
+            <p>Your companion gains proficiency in Dexterity Saving Throws</p>
+        </description>
+        <sheet>
+            <description>Ko-inari +{{proficiency}} in Dexterity Saving Throws</description>
+        </sheet>
+    </element>
+    <element name="Sunsnacker Survival Instincts: Constitution" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_KO_INARI">
+        <supports>Survival Instinct Ko-inari</supports>
+        <description>
+            <p>Your companion gains proficiency in Constitution Saving Throws</p>
+        </description>
+        <sheet>
+            <description>Ko-inari +{{proficiency}} in Constitution Saving Throws</description>
+        </sheet>
+    </element>
+    <element name="Sunsnacker Survival Instincts: Intelligence" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_KO_INARI">
+        <supports>Survival Instinct Ko-inari</supports>
+        <description>
+            <p>Your companion gains proficiency in Intelligence Saving Throws</p>
+        </description>
+        <sheet>
+            <description>Ko-inari +{{proficiency}} in Intelligence Saving Throws</description>
+        </sheet>
+    </element>
+    <element name="Sunsnacker Survival Instincts: Wisdom" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_KO_INARI">
+        <supports>Survival Instinct Ko-inari</supports>
+        <description>
+            <p>Your companion gains proficiency in Wisdom Saving Throws</p>
+        </description>
+        <sheet>
+            <description>Ko-inari +{{proficiency}} in Wisdom Saving Throws</description>
+        </sheet>
+    </element>
+    <element name="Sunsnacker Survival Instincts: Charisma" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_KO_INARI">
+        <supports>Survival Instinct Ko-inari</supports>
+        <description>
+            <p>Your companion gains proficiency in Charisma Saving Throws</p>
+        </description>
+        <sheet>
+            <description>Ko-inari +{{proficiency}} in Charisma Saving Throws</description>
+        </sheet>
+    </element>
+
+    <!-- War Training -->
+    <element name="War Training" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_KO_INARI">
+        <supports>Ko-inari</supports>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+                    gained proficiency in the prerequisite lighter armour types. For example, to
+                    gain proficiency in heavy armour, you must take this improvement 3 times: light,
+                    then medium, then heavy. Work with your GM to figure out if and how a creature
+                    can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet>
+            <description>+{{proficiency}} in ____________-
+            </description>
+        </sheet>
+    </element>
+    <element name="War Training (2)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+                    gained proficiency in the prerequisite lighter armour types. For example, to
+                    gain proficiency in heavy armour, you must take this improvement 3 times: light,
+                    then medium, then heavy. Work with your GM to figure out if and how a creature
+                    can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>
+            </description>
+        </sheet>
+    </element>
+    <element name="War Training (3)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+                    gained proficiency in the prerequisite lighter armour types. For example, to
+                    gain proficiency in heavy armour, you must take this improvement 3 times: light,
+                    then medium, then heavy. Work with your GM to figure out if and how a creature
+                    can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>
+            </description>
+        </sheet>
+    </element>
+        <element name="War Training (4)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+                    gained proficiency in the prerequisite lighter armour types. For example, to
+                    gain proficiency in heavy armour, you must take this improvement 3 times: light,
+                    then medium, then heavy. Work with your GM to figure out if and how a creature
+                    can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>
+            </description>
+        </sheet>
+    </element>
+    <element name="War Training (5)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+                    gained proficiency in the prerequisite lighter armour types. For example, to
+                    gain proficiency in heavy armour, you must take this improvement 3 times: light,
+                    then medium, then heavy. Work with your GM to figure out if and how a creature
+                    can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>
+            </description>
+        </sheet>
+    </element>
+    <element name="War Training (6)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_6_KO_INARI">
+        <supports>Ko-inari</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_KO_INARI</requirements>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+                    gained proficiency in the prerequisite lighter armour types. For example, to
+                    gain proficiency in heavy armour, you must take this improvement 3 times: light,
+                    then medium, then heavy. Work with your GM to figure out if and how a creature
+                    can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>
+            </description>
+        </sheet>
+    </element>
+</elements>

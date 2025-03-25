@@ -1,0 +1,1927 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Bancho-gama</name>
+        <description>Bancho-gama familiar from Ryoko's Guide to the Yokai Realms</description>
+        <update version="0.1.0">
+            <file name="Bancho-gama.xml" url="URL_TO_YOUR_FILE_HERE" />
+        </update>
+    </info>
+
+    <element name="Bancho-gama" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_BANCHO_GAMA">
+        <supports>Familiar, Variant Familiar, Bespoke Companion</supports>
+        <description>
+            <p style="margin-bottom:-5px">
+                <em>Tiny monstrosity, lawful neutral</em>
+            </p>
+            <h4 style="margin-top:5px" />
+            <p></p>
+            <p>
+                <strong>Armor Class</strong> 12</p>
+            <p>
+                <strong>Hit Points</strong> 3 (1d4 + 1)</p>
+            <p>
+                <strong>Speed</strong> 30 ft., swim 30 ft.</p>
+            <p></p>
+            <table style="text-align:center;margin-top:10px;margin-bottom:10px">
+                <thead>
+                    <tr>
+                        <td>STR</td>
+                        <td>DEX</td>
+                        <td>CON</td>
+                        <td>INT</td>
+                        <td>WIS</td>
+                        <td>CHA</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>10(+0)</td>
+                    <td>15(+2)</td>
+                    <td>13(+1)</td>
+                    <td>8(-1)</td>
+                    <td>10(+0)</td>
+                    <td>14(+2)</td>
+                </tr>
+            </table>
+            <p>
+                <strong>Skills</strong> Intimidation +4</p>
+            <p>
+                <strong>Senses</strong> passive Perception 10</p>
+            <p>
+                <strong>Languages</strong> Common</p>
+            <p></p>
+            <h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
+            <p>
+                <strong>
+                    <em>Amphibious.</em>
+                </strong>The bancho-gama can breathe air and water.</p>
+            <p>
+                <strong>
+                    <em>Standing Leap.</em>
+                </strong>The bancho-gama’s long jump is 20 feet and its high jump is up to 10 feet, with or without a running start.</p>
+            <p>
+                <strong>
+                    <em>Superiority Complex.</em>
+                </strong>The bancho-gama can’t benefit from the Help action.</p>
+            <p></p>
+            <h4 style="margin-top:15px">Actions</h4>
+            <p>
+                <strong>
+                    <em>Dagger.</em>
+                </strong>
+                <em>Melee or Ranged Weapon Attack:</em> +4 to hit, reach 5 ft. or range 20/60 ft., one target. <em>Hit:</em> 4 (1d4 + 2) piercing damage.</p>
+            <p></p>
+        </description>
+        <sheet>
+            <description>Bancho-gama ({{bancho:size}}) - It gains {{hit dice gained:companion:bancho}}d{{hit dice size:bancho}} hit dice. DC: {{bancho:dc}}. AC: +{{bancho:ac bonus}}. Dagger: +{{bancho:attack:hit}}, DMG: {{bancho:attack:dice}} + {{bancho:attack:damage}}</description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_BANCHO_GAMA"  />
+
+            <stat name="hit dice gained:companion:bancho" value="1" level="4" />
+            <stat name="hit dice gained:companion:bancho" value="1" level="8" />
+            <stat name="hit dice gained:companion:bancho" value="1" level="12" />
+            <stat name="hit dice gained:companion:bancho" value="1" level="16" />
+            <stat name="hit dice gained:companion:bancho" value="1" level="19" />
+
+            <stat name="bancho:dc" value="8" />
+            <stat name="bancho:dc" value="proficiency" />
+            <stat name="bancho:dc" value="bancho:cha:mod" />
+
+            <stat name="bancho:str" value="10" />
+            <stat name="bancho:str:mod" value="0" />
+            <stat name="bancho:dex" value="15" />
+            <stat name="bancho:dex:mod" value="2" />
+            <stat name="bancho:con" value="13" />
+            <stat name="bancho:con:mod" value="1" />
+            <stat name="bancho:int" value="8" />
+            <stat name="bancho:int:mod" value="-1" />
+            <stat name="bancho:wis" value="10" />
+            <stat name="bancho:wis:mod" value="0" />
+            <stat name="bancho:cha" value="14" />
+            <stat name="bancho:cha:mod" value="2" />
+
+            <stat name="bancho:ac bonus" value="0" />
+            <stat name="go for the throat:bonus:bancho" value="0" />
+            <stat name="bancho:size" inline="true" value="Tiny" />
+            <stat name="hit dice size:bancho" value="4" />
+
+
+            <stat name="bancho:attack:hit" value="proficiency" />
+            <stat name="bancho:attack:hit" value="bancho:dex:mod" />
+            <stat name="bancho:attack:hit" value="go for the throat:bonus:bancho" />
+
+            <stat name="bancho:attack:damage" value="bancho:dex:mod" />
+            <stat name="bancho:attack:damage" value="go for the throat:bonus:bancho" />
+
+            <stat name="bancho:attack:dice" inline="true" value="1d4" />
+        </rules>
+    </element>
+
+    <!-- Improvement Gained on Taming-->
+    <element name="Bancho-gama Improvement" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_BANCHO_GAMA">
+        <description>
+            <p>Whenever you gain a level beyond 1st in this class, each companion to which you are
+                bonded gains one of the following improvements.
+                Any newly gained companions receive these additional Hit Dice and improvements as if
+                you had them since your 1st level in tamer.</p>
+        </description>
+        <sheet>
+            <description>The Bancho-gama has the following Improvements:</description>
+        </sheet>
+        <rules>
+            <stat name="hit dice gained:companion:bancho" value="2" />
+            
+            <select type="Class Feature" name="Bancho-gama Improvement"
+                supports="Bancho-gama" default="ID_LT_RGTTYR_COMPANION_TRAIT_BANCHO_GAMA_GROWTH_I" />
+            <select type="Class Feature" name="Bancho-gama Improvement (Lvl 2)"
+                supports="Bancho-gama" level="2" />
+            <select type="Class Feature" name="Bancho-gama Improvement (Lvl 3)"
+                supports="Bancho-gama" level="3" />
+            <select type="Class Feature" name="Bancho-gama Improvement (Lvl 4)"
+                supports="Bancho-gama" level="4" />
+            <select type="Class Feature" name="Bancho-gama Improvement (Lvl 5)"
+                supports="Bancho-gama" level="5" />
+            <select type="Class Feature" name="Bancho-gama Improvement (Lvl 6)"
+                supports="Bancho-gama" level="6" />
+            <select type="Class Feature" name="Bancho-gama Improvement (Lvl 7)"
+                supports="Bancho-gama" level="7" />
+            <select type="Class Feature" name="Bancho-gama Improvement (Lvl 8)"
+                supports="Bancho-gama" level="8" />
+            <select type="Class Feature" name="Bancho-gama Improvement (Lvl 9)"
+                supports="Bancho-gama" level="9" />
+            <select type="Class Feature" name="Bancho-gama Improvement (Lvl 10)"
+                supports="Bancho-gama" level="10" />
+            <select type="Class Feature" name="Bancho-gama Improvement (Lvl 11)"
+                supports="Bancho-gama" level="11" />
+            <select type="Class Feature" name="Bancho-gama Improvement (Lvl 12)"
+                supports="Bancho-gama" level="12" />
+            <select type="Class Feature" name="Bancho-gama Improvement (Lvl 13)"
+                supports="Bancho-gama" level="13" />
+            <select type="Class Feature" name="Bancho-gama Improvement (Lvl 14)"
+                supports="Bancho-gama" level="14" />
+            <select type="Class Feature" name="Bancho-gama Improvement (Lvl 15)"
+                supports="Bancho-gama" level="15" />
+            <select type="Class Feature" name="Bancho-gama Improvement (Lvl 16)"
+                supports="Bancho-gama" level="16" />
+            <select type="Class Feature" name="Bancho-gama Improvement (Lvl 17)"
+                supports="Bancho-gama" level="17" />
+            <select type="Class Feature" name="Bancho-gama Improvement (Lvl 18)"
+                supports="Bancho-gama" level="18" />
+            <select type="Class Feature" name="Bancho-gama Improvement (Lvl 19)"
+                supports="Bancho-gama" level="19" />
+            <select type="Class Feature" name="Bancho-gama Improvement (Lvl 20)"
+                supports="Bancho-gama" level="20" />
+        </rules>
+    </element>
+
+    <!--Bancho-gama's Improvements -->
+
+    <element name="Growth I" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_TRAIT_BANCHO_GAMA_GROWTH_I">
+        <supports>Bancho-gama</supports>
+        <prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
+        <requirements>[level:tamer:1]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The bancho-gama’s size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The bancho-gama gains this improvement when it becomes a companion; it doesn’t cost an improvement.</p>
+        </description>
+        <sheet display="false">
+            <description>Size: Small. Hit Die: d6.</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:size" inline="true" value="Small" />
+            <stat name="hit dice size:bancho" value="2" />
+        </rules>
+    </element>
+
+    <element name="Shinobi I" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_TRAIT_BANCHO_GAMA_SHINOBI_I">
+        <supports>Bancho-gama</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The bancho-gama learns techniques to sneak up on its enemies. It gains proficiency in the Stealth skill, as well as climbing and swimming speeds equal to its walking speed. In addition, it gains proficiency with the following weapons: chakrams, meteor hammers, nunchaku, rope darts, sai, shortswords, shuriken, and tessen.</p>
+        </description>
+        <sheet>
+            <description>Proficiency in Stealth. Climbing and swimming speeds equal to walking speed. Proficiency with chakrams, meteor hammers, nunchaku, rope darts, sai, shortswords, shuriken, and tessen.</description>
+        </sheet>
+    </element>
+
+    <element name="Tongue Swing" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_ACTION_BANCHO_GAMA_TONGUE_SWING">
+        <supports>Bancho-gama</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (bonus action)</p>
+            <p>As a bonus action, the bancho-gama can extend its tongue, affix it to a point on a surface within 30 feet of itself, and move to that point. The bancho-gama’s tongue detaches after it moves, and it falls if it’s not standing on a surface capable of supporting it.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action">Extend tongue up to 30 ft. and move to that point.</description>
+        </sheet>
+    </element>
+
+    <element name="Bossy I" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_ACTION_BANCHO_GAMA_BOSSY_I">
+        <supports>Bancho-gama</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action, the bancho-gama can bark a command to a creature within 30 feet of it that can hear it, ordering the creature to take the Dodge action, move up to its speed, or make one weapon attack against a target of the creature’s choice. The creature can choose to use its reaction to follow the bancho-gama’s command.</p>
+            <p>Once the bancho-gama has commanded a creature in this way, it can’t do so again until its tamer finishes a short or long rest.</p>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Short Rest">Command a creature within 30 ft. to Dodge, move, or make one weapon attack.</description>
+        </sheet>
+    </element>
+
+    <element name="Growth II" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_TRAIT_BANCHO_GAMA_GROWTH_II">
+        <supports>Bancho-gama</supports>
+        <prerequisite>Prerequisite: 5th-level tamer, Growth I</prerequisite>
+        <requirements>[level:tamer:5],ID_LT_RGTTYR_COMPANION_TRAIT_BANCHO_GAMA_GROWTH_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The bancho-gama’s size increases to Medium, its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice). This growth improvement ignores the normal maximum companion size for a tamer.</p>
+        </description>
+        <sheet display="false">
+            <description>Size: Medium. Hit Die: d8.</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:size" inline="true" value="Medium" />
+            <stat name="hit dice size:bancho" value="2" />
+        </rules>
+    </element>
+
+    <element name="Multiattack" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_ACTION_BANCHO_GAMA_MULTIATTACK">
+        <supports>Bancho-gama</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action, the bancho-gama can make two attacks.</p>
+        </description>
+        <sheet>
+            <description>Two attacks.</description>
+        </sheet>
+    </element>
+
+    <element name="Pipe Elemental I" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_TRAIT_BANCHO_GAMA_PIPE_ELEMENTAL_I">
+        <supports>Bancho-gama</supports>
+        <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
+        <requirements>[level:tamer:9]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The bancho-gama gains a companion of its own: a minuscule fire sprite that takes up residence in the bancho-gama’s pipe. The bancho-gama’s weapon attacks deal an extra 2 (1d4) fire damage on a hit, as its little lackey spits flames to coat the weapon with each strike.</p>
+        </description>
+        <sheet>
+            <description>Weapon attacks deal an extra 1d{{pipe elemental}} fire damage.</description>
+        </sheet>
+        <rules>
+            <stat name="pipe elemental" value="4" />
+        </rules>
+    </element>
+
+    <element name="Shinobi II" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_TRAIT_BANCHO_GAMA_SHINOBI_II">
+        <supports>Bancho-gama</supports>
+        <prerequisite>Prerequisite: 9th-level tamer, Shinobi I</prerequisite>
+        <requirements>[level:tamer:9],ID_LT_RGTTYR_COMPANION_TRAIT_BANCHO_GAMA_SHINOBI_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>Once on each of its turns, when the bancho-gama makes an attack roll against a creature with advantage, it can forgo the advantage to make a precise strike against its foe’s weak point. If the attack hits, the bancho-gama can choose one of the following additional effects:</p>
+            <ul>
+                <li>The attack deals an extra 7 (2d6) damage.</li>
+                <li>The creature is knocked prone.</li>
+                <li>The creature has disadvantage on the next attack roll it makes before the end of the bancho-gama’s next turn.</li>
+            </ul>
+            <p>When the bancho-gama’s tamer reaches 17th level in this class, the bancho-gama can use this improvement an unlimited number of times on each of its turns.</p>
+        </description>
+        <sheet>
+            <description>Once per turn, forgo advantage on attack roll to: deal extra 2d6 damage, knock prone, or give disadvantage on next attack roll.</description>
+            <description level="17">Forgo advantage on attack roll to: deal extra 2d6 damage, knock prone, or give disadvantage on next attack roll.</description>
+        </sheet>
+    </element>
+
+    <element name="Bossy II" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_ACTION_BANCHO_GAMA_BOSSY_II">
+        <supports>Bancho-gama</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Bossy I</prerequisite>
+        <requirements>[level:tamer:13],ID_LT_RGTTYR_COMPANION_ACTION_BANCHO_GAMA_BOSSY_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>The bancho-gama can cast the <i>command</i> spell. Once the bancho-gama has cast this spell, it can’t do so again until its tamer finishes a short or long rest.</p>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Short Rest">Cast <i>command</i>.</description>
+        </sheet>
+    </element>
+
+    <element name="Pipe Elemental II" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_TRAIT_BANCHO_GAMA_PIPE_ELEMENTAL_II">
+        <supports>Bancho-gama</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Pipe Elemental I</prerequisite>
+        <requirements>[level:tamer:13],ID_LT_RGTTYR_COMPANION_TRAIT_BANCHO_GAMA_PIPE_ELEMENTAL_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion), Active (action)</p>
+            <p>The extra fire damage granted by the Pipe Elemental I improvement increases to 3 (1d6).</p>
+            <p>Additionally, the bancho-gama can use an action to compel the aid of its elemental companion, who casts the <i>faerie fire</i> spell, requiring no components or concentration and using the bancho-gama’s save DC. After the bancho-gama uses this action, it can’t do so again until its tamer finishes a short or long rest.</p>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Short Rest">Cast <i>faerie fire</i> (no components or concentration).</description>
+        </sheet>
+        <rules>
+            <stat name="pipe elemental" value="2" />
+        </rules>
+    </element>
+
+    <element name="Bossy III" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_COMPANION_ACTION_BANCHO_GAMA_BOSSY_III">
+        <supports>Bancho-gama</supports>
+        <prerequisite>Prerequisite: 17th-level tamer, Bossy II</prerequisite>
+        <requirements>[level:tamer:17],ID_LT_RGTTYR_COMPANION_ACTION_BANCHO_GAMA_BOSSY_II</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action and bonus action)</p>
+            <p>The bancho-gama can use a bonus action instead of an action to order a friendly creature with its Bossy I improvement.</p>
+            <p>In addition, the bancho-gama can cast the <i>dominate person</i> spell, requiring no somatic components. Once the bancho-gama has cast this spell, it can’t do so again until its tamer finishes a long rest.</p>
+        </description>
+        <sheet>
+            <description>Bossy I can be used as a bonus action. Can cast <i>dominate person</i> (no somatic components, 1/Long Rest).</description>
+        </sheet>
+    </element>
+
+    <!-- General Improvements -->
+    <!-- Speed Training -->
+    <element name="Speed Training" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SPEED_TRAINING_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <description>
+            <p>Increase one existing speed by 15 feet up to a maximum of 150% of the creature’s base
+                speed, rounded up to the nearest 5-foot increment.</p>
+            <p>E.g., a base speed of 30 feet can be increased to 45 feet maximum, a base speed of 25
+                feet can be increased to 40 feet, and a base speed of 20 feet to 30 feet.</p>
+        </description>
+        <sheet>
+            <description>Increase one existing speed by 15 feet (Max of 150%)</description>
+        </sheet>
+    </element>
+
+    <!-- Toughen Up -->
+    <element name="Toughen Up" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false">
+            <description>Your companion gains {{hit dice gained:companion:1}} Hit Die, increasing
+                its hit point maximum</description>
+        </sheet>
+        <rules>
+            <stat name="hit dice gained:companion:bancho" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (2)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:bancho" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (3)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:bancho" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (4)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:bancho" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (5)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:bancho" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (6)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:bancho" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (7)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:bancho" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (8)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:bancho" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (9)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:bancho" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (10)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:bancho" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (11)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:bancho" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (12)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:bancho" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (13)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:bancho" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (14)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:bancho" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (15)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:bancho" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (16)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:bancho" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (17)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:bancho" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (18)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:bancho" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (19)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:bancho" value="1" />
+        </rules>
+    </element>
+
+    <!-- Ability Boost -->
+    <element name="Ability Boost" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Bancho-gama Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (2)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_BANCHO_GAMA</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Bancho-gama Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (3)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_BANCHO_GAMA</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Bancho-gama Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (4)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_BANCHO_GAMA</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Bancho-gama Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (5)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_BANCHO_GAMA</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Bancho-gama Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (6)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_BANCHO_GAMA</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Bancho-gama Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (7)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_BANCHO_GAMA</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Bancho-gama Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (8)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_BANCHO_GAMA</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Bancho-gama Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (9)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_BANCHO_GAMA</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Bancho-gama Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (10)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_BANCHO_GAMA</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Bancho-gama Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (11)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_BANCHO_GAMA</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Bancho-gama Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (12)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_BANCHO_GAMA</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Bancho-gama Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (13)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_BANCHO_GAMA</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Bancho-gama Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (14)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_BANCHO_GAMA</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Bancho-gama Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (15)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_BANCHO_GAMA</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Bancho-gama Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (16)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_BANCHO_GAMA</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Bancho-gama Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (17)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_BANCHO_GAMA</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Bancho-gama Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (18)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_BANCHO_GAMA</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Bancho-gama Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (19)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_19_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_BANCHO_GAMA</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Bancho-gama Ability Boost" />
+        </rules>
+    </element>
+
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_BANCHO_GAMA">
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama strength becomes {{bancho:str}} (+{{bancho:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:str" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama strength becomes {{bancho:str}} (+{{bancho:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:str" value="1" />
+            <stat name="bancho:str:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama strength becomes {{bancho:str}} (+{{bancho:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:str" value="1" />
+        </rules>
+    </element>
+        <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama strength becomes {{bancho:str}} (+{{bancho:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:str" value="1" />
+            <stat name="bancho:str:mod" value="1" />
+        </rules>
+    </element>
+        <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama strength becomes {{bancho:str}} (+{{bancho:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:str" value="1" />
+        </rules>
+    </element>
+        <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama strength becomes {{bancho:str}} (+{{bancho:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:str" value="1" />
+            <stat name="bancho:str:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama strength becomes {{bancho:str}} (+{{bancho:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:str" value="1" />
+        </rules>
+    </element>
+        <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama strength becomes {{bancho:str}} (+{{bancho:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:str" value="1" />
+            <stat name="bancho:str:mod" value="1" />
+        </rules>
+    </element>
+        <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama strength becomes {{bancho:str}} (+{{bancho:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:str" value="1" />
+        </rules>
+    </element>
+        <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama strength becomes {{bancho:str}} (+{{bancho:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:str" value="1" />
+            <stat name="bancho:str:mod" value="1" />
+        </rules>
+    </element>
+
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_BANCHO_GAMA">
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama dexterity becomes {{bancho:dex}} (+{{bancho:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:dex" value="1" />
+            <stat name="bancho:dex:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama dexterity becomes {{bancho:dex}} (+{{bancho:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:dex" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama dexterity becomes {{bancho:dex}} (+{{bancho:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:dex" value="1" />
+            <stat name="bancho:dex:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama dexterity becomes {{bancho:dex}} (+{{bancho:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:dex" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama dexterity becomes {{bancho:dex}} (+{{bancho:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:dex" value="1" />
+            <stat name="bancho:dex:mod" value="1" />
+        </rules>
+    </element>
+
+     <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_BANCHO_GAMA">
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama constitution becomes {{bancho:con}} (+{{bancho:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:con" value="1" />
+            <stat name="bancho:con:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama constitution becomes {{bancho:con}} (+{{bancho:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:con" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama constitution becomes {{bancho:con}} (+{{bancho:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:con" value="1" />
+            <stat name="bancho:con:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama constitution becomes {{bancho:con}} (+{{bancho:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:con" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama constitution becomes {{bancho:con}} (+{{bancho:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:con" value="1" />
+            <stat name="bancho:con:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama constitution becomes {{bancho:con}} (+{{bancho:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:con" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_7_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama constitution becomes {{bancho:con}} (+{{bancho:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:con" value="1" />
+            <stat name="bancho:con:mod" value="1" />
+        </rules>
+    </element>
+    
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_BANCHO_GAMA">
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama intelligence becomes {{bancho:int}} (+{{bancho:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:int" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama intelligence becomes {{bancho:int}} (+{{bancho:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:int" value="1" />
+            <stat name="bancho:int:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama intelligence becomes {{bancho:int}} (+{{bancho:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:int" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama intelligence becomes {{bancho:int}} (+{{bancho:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:int" value="1" />
+            <stat name="bancho:int:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama intelligence becomes {{bancho:int}} (+{{bancho:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:int" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama intelligence becomes {{bancho:int}} (+{{bancho:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:int" value="1" />
+            <stat name="bancho:int:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama intelligence becomes {{bancho:int}} (+{{bancho:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:int" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama intelligence becomes {{bancho:int}} (+{{bancho:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:int" value="1" />
+            <stat name="bancho:int:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama intelligence becomes {{bancho:int}} (+{{bancho:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:int" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama intelligence becomes {{bancho:int}} (+{{bancho:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:int" value="1" />
+            <stat name="bancho:int:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama intelligence becomes {{bancho:int}} (+{{bancho:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:int" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama intelligence becomes {{bancho:int}} (+{{bancho:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:int" value="1" />
+            <stat name="bancho:int:mod" value="1" />
+        </rules>
+    </element>
+
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_BANCHO_GAMA">
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama wisdom becomes {{bancho:wis}} (+{{bancho:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:wis" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama wisdom becomes {{bancho:wis}} (+{{bancho:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:wis" value="1" />
+            <stat name="bancho:wis:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama wisdom becomes {{bancho:wis}} (+{{bancho:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:wis" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama wisdom becomes {{bancho:wis}} (+{{bancho:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:wis" value="1" />
+            <stat name="bancho:wis:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama wisdom becomes {{bancho:wis}} (+{{bancho:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:wis" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama wisdom becomes {{bancho:wis}} (+{{bancho:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:wis" value="1" />
+            <stat name="bancho:wis:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama wisdom becomes {{bancho:wis}} (+{{bancho:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:wis" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama wisdom becomes {{bancho:wis}} (+{{bancho:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:wis" value="1" />
+            <stat name="bancho:wis:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama wisdom becomes {{bancho:wis}} (+{{bancho:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:wis" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_10_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama wisdom becomes {{bancho:wis}} (+{{bancho:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:wis" value="1" />
+            <stat name="bancho:wis:mod" value="1" />
+        </rules>
+    </element>
+
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_BANCHO_GAMA">
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama charisma becomes {{bancho:cha}} (+{{bancho:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:cha" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama charisma becomes {{bancho:cha}} (+{{bancho:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:cha" value="1" />
+            <stat name="bancho:cha:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama charisma becomes {{bancho:cha}} (+{{bancho:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:cha" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama charisma becomes {{bancho:cha}} (+{{bancho:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:cha" value="1" />
+            <stat name="bancho:cha:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama charisma becomes {{bancho:cha}} (+{{bancho:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:cha" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_BANCHO_GAMA">
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_BANCHO_GAMA</requirements>
+        <supports>Bancho-gama Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Bancho-gama charisma becomes {{bancho:cha}} (+{{bancho:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="bancho:cha" value="1" />
+            <stat name="bancho:cha:mod" value="1" />
+        </rules>
+    </element>
+
+        <!-- Go For the Throat -->
+    <element name="Go For the Throat" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <description>
+            <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+                weapons or unarmed strikes.</p>
+            <p>
+                <i>Your companions can each benefit from this feature once. When you reach 5th level
+                    in this class, your companions can each benefit from this feature twice. When
+                    you reach 9th level in this class, your companions can each benefit from this
+                    feature three times. This improvement does not affect attacks made with weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>Your companion gains a +{{go for the throat:bonus:bancho}} bonus to its attack
+                and
+                damage rolls made with its natural weapons or unarmed strikes.
+            </description>
+        </sheet>
+        <rules>
+            <stat name="go for the throat:bonus:bancho" value="1" />
+        </rules>
+    </element>
+    <element name="Go For the Throat (2)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>[level:tamer:5],
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+                weapons or unarmed strikes.</p>
+            <p>
+                <i>Your companions can each benefit from this feature once. When you reach 5th level
+                    in this class, your companions can each benefit from this feature twice. When
+                    you reach 9th level in this class, your companions can each benefit from this
+                    feature three times. This improvement does not affect attacks made with weapons.</i>
+            </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="go for the throat:bonus:bancho" value="1" />
+        </rules>
+    </element>
+    <element name="Go For the Throat (3)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_3_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            [level:tamer:9],ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+                weapons or unarmed strikes.</p>
+            <p>
+                <i>Your companions can each benefit from this feature once. When you reach 5th level
+                    in this class, your companions can each benefit from this feature twice. When
+                    you reach 9th level in this class, your companions can each benefit from this
+                    feature three times. This improvement does not affect attacks made with weapons.</i>
+            </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="go for the throat:bonus:bancho" value="1" />
+        </rules>
+    </element>
+
+    <!-- Survival Insticts -->
+    <element name="Survival Instincts" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Bancho-gama" />
+        </rules>
+    </element>
+    <element name="Survival Instincts (2)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Bancho-gama" />
+        </rules>
+    </element>
+    <element name="Survival Instincts (3)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Bancho-gama" />
+        </rules>
+    </element>
+    <element name="Survival Instincts (4)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Bancho-gama" />
+        </rules>
+    </element>
+    <element name="Survival Instincts (5)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Bancho-gama" />
+        </rules>
+    </element>
+    <element name="Survival Instincts (6)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_6_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Bancho-gama" />
+        </rules>
+    </element>
+    <element name="Bancho-gama Survival Instincts: Strength" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_BANCHO_GAMA">
+        <supports>Survival Instinct Bancho-gama</supports>
+        <description>
+            <p>Your companion gains proficiency in Strength Saving Throws</p>
+        </description>
+        <sheet>
+            <description>+{{proficiency}} in Strength Saving Throws</description>
+        </sheet>
+    </element>
+    <element name="Bancho-gama Survival Instincts: Dexterity" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_BANCHO_GAMA">
+        <supports>Survival Instinct Bancho-gama</supports>
+        <description>
+            <p>Your companion gains proficiency in Dexterity Saving Throws</p>
+        </description>
+        <sheet>
+            <description>+{{proficiency}} in Dexterity Saving Throws</description>
+        </sheet>
+    </element>
+    <element name="Bancho-gama Survival Instincts: Constitution" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_BANCHO_GAMA">
+        <supports>Survival Instinct Bancho-gama</supports>
+        <description>
+            <p>Your companion gains proficiency in Constitution Saving Throws</p>
+        </description>
+        <sheet>
+            <description>+{{proficiency}} in Constitution Saving Throws</description>
+        </sheet>
+    </element>
+    <element name="Bancho-gama Survival Instincts: Intelligence" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_BANCHO_GAMA">
+        <supports>Survival Instinct Bancho-gama</supports>
+        <description>
+            <p>Your companion gains proficiency in Intelligence Saving Throws</p>
+        </description>
+        <sheet>
+            <description>+{{proficiency}} in Intelligence Saving Throws</description>
+        </sheet>
+    </element>
+    <element name="Bancho-gama Survival Instincts: Wisdom" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_BANCHO_GAMA">
+        <supports>Survival Instinct Bancho-gama</supports>
+        <description>
+            <p>Your companion gains proficiency in Wisdom Saving Throws</p>
+        </description>
+        <sheet>
+            <description>+{{proficiency}} in Wisdom Saving Throws</description>
+        </sheet>
+    </element>
+    <element name="Bancho-gama Survival Instincts: Charisma" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_BANCHO_GAMA">
+        <supports>Survival Instinct Bancho-gama</supports>
+        <description>
+            <p>Your companion gains proficiency in Charisma Saving Throws</p>
+        </description>
+        <sheet>
+            <description>+{{proficiency}} in Charisma Saving Throws</description>
+        </sheet>
+    </element>
+
+    <!-- War Training -->
+    <element name="War Training" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+                    gained proficiency in the prerequisite lighter armour types. For example, to
+                    gain proficiency in heavy armour, you must take this improvement 3 times: light,
+                    then medium, then heavy. Work with your GM to figure out if and how a creature
+                    can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet>
+            <description>+{{proficiency}} in ____________-
+            </description>
+        </sheet>
+    </element>
+    <element name="War Training (2)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+                    gained proficiency in the prerequisite lighter armour types. For example, to
+                    gain proficiency in heavy armour, you must take this improvement 3 times: light,
+                    then medium, then heavy. Work with your GM to figure out if and how a creature
+                    can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>
+            </description>
+        </sheet>
+    </element>
+    <element name="War Training (3)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+                    gained proficiency in the prerequisite lighter armour types. For example, to
+                    gain proficiency in heavy armour, you must take this improvement 3 times: light,
+                    then medium, then heavy. Work with your GM to figure out if and how a creature
+                    can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>
+            </description>
+        </sheet>
+    </element>
+    <element name="War Training (4)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+                    gained proficiency in the prerequisite lighter armour types. For example, to
+                    gain proficiency in heavy armour, you must take this improvement 3 times: light,
+                    then medium, then heavy. Work with your GM to figure out if and how a creature
+                    can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>
+            </description>
+        </sheet>
+    </element>
+    <element name="War Training (5)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+                    gained proficiency in the prerequisite lighter armour types. For example, to
+                    gain proficiency in heavy armour, you must take this improvement 3 times: light,
+                    then medium, then heavy. Work with your GM to figure out if and how a creature
+                    can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>
+            </description>
+        </sheet>
+    </element>
+    <element name="War Training (6)" type="Class Feature"
+        source="Ryoko's Guide to the Yokai Realms"
+        id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_6_BANCHO_GAMA">
+        <supports>Bancho-gama</supports>
+        <requirements>
+            ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_BANCHO_GAMA</requirements>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+                    gained proficiency in the prerequisite lighter armour types. For example, to
+                    gain proficiency in heavy armour, you must take this improvement 3 times: light,
+                    then medium, then heavy. Work with your GM to figure out if and how a creature
+                    can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>
+            </description>
+        </sheet>
+    </element>
+</elements>
