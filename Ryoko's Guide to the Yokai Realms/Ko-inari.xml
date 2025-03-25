@@ -4,7 +4,7 @@
         <name>Ko-inari</name>
         <description>Ko-inari familiar from Ryoko's Guide to the Yokai Realms</description>
         <update version="0.1.0">
-            <file name="Ko-inari.xml" url="YOUR_URL_HERE" />  <!-- Replace with actual URL -->
+            <file name="Ko-inari.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/Ko-inari.xml" /> 
         </update>
     </info>
 
