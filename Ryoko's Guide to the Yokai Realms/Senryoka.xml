@@ -3,7 +3,7 @@
     <info>
         <name>Senryōka</name>
         <description>Senryōka familiar from Ryoko's Guide to the Yokai Realms</description>
-        <update version="0.1.0">
+        <update version="0.1.1">
             <file name="Senryoka.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/Senryoka.xml" /> 
         </update>
     </info>
@@ -419,6 +419,7 @@
     <element name="Toughen Up" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_SENRYOKA">
         <supports>Senryoka</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -436,6 +437,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_SENRYOKA">
         <supports>Senryoka</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -450,6 +452,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_SENRYOKA">
         <supports>Senryoka</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -464,6 +467,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_SENRYOKA">
         <supports>Senryoka</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -478,6 +482,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_SENRYOKA">
         <supports>Senryoka</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -492,6 +497,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_SENRYOKA">
         <supports>Senryoka</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -506,6 +512,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_SENRYOKA">
         <supports>Senryoka</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -520,6 +527,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_SENRYOKA">
         <supports>Senryoka</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -534,6 +542,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_SENRYOKA">
         <supports>Senryoka</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -548,6 +557,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_SENRYOKA">
         <supports>Senryoka</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -562,6 +572,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_SENRYOKA">
         <supports>Senryoka</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -576,6 +587,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_SENRYOKA">
         <supports>Senryoka</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -590,6 +602,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_SENRYOKA">
         <supports>Senryoka</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -604,6 +617,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_SENRYOKA">
         <supports>Senryoka</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -618,6 +632,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_SENRYOKA">
         <supports>Senryoka</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -632,6 +647,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_SENRYOKA">
         <supports>Senryoka</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -646,6 +662,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_SENRYOKA">
         <supports>Senryoka</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -660,6 +677,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_SENRYOKA">
         <supports>Senryoka</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -674,6 +692,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_SENRYOKA">
         <supports>Senryoka</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -689,6 +708,7 @@
     <element name="Ability Boost" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_SENRYOKA">
         <supports>Senryoka</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -702,6 +722,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_SENRYOKA">
         <supports>Senryoka</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -716,6 +737,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -730,6 +752,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -744,6 +767,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -758,6 +782,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -772,6 +797,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -786,6 +812,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -800,6 +827,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -814,6 +842,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -828,6 +857,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -842,6 +872,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -856,6 +887,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -870,6 +902,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -884,6 +917,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -898,6 +932,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -912,6 +947,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -926,6 +962,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -940,6 +977,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -952,6 +990,7 @@
     <!-- Strength Ability Boost -->
     <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_SENRYOKA">
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -965,6 +1004,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -979,6 +1019,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -992,6 +1033,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -1006,6 +1048,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -1019,6 +1062,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -1033,6 +1077,7 @@
     <!-- Dexterity Ability Boost -->
         <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_SENRYOKA">
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1046,6 +1091,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1060,6 +1106,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1073,6 +1120,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1087,6 +1135,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1100,6 +1149,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1114,6 +1164,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1127,6 +1178,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1141,6 +1193,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_SENRYOKA">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1154,6 +1207,7 @@
         <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_10_SENRYOKA">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1169,6 +1223,7 @@
      <!-- Constitution Ability Boost -->
      <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_SENRYOKA">
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1182,6 +1237,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1196,6 +1252,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1209,6 +1266,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1223,6 +1281,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1236,6 +1295,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1250,6 +1310,7 @@
  <!-- Intelligence Ability Boost -->
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_SENRYOKA">
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1263,6 +1324,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1277,6 +1339,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1290,6 +1353,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1304,6 +1368,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1317,6 +1382,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1331,6 +1397,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1344,6 +1411,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1358,6 +1426,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1371,6 +1440,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1385,6 +1455,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_SENRYOKA">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1398,6 +1469,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_SENRYOKA">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1414,6 +1486,7 @@
      <!-- Wisdom Ability Boost -->
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_SENRYOKA">
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1428,6 +1501,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1441,6 +1515,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1455,6 +1530,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1468,6 +1544,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1482,6 +1559,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_SENRYOKA">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1495,6 +1573,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_SENRYOKA">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1509,6 +1588,7 @@
     <!-- Charisma Ability Boost -->
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_SENRYOKA">
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1523,6 +1603,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1536,6 +1617,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1550,6 +1632,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1563,6 +1646,7 @@
         <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_SENRYOKA">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1577,6 +1661,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_SENRYOKA">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1590,6 +1675,7 @@
           <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_SENRYOKA">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1604,6 +1690,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_SENRYOKA">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1617,6 +1704,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_SENRYOKA">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1631,6 +1719,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_SENRYOKA">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1644,6 +1733,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_11_SENRYOKA">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_SENRYOKA</requirements>
         <supports>Senryoka Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1660,6 +1750,7 @@
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_SENRYOKA">
         <supports>Senryoka</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
                 weapons or unarmed strikes.</p>
@@ -1686,6 +1777,7 @@
         <supports>Senryoka</supports>
         <requirements>[level:tamer:5],
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
                 weapons or unarmed strikes.</p>
@@ -1707,6 +1799,7 @@
         <supports>Senryoka</supports>
         <requirements>
             [level:tamer:9],ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
                 weapons or unarmed strikes.</p>
@@ -1728,6 +1821,7 @@
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_SENRYOKA">
         <supports>Senryoka</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1742,6 +1836,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1756,6 +1851,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1770,6 +1866,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1783,6 +1880,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1796,6 +1894,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1810,6 +1909,7 @@
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_SENRYOKA">
         <supports>Survival Instinct Senryoka</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Strength Saving Throws</p>
         </description>
@@ -1821,6 +1921,7 @@
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_SENRYOKA">
         <supports>Survival Instinct Senryoka</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Dexterity Saving Throws</p>
         </description>
@@ -1832,6 +1933,7 @@
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_SENRYOKA">
         <supports>Survival Instinct Senryoka</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Constitution Saving Throws</p>
         </description>
@@ -1843,6 +1945,7 @@
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_SENRYOKA">
         <supports>Survival Instinct Senryoka</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Intelligence Saving Throws</p>
         </description>
@@ -1854,6 +1957,7 @@
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_SENRYOKA">
         <supports>Survival Instinct Senryoka</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Wisdom Saving Throws</p>
         </description>
@@ -1865,6 +1969,7 @@
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_SENRYOKA">
         <supports>Survival Instinct Senryoka</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Charisma Saving Throws</p>
         </description>
@@ -1877,6 +1982,7 @@
     <element name="War Training" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_SENRYOKA">
         <supports>Senryoka</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -1897,6 +2003,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_SENRYOKA">
         <supports>Senryoka</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -1918,6 +2025,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -1938,6 +2046,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -1958,6 +2067,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -1978,6 +2088,7 @@
         <supports>Senryoka</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_SENRYOKA</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
