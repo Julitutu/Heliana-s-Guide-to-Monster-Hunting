@@ -3,7 +3,7 @@
     <info>
         <name>Tarling</name>
         <description>Tarling familiar from Heliana's Guide to Monster Hunting</description>
-        <update version="0.1.1">
+        <update version="0.1.2">
             <file name="Tarling.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Tarling.xml" />
         </update>
     </info>
@@ -417,6 +417,7 @@
     <element name="Toughen Up" type="Class Feature" source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_TARLING">
         <supports>Tarling</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -434,6 +435,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_TARLING">
         <supports>Tarling</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -448,6 +450,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_TARLING">
         <supports>Tarling</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -462,6 +465,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_TARLING">
         <supports>Tarling</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -476,6 +480,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_TARLING">
         <supports>Tarling</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -490,6 +495,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_TARLING">
         <supports>Tarling</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -504,6 +510,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_TARLING">
         <supports>Tarling</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -518,6 +525,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_TARLING">
         <supports>Tarling</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -532,6 +540,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_TARLING">
         <supports>Tarling</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -546,6 +555,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_TARLING">
         <supports>Tarling</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -560,6 +570,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_TARLING">
         <supports>Tarling</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -574,6 +585,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_TARLING">
         <supports>Tarling</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -588,6 +600,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_TARLING">
         <supports>Tarling</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -602,6 +615,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_TARLING">
         <supports>Tarling</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -616,6 +630,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_TARLING">
         <supports>Tarling</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -630,6 +645,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_TARLING">
         <supports>Tarling</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -644,6 +660,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_TARLING">
         <supports>Tarling</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -658,6 +675,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_TARLING">
         <supports>Tarling</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -672,6 +690,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_TARLING">
         <supports>Tarling</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -687,6 +706,7 @@
     <element name="Ability Boost" type="Class Feature" source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_TARLING">
         <supports>Tarling</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -700,6 +720,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_TARLING">
         <supports>Tarling</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -714,6 +735,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -728,6 +750,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -742,6 +765,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -756,6 +780,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -770,6 +795,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -784,6 +810,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -798,6 +825,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -812,6 +840,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -826,6 +855,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -840,6 +870,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -854,6 +885,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -868,6 +900,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -882,6 +915,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -896,6 +930,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -910,6 +945,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -924,6 +960,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -938,6 +975,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -949,6 +987,7 @@
 
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_TARLING">
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -962,6 +1001,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -976,6 +1016,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -989,6 +1030,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -1003,6 +1045,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -1016,6 +1059,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -1030,6 +1074,7 @@
 
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_TARLING">
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1043,6 +1088,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1057,6 +1103,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1070,6 +1117,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1084,6 +1132,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1097,6 +1146,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1111,6 +1161,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1124,6 +1175,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1138,6 +1190,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1151,6 +1204,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_10_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1165,6 +1219,7 @@
 
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_TARLING">
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1179,6 +1234,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1192,6 +1248,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1206,6 +1263,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1219,6 +1277,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1233,6 +1292,7 @@
     
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_TARLING">
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1246,6 +1306,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1260,6 +1321,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1273,6 +1335,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1287,6 +1350,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1300,6 +1364,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1314,6 +1379,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1327,6 +1393,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1341,6 +1408,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1354,6 +1422,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1368,6 +1437,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1381,6 +1451,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1395,6 +1466,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_13_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1408,6 +1480,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_14_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_13_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1422,6 +1495,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_15_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_14_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1435,6 +1509,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_16_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_15_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1449,6 +1524,7 @@
 
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_TARLING">
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1462,6 +1538,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1476,6 +1553,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1489,6 +1567,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1503,6 +1582,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1516,6 +1596,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1530,6 +1611,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1543,6 +1625,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1557,6 +1640,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1570,6 +1654,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_10_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1584,6 +1669,7 @@
 
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_TARLING">
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1597,6 +1683,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1611,6 +1698,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1624,6 +1712,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1638,6 +1727,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1651,6 +1741,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1665,6 +1756,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1678,6 +1770,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1692,6 +1785,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1705,6 +1799,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1719,6 +1814,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_11_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1732,6 +1828,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_12_TARLING">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_11_TARLING</requirements>
         <supports>Tarling Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1749,6 +1846,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_TARLING">
         <supports>Tarling</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
                 weapons or unarmed strikes.</p>
@@ -1775,6 +1873,7 @@
         <supports>Tarling</supports>
         <requirements>[level:tamer:5],
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
                 weapons or unarmed strikes.</p>
@@ -1796,6 +1895,7 @@
         <supports>Tarling</supports>
         <requirements>
             [level:tamer:9],ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
                 weapons or unarmed strikes.</p>
@@ -1817,6 +1917,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_TARLING">
         <supports>Tarling</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1831,6 +1932,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1845,6 +1947,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1859,6 +1962,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1873,6 +1977,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1887,6 +1992,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1899,6 +2005,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_TARLING">
         <supports>Survival Instinct Tarling</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Strength Saving Throws</p>
         </description>
@@ -1910,6 +2017,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_TARLING">
         <supports>Survival Instinct Tarling</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Dexterity Saving Throws</p>
         </description>
@@ -1921,6 +2029,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_TARLING">
         <supports>Survival Instinct Tarling</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Constitution Saving Throws</p>
         </description>
@@ -1932,6 +2041,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_TARLING">
         <supports>Survival Instinct Tarling</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Intelligence Saving Throws</p>
         </description>
@@ -1943,6 +2053,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_TARLING">
         <supports>Survival Instinct Tarling</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Wisdom Saving Throws</p>
         </description>
@@ -1954,6 +2065,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_TARLING">
         <supports>Survival Instinct Tarling</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Charisma Saving Throws</p>
         </description>
@@ -1966,6 +2078,7 @@
     <element name="War Training" type="Class Feature" source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_TARLING">
         <supports>Tarling</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -1986,6 +2099,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_TARLING">
         <supports>Tarling</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -2007,6 +2121,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -2028,6 +2143,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -2049,6 +2165,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -2070,6 +2187,7 @@
         <supports>Tarling</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_TARLING</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
