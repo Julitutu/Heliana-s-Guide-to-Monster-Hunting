@@ -3,7 +3,7 @@
 	<info>
 		<name>Familiars</name>
 		<description>Dragonling from Heliana's Guide to Monster Hunting</description>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="Dragonling.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Dragonling.xml" />
 		</update>
 	</info>
@@ -1858,8 +1858,12 @@
 			<p>Your companion gains proficiency in Strength Saving Throws</p>
 		</description>
 		<sheet>
-			<description>Dragonling +{{proficiency}} in Strength Saving Throws</description>
+			<description>Dragonling +{{dragonling:str:save}} in Strength Saving Throws</description>
 		</sheet>
+		<rules>
+            		<stat name="dragonling:str:save" value="proficiency" />
+           		<stat name="dragonling:str:save" value="dragonling:str:mod" />
+        	</rules>
 	</element>
 	<element name="Dragonling Survival Instincts: Dexterity" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
@@ -1870,8 +1874,12 @@
 			<p>Your companion gains proficiency in Dexterity Saving Throws</p>
 		</description>
 		<sheet>
-			<description>Dragonling +{{proficiency}} in Dexterity Saving Throws</description>
+			<description>Dragonling +{{dragonling:dex:save}} in Dexterity Saving Throws</description>
 		</sheet>
+		<rules>
+            		<stat name="dragonling:dex:save" value="proficiency" />
+           		<stat name="dragonling:dex:save" value="dragonling:dex:mod" />
+        	</rules>
 	</element>
 	<element name="Dragonling Survival Instincts: Constitution" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
@@ -1882,8 +1890,12 @@
 			<p>Your companion gains proficiency in Constitution Saving Throws</p>
 		</description>
 		<sheet>
-			<description>Dragonling +{{proficiency}} in Constitution Saving Throws</description>
+			<description>Dragonling +{{dragonling:con:save}} in Constitution Saving Throws</description>
 		</sheet>
+		<rules>
+            		<stat name="dragonling:con:save" value="proficiency" />
+           		<stat name="dragonling:con:save" value="dragonling:con:mod" />
+        	</rules>
 	</element>
 	<element name="Dragonling Survival Instincts: Intelligence" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
@@ -1894,8 +1906,12 @@
 			<p>Your companion gains proficiency in Intelligence Saving Throws</p>
 		</description>
 		<sheet>
-			<description>Dragonling +{{proficiency}} in Intelligence Saving Throws</description>
+			<description>Dragonling +{{dragonling:int:save}} in Intelligence Saving Throws</description>
 		</sheet>
+		<rules>
+            		<stat name="dragonling:int:save" value="proficiency" />
+           		<stat name="dragonling:int:save" value="dragonling:int:mod" />
+        	</rules>
 	</element>
 	<element name="Dragonling Survival Instincts: Wisdom" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
@@ -1906,8 +1922,12 @@
 			<p>Your companion gains proficiency in Wisdom Saving Throws</p>
 		</description>
 		<sheet>
-			<description>Dragonling +{{proficiency}} in Wisdom Saving Throws</description>
+			<description>Dragonling +{{dragonling:wis:save}} in Wisdom Saving Throws</description>
 		</sheet>
+		<rules>
+            		<stat name="dragonling:wis:save" value="proficiency" />
+           		<stat name="dragonling:wis:save" value="dragonling:wis:mod" />
+        	</rules>
 	</element>
 	<element name="Dragonling Survival Instincts: Charisma" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
@@ -1918,8 +1938,12 @@
 			<p>Your companion gains proficiency in Charisma Saving Throws</p>
 		</description>
 		<sheet>
-			<description>Dragonling +{{proficiency}} in Charisma Saving Throws</description>
+			<description>Dragonling +{{dragonling:cha:save}} in Charisma Saving Throws</description>
 		</sheet>
+		<rules>
+            		<stat name="dragonling:cha:save" value="proficiency" />
+           		<stat name="dragonling:cha:save" value="dragonling:cha:mod" />
+        	</rules>
 	</element>
 
 	<!-- War Training -->
