@@ -3,7 +3,7 @@
     <info>
         <name>Betobeto-kun</name>
         <description>Betobeto-kun familiar from Ryoko's Guide to the Yokai Realms</description>
-        <update version="0.1.0">
+        <update version="0.1.1">
             <file name="Betobeto-kun.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/Betobeto-kun.xml" /> 
         </update>
     </info>
@@ -358,6 +358,7 @@
     <element name="Toughen Up" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -375,6 +376,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -389,6 +391,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -403,6 +406,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -417,6 +421,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -431,6 +436,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -445,6 +451,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -459,6 +466,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -473,6 +481,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -487,6 +496,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -501,6 +511,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -515,6 +526,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -529,6 +541,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -543,6 +556,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -557,6 +571,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -571,6 +586,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -585,6 +601,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -599,6 +616,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -613,6 +631,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -628,6 +647,7 @@
     <element name="Ability Boost" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -641,6 +661,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -655,6 +676,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -669,6 +691,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -683,6 +706,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -697,6 +721,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -711,6 +736,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -725,6 +751,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -739,6 +766,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -753,6 +781,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -767,6 +796,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -781,6 +811,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -795,6 +826,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -809,6 +841,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -823,6 +856,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -837,6 +871,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -851,6 +886,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -865,6 +901,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -879,6 +916,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -890,6 +928,7 @@
 
     <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_BETOBETO_KUN">
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -903,6 +942,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -917,6 +957,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -930,6 +971,7 @@
         <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -944,6 +986,7 @@
         <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -957,6 +1000,7 @@
         <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -971,6 +1015,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -984,6 +1029,7 @@
         <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -998,6 +1044,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -1011,6 +1058,7 @@
         <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -1025,6 +1073,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_11_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -1038,6 +1087,7 @@
         <element name="Ability Boost (Strength)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_12_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_11_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -1052,6 +1102,7 @@
 
         <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_BETOBETO_KUN">
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1065,6 +1116,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1079,6 +1131,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1092,6 +1145,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1106,6 +1160,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1119,6 +1174,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1134,6 +1190,7 @@
 
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_BETOBETO_KUN">
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1148,6 +1205,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1161,6 +1219,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1175,6 +1234,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1188,6 +1248,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1202,6 +1263,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1215,6 +1277,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_7_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1229,6 +1292,7 @@
 
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_BETOBETO_KUN">
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1243,6 +1307,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1256,6 +1321,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1270,6 +1336,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1283,6 +1350,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1297,6 +1365,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1310,6 +1379,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1324,6 +1394,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1337,6 +1408,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1351,6 +1423,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1364,6 +1437,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1378,6 +1452,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1391,6 +1466,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_13_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1405,6 +1481,7 @@
 
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_BETOBETO_KUN">
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1419,6 +1496,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1432,6 +1510,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1446,6 +1525,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1459,6 +1539,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1473,6 +1554,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1486,6 +1568,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1500,6 +1583,7 @@
      <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1513,6 +1597,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1527,6 +1612,7 @@
 
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_BETOBETO_KUN">
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1540,6 +1626,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1554,6 +1641,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1567,6 +1655,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1581,6 +1670,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1594,6 +1684,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_BETOBETO_KUN">
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_BETOBETO_KUN</requirements>
         <supports>Betobeto-kun Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1611,6 +1702,7 @@
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
                 weapons or unarmed strikes.</p>
@@ -1634,6 +1726,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>[level:tamer:5],
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
                 weapons or unarmed strikes.</p>
@@ -1655,6 +1748,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             [level:tamer:9],ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
                 weapons or unarmed strikes.</p>
@@ -1676,6 +1770,7 @@
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1690,6 +1785,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1704,6 +1800,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1718,6 +1815,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1732,6 +1830,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1746,6 +1845,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1758,6 +1858,7 @@
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_BETOBETO_KUN">
         <supports>Survival Instinct Betobeto-kun</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Strength Saving Throws</p>
         </description>
@@ -1769,6 +1870,7 @@
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_BETOBETO_KUN">
         <supports>Survival Instinct Betobeto-kun</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Dexterity Saving Throws</p>
         </description>
@@ -1780,6 +1882,7 @@
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_BETOBETO_KUN">
         <supports>Survival Instinct Betobeto-kun</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Constitution Saving Throws</p>
         </description>
@@ -1791,6 +1894,7 @@
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_BETOBETO_KUN">
         <supports>Survival Instinct Betobeto-kun</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Intelligence Saving Throws</p>
         </description>
@@ -1802,6 +1906,7 @@
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_BETOBETO_KUN">
         <supports>Survival Instinct Betobeto-kun</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Wisdom Saving Throws</p>
         </description>
@@ -1813,6 +1918,7 @@
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_BETOBETO_KUN">
         <supports>Survival Instinct Betobeto-kun</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Charisma Saving Throws</p>
         </description>
@@ -1825,6 +1931,7 @@
     <element name="War Training" type="Class Feature" source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -1845,6 +1952,7 @@
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_BETOBETO_KUN">
         <supports>Betobeto-kun</supports>
         <requirements>ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -1866,6 +1974,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -1887,6 +1996,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -1908,6 +2018,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -1929,6 +2040,7 @@
         <supports>Betobeto-kun</supports>
         <requirements>
             ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_BETOBETO_KUN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
