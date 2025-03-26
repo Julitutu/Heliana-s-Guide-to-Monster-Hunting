@@ -3,7 +3,7 @@
     <info>
         <name>Familiars</name>
         <description>Rakitten from Heliana's Guide to Monster Hunting</description>
-        <update version="0.1.1">
+        <update version="0.1.2">
             <file name="Rakitten.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Rakitten.xml" />
         </update>
     </info>
@@ -373,6 +373,7 @@
     <element name="Toughen Up" type="Class Feature" source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_RAKITTEN">
         <supports>Rakitten</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -390,6 +391,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_RAKITTEN">
         <supports>Rakitten</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -404,6 +406,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_RAKITTEN">
         <supports>Rakitten</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -418,6 +421,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_RAKITTEN">
         <supports>Rakitten</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -432,6 +436,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_RAKITTEN">
         <supports>Rakitten</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -446,6 +451,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_RAKITTEN">
         <supports>Rakitten</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -460,6 +466,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_RAKITTEN">
         <supports>Rakitten</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -474,6 +481,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_RAKITTEN">
         <supports>Rakitten</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -488,6 +496,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_RAKITTEN">
         <supports>Rakitten</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -502,6 +511,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_RAKITTEN">
         <supports>Rakitten</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -516,6 +526,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_RAKITTEN">
         <supports>Rakitten</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -530,6 +541,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_RAKITTEN">
         <supports>Rakitten</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -544,6 +556,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_RAKITTEN">
         <supports>Rakitten</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -558,6 +571,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_RAKITTEN">
         <supports>Rakitten</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -572,6 +586,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_RAKITTEN">
         <supports>Rakitten</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -586,6 +601,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_RAKITTEN">
         <supports>Rakitten</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -600,6 +616,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_RAKITTEN">
         <supports>Rakitten</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -614,6 +631,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_RAKITTEN">
         <supports>Rakitten</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -628,6 +646,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_RAKITTEN">
         <supports>Rakitten</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -643,6 +662,7 @@
     <element name="Ability Boost" type="Class Feature" source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_RAKITTEN">
         <supports>Rakitten</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -656,6 +676,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_RAKITTEN">
         <supports>Rakitten</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -670,6 +691,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -684,6 +706,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -698,6 +721,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -712,6 +736,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -726,6 +751,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -740,6 +766,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -754,6 +781,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -768,6 +796,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -782,6 +811,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -796,6 +826,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -810,6 +841,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -824,6 +856,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -838,6 +871,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -852,6 +886,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -866,6 +901,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -880,6 +916,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -894,6 +931,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -905,6 +943,7 @@
 
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_RAKITTEN">
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -919,6 +958,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -932,6 +972,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -946,6 +987,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -959,6 +1001,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -973,6 +1016,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -986,6 +1030,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -1000,6 +1045,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -1013,6 +1059,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -1027,6 +1074,7 @@
 
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_RAKITTEN">
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1040,6 +1088,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1054,6 +1103,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1067,6 +1117,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1081,6 +1132,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1094,6 +1146,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1108,6 +1161,7 @@
 
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_RAKITTEN">
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1122,6 +1176,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1135,6 +1190,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1149,6 +1205,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1162,6 +1219,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1176,6 +1234,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1189,6 +1248,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_7_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1203,6 +1263,7 @@
     
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_RAKITTEN">
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1216,6 +1277,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1230,6 +1292,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1243,6 +1306,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1257,6 +1321,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1270,6 +1335,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1284,6 +1350,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1297,6 +1364,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1311,6 +1379,7 @@
     
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_RAKITTEN">
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1325,6 +1394,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1338,6 +1408,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1352,6 +1423,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1365,6 +1437,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1379,6 +1452,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1392,6 +1466,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1406,6 +1481,7 @@
     
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_RAKITTEN">
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1420,6 +1496,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1433,6 +1510,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1447,6 +1525,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1460,6 +1539,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_RAKITTEN">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_RAKITTEN</requirements>
         <supports>Rakitten Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1477,6 +1557,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_RAKITTEN">
         <supports>Rakitten</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
                 weapons or unarmed strikes.</p>
@@ -1501,6 +1582,7 @@
         <supports>Rakitten</supports>
         <requirements>[level:tamer:5],
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
                 weapons or unarmed strikes.</p>
@@ -1522,6 +1604,7 @@
         <supports>Rakitten</supports>
         <requirements>
             [level:tamer:9],ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
                 weapons or unarmed strikes.</p>
@@ -1543,6 +1626,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_RAKITTEN">
         <supports>Rakitten</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1557,6 +1641,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1571,6 +1656,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1585,6 +1671,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1599,6 +1686,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1613,6 +1701,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1625,6 +1714,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_RAKITTEN">
         <supports>Survival Instinct Rakitten</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Strength Saving Throws</p>
         </description>
@@ -1636,6 +1726,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_RAKITTEN">
         <supports>Survival Instinct Rakitten</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Dexterity Saving Throws</p>
         </description>
@@ -1647,6 +1738,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_RAKITTEN">
         <supports>Survival Instinct Rakitten</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Constitution Saving Throws</p>
         </description>
@@ -1658,6 +1750,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_RAKITTEN">
         <supports>Survival Instinct Rakitten</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Intelligence Saving Throws</p>
         </description>
@@ -1669,6 +1762,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_RAKITTEN">
         <supports>Survival Instinct Rakitten</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Wisdom Saving Throws</p>
         </description>
@@ -1680,6 +1774,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_RAKITTEN">
         <supports>Survival Instinct Rakitten</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Charisma Saving Throws</p>
         </description>
@@ -1692,6 +1787,7 @@
     <element name="War Training" type="Class Feature" source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_RAKITTEN">
         <supports>Rakitten</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -1712,6 +1808,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_RAKITTEN">
         <supports>Rakitten</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -1733,6 +1830,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -1754,6 +1852,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -1775,6 +1874,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -1796,6 +1896,7 @@
         <supports>Rakitten</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_RAKITTEN</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
