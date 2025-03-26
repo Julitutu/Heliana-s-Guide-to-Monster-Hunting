@@ -3,7 +3,7 @@
     <info>
         <name>Senryōka</name>
         <description>Senryōka familiar from Ryoko's Guide to the Yokai Realms</description>
-        <update version="0.1.1">
+        <update version="0.1.2">
             <file name="Senryoka.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/Senryoka.xml" /> 
         </update>
     </info>
@@ -1914,8 +1914,12 @@
             <p>Your companion gains proficiency in Strength Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Strength Saving Throws</description>
+            <description>+{{senryoka:str:save}} in Strength Saving Throws</description>
         </sheet>
+        <rules>
+            <stat name="senryoka:str:save" value="proficiency" />
+            <stat name="senryoka:str:save" value="senryoka:str:mod" />
+        </rules>
     </element>
     <element name="Senryoka Survival Instincts: Dexterity" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
@@ -1926,8 +1930,12 @@
             <p>Your companion gains proficiency in Dexterity Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Dexterity Saving Throws</description>
+            <description>+{{senryoka:dex:save}} in Dexterity Saving Throws</description>
         </sheet>
+        <rules>
+            <stat name="senryoka:dex:save" value="proficiency" />
+            <stat name="senryoka:dex:save" value="senryoka:dex:mod" />
+        </rules>        
     </element>
     <element name="Senryoka Survival Instincts: Constitution" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
@@ -1938,8 +1946,12 @@
             <p>Your companion gains proficiency in Constitution Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Constitution Saving Throws</description>
+            <description>+{{senryoka:con:save}} in Constitution Saving Throws</description>
         </sheet>
+        <rules>
+            <stat name="senryoka:con:save" value="proficiency" />
+            <stat name="senryoka:con:save" value="senryoka:con:mod" />
+        </rules>        
     </element>
     <element name="Senryoka Survival Instincts: Intelligence" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
@@ -1950,8 +1962,12 @@
             <p>Your companion gains proficiency in Intelligence Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Intelligence Saving Throws</description>
+            <description>+{{senryoka:int:save}} in Intelligence Saving Throws</description>
         </sheet>
+        <rules>
+            <stat name="senryoka:int:save" value="proficiency" />
+            <stat name="senryoka:int:save" value="senryoka:int:mod" />
+        </rules>           
     </element>
     <element name="Senryoka Survival Instincts: Wisdom" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
@@ -1962,8 +1978,12 @@
             <p>Your companion gains proficiency in Wisdom Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Wisdom Saving Throws</description>
+            <description>+{{senryoka:wis:save}} in Wisdom Saving Throws</description>
         </sheet>
+        <rules>
+            <stat name="senryoka:wis:save" value="proficiency" />
+            <stat name="senryoka:wis:save" value="senryoka:wis:mod" />
+        </rules>           
     </element>
     <element name="Senryoka Survival Instincts: Charisma" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
@@ -1974,8 +1994,12 @@
             <p>Your companion gains proficiency in Charisma Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Charisma Saving Throws</description>
+            <description>+{{senryoka:cha:save}} in Charisma Saving Throws</description>
         </sheet>
+        <rules>
+            <stat name="senryoka:cha:save" value="proficiency" />
+            <stat name="senryoka:cha:save" value="senryoka:cha:mod" />
+        </rules>           
     </element>
 
     <!-- War Training -->
