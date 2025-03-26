@@ -3,7 +3,7 @@
     <info>
         <name>Ko-inari</name>
         <description>Ko-inari familiar from Ryoko's Guide to the Yokai Realms</description>
-        <update version="0.1.1">
+        <update version="0.1.2">
             <file name="Ko-inari.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/Ko-inari.xml" /> 
         </update>
     </info>
@@ -115,19 +115,7 @@
         </rules>
     </element>
 
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Improvement Gained on Taming-->
+	<!-- Improvement Gained on Taming-->
     <element name="Ko-inari Improvement" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_RGTTYR_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_KO_INARI">
@@ -1829,7 +1817,7 @@
             <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Ko-inari" />
         </rules>
     </element>
-        <element name="Sunsnacker Survival Instincts: Strength" type="Class Feature"
+        <element name="Ko-inari Survival Instincts: Strength" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_KO_INARI">
         <supports>Survival Instinct Ko-inari</supports>
@@ -1838,10 +1826,14 @@
             <p>Your companion gains proficiency in Strength Saving Throws</p>
         </description>
         <sheet>
-            <description>Ko-inari +{{proficiency}} in Strength Saving Throws</description>
+            <description>+{{koinari:str:save}} in Strength Saving Throws</description>
         </sheet>
+	<rules>
+		<stat name="koinari:str:save" value="proficiency" />
+		<stat name="koinari:str:save" value="koinari:str:mod" />
+	</rules>
     </element>
-    <element name="Sunsnacker Survival Instincts: Dexterity" type="Class Feature"
+    <element name="Ko-inari Survival Instincts: Dexterity" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_KO_INARI">
         <supports>Survival Instinct Ko-inari</supports>
@@ -1850,10 +1842,14 @@
             <p>Your companion gains proficiency in Dexterity Saving Throws</p>
         </description>
         <sheet>
-            <description>Ko-inari +{{proficiency}} in Dexterity Saving Throws</description>
+            <description>+{{koinari:dex:save}} in Dexterity Saving Throws</description>
         </sheet>
+	    <rules>
+		<stat name="koinari:dex:save" value="proficiency" />
+		<stat name="koinari:dex:save" value="koinari:dex:mod" />
+	</rules>
     </element>
-    <element name="Sunsnacker Survival Instincts: Constitution" type="Class Feature"
+    <element name="Ko-inari Survival Instincts: Constitution" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_KO_INARI">
         <supports>Survival Instinct Ko-inari</supports>
@@ -1862,10 +1858,14 @@
             <p>Your companion gains proficiency in Constitution Saving Throws</p>
         </description>
         <sheet>
-            <description>Ko-inari +{{proficiency}} in Constitution Saving Throws</description>
+            <description>+{{koinari:con:save}} in Constitution Saving Throws</description>
         </sheet>
+	    <rules>
+		<stat name="koinari:con:save" value="proficiency" />
+		<stat name="koinari:con:save" value="koinari:con:mod" />
+	</rules>
     </element>
-    <element name="Sunsnacker Survival Instincts: Intelligence" type="Class Feature"
+    <element name="Ko-inari Survival Instincts: Intelligence" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_KO_INARI">
         <supports>Survival Instinct Ko-inari</supports>
@@ -1874,10 +1874,14 @@
             <p>Your companion gains proficiency in Intelligence Saving Throws</p>
         </description>
         <sheet>
-            <description>Ko-inari +{{proficiency}} in Intelligence Saving Throws</description>
+            <description>+{{koinari:int:save}} in Intelligence Saving Throws</description>
         </sheet>
+	    <rules>
+		<stat name="koinari:int:save" value="proficiency" />
+		<stat name="koinari:int:save" value="koinari:int:mod" />
+	</rules>
     </element>
-    <element name="Sunsnacker Survival Instincts: Wisdom" type="Class Feature"
+    <element name="Ko-inari Survival Instincts: Wisdom" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_KO_INARI">
         <supports>Survival Instinct Ko-inari</supports>
@@ -1886,10 +1890,14 @@
             <p>Your companion gains proficiency in Wisdom Saving Throws</p>
         </description>
         <sheet>
-            <description>Ko-inari +{{proficiency}} in Wisdom Saving Throws</description>
+            <description>+{{koinari:wis:save}} in Wisdom Saving Throws</description>
         </sheet>
+	    <rules>
+		<stat name="koinari:wis:save" value="proficiency" />
+		<stat name="koinari:wis:save" value="koinari:wis:mod" />
+	</rules>
     </element>
-    <element name="Sunsnacker Survival Instincts: Charisma" type="Class Feature"
+    <element name="Ko-inari Survival Instincts: Charisma" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_KO_INARI">
         <supports>Survival Instinct Ko-inari</supports>
@@ -1898,8 +1906,12 @@
             <p>Your companion gains proficiency in Charisma Saving Throws</p>
         </description>
         <sheet>
-            <description>Ko-inari +{{proficiency}} in Charisma Saving Throws</description>
+            <description>+{{koinari:cha:save}} in Charisma Saving Throws</description>
         </sheet>
+	    <rules>
+		<stat name="koinari:cha:save" value="proficiency" />
+		<stat name="koinari:cha:save" value="koinari:cha:mod" />
+	</rules>
     </element>
 
     <!-- War Training -->
