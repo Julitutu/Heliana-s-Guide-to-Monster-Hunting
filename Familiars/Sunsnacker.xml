@@ -3,7 +3,7 @@
     <info>
         <name>Familiars</name>
         <description>Sunsnacker from Heliana's Guide to Monster Hunting</description>
-        <update version="0.1.1">
+        <update version="0.1.2">
             <file name="Sunsnacker.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Sunsnacker.xml" />
         </update>
     </info>
@@ -393,6 +393,7 @@
     <element name="Toughen Up" type="Class Feature" source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_SUNSNACKER">
         <supports>Sunsnacker</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -410,6 +411,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_SUNSNACKER">
         <supports>Sunsnacker</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -424,6 +426,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_SUNSNACKER">
         <supports>Sunsnacker</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -438,6 +441,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_SUNSNACKER">
         <supports>Sunsnacker</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -452,6 +456,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_SUNSNACKER">
         <supports>Sunsnacker</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -466,6 +471,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_SUNSNACKER">
         <supports>Sunsnacker</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -480,6 +486,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_SUNSNACKER">
         <supports>Sunsnacker</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -494,6 +501,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_SUNSNACKER">
         <supports>Sunsnacker</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -508,6 +516,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_SUNSNACKER">
         <supports>Sunsnacker</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -522,6 +531,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_SUNSNACKER">
         <supports>Sunsnacker</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -536,6 +546,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_SUNSNACKER">
         <supports>Sunsnacker</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -550,6 +561,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_SUNSNACKER">
         <supports>Sunsnacker</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -564,6 +576,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_SUNSNACKER">
         <supports>Sunsnacker</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -578,6 +591,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_SUNSNACKER">
         <supports>Sunsnacker</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -592,6 +606,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_SUNSNACKER">
         <supports>Sunsnacker</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -606,6 +621,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_SUNSNACKER">
         <supports>Sunsnacker</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -620,6 +636,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_SUNSNACKER">
         <supports>Sunsnacker</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -634,6 +651,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_SUNSNACKER">
         <supports>Sunsnacker</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -648,6 +666,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_SUNSNACKER">
         <supports>Sunsnacker</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
                 Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -663,6 +682,7 @@
     <element name="Ability Boost" type="Class Feature" source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_SUNSNACKER">
         <supports>Sunsnacker</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -676,6 +696,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_SUNSNACKER">
         <supports>Sunsnacker</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -690,6 +711,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -704,6 +726,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -718,6 +741,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -732,6 +756,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -746,6 +771,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -760,6 +786,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -774,6 +801,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -788,6 +816,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -802,6 +831,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -816,6 +846,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -830,6 +861,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -844,6 +876,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -858,6 +891,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -872,6 +906,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -886,6 +921,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -900,6 +936,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -914,6 +951,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
         </description>
@@ -925,6 +963,7 @@
 
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_SUNSNACKER">
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -938,6 +977,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -952,6 +992,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -965,6 +1006,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -979,6 +1021,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -992,6 +1035,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
         </description>
@@ -1006,6 +1050,7 @@
 
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_SUNSNACKER">
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1019,6 +1064,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1033,6 +1079,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1046,6 +1093,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1060,6 +1108,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1073,6 +1122,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1087,6 +1137,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1100,6 +1151,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1114,6 +1166,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1127,6 +1180,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_10_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
         </description>
@@ -1141,6 +1195,7 @@
     
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_SUNSNACKER">
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1154,6 +1209,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1168,6 +1224,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1181,6 +1238,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1195,6 +1253,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1208,6 +1267,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1222,6 +1282,7 @@
      <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_7_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1235,6 +1296,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_8_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_7_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
         </description>
@@ -1249,6 +1311,7 @@
     
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_SUNSNACKER">
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1263,6 +1326,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1276,6 +1340,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1290,6 +1355,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1303,6 +1369,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1317,6 +1384,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1330,6 +1398,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1344,6 +1413,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1357,6 +1427,7 @@
      <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1371,6 +1442,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1384,6 +1456,7 @@
      <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1398,6 +1471,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1411,6 +1485,7 @@
      <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_13_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
         </description>
@@ -1425,6 +1500,7 @@
     
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_SUNSNACKER">
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1439,6 +1515,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1452,6 +1529,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1466,6 +1544,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1479,6 +1558,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1493,6 +1573,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1506,6 +1587,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1520,6 +1602,7 @@
      <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1533,6 +1616,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
         </description>
@@ -1546,6 +1630,7 @@
     </element>
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_SUNSNACKER">
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1559,6 +1644,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1573,6 +1659,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1586,6 +1673,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1600,6 +1688,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1613,6 +1702,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_SUNSNACKER">
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_SUNSNACKER</requirements>
         <supports>Sunsnacker Ability Boost</supports>
+        <compendium display="false" />
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
         </description>
@@ -1630,6 +1720,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_SUNSNACKER">
         <supports>Sunsnacker</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
                 weapons or unarmed strikes.</p>
@@ -1654,6 +1745,7 @@
         <supports>Sunsnacker</supports>
         <requirements>[level:tamer:5],
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
                 weapons or unarmed strikes.</p>
@@ -1675,6 +1767,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             [level:tamer:9],ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
                 weapons or unarmed strikes.</p>
@@ -1696,6 +1789,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_SUNSNACKER">
         <supports>Sunsnacker</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1710,6 +1804,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1724,6 +1819,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1738,6 +1834,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1752,6 +1849,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1766,6 +1864,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
         </description>
@@ -1778,6 +1877,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_SUNSNACKER">
         <supports>Survival Instinct Sunsnacker</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Strength Saving Throws</p>
         </description>
@@ -1789,6 +1889,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_SUNSNACKER">
         <supports>Survival Instinct Sunsnacker</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Dexterity Saving Throws</p>
         </description>
@@ -1800,6 +1901,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_SUNSNACKER">
         <supports>Survival Instinct Sunsnacker</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Constitution Saving Throws</p>
         </description>
@@ -1811,6 +1913,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_SUNSNACKER">
         <supports>Survival Instinct Sunsnacker</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Intelligence Saving Throws</p>
         </description>
@@ -1822,6 +1925,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_SUNSNACKER">
         <supports>Survival Instinct Sunsnacker</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Wisdom Saving Throws</p>
         </description>
@@ -1833,6 +1937,7 @@
         source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_SUNSNACKER">
         <supports>Survival Instinct Sunsnacker</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency in Charisma Saving Throws</p>
         </description>
@@ -1845,6 +1950,7 @@
     <element name="War Training" type="Class Feature" source="Heliana's Guide to Monster Hunting"
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_SUNSNACKER">
         <supports>Sunsnacker</supports>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -1865,6 +1971,7 @@
         id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_SUNSNACKER">
         <supports>Sunsnacker</supports>
         <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -1886,6 +1993,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -1907,6 +2015,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -1928,6 +2037,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
@@ -1949,6 +2059,7 @@
         <supports>Sunsnacker</supports>
         <requirements>
             ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_SUNSNACKER</requirements>
+        <compendium display="false" />
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
             <p>
