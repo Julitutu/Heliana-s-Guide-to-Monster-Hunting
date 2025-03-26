@@ -3,7 +3,7 @@
     <info>
         <name>Kawawappa</name>
         <description>Kawawappa familiar from Ryoko's Guide to the Yokai Realms</description>
-        <update version="0.1.1">
+        <update version="0.1.2">
             <file name="Kawawappa.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/Kawawappa.xml" />  
         </update>
     </info>
@@ -1876,8 +1876,12 @@
             <p>Your companion gains proficiency in Strength Saving Throws</p>
         </description>
         <sheet>
-            <description>Gains proficiency in Strength Saving Throws</description>
+            <description>+{{kawawappa:str:save}} in Strength Saving Throws</description>
         </sheet>
+	    <rules>
+            		<stat name="kawawappa:str:save" value="proficiency" />
+           		<stat name="kawawappa:str:save" value="kawawappa:str:mod" />
+        	</rules>
     </element>
     <element name="Kawawappa Survival Instincts: Dexterity" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
@@ -1888,8 +1892,12 @@
             <p>Your companion gains proficiency in Dexterity Saving Throws</p>
         </description>
         <sheet>
-            <description>Gains proficiency in Dexterity Saving Throws</description>
+            <description>+{{kawawappa:dex:save}} in Dexterity Saving Throws</description>
         </sheet>
+	    <rules>
+            		<stat name="kawawappa:dex:save" value="proficiency" />
+           		<stat name="kawawappa:dex:save" value="kawawappa:dex:mod" />
+        	</rules>
     </element>
     <element name="Kawawappa Survival Instincts: Constitution" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
@@ -1900,8 +1908,12 @@
             <p>Your companion gains proficiency in Constitution Saving Throws</p>
         </description>
         <sheet>
-            <description>Gains proficiency in Constitution Saving Throws</description>
+            <description>+{{kawawappa:con:save}} in Constitution Saving Throws</description>
         </sheet>
+	    <rules>
+            		<stat name="kawawappa:con:save" value="proficiency" />
+           		<stat name="kawawappa:con:save" value="kawawappa:con:mod" />
+        	</rules>
     </element>
     <element name="Kawawappa Survival Instincts: Intelligence" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
@@ -1912,8 +1924,12 @@
             <p>Your companion gains proficiency in Intelligence Saving Throws</p>
         </description>
         <sheet>
-            <description>Gains proficiency in Intelligence Saving Throws</description>
+            <description>+{{kawawappa:int:save}} in Intelligence Saving Throws</description>
         </sheet>
+	    <rules>
+            		<stat name="kawawappa:int:save" value="proficiency" />
+           		<stat name="kawawappa:int:save" value="kawawappa:int:mod" />
+        	</rules>
     </element>
     <element name="Kawawappa Survival Instincts: Wisdom" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
@@ -1924,8 +1940,12 @@
             <p>Your companion gains proficiency in Wisdom Saving Throws</p>
         </description>
         <sheet>
-            <description>Gains proficiency in Wisdom Saving Throws</description>
+            <description>+{{kawawappa:wis:save}} in Wisdom Saving Throws</description>
         </sheet>
+	    <rules>
+            		<stat name="kawawappa:wis:save" value="proficiency" />
+           		<stat name="kawawappa:wis:save" value="kawawappa:wis:mod" />
+        	</rules>
     </element>
     <element name="Kawawappa Survival Instincts: Charisma" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
@@ -1936,8 +1956,12 @@
             <p>Your companion gains proficiency in Charisma Saving Throws</p>
         </description>
         <sheet>
-            <description>Gains proficiency in Charisma Saving Throws</description>
+            <description>+{{kawawappa:cha:save}} in Charisma Saving Throws</description>
         </sheet>
+	    <rules>
+            		<stat name="kawawappa:cha:save" value="proficiency" />
+           		<stat name="kawawappa:cha:save" value="kawawappa:cha:mod" />
+        	</rules>
     </element>
 
     <!-- War Training -->
