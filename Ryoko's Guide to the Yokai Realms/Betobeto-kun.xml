@@ -3,7 +3,7 @@
     <info>
         <name>Betobeto-kun</name>
         <description>Betobeto-kun familiar from Ryoko's Guide to the Yokai Realms</description>
-        <update version="0.1.1">
+        <update version="0.1.2">
             <file name="Betobeto-kun.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/Betobeto-kun.xml" /> 
         </update>
     </info>
@@ -1863,8 +1863,12 @@
             <p>Your companion gains proficiency in Strength Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Strength Saving Throws</description>
+            <description>+{{betobeto:str:save}} in Strength Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="betobeto:str:save" value="proficiency" />
+           		<stat name="betobeto:str:save" value="betobeto:str:mod" />
+        	</rules>
     </element>
     <element name="Betobeto-kun Survival Instincts: Dexterity" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
@@ -1875,8 +1879,12 @@
             <p>Your companion gains proficiency in Dexterity Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Dexterity Saving Throws</description>
+            <description>+{{betobeto:dex:save}} in Dexterity Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="betobeto:dex:save" value="proficiency" />
+           		<stat name="betobeto:dex:save" value="betobeto:dex:mod" />
+        	</rules>
     </element>
     <element name="Betobeto-kun Survival Instincts: Constitution" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
@@ -1887,8 +1895,12 @@
             <p>Your companion gains proficiency in Constitution Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Constitution Saving Throws</description>
+            <description>+{{betobeto:con:save}} in Constitution Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="betobeto:con:save" value="proficiency" />
+           		<stat name="betobeto:con:save" value="betobeto:con:mod" />
+        	</rules>
     </element>
     <element name="Betobeto-kun Survival Instincts: Intelligence" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
@@ -1899,8 +1911,12 @@
             <p>Your companion gains proficiency in Intelligence Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Intelligence Saving Throws</description>
+            <description>+{{betobeto:int:save}} in Intelligence Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="betobeto:int:save" value="proficiency" />
+           		<stat name="betobeto:int:save" value="betobeto:int:mod" />
+        	</rules>
     </element>
     <element name="Betobeto-kun Survival Instincts: Wisdom" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
@@ -1911,8 +1927,12 @@
             <p>Your companion gains proficiency in Wisdom Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Wisdom Saving Throws</description>
+            <description>+{{betobeto:wis:save}} in Wisdom Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="betobeto:wis:save" value="proficiency" />
+           		<stat name="betobeto:wis:save" value="betobeto:wis:mod" />
+        	</rules>
     </element>
     <element name="Betobeto-kun Survival Instincts: Charisma" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
@@ -1923,8 +1943,12 @@
             <p>Your companion gains proficiency in Charisma Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Charisma Saving Throws</description>
+            <description>+{{betobeto:cha:save}} in Charisma Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="betobeto:cha:save" value="proficiency" />
+           		<stat name="betobeto:cha:save" value="betobeto:cha:mod" />
+        	</rules>
     </element>
 
     <!-- War Training -->
