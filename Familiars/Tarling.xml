@@ -3,7 +3,7 @@
     <info>
         <name>Tarling</name>
         <description>Tarling familiar from Heliana's Guide to Monster Hunting</description>
-        <update version="0.1.2">
+        <update version="0.1.3">
             <file name="Tarling.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Tarling.xml" />
         </update>
     </info>
@@ -2010,8 +2010,12 @@
             <p>Your companion gains proficiency in Strength Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Strength Saving Throws</description>
+            <description>+{{tarling:str:save}} in Strength Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="tarling:str:save" value="proficiency" />
+           		<stat name="tarling:str:save" value="tarling:str:mod" />
+        	</rules>
     </element>
     <element name="Tarling Survival Instincts: Dexterity" type="Class Feature"
         source="Heliana's Guide to Monster Hunting"
@@ -2022,8 +2026,12 @@
             <p>Your companion gains proficiency in Dexterity Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Dexterity Saving Throws</description>
+            <description>+{{tarling:dex:save}} in Dexterity Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="tarling:dex:save" value="proficiency" />
+           		<stat name="tarling:dex:save" value="tarling:dex:mod" />
+        	</rules>
     </element>
     <element name="Tarling Survival Instincts: Constitution" type="Class Feature"
         source="Heliana's Guide to Monster Hunting"
@@ -2034,8 +2042,12 @@
             <p>Your companion gains proficiency in Constitution Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Constitution Saving Throws</description>
+            <description>+{{tarling:con:save}} in Constitution Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="tarling:con:save" value="proficiency" />
+           		<stat name="tarling:con:save" value="tarling:con:mod" />
+        	</rules>
     </element>
     <element name="Tarling Survival Instincts: Intelligence" type="Class Feature"
         source="Heliana's Guide to Monster Hunting"
@@ -2046,8 +2058,12 @@
             <p>Your companion gains proficiency in Intelligence Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Intelligence Saving Throws</description>
+            <description>+{{tarling:int:save}} in Intelligence Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="tarling:int:save" value="proficiency" />
+           		<stat name="tarling:int:save" value="tarling:int:mod" />
+        	</rules>
     </element>
     <element name="Tarling Survival Instincts: Wisdom" type="Class Feature"
         source="Heliana's Guide to Monster Hunting"
@@ -2058,8 +2074,12 @@
             <p>Your companion gains proficiency in Wisdom Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Wisdom Saving Throws</description>
+            <description>+{{tarling:wis:save}} in Wisdom Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="tarling:wis:save" value="proficiency" />
+           		<stat name="tarling:wis:save" value="tarling:wis:mod" />
+        	</rules>
     </element>
     <element name="Tarling Survival Instincts: Charisma" type="Class Feature"
         source="Heliana's Guide to Monster Hunting"
@@ -2070,8 +2090,12 @@
             <p>Your companion gains proficiency in Charisma Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Charisma Saving Throws</description>
+            <description>+{{tarling:cha:save}} in Charisma Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="tarling:cha:save" value="proficiency" />
+           		<stat name="tarling:cha:save" value="tarling:cha:mod" />
+        	</rules>
     </element>
 
     <!-- War Training -->
