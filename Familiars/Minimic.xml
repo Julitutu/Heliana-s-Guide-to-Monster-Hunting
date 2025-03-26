@@ -3,7 +3,7 @@
     <info>
         <name>Familiars</name>
         <description>Minimic from Heliana's Guide to Monster Hunting</description>
-        <update version="0.1.2">
+        <update version="0.1.3">
             <file name="Minimic.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Minimic.xml" />
         </update>
     </info>
@@ -2094,8 +2094,12 @@
 			<p>Your companion gains proficiency in Strength Saving Throws</p>
 		</description>
 		<sheet>
-			<description>+{{proficiency}} in Strength Saving Throws</description>
+			<description>+{{minimic:str:save}} in Strength Saving Throws</description>
 		</sheet>
+		<rules>
+            		<stat name="minimic:str:save" value="proficiency" />
+           		<stat name="minimic:str:save" value="minimic:str:mod" />
+        	</rules>
 	</element>
     <element name="Minimic Survival Instincts: Dexterity" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
@@ -2106,8 +2110,12 @@
 			<p>Your companion gains proficiency in Dexterity Saving Throws</p>
 		</description>
 		<sheet>
-			<description>+{{proficiency}} in Dexterity Saving Throws</description>
+			<description>+{{minimic:dex:save}} in Dexterity Saving Throws</description>
 		</sheet>
+	    <rules>
+            		<stat name="minimic:dex:save" value="proficiency" />
+           		<stat name="minimic:dex:save" value="minimic:dex:mod" />
+        	</rules>
 	</element>
 	<element name="Minimic Survival Instincts: Constitution" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
@@ -2118,8 +2126,12 @@
 			<p>Your companion gains proficiency in Constitution Saving Throws</p>
 		</description>
 		<sheet>
-			<description>+{{proficiency}} in Constitution Saving Throws</description>
+			<description>+{{minimic:con:save}} in Constitution Saving Throws</description>
 		</sheet>
+		<rules>
+            		<stat name="minimic:con:save" value="proficiency" />
+           		<stat name="minimic:con:save" value="minimic:con:mod" />
+        	</rules>
 	</element>
 	<element name="Minimic Survival Instincts: Intelligence" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
@@ -2130,8 +2142,12 @@
 			<p>Your companion gains proficiency in Intelligence Saving Throws</p>
 		</description>
 		<sheet>
-			<description>+{{proficiency}} in Intelligence Saving Throws</description>
+			<description>+{{minimic:int:save}} in Intelligence Saving Throws</description>
 		</sheet>
+		<rules>
+            		<stat name="minimic:int:save" value="proficiency" />
+           		<stat name="minimic:int:save" value="minimic:int:mod" />
+        	</rules>
 	</element>
 	<element name="Minimic Survival Instincts: Wisdom" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
@@ -2142,8 +2158,12 @@
 			<p>Your companion gains proficiency in Wisdom Saving Throws</p>
 		</description>
 		<sheet>
-			<description>+{{proficiency}} in Wisdom Saving Throws</description>
+			<description>+{{minimic:wis:save}} in Wisdom Saving Throws</description>
 		</sheet>
+		<rules>
+            		<stat name="minimic:wis:save" value="proficiency" />
+           		<stat name="minimic:wis:save" value="minimic:wis:mod" />
+        	</rules>
 	</element>
 	<element name="Minimic Survival Instincts: Charisma" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
@@ -2154,8 +2174,12 @@
 			<p>Your companion gains proficiency in Charisma Saving Throws</p>
 		</description>
 		<sheet>
-			<description>+{{proficiency}} in Charisma Saving Throws</description>
+			<description>+{{minimic:cha:save}} in Charisma Saving Throws</description>
 		</sheet>
+		<rules>
+            		<stat name="minimic:cha:save" value="proficiency" />
+           		<stat name="minimic:cha:save" value="minimic:cha:mod" />
+        	</rules>
 	</element>
 
 	<!-- War Training -->
