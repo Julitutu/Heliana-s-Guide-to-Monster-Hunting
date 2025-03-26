@@ -3,7 +3,7 @@
     <info>
         <name>Familiars</name>
         <description>Sunsnacker from Heliana's Guide to Monster Hunting</description>
-        <update version="0.1.2">
+        <update version="0.1.3">
             <file name="Sunsnacker.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Sunsnacker.xml" />
         </update>
     </info>
@@ -1882,8 +1882,12 @@
             <p>Your companion gains proficiency in Strength Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Strength Saving Throws</description>
+            <description>+{{sunsnacker:str:save}} in Strength Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="sunsnacker:str:save" value="proficiency" />
+           		<stat name="sunsnacker:str:save" value="sunsnacker:str:mod" />
+        	</rules>
     </element>
     <element name="Sunsnacker Survival Instincts: Dexterity" type="Class Feature"
         source="Heliana's Guide to Monster Hunting"
@@ -1894,8 +1898,12 @@
             <p>Your companion gains proficiency in Dexterity Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Dexterity Saving Throws</description>
+            <description>+{{sunsnacker:dex:save}} in Dexterity Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="sunsnacker:dex:save" value="proficiency" />
+           		<stat name="sunsnacker:dex:save" value="sunsnacker:dex:mod" />
+        	</rules>
     </element>
     <element name="Sunsnacker Survival Instincts: Constitution" type="Class Feature"
         source="Heliana's Guide to Monster Hunting"
@@ -1906,8 +1914,12 @@
             <p>Your companion gains proficiency in Constitution Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Constitution Saving Throws</description>
+            <description>+{{sunsnacker:con:save}} in Constitution Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="sunsnacker:con:save" value="proficiency" />
+           		<stat name="sunsnacker:con:save" value="sunsnacker:con:mod" />
+        	</rules>
     </element>
     <element name="Sunsnacker Survival Instincts: Intelligence" type="Class Feature"
         source="Heliana's Guide to Monster Hunting"
@@ -1918,8 +1930,12 @@
             <p>Your companion gains proficiency in Intelligence Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Intelligence Saving Throws</description>
+            <description>+{{sunsnacker:int:save}} in Intelligence Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="sunsnacker:int:save" value="proficiency" />
+           		<stat name="sunsnacker:int:save" value="sunsnacker:int:mod" />
+        	</rules>
     </element>
     <element name="Sunsnacker Survival Instincts: Wisdom" type="Class Feature"
         source="Heliana's Guide to Monster Hunting"
@@ -1930,8 +1946,12 @@
             <p>Your companion gains proficiency in Wisdom Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Wisdom Saving Throws</description>
+            <description>+{{sunsnacker:wis:save}} in Wisdom Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="sunsnacker:wis:save" value="proficiency" />
+           		<stat name="sunsnacker:wis:save" value="sunsnacker:wis:mod" />
+        	</rules>
     </element>
     <element name="Sunsnacker Survival Instincts: Charisma" type="Class Feature"
         source="Heliana's Guide to Monster Hunting"
@@ -1942,8 +1962,12 @@
             <p>Your companion gains proficiency in Charisma Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Charisma Saving Throws</description>
+            <description>+{{sunsnacker:cha:save}} in Charisma Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="sunsnacker:cha:save" value="proficiency" />
+           		<stat name="sunsnacker:cha:save" value="sunsnacker:cha:mod" />
+        	</rules>
     </element>
 
     <!-- War Training -->
