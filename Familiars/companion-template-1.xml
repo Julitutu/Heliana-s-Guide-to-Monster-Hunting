@@ -3,7 +3,7 @@
 	<info>
 		<name>Companions Templates</name>
 		<description>Companion Template 1 from Heliana's Guide to Monster Hunting</description>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="companion-template-1.xml"
 				url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/companion-template-1.xml" />
 		</update>
@@ -1129,6 +1129,7 @@
 	<element name="Speed Training" type="Class Feature" source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SPEED_TRAINING_1">
 		<supports>Companion Improvement 1</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one existing speed by 15 feet up to a maximum of 150% of the creature’s base
 				speed, rounded up to the nearest 5-foot increment.</p>
@@ -1144,6 +1145,7 @@
 	<element name="Toughen Up" type="Class Feature" source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_1">
 		<supports>Companion Improvement 1</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -1161,6 +1163,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_1">
 		<supports>Companion Improvement 1</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -1175,6 +1178,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_1">
 		<supports>Companion Improvement 1</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -1189,6 +1193,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_1">
 		<supports>Companion Improvement 1</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -1203,6 +1208,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_1">
 		<supports>Companion Improvement 1</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -1217,6 +1223,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_1">
 		<supports>Companion Improvement 1</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -1231,6 +1238,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_1">
 		<supports>Companion Improvement 1</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -1245,6 +1253,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_1">
 		<supports>Companion Improvement 1</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -1259,6 +1268,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_1">
 		<supports>Companion Improvement 1</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -1273,6 +1283,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_1">
 		<supports>Companion Improvement 1</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -1287,6 +1298,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_1">
 		<supports>Companion Improvement 1</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -1301,6 +1313,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_1">
 		<supports>Companion Improvement 1</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -1315,6 +1328,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_1">
 		<supports>Companion Improvement 1</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -1329,6 +1343,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_1">
 		<supports>Companion Improvement 1</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -1343,6 +1358,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_1">
 		<supports>Companion Improvement 1</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -1357,6 +1373,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_1">
 		<supports>Companion Improvement 1</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -1371,6 +1388,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_1">
 		<supports>Companion Improvement 1</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -1385,6 +1403,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_1">
 		<supports>Companion Improvement 1</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -1399,6 +1418,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_1">
 		<supports>Companion Improvement 1</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -1414,6 +1434,7 @@
 	<element name="Ability Boost" type="Class Feature" source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_1">
 		<supports>Companion Improvement 1</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -1429,6 +1450,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_1">
 		<supports>Companion Improvement 1</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -1445,6 +1467,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -1461,6 +1484,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -1477,6 +1501,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -1493,6 +1518,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -1509,6 +1535,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -1525,6 +1552,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -1541,6 +1569,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -1557,6 +1586,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -1573,6 +1603,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -1589,6 +1620,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -1605,6 +1637,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -1621,6 +1654,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -1637,6 +1671,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -1653,6 +1688,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -1669,6 +1705,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -1685,6 +1722,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -1701,6 +1739,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -1714,6 +1753,7 @@
 
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1726,6 +1766,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1738,6 +1779,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1750,6 +1792,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1762,6 +1805,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1774,6 +1818,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1786,6 +1831,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1798,6 +1844,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1810,6 +1857,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1822,6 +1870,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1834,6 +1883,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_11_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1846,6 +1896,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_12_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1858,6 +1909,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_13_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1870,6 +1922,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_14_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1882,6 +1935,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_15_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1894,6 +1948,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_16_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1906,6 +1961,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_17_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1918,6 +1974,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_18_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1930,6 +1987,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_19_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1942,6 +2000,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1954,6 +2013,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1966,6 +2026,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1978,6 +2039,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1990,6 +2052,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -2002,6 +2065,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -2014,6 +2078,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -2026,6 +2091,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -2038,6 +2104,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -2050,6 +2117,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -2062,6 +2130,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_10_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -2074,6 +2143,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_11_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -2086,6 +2156,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_12_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -2098,6 +2169,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_13_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -2110,6 +2182,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_14_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -2122,6 +2195,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_15_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -2134,6 +2208,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_16_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -2146,6 +2221,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_17_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -2158,6 +2234,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_18_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -2170,6 +2247,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_19_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -2182,6 +2260,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -2194,6 +2273,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -2206,6 +2286,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -2218,6 +2299,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -2230,6 +2312,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -2242,6 +2325,7 @@
 	</element>
 		<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -2254,6 +2338,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -2266,6 +2351,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_7_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -2278,6 +2364,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_8_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -2290,6 +2377,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_9_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -2302,6 +2390,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_10_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -2314,6 +2403,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_11_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -2326,6 +2416,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_12_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -2338,6 +2429,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_13_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -2350,6 +2442,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_14_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -2362,6 +2455,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_15_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -2374,6 +2468,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_16_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -2386,6 +2481,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_17_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -2398,6 +2494,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_18_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -2410,6 +2507,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_19_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -2422,6 +2520,7 @@
 	</element>
 		<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -2434,6 +2533,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -2446,6 +2546,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -2458,6 +2559,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -2470,6 +2572,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -2482,6 +2585,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -2494,6 +2598,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -2506,6 +2611,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -2518,6 +2624,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -2530,6 +2637,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -2542,6 +2650,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -2554,6 +2663,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -2566,6 +2676,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_13_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -2578,6 +2689,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_14_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -2590,6 +2702,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_15_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -2602,6 +2715,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_16_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -2614,6 +2728,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_17_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -2626,6 +2741,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_18_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -2638,6 +2754,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_19_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -2650,6 +2767,7 @@
 	</element>
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -2662,6 +2780,7 @@
 	</element>
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -2674,6 +2793,7 @@
 	</element>
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -2686,6 +2806,7 @@
 	</element>
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -2698,6 +2819,7 @@
 	</element>
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -2710,6 +2832,7 @@
 	</element>
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -2722,6 +2845,7 @@
 	</element>
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -2734,6 +2858,7 @@
 	</element>
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -2746,6 +2871,7 @@
 	</element>
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -2758,6 +2884,7 @@
 	</element>
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_10_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -2770,6 +2897,7 @@
 	</element>
 		<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_11_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -2782,6 +2910,7 @@
 	</element>
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_12_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -2794,6 +2923,7 @@
 	</element>
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_13_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -2806,6 +2936,7 @@
 	</element>
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_14_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -2818,6 +2949,7 @@
 	</element>
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_15_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -2830,6 +2962,7 @@
 	</element>
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_16_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -2842,6 +2975,7 @@
 	</element>
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_17_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -2854,6 +2988,7 @@
 	</element>
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_18_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -2866,6 +3001,7 @@
 	</element>
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_19_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -2878,6 +3014,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -2890,6 +3027,7 @@
 	</element>
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -2902,6 +3040,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -2914,6 +3053,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -2926,6 +3066,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -2938,6 +3079,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -2950,6 +3092,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -2962,6 +3105,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -2974,6 +3118,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -2986,6 +3131,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -2998,6 +3144,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_11_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -3010,6 +3157,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_12_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -3022,6 +3170,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_13_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -3034,6 +3183,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_14_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -3046,6 +3196,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_15_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -3058,6 +3209,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_16_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -3070,6 +3222,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_17_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -3082,6 +3235,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_18_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -3094,6 +3248,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_19_1">
 		<supports>Companion 1 Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -3111,6 +3266,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_1">
 		<supports>Companion Improvement 1</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
 				weapons or unarmed strikes.</p>
@@ -3137,6 +3293,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>[level:tamer:5],
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
 				weapons or unarmed strikes.</p>
@@ -3158,6 +3315,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			[level:tamer:9],ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
 				weapons or unarmed strikes.</p>
@@ -3179,6 +3337,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_1">
 		<supports>Companion Improvement 1</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -3193,6 +3352,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -3207,6 +3367,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -3221,6 +3382,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -3235,6 +3397,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -3249,6 +3412,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -3261,6 +3425,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_1">
 		<supports>Survival Instinct 1</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Strength Saving Throws</p>
 		</description>
@@ -3272,6 +3437,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_1">
 		<supports>Survival Instinct 1</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Dexterity Saving Throws</p>
 		</description>
@@ -3283,6 +3449,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_1">
 		<supports>Survival Instinct 1</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Constitution Saving Throws</p>
 		</description>
@@ -3294,6 +3461,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_1">
 		<supports>Survival Instinct 1</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Intelligence Saving Throws</p>
 		</description>
@@ -3305,6 +3473,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_1">
 		<supports>Survival Instinct 1</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Wisdom Saving Throws</p>
 		</description>
@@ -3316,6 +3485,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_1">
 		<supports>Survival Instinct 1</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Strength Saving Throws</p>
 		</description>
@@ -3328,6 +3498,7 @@
 	<element name="War Training" type="Class Feature" source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_1">
 		<supports>Companion Improvement 1</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
@@ -3348,6 +3519,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_1">
 		<supports>Companion Improvement 1</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
@@ -3369,6 +3541,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
@@ -3390,6 +3563,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
@@ -3411,6 +3585,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
@@ -3432,6 +3607,7 @@
 		<supports>Companion Improvement 1</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_1</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
