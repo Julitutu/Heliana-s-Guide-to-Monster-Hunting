@@ -3,7 +3,7 @@
 	<info>
 		<name>Familiars</name>
 		<description>Gelatinooze from Heliana's Guide to Monster Hunting</description>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="Gelatinooze.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Gelatinooze.xml" />
 		</update>
 	</info>
@@ -433,6 +433,7 @@
 	<element name="Toughen Up" type="Class Feature" source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_GELATINOOZE">
 		<supports>Gelatinooze</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -450,6 +451,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_GELATINOOZE">
 		<supports>Gelatinooze</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -464,6 +466,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_GELATINOOZE">
 		<supports>Gelatinooze</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -478,6 +481,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_GELATINOOZE">
 		<supports>Gelatinooze</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -492,6 +496,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_GELATINOOZE">
 		<supports>Gelatinooze</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -506,6 +511,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_GELATINOOZE">
 		<supports>Gelatinooze</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -520,6 +526,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_GELATINOOZE">
 		<supports>Gelatinooze</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -534,6 +541,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_GELATINOOZE">
 		<supports>Gelatinooze</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -548,6 +556,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_GELATINOOZE">
 		<supports>Gelatinooze</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -562,6 +571,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_GELATINOOZE">
 		<supports>Gelatinooze</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -576,6 +586,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_GELATINOOZE">
 		<supports>Gelatinooze</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -590,6 +601,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_GELATINOOZE">
 		<supports>Gelatinooze</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -604,6 +616,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_GELATINOOZE">
 		<supports>Gelatinooze</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -618,6 +631,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_GELATINOOZE">
 		<supports>Gelatinooze</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -632,6 +646,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_GELATINOOZE">
 		<supports>Gelatinooze</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -646,6 +661,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_GELATINOOZE">
 		<supports>Gelatinooze</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -660,6 +676,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_GELATINOOZE">
 		<supports>Gelatinooze</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -674,6 +691,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_GELATINOOZE">
 		<supports>Gelatinooze</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -688,6 +706,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_GELATINOOZE">
 		<supports>Gelatinooze</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -703,6 +722,7 @@
 	<element name="Ability Boost" type="Class Feature" source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_GELATINOOZE">
 		<supports>Gelatinooze</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -716,6 +736,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_GELATINOOZE">
 		<supports>Gelatinooze</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -730,6 +751,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -744,6 +766,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -758,6 +781,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -772,6 +796,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -786,6 +811,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -800,6 +826,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -814,6 +841,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -828,6 +856,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -842,6 +871,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -856,6 +886,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -870,6 +901,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -884,6 +916,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -898,6 +931,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -912,6 +946,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -926,6 +961,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -940,6 +976,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -954,6 +991,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -965,6 +1003,7 @@
 
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_GELATINOOZE">
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -979,6 +1018,7 @@
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -992,6 +1032,7 @@
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1006,6 +1047,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1019,6 +1061,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1033,6 +1076,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1046,6 +1090,7 @@
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1060,6 +1105,7 @@
 
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_GELATINOOZE">
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1073,6 +1119,7 @@
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1087,6 +1134,7 @@
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1100,6 +1148,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1114,6 +1163,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1127,6 +1177,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1141,6 +1192,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1154,6 +1206,7 @@
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1168,6 +1221,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1181,6 +1235,7 @@
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_10_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1195,6 +1250,7 @@
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_11_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_10_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1208,6 +1264,7 @@
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_12_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_11_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1222,6 +1279,7 @@
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_13_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_12_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1235,6 +1293,7 @@
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_14_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_13_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1250,6 +1309,7 @@
 
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_GELATINOOZE">
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -1263,6 +1323,7 @@
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -1277,6 +1338,7 @@
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -1290,6 +1352,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -1304,6 +1367,7 @@
 
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_GELATINOOZE">
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1317,6 +1381,7 @@
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1331,6 +1396,7 @@
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1344,6 +1410,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1358,6 +1425,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1371,6 +1439,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1385,6 +1454,7 @@
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1398,6 +1468,7 @@
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1412,6 +1483,7 @@
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1425,6 +1497,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1439,6 +1512,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1452,6 +1526,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1466,6 +1541,7 @@
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_13_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1479,6 +1555,7 @@
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_14_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_13_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1493,6 +1570,7 @@
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_15_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_14_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1506,6 +1584,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_16_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_15_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1522,6 +1601,7 @@
 
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_GELATINOOZE">
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1535,6 +1615,7 @@
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1549,6 +1630,7 @@
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1562,6 +1644,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1576,6 +1659,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1589,6 +1673,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1603,6 +1688,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1616,6 +1702,7 @@
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1630,6 +1717,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1643,6 +1731,7 @@
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_10_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1657,6 +1746,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_11_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_10_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1670,6 +1760,7 @@
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_12_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_11_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1685,6 +1776,7 @@
 
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_GELATINOOZE">
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1698,6 +1790,7 @@
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1712,6 +1805,7 @@
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1725,6 +1819,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1739,6 +1834,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1752,6 +1848,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1766,6 +1863,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1779,6 +1877,7 @@
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1793,6 +1892,7 @@
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1806,6 +1906,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1820,6 +1921,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_11_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1833,6 +1935,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_12_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_11_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1847,6 +1950,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_13_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_12_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1860,6 +1964,7 @@
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_14_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_13_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1874,6 +1979,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_15_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_14_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1887,6 +1993,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_12_GELATINOOZE">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_15_GELATINOOZE</requirements>
 		<supports>Gelatinooze Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1904,6 +2011,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_GELATINOOZE">
 		<supports>Gelatinooze</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
 				weapons or unarmed strikes.</p>
@@ -1930,6 +2038,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>[level:tamer:5],
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
 				weapons or unarmed strikes.</p>
@@ -1951,6 +2060,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			[level:tamer:9],ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
 				weapons or unarmed strikes.</p>
@@ -1972,6 +2082,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_GELATINOOZE">
 		<supports>Gelatinooze</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -1986,6 +2097,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -2000,6 +2112,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -2014,6 +2127,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -2028,6 +2142,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -2042,6 +2157,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -2054,6 +2170,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_GELATINOOZE">
 		<supports>Survival Instinct Gelatinooze</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Strength Saving Throws</p>
 		</description>
@@ -2065,6 +2182,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_GELATINOOZE">
 		<supports>Survival Instinct Gelatinooze</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Dexterity Saving Throws</p>
 		</description>
@@ -2076,6 +2194,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_GELATINOOZE">
 		<supports>Survival Instinct Gelatinooze</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Constitution Saving Throws</p>
 		</description>
@@ -2087,6 +2206,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_GELATINOOZE">
 		<supports>Survival Instinct Gelatinooze</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Intelligence Saving Throws</p>
 		</description>
@@ -2098,6 +2218,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_GELATINOOZE">
 		<supports>Survival Instinct Gelatinooze</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Wisdom Saving Throws</p>
 		</description>
@@ -2109,6 +2230,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_GELATINOOZE">
 		<supports>Survival Instinct Gelatinooze</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Charisma Saving Throws</p>
 		</description>
@@ -2121,6 +2243,7 @@
 	<element name="War Training" type="Class Feature" source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_GELATINOOZE">
 		<supports>Gelatinooze</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
@@ -2140,6 +2263,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_GELATINOOZE">
 		<supports>Gelatinooze</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
@@ -2160,6 +2284,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
@@ -2180,6 +2305,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
@@ -2200,6 +2326,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
@@ -2220,6 +2347,7 @@
 		<supports>Gelatinooze</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_GELATINOOZE</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
