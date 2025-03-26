@@ -3,7 +3,7 @@
     <info>
         <name>Bancho-gama</name>
         <description>Bancho-gama familiar from Ryoko's Guide to the Yokai Realms</description>
-        <update version="0.1.1">
+        <update version="0.1.2">
             <file name="Bancho-gama.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/Bancho-gama.xml" />
         </update>
     </info>
@@ -1840,8 +1840,12 @@
             <p>Your companion gains proficiency in Strength Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Strength Saving Throws</description>
+            <description>+{{bancho:str:save}} in Strength Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="bancho:str:save" value="proficiency" />
+           		<stat name="bancho:str:save" value="bancho:str:mod" />
+        	</rules>
     </element>
     <element name="Bancho-gama Survival Instincts: Dexterity" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
@@ -1852,8 +1856,12 @@
             <p>Your companion gains proficiency in Dexterity Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Dexterity Saving Throws</description>
+            <description>+{{bancho:dex:save}} in Dexterity Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="bancho:dex:save" value="proficiency" />
+           		<stat name="bancho:dex:save" value="bancho:dex:mod" />
+        	</rules>
     </element>
     <element name="Bancho-gama Survival Instincts: Constitution" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
@@ -1864,8 +1872,12 @@
             <p>Your companion gains proficiency in Constitution Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Constitution Saving Throws</description>
+            <description>+{{bancho:con:save}} in Constitution Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="bancho:con:save" value="proficiency" />
+           		<stat name="bancho:con:save" value="bancho:con:mod" />
+        	</rules>
     </element>
     <element name="Bancho-gama Survival Instincts: Intelligence" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
@@ -1876,8 +1888,12 @@
             <p>Your companion gains proficiency in Intelligence Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Intelligence Saving Throws</description>
+            <description>+{{bancho:int:save}} in Intelligence Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="bancho:int:save" value="proficiency" />
+           		<stat name="bancho:int:save" value="bancho:int:mod" />
+        	</rules>
     </element>
     <element name="Bancho-gama Survival Instincts: Wisdom" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
@@ -1888,8 +1904,12 @@
             <p>Your companion gains proficiency in Wisdom Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Wisdom Saving Throws</description>
+            <description>+{{bancho:wis:save}} in Wisdom Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="bancho:wis:save" value="proficiency" />
+           		<stat name="bancho:wis:save" value="bancho:wis:mod" />
+        	</rules>
     </element>
     <element name="Bancho-gama Survival Instincts: Charisma" type="Class Feature"
         source="Ryoko's Guide to the Yokai Realms"
@@ -1900,8 +1920,12 @@
             <p>Your companion gains proficiency in Charisma Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Charisma Saving Throws</description>
+            <description>+{{bancho:cha:save}} in Charisma Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="bancho:cha:save" value="proficiency" />
+           		<stat name="bancho:cha:save" value="bancho:cha:mod" />
+        	</rules>
     </element>
 
     <!-- War Training -->
