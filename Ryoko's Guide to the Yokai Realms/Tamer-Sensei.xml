@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Sensei</name>
+		<source>Ryoko's Guide to the Yokai Realms</source>
+		<update version="0.1.0">
+			<file name="Tamer-Sensei.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/Tamer-Sensei.xml" />
+		</update>
+	</info>
+
+	<element name="Sensei" type="Archetype" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_ARCHETYPE_TAMER_SENSEI">
+		<supports>Training Paradigm</supports>
+		<description>
+			<p>Sensei see how a body moves with supernatural acuity, identifying minor changes in form that can turn paltry scuffs into bone-breaking blows. Through meticulous coaching, they unveil the pugilists within their companions, teaching them to dance between enemies’ strikes, upset their foes’ balance, and finish them with lightning fast combinations. Perhaps you yourself were a master of martial arts, but are now too old to fight. Maybe you grew up watching boxers, but always saw the flaws in their technique. Whatever the case, you are a teacher, and your companions are your eager students.</p>
+            <div class="reference"><p class="flavor">“Worry yourself not with how people might quote you.”</p></div>
+			<div element="ID_LT_RGTTYR_ARCHETYPE_FEATURE_SENSEI_MARTIAL_STRIKES" />
+			<div element="ID_LT_RGTTYR_ARCHETYPE_FEATURE_SENSEI_MARTIAL_TECHNIQUES" />
+			<div element="ID_LT_RGTTYR_ARCHETYPE_FEATURE_SENSEI_SENSEI_SPELLS" />
+			<div element="ID_LT_RGTTYR_ARCHETYPE_FEATURE_SENSEI_UNLEASH" />
+			<div element="ID_LT_RGTTYR_ARCHETYPE_FEATURE_SENSEI_SHRUG_IT_OFF" />
+			<div element="ID_LT_RGTTYR_ARCHETYPE_FEATURE_SENSEI_MARTIAL_PRODIGY" />
+		</description>
+		<sheet display="false">
+			<description>Sensei see how a body moves with supernatural acuity, identifying minor changes in form that can turn paltry scuffs into bone-breaking blows.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LT_RGTTYR_ARCHETYPE_FEATURE_SENSEI_MARTIAL_STRIKES" level="3" />
+			<grant type="Archetype Feature" id="ID_LT_RGTTYR_ARCHETYPE_FEATURE_SENSEI_MARTIAL_TECHNIQUES" level="3" />
+			<grant type="Archetype Feature" id="ID_LT_RGTTYR_ARCHETYPE_FEATURE_SENSEI_SENSEI_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_LT_RGTTYR_ARCHETYPE_FEATURE_SENSEI_UNLEASH" level="7" />
+			<grant type="Archetype Feature" id="ID_LT_RGTTYR_ARCHETYPE_FEATURE_SENSEI_SHRUG_IT_OFF" level="10" />
+			<grant type="Archetype Feature" id="ID_LT_RGTTYR_ARCHETYPE_FEATURE_SENSEI_MARTIAL_PRODIGY" level="14" />
+		</rules>
+	</element>
+
+	<element name="Martial Strikes" type="Archetype Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_ARCHETYPE_FEATURE_SENSEI_MARTIAL_STRIKES">
+		<description>
+			<p>You teach your companion how to use its body as a deadly weapon. Your companion gains a new attack option: a Martial Strike. Your companion is proficient with this melee attack, which it makes using its body. Your companion can use its choice of Strength or Dexterity when calculating its attack and damage modifiers for this attack, which deals damage of a type (usually bludgeoning, piercing, or slashing) that makes sense for your companion (work with your GM to determine this for each companion). These attacks deal 1d6 damage starting at 3rd level, 1d8 at 7th level, 1d10 at 10th level, and 1d12 at 18th level.</p>
+			<p class="indent">When you reach 5th level in this class, your companion can make two Martial Strike attacks when it takes the Attack action on its turn. When you reach 14th level in this class, your companion can make three Martial Strike attacks when it takes the attack action on its turn.</p>
+		</description>
+		<sheet action="Action" >
+			<description>Martial Strike: STR or DEX to hit. 1d{{martial strikes:damage}} damage (B/P/S).</description>
+            <description level="5">Two Martial Strike: STR or DEX to hit. {{martial strikes:damage}} damage (B/P/S).</description>
+            <description level="14">Three Martial Strike: STR or DEX to hit. {{martial strikes:damage}} damage (B/P/S).</description>
+		</sheet>
+        <rules>
+            <stat name="martial strikes:damage" value="6" />
+            <stat name="martial strikes:damage" value="2" level="7"/>
+            <stat name="martial strikes:damage" value="2" level="10"/>
+            <stat name="martial strikes:damage" value="2" level="18"/>
+        </rules>
+	</element>
+
+	<element name="Martial Techniques" type="Archetype Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_ARCHETYPE_FEATURE_SENSEI_MARTIAL_TECHNIQUES">
+		<description>
+			<p>You learn specific martial techniques, which you teach to each of your companions. Choose three techniques from the Martial Techniques section at the end of this subclass. When you command a companion on your turn, you can instruct it to use one or more of these techniques.</p>
+			<p class="indent">When you reach 7th, 10th, 14th, and 18th level in this class, you learn one additional technique that your companions can use.</p>
+            <div class="reference">
+                <div element="ID_LT_RGTTYR_MARTIAL_TECHNIQUE_AVOID" />
+                <div element="ID_LT_RGTTYR_MARTIAL_TECHNIQUE_BLOCK" />
+                <div element="ID_LT_RGTTYR_MARTIAL_TECHNIQUE_CHARGE" />
+                <div element="ID_LT_RGTTYR_MARTIAL_TECHNIQUE_DANCING_FEET" />
+                <div element="ID_LT_RGTTYR_MARTIAL_TECHNIQUE_GRAPPLE" />
+                <div element="ID_LT_RGTTYR_MARTIAL_TECHNIQUE_SWEEP" />
+                <div element="ID_LT_RGTTYR_MARTIAL_TECHNIQUE_THROW" />
+                <div element="ID_LT_RGTTYR_MARTIAL_TECHNIQUE_PEOPLES_ELBOW" />
+                <div element="ID_LT_RGTTYR_MARTIAL_TECHNIQUE_UPPERCUT" />
+            </div>
+		</description>
+		<sheet>
+			<description>When you command a companion on your turn, you can instruct it to use one or more of these techniques.</description>
+		</sheet>
+        <rules>
+            <select type="Archetype Feature" name="Martial Technique (Level 3)" supports="Martial Technique" number="3" />
+			<select type="Archetype Feature" name="Martial Technique (Level 7)" supports="Martial Technique" level="7" />
+			<select type="Archetype Feature" name="Martial Technique (Level 10)" supports="Martial Technique" level="10" />
+			<select type="Archetype Feature" name="Martial Technique (Level 14)" supports="Martial Technique" level="14" />
+			<select type="Archetype Feature" name="Martial Technique (Level 18)" supports="Martial Technique" level="18" />
+        </rules>
+	</element>
+
+	<element name="Sensei Spells" type="Archetype Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_ARCHETYPE_FEATURE_SENSEI_SENSEI_SPELLS">
+		<description>
+			<p>You learn additional spells when you reach certain levels in this class, as shown in the Sensei Spells table. Each spell counts as a tamer spell for you, but it doesn’t count against the number of tamer spells you know.</p>
+			<h5>Sensei Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Tamer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><i>flash*, repulsing palm*</i></td></tr>
+				<tr><td>5th</td><td><i>earthskin*, wind strike*</i></td></tr>
+				<tr><td>9th</td><td><i>create food and water, haste</i></td></tr>
+				<tr><td>13th</td><td><i>freedom of movement, steelskin*</i></td></tr>
+				<tr><td>17th</td><td><i>endure*, greater restoration</i></td></tr>
+			</table>
+            <p class="indent">*See Chapter 13 - Spells</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_RGTTYR_SPELL_FLASH" level="3" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_RGTTYR_SPELL_REPULSING_PALM" level="3" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_RGTTYR_SPELL_SKIN_OF_STONE" level="5" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_RGTTYR_SPELL_WIND_STRIKE" level="5" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CREATE_FOOD_AND_WATER" level="9" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="9" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="13" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_RGTTYR_SPELL_SKIN_OF_STEEL" level="13" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_RGTTYR_SPELL_ENDURE" level="17" spellcasting="Tamer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" level="17" spellcasting="Tamer" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Unleash" type="Archetype Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_ARCHETYPE_FEATURE_SENSEI_UNLEASH">
+		<description>
+			<p>With a flourish, your companion can perform a series of complicated martial combinations, flitting between targets with lightning speed. As an action, your companion moves up to its speed (this movement doesn’t provoke opportunity attacks), and can make up to six Martial Strike attacks, each of which must be against a different target. Until the end of its turn, the companion’s movement does not provoke opportunity attacks.</p>
+            <p class="indent">Once a companion uses this action, it can’t do so again until you finish a short or long rest. Starting at 18th level, a companion can use this action twice between each of your short or long rests.</p>
+		</description>
+		<sheet usage="1/Short Rest" action="Action">
+			<description>Moves up (No OA), and can make up to six Martial Strike attacks (different target).</description>
+            <description level="18" usage="2/Short Rest">Moves up (No OA), and can make up to six Martial Strike attacks (different target).</description>
+		</sheet>
+	</element>
+
+	<element name="Shrug It Off" type="Archetype Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_ARCHETYPE_FEATURE_SENSEI_SHRUG_IT_OFF">
+		<description>
+			<p>You have learnt to use your mental connection to shield your companion from pain and fatigue. Whenever your companion takes bludgeoning, piercing, or slashing damage, you can reduce the damage it takes by an amount equal to your tamer spellcasting ability modifier (minimum reduction of 1). You can’t use this feature while you are incapacitated.</p>
+		</description>
+		<sheet>
+			<description>Whenever your companion takes bludgeoning, piercing, or slashing damage, reduce {{shrug it off}} the damage.</description>
+		</sheet>
+        <rules>
+            <stat name="shrug it off" value="1" bonus="base"/>
+            <stat name="shrug it off" value="tamer:spell:modifier" bonus="base"/>
+        </rules>
+	</element>
+
+	<element name="Martial Prodigy" type="Archetype Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_ARCHETYPE_FEATURE_SENSEI_MARTIAL_PRODIGY">
+		<description>
+			<p>As an action, you can infuse one summoned companion with your own spirit. For 1 minute, it can make four Martial Strike attacks when it takes the Attack action on its turn instead of three, it can take two bonus actions on each of its turns, and it gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns.</p>
+            <p class="indent">Once you use this feature, you can’t do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Action">
+			<description>For 1 min, when Attack: make four Martial Strike attacks, Two bonus actions on each of its turns, and {{tamer:spell:modifier}} temp hp (Start of each of its turns).</description>
+		</sheet>
+	</element>
+
+    <!-- Martial Techniques -->
+	<element name="Avoid" type="Archetype Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_MARTIAL_TECHNIQUE_AVOID">
+        <supports>Martial Technique</supports>
+		<description>
+			<p>As a bonus action, your companion can take the Dodge action.</p>
+		</description>
+		<sheet action="Bonus Action">
+            <description>Dodge action.</description>
+        </sheet>
+	</element>
+
+    <element name="Block" type="Archetype Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_MARTIAL_TECHNIQUE_BLOCK">
+        <supports>Martial Technique</supports>
+		<description>
+			<p>As a reaction when your companion is attacked by a creature it can see and that attack deals bludgeoning, piercing, or slashing damage, your companion can add your proficiency bonus to its AC against that attack, potentially turning a hit into a miss. If the attack still hits, the damage dealt is reduced by an amount equal to 1d6 plus your proficiency bonus.</p>
+		</description>
+		<sheet action="Reaction">
+            <description>If B/P/S damage, add {{proficiency}} to AC. If hits, the damage is reduced by an amount equal to 1d6 + {{proficiency}}.</description>
+        </sheet>
+	</element>
+
+    <element name="Charge" type="Archetype Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_MARTIAL_TECHNIQUE_CHARGE">
+        <supports>Martial Technique</supports>
+		<description>
+			<p>As an action, your companion gains additional movement equal to its speed, and it can make one Martial Strike attack. If your companion moves up to 20 feet straight towards a creature and then hits it with a Martial Strike, the attack deals an extra 1d10 damage, and the target must succeed on a Strength saving throw (DC equals 8 + your companion’s Strength modifier + your proficiency bonus) or be knocked prone. A creature more than one size larger than your companion automatically succeeds on this saving throw.</p>
+		</description>
+		<sheet action="Action">
+            <description>Moves (20 feet straight) and hits a Martial Strike, plus d10, Save DC STR or prone.</description>
+        </sheet>
+	</element>
+
+    <element name="Dancing Feet" type="Archetype Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_MARTIAL_TECHNIQUE_DANCING_FEET">
+        <supports>Martial Technique</supports>
+		<description>
+			<p>As a bonus action, your companion can take the Disengage action.</p>
+		</description>
+		<sheet action="Bonus Action">
+            <description>Disengage action.</description>
+        </sheet>
+	</element>
+
+    <element name="Grapple" type="Archetype Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_MARTIAL_TECHNIQUE_GRAPPLE">
+        <supports>Martial Technique</supports>
+		<description>
+			<p>As a bonus action, your companion can attempt to grapple one creature within its reach by making a grapple check.</p>
+		</description>
+		<sheet action="Bonus Action">
+            <description>Grapple.</description>
+        </sheet>
+	</element>
+
+    <element name="Sweep" type="Archetype Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_MARTIAL_TECHNIQUE_SWEEP">
+        <supports>Martial Technique</supports>
+		<description>
+			<p>As a bonus action, your companion can attempt to sweep a creature’s legs (or other anatomy) to knock it prone using the Shoving a Creature rules. The companion can choose to make a Strength (Athletics) or Dexterity (Athletics) check for the contest. A creature more than one size larger than your companion automatically succeeds on this check.</p>
+		</description>
+		<sheet action="Bonus Action">
+            <description>Shoving prone with Athletics(Choose STR or DEX).</description>
+        </sheet>
+	</element>
+
+    <element name="Throw" type="Archetype Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_MARTIAL_TECHNIQUE_THROW">
+        <supports>Martial Technique</supports>
+		<description>
+			<p>Once per turn, when your companion has a creature grappled and takes the Attack action, it can replace one of its attacks with a special melee attack. Instead of an attack roll, it makes a Strength or Dexterity (Athletics) check contested by the target’s Strength (Athletics) or Dexterity (Acrobatics) check (target’s choice). If your companion succeeds, it can move the creature to an unoccupied space within 5 feet of it and can knock it prone, dealing bludgeoning damage to it equal to two rolls of your companion’s Martial Strikes damage dice.</p>
+		</description>
+		<sheet usage="1/Turn">
+            <description>When grappled, replace one attack. Constest Athletics(STR or DEX) check vs STR (Athletics) or DEX (Acrobatics). If your companion succeeds, move the creature to an unoccupied space within 5 feet of it and can knock it prone, dealing 2d{{martial strikes:damage}} bludgeoning damage.</description>
+        </sheet>
+	</element>
+
+    <element name="Peoples’ Elbow" type="Archetype Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_MARTIAL_TECHNIQUE_PEOPLES_ELBOW">
+        <supports>Martial Technique</supports>
+		<description>
+			<p>Once per turn, when your companion takes the Attack action, it can replace one of its attacks with a special melee attack, which must be against a prone target. Your companion leaps into the air and places its full bodyweight behind a particularly hard or sharp part of its anatomy. It makes a melee attack roll against the target. The critical hit threshold (see page 83) for this attack is reduced by 1 for each size category that your companion is larger than the target. On a hit, the target takes damage equal to two rolls of your companion’s Martial Strikes damage dice, of the same type as your companion’s Martial Strike attacks. Hit or miss, your companion falls prone.</p>
+		</description>
+		<sheet usage="1/Turn">
+            <description>Replace one attack (target must be prone). Makes a melee attack roll (critical threshold reduced by 1 for each size category that your companion is larger than the target), dealing 2d{{martial strikes:damage}}. Hit or miss, your companion falls prone.</description>
+        </sheet>
+	</element>
+
+    <element name="Uppercut" type="Archetype Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_LT_RGTTYR_MARTIAL_TECHNIQUE_UPPERCUT">
+        <supports>Martial Technique</supports>
+		<description>
+			<p>Once per turn, when your companion takes the Attack action, it can replace one of its attacks with a special melee attack, which must be against a target that isn’t prone. It makes a melee attack roll against the target. The critical hit threshold (see page 83) for this attack is reduced by 1 for each size category that your companion is smaller than the target. On a hit, the target takes damage equal to two rolls of your companion’s Martial Strikes damage dice, of the same type as your companion’s Martial Strike attacks.</p>
+		</description>
+		<sheet usage="1/Turn">
+            <description>Replace one attack (target must be stand). Makes a melee attack roll (critical threshold reduced by 1 for each size category that your companion is smaller than the target), dealing 2d{{martial strikes:damage}}.</description>
+        </sheet>
+	</element>
+</elements>
