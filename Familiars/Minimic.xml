@@ -3,7 +3,7 @@
     <info>
         <name>Familiars</name>
         <description>Minimic from Heliana's Guide to Monster Hunting</description>
-        <update version="0.1.1">
+        <update version="0.1.2">
             <file name="Minimic.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Minimic.xml" />
         </update>
     </info>
@@ -445,6 +445,7 @@
 	<element name="Toughen Up" type="Class Feature" source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_MINIMIC">
 		<supports>Minimic</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -462,6 +463,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_MINIMIC">
 		<supports>Minimic</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -476,6 +478,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_MINIMIC">
 		<supports>Minimic</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -490,6 +493,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_MINIMIC">
 		<supports>Minimic</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -504,6 +508,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_MINIMIC">
 		<supports>Minimic</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -518,6 +523,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_MINIMIC">
 		<supports>Minimic</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -532,6 +538,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_MINIMIC">
 		<supports>Minimic</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -546,6 +553,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_MINIMIC">
 		<supports>Minimic</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -560,6 +568,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_MINIMIC">
 		<supports>Minimic</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -574,6 +583,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_MINIMIC">
 		<supports>Minimic</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -588,6 +598,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_MINIMIC">
 		<supports>Minimic</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -602,6 +613,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_MINIMIC">
 		<supports>Minimic</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -616,6 +628,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_MINIMIC">
 		<supports>Minimic</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -630,6 +643,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_MINIMIC">
 		<supports>Minimic</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -644,6 +658,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_MINIMIC">
 		<supports>Minimic</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -658,6 +673,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_MINIMIC">
 		<supports>Minimic</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -672,6 +688,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_MINIMIC">
 		<supports>Minimic</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -686,6 +703,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_MINIMIC">
 		<supports>Minimic</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -700,6 +718,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_MINIMIC">
 		<supports>Minimic</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
@@ -715,6 +734,7 @@
 	<element name="Ability Boost" type="Class Feature" source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_MINIMIC">
 		<supports>Minimic</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -728,6 +748,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_MINIMIC">
 		<supports>Minimic</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -742,6 +763,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -756,6 +778,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -770,6 +793,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -784,6 +808,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -798,6 +823,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -812,6 +838,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -826,6 +853,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -840,6 +868,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -854,6 +883,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -868,6 +898,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -882,6 +913,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -896,6 +928,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -910,6 +943,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -924,6 +958,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -938,6 +973,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -952,6 +988,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -966,6 +1003,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -977,6 +1015,7 @@
  
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_MINIMIC">
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -990,6 +1029,7 @@
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1004,6 +1044,7 @@
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1017,6 +1058,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1031,6 +1073,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1044,6 +1087,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1058,6 +1102,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1071,6 +1116,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -1085,6 +1131,7 @@
 	
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_MINIMIC">
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1099,6 +1146,7 @@
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1112,6 +1160,7 @@
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1126,6 +1175,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1139,6 +1189,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1153,6 +1204,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1166,6 +1218,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1180,6 +1233,7 @@
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1193,6 +1247,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1207,6 +1262,7 @@
 
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_MINIMIC">
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -1220,6 +1276,7 @@
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -1234,6 +1291,7 @@
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -1247,6 +1305,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -1261,6 +1320,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -1274,6 +1334,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -1288,6 +1349,7 @@
 
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_MINIMIC">
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1301,6 +1363,7 @@
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1315,6 +1378,7 @@
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1328,6 +1392,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1342,6 +1407,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1355,6 +1421,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1369,6 +1436,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1382,6 +1450,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1396,6 +1465,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1409,6 +1479,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1423,6 +1494,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1436,6 +1508,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1450,6 +1523,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_13_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1463,6 +1537,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_14_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_13_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1477,6 +1552,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_15_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_14_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1490,6 +1566,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_16_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_15_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
@@ -1504,6 +1581,7 @@
 
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_MINIMIC">
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1517,6 +1595,7 @@
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1531,6 +1610,7 @@
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1544,6 +1624,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1558,6 +1639,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1571,6 +1653,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1585,6 +1668,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1598,6 +1682,7 @@
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1612,6 +1697,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1625,6 +1711,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_10_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1639,6 +1726,7 @@
 
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_MINIMIC">
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1652,6 +1740,7 @@
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1666,6 +1755,7 @@
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1679,6 +1769,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1693,6 +1784,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1706,6 +1798,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1720,6 +1813,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1733,6 +1827,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1747,6 +1842,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1760,6 +1856,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1774,6 +1871,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_11_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1787,6 +1885,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_12_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_11_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1801,6 +1900,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_13_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_12_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1814,6 +1914,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_14_MINIMIC">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_13_MINIMIC</requirements>
 		<supports>Minimic Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1831,6 +1932,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_MINIMIC">
 		<supports>Minimic</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
 				weapons or unarmed strikes.</p>
@@ -1855,6 +1957,7 @@
 		<supports>Minimic</supports>
 		<requirements>[level:tamer:5],
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
 				weapons or unarmed strikes.</p>
@@ -1876,6 +1979,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			[level:tamer:9],ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
 				weapons or unarmed strikes.</p>
@@ -1897,6 +2001,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_MINIMIC">
 		<supports>Minimic</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -1911,6 +2016,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -1925,6 +2031,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -1939,6 +2046,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -1953,6 +2061,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -1967,6 +2076,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -1979,6 +2089,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_MINIMIC">
 		<supports>Survival Instinct Minimic</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Strength Saving Throws</p>
 		</description>
@@ -1990,6 +2101,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_MINIMIC">
 		<supports>Survival Instinct Minimic</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Dexterity Saving Throws</p>
 		</description>
@@ -2001,6 +2113,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_MINIMIC">
 		<supports>Survival Instinct Minimic</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Constitution Saving Throws</p>
 		</description>
@@ -2012,6 +2125,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_MINIMIC">
 		<supports>Survival Instinct Minimic</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Intelligence Saving Throws</p>
 		</description>
@@ -2023,6 +2137,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_MINIMIC">
 		<supports>Survival Instinct Minimic</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Wisdom Saving Throws</p>
 		</description>
@@ -2034,6 +2149,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_MINIMIC">
 		<supports>Survival Instinct Minimic</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Charisma Saving Throws</p>
 		</description>
@@ -2046,6 +2162,7 @@
 	<element name="War Training" type="Class Feature" source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_MINIMIC">
 		<supports>Minimic</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
@@ -2066,6 +2183,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_MINIMIC">
 		<supports>Minimic</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
@@ -2087,6 +2205,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
@@ -2108,6 +2227,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
@@ -2129,6 +2249,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
@@ -2150,6 +2271,7 @@
 		<supports>Minimic</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_MINIMIC</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
