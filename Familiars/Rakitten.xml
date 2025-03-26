@@ -3,7 +3,7 @@
     <info>
         <name>Familiars</name>
         <description>Rakitten from Heliana's Guide to Monster Hunting</description>
-        <update version="0.1.2">
+        <update version="0.1.3">
             <file name="Rakitten.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Rakitten.xml" />
         </update>
     </info>
@@ -1719,8 +1719,12 @@
             <p>Your companion gains proficiency in Strength Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Strength Saving Throws</description>
+            <description>+{{rakitten:str:save}} in Strength Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="rakitten:str:save" value="proficiency" />
+           		<stat name="rakitten:str:save" value="rakitten:str:mod" />
+        	</rules>
     </element>
     <element name="Rakitten Survival Instincts: Dexterity" type="Class Feature"
         source="Heliana's Guide to Monster Hunting"
@@ -1731,8 +1735,12 @@
             <p>Your companion gains proficiency in Dexterity Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Dexterity Saving Throws</description>
+            <description>+{{rakitten:dex:save}} in Dexterity Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="rakitten:dex:save" value="proficiency" />
+           		<stat name="rakitten:dex:save" value="rakitten:dex:mod" />
+        	</rules>
     </element>
     <element name="Rakitten Survival Instincts: Constitution" type="Class Feature"
         source="Heliana's Guide to Monster Hunting"
@@ -1743,8 +1751,12 @@
             <p>Your companion gains proficiency in Constitution Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Constitution Saving Throws</description>
+            <description>+{{rakitten:con:save}} in Constitution Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="rakitten:con:save" value="proficiency" />
+           		<stat name="rakitten:con:save" value="rakitten:con:mod" />
+        	</rules>
     </element>
     <element name="Rakitten Survival Instincts: Intelligence" type="Class Feature"
         source="Heliana's Guide to Monster Hunting"
@@ -1755,8 +1767,12 @@
             <p>Your companion gains proficiency in Intelligence Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Intelligence Saving Throws</description>
+            <description>+{{rakitten:int:save}} in Intelligence Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="rakitten:int:save" value="proficiency" />
+           		<stat name="rakitten:int:save" value="rakitten:int:mod" />
+        	</rules>
     </element>
     <element name="Rakitten Survival Instincts: Wisdom" type="Class Feature"
         source="Heliana's Guide to Monster Hunting"
@@ -1767,8 +1783,12 @@
             <p>Your companion gains proficiency in Wisdom Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Wisdom Saving Throws</description>
+            <description>+{{rakitten:wis:save}} in Wisdom Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="rakitten:wis:save" value="proficiency" />
+           		<stat name="rakitten:wis:save" value="rakitten:wis:mod" />
+        	</rules>
     </element>
     <element name="Rakitten Survival Instincts: Charisma" type="Class Feature"
         source="Heliana's Guide to Monster Hunting"
@@ -1779,8 +1799,12 @@
             <p>Your companion gains proficiency in Charisma Saving Throws</p>
         </description>
         <sheet>
-            <description>+{{proficiency}} in Charisma Saving Throws</description>
+            <description>+{{rakitten:cha:save}} in Charisma Saving Throws</description>
         </sheet>
+        <rules>
+            		<stat name="rakitten:cha:save" value="proficiency" />
+           		<stat name="rakitten:cha:save" value="rakitten:cha:mod" />
+        	</rules>
     </element>
     
     <!-- War Training -->
