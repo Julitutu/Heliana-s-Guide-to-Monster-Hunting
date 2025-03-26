@@ -3,7 +3,7 @@
 	<info>
 		<name>Familiars</name>
 		<description>Gelatinooze from Heliana's Guide to Monster Hunting</description>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="Gelatinooze.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Gelatinooze.xml" />
 		</update>
 	</info>
