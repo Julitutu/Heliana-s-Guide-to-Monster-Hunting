@@ -3,7 +3,7 @@
 	<info>
 		<name>Familiars</name>
 		<description>Gelatinooze from Heliana's Guide to Monster Hunting</description>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="Gelatinooze.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Gelatinooze.xml" />
 		</update>
 	</info>
@@ -2175,8 +2175,12 @@
 			<p>Your companion gains proficiency in Strength Saving Throws</p>
 		</description>
 		<sheet>
-			<description>Gelatinooze +{{proficiency}} in Strength Saving Throws</description>
+			<description>Gelatinooze +{{gelatinooze:str:save}} in Strength Saving Throws</description>
 		</sheet>
+		<rules>
+            		<stat name="gelatinooze:str:save" value="proficiency" />
+           		<stat name="gelatinooze:str:save" value="gelatinooze:str:mod" />
+        	</rules>
 	</element>
 	<element name="Gelatinooze Survival Instincts: Dexterity" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
@@ -2187,8 +2191,12 @@
 			<p>Your companion gains proficiency in Dexterity Saving Throws</p>
 		</description>
 		<sheet>
-			<description>Gelatinooze +{{proficiency}} in Dexterity Saving Throws</description>
+			<description>Gelatinooze +{{gelatinooze:dex:save}} in Dexterity Saving Throws</description>
 		</sheet>
+		<rules>
+            		<stat name="gelatinooze:dex:save" value="proficiency" />
+           		<stat name="gelatinooze:dex:save" value="gelatinooze:dex:mod" />
+        	</rules>
 	</element>
 	<element name="Gelatinooze Survival Instincts: Constitution" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
@@ -2199,8 +2207,12 @@
 			<p>Your companion gains proficiency in Constitution Saving Throws</p>
 		</description>
 		<sheet>
-			<description>Gelatinooze +{{proficiency}} in Constitution Saving Throws</description>
+			<description>Gelatinooze +{{gelatinooze:con:save}} in Constitution Saving Throws</description>
 		</sheet>
+		<rules>
+            		<stat name="gelatinooze:con:save" value="proficiency" />
+           		<stat name="gelatinooze:con:save" value="gelatinooze:con:mod" />
+        	</rules>
 	</element>
 	<element name="Gelatinooze Survival Instincts: Intelligence" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
@@ -2211,8 +2223,12 @@
 			<p>Your companion gains proficiency in Intelligence Saving Throws</p>
 		</description>
 		<sheet>
-			<description>Gelatinooze +{{proficiency}} in Intelligence Saving Throws</description>
+			<description>Gelatinooze +{{gelatinooze:int:save}} in Intelligence Saving Throws</description>
 		</sheet>
+		<rules>
+            		<stat name="gelatinooze:int:save" value="proficiency" />
+           		<stat name="gelatinooze:int:save" value="gelatinooze:int:mod" />
+        	</rules>
 	</element>
 	<element name="Gelatinooze Survival Instincts: Wisdom" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
@@ -2223,8 +2239,12 @@
 			<p>Your companion gains proficiency in Wisdom Saving Throws</p>
 		</description>
 		<sheet>
-			<description>Gelatinooze +{{proficiency}} in Wisdom Saving Throws</description>
+			<description>Gelatinooze +{{gelatinooze:wis:save}} in Wisdom Saving Throws</description>
 		</sheet>
+		<rules>
+            		<stat name="gelatinooze:wis:save" value="proficiency" />
+           		<stat name="gelatinooze:wis:save" value="gelatinooze:wis:mod" />
+        	</rules>
 	</element>
 	<element name="Gelatinooze Survival Instincts: Charisma" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
@@ -2235,8 +2255,12 @@
 			<p>Your companion gains proficiency in Charisma Saving Throws</p>
 		</description>
 		<sheet>
-			<description>Gelatinooze +{{proficiency}} in CHA Saving Throws</description>
+			<description>Gelatinooze +{{gelatinooze:cha:save}} in CHA Saving Throws</description>
 		</sheet>
+		<rules>
+            		<stat name="gelatinooze:cha:save" value="proficiency" />
+           		<stat name="gelatinooze:cha:save" value="gelatinooze:cha:mod" />
+        	</rules>
 	</element>
 
 	<!-- War Training -->
