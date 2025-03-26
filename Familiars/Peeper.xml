@@ -2,8 +2,8 @@
 <elements>
     <info>
         <name>Familiars</name>
-        <description>peeper from Heliana's Guide to Monster Hunting</description>
-        <update version="0.1.0">
+        <description>Peeper from Heliana's Guide to Monster Hunting</description>
+        <update version="0.1.1">
             <file name="Peeper.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Peeper.xml" />
         </update>
     </info>
