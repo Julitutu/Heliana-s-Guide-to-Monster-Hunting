@@ -3,7 +3,7 @@
 	<info>
 		<name>Familiars</name>
 		<description>Dragonling from Heliana's Guide to Monster Hunting</description>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="Dragonling.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Dragonling.xml" />
 		</update>
 	</info>
@@ -379,6 +379,7 @@
 	<element name="Toughen Up" type="Class Feature" source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_DRAGONLING">
 		<supports>Dragonling</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion's hit point maximum by rolling this Hit Die and adding your
@@ -396,6 +397,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_DRAGONLING">
 		<supports>Dragonling</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion's hit point maximum by rolling this Hit Die and adding your
@@ -410,6 +412,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_DRAGONLING">
 		<supports>Dragonling</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion's hit point maximum by rolling this Hit Die and adding your
@@ -424,6 +427,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_DRAGONLING">
 		<supports>Dragonling</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion's hit point maximum by rolling this Hit Die and adding your
@@ -438,6 +442,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_DRAGONLING">
 		<supports>Dragonling</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion's hit point maximum by rolling this Hit Die and adding your
@@ -452,6 +457,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_DRAGONLING">
 		<supports>Dragonling</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion's hit point maximum by rolling this Hit Die and adding your
@@ -466,6 +472,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_DRAGONLING">
 		<supports>Dragonling</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion's hit point maximum by rolling this Hit Die and adding your
@@ -480,6 +487,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_DRAGONLING">
 		<supports>Dragonling</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion's hit point maximum by rolling this Hit Die and adding your
@@ -494,6 +502,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_DRAGONLING">
 		<supports>Dragonling</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion's hit point maximum by rolling this Hit Die and adding your
@@ -508,6 +517,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_DRAGONLING">
 		<supports>Dragonling</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion's hit point maximum by rolling this Hit Die and adding your
@@ -522,6 +532,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_DRAGONLING">
 		<supports>Dragonling</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion's hit point maximum by rolling this Hit Die and adding your
@@ -536,6 +547,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_DRAGONLING">
 		<supports>Dragonling</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion's hit point maximum by rolling this Hit Die and adding your
@@ -550,6 +562,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_DRAGONLING">
 		<supports>Dragonling</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion's hit point maximum by rolling this Hit Die and adding your
@@ -564,6 +577,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_DRAGONLING">
 		<supports>Dragonling</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion's hit point maximum by rolling this Hit Die and adding your
@@ -578,6 +592,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_DRAGONLING">
 		<supports>Dragonling</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion's hit point maximum by rolling this Hit Die and adding your
@@ -592,6 +607,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_DRAGONLING">
 		<supports>Dragonling</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion's hit point maximum by rolling this Hit Die and adding your
@@ -606,6 +622,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_DRAGONLING">
 		<supports>Dragonling</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion's hit point maximum by rolling this Hit Die and adding your
@@ -620,6 +637,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_DRAGONLING">
 		<supports>Dragonling</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion's hit point maximum by rolling this Hit Die and adding your
@@ -634,6 +652,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_DRAGONLING">
 		<supports>Dragonling</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
 				Increase your companion's hit point maximum by rolling this Hit Die and adding your
@@ -649,6 +668,7 @@
 	<element name="Ability Boost" type="Class Feature" source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DRAGONLING">
 		<supports>Dragonling</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -662,6 +682,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_DRAGONLING">
 		<supports>Dragonling</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -676,6 +697,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -690,6 +712,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -704,6 +727,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -718,6 +742,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -732,6 +757,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -746,6 +772,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -760,6 +787,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -774,6 +802,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -788,6 +817,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -802,6 +832,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -816,6 +847,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -830,6 +862,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -844,6 +877,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -858,6 +892,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -872,6 +907,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -886,6 +922,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -900,6 +937,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
@@ -911,6 +949,7 @@
 
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_DRAGONLING">
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -924,6 +963,7 @@
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -938,6 +978,7 @@
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -951,6 +992,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -965,6 +1007,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -978,6 +1021,7 @@
     <element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
@@ -992,6 +1036,7 @@
 
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_DRAGONLING">
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1005,6 +1050,7 @@
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1019,6 +1065,7 @@
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1032,6 +1079,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1046,6 +1094,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1059,6 +1108,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1073,6 +1123,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1086,6 +1137,7 @@
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1100,6 +1152,7 @@
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1113,6 +1166,7 @@
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_10_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1127,6 +1181,7 @@
 
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_DRAGONLING">
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -1140,6 +1195,7 @@
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -1154,6 +1210,7 @@
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -1167,6 +1224,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -1181,6 +1239,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -1194,6 +1253,7 @@
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -1208,6 +1268,7 @@
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_7_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -1221,6 +1282,7 @@
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_8_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_7_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
@@ -1235,6 +1297,7 @@
 
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_DRAGONLING">
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1249,6 +1312,7 @@
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1262,6 +1326,7 @@
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1276,6 +1341,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1289,6 +1355,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1303,6 +1370,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1316,6 +1384,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1330,6 +1399,7 @@
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1343,6 +1413,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1357,6 +1428,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1370,6 +1442,7 @@
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
@@ -1385,6 +1458,7 @@
 
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_DRAGONLING">
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1399,6 +1473,7 @@
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1412,6 +1487,7 @@
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1426,6 +1502,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1439,6 +1516,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1453,6 +1531,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1466,6 +1545,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1480,6 +1560,7 @@
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1493,6 +1574,7 @@
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
@@ -1507,6 +1589,7 @@
 
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_DRAGONLING">
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1521,6 +1604,7 @@
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1534,6 +1618,7 @@
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1548,6 +1633,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1561,6 +1647,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1575,6 +1662,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1588,6 +1676,7 @@
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_DRAGONLING">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_DRAGONLING</requirements>
 		<supports>Dragonling Ability Boost</supports>
+		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
@@ -1605,6 +1694,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_DRAGONLING">
 		<supports>Dragonling</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
 				weapons or unarmed strikes.</p>
@@ -1631,6 +1721,7 @@
 		<supports>Dragonling</supports>
 		<requirements>[level:tamer:5],
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
 				weapons or unarmed strikes.</p>
@@ -1652,6 +1743,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			[level:tamer:9],ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
 				weapons or unarmed strikes.</p>
@@ -1673,6 +1765,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DRAGONLING">
 		<supports>Dragonling</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -1687,6 +1780,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -1701,6 +1795,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -1715,6 +1810,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -1729,6 +1825,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -1743,6 +1840,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
 		</description>
@@ -1755,6 +1853,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_DRAGONLING">
 		<supports>Survival Instinct Dragonling</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Strength Saving Throws</p>
 		</description>
@@ -1766,6 +1865,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_DRAGONLING">
 		<supports>Survival Instinct Dragonling</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Dexterity Saving Throws</p>
 		</description>
@@ -1777,6 +1877,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_DRAGONLING">
 		<supports>Survival Instinct Dragonling</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Constitution Saving Throws</p>
 		</description>
@@ -1788,6 +1889,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_DRAGONLING">
 		<supports>Survival Instinct Dragonling</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Intelligence Saving Throws</p>
 		</description>
@@ -1799,6 +1901,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_DRAGONLING">
 		<supports>Survival Instinct Dragonling</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Wisdom Saving Throws</p>
 		</description>
@@ -1810,6 +1913,7 @@
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_DRAGONLING">
 		<supports>Survival Instinct Dragonling</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency in Charisma Saving Throws</p>
 		</description>
@@ -1822,6 +1926,7 @@
 	<element name="War Training" type="Class Feature" source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_DRAGONLING">
 		<supports>Dragonling</supports>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
@@ -1841,6 +1946,7 @@
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_DRAGONLING">
 		<supports>Dragonling</supports>
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
@@ -1861,6 +1967,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
@@ -1881,6 +1988,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
@@ -1901,6 +2009,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
@@ -1921,6 +2030,7 @@
 		<supports>Dragonling</supports>
 		<requirements>
 			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_DRAGONLING</requirements>
+		<compendium display="false" />
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
 			<p>
