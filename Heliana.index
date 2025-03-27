@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
   <info>
-    <update version="1.4">
+    <update version="1.5">
       <file name="Heliana.index" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Heliana.index" />
     </update>
   </info>
@@ -51,6 +51,13 @@
       <file name="companion-template-4.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/companion-template-4.xml" />
       <file name="companion-template-5.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/companion-template-5.xml" />
       <file name="companion-template-6.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/companion-template-6.xml" />
+      <file name="Brainmuncher.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Brainmuncher.xml" />
+      <file name="Caprisoul.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Caprisoul.xml" />
+      <file name="Couatling.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Couatling.xml" />
+      <file name="DeathShroud.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/DeathShroud.xml" />
+      <file name="DireBunny.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/DireBunny.xml" />
+      <file name="SlaghundPup.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/SlaghundPup.xml" />
+      <file name="Tatzling.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Tatzling.xml" />
 
     <!-- Settings -->
       <file name="Armor.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Setting/Armor.xml" />
