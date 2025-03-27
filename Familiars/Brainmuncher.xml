@@ -1,0 +1,1937 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Brainmuncher</name>
+        <description>Brainmuncher from Humperdink's Biomancy Boutique</description>
+        <update version="0.1.0">
+            <file name="Brainmuncher.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Brainmuncher.xml" />
+        </update>
+    </info>
+
+    <element name="Brainmuncher" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_BRAINMUNCHER">
+        <supports>Familiar, Variant Familiar, Bespoke Companion</supports>
+        <description>
+            <p style="margin-bottom:-5px">
+                <em>Tiny aberration, lawful evil</em>
+            </p>
+            <h4 style="margin-top:5px" />
+            <p></p>
+            <p>
+                <strong>Armor Class</strong> 12 (natural armour)</p>
+            <p>
+                <strong>Hit Points</strong> 2 (1d4)</p>
+            <p>
+                <strong>Speed</strong> 30 ft.</p>
+            <p></p>
+            <table style="text-align:center;margin-top:10px;margin-bottom:10px">
+                <thead>
+                    <tr>
+                        <td>STR</td>
+                        <td>DEX</td>
+                        <td>CON</td>
+                        <td>INT</td>
+                        <td>WIS</td>
+                        <td>CHA</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>9(-1)</td>
+                    <td>10(+0)</td>
+                    <td>11(+0)</td>
+                    <td>15(+2)</td>
+                    <td>13(+1)</td>
+                    <td>13(+1)</td>
+                </tr>
+            </table>
+            <p>
+                <strong>Skills</strong> Arcana +4, Deception +3, Insight +3, Perception +3</p>
+            <p>
+                <strong>Senses</strong> darkvision 60 ft., passive Perception 13</p>
+            <p>
+                <strong>Languages</strong> Deep Speech, telepathy 30 ft.</p>
+            <p>
+                <strong>Challenge</strong> 1/8 (25 XP) <strong>Proficiency Bonus</strong> +2
+            </p>
+            <p></p>
+            <h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
+            <p>
+                <strong>
+                    <em>Brainmuncher.</em>
+                </strong>The brainmuncher likes to eat the brains of Tiny
+				beasts, like household pets. If left unattended, it will attempt
+				to do so (GM's discretion).</p>
+            <p></p>
+            <h4 style="margin-top:15px">Actions</h4>
+            <p></p>
+            <p>
+                <strong>
+                    <em>Tentacles.</em>
+                </strong>
+                <em>Melee Weapon Attack:</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 4 (1d4 + 2) psychic damage.</p>
+            <p></p>
+            <p>
+                <strong>
+                    <em>Levitate. </em>
+                </strong>The brainmuncher casts the levitate spell on itself.</p>
+        </description>
+        <sheet>
+            <description>Brainmuncher ({{brainmuncher:size}})- It gains {{hit dice gained:companion:brainmuncher}}d{{hit dice size:brainmuncher}} hit dice. DC: {{brainmuncher:dc}}. AC: {{brainmuncher:ac bonus}}. Tentacle: +{{brainmuncher:attack:hit}}, DMG: {{brainmuncher:attack:dice}} + {{brainmuncher:attack:damage}} </description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_BRAINMUNCHER" />
+
+            <!-- Base Stats -->
+            <stat name="brainmuncher:str" value="9" />
+            <stat name="brainmuncher:str:mod" value="-1" />
+            <stat name="brainmuncher:dex" value="10" />
+            <stat name="brainmuncher:dex:mod" value="0" />
+            <stat name="brainmuncher:con" value="11" />
+            <stat name="brainmuncher:con:mod" value="0" />
+            <stat name="brainmuncher:int" value="15" />
+            <stat name="brainmuncher:int:mod" value="2" />
+            <stat name="brainmuncher:wis" value="13" />
+            <stat name="brainmuncher:wis:mod" value="1" />
+            <stat name="brainmuncher:cha" value="13" />
+            <stat name="brainmuncher:cha:mod" value="1" />
+
+            <!-- Derived Stats -->
+            <stat name="brainmuncher:size" inline="true" value="Tiny" />
+            <stat name="hit dice size:brainmuncher" value="4" />
+            <stat name="brainmuncher:dc" value="8" />
+            <stat name="brainmuncher:dc" value="proficiency" />
+            <stat name="brainmuncher:dc" value="brainmuncher:int:mod" />
+            <stat name="brainmuncher:ac bonus" value="0" />
+
+            <!-- Attack Stats -->
+            <stat name="brainmuncher:attack:hit" value="proficiency" />
+            <stat name="brainmuncher:attack:hit" value="brainmuncher:int:mod" />
+            <stat name="brainmuncher:attack:hit" value="go for the throat:bonus:brainmuncher" />
+
+            <stat name="brainmuncher:attack:damage" value="brainmuncher:int:mod" />
+            <stat name="brainmuncher:attack:damage" value="go for the throat:bonus:brainmuncher" />
+
+            <stat name="brainmuncher:attack:dice" inline="true" value="1d4" />
+
+            <!-- Level-Based Stat Increases (for sheet display) -->
+            <stat name="hit dice gained:companion:brainmuncher" value="1" level="4" />
+            <stat name="hit dice gained:companion:brainmuncher" value="1" level="8" />
+            <stat name="hit dice gained:companion:brainmuncher" value="1" level="12" />
+            <stat name="hit dice gained:companion:brainmuncher" value="1" level="16" />
+            <stat name="hit dice gained:companion:brainmuncher" value="1" level="19" />
+
+        </rules>
+    </element>
+
+    <element name="Brainmuncher Improvement" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_BRAINMUNCHER">
+        <description>
+            <p>Whenever you gain a level beyond 1st in this class, each companion to which you are
+            bonded gains one of the following improvements.
+            Any newly gained companions receive these additional Hit Dice and improvements as if
+            you had them since your 1st level in tamer.</p>
+        </description>
+        <sheet>
+            <description>The Brainmuncher has the following Improvements:</description>
+        </sheet>
+        <rules>
+            <stat name="hit dice gained:companion:brainmuncher" value="2" />
+
+            <select type="Class Feature" name="Brainmuncher Improvement" supports="Brainmuncher" default="ID_LT_HGTMH_BRAINMUNCHER_TRAIT_DETECT_THOUGHTS"/>
+            <select type="Class Feature" name="Brainmuncher Improvement (Lvl 2)" supports="Brainmuncher" level="2" />
+            <select type="Class Feature" name="Brainmuncher Improvement (Lvl 3)" supports="Brainmuncher" level="3" />
+            <select type="Class Feature" name="Brainmuncher Improvement (Lvl 4)" supports="Brainmuncher" level="4" />
+            <select type="Class Feature" name="Brainmuncher Improvement (Lvl 5)" supports="Brainmuncher" level="5" />
+            <select type="Class Feature" name="Brainmuncher Improvement (Lvl 6)" supports="Brainmuncher" level="6" />
+            <select type="Class Feature" name="Brainmuncher Improvement (Lvl 7)" supports="Brainmuncher" level="7" />
+            <select type="Class Feature" name="Brainmuncher Improvement (Lvl 8)" supports="Brainmuncher" level="8" />
+            <select type="Class Feature" name="Brainmuncher Improvement (Lvl 9)" supports="Brainmuncher" level="9" />
+            <select type="Class Feature" name="Brainmuncher Improvement (Lvl 10)" supports="Brainmuncher" level="10" />
+            <select type="Class Feature" name="Brainmuncher Improvement (Lvl 11)" supports="Brainmuncher" level="11" />
+            <select type="Class Feature" name="Brainmuncher Improvement (Lvl 12)" supports="Brainmuncher" level="12" />
+            <select type="Class Feature" name="Brainmuncher Improvement (Lvl 13)" supports="Brainmuncher" level="13" />
+            <select type="Class Feature" name="Brainmuncher Improvement (Lvl 14)" supports="Brainmuncher" level="14" />
+            <select type="Class Feature" name="Brainmuncher Improvement (Lvl 15)" supports="Brainmuncher" level="15" />
+            <select type="Class Feature" name="Brainmuncher Improvement (Lvl 16)" supports="Brainmuncher" level="16" />
+            <select type="Class Feature" name="Brainmuncher Improvement (Lvl 17)" supports="Brainmuncher" level="17" />
+            <select type="Class Feature" name="Brainmuncher Improvement (Lvl 18)" supports="Brainmuncher" level="18" />
+            <select type="Class Feature" name="Brainmuncher Improvement (Lvl 19)" supports="Brainmuncher" level="19" />
+            <select type="Class Feature" name="Brainmuncher Improvement (Lvl 20)" supports="Brainmuncher" level="20" />
+        </rules>
+    </element>
+
+
+    <!-- Brainmuncher's Improvements -->
+    <element name="Detect Thoughts" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_BRAINMUNCHER_TRAIT_DETECT_THOUGHTS">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
+        <requirements>[level:tamer:1]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The brainmuncher is always under the effect of the detect thoughts spell, with a range equal to the range of its telepathy. In addition, the range of its telepathy increases to 60 feet. The brainmuncher can communicate slowly via thoughts and emotions if it doesn't share a language with a creature.</p>
+        </description>
+        <sheet>
+            <description>Always under the effects of Detect Thoughts (Range: {{brainmuncher:telepathy:range}}ft).</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:telepathy:range" value="60" />
+        </rules>
+    </element>
+
+    <element name="Teleport" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_BRAINMUNCHER_ACTION_TELEPORT">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (bonus action)</p>
+            <p>As a bonus action, the brainmuncher teleports up to 30 feet to an unoccupied space it can see. After it uses this bonus action, it can't do so again until its tamer finishes a short or long rest.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action" usage="1/Short Rest">Teleport 30ft.</description>
+        </sheet>
+    </element>
+
+    <element name="Creature Sense" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_BRAINMUNCHER_ACTION_CREATURE_SENSE">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer, Detect Thoughts</prerequisite>
+        <requirements>[level:tamer:3], ID_LT_HGTMH_BRAINMUNCHER_TRAIT_DETECT_THOUGHTS</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action), passive (companion)</p>
+            <p>As an action, the brainmuncher expands its telepathic ability. For the next minute, the brainmuncher is aware of the presence of creatures within 300 feet of it that have an Intelligence score of 4 or higher. It knows the distance and direction to each creature, as well as each creature's Intelligence score, but can't sense anything else about it. The brainmuncher must maintain its concentration on this effect as if it were concentrating on a spell; if it loses concentration, the effect ends.</p>
+            <p>After the brainmuncher uses this action, it can't do so again until its tamer finishes a short or long rest.</p>
+            <p>In addition, the range of its telepathy and the damage die of its Tentacles increase to 90 feet and a d10, respectively. When the brainmuncher's tamer reaches 5th level in the tamer class, the damage die increases to 2d6.</p>
+        </description>
+        <sheet action="Action" usage="1/Short Rest">
+            <description >Knows presence, distance, direction, and INT of creatures within 300ft with INT 4+ (Concentration, 1 min).</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:telepathy:range" value="30" />
+            <stat name="brainmuncher:attack:dice" inline="true" value="1d10" level="3"/>
+            <stat name="brainmuncher:attack:dice" inline="true" value="2d6" level="5"/>
+        </rules>
+    </element>
+
+    <element name="Magic Resilience" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_BRAINMUNCHER_TRAIT_MAGIC_RESILIENCE_I">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The brainmuncher gains a +2 bonus to saving throws it makes against spells and other magical effects.</p>
+        </description>
+        <sheet>
+            <description>+{{magic resilience:brainmuncher}} bonus to Saves against spells and magical effects.</description>
+        </sheet>
+        <rules>
+            <stat name="magic resilience:brainmuncher" value="2" />
+        </rules>
+    </element>
+
+    <element name="Mind Blast" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_BRAINMUNCHER_ACTION_MIND_BLAST_I">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action, the brainmuncher magically emits psychic energy in a 30-foot cone. Each creature in that area must succeed on an Intelligence saving throw or take 10 (3d6) psychic damage. A creature that fails the saving throw by 5 or more is stunned until the start of its next turn. After the brainmuncher uses this action, it can't do so again until its tamer finishes a short or long rest.</p>
+            <p>When the brainmuncher's tamer reaches 9th level in the tamer class, the damage of this action increases to 17 (5d6).</p>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Short Rest">{{mind blast:range}}ft cone,DC {{mind blast:dc}} INT Save, {{mind blast:damage}}d6 psychic damage (stunned if fail by 5+).</description>
+        </sheet>
+        <rules>
+            <stat name="mind blast:dc" value="brainmuncher:dc" />
+
+            <stat name="mind blast:range" value="30" />
+            <stat name="mind blast:damage" value="3" />
+            <stat name="mind blast:damage" value="2" level="9"/>
+        </rules>
+    </element>
+
+    <element name="Psionic Shield I" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_BRAINMUNCHER_TRAIT_PSIONIC_SHIELD_I">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (reaction), Passive (companion)</p>
+            <p>The brainmuncher gains a +2 bonus to its AC while it isn't incapacitated or wearing armour. When a creature within range of the brainmuncher's telepathy takes psychic damage, the brainmuncher can use its reaction to halve the psychic damage taken by that creature.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>Reaction: Halve psychic damage to creature within {{brainmuncher:telepathy:range}}ft.</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:ac bonus" value="2" />
+        </rules>
+    </element>
+
+    <element name="Telepathic Hub" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_BRAINMUNCHER_ACTION_TELEPATHIC_HUB">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <prerequisite>Prerequisite: 9th-level tamer, Creature Sense</prerequisite>
+        <requirements>[level:tamer:9], ID_LT_HGTMH_BRAINMUNCHER_ACTION_CREATURE_SENSE</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action), Passive (companion)</p>
+            <p>As an action, the brainmuncher can link the minds of up to 10 creatures that are within the radius of its telepathy for 1 hour, or until the brainmuncher returns to its vessel. While within this radius, those creatures can communicate telepathically with one another. After the brainmuncher uses this action, it can't do so again until its tamer finishes a short or long rest.</p>
+            <p>The brainmuncher can hear all telepathic communications originating from or directed towards any creature within the radius of its telepathy. In addition, the range of its telepathy and the damage die of its Tentacles attack increase to 120 feet and 2d8, respectively. When the tamer reaches 13th and 17th level in the tamer class, this damage die increases to 2d10 and 2d12, respectively.</p>
+        </description>
+        <sheet action="Action" usage="1/Short Rest">
+            <description >Link minds of up to 10 creatures within {{brainmuncher:telepathy:range}}ft (1 hour).</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:telepathy:range" value="30" />
+            <stat name="brainmuncher:attack:dice" inline="true" value="2d8" />
+            <stat name="brainmuncher:attack:dice" inline="true" value="2d10" level="13"/>
+            <stat name="brainmuncher:attack:dice" inline="true" value="2d12" level="17"/>
+        </rules>
+    </element>
+
+    <element name="Magic Resilience II" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_BRAINMUNCHER_TRAIT_MAGIC_RESILIENCE_II">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Magic Resilience I</prerequisite>
+        <requirements>[level:tamer:13], ID_LT_HGTMH_BRAINMUNCHER_TRAIT_MAGIC_RESILIENCE_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The brainmuncher gains a +2 bonus to saving throws it makes against spells and other magical effects. This is in addition to the bonus from Magic Resilience I.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="magic resilience:brainmuncher" value="2" />
+        </rules>
+    </element>
+
+    <element name="Mind Blast II" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_BRAINMUNCHER_ACTION_MIND_BLAST_II">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Mind Blast I</prerequisite>
+        <requirements>[level:tamer:13], ID_LT_HGTMH_BRAINMUNCHER_ACTION_MIND_BLAST_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The damage of the brainmuncher's Mind Blast action increases to 24 (7d6), and the size of the cone increases to 60 feet. The brainmuncher gains a +1 bonus to the save DC of this action.</p>
+            <p>When the brainmuncher's tamer reaches 17th level in the tamer class, the damage of this action increases to 35 (10d6).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="mind blast:dc" value="1" />
+
+            <stat name="mind blast:range" value="30" />
+            <stat name="mind blast:damage" value="2" />
+
+            <stat name="mind blast:damage" value="3" level="17"/>
+        </rules>
+    </element>
+
+    <element name="Psionic Shield II" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_BRAINMUNCHER_TRAIT_PSIONIC_SHIELD_II">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Psionic Shield I</prerequisite>
+        <requirements>[level:tamer:13], ID_LT_HGTMH_BRAINMUNCHER_TRAIT_PSIONIC_SHIELD_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (reaction), Passive (companion)</p>
+            <p>The brainmuncher gains a +2 bonus to its AC while it isn't incapacitated or wearing armour. This is in addition to the bonus from Psionic Shield I.</p>
+            <p>The brainmuncher can detect whenever a creature within range of its telepathy makes a Wisdom saving throw, and can use its reaction to give that creature advantage on the saving throw.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>Reaction: Grant advantage on WIS save to creature within {{brainmuncher:telepathy:range}}ft.</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:ac bonus" value="2" />
+        </rules>
+    </element>
+
+    <element name="Domination" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_BRAINMUNCHER_ACTION_DOMINATION">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <prerequisite>Prerequisite: 17th-level tamer, Telepathic Hub</prerequisite>
+        <requirements>[level:tamer:17], ID_LT_HGTMH_BRAINMUNCHER_ACTION_TELEPATHIC_HUB</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action, the brainmuncher attempts to dominate the mind of a creature it can see within 60 feet of it. The creature must succeed on a Wisdom saving throw or be charmed by the brainmuncher for 1 minute. If the brainmuncher or creatures that are friendly to the brainmuncher are fighting the target, it has advantage on the saving throw. A creature whose CR is higher than half the brainmuncher's tamer's level in the tamer class (rounded up) automatically succeeds on this saving throw.</p>
+            <p>The brainmuncher can telepathically communicate with and issue commands to the creature at any range while it is conscious (no action required), which it does its best to obey. If the creature completes the order and doesn't receive further direction from the brainmuncher, it defends and preserves itself to the best of its ability.</p>
+            <p>Each time the target takes damage, it makes a new Wisdom saving throw against the effect. If the saving throw succeeds, the effect ends. This spell ends early when the brainmuncher is dismissed.</p>
+            <p>After the brainmuncher uses this action, it can't do so again until its tamer finishes a long rest.</p>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Long Rest">Dominate creature within 60ft (WIS Save or charmed for 1 min).</description>
+        </sheet>
+    </element>
+
+    <!-- General Improvements -->
+    <!-- Speed Training -->
+    <element name="Speed Training" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SPEED_TRAINING_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <description>
+            <p>Increase one existing speed by 15 feet up to a maximum of 150% of the creature’s base
+				speed, rounded up to the nearest 5-foot increment.</p>
+            <p>E.g., a base speed of 30 feet can be increased to 45 feet maximum, a base speed of 25
+				feet can be increased to 40 feet, and a base speed of 20 feet to 30 feet.</p>
+        </description>
+        <sheet>
+            <description>Increase one existing speed by 15 feet (Max of 150%)</description>
+        </sheet>
+    </element>
+
+    <!-- Toughen Up -->
+    <element name="Toughen Up" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false">
+            <description>Your companion gains {{hit dice gained:companion:1}} Hit Die, increasing
+				its hit point maximum</description>
+        </sheet>
+        <rules>
+            <stat name="hit dice gained:companion:brainmuncher" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:brainmuncher" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:brainmuncher" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:brainmuncher" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:brainmuncher" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:brainmuncher" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (7)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:brainmuncher" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (8)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:brainmuncher" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (9)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:brainmuncher" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (10)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:brainmuncher" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (11)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:brainmuncher" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (12)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:brainmuncher" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (13)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:brainmuncher" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (14)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:brainmuncher" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (15)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:brainmuncher" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (16)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:brainmuncher" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (17)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:brainmuncher" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (18)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:brainmuncher" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (19)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:brainmuncher" value="1" />
+        </rules>
+    </element>
+
+    <!-- Ability Boost -->
+    <element name="Ability Boost" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Brainmuncher Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_BRAINMUNCHER</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Brainmuncher Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_BRAINMUNCHER</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Brainmuncher Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_BRAINMUNCHER</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Brainmuncher Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_BRAINMUNCHER</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Brainmuncher Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_BRAINMUNCHER</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Brainmuncher Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (7)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_BRAINMUNCHER</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Brainmuncher Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (8)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_BRAINMUNCHER</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Brainmuncher Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (9)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_BRAINMUNCHER</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Brainmuncher Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (10)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_BRAINMUNCHER</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Brainmuncher Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (11)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_BRAINMUNCHER</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Brainmuncher Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (12)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_BRAINMUNCHER</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Brainmuncher Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (13)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_BRAINMUNCHER</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Brainmuncher Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (14)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_BRAINMUNCHER</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Brainmuncher Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (15)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_BRAINMUNCHER</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Brainmuncher Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (16)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_BRAINMUNCHER</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Brainmuncher Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (17)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_BRAINMUNCHER</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Brainmuncher Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (18)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_BRAINMUNCHER</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Brainmuncher Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (19)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_19_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_BRAINMUNCHER</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Brainmuncher Ability Boost" />
+        </rules>
+    </element>
+
+
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher strength becomes {{brainmuncher:str}} (+{{brainmuncher:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:str" value="1" />
+            <stat name="brainmuncher:str:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher strength becomes {{brainmuncher:str}} (+{{brainmuncher:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:str" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher strength becomes {{brainmuncher:str}} (+{{brainmuncher:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:str" value="1" />
+            <stat name="brainmuncher:str:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher strength becomes {{brainmuncher:str}} (+{{brainmuncher:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:str" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher strength becomes {{brainmuncher:str}} (+{{brainmuncher:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:str" value="1" />
+            <stat name="brainmuncher:str:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher strength becomes {{brainmuncher:str}} (+{{brainmuncher:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:str" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher strength becomes {{brainmuncher:str}} (+{{brainmuncher:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:str" value="1" />
+            <stat name="brainmuncher:str:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher strength becomes {{brainmuncher:str}} (+{{brainmuncher:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:str" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher strength becomes {{brainmuncher:str}} (+{{brainmuncher:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:str" value="1" />
+            <stat name="brainmuncher:str:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher strength becomes {{brainmuncher:str}} (+{{brainmuncher:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:str" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_11_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher strength becomes {{brainmuncher:str}} (+{{brainmuncher:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:str" value="1" />
+            <stat name="brainmuncher:str:mod" value="1" />
+        </rules>
+    </element>
+
+
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher dexterity becomes {{brainmuncher:dex}} (+{{brainmuncher:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:dex" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher dexterity becomes {{brainmuncher:dex}} (+{{brainmuncher:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:dex" value="1" />
+            <stat name="brainmuncher:dex:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher dexterity becomes {{brainmuncher:dex}} (+{{brainmuncher:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:dex" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher dexterity becomes {{brainmuncher:dex}} (+{{brainmuncher:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:dex" value="1" />
+            <stat name="brainmuncher:dex:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher dexterity becomes {{brainmuncher:dex}} (+{{brainmuncher:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:dex" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher dexterity becomes {{brainmuncher:dex}} (+{{brainmuncher:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:dex" value="1" />
+            <stat name="brainmuncher:dex:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher dexterity becomes {{brainmuncher:dex}} (+{{brainmuncher:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:dex" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher dexterity becomes {{brainmuncher:dex}} (+{{brainmuncher:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:dex" value="1" />
+            <stat name="brainmuncher:dex:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher dexterity becomes {{brainmuncher:dex}} (+{{brainmuncher:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:dex" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_10_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher dexterity becomes {{brainmuncher:dex}} (+{{brainmuncher:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:dex" value="1" />
+            <stat name="brainmuncher:dex:mod" value="1" />
+        </rules>
+    </element>
+
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher constitution becomes {{brainmuncher:con}} (+{{brainmuncher:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:con" value="1" />
+            <stat name="brainmuncher:con:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher constitution becomes {{brainmuncher:con}} (+{{brainmuncher:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:con" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher constitution becomes {{brainmuncher:con}} (+{{brainmuncher:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:con" value="1" />
+            <stat name="brainmuncher:con:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher constitution becomes {{brainmuncher:con}} (+{{brainmuncher:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:con" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher constitution becomes {{brainmuncher:con}} (+{{brainmuncher:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:con" value="1" />
+            <stat name="brainmuncher:con:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher constitution becomes {{brainmuncher:con}} (+{{brainmuncher:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:con" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_7_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher constitution becomes {{brainmuncher:con}} (+{{brainmuncher:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:con" value="1" />
+            <stat name="brainmuncher:con:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_8_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_7_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher constitution becomes {{brainmuncher:con}} (+{{brainmuncher:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:con" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_9_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_8_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher constitution becomes {{brainmuncher:con}} (+{{brainmuncher:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:con" value="1" />
+            <stat name="brainmuncher:con:mod" value="1" />
+        </rules>
+    </element>
+
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher intelligence becomes {{brainmuncher:int}} (+{{brainmuncher:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:int" value="1" />
+            <stat name="brainmuncher:int:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher intelligence becomes {{brainmuncher:int}} (+{{brainmuncher:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:int" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher intelligence becomes {{brainmuncher:int}} (+{{brainmuncher:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:int" value="1" />
+            <stat name="brainmuncher:int:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher intelligence becomes {{brainmuncher:int}} (+{{brainmuncher:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:int" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher intelligence becomes {{brainmuncher:int}} (+{{brainmuncher:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:int" value="1" />
+            <stat name="brainmuncher:int:mod" value="1" />
+        </rules>
+    </element>
+
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher wisdom becomes {{brainmuncher:wis}} (+{{brainmuncher:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:wis" value="1" />
+            <stat name="brainmuncher:wis:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher wisdom becomes {{brainmuncher:wis}} (+{{brainmuncher:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:wis" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher wisdom becomes {{brainmuncher:wis}} (+{{brainmuncher:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:wis" value="1" />
+            <stat name="brainmuncher:wis:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher wisdom becomes {{brainmuncher:wis}} (+{{brainmuncher:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:wis" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher wisdom becomes {{brainmuncher:wis}} (+{{brainmuncher:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:wis" value="1" />
+            <stat name="brainmuncher:wis:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher wisdom becomes {{brainmuncher:wis}} (+{{brainmuncher:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:wis" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher wisdom becomes {{brainmuncher:wis}} (+{{brainmuncher:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:wis" value="1" />
+            <stat name="brainmuncher:wis:mod" value="1" />
+        </rules>
+    </element>
+
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher charisma becomes {{brainmuncher:cha}} (+{{brainmuncher:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:cha" value="1" />
+            <stat name="brainmuncher:cha:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher charisma becomes {{brainmuncher:cha}} (+{{brainmuncher:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:cha" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher charisma becomes {{brainmuncher:cha}} (+{{brainmuncher:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:cha" value="1" />
+            <stat name="brainmuncher:cha:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher charisma becomes {{brainmuncher:cha}} (+{{brainmuncher:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:cha" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher charisma becomes {{brainmuncher:cha}} (+{{brainmuncher:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:cha" value="1" />
+            <stat name="brainmuncher:cha:mod" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher charisma becomes {{brainmuncher:cha}} (+{{brainmuncher:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:cha" value="1" />
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_BRAINMUNCHER">
+        <compendium display="false" />
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_BRAINMUNCHER</requirements>
+        <supports>Brainmuncher Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Brainmuncher charisma becomes {{brainmuncher:cha}} (+{{brainmuncher:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:cha" value="1" />
+            <stat name="brainmuncher:cha:mod" value="1" />
+        </rules>
+    </element>
+
+
+    <!-- Go For the Throat -->
+	<element name="Go For the Throat" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_BRAINMUNCHER">
+		<supports>Brainmuncher</supports>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="go for the throat:bonus:brainmuncher" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_BRAINMUNCHER">
+		<supports>Brainmuncher</supports>
+		<requirements>[level:tamer:5],
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_BRAINMUNCHER</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:brainmuncher" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_3_BRAINMUNCHER">
+		<supports>Brainmuncher</supports>
+		<requirements>
+			[level:tamer:9],ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_BRAINMUNCHER</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:brainmuncher" value="1" />
+		</rules>
+	</element>
+
+    <!-- Survival Insticts -->
+    <element name="Survival Instincts" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_BRAINMUNCHER">
+        <supports>Brainmuncher</supports>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Brainmuncher" />
+        </rules>
+    </element>
+    <element name="Survival Instincts (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_BRAINMUNCHER">
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Brainmuncher" />
+        </rules>
+    </element>
+    <element name="Survival Instincts (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_BRAINMUNCHER">
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Brainmuncher" />
+        </rules>
+    </element>
+    <element name="Survival Instincts (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_BRAINMUNCHER">
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Brainmuncher" />
+        </rules>
+    </element>
+    <element name="Survival Instincts (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_BRAINMUNCHER">
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Brainmuncher" />
+        </rules>
+    </element>
+    <element name="Survival Instincts (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_6_BRAINMUNCHER">
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Brainmuncher" />
+        </rules>
+    </element>
+
+    <element name="Brainmuncher Survival Instincts: Strength" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_BRAINMUNCHER">
+        <supports>Survival Instinct Brainmuncher</supports>
+        <description>
+            <p>Your companion gains proficiency in Strength Saving Throws</p>
+        </description>
+        <sheet>
+            <description>+{{brainmuncher:str:save}} in Strength Saving Throws</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:str:save" value="proficiency" />
+            <stat name="brainmuncher:str:save" value="brainmuncher:str:mod" />
+        </rules>
+    </element>
+    <element name="Brainmuncher Survival Instincts: Dexterity" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_BRAINMUNCHER">
+        <supports>Survival Instinct Brainmuncher</supports>
+        <description>
+            <p>Your companion gains proficiency in Dexterity Saving Throws</p>
+        </description>
+        <sheet>
+            <description>+{{brainmuncher:dex:save}} in Dexterity Saving Throws</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:dex:save" value="proficiency" />
+            <stat name="brainmuncher:dex:save" value="brainmuncher:dex:mod" />
+        </rules>
+    </element>
+    <element name="Brainmuncher Survival Instincts: Constitution" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_BRAINMUNCHER">
+        <supports>Survival Instinct Brainmuncher</supports>
+        <description>
+            <p>Your companion gains proficiency in Constitution Saving Throws</p>
+        </description>
+        <sheet>
+            <description>+{{brainmuncher:con:save}} in Constitution Saving Throws</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:con:save" value="proficiency" />
+            <stat name="brainmuncher:con:save" value="brainmuncher:con:mod" />
+        </rules>
+    </element>
+    <element name="Brainmuncher Survival Instincts: Intelligence" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_BRAINMUNCHER">
+        <supports>Survival Instinct Brainmuncher</supports>
+        <description>
+            <p>Your companion gains proficiency in Intelligence Saving Throws</p>
+        </description>
+        <sheet>
+            <description>+{{brainmuncher:int:save}} in Intelligence Saving Throws</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:int:save" value="proficiency" />
+            <stat name="brainmuncher:int:save" value="brainmuncher:int:mod" />
+        </rules>
+    </element>
+    <element name="Brainmuncher Survival Instincts: Wisdom" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_BRAINMUNCHER">
+        <supports>Survival Instinct Brainmuncher</supports>
+        <description>
+            <p>Your companion gains proficiency in Wisdom Saving Throws</p>
+        </description>
+        <sheet>
+            <description>+{{brainmuncher:wis:save}} in Wisdom Saving Throws</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:wis:save" value="proficiency" />
+            <stat name="brainmuncher:wis:save" value="brainmuncher:wis:mod" />
+        </rules>
+    </element>
+    <element name="Brainmuncher Survival Instincts: Charisma" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_BRAINMUNCHER">
+        <supports>Survival Instinct Brainmuncher</supports>
+        <description>
+            <p>Your companion gains proficiency in Charisma Saving Throws</p>
+        </description>
+        <sheet>
+            <description>+{{brainmuncher:cha:save}} in Charisma Saving Throws</description>
+        </sheet>
+        <rules>
+            <stat name="brainmuncher:cha:save" value="proficiency" />
+            <stat name="brainmuncher:cha:save" value="brainmuncher:cha:mod" />
+        </rules>
+    </element>
+
+    <!-- War Training -->
+    <element name="War Training" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet>
+            <description>Gains proficiency with one armour type or two weapons</description>
+        </sheet>
+    </element>
+    <element name="War Training (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>Gains proficiency with one armour type or two weapons</description>
+        </sheet>
+    </element>
+    <element name="War Training (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>Gains proficiency with one armour type or two weapons</description>
+        </sheet>
+    </element>
+    <element name="War Training (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>Gains proficiency with one armour type or two weapons</description>
+        </sheet>
+    </element>
+    <element name="War Training (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>Gains proficiency with one armour type or two weapons</description>
+        </sheet>
+    </element>
+    <element name="War Training (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_6_BRAINMUNCHER">
+        <compendium display="false" />
+        <supports>Brainmuncher</supports>
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_BRAINMUNCHER</requirements>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>Gains proficiency with one armour type or two weapons</description>
+        </sheet>
+    </element>
+</elements>

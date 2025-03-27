@@ -1,0 +1,1993 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dire Bunny</name>
+		<description>Dire Bunny from Humperdink's Biomancy Boutique</description>
+		<update version="0.1.0">
+			<file name="DireBunny.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/DireBunny.xml" />
+		</update>
+	</info>
+
+	<element name="Dire Bunny" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DIRE_BUNNY">
+		<supports>Familiar, Variant Familiar, Bespoke Companion</supports>
+		<description>
+			<p style="margin-bottom:-5px">
+				<em>Tiny aberration, neutral</em>
+			</p>
+			<h4 style="margin-top:5px" />
+			<p></p>
+			<p>
+				<strong>Armor Class</strong> 13 (natural armour)</p>
+			<p>
+				<strong>Hit Points</strong> 4 (1d4 + 2)</p>
+			<p>
+				<strong>Speed</strong> 30 ft.</p>
+			<p></p>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead>
+					<tr>
+						<td>STR</td>
+						<td>DEX</td>
+						<td>CON</td>
+						<td>INT</td>
+						<td>WIS</td>
+						<td>CHA</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>10(+0)</td>
+					<td>13(+1)</td>
+					<td>14(+2)</td>
+					<td>8(-1)</td>
+					<td>14(+2)</td>
+					<td>11(+0)</td>
+				</tr>
+			</table>
+			<p>
+				<strong>Skills</strong> Insight +4, Perception +4</p>
+			<p>
+				<strong>Senses</strong> darkvision 90 ft., passive Perception 14</p>
+			<p>
+				<strong>Languages</strong> Common, Deep Speech, telepathy 30 ft.</p>
+			<p>
+				<strong>Challenge</strong> 1/8 (25 XP) <strong>Proficiency Bonus</strong> +2
+			</p>
+			<p></p>
+			<h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
+			<p>
+				<strong>
+					<em>Bonemonger.</em>
+				</strong>Whenever the dire bunny first sees a bone, it must succeed on a DC 12 Wisdom saving throw or become distracted until it possesses the bone or the bone is no longer in its line of sight. While distracted, it spends its movement and actions trying to get closer to the bone and sequester it. A distracted dire bunny whose owner issues a command to it repeats the saving throw at the end of its next turn, ending the effect on a success and becoming immune to the allure of any bone for the next hour.</p>
+			<p></p>
+			<h4 style="margin-top:15px">Actions</h4>
+			<p></p>
+			<p>
+				<strong>
+					<em>Bite.</em>
+				</strong>
+				<em>Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 3 (1d4+1) piercing damage.</p>
+            <p>
+                <strong>
+                    <em>Detect Thoughts (1/Day).</em>
+                </strong>The dire bunny learns the surface thoughts of one creature it can see within 30 feet of it for 1 minute. It can attempt to probe deeper into the creature's mind, using an action to force the target to make a DC 12 Wisdom saving throw, per the detect thoughts spell.</p>
+			<p></p>
+		</description>
+		<sheet>
+			<description>Dire Bunny ({{direbunny:size}})- Gains {{hit dice gained:companion:direbunny}}d{{hit dice size:direbunny}} hit dice. DC: {{direbunny:dc}}. AC: +{{direbunny:ac bonus}}. Bite: +{{direbunny:attack:hit}}, DMG: {{direbunny:attack:dice}} + {{direbunny:attack:damage}} piercing.</description>
+		</sheet>
+		<rules>
+			<!-- Grant Base Improvements -->
+			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_DIRE_BUNNY" />
+
+			<!-- Base Stats -->
+			<stat name="direbunny:str" value="10" />
+			<stat name="direbunny:str:mod" value="0" />
+			<stat name="direbunny:dex" value="13" />
+			<stat name="direbunny:dex:mod" value="1" />
+			<stat name="direbunny:con" value="14" />
+			<stat name="direbunny:con:mod" value="2" />
+			<stat name="direbunny:int" value="8" />
+			<stat name="direbunny:int:mod" value="-1" />
+			<stat name="direbunny:wis" value="14" />
+			<stat name="direbunny:wis:mod" value="2" />
+			<stat name="direbunny:cha" value="11" />
+			<stat name="direbunny:cha:mod" value="0" />
+
+			<!-- Derived Stats -->
+			<stat name="direbunny:size" inline="true" value="Tiny" />
+			<stat name="hit dice size:direbunny" value="4" />
+			<stat name="direbunny:ac bonus" value="0" />
+			<stat name="direbunny:dc" value="8" />
+			<stat name="direbunny:dc" value="proficiency" />
+			<stat name="direbunny:dc" value="direbunny:con:mod" />
+
+			<!-- Attack Stats (Bite) -->
+			<stat name="direbunny:attack:hit" value="proficiency" />
+			<stat name="direbunny:attack:hit" value="direbunny:dex:mod" /> <!-- Bite uses DEX -->
+			<stat name="direbunny:attack:hit" value="go for the throat:bonus:direbunny" />
+
+			<stat name="direbunny:attack:damage" value="direbunny:dex:mod" /> <!-- Bite damage uses DEX -->
+			<stat name="direbunny:attack:damage" value="go for the throat:bonus:direbunny" />
+			<stat name="direbunny:attack:dice" inline="true" value="1d4" />
+
+			<!-- Level-Based Stat Increases (for sheet display) -->
+			<stat name="hit dice gained:companion:direbunny" value="1" level="4" />
+			<stat name="hit dice gained:companion:direbunny" value="1" level="8" />
+			<stat name="hit dice gained:companion:direbunny" value="1" level="12" />
+			<stat name="hit dice gained:companion:direbunny" value="1" level="16" />
+			<stat name="hit dice gained:companion:direbunny" value="1" level="19" />
+
+            <!-- Go for the Throat Bonus Initialization -->
+            <stat name="go for the throat:bonus:direbunny" value="0" />
+		</rules>
+	</element>
+
+    <element name="Dire Bunny Improvement" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_DIRE_BUNNY">
+        <description>
+            <p>Whenever you gain a level beyond 1st in this class, each companion to which you are
+                bonded gains one of the following improvements.
+                Any newly gained companions receive these additional Hit Dice and improvements as if
+                you had them since your 1st level in tamer.</p>
+        </description>
+        <sheet>
+            <description>The Dire Bunny has the following Improvements:</description>
+        </sheet>
+        <rules>
+            <stat name="hit dice gained:companion:direbunny" value="2" />
+
+            <select type="Class Feature" name="Dire Bunny Improvement" supports="Dire Bunny" default="ID_LT_HGTMH_DIRE_BUNNY_TRAIT_SNEAK_ATTACK"/>
+            <select type="Class Feature" name="Dire Bunny Improvement (Lvl 2)" supports="Dire Bunny" level="2" />
+            <select type="Class Feature" name="Dire Bunny Improvement (Lvl 3)" supports="Dire Bunny" level="3" />
+            <select type="Class Feature" name="Dire Bunny Improvement (Lvl 4)" supports="Dire Bunny" level="4" />
+            <select type="Class Feature" name="Dire Bunny Improvement (Lvl 5)" supports="Dire Bunny" level="5" />
+            <select type="Class Feature" name="Dire Bunny Improvement (Lvl 6)" supports="Dire Bunny" level="6" />
+            <select type="Class Feature" name="Dire Bunny Improvement (Lvl 7)" supports="Dire Bunny" level="7" />
+            <select type="Class Feature" name="Dire Bunny Improvement (Lvl 8)" supports="Dire Bunny" level="8" />
+            <select type="Class Feature" name="Dire Bunny Improvement (Lvl 9)" supports="Dire Bunny" level="9" />
+            <select type="Class Feature" name="Dire Bunny Improvement (Lvl 10)" supports="Dire Bunny" level="10" />
+            <select type="Class Feature" name="Dire Bunny Improvement (Lvl 11)" supports="Dire Bunny" level="11" />
+            <select type="Class Feature" name="Dire Bunny Improvement (Lvl 12)" supports="Dire Bunny" level="12" />
+            <select type="Class Feature" name="Dire Bunny Improvement (Lvl 13)" supports="Dire Bunny" level="13" />
+            <select type="Class Feature" name="Dire Bunny Improvement (Lvl 14)" supports="Dire Bunny" level="14" />
+            <select type="Class Feature" name="Dire Bunny Improvement (Lvl 15)" supports="Dire Bunny" level="15" />
+            <select type="Class Feature" name="Dire Bunny Improvement (Lvl 16)" supports="Dire Bunny" level="16" />
+            <select type="Class Feature" name="Dire Bunny Improvement (Lvl 17)" supports="Dire Bunny" level="17" />
+            <select type="Class Feature" name="Dire Bunny Improvement (Lvl 18)" supports="Dire Bunny" level="18" />
+            <select type="Class Feature" name="Dire Bunny Improvement (Lvl 19)" supports="Dire Bunny" level="19" />
+            <select type="Class Feature" name="Dire Bunny Improvement (Lvl 20)" supports="Dire Bunny" level="20" />
+        </rules>
+    </element>
+
+    <!-- Dire Bunny's Improvements -->
+    <element name="Sneak Attack" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DIRE_BUNNY_TRAIT_SNEAK_ATTACK">
+        <compendium display="false" />
+        <supports>Dire Bunny</supports>
+        <prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
+        <requirements>[level:tamer:1]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>Once on its turn, the dire bunny can deal an extra 3 (1d6) damage to one creature it hits with a Bite attack if it has advantage on the attack roll. The dire bunny doesn't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and the dire bunny doesn't have disadvantage on the attack roll.</p>
+            <p>The extra damage increases by 1d6 when the dire bunny's tamer reaches 3rd level (2d6), 5th level (3d6), 9th level (4d6), 13th level (5d6), and 17th level (6d6) in the tamer class.</p>
+            <p>The dire bunny gains this improvement when it becomes a companion; it doesn't cost an improvement.</p>
+        </description>
+        <sheet usage="1/Turn">
+            <description>+{{direbunny:sneak attack:dice}}d6 damage on Bite if ADV or ally within 5ft.</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:sneak attack:dice" value="1" />
+            <stat name="direbunny:sneak attack:dice" value="1" level="3" />
+            <stat name="direbunny:sneak attack:dice" value="1" level="5" />
+            <stat name="direbunny:sneak attack:dice" value="1" level="9" />
+            <stat name="direbunny:sneak attack:dice" value="1" level="13" />
+            <stat name="direbunny:sneak attack:dice" value="1" level="17" />
+        </rules>
+    </element>
+
+    <element name="Veracious Question" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DIRE_BUNNY_ACTION_VERACIOUS_QUESTION">
+        <compendium display="false" />
+        <supports>Dire Bunny</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (bonus action), Passive (companion &amp; tamer)</p>
+            <p>The dire bunny gains proficiency in the Persuasion and Intimidation skills and, while the bunny is summoned, its tamer can add half its proficiency bonus to ability checks it makes that use the Insight, Intimidation, or Persuasion skills.</p>
+            <p>In addition, when the dire bunny asks a question, it can use a bonus action to imbue the question with magical truth. If the question's recipient can hear (or otherwise perceive) and understand the question, it must make a Charisma saving throw, blurting out a short, truthful answer on a failure, or answering as it pleases (if at all) on a success. A creature can choose to fail this saving throw. After the dire bunny has used this bonus action twice, it can't do so again until its tamer finishes a short or long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="2/Short Rest">
+            <description>Imbue question with truth (target CHA Save {{direbunny:dc}} or answer truthfully). Bunny gains Persuasion/Intimidation prof. Tamer adds half PB to Insight/Intimidation/Persuasion checks.</description>
+        </sheet>
+    </element>
+
+    <element name="Mi!" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DIRE_BUNNY_ACTION_MI">
+        <compendium display="false" />
+        <supports>Dire Bunny</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action, the dire bunny proclaims "Mi!" at one creature it can see within 60 feet of it. If the target can hear the proclamation, it must succeed on a Constitution saving throw or take 4 (1d8) thunder damage and 4 (1d8) psychic damage, and become frightened of the dire bunny until the end of the dire bunny's next turn.</p>
+        </description>
+        <sheet action="Action">
+            <description>Target within 60ft makes CON Save. Fail: 1d8 thunder + 1d8 psychic damage, frightened until end of bunny's next turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Astral Enchanter I" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DIRE_BUNNY_ACTION_ASTRAL_ENCHANTER_I">
+        <compendium display="false" />
+        <supports>Dire Bunny</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action), Passive (tamer)</p>
+            <p>While the dire bunny is summoned, its tamer has a +2 bonus to Enchanting checks*.</p>
+            <p>In addition, as an action, the dire bunny can cast the identify spell, requiring no material components. After it uses this action, it can't do so again until its tamer finishes a long rest.</p>
+             <p><em>*See Heliana's Guide to Monster Hunting, page 110-111.</em></p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>Cast Identify (no components). +{{direbunny:enchanting:bonus}} to Enchanting checks.</description>
+        </sheet>
+         <rules>
+             <stat name="direbunny:enchanting:bonus" value="2" />
+         </rules>
+    </element>
+
+    <element name="Grasping Bonetide" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DIRE_BUNNY_ACTION_GRASPING_BONETIDE_I">
+        <compendium display="false" />
+        <supports>Dire Bunny</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action, the dire bunny summons a wave of animated bones that ripples out from it in either a 30-foot cone or 15-foot-radius circle (dire bunny's choice). Skeletal limbs burst out from surfaces in the area, slashing and grasping at creatures in contact with those surfaces. Each of those creatures must make a Dexterity saving throw, taking 10 (3d6) slashing damage and becoming restrained until the end of the dire bunny's next turn on a failure, or taking half as much damage and not becoming restrained on a success. After the dire bunny uses this action, it can't do so again until its tamer finishes a short or long rest.</p>
+            <p>When the dire bunny's tamer reaches 9th level in the tamer class, the damage of this action increases to 17 (5d6).</p>
+        </description>
+        <sheet action="Action" usage="1/Short Rest">
+            <description>{{bonetide:area:cone}}ft cone/{{bonetide:area:circle}}ft radius, DC {{bonetide:dc}} DEX Save. Fail: {{bonetide:damage}}d6 slashing (or Half), restrained (1 turn).</description>
+        </sheet>
+        <rules>
+             <stat name="bonetide:dc" value="direbunny:dc" />
+             <stat name="bonetide:area:cone" value="30" />
+             <stat name="bonetide:area:circle" value="15" />
+             <stat name="bonetide:damage" value="3" />
+             <stat name="bonetide:damage" value="2" level="9" /> <!-- 3d6 -> 5d6 -->
+        </rules>
+    </element>
+
+    <element name="Boney Carapace I" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DIRE_BUNNY_TRAIT_BONEY_CARAPACE_I">
+        <compendium display="false" />
+        <supports>Dire Bunny</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The dire bunny gains a +2 bonus to its AC while it isn't wearing armour.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="direbunny:ac bonus" value="2" />
+        </rules>
+    </element>
+
+    <element name="Zone of Retributive Truth" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DIRE_BUNNY_ACTION_ZONE_TRUTH">
+        <compendium display="false" />
+        <supports>Dire Bunny</supports>
+        <prerequisite>Prerequisite: 9th-level tamer, Veracious Question</prerequisite>
+        <requirements>[level:tamer:9], ID_LT_HGTMH_DIRE_BUNNY_ACTION_VERACIOUS_QUESTION</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (bonus action)</p>
+            <p>As a bonus action, the dire bunny manifests an aura that lasts for 1 minute and extends 20 feet from the dire bunny, moving with it. As part of the bonus action to create the aura and as a bonus action on subsequent turns, the dire bunny can ask one creature it can see within the aura a question. If the creature can hear (or otherwise perceive) the question and understands it, it feels compelled to answer truthfully. If it doesn't answer before the end of its next turn, or answers untruthfully, it must succeed on a Charisma saving throw or be thrown up to 20 feet in a direction of the dire bunny's choice.</p>
+            <p>After the dire bunny has manifested this aura, it can't do so again until its tamer finishes a short or long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Short Rest">
+            <description>Manifest 20ft aura (1 min). BA each turn: Ask question in aura. If not answered truthfully, target CHA Save {{direbunny:dc}} or thrown 20ft.</description>
+        </sheet>
+    </element>
+
+    <element name="Springstrike" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DIRE_BUNNY_ACTION_SPRINGSTRIKE">
+        <compendium display="false" />
+        <supports>Dire Bunny</supports>
+        <prerequisite>Prerequisite: 9th-level tamer, Sneak Attack</prerequisite>
+        <requirements>[level:tamer:9], ID_LT_HGTMH_DIRE_BUNNY_TRAIT_SNEAK_ATTACK</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action), Passive (companion)</p>
+            <p>The dire bunny's speed increases by 10 feet. As an action, the dire bunny can move up to half its speed without provoking opportunity attacks and make one Bite attack.</p>
+        </description>
+        <sheet action="Action">
+            <description>Move up to half speed (no OA), make one Bite attack. Speed +10ft.</description>
+        </sheet>
+    </element>
+
+    <element name="Uncanny Dodge" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DIRE_BUNNY_ACTION_UNCANNY_DODGE">
+        <compendium display="false" />
+        <supports>Dire Bunny</supports>
+        <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
+        <requirements>[level:tamer:9]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (reaction)</p>
+            <p>When an attacker that the dire bunny can see hits it with an attack, the dire bunny can use its reaction to halve the attack's damage against it.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>Halve damage from an attack you can see.</description>
+        </sheet>
+    </element>
+
+    <element name="Grasping Bonetide II" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DIRE_BUNNY_ACTION_GRASPING_BONETIDE_II">
+        <compendium display="false" />
+        <supports>Dire Bunny</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Grasping Bonetide I</prerequisite>
+        <requirements>[level:tamer:13], ID_LT_HGTMH_DIRE_BUNNY_ACTION_GRASPING_BONETIDE_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The damage of the dire bunny's Grasping Bonetide action increases to 24 (7d6), and the size of the area increases to a 50-foot cone or a 20-foot-radius circle. The dire bunny gains a +1 bonus to the save DC of this action.</p>
+            <p>When the dire bunny's tamer reaches 17th level in the tamer class, the damage of this action increases to 35 (10d6).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+             <stat name="bonetide:dc" value="1" />
+             <stat name="bonetide:area:cone" value="20" />
+             <stat name="bonetide:area:circle" value="5" />
+             <stat name="bonetide:damage" value="2" /> <!-- 5d6 -> 7d6 -->
+             <stat name="bonetide:damage" value="3" level="17" /> <!-- 7d6 -> 10d6 -->
+        </rules>
+    </element>
+
+    <element name="Boney Carapace II" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DIRE_BUNNY_TRAIT_BONEY_CARAPACE_II">
+        <compendium display="false" />
+        <supports>Dire Bunny</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Boney Carapace I</prerequisite>
+        <requirements>[level:tamer:13], ID_LT_HGTMH_DIRE_BUNNY_TRAIT_BONEY_CARAPACE_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The dire bunny gains a +2 bonus to its AC while it isn't wearing armour. This is in addition to the bonus from Boney Carapace I.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="direbunny:ac bonus" value="2" />
+        </rules>
+    </element>
+
+    <element name="Astral Enchanter II" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DIRE_BUNNY_ACTION_ASTRAL_ENCHANTER_II">
+        <compendium display="false" />
+        <supports>Dire Bunny</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Astral Enchanter I</prerequisite>
+        <requirements>[level:tamer:13], ID_LT_HGTMH_DIRE_BUNNY_ACTION_ASTRAL_ENCHANTER_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action), Passive (tamer)</p>
+            <p>While the dire bunny is summoned, its tamer has a +2 bonus to Enchanting checks*. This is in addition to the bonus from Astral Enchanter I.</p>
+            <p>As an action, the dire bunny can cast the identify spell at will, requiring no material components.</p>
+            <p><em>*See Heliana's Guide to Monster Hunting, page 110-111.</em></p>
+        </description>
+        <sheet action="Action">
+            <description>Cast Identify at will (no components).</description>
+        </sheet>
+         <rules>
+             <stat name="direbunny:enchanting:bonus" value="2" />
+             <!-- Add bonus to Tamer's enchanting checks if supported -->
+         </rules>
+    </element>
+
+    <element name="Bone Cage" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DIRE_BUNNY_ACTION_BONE_CAGE">
+        <compendium display="false" />
+        <supports>Dire Bunny</supports>
+        <prerequisite>Prerequisite: 17th-level tamer, Boney Carapace II</prerequisite>
+        <requirements>[level:tamer:17], ID_LT_HGTMH_DIRE_BUNNY_TRAIT_BONEY_CARAPACE_II</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action), Passive (companion)</p>
+            <p>The dire bunny gains a +1 bonus to its AC while it isn't wearing armour. This is in addition to the bonuses from Boney Carapace I &amp; II.</p>
+            <p>As an action, the dire bunny creates a magical effect identical to the bone cage* spell (see page 22) with a range of self (30-foot-radius sphere). After it uses this action, it can't do so again until its tamer finishes a long rest.</p>
+            <p><em>*Bone Cage spell description is on page 22 of Humperdink's Biomancy Boutique.</em></p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>Cast Bone Cage spell (Range: Self, 30ft radius).</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:ac bonus" value="1" />
+        </rules>
+    </element>
+
+    <element name="Astral Enchanter III" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DIRE_BUNNY_ACTION_ASTRAL_ENCHANTER_III">
+        <compendium display="false" />
+        <supports>Dire Bunny</supports>
+        <prerequisite>Prerequisite: 17th-level tamer, Astral Enchanter II</prerequisite>
+        <requirements>[level:tamer:17], ID_LT_HGTMH_DIRE_BUNNY_ACTION_ASTRAL_ENCHANTER_II</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action), Passive (tamer)</p>
+            <p>While the dire bunny is summoned, its tamer has a +2 bonus to Enchanting checks*. This is in addition to the bonuses from Astral Enchanter I &amp; II.</p>
+            <p>As an action, the dire bunny can cast the locate object spell, requiring no material components. This spell ends early when the dire bunny is dismissed.</p>
+            <p><em>*See Heliana's Guide to Monster Hunting, page 110-111.</em></p>
+        </description>
+        <sheet action="Action">
+            <description>Cast Locate Object at will (no components).</description>
+        </sheet>
+         <rules>
+             <stat name="direbunny:enchanting:bonus" value="2" />
+             <!-- Add bonus to Tamer's enchanting checks if supported -->
+         </rules>
+    </element>
+
+    <!-- General Improvements -->
+	<!-- Speed Training -->
+	<element name="Speed Training" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SPEED_TRAINING_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<description>
+			<p>Increase one existing speed by 15 feet up to a maximum of 150% of the creature’s base
+				speed, rounded up to the nearest 5-foot increment.</p>
+			<p>E.g., a base speed of 30 feet can be increased to 45 feet maximum, a base speed of 25
+				feet can be increased to 40 feet, and a base speed of 20 feet to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>Increase one existing speed by 15 feet (Max of 150%)</description>
+		</sheet>
+	</element>
+
+	<!-- Toughen Up -->
+	<element name="Toughen Up" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false">
+			<description>Your companion gains {{hit dice gained:companion:1}} Hit Die, increasing
+				its hit point maximum</description>
+		</sheet>
+		<rules>
+			<stat name="hit dice gained:companion:direbunny" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:direbunny" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:direbunny" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:direbunny" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:direbunny" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:direbunny" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (7)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:direbunny" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (8)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:direbunny" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (9)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:direbunny" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (10)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:direbunny" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (11)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:direbunny" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (12)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:direbunny" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (13)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:direbunny" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (14)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:direbunny" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (15)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:direbunny" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (16)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:direbunny" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (17)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:direbunny" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (18)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:direbunny" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (19)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:direbunny" value="1" />
+		</rules>
+	</element>
+
+    <!-- Ability Boost -->
+	<element name="Ability Boost" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Dire Bunny Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DIRE_BUNNY</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Dire Bunny Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_DIRE_BUNNY</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Dire Bunny Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_DIRE_BUNNY</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Dire Bunny Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_DIRE_BUNNY</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Dire Bunny Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_DIRE_BUNNY</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Dire Bunny Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (7)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_DIRE_BUNNY</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Dire Bunny Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (8)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_DIRE_BUNNY</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Dire Bunny Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (9)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_DIRE_BUNNY</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Dire Bunny Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (10)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_DIRE_BUNNY</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Dire Bunny Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (11)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_DIRE_BUNNY</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Dire Bunny Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (12)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_DIRE_BUNNY</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Dire Bunny Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (13)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_DIRE_BUNNY</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Dire Bunny Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (14)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_DIRE_BUNNY</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Dire Bunny Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (15)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_DIRE_BUNNY</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Dire Bunny Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (16)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_DIRE_BUNNY</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Dire Bunny Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (17)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_DIRE_BUNNY</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Dire Bunny Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (18)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_DIRE_BUNNY</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Dire Bunny Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (19)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_19_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_DIRE_BUNNY</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Dire Bunny Ability Boost" />
+		</rules>
+	</element>
+
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_DIRE_BUNNY">
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny strength becomes {{direbunny:str}} (+{{direbunny:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:str" value="1" /> <!-- 10 -> 11 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny strength becomes {{direbunny:str}} (+{{direbunny:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:str" value="1" />
+            <stat name="direbunny:str:mod" value="1" /> <!-- 11 -> 12 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny strength becomes {{direbunny:str}} (+{{direbunny:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:str" value="1" /> <!-- 12 -> 13 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny strength becomes {{direbunny:str}} (+{{direbunny:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:str" value="1" />
+            <stat name="direbunny:str:mod" value="1" /> <!-- 13 -> 14 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny strength becomes {{direbunny:str}} (+{{direbunny:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:str" value="1" /> <!-- 14 -> 15 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny strength becomes {{direbunny:str}} (+{{direbunny:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:str" value="1" />
+            <stat name="direbunny:str:mod" value="1" /> <!-- 15 -> 16 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny strength becomes {{direbunny:str}} (+{{direbunny:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:str" value="1" /> <!-- 16 -> 17 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny strength becomes {{direbunny:str}} (+{{direbunny:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:str" value="1" />
+            <stat name="direbunny:str:mod" value="1" /> <!-- 17 -> 18 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny strength becomes {{direbunny:str}} (+{{direbunny:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:str" value="1" /> <!-- 18 -> 19 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny strength becomes {{direbunny:str}} (+{{direbunny:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:str" value="1" />
+            <stat name="direbunny:str:mod" value="1" /> <!-- 19 -> 20 -->
+        </rules>
+    </element>
+
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_DIRE_BUNNY">
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny dexterity becomes {{direbunny:dex}} (+{{direbunny:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:dex" value="1" />
+            <stat name="direbunny:dex:mod" value="1" /> <!-- 13 -> 14 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny dexterity becomes {{direbunny:dex}} (+{{direbunny:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:dex" value="1" /> <!-- 14 -> 15 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny dexterity becomes {{direbunny:dex}} (+{{direbunny:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:dex" value="1" />
+            <stat name="direbunny:dex:mod" value="1" /> <!-- 15 -> 16 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny dexterity becomes {{direbunny:dex}} (+{{direbunny:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:dex" value="1" /> <!-- 16 -> 17 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny dexterity becomes {{direbunny:dex}} (+{{direbunny:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:dex" value="1" />
+            <stat name="direbunny:dex:mod" value="1" /> <!-- 17 -> 18 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny dexterity becomes {{direbunny:dex}} (+{{direbunny:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:dex" value="1" /> <!-- 18 -> 19 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny dexterity becomes {{direbunny:dex}} (+{{direbunny:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:dex" value="1" />
+            <stat name="direbunny:dex:mod" value="1" /> <!-- 19 -> 20 -->
+        </rules>
+    </element>
+
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_DIRE_BUNNY">
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny constitution becomes {{direbunny:con}} (+{{direbunny:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:con" value="1" /> <!-- 14 -> 15 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny constitution becomes {{direbunny:con}} (+{{direbunny:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:con" value="1" />
+            <stat name="direbunny:con:mod" value="1" /> <!-- 15 -> 16 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny constitution becomes {{direbunny:con}} (+{{direbunny:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:con" value="1" /> <!-- 16 -> 17 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny constitution becomes {{direbunny:con}} (+{{direbunny:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:con" value="1" />
+            <stat name="direbunny:con:mod" value="1" /> <!-- 17 -> 18 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny constitution becomes {{direbunny:con}} (+{{direbunny:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:con" value="1" /> <!-- 18 -> 19 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny constitution becomes {{direbunny:con}} (+{{direbunny:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:con" value="1" />
+            <stat name="direbunny:con:mod" value="1" /> <!-- 19 -> 20 -->
+        </rules>
+    </element>
+
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_DIRE_BUNNY">
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny intelligence becomes {{direbunny:int}} (+{{direbunny:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:int" value="1" /> <!-- 8 -> 9 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny intelligence becomes {{direbunny:int}} (+{{direbunny:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:int" value="1" />
+            <stat name="direbunny:int:mod" value="1" /> <!-- 9 -> 10 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny intelligence becomes {{direbunny:int}} (+{{direbunny:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:int" value="1" /> <!-- 10 -> 11 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny intelligence becomes {{direbunny:int}} (+{{direbunny:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:int" value="1" />
+            <stat name="direbunny:int:mod" value="1" /> <!-- 11 -> 12 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny intelligence becomes {{direbunny:int}} (+{{direbunny:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:int" value="1" /> <!-- 12 -> 13 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny intelligence becomes {{direbunny:int}} (+{{direbunny:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:int" value="1" />
+            <stat name="direbunny:int:mod" value="1" /> <!-- 13 -> 14 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny intelligence becomes {{direbunny:int}} (+{{direbunny:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:int" value="1" /> <!-- 14 -> 15 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny intelligence becomes {{direbunny:int}} (+{{direbunny:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:int" value="1" />
+            <stat name="direbunny:int:mod" value="1" /> <!-- 15 -> 16 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny intelligence becomes {{direbunny:int}} (+{{direbunny:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:int" value="1" /> <!-- 16 -> 17 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny intelligence becomes {{direbunny:int}} (+{{direbunny:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:int" value="1" />
+            <stat name="direbunny:int:mod" value="1" /> <!-- 17 -> 18 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny intelligence becomes {{direbunny:int}} (+{{direbunny:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:int" value="1" /> <!-- 18 -> 19 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny intelligence becomes {{direbunny:int}} (+{{direbunny:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:int" value="1" />
+            <stat name="direbunny:int:mod" value="1" /> <!-- 19 -> 20 -->
+        </rules>
+    </element>
+
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_DIRE_BUNNY">
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny wisdom becomes {{direbunny:wis}} (+{{direbunny:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:wis" value="1" /> <!-- 14 -> 15 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny wisdom becomes {{direbunny:wis}} (+{{direbunny:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:wis" value="1" />
+            <stat name="direbunny:wis:mod" value="1" /> <!-- 15 -> 16 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny wisdom becomes {{direbunny:wis}} (+{{direbunny:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:wis" value="1" /> <!-- 16 -> 17 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny wisdom becomes {{direbunny:wis}} (+{{direbunny:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:wis" value="1" />
+            <stat name="direbunny:wis:mod" value="1" /> <!-- 17 -> 18 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny wisdom becomes {{direbunny:wis}} (+{{direbunny:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:wis" value="1" /> <!-- 18 -> 19 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny wisdom becomes {{direbunny:wis}} (+{{direbunny:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:wis" value="1" />
+            <stat name="direbunny:wis:mod" value="1" /> <!-- 19 -> 20 -->
+        </rules>
+    </element>
+
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_DIRE_BUNNY">
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny charisma becomes {{direbunny:cha}} (+{{direbunny:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:cha" value="1" />
+            <stat name="direbunny:cha:mod" value="1" /> <!-- 11 -> 12 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny charisma becomes {{direbunny:cha}} (+{{direbunny:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:cha" value="1" /> <!-- 12 -> 13 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny charisma becomes {{direbunny:cha}} (+{{direbunny:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:cha" value="1" />
+            <stat name="direbunny:cha:mod" value="1" /> <!-- 13 -> 14 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny charisma becomes {{direbunny:cha}} (+{{direbunny:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:cha" value="1" /> <!-- 14 -> 15 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny charisma becomes {{direbunny:cha}} (+{{direbunny:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:cha" value="1" />
+            <stat name="direbunny:cha:mod" value="1" /> <!-- 15 -> 16 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny charisma becomes {{direbunny:cha}} (+{{direbunny:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:cha" value="1" /> <!-- 16 -> 17 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny charisma becomes {{direbunny:cha}} (+{{direbunny:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:cha" value="1" />
+            <stat name="direbunny:cha:mod" value="1" /> <!-- 17 -> 18 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny charisma becomes {{direbunny:cha}} (+{{direbunny:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:cha" value="1" /> <!-- 18 -> 19 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_DIRE_BUNNY">
+        <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_DIRE_BUNNY</requirements>
+        <supports>Dire Bunny Ability Boost</supports>
+        <compendium display="false" />
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Dire Bunny charisma becomes {{direbunny:cha}} (+{{direbunny:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="direbunny:cha" value="1" />
+            <stat name="direbunny:cha:mod" value="1" /> <!-- 19 -> 20 -->
+        </rules>
+    </element>
+
+    <!-- Go For the Throat -->
+	<element name="Go For the Throat" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="go for the throat:bonus:direbunny" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>[level:tamer:5],
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:direbunny" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_3_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>
+			[level:tamer:9],ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:direbunny" value="1" />
+		</rules>
+	</element>
+
+    <!-- Survival Insticts -->
+	<element name="Survival Instincts" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Dire Bunny" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Dire Bunny" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Dire Bunny" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Dire Bunny" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Dire Bunny" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_6_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Dire Bunny" />
+		</rules>
+	</element>
+
+	<element name="Dire Bunny Survival Instincts: Strength" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Survival Instinct Dire Bunny</supports>
+		<description>
+			<p>Your companion gains proficiency in Strength Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{direbunny:str:save}} in Strength Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="direbunny:str:save" value="proficiency" />
+            <stat name="direbunny:str:save" value="direbunny:str:mod" />
+        </rules>
+	</element>
+	<element name="Dire Bunny Survival Instincts: Dexterity" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Survival Instinct Dire Bunny</supports>
+		<description>
+			<p>Your companion gains proficiency in Dexterity Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{direbunny:dex:save}} in Dexterity Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="direbunny:dex:save" value="proficiency" />
+            <stat name="direbunny:dex:save" value="direbunny:dex:mod" />
+        </rules>
+	</element>
+	<element name="Dire Bunny Survival Instincts: Constitution" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Survival Instinct Dire Bunny</supports>
+		<description>
+			<p>Your companion gains proficiency in Constitution Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{direbunny:con:save}} in Constitution Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="direbunny:con:save" value="proficiency" />
+            <stat name="direbunny:con:save" value="direbunny:con:mod" />
+        </rules>
+	</element>
+	<element name="Dire Bunny Survival Instincts: Intelligence" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Survival Instinct Dire Bunny</supports>
+		<description>
+			<p>Your companion gains proficiency in Intelligence Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{direbunny:int:save}} in Intelligence Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="direbunny:int:save" value="proficiency" />
+            <stat name="direbunny:int:save" value="direbunny:int:mod" />
+        </rules>
+	</element>
+	<element name="Dire Bunny Survival Instincts: Wisdom" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Survival Instinct Dire Bunny</supports>
+		<description>
+			<p>Your companion gains proficiency in Wisdom Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{direbunny:wis:save}} in Wisdom Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="direbunny:wis:save" value="proficiency" />
+            <stat name="direbunny:wis:save" value="direbunny:wis:mod" />
+        </rules>
+	</element>
+	<element name="Dire Bunny Survival Instincts: Charisma" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Survival Instinct Dire Bunny</supports>
+		<description>
+			<p>Your companion gains proficiency in Charisma Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{direbunny:cha:save}} in Charisma Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="direbunny:cha:save" value="proficiency" />
+            <stat name="direbunny:cha:save" value="direbunny:cha:mod" />
+        </rules>
+	</element>
+
+    <!-- War Training -->
+	<element name="War Training" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet>
+			<description>Gains proficiency with one armour type or two weapons (Requires GM discretion)</description>
+		</sheet>
+		<!-- Specific proficiency application depends on the system -->
+	</element>
+	<element name="War Training (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_6_DIRE_BUNNY">
+		<compendium display="false" />
+        <supports>Dire Bunny</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_DIRE_BUNNY</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,1950 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Couatling</name>
+		<description>Couatling from Humperdink's Biomancy Boutique</description>
+		<update version="0.1.0">
+			<file name="Couatling.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Couatling.xml" />
+		</update>
+	</info>
+
+<element name="Couatling" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_COUATLING">
+		<supports>Familiar, Variant Familiar, Bespoke Companion</supports>
+		<description>
+			<p style="margin-bottom:-5px">
+				<em>Tiny celestial, lawful good</em>
+			</p>
+			<h4 style="margin-top:5px" />
+			<p></p>
+			<p>
+				<strong>Armor Class</strong> 13 (natural armour)</p>
+			<p>
+				<strong>Hit Points</strong> 2 (1d4)</p>
+			<p>
+				<strong>Speed</strong> 20 ft., fly 30 ft.</p>
+			<p></p>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead>
+					<tr>
+						<td>STR</td>
+						<td>DEX</td>
+						<td>CON</td>
+						<td>INT</td>
+						<td>WIS</td>
+						<td>CHA</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>6(-2)</td>
+					<td>15(+2)</td>
+					<td>11(+0)</td>
+					<td>10(+0)</td>
+					<td>12(+1)</td>
+					<td>15(+2)</td>
+				</tr>
+			</table>
+			<p>
+				<strong>Skills</strong> Perception +3</p>
+			<p>
+				<strong>Damage Resistances</strong> psychic, radiant</p>
+			<p>
+				<strong>Senses</strong> darkvision 60 ft., passive Perception 13</p>
+			<p>
+				<strong>Languages</strong> telepathy 30 ft.</p>
+			<p>
+				<strong>Challenge</strong> 1/8 (25 XP) <strong>Proficiency Bonus</strong> +2
+			</p>
+			<p></p>
+			<h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
+			<p>
+				<strong>
+					<em>Shielded Mind.</em>
+				</strong>The couatling is immune to scrying and to any effect that would sense its emotions, read its thoughts, or detect its location.</p>
+			<p></p>
+			<h4 style="margin-top:15px">Actions</h4>
+			<p></p>
+			<p>
+				<strong>
+					<em>Bite.</em>
+				</strong>
+				<em>Melee Weapon Attack:</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 5 (1d6 + 2) piercing damage.</p>
+            <p>
+                <strong>
+                    <em>Goodsense (1/Day).</em>
+                </strong>The couatling casts detect evil and good, requiring no material components.</p>
+			<p></p>
+		</description>
+		<sheet>
+			<description>Couatling ({{couatling:size}})- Gains {{hit dice gained:companion:couatling}}d{{hit dice size:couatling}} hit dice. DC: {{couatling:dc}}. AC: +{{couatling:ac bonus}}. Bite: +{{couatling:attack:hit}}, DMG: {{couatling:attack:dice}} + {{couatling:attack:damage}} piercing.</description>
+		</sheet>
+		<rules>
+			<!-- Grant Base Improvements -->
+			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_COUATLING" />
+
+			<!-- Base Stats -->
+			<stat name="couatling:str" value="6" />
+			<stat name="couatling:str:mod" value="-2" />
+			<stat name="couatling:dex" value="15" />
+			<stat name="couatling:dex:mod" value="2" />
+			<stat name="couatling:con" value="11" />
+			<stat name="couatling:con:mod" value="0" />
+			<stat name="couatling:int" value="10" />
+			<stat name="couatling:int:mod" value="0" />
+			<stat name="couatling:wis" value="12" />
+			<stat name="couatling:wis:mod" value="1" />
+			<stat name="couatling:cha" value="15" />
+			<stat name="couatling:cha:mod" value="2" />
+
+			<!-- Derived Stats -->
+			<stat name="couatling:size" inline="true" value="Tiny" />
+			<stat name="hit dice size:couatling" value="4" />
+			<stat name="couatling:ac bonus" value="0" /> <!-- Base AC is 13 natural armor -->
+			<stat name="couatling:dc" value="8" />
+			<stat name="couatling:dc" value="proficiency" />
+			<stat name="couatling:dc" value="couatling:cha:mod" />
+
+			<!-- Attack Stats (Bite) -->
+			<stat name="couatling:attack:hit" value="proficiency" />
+			<stat name="couatling:attack:hit" value="couatling:dex:mod" /> <!-- Bite uses DEX -->
+			<stat name="couatling:attack:hit" value="go for the throat:bonus:couatling" />
+
+			<stat name="couatling:attack:damage" value="couatling:dex:mod" /> <!-- Bite damage uses DEX -->
+			<stat name="couatling:attack:damage" value="go for the throat:bonus:couatling" />
+			<stat name="couatling:attack:dice" inline="true" value="1d6" />
+
+			<!-- Level-Based Stat Increases (for sheet display) -->
+			<stat name="hit dice gained:companion:couatling" value="1" level="4" />
+			<stat name="hit dice gained:companion:couatling" value="1" level="8" />
+			<stat name="hit dice gained:companion:couatling" value="1" level="12" />
+			<stat name="hit dice gained:companion:couatling" value="1" level="16" />
+			<stat name="hit dice gained:companion:couatling" value="1" level="19" />
+
+            <!-- Go for the Throat Bonus Initialization -->
+            <stat name="go for the throat:bonus:couatling" value="0" />
+		</rules>
+	</element>
+
+    <element name="Couatling Improvement" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_COUATLING">
+        <description>
+            <p>Whenever you gain a level beyond 1st in this class, each companion to which you are
+                bonded gains one of the following improvements.
+                Any newly gained companions receive these additional Hit Dice and improvements as if
+                you had them since your 1st level in tamer.</p>
+        </description>
+        <sheet>
+            <description>The Couatling has the following Improvements:</description>
+        </sheet>
+        <rules>
+            <stat name="hit dice gained:companion:couatling" value="2" />
+
+            <select type="Class Feature" name="Couatling Improvement" supports="Couatling" default="ID_LT_HGTMH_COUATLING_ACTION_LINGUIST"/>
+            <select type="Class Feature" name="Couatling Improvement (Lvl 2)" supports="Couatling" level="2" />
+            <select type="Class Feature" name="Couatling Improvement (Lvl 3)" supports="Couatling" level="3" />
+            <select type="Class Feature" name="Couatling Improvement (Lvl 4)" supports="Couatling" level="4" />
+            <select type="Class Feature" name="Couatling Improvement (Lvl 5)" supports="Couatling" level="5" />
+            <select type="Class Feature" name="Couatling Improvement (Lvl 6)" supports="Couatling" level="6" />
+            <select type="Class Feature" name="Couatling Improvement (Lvl 7)" supports="Couatling" level="7" />
+            <select type="Class Feature" name="Couatling Improvement (Lvl 8)" supports="Couatling" level="8" />
+            <select type="Class Feature" name="Couatling Improvement (Lvl 9)" supports="Couatling" level="9" />
+            <select type="Class Feature" name="Couatling Improvement (Lvl 10)" supports="Couatling" level="10" />
+            <select type="Class Feature" name="Couatling Improvement (Lvl 11)" supports="Couatling" level="11" />
+            <select type="Class Feature" name="Couatling Improvement (Lvl 12)" supports="Couatling" level="12" />
+            <select type="Class Feature" name="Couatling Improvement (Lvl 13)" supports="Couatling" level="13" />
+            <select type="Class Feature" name="Couatling Improvement (Lvl 14)" supports="Couatling" level="14" />
+            <select type="Class Feature" name="Couatling Improvement (Lvl 15)" supports="Couatling" level="15" />
+            <select type="Class Feature" name="Couatling Improvement (Lvl 16)" supports="Couatling" level="16" />
+            <select type="Class Feature" name="Couatling Improvement (Lvl 17)" supports="Couatling" level="17" />
+            <select type="Class Feature" name="Couatling Improvement (Lvl 18)" supports="Couatling" level="18" />
+            <select type="Class Feature" name="Couatling Improvement (Lvl 19)" supports="Couatling" level="19" />
+            <select type="Class Feature" name="Couatling Improvement (Lvl 20)" supports="Couatling" level="20" />
+        </rules>
+    </element>
+
+    <!-- Couatling's Improvements -->
+    <element name="Linguist" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_COUATLING_ACTION_LINGUIST">
+        <compendium display="false" />
+        <supports>Couatling</supports>
+        <prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
+        <requirements>[level:tamer:1]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action), Passive (companion)</p>
+            <p>The couatling can understand all the languages that its tamer understands and can speak falteringly in those languages. In addition, the couatling can use an action to cast comprehend languages, requiring no material components. After it has used this action, it can't do so again until its tamer finishes a long rest.</p>
+            <p>The couatling gains this improvement when it becomes a companion; it doesn't cost an improvement.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>Understands/speaks tamer's languages. Cast Comprehend Languages (no components).</description>
+        </sheet>
+    </element>
+
+    <element name="Divine Constriction" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_COUATLING_ACTION_DIVINE_CONSTRICTION">
+        <compendium display="false" />
+        <supports>Couatling</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>The couatling gains a melee spell attack: Constrict. The damage die of the Constrict attack increases with the specified die size in the couatling's Growth improvements.</p>
+            <p>
+                <em><strong>Constrict.</strong> Melee Spell Attack:</em> Cha modifier + PB to hit, reach 5 ft., one creature no more than one size larger than the couatling. <em>Hit:</em> 1d4 + Cha modifier bludgeoning damage, and the target is grappled (escape DC equals save DC). Until this grapple ends, the target is restrained, and the couatling can't constrict another target.</p>
+        </description>
+        <sheet action="Action">
+            <description>Constrict: +{{couatling:constrict:hit}} to hit, reach 5ft. Hit: 1d{{couatling:constrict:dice}} + {{couatling:cha:mod}} bludgeoning, target grappled (escape DC {{couatling:dc}}) and restrained. Can't constrict another target.</description>
+        </sheet>
+        <rules>
+             <stat name="couatling:constrict:hit" value="proficiency" />
+             <stat name="couatling:constrict:hit" value="couatling:cha:mod" />
+             <stat name="couatling:constrict:dice" value="4" />
+        </rules>
+    </element>
+
+    <element name="Growth I" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_COUATLING_TRAIT_GROWTH_I">
+        <compendium display="false" />
+        <supports>Couatling</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The couatling's size increases to Small and its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage die of its Bite attack increases to a d8 and its Divine Constriction to a d6.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="couatling:size" inline="true" value="Small" />
+            <stat name="hit dice size:couatling" value="2" /> <!-- d4 to d6 -->
+            <stat name="couatling:attack:dice" inline="true" value="1d8" /> <!-- Bite damage -->
+            <stat name="couatling:constrict:dice" value="2" /> <!-- Constrict damage -->
+        </rules>
+    </element>
+
+    <element name="Divine Aegis" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_COUATLING_ACTION_DIVINE_AEGIS">
+        <compendium display="false" />
+        <supports>Couatling</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action, the couatling casts protection from evil and good or protection from poison, without requiring material components. These spells end early when the couatling is dismissed. After it uses this feature to cast either spell, it can't do so again until its tamer finishes a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>Cast Protection from Evil/Good or Protection from Poison (no components).</description>
+        </sheet>
+    </element>
+
+    <element name="Solar Beam" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_COUATLING_ACTION_SOLAR_BEAM_I">
+        <compendium display="false" />
+        <supports>Couatling</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p> <!-- Type corrected from Passive to Active based on description -->
+            <p>As an action, the couatling unleashes a beam of radiant energy from its fanged maw. Each creature in a 5-foot-wide, 30-foot-long line must make a Dexterity saving throw, taking 17 (5d6) radiant damage on a failed save, or half as much damage on a successful one. After the couatling uses this action, it can't do so again until its tamer finishes a short or long rest.</p>
+            <p>When the couatling's tamer reaches 9th level in the tamer class, the damage of this action increases to 24 (7d6).</p>
+        </description>
+        <sheet action="Action" usage="1/Short Rest">
+            <description>{{solar beam:range}}ft line (5ft wide), DC {{solar beam:dc}} DEX Save. Hit: {{solar beam:damage}}d6 radiant (or half).</description>
+            <description level="9">{{solar beam:range}}ft line (5ft wide), DC {{solar beam:dc}} DEX Save. Hit: {{solar beam:damage}}d6 radiant (or half).</description>
+        </sheet>
+         <rules>
+             <stat name="solar beam:dc" value="couatling:dc" />
+             <stat name="solar beam:range" value="30" />
+             <stat name="solar beam:damage" value="5" />
+             <stat name="solar beam:damage" value="2" level="9" /> <!-- 5d6 -> 7d6 -->
+        </rules>
+    </element>
+
+    <element name="True Seeing" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_COUATLING_ACTION_TRUE_SEEING_I">
+        <compendium display="false" />
+        <supports>Couatling</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action), Passive (companion)</p>
+            <p>The couatling gains blindsight to a range of 15 feet. As an action, it can gain truesight out to the range of its blindsight until the end of its next turn. After it uses this action, it can't do so again until its tamer finishes a short or long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Short Rest">
+            <description>Blindsight {{couatling:blindsight}}ft. Action: Gain truesight {{couatling:truesight}}ft (dur: {{couatling:truesight:last}}).</description>
+        </sheet>
+        <rules>
+            <stat name="couatling:blindsight" value="15" />
+            <stat name="couatling:truesight" value="couatling:blindsight" />
+            <stat name="couatling:truesight:last" inline="true" value="end of next turn" />
+        </rules>
+    </element>
+
+    <element name="Divine Armour" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_COUATLING_TRAIT_DIVINE_ARMOUR">
+        <compendium display="false" />
+        <supports>Couatling</supports>
+        <prerequisite>Prerequisite: 9th-level tamer, Divine Aegis</prerequisite>
+        <requirements>[level:tamer:9], ID_LT_HGTMH_COUATLING_ACTION_DIVINE_AEGIS</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The couatling's scales harden as it is shrouded in a golden veil that wards against evil creatures. The couatling gains a +2 bonus to its AC while it isn't wearing armour. In addition, evil-aligned creatures that target the couatling with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn't protect the couatling from area effects, such as the explosion of a fireball. If the couatling makes an attack, casts a spell that affects an enemy, or deals damage to another creature, the golden veil fades to mist and this effect (but not the bonus to its AC) is suspended for 1 minute.</p>
+        </description>
+        <sheet>
+            <description>Evil creatures targeting must make WIS Save or lose attack/spell (Suspended 1 min on attack/cast/damage).</description>
+        </sheet>
+        <rules>
+            <stat name="couatling:ac bonus" value="2" />
+        </rules>
+    </element>
+
+    <element name="Growth II" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_COUATLING_TRAIT_GROWTH_II">
+        <compendium display="false" />
+        <supports>Couatling</supports>
+        <prerequisite>Prerequisite: 9th-level tamer, Growth I</prerequisite>
+        <requirements>[level:tamer:9], ID_LT_HGTMH_COUATLING_TRAIT_GROWTH_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The couatling's size increases to Medium and its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage die of its Bite attack increases to a d10 and its Divine Constriction to a d8.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="couatling:size" inline="true" value="Medium" />
+            <stat name="hit dice size:couatling" value="2" /> <!-- d6 to d8 -->
+            <stat name="couatling:attack:dice" inline="true" value="1d10" /> <!-- Bite damage -->
+            <stat name="couatling:constrict:dice" value="2" /> <!-- Constrict damage -->
+        </rules>
+    </element>
+
+    <element name="Solar Beam II" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_COUATLING_ACTION_SOLAR_BEAM_II">
+        <compendium display="false" />
+        <supports>Couatling</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Solar Beam I</prerequisite>
+        <requirements>[level:tamer:13], ID_LT_HGTMH_COUATLING_ACTION_SOLAR_BEAM_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The damage of the couatling's Solar Beam action increases to 31 (9d6), and the length of the line increases to 60 feet. The couatling gains a +1 bonus to the save DC of this action.</p>
+            <p>When the couatling's tamer reaches 17th level in the tamer class, the damage of this action increases to 42 (12d6).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+             <stat name="solar beam:dc" value="1" />
+             <stat name="solar beam:range" value="30" />
+             <stat name="solar beam:damage" value="2" /> <!-- 7d6 -> 9d6 -->
+             <stat name="solar beam:damage" value="3" level="17" /> <!-- 9d6 -> 12d6 -->
+        </rules>
+    </element>
+
+    <element name="True Seeing II" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_COUATLING_ACTION_TRUE_SEEING_II">
+        <compendium display="false" />
+        <supports>Couatling</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, True Seeing I</prerequisite> <!-- Corrected Prereq from True Seeing II -->
+        <requirements>[level:tamer:13], ID_LT_HGTMH_COUATLING_ACTION_TRUE_SEEING_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The couatling's blindsight increases to 60 feet. When it uses its action to gain truesight out to the range of its blindsight, the effect lasts 10 minutes.</p>
+        </description>
+        <sheet display="false">
+            <description>Blindsight {{couatling:blindsight}}ft. Truesight action now lasts 10 mins.</description>
+        </sheet>
+        <rules>
+            <stat name="couatling:blindsight" value="45" /> <!-- 15ft to 60ft -->
+            <stat name="couatling:truesight:last" inline="true" value="10 min" />
+        </rules>
+    </element>
+
+    <element name="Evil's Scourge" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_COUATLING_ACTION_EVILS_SCOURGE">
+        <compendium display="false" />
+        <supports>Couatling</supports>
+        <prerequisite>Prerequisite: 17th-level tamer, Divine Armour</prerequisite>
+        <requirements>[level:tamer:17], ID_LT_HGTMH_COUATLING_TRAIT_DIVINE_ARMOUR</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action, the couatling casts the dispel evil and good spell, without requiring material components. This spell ends early when the couatling is dismissed. After it uses this action, it can't do so again until its tamer finishes a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>Cast Dispel Evil and Good (no components).</description>
+        </sheet>
+    </element>
+	
+    <!-- General Improvements -->
+	<!-- Speed Training -->
+	<element name="Speed Training" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SPEED_TRAINING_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<description>
+			<p>Increase one existing speed by 15 feet up to a maximum of 150% of the creature’s base
+				speed, rounded up to the nearest 5-foot increment.</p>
+			<p>E.g., a base speed of 30 feet can be increased to 45 feet maximum, a base speed of 25
+				feet can be increased to 40 feet, and a base speed of 20 feet to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>Increase one existing speed by 15 feet (Max of 150%)</description>
+		</sheet>
+	</element>
+
+	<!-- Toughen Up -->
+	<element name="Toughen Up" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false">
+			<description>Your companion gains {{hit dice gained:companion:1}} Hit Die, increasing
+				its hit point maximum</description>
+		</sheet>
+		<rules>
+			<stat name="hit dice gained:companion:couatling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_COUATLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:couatling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_COUATLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:couatling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_COUATLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:couatling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_COUATLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:couatling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_COUATLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:couatling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (7)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_COUATLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:couatling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (8)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_COUATLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:couatling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (9)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_COUATLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:couatling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (10)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_COUATLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:couatling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (11)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_COUATLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:couatling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (12)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_COUATLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:couatling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (13)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_COUATLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:couatling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (14)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_COUATLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:couatling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (15)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_COUATLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:couatling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (16)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_COUATLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:couatling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (17)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_COUATLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:couatling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (18)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_COUATLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:couatling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (19)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_COUATLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:couatling" value="1" />
+		</rules>
+	</element>
+
+    <!-- Ability Boost -->
+	<element name="Ability Boost" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Couatling Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_COUATLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Couatling Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_COUATLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Couatling Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_COUATLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Couatling Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_COUATLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Couatling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_COUATLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Couatling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (7)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_COUATLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Couatling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (8)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_COUATLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Couatling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (9)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_COUATLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Couatling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (10)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_COUATLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Couatling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (11)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_COUATLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Couatling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (12)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_COUATLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Couatling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (13)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_COUATLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Couatling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (14)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_COUATLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Couatling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (15)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_COUATLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Couatling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (16)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_COUATLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Couatling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (17)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_COUATLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Couatling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (18)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_COUATLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Couatling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (19)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_19_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_COUATLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Couatling Ability Boost" />
+		</rules>
+	</element>
+
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_COUATLING">
+    <compendium display="false" />
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling strength becomes {{couatling:str}} (+{{couatling:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:str" value="1" /> <!-- 6 -> 7 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling strength becomes {{couatling:str}} (+{{couatling:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:str" value="1" />
+        <stat name="couatling:str:mod" value="1" /> <!-- 7 -> 8 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling strength becomes {{couatling:str}} (+{{couatling:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:str" value="1" /> <!-- 8 -> 9 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling strength becomes {{couatling:str}} (+{{couatling:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:str" value="1" />
+        <stat name="couatling:str:mod" value="1" /> <!-- 9 -> 10 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling strength becomes {{couatling:str}} (+{{couatling:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:str" value="1" /> <!-- 10 -> 11 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling strength becomes {{couatling:str}} (+{{couatling:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:str" value="1" />
+        <stat name="couatling:str:mod" value="1" /> <!-- 11 -> 12 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling strength becomes {{couatling:str}} (+{{couatling:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:str" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling strength becomes {{couatling:str}} (+{{couatling:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:str" value="1" />
+        <stat name="couatling:str:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling strength becomes {{couatling:str}} (+{{couatling:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:str" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling strength becomes {{couatling:str}} (+{{couatling:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:str" value="1" />
+        <stat name="couatling:str:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_11_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling strength becomes {{couatling:str}} (+{{couatling:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:str" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_12_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_11_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling strength becomes {{couatling:str}} (+{{couatling:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:str" value="1" />
+        <stat name="couatling:str:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_13_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_12_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling strength becomes {{couatling:str}} (+{{couatling:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:str" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_14_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_13_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling strength becomes {{couatling:str}} (+{{couatling:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:str" value="1" />
+        <stat name="couatling:str:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_COUATLING">
+    <compendium display="false" />
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling dexterity becomes {{couatling:dex}} (+{{couatling:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:dex" value="1" />
+        <stat name="couatling:dex:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling dexterity becomes {{couatling:dex}} (+{{couatling:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:dex" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling dexterity becomes {{couatling:dex}} (+{{couatling:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:dex" value="1" />
+        <stat name="couatling:dex:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling dexterity becomes {{couatling:dex}} (+{{couatling:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:dex" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling dexterity becomes {{couatling:dex}} (+{{couatling:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:dex" value="1" />
+        <stat name="couatling:dex:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_COUATLING">
+    <compendium display="false" />
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling constitution becomes {{couatling:con}} (+{{couatling:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:con" value="1" />
+        <stat name="couatling:con:mod" value="1" /> <!-- 11 -> 12 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling constitution becomes {{couatling:con}} (+{{couatling:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:con" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling constitution becomes {{couatling:con}} (+{{couatling:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:con" value="1" />
+        <stat name="couatling:con:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling constitution becomes {{couatling:con}} (+{{couatling:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:con" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling constitution becomes {{couatling:con}} (+{{couatling:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:con" value="1" />
+        <stat name="couatling:con:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling constitution becomes {{couatling:con}} (+{{couatling:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:con" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_7_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling constitution becomes {{couatling:con}} (+{{couatling:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:con" value="1" />
+        <stat name="couatling:con:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_8_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_7_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling constitution becomes {{couatling:con}} (+{{couatling:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:con" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_9_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_8_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling constitution becomes {{couatling:con}} (+{{couatling:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:con" value="1" />
+        <stat name="couatling:con:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_COUATLING">
+    <compendium display="false" />
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling intelligence becomes {{couatling:int}} (+{{couatling:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:int" value="1" /> <!-- 10 -> 11 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling intelligence becomes {{couatling:int}} (+{{couatling:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:int" value="1" />
+        <stat name="couatling:int:mod" value="1" /> <!-- 11 -> 12 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling intelligence becomes {{couatling:int}} (+{{couatling:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:int" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling intelligence becomes {{couatling:int}} (+{{couatling:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:int" value="1" />
+        <stat name="couatling:int:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling intelligence becomes {{couatling:int}} (+{{couatling:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:int" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling intelligence becomes {{couatling:int}} (+{{couatling:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:int" value="1" />
+        <stat name="couatling:int:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling intelligence becomes {{couatling:int}} (+{{couatling:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:int" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling intelligence becomes {{couatling:int}} (+{{couatling:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:int" value="1" />
+        <stat name="couatling:int:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling intelligence becomes {{couatling:int}} (+{{couatling:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:int" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling intelligence becomes {{couatling:int}} (+{{couatling:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:int" value="1" />
+        <stat name="couatling:int:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_COUATLING">
+    <compendium display="false" />
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling wisdom becomes {{couatling:wis}} (+{{couatling:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:wis" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling wisdom becomes {{couatling:wis}} (+{{couatling:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:wis" value="1" />
+        <stat name="couatling:wis:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling wisdom becomes {{couatling:wis}} (+{{couatling:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:wis" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling wisdom becomes {{couatling:wis}} (+{{couatling:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:wis" value="1" />
+        <stat name="couatling:wis:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling wisdom becomes {{couatling:wis}} (+{{couatling:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:wis" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling wisdom becomes {{couatling:wis}} (+{{couatling:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:wis" value="1" />
+        <stat name="couatling:wis:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling wisdom becomes {{couatling:wis}} (+{{couatling:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:wis" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling wisdom becomes {{couatling:wis}} (+{{couatling:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:wis" value="1" />
+        <stat name="couatling:wis:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_COUATLING">
+    <compendium display="false" />
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling charisma becomes {{couatling:cha}} (+{{couatling:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:cha" value="1" />
+        <stat name="couatling:cha:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling charisma becomes {{couatling:cha}} (+{{couatling:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:cha" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling charisma becomes {{couatling:cha}} (+{{couatling:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:cha" value="1" />
+        <stat name="couatling:cha:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling charisma becomes {{couatling:cha}} (+{{couatling:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:cha" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_COUATLING">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_COUATLING</requirements>
+    <supports>Couatling Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Couatling charisma becomes {{couatling:cha}} (+{{couatling:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="couatling:cha" value="1" />
+        <stat name="couatling:cha:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<!-- Go For the Throat -->
+	<element name="Go For the Throat" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="go for the throat:bonus:couatling" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>[level:tamer:5],
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_COUATLING</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:couatling" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_3_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>
+			[level:tamer:9],ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_COUATLING</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:couatling" value="1" />
+		</rules>
+	</element>
+
+    <!-- Survival Insticts -->
+	<element name="Survival Instincts" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Couatling" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_COUATLING</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Couatling" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_COUATLING</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Couatling" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_COUATLING</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Couatling" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_COUATLING</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Couatling" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_6_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_COUATLING</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Couatling" />
+		</rules>
+	</element>
+
+	<element name="Couatling Survival Instincts: Strength" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_COUATLING">
+		<supports>Survival Instinct Couatling</supports>
+		<description>
+			<p>Your companion gains proficiency in Strength Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{couatling:str:save}} in Strength Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="couatling:str:save" value="proficiency" />
+            <stat name="couatling:str:save" value="couatling:str:mod" />
+        </rules>
+	</element>
+	<element name="Couatling Survival Instincts: Dexterity" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_COUATLING">
+		<supports>Survival Instinct Couatling</supports>
+		<description>
+			<p>Your companion gains proficiency in Dexterity Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{couatling:dex:save}} in Dexterity Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="couatling:dex:save" value="proficiency" />
+            <stat name="couatling:dex:save" value="couatling:dex:mod" />
+        </rules>
+	</element>
+	<element name="Couatling Survival Instincts: Constitution" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_COUATLING">
+		<supports>Survival Instinct Couatling</supports>
+		<description>
+			<p>Your companion gains proficiency in Constitution Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{couatling:con:save}} in Constitution Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="couatling:con:save" value="proficiency" />
+            <stat name="couatling:con:save" value="couatling:con:mod" />
+        </rules>
+	</element>
+	<element name="Couatling Survival Instincts: Intelligence" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_COUATLING">
+		<supports>Survival Instinct Couatling</supports>
+		<description>
+			<p>Your companion gains proficiency in Intelligence Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{couatling:int:save}} in Intelligence Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="couatling:int:save" value="proficiency" />
+            <stat name="couatling:int:save" value="couatling:int:mod" />
+        </rules>
+	</element>
+	<element name="Couatling Survival Instincts: Wisdom" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_COUATLING">
+		<supports>Survival Instinct Couatling</supports>
+		<description>
+			<p>Your companion gains proficiency in Wisdom Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{couatling:wis:save}} in Wisdom Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="couatling:wis:save" value="proficiency" />
+            <stat name="couatling:wis:save" value="couatling:wis:mod" />
+        </rules>
+	</element>
+	<element name="Couatling Survival Instincts: Charisma" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_COUATLING">
+		<supports>Survival Instinct Couatling</supports>
+		<description>
+			<p>Your companion gains proficiency in Charisma Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{couatling:cha:save}} in Charisma Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="couatling:cha:save" value="proficiency" />
+            <stat name="couatling:cha:save" value="couatling:cha:mod" />
+        </rules>
+	</element>
+
+    <!-- War Training -->
+	<element name="War Training" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet>
+			<description>Gains proficiency with one armour type or two weapons (Requires GM discretion)</description>
+		</sheet>
+		<!-- Specific proficiency application depends on the system -->
+	</element>
+	<element name="War Training (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_COUATLING</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_COUATLING</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_COUATLING</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_COUATLING</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_6_COUATLING">
+		<compendium display="false" />
+        <supports>Couatling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_COUATLING</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+</elements>

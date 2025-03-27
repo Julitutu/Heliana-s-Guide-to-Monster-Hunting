@@ -1,0 +1,1990 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Death Shroud</name>
+		<description>Death Shroud from Humperdink's Biomancy Boutique</description>
+		<update version="0.1.0">
+			<file name="DeathShroud.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/DeathShroud.xml" />
+		</update>
+	</info>
+
+	<element name="Death Shroud" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DEATH_SHROUD">
+		<supports>Familiar, Variant Familiar, Bespoke Companion</supports>
+		<description>
+			<p style="margin-bottom:-5px">
+				<em>Tiny undead, lawful neutral</em>
+			</p>
+			<h4 style="margin-top:5px" />
+			<p></p>
+			<p>
+				<strong>Armor Class</strong> 12 (natural armour)</p>
+			<p>
+				<strong>Hit Points</strong> 2 (1d4)</p>
+			<p>
+				<strong>Speed</strong> 30 ft.</p>
+			<p></p>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead>
+					<tr>
+						<td>STR</td>
+						<td>DEX</td>
+						<td>CON</td>
+						<td>INT</td>
+						<td>WIS</td>
+						<td>CHA</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>9(-1)</td>
+					<td>13(+1)</td>
+					<td>11(+0)</td>
+					<td>14(+2)</td>
+					<td>13(+1)</td>
+					<td>8(-1)</td>
+				</tr>
+			</table>
+			<p>
+				<strong>Skills</strong> Medicine +3, Thieves' tools +3</p>
+			<p>
+				<strong>Damage Immunities</strong> poison</p>
+			<p>
+				<strong>Condition Immunities</strong> blinded, charmed, poisoned</p>
+			<p>
+				<strong>Senses</strong> blindsight 60 ft. (blind beyond this radius), passive Perception 11</p>
+			<p>
+				<strong>Languages</strong> understands Common but can't speak</p>
+			<p>
+				<strong>Challenge</strong> 1/8 (25 XP) <strong>Proficiency Bonus</strong> +2
+			</p>
+			<p></p>
+			<h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
+			<p>
+				<strong>
+					<em>Morbid Curiosity.</em>
+				</strong>The death shroud is easily distracted by fresh corpses. Whenever it first detects a corpse that has been dead for less than 1 hour (and that it didn't witness die), it must succeed on a DC 11 Wisdom saving throw or get distracted. While distracted, it spends its movement and actions trying to get close to, and inspect, the corpse for a cause of death. A distracted death shroud in a corpse's space uses its action to make Intelligence (Medicine) checks (DC decided by the GM). On a success, it stops being distracted and becomes immune to the allure of that corpse forever.</p>
+            <p>
+                <strong>
+                    <em>Turn Immunity.</em>
+                </strong>The death shroud is immune to effects that turn undead.</p>
+			<p></p>
+			<h4 style="margin-top:15px">Actions</h4>
+			<p></p>
+			<p>
+				<strong>
+					<em>Slap.</em>
+				</strong>
+				<em>Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 3 (1d4+1) bludgeoning damage.</p>
+			<p>
+				<strong>
+					<em>Lich Slap.</em>
+				</strong>
+				<em>Ranged Spell Attack:</em> +4 to hit, range 30 ft., one creature. <em>Hit:</em> 3 (1d6) necrotic damage and the target can't regain hit points until the start of the death shroud's next turn.</p>
+			<p></p>
+		</description>
+		<sheet>
+			<description>Death Shroud ({{deathshroud:size}})- Gains {{hit dice gained:companion:deathshroud}}d{{hit dice size:deathshroud}} hit dice. DC: {{deathshroud:dc}}. AC: +{{deathshroud:ac bonus}}. Slap: +{{deathshroud:slap:hit}}, DMG: {{deathshroud:slap:dice}} + {{deathshroud:slap:damage}} bludg. Lich Slap: +{{deathshroud:lichslap:hit}}, DMG: {{deathshroud:lichslap:dice}} necrotic.</description>
+		</sheet>
+		<rules>
+			<!-- Grant Base Improvements -->
+			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_DEATH_SHROUD" />
+
+			<!-- Base Stats -->
+			<stat name="deathshroud:str" value="9" />
+			<stat name="deathshroud:str:mod" value="-1" />
+			<stat name="deathshroud:dex" value="13" />
+			<stat name="deathshroud:dex:mod" value="1" />
+			<stat name="deathshroud:con" value="11" />
+			<stat name="deathshroud:con:mod" value="0" />
+			<stat name="deathshroud:int" value="14" />
+			<stat name="deathshroud:int:mod" value="2" />
+			<stat name="deathshroud:wis" value="13" />
+			<stat name="deathshroud:wis:mod" value="1" />
+			<stat name="deathshroud:cha" value="8" />
+			<stat name="deathshroud:cha:mod" value="-1" />
+
+			<!-- Derived Stats -->
+			<stat name="deathshroud:size" inline="true" value="Tiny" />
+			<stat name="hit dice size:deathshroud" value="4" />
+			<stat name="deathshroud:ac bonus" value="0" />
+			<stat name="deathshroud:dc" value="8" />
+			<stat name="deathshroud:dc" value="proficiency" />
+			<stat name="deathshroud:dc" value="deathshroud:int:mod" />
+
+			<!-- Attack Stats (Slap) -->
+			<stat name="deathshroud:slap:hit" value="proficiency" />
+			<stat name="deathshroud:slap:hit" value="deathshroud:str:mod" />
+			<stat name="deathshroud:slap:hit" value="go for the throat:bonus:deathshroud" />
+			<stat name="deathshroud:slap:damage" value="deathshroud:str:mod" />
+			<stat name="deathshroud:slap:damage" value="go for the throat:bonus:deathshroud" />
+			<stat name="deathshroud:slap:dice" inline="true" value="1d4" />
+
+            <!-- Attack Stats (Lich Slap) -->
+			<stat name="deathshroud:lichslap:hit" value="proficiency" />
+			<stat name="deathshroud:lichslap:hit" value="deathshroud:int:mod" />
+			<!-- Lich Slap damage is just 1d6, no modifier added typically for spell attacks unless specified -->
+            <stat name="deathshroud:lichslap:dice" inline="true" value="1d6" />
+
+			<!-- Level-Based Stat Increases (for sheet display) -->
+			<stat name="hit dice gained:companion:deathshroud" value="1" level="4" />
+			<stat name="hit dice gained:companion:deathshroud" value="1" level="8" />
+			<stat name="hit dice gained:companion:deathshroud" value="1" level="12" />
+			<stat name="hit dice gained:companion:deathshroud" value="1" level="16" />
+			<stat name="hit dice gained:companion:deathshroud" value="1" level="19" />
+
+            <!-- Go for the Throat Bonus Initialization -->
+            <stat name="go for the throat:bonus:deathshroud" value="0" />
+		</rules>
+	</element>
+
+	<element name="Death Shroud Improvement" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_DEATH_SHROUD">
+		<description>
+			<p>Whenever you gain a level beyond 1st in this class, each companion to which you are
+				bonded gains one of the following improvements.
+				Any newly gained companions receive these additional Hit Dice and improvements as if
+				you had them since your 1st level in tamer.</p>
+		</description>
+		<sheet>
+			<description>The Death Shroud has the following Improvements:</description>
+		</sheet>
+		<rules>
+			<stat name="hit dice gained:companion:deathshroud" value="2" />
+
+			<select type="Class Feature" name="Death Shroud Improvement" supports="Death Shroud" default="ID_LT_HGTMH_DEATH_SHROUD_ACTION_RECYCLE"/>
+			<select type="Class Feature" name="Death Shroud Improvement (Lvl 2)" supports="Death Shroud" level="2" />
+			<select type="Class Feature" name="Death Shroud Improvement (Lvl 3)" supports="Death Shroud" level="3" />
+			<select type="Class Feature" name="Death Shroud Improvement (Lvl 4)" supports="Death Shroud" level="4" />
+			<select type="Class Feature" name="Death Shroud Improvement (Lvl 5)" supports="Death Shroud" level="5" />
+			<select type="Class Feature" name="Death Shroud Improvement (Lvl 6)" supports="Death Shroud" level="6" />
+			<select type="Class Feature" name="Death Shroud Improvement (Lvl 7)" supports="Death Shroud" level="7" />
+			<select type="Class Feature" name="Death Shroud Improvement (Lvl 8)" supports="Death Shroud" level="8" />
+			<select type="Class Feature" name="Death Shroud Improvement (Lvl 9)" supports="Death Shroud" level="9" />
+			<select type="Class Feature" name="Death Shroud Improvement (Lvl 10)" supports="Death Shroud" level="10" />
+			<select type="Class Feature" name="Death Shroud Improvement (Lvl 11)" supports="Death Shroud" level="11" />
+			<select type="Class Feature" name="Death Shroud Improvement (Lvl 12)" supports="Death Shroud" level="12" />
+			<select type="Class Feature" name="Death Shroud Improvement (Lvl 13)" supports="Death Shroud" level="13" />
+			<select type="Class Feature" name="Death Shroud Improvement (Lvl 14)" supports="Death Shroud" level="14" />
+			<select type="Class Feature" name="Death Shroud Improvement (Lvl 15)" supports="Death Shroud" level="15" />
+			<select type="Class Feature" name="Death Shroud Improvement (Lvl 16)" supports="Death Shroud" level="16" />
+			<select type="Class Feature" name="Death Shroud Improvement (Lvl 17)" supports="Death Shroud" level="17" />
+			<select type="Class Feature" name="Death Shroud Improvement (Lvl 18)" supports="Death Shroud" level="18" />
+			<select type="Class Feature" name="Death Shroud Improvement (Lvl 19)" supports="Death Shroud" level="19" />
+			<select type="Class Feature" name="Death Shroud Improvement (Lvl 20)" supports="Death Shroud" level="20" />
+		</rules>
+	</element>
+
+	<!-- Death Shroud's Improvements -->
+    <element name="Recycle" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DEATH_SHROUD_ACTION_RECYCLE">
+        <compendium display="false" />
+        <supports>Death Shroud</supports>
+        <prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
+        <requirements>[level:tamer:1]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action or reaction)</p>
+            <p>As a reaction when the death shroud kills a creature with its Slap or Lich Slap attacks, or as an action when the death shroud is within 5 feet of a corpse that has been dead for no longer than 1 hour, the death shroud absorbs some of the corpse's mass into itself. The death shroud regains hit points equal to one roll of the corpse's Hit Die and gains the same number of temporary hit points.</p>
+            <p>In addition, if the corpse is equal to or larger than the death shroud, the death shroud's size increases by one size category until its tamer finishes a short or long rest. The death shroud's size can increase by no more than one category in this way. If there isn't enough room for the death shroud to double its size, it attains the maximum possible size in the space available. While its size is increased in this way, the death shroud has advantage on Strength checks and Strength saving throws, it gains a +2 bonus to the attack roll of its Slap attack, and its Slap attack deals an extra 1d4 bludgeoning damage on a hit.</p>
+            <p>The death shroud gains this improvement when it becomes a companion; it doesn't cost an improvement.</p>
+        </description>
+        <sheet action="Action/Reaction">
+            <description>Action (near fresh corpse) / Reaction (on kill): Regain HP/Temp HP = corpse HD roll. If corpse &gt;= size, grow 1 size (S/L Rest). While grown: ADV STR checks/saves, +2 Slap attack, +1d4 B Slap damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Growth I" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DEATH_SHROUD_TRAIT_GROWTH_I">
+        <compendium display="false" />
+        <supports>Death Shroud</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The death shroud's size increases to Small and its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage die of its Slap increases to a d6 and its Lich Slap to a d10.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="deathshroud:size" inline="true" value="Small" />
+            <stat name="hit dice size:deathshroud" value="2" /> <!-- d4 to d6 -->
+            <stat name="deathshroud:slap:dice" inline="true" value="1d6" />
+            <stat name="deathshroud:lichslap:dice" inline="true" value="1d10" />
+        </rules>
+    </element>
+
+    <element name="Hulking Protector" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DEATH_SHROUD_ACTION_HULKING_PROTECTOR">
+        <compendium display="false" />
+        <supports>Death Shroud</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (reaction)</p>
+            <p>When a creature the death shroud can see attacks a target that is within 5 feet of the death shroud, it can use its reaction to decrease the damage the target takes by 1d10, provided the attack is against a creature other than the death shroud. When the death shroud's tamer reaches 13th level in the tamer class, this damage reduction increases to 2d10.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>Reduce damage to adjacent ally by 1d10.</description>
+            <description level="13">Reduce damage to adjacent ally by 2d10.</description>
+        </sheet>
+    </element>
+
+    <element name="Growth II" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DEATH_SHROUD_TRAIT_GROWTH_II">
+        <compendium display="false" />
+        <supports>Death Shroud</supports>
+        <prerequisite>Prerequisite: 5th-level tamer, Growth I</prerequisite>
+        <requirements>[level:tamer:5], ID_LT_HGTMH_DEATH_SHROUD_TRAIT_GROWTH_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The death shroud's size increases to Medium and its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage die of its Slap increases to a d8 and its Lich Slap to a 2d6.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="deathshroud:size" inline="true" value="Medium" />
+            <stat name="hit dice size:deathshroud" value="2" /> <!-- d6 to d8 -->
+            <stat name="deathshroud:slap:dice" inline="true" value="1d8" />
+            <stat name="deathshroud:lichslap:dice" inline="true" value="2d6" />
+        </rules>
+    </element>
+
+    <element name="Multiattack" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DEATH_SHROUD_ACTION_MULTIATTACK">
+        <compendium display="false" />
+        <supports>Death Shroud</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action, the death shroud makes two attacks with any combination of Slap and Lich Slap.</p>
+        </description>
+        <sheet action="Action">
+            <description>Two attacks (any combination of Slap/Lich Slap).</description>
+        </sheet>
+    </element>
+
+    <element name="Undead Fortitude I" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DEATH_SHROUD_TRAIT_UNDEAD_FORTITUDE_I">
+        <compendium display="false" />
+        <supports>Death Shroud</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The death shroud gains a +1 bonus to its AC. In addition, if damage reduces the death shroud to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the death shroud drops to 1 hit point instead.</p>
+        </description>
+        <sheet>
+            <description>If reduced to 0 HP, make CON Save (DC 5 + DMG) to drop to 1 HP instead (fails on radiant/crit).</description>
+        </sheet>
+        <rules>
+            <stat name="deathshroud:ac bonus" value="1" />
+        </rules>
+    </element>
+
+    <element name="Grave Robber" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DEATH_SHROUD_ACTION_GRAVE_ROBBER">
+        <compendium display="false" />
+        <supports>Death Shroud</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (bonus action), Passive (companion &amp; tamer)</p>
+            <p>The death shroud is always under the effects of the detect magic spell, which has a radius equal to the death shroud's blindsight. If the death shroud uses its action to see magical auras, these are also visible to its tamer.</p>
+            <p>In addition, the death shroud can use its bonus action to use its thieves' tools to disarm a trap or open a lock, or to take the Use an Object action.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Always under Detect Magic ({{deathshroud:blindsight}}ft radius). Bonus Action: Use Thieves' Tools or Use an Object.</description>
+        </sheet>
+         <rules>
+            <stat name="deathshroud:blindsight" value="60"/>
+        </rules>
+    </element>
+
+    <element name="Corpse Investigator" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DEATH_SHROUD_ACTION_CORPSE_INVESTIGATOR">
+        <compendium display="false" />
+        <supports>Death Shroud</supports>
+        <prerequisite>Prerequisite: 9th-level tamer, Grave Robber</prerequisite>
+        <requirements>[level:tamer:9], ID_LT_HGTMH_DEATH_SHROUD_ACTION_GRAVE_ROBBER</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action), Passive (tamer)</p>
+            <p>As an action, the death shroud can cast the speak with dead spell without requiring material components, allowing its tamer to ask the corpse questions. This spell ends early when the death shroud is dismissed. After the death shroud uses this action, it can't do so again until its tamer finishes a short or long rest.</p>
+            <p>In addition, the death shroud's tamer gains proficiency in the Medicine skill.</p>
+        </description>
+        <sheet action="Action" usage="1/Short Rest">
+            <description>Cast Speak with Dead (no components). Tamer gains Medicine proficiency.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+        </rules>
+    </element>
+
+    <element name="Undead Fortitude II" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DEATH_SHROUD_TRAIT_UNDEAD_FORTITUDE_II">
+        <compendium display="false" />
+        <supports>Death Shroud</supports>
+        <prerequisite>Prerequisite: 9th-level tamer, Undead Fortitude I</prerequisite>
+        <requirements>[level:tamer:9], ID_LT_HGTMH_DEATH_SHROUD_TRAIT_UNDEAD_FORTITUDE_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The death shroud gains a +1 bonus to its AC. This improvement is in addition to the bonus from Undead Fortitude I. The DC for the Constitution saving throw it makes when reduced to 0 hit points equals the damage taken, unless the damage is radiant or from a critical hit.</p>
+        </description>
+        <sheet>
+            <description>CON Save (DMG) to drop to 1 HP instead (fails on radiant/crit).</description>
+        </sheet>
+        <rules>
+            <stat name="deathshroud:ac bonus" value="1" />
+        </rules>
+    </element>
+
+    <element name="Growth III" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DEATH_SHROUD_TRAIT_GROWTH_III">
+        <compendium display="false" />
+        <supports>Death Shroud</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Growth II</prerequisite>
+        <requirements>[level:tamer:13], ID_LT_HGTMH_DEATH_SHROUD_TRAIT_GROWTH_II</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The death shroud's size increases to Large and its Hit Die size increases to a d10 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage die of its Slap attack increases to a d10 and its Lich Slap to 2d8.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="deathshroud:size" inline="true" value="Large" />
+            <stat name="hit dice size:deathshroud" value="2" /> <!-- d8 to d10 -->
+            <stat name="deathshroud:slap:dice" inline="true" value="1d10" />
+            <stat name="deathshroud:lichslap:dice" inline="true" value="2d8" />
+        </rules>
+    </element>
+
+    <element name="Undead Fortitude III" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DEATH_SHROUD_TRAIT_UNDEAD_FORTITUDE_III">
+        <compendium display="false" />
+        <supports>Death Shroud</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Undead Fortitude II</prerequisite>
+        <requirements>[level:tamer:13], ID_LT_HGTMH_DEATH_SHROUD_TRAIT_UNDEAD_FORTITUDE_II</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The death shroud gains a +1 bonus to its AC. This improvement is in addition to the bonuses from Undead Fortitude I &amp; II. It can make the Constitution saving throw when reduced to 0 hit points even if the damage is radiant or from a critical hit.</p>
+        </description>
+        <sheet>
+            <description>CON Save (DMG) to drop to 1 HP instead even if radiant/crit hit.</description>
+        </sheet>
+        <rules>
+            <stat name="deathshroud:ac bonus" value="1" />
+        </rules>
+    </element>
+
+    <element name="Swarm" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_DEATH_SHROUD_ACTION_SWARM">
+        <compendium display="false" />
+        <supports>Death Shroud</supports>
+        <prerequisite>Prerequisite: 17th-level tamer, Growth III</prerequisite>
+        <requirements>[level:tamer:17], ID_LT_HGTMH_DEATH_SHROUD_TRAIT_GROWTH_III</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action, the death shroud deconstructs itself into eight ghouls which last for 1 minute. While in this state, the tamer can issue a single command as an action to all eight ghouls, which they follow to the best of their ability. The tamer can't use its Bolster, Psychic Bond, Malleable Presence, Switcheroo, or Magnificent Presence features to affect any of the ghouls.</p>
+            <p>The tamer can dismiss the death shroud if at least one ghoul is within range of the tamer. When it does so, the nearest ghoul returns to the vessel—where it reverts to a death shroud and remains unconscious until its tamer finishes a long rest—and all the other ghouls drop dead.</p>
+            <p>Alternatively, if at least one ghoul is alive at the end of the minute and is on the same plane of existence as the tamer, the death shroud returns to its vessel and remains unconscious until its tamer finishes a long rest. If all ghouls die, the death shroud returns to its vessel with 3 levels of exhaustion and remains unconscious until its tamer finishes a long rest. If the tamer is on a different plane of existence to all of the ghouls when the minute ends or when the last ghoul dies, the death shroud dies.</p>
+        </description>
+        <sheet action="Action" usage="Variable (see desc)">
+            <description>Deconstruct into 8 ghouls (1 min). Command all as 1 action. Dismiss early or reform after 1 min (unconscious). See description for reform/death conditions.</description>
+        </sheet>
+    </element>
+
+    <!-- General Improvements -->
+	<!-- Speed Training -->
+	<element name="Speed Training" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SPEED_TRAINING_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<description>
+			<p>Increase one existing speed by 15 feet up to a maximum of 150% of the creature’s base
+				speed, rounded up to the nearest 5-foot increment.</p>
+			<p>E.g., a base speed of 30 feet can be increased to 45 feet maximum, a base speed of 25
+				feet can be increased to 40 feet, and a base speed of 20 feet to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>Increase one existing speed by 15 feet (Max of 150%)</description>
+		</sheet>
+	</element>
+
+	<!-- Toughen Up -->
+	<element name="Toughen Up" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false">
+			<description>Your companion gains {{hit dice gained:companion:1}} Hit Die, increasing
+				its hit point maximum</description>
+		</sheet>
+		<rules>
+			<stat name="hit dice gained:companion:deathshroud" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:deathshroud" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:deathshroud" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:deathshroud" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:deathshroud" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:deathshroud" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (7)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:deathshroud" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (8)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:deathshroud" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (9)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:deathshroud" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (10)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:deathshroud" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (11)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:deathshroud" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (12)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:deathshroud" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (13)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:deathshroud" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (14)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:deathshroud" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (15)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:deathshroud" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (16)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:deathshroud" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (17)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:deathshroud" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (18)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:deathshroud" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (19)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:deathshroud" value="1" />
+		</rules>
+	</element>
+
+    <!-- Ability Boost -->
+	<element name="Ability Boost" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Death Shroud Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEATH_SHROUD</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Death Shroud Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_DEATH_SHROUD</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Death Shroud Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_DEATH_SHROUD</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Death Shroud Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_DEATH_SHROUD</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Death Shroud Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_DEATH_SHROUD</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Death Shroud Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (7)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_DEATH_SHROUD</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Death Shroud Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (8)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_DEATH_SHROUD</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Death Shroud Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (9)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_DEATH_SHROUD</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Death Shroud Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (10)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_DEATH_SHROUD</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Death Shroud Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (11)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_DEATH_SHROUD</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Death Shroud Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (12)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_DEATH_SHROUD</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Death Shroud Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (13)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_DEATH_SHROUD</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Death Shroud Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (14)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_DEATH_SHROUD</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Death Shroud Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (15)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_DEATH_SHROUD</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Death Shroud Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (16)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_DEATH_SHROUD</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Death Shroud Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (17)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_DEATH_SHROUD</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Death Shroud Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (18)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_DEATH_SHROUD</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Death Shroud Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (19)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_19_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_DEATH_SHROUD</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Death Shroud Ability Boost" />
+		</rules>
+	</element>
+
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_DEATH_SHROUD">
+    <compendium display="false" />
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud strength becomes {{deathshroud:str}} (+{{deathshroud:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:str" value="1" />
+        <stat name="deathshroud:str:mod" value="1" /> <!-- 9 -> 10 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud strength becomes {{deathshroud:str}} (+{{deathshroud:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:str" value="1" /> <!-- 10 -> 11 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud strength becomes {{deathshroud:str}} (+{{deathshroud:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:str" value="1" />
+        <stat name="deathshroud:str:mod" value="1" /> <!-- 11 -> 12 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud strength becomes {{deathshroud:str}} (+{{deathshroud:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:str" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud strength becomes {{deathshroud:str}} (+{{deathshroud:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:str" value="1" />
+        <stat name="deathshroud:str:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud strength becomes {{deathshroud:str}} (+{{deathshroud:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:str" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud strength becomes {{deathshroud:str}} (+{{deathshroud:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:str" value="1" />
+        <stat name="deathshroud:str:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud strength becomes {{deathshroud:str}} (+{{deathshroud:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:str" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud strength becomes {{deathshroud:str}} (+{{deathshroud:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:str" value="1" />
+        <stat name="deathshroud:str:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud strength becomes {{deathshroud:str}} (+{{deathshroud:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:str" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_11_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud strength becomes {{deathshroud:str}} (+{{deathshroud:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:str" value="1" />
+        <stat name="deathshroud:str:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_DEATH_SHROUD">
+    <compendium display="false" />
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud dexterity becomes {{deathshroud:dex}} (+{{deathshroud:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:dex" value="1" />
+        <stat name="deathshroud:dex:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud dexterity becomes {{deathshroud:dex}} (+{{deathshroud:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:dex" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud dexterity becomes {{deathshroud:dex}} (+{{deathshroud:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:dex" value="1" />
+        <stat name="deathshroud:dex:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud dexterity becomes {{deathshroud:dex}} (+{{deathshroud:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:dex" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud dexterity becomes {{deathshroud:dex}} (+{{deathshroud:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:dex" value="1" />
+        <stat name="deathshroud:dex:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud dexterity becomes {{deathshroud:dex}} (+{{deathshroud:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:dex" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud dexterity becomes {{deathshroud:dex}} (+{{deathshroud:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:dex" value="1" />
+        <stat name="deathshroud:dex:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_DEATH_SHROUD">
+    <compendium display="false" />
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud constitution becomes {{deathshroud:con}} (+{{deathshroud:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:con" value="1" />
+        <stat name="deathshroud:con:mod" value="1" /> <!-- 11 -> 12 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud constitution becomes {{deathshroud:con}} (+{{deathshroud:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:con" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud constitution becomes {{deathshroud:con}} (+{{deathshroud:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:con" value="1" />
+        <stat name="deathshroud:con:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud constitution becomes {{deathshroud:con}} (+{{deathshroud:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:con" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud constitution becomes {{deathshroud:con}} (+{{deathshroud:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:con" value="1" />
+        <stat name="deathshroud:con:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud constitution becomes {{deathshroud:con}} (+{{deathshroud:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:con" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_7_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud constitution becomes {{deathshroud:con}} (+{{deathshroud:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:con" value="1" />
+        <stat name="deathshroud:con:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_8_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_7_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud constitution becomes {{deathshroud:con}} (+{{deathshroud:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:con" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_9_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_8_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud constitution becomes {{deathshroud:con}} (+{{deathshroud:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:con" value="1" />
+        <stat name="deathshroud:con:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_DEATH_SHROUD">
+    <compendium display="false" />
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud intelligence becomes {{deathshroud:int}} (+{{deathshroud:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:int" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud intelligence becomes {{deathshroud:int}} (+{{deathshroud:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:int" value="1" />
+        <stat name="deathshroud:int:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud intelligence becomes {{deathshroud:int}} (+{{deathshroud:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:int" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud intelligence becomes {{deathshroud:int}} (+{{deathshroud:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:int" value="1" />
+        <stat name="deathshroud:int:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud intelligence becomes {{deathshroud:int}} (+{{deathshroud:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:int" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud intelligence becomes {{deathshroud:int}} (+{{deathshroud:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:int" value="1" />
+        <stat name="deathshroud:int:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_DEATH_SHROUD">
+    <compendium display="false" />
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud wisdom becomes {{deathshroud:wis}} (+{{deathshroud:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:wis" value="1" />
+        <stat name="deathshroud:wis:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud wisdom becomes {{deathshroud:wis}} (+{{deathshroud:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:wis" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud wisdom becomes {{deathshroud:wis}} (+{{deathshroud:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:wis" value="1" />
+        <stat name="deathshroud:wis:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud wisdom becomes {{deathshroud:wis}} (+{{deathshroud:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:wis" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud wisdom becomes {{deathshroud:wis}} (+{{deathshroud:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:wis" value="1" />
+        <stat name="deathshroud:wis:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud wisdom becomes {{deathshroud:wis}} (+{{deathshroud:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:wis" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud wisdom becomes {{deathshroud:wis}} (+{{deathshroud:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:wis" value="1" />
+        <stat name="deathshroud:wis:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_DEATH_SHROUD">
+    <compendium display="false" />
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud charisma becomes {{deathshroud:cha}} (+{{deathshroud:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:cha" value="1" /> <!-- 8 -> 9 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud charisma becomes {{deathshroud:cha}} (+{{deathshroud:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:cha" value="1" />
+        <stat name="deathshroud:cha:mod" value="1" /> <!-- 9 -> 10 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud charisma becomes {{deathshroud:cha}} (+{{deathshroud:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:cha" value="1" /> <!-- 10 -> 11 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud charisma becomes {{deathshroud:cha}} (+{{deathshroud:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:cha" value="1" />
+        <stat name="deathshroud:cha:mod" value="1" /> <!-- 11 -> 12 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud charisma becomes {{deathshroud:cha}} (+{{deathshroud:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:cha" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud charisma becomes {{deathshroud:cha}} (+{{deathshroud:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:cha" value="1" />
+        <stat name="deathshroud:cha:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud charisma becomes {{deathshroud:cha}} (+{{deathshroud:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:cha" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud charisma becomes {{deathshroud:cha}} (+{{deathshroud:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:cha" value="1" />
+        <stat name="deathshroud:cha:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud charisma becomes {{deathshroud:cha}} (+{{deathshroud:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:cha" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud charisma becomes {{deathshroud:cha}} (+{{deathshroud:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:cha" value="1" />
+        <stat name="deathshroud:cha:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_11_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud charisma becomes {{deathshroud:cha}} (+{{deathshroud:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:cha" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_12_DEATH_SHROUD">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_11_DEATH_SHROUD</requirements>
+    <supports>Death Shroud Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Death Shroud charisma becomes {{deathshroud:cha}} (+{{deathshroud:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="deathshroud:cha" value="1" />
+        <stat name="deathshroud:cha:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<!-- Go For the Throat -->
+	<element name="Go For the Throat" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="go for the throat:bonus:deathshroud" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>[level:tamer:5],
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:deathshroud" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_3_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>
+			[level:tamer:9],ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:deathshroud" value="1" />
+		</rules>
+	</element>
+    <!-- Survival Insticts -->
+	<element name="Survival Instincts" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Death Shroud" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Death Shroud" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Death Shroud" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Death Shroud" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Death Shroud" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_6_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Death Shroud" />
+		</rules>
+	</element>
+
+	<element name="Death Shroud Survival Instincts: Strength" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Survival Instinct Death Shroud</supports>
+		<description>
+			<p>Your companion gains proficiency in Strength Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{deathshroud:str:save}} in Strength Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="deathshroud:str:save" value="proficiency" />
+            <stat name="deathshroud:str:save" value="deathshroud:str:mod" />
+        </rules>
+	</element>
+	<element name="Death Shroud Survival Instincts: Dexterity" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Survival Instinct Death Shroud</supports>
+		<description>
+			<p>Your companion gains proficiency in Dexterity Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{deathshroud:dex:save}} in Dexterity Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="deathshroud:dex:save" value="proficiency" />
+            <stat name="deathshroud:dex:save" value="deathshroud:dex:mod" />
+        </rules>
+	</element>
+	<element name="Death Shroud Survival Instincts: Constitution" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Survival Instinct Death Shroud</supports>
+		<description>
+			<p>Your companion gains proficiency in Constitution Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{deathshroud:con:save}} in Constitution Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="deathshroud:con:save" value="proficiency" />
+            <stat name="deathshroud:con:save" value="deathshroud:con:mod" />
+        </rules>
+	</element>
+	<element name="Death Shroud Survival Instincts: Intelligence" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Survival Instinct Death Shroud</supports>
+		<description>
+			<p>Your companion gains proficiency in Intelligence Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{deathshroud:int:save}} in Intelligence Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="deathshroud:int:save" value="proficiency" />
+            <stat name="deathshroud:int:save" value="deathshroud:int:mod" />
+        </rules>
+	</element>
+	<element name="Death Shroud Survival Instincts: Wisdom" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Survival Instinct Death Shroud</supports>
+		<description>
+			<p>Your companion gains proficiency in Wisdom Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{deathshroud:wis:save}} in Wisdom Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="deathshroud:wis:save" value="proficiency" />
+            <stat name="deathshroud:wis:save" value="deathshroud:wis:mod" />
+        </rules>
+	</element>
+	<element name="Death Shroud Survival Instincts: Charisma" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Survival Instinct Death Shroud</supports>
+		<description>
+			<p>Your companion gains proficiency in Charisma Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{deathshroud:cha:save}} in Charisma Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="deathshroud:cha:save" value="proficiency" />
+            <stat name="deathshroud:cha:save" value="deathshroud:cha:mod" />
+        </rules>
+	</element>
+
+    <!-- War Training -->
+	<element name="War Training" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet>
+			<description>Gains proficiency with one armour type or two weapons (Requires GM discretion)</description>
+		</sheet>
+		<!-- Specific proficiency application depends on the system -->
+	</element>
+	<element name="War Training (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_6_DEATH_SHROUD">
+		<compendium display="false" />
+        <supports>Death Shroud</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_DEATH_SHROUD</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+</elements>

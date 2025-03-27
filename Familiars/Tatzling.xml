@@ -1,0 +1,1954 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Tatzling</name>
+		<description>Tatzling from Humperdink's Biomancy Boutique</description>
+		<update version="0.1.0">
+			<file name="Tatzling.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Tatzling.xml" />
+		</update>
+	</info>
+
+	<element name="Tatzling" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_TATZLING">
+		<supports>Familiar, Variant Familiar, Bespoke Companion</supports>
+		<description>
+			<p style="margin-bottom:-5px">
+				<em>Tiny dragon, lawful good</em>
+			</p>
+			<h4 style="margin-top:5px" />
+			<p></p>
+			<p>
+				<strong>Armor Class</strong> 14 (natural armour)</p>
+			<p>
+				<strong>Hit Points</strong> 3 (1d4 + 1)</p>
+			<p>
+				<strong>Speed</strong> 30 ft.</p>
+			<p></p>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead>
+					<tr>
+						<td>STR</td>
+						<td>DEX</td>
+						<td>CON</td>
+						<td>INT</td>
+						<td>WIS</td>
+						<td>CHA</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>11(+0)</td>
+					<td>14(+2)</td>
+					<td>12(+1)</td>
+					<td>11(+0)</td>
+					<td>10(+0)</td>
+					<td>12(+1)</td>
+				</tr>
+			</table>
+			<p>
+				<strong>Skills</strong> Perception +2</p>
+			<p>
+				<strong>Damage Resistances</strong> cold</p>
+			<p>
+				<strong>Senses</strong> darkvision 60 ft., passive Perception 12</p>
+			<p>
+				<strong>Languages</strong> —</p>
+			<p>
+				<strong>Challenge</strong> 1/8 (25 XP) <strong>Proficiency Bonus</strong> +2
+			</p>
+			<p></p>
+			<h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
+			<p>
+				<strong>
+					<em>Disaster Prone.</em>
+				</strong>When the tatzling makes an ability check or attack roll and rolls a 1 on the d20, the results are often disastrous. The GM has great latitude when deciding the consequences of this trait triggering.</p>
+			<p></p>
+			<h4 style="margin-top:15px">Actions</h4>
+			<p></p>
+			<p>
+				<strong>
+					<em>Bite.</em>
+				</strong>
+				<em>Melee Weapon Attack:</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 5 (1d6 + 2) piercing damage.</p>
+			<p>
+				<strong>
+					<em>Claw.</em>
+				</strong>
+				<em>Melee Weapon Attack:</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 4 (1d4 + 2) slashing damage.</p>
+			<p></p>
+			<h4 style="margin-top:15px">Reactions</h4>
+			<p></p>
+			<p>
+				<strong>
+					<em>Protect (3/Day).</em>
+				</strong>When a creature the tatzling can see attacks a target that is within 5 feet of the tatzling, it can impose disadvantage on the attack roll provided the attack is against a creature other than the tatzling.</p>
+			<p></p>
+		</description>
+		<sheet>
+			<description>Tatzling ({{tatzling:size}})- Gains {{hit dice gained:companion:tatzling}}d{{hit dice size:tatzling}} hit dice. DC: {{tatzling:dc}}. AC: +{{tatzling:ac bonus}}. Bite: +{{tatzling:bite:hit}}, DMG: {{tatzling:bite:dice}} + {{tatzling:bite:damage}} piercing. Claw: +{{tatzling:claw:hit}}, DMG: {{tatzling:claw:dice}} + {{tatzling:claw:damage}} slashing.</description>
+		</sheet>
+		<rules>
+			<!-- Grant Base Improvements -->
+			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TATZLING" />
+
+			<!-- Base Stats -->
+			<stat name="tatzling:str" value="11" />
+			<stat name="tatzling:str:mod" value="0" />
+			<stat name="tatzling:dex" value="14" />
+			<stat name="tatzling:dex:mod" value="2" />
+			<stat name="tatzling:con" value="12" />
+			<stat name="tatzling:con:mod" value="1" />
+			<stat name="tatzling:int" value="11" />
+			<stat name="tatzling:int:mod" value="0" />
+			<stat name="tatzling:wis" value="10" />
+			<stat name="tatzling:wis:mod" value="0" />
+			<stat name="tatzling:cha" value="12" />
+			<stat name="tatzling:cha:mod" value="1" />
+
+			<!-- Derived Stats -->
+			<stat name="tatzling:size" inline="true" value="Tiny" />
+			<stat name="hit dice size:tatzling" value="4" />
+			<stat name="tatzling:ac bonus" value="0" />
+			<stat name="tatzling:dc" value="8" />
+			<stat name="tatzling:dc" value="proficiency" />
+			<stat name="tatzling:dc" value="tatzling:con:mod" />
+
+			<!-- Attack Stats (Bite) -->
+			<stat name="tatzling:bite:hit" value="proficiency" />
+			<stat name="tatzling:bite:hit" value="tatzling:dex:mod" /> <!-- Uses DEX -->
+			<stat name="tatzling:bite:hit" value="go for the throat:bonus:tatzling" />
+			<stat name="tatzling:bite:damage" value="tatzling:dex:mod" />
+			<stat name="tatzling:bite:damage" value="go for the throat:bonus:tatzling" />
+			<stat name="tatzling:bite:dice" inline="true" value="1d6" />
+
+			<!-- Attack Stats (Claw) -->
+			<stat name="tatzling:claw:hit" value="proficiency" />
+			<stat name="tatzling:claw:hit" value="tatzling:dex:mod" /> <!-- Uses DEX -->
+			<stat name="tatzling:claw:hit" value="go for the throat:bonus:tatzling" />
+			<stat name="tatzling:claw:damage" value="tatzling:dex:mod" />
+			<stat name="tatzling:claw:damage" value="go for the throat:bonus:tatzling" />
+			<stat name="tatzling:claw:dice" inline="true" value="1d4" />
+
+			<!-- Level-Based Stat Increases (for sheet display) -->
+			<stat name="hit dice gained:companion:tatzling" value="1" level="4" />
+			<stat name="hit dice gained:companion:tatzling" value="1" level="8" />
+			<stat name="hit dice gained:companion:tatzling" value="1" level="12" />
+			<stat name="hit dice gained:companion:tatzling" value="1" level="16" />
+			<stat name="hit dice gained:companion:tatzling" value="1" level="19" />
+
+			<!-- Go for the Throat Bonus Initialization -->
+			<stat name="go for the throat:bonus:tatzling" value="0" />
+		</rules>
+	</element>
+
+		<element name="Tatzling Improvement" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TATZLING">
+	<description>
+		<p>Whenever you gain a level beyond 1st in this class, each companion to which you are
+			bonded gains one of the following improvements.
+			Any newly gained companions receive these additional Hit Dice and improvements as if
+			you had them since your 1st level in tamer.</p>
+	</description>
+	<sheet>
+		<description>The Tatzling has the following Improvements:</description>
+	</sheet>
+	<rules>
+		<stat name="hit dice gained:companion:tatzling" value="2" />
+
+		<select type="Class Feature" name="Tatzling Improvement" supports="Tatzling" default="ID_LT_HGTMH_TATZLING_TRAIT_GROWTH_I"/>
+		<select type="Class Feature" name="Tatzling Improvement (Lvl 2)" supports="Tatzling" level="2" />
+		<select type="Class Feature" name="Tatzling Improvement (Lvl 3)" supports="Tatzling" level="3" />
+		<select type="Class Feature" name="Tatzling Improvement (Lvl 4)" supports="Tatzling" level="4" />
+		<select type="Class Feature" name="Tatzling Improvement (Lvl 5)" supports="Tatzling" level="5" />
+		<select type="Class Feature" name="Tatzling Improvement (Lvl 6)" supports="Tatzling" level="6" />
+		<select type="Class Feature" name="Tatzling Improvement (Lvl 7)" supports="Tatzling" level="7" />
+		<select type="Class Feature" name="Tatzling Improvement (Lvl 8)" supports="Tatzling" level="8" />
+		<select type="Class Feature" name="Tatzling Improvement (Lvl 9)" supports="Tatzling" level="9" />
+		<select type="Class Feature" name="Tatzling Improvement (Lvl 10)" supports="Tatzling" level="10" />
+		<select type="Class Feature" name="Tatzling Improvement (Lvl 11)" supports="Tatzling" level="11" />
+		<select type="Class Feature" name="Tatzling Improvement (Lvl 12)" supports="Tatzling" level="12" />
+		<select type="Class Feature" name="Tatzling Improvement (Lvl 13)" supports="Tatzling" level="13" />
+		<select type="Class Feature" name="Tatzling Improvement (Lvl 14)" supports="Tatzling" level="14" />
+		<select type="Class Feature" name="Tatzling Improvement (Lvl 15)" supports="Tatzling" level="15" />
+		<select type="Class Feature" name="Tatzling Improvement (Lvl 16)" supports="Tatzling" level="16" />
+		<select type="Class Feature" name="Tatzling Improvement (Lvl 17)" supports="Tatzling" level="17" />
+		<select type="Class Feature" name="Tatzling Improvement (Lvl 18)" supports="Tatzling" level="18" />
+		<select type="Class Feature" name="Tatzling Improvement (Lvl 19)" supports="Tatzling" level="19" />
+		<select type="Class Feature" name="Tatzling Improvement (Lvl 20)" supports="Tatzling" level="20" />
+	</rules>
+</element>
+
+<!-- Tatzling's Improvements -->
+	<element name="Growth I" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_TATZLING_TRAIT_GROWTH_I">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
+		<requirements>[level:tamer:1]</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Passive (companion)</p>
+			<p>The tatzling's size increases to Small and its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage die of its Bite attack increases to a d8 and its Claws to a d6.</p>
+			<p>The tatzling gains this improvement when it becomes a companion; it doesn't cost an improvement.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="tatzling:size" inline="true" value="Small" />
+			<stat name="hit dice size:tatzling" value="2" /> <!-- d4 to d6 -->
+			<stat name="tatzling:bite:dice" inline="true" value="1d8" />
+			<stat name="tatzling:claw:dice" inline="true" value="1d6" />
+		</rules>
+	</element>
+
+	<element name="Harden I" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_TATZLING_TRAIT_HARDEN_I">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+		<requirements>[level:tamer:3]</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Passive (companion)</p>
+			<p>The tatzling gains a +2 bonus to its AC while it isn't wearing armour.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="tatzling:ac bonus" value="2" />
+		</rules>
+	</element>
+
+	<element name="Cold Demeanour" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_TATZLING_ACTION_COLD_DEMEANOUR">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+		<requirements>[level:tamer:3]</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Active (bonus action)</p>
+			<p>As a bonus action, the tatzling creates a magical protective shield that surrounds it, covering its scales in a delicate patina of hoarfrost. It gains temporary hit points equal to three times its tamer's proficiency bonus for 1 minute. If a creature hits it with a melee attack while it has these temporary hit points, the creature takes cold damage equal to three times its tamer's proficiency bonus.</p>
+			<p>After the tatzling uses this action, it can't do so again until its tamer finishes a short or long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>Gain Temp HP = {{tatzling:cold demeanour}} (1 min). While Temp HP, melee attackers take Cold DMG ={{tatzling:cold demeanour}}.</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:cold demeanour" value="proficiency" />
+			<stat name="tatzling:cold demeanour" value="proficiency" />
+			<stat name="tatzling:cold demeanour" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Multiattack" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_TATZLING_ACTION_MULTIATTACK">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+		<requirements>[level:tamer:5]</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Active (action)</p>
+			<p>As an action, the tatzling can make two attacks: one with its Bite and one with its Claws.</p>
+		</description>
+		<sheet action="Action">
+			<description>Two attacks: One Bite and one Claw attack.</description>
+		</sheet>
+	</element>
+
+	<element name="Slowing Gaze" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_TATZLING_ACTION_SLOWING_GAZE">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+		<requirements>[level:tamer:5]</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Active (action)</p>
+			<p>As an action, the tatzling targets one creature it can see within 30 feet of it that can see it. The target must succeed on a Constitution saving throw or be affected by the slow spell until the start of the tatzling's next turn, until the tatzling can no longer see it, until it is more than 60 feet from the tatzling, or until the tatzling chooses to end the effect (no action required). At the start of its subsequent turns, the tatzling can use its bonus action to extend the effect's duration to the start of its next turn. For the effect's duration, the tatzling has disadvantage on attack rolls against creatures other than the target of this effect.</p>
+			<p>After the tatzling uses this action, it can't do so again until its tamer finishes a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>Target creature (see within 30ft): CON Save or affected as Slow spell (until start of next turn/conditions met). BA to extend. DISADV on attacks vs others.</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:glare:dc" value="tatzling:dc" />
+
+		</rules>
+	</element>
+
+	<element name="Growth II" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_TATZLING_TRAIT_GROWTH_II">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<prerequisite>Prerequisite: 5th-level tamer, Growth I</prerequisite>
+		<requirements>[level:tamer:5], ID_LT_HGTMH_TATZLING_TRAIT_GROWTH_I</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Passive (companion)</p>
+			<p>The tatzling's size increases to Medium and its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage die of its Bite attack increases to a d10 and its Claws to a d8.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="tatzling:size" inline="true" value="Medium" />
+			<stat name="hit dice size:tatzling" value="2" /> <!-- d6 to d8 -->
+			<stat name="tatzling:bite:dice" inline="true" value="1d10" />
+			<stat name="tatzling:claw:dice" inline="true" value="1d8" />
+		</rules>
+	</element>
+
+	<element name="Harden II" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_TATZLING_TRAIT_HARDEN_II">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<prerequisite>Prerequisite: 9th-level tamer, Harden I</prerequisite>
+		<requirements>[level:tamer:9], ID_LT_HGTMH_TATZLING_TRAIT_HARDEN_I</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Passive (companion)</p>
+			<p>The tatzling gains a +2 bonus to its AC while it isn't wearing armour. This improvement is in addition to the bonus from Harden I.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="tatzling:ac bonus" value="2" />
+		</rules>
+	</element>
+
+	<element name="Aura of Protection" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_TATZLING_TRAIT_AURA_PROTECTION">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<prerequisite>Prerequisite: 9th-level tamer</prerequisite>
+		<requirements>[level:tamer:9]</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Passive (tamer and allies)</p>
+			<p>Whenever a creature friendly to the tatzling makes a saving throw while within 10 feet of the tatzling, the creature gains a bonus to the saving throw equal to the tatzling's Constitution modifier (minimum +1). The tatzling must be conscious to grant this bonus.</p>
+		</description>
+		<sheet>
+			<description>Friendly creatures within 10ft gain +{{tatzling:aura:savebonus}} bonus to Save.</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:aura:savebonus" value="1" bonus="base" />
+			<stat name="tatzling:aura:savebonus" value="tatzling:con:mod" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Slowing Glare" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_TATZLING_ACTION_SLOWING_GLARE">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<prerequisite>Prerequisite: 13th-level tamer, Slowing Gaze</prerequisite>
+		<requirements>[level:tamer:13], ID_LT_HGTMH_TATZLING_ACTION_SLOWING_GAZE</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Active (action)</p>
+			<p>As an action, each creature of the tatzling's choice in a 40-foot cone originating from its eyes must succeed on a Constitution saving throw or become affected by the slow spell for 1 minute. An affected creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+			<p>After the tatzling uses this action, it can't do so again until its tamer finishes a long rest.</p>
+			<p>When the tatzling's tamer reaches 17th level in the tamer class, this effect's cone increases to 60 feet.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>tatzling:glare:rangeft cone, selected creatures: CON Save or Slow spell (1 min, can repeat this saving throw at the end of each of its turns).</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:glare:range" value="40" />
+			<stat name="tatzling:glare:range" value="20" level="17" />
+		</rules>
+	</element>
+
+	<element name="Growth III" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_TATZLING_TRAIT_GROWTH_III">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<prerequisite>Prerequisite: 13th-level tamer, Growth II</prerequisite>
+		<requirements>[level:tamer:13], ID_LT_HGTMH_TATZLING_TRAIT_GROWTH_II</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Passive (companion)</p>
+			<p>The tatzling's size increases to Large and its Hit Die size increases to a d10 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage die of its Bite attack increases to a d12 and its Claws to a d10.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="tatzling:size" inline="true" value="Large" />
+			<stat name="hit dice size:tatzling" value="2" /> <!-- d8 to d10 -->
+			<stat name="tatzling:bite:dice" inline="true" value="1d12" />
+			<stat name="tatzling:claw:dice" inline="true" value="1d10" />
+		</rules>
+	</element>
+
+	<element name="Freezing Blast" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_TATZLING_ACTION_FREEZING_BLAST">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<prerequisite>Prerequisite: 17th-level tamer, Cold Demeanour</prerequisite>
+		<requirements>[level:tamer:17], ID_LT_HGTMH_TATZLING_ACTION_COLD_DEMEANOUR</requirements>
+		<description>
+			<p>
+				<b>Type:</b> Active (action), Passive (companion)</p>
+			<p>The tatzling gains immunity to cold damage.</p>
+			<p>As an action, the tatzling causes temperatures to plummet. Each creature within 20 feet of it must make a Constitution saving throw, taking 35 (10d6) cold damage on a failure, or half as much damage on a success.</p>
+			<p>In addition, surfaces in the area become covered in a thin sheet of ice that lasts for 1 minute. When the ice appears, each creature standing on it must succeed on a Dexterity saving throw or fall prone. A creature that enters the area for the first time on its turn or ends its turn there must also succeed on a Dexterity saving throw or fall prone. The tatzling automatically succeeds on these Dexterity saving throws.</p>
+			<p>After the tatzling uses this action, it can't do so again until its tamer finishes a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>Gain Cold Immunity. Blast: 20ft radius, CON Save, 10d6 cold (or half). Surfaces iced (1 min), DEX Save or prone.</description>
+		</sheet>	
+	</element>
+
+	<!-- General Improvements -->
+	<!-- Speed Training -->
+	<element name="Speed Training" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SPEED_TRAINING_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<description>
+			<p>Increase one existing speed by 15 feet up to a maximum of 150% of the creature’s base
+				speed, rounded up to the nearest 5-foot increment.</p>
+			<p>E.g., a base speed of 30 feet can be increased to 45 feet maximum, a base speed of 25
+				feet can be increased to 40 feet, and a base speed of 20 feet to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>Increase one existing speed by 15 feet (Max of 150%)</description>
+		</sheet>
+	</element>
+
+	<!-- Toughen Up -->
+	<element name="Toughen Up" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false">
+			<description>Your companion gains {{hit dice gained:companion:1}} Hit Die, increasing
+				its hit point maximum</description>
+		</sheet>
+		<rules>
+			<stat name="hit dice gained:companion:tatzling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_TATZLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatzling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_TATZLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatzling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_TATZLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatzling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_TATZLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatzling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_TATZLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatzling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (7)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_TATZLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatzling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (8)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_TATZLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatzling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (9)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_TATZLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatzling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (10)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_TATZLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatzling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (11)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_TATZLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatzling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (12)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_TATZLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatzling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (13)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_TATZLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatzling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (14)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_TATZLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatzling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (15)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_TATZLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatzling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (16)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_TATZLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatzling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (17)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_TATZLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatzling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (18)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_TATZLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatzling" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (19)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_TATZLING</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatzling" value="1" />
+		</rules>
+	</element>
+
+	<!-- Ability Boost -->
+	<element name="Ability Boost" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatzling Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_TATZLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatzling Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_TATZLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatzling Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_TATZLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatzling Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_TATZLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatzling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_TATZLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatzling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (7)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_TATZLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatzling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (8)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_TATZLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatzling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (9)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_TATZLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatzling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (10)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_TATZLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatzling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (11)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_TATZLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatzling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (12)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_TATZLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatzling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (13)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_TATZLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatzling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (14)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_TATZLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatzling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (15)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_TATZLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatzling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (16)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_TATZLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatzling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (17)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_TATZLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatzling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (18)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_TATZLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatzling Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (19)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_19_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_TATZLING</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatzling Ability Boost" />
+		</rules>
+	</element>
+	
+	<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_TATZLING">
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling strength becomes {{tatzling:str}} (+{{tatzling:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:str" value="1" />
+			<stat name="tatzling:str:mod" value="1" /> <!-- 11 -> 12 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling strength becomes {{tatzling:str}} (+{{tatzling:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:str" value="1" /> <!-- 12 -> 13 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling strength becomes {{tatzling:str}} (+{{tatzling:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:str" value="1" />
+			<stat name="tatzling:str:mod" value="1" /> <!-- 13 -> 14 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling strength becomes {{tatzling:str}} (+{{tatzling:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:str" value="1" /> <!-- 14 -> 15 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling strength becomes {{tatzling:str}} (+{{tatzling:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:str" value="1" />
+			<stat name="tatzling:str:mod" value="1" /> <!-- 15 -> 16 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling strength becomes {{tatzling:str}} (+{{tatzling:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:str" value="1" /> <!-- 16 -> 17 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling strength becomes {{tatzling:str}} (+{{tatzling:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:str" value="1" />
+			<stat name="tatzling:str:mod" value="1" /> <!-- 17 -> 18 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling strength becomes {{tatzling:str}} (+{{tatzling:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:str" value="1" /> <!-- 18 -> 19 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling strength becomes {{tatzling:str}} (+{{tatzling:str:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:str" value="1" />
+			<stat name="tatzling:str:mod" value="1" /> <!-- 19 -> 20 -->
+		</rules>
+	</element>
+
+	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_TATZLING">
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling dexterity becomes {{tatzling:dex}} (+{{tatzling:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:dex" value="1" /> <!-- 14 -> 15 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling dexterity becomes {{tatzling:dex}} (+{{tatzling:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:dex" value="1" />
+			<stat name="tatzling:dex:mod" value="1" /> <!-- 15 -> 16 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling dexterity becomes {{tatzling:dex}} (+{{tatzling:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:dex" value="1" /> <!-- 16 -> 17 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling dexterity becomes {{tatzling:dex}} (+{{tatzling:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:dex" value="1" />
+			<stat name="tatzling:dex:mod" value="1" /> <!-- 17 -> 18 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling dexterity becomes {{tatzling:dex}} (+{{tatzling:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:dex" value="1" /> <!-- 18 -> 19 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling dexterity becomes {{tatzling:dex}} (+{{tatzling:dex:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:dex" value="1" />
+			<stat name="tatzling:dex:mod" value="1" /> <!-- 19 -> 20 -->
+		</rules>
+	</element>
+
+	<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_TATZLING">
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling constitution becomes {{tatzling:con}} (+{{tatzling:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:con" value="1" /> <!-- 12 -> 13 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling constitution becomes {{tatzling:con}} (+{{tatzling:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:con" value="1" />
+			<stat name="tatzling:con:mod" value="1" /> <!-- 13 -> 14 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling constitution becomes {{tatzling:con}} (+{{tatzling:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:con" value="1" /> <!-- 14 -> 15 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling constitution becomes {{tatzling:con}} (+{{tatzling:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:con" value="1" />
+			<stat name="tatzling:con:mod" value="1" /> <!-- 15 -> 16 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling constitution becomes {{tatzling:con}} (+{{tatzling:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:con" value="1" /> <!-- 16 -> 17 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling constitution becomes {{tatzling:con}} (+{{tatzling:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:con" value="1" />
+			<stat name="tatzling:con:mod" value="1" /> <!-- 17 -> 18 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_7_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling constitution becomes {{tatzling:con}} (+{{tatzling:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:con" value="1" /> <!-- 18 -> 19 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_8_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_7_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling constitution becomes {{tatzling:con}} (+{{tatzling:con:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:con" value="1" />
+			<stat name="tatzling:con:mod" value="1" /> <!-- 19 -> 20 -->
+		</rules>
+	</element>
+
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_TATZLING">
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling intelligence becomes {{tatzling:int}} (+{{tatzling:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:int" value="1" />
+			<stat name="tatzling:int:mod" value="1" /> <!-- 11 -> 12 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling intelligence becomes {{tatzling:int}} (+{{tatzling:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:int" value="1" /> <!-- 12 -> 13 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling intelligence becomes {{tatzling:int}} (+{{tatzling:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:int" value="1" />
+			<stat name="tatzling:int:mod" value="1" /> <!-- 13 -> 14 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling intelligence becomes {{tatzling:int}} (+{{tatzling:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:int" value="1" /> <!-- 14 -> 15 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling intelligence becomes {{tatzling:int}} (+{{tatzling:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:int" value="1" />
+			<stat name="tatzling:int:mod" value="1" /> <!-- 15 -> 16 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling intelligence becomes {{tatzling:int}} (+{{tatzling:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:int" value="1" /> <!-- 16 -> 17 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling intelligence becomes {{tatzling:int}} (+{{tatzling:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:int" value="1" />
+			<stat name="tatzling:int:mod" value="1" /> <!-- 17 -> 18 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling intelligence becomes {{tatzling:int}} (+{{tatzling:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:int" value="1" /> <!-- 18 -> 19 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling intelligence becomes {{tatzling:int}} (+{{tatzling:int:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:int" value="1" />
+			<stat name="tatzling:int:mod" value="1" /> <!-- 19 -> 20 -->
+		</rules>
+	</element>
+
+	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_TATZLING">
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling wisdom becomes {{tatzling:wis}} (+{{tatzling:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:wis" value="1" /> <!-- 10 -> 11 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling wisdom becomes {{tatzling:wis}} (+{{tatzling:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:wis" value="1" />
+			<stat name="tatzling:wis:mod" value="1" /> <!-- 11 -> 12 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling wisdom becomes {{tatzling:wis}} (+{{tatzling:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:wis" value="1" /> <!-- 12 -> 13 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling wisdom becomes {{tatzling:wis}} (+{{tatzling:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:wis" value="1" />
+			<stat name="tatzling:wis:mod" value="1" /> <!-- 13 -> 14 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling wisdom becomes {{tatzling:wis}} (+{{tatzling:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:wis" value="1" /> <!-- 14 -> 15 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling wisdom becomes {{tatzling:wis}} (+{{tatzling:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:wis" value="1" />
+			<stat name="tatzling:wis:mod" value="1" /> <!-- 15 -> 16 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling wisdom becomes {{tatzling:wis}} (+{{tatzling:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:wis" value="1" /> <!-- 16 -> 17 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling wisdom becomes {{tatzling:wis}} (+{{tatzling:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:wis" value="1" />
+			<stat name="tatzling:wis:mod" value="1" /> <!-- 17 -> 18 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling wisdom becomes {{tatzling:wis}} (+{{tatzling:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:wis" value="1" /> <!-- 18 -> 19 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_10_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling wisdom becomes {{tatzling:wis}} (+{{tatzling:wis:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:wis" value="1" />
+			<stat name="tatzling:wis:mod" value="1" /> <!-- 19 -> 20 -->
+		</rules>
+	</element>
+
+	<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_TATZLING">
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling charisma becomes {{tatzling:cha}} (+{{tatzling:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:cha" value="1" /> <!-- 12 -> 13 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling charisma becomes {{tatzling:cha}} (+{{tatzling:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:cha" value="1" />
+			<stat name="tatzling:cha:mod" value="1" /> <!-- 13 -> 14 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling charisma becomes {{tatzling:cha}} (+{{tatzling:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:cha" value="1" /> <!-- 14 -> 15 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling charisma becomes {{tatzling:cha}} (+{{tatzling:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:cha" value="1" />
+			<stat name="tatzling:cha:mod" value="1" /> <!-- 15 -> 16 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling charisma becomes {{tatzling:cha}} (+{{tatzling:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:cha" value="1" /> <!-- 16 -> 17 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling charisma becomes {{tatzling:cha}} (+{{tatzling:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:cha" value="1" />
+			<stat name="tatzling:cha:mod" value="1" /> <!-- 17 -> 18 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling charisma becomes {{tatzling:cha}} (+{{tatzling:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:cha" value="1" /> <!-- 18 -> 19 -->
+		</rules>
+	</element>
+	<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_TATZLING">
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_TATZLING</requirements>
+		<supports>Tatzling Ability Boost</supports>
+		<compendium display="false" />
+		<description>
+			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+		</description>
+		<sheet display="false">
+			<description>The Tatzling charisma becomes {{tatzling:cha}} (+{{tatzling:cha:mod}})</description>
+		</sheet>
+		<rules>
+			<stat name="tatzling:cha" value="1" />
+			<stat name="tatzling:cha:mod" value="1" /> <!-- 19 -> 20 -->
+		</rules>
+	</element>
+	
+<!-- Go For the Throat -->
+	<element name="Go For the Throat" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="go for the throat:bonus:tatzling" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>[level:tamer:5],
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_TATZLING</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:tatzling" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_3_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>
+			[level:tamer:9],ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_TATZLING</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:tatzling" value="1" />
+		</rules>
+	</element>
+
+<!-- Survival Insticts -->
+	<element name="Survival Instincts" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Tatzling" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_TATZLING</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Tatzling" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_TATZLING</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Tatzling" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_TATZLING</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Tatzling" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_TATZLING</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Tatzling" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_6_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_TATZLING</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Tatzling" />
+		</rules>
+	</element>
+
+	<element name="Tatzling Survival Instincts: Strength" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_TATZLING">
+		<compendium display="false" />
+		<supports>Survival Instinct Tatzling</supports>
+		<description>
+			<p>Your companion gains proficiency in Strength Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{tatzling:str:save}} in Strength Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="tatzling:str:save" value="proficiency" />
+            <stat name="tatzling:str:save" value="tatzling:str:mod" />
+        </rules>
+	</element>
+	<element name="Tatzling Survival Instincts: Dexterity" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_TATZLING">
+		<compendium display="false" />
+		<supports>Survival Instinct Tatzling</supports>
+		<description>
+			<p>Your companion gains proficiency in Dexterity Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{tatzling:dex:save}} in Dexterity Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="tatzling:dex:save" value="proficiency" />
+            <stat name="tatzling:dex:save" value="tatzling:dex:mod" />
+        </rules>
+	</element>
+	<element name="Tatzling Survival Instincts: Constitution" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_TATZLING">
+		<compendium display="false" />
+		<supports>Survival Instinct Tatzling</supports>
+		<description>
+			<p>Your companion gains proficiency in Constitution Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{tatzling:con:save}} in Constitution Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="tatzling:con:save" value="proficiency" />
+            <stat name="tatzling:con:save" value="tatzling:con:mod" />
+        </rules>
+	</element>
+	<element name="Tatzling Survival Instincts: Intelligence" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_TATZLING">
+		<compendium display="false" />
+		<supports>Survival Instinct Tatzling</supports>
+		<description>
+			<p>Your companion gains proficiency in Intelligence Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{tatzling:int:save}} in Intelligence Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="tatzling:int:save" value="proficiency" />
+            <stat name="tatzling:int:save" value="tatzling:int:mod" />
+        </rules>
+	</element>
+	<element name="Tatzling Survival Instincts: Wisdom" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_TATZLING">
+		<compendium display="false" />
+		<supports>Survival Instinct Tatzling</supports>
+		<description>
+			<p>Your companion gains proficiency in Wisdom Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{tatzling:wis:save}} in Wisdom Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="tatzling:wis:save" value="proficiency" />
+            <stat name="tatzling:wis:save" value="tatzling:wis:mod" />
+        </rules>
+	</element>
+	<element name="Tatzling Survival Instincts: Charisma" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_TATZLING">
+		<compendium display="false" />
+		<supports>Survival Instinct Tatzling</supports>
+		<description>
+			<p>Your companion gains proficiency in Charisma Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{tatzling:cha:save}} in Charisma Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="tatzling:cha:save" value="proficiency" />
+            <stat name="tatzling:cha:save" value="tatzling:cha:mod" />
+        </rules>
+	</element>
+
+<!-- War Training -->
+	<element name="War Training" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet>
+			<description>Gains proficiency with one armour type or two weapons (Requires GM discretion)</description>
+		</sheet>
+		<!-- Specific proficiency application depends on the system -->
+	</element>
+	<element name="War Training (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_TATZLING</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_TATZLING</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_TATZLING</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_TATZLING</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_6_TATZLING">
+		<compendium display="false" />
+		<supports>Tatzling</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_TATZLING</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+</elements>

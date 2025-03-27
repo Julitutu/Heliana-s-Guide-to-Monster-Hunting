@@ -1,0 +1,2139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Caprisoul</name>
+		<description>Caprisoul from Humperdink's Biomancy Boutique</description>
+		<update version="0.1.0">
+			<file name="Caprisoul.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/Caprisoul.xml" />
+		</update>
+	</info>
+
+	<element name="Caprisoul" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CAPRISOUL">
+		<supports>Familiar, Variant Familiar, Bespoke Companion</supports>
+		<description>
+			<p style="margin-bottom:-5px">
+				<em>Tiny undead, neutral</em>
+			</p>
+			<h4 style="margin-top:5px" />
+			<p></p>
+			<p>
+				<strong>Armor Class</strong> 13</p>
+			<p>
+				<strong>Hit Points</strong> 3 (1d4 + 1)</p>
+			<p>
+				<strong>Speed</strong> 10 ft., fly 30 ft.</p>
+			<p></p>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead>
+					<tr>
+						<td>STR</td>
+						<td>DEX</td>
+						<td>CON</td>
+						<td>INT</td>
+						<td>WIS</td>
+						<td>CHA</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>4(-3)</td>
+					<td>16(+3)</td>
+					<td>13(+1)</td>
+					<td>8(-1)</td>
+					<td>9(-1)</td>
+					<td>7(-2)</td>
+				</tr>
+			</table>
+			<p>
+				<strong>Skills</strong> Stealth +5</p>
+			<p>
+				<strong>Damage Resistances</strong> necrotic</p>
+			<p>
+				<strong>Damage Immunities</strong> poison</p>
+			<p>
+				<strong>Condition Immunities</strong> charmed, poisoned</p>
+			<p>
+				<strong>Senses</strong> darkvision 60 ft., passive Perception 9</p>
+			<p>
+				<strong>Languages</strong> — 
+			</p>
+			<p>
+				<strong>Challenge</strong> 1/8 (25 XP) <strong>Proficiency Bonus</strong> +2
+			</p>
+			<p></p>
+			<h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
+			<p>
+				<strong>
+					<em>Death Burst.</em>
+				</strong>When the caprisoul dies, it explodes in a burst of soul energy. Each creature within 5 feet of it must make a DC 11 Dexterity saving throw, taking 5 (2d4) psychic damage on a failure, or half as much damage on a success.</p>
+			<p></p>
+			<h4 style="margin-top:15px">Actions</h4>
+			<p></p>
+			<p>
+				<strong>
+					<em>Soul Drain.</em>
+				</strong>
+				<em>Melee Weapon Attack:</em> +5 to hit, reach 5 ft., one creature. <em>Hit:</em> 1 piercing damage plus 3 (1d6) necrotic damage. The caprisoul gains temporary hit points equal to half the necrotic damage dealt. The target must succeed on a DC 11 Constitution saving throw or its hit point maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</p>
+			<p></p>
+		</description>
+		<sheet>
+			<description>Caprisoul ({{caprisoul:size}})- Gains {{hit dice gained:companion:caprisoul}}d{{hit dice size:caprisoul}} hit dice. DC: {{caprisoul:dc}}. AC: +{{caprisoul:ac bonus}}. Soul Drain: +{{caprisoul:attack:hit}}, DMG: {{caprisoul:attack:damage:piercing}} + {{caprisoul:attack:dice:necrotic}}d6 Necrotic. </description>
+		</sheet>
+		<rules>
+			<!-- Grant Base Improvements -->
+			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_CAPRISOUL" />
+
+			<!-- Base Stats -->
+			<stat name="caprisoul:str" value="4" />
+			<stat name="caprisoul:str:mod" value="-3" />
+			<stat name="caprisoul:dex" value="16" />
+			<stat name="caprisoul:dex:mod" value="3" />
+			<stat name="caprisoul:con" value="13" />
+			<stat name="caprisoul:con:mod" value="1" />
+			<stat name="caprisoul:int" value="8" />
+			<stat name="caprisoul:int:mod" value="-1" />
+			<stat name="caprisoul:wis" value="9" />
+			<stat name="caprisoul:wis:mod" value="-1" />
+			<stat name="caprisoul:cha" value="7" />
+			<stat name="caprisoul:cha:mod" value="-2" />
+
+			<!-- Derived Stats -->
+			<stat name="caprisoul:size" inline="true" value="Tiny" />
+			<stat name="hit dice size:caprisoul" value="4" />
+			<stat name="caprisoul:ac bonus" value="0" />
+			<stat name="caprisoul:dc" value="8" />
+			<stat name="caprisoul:dc" value="proficiency" />
+			<stat name="caprisoul:dc" value="caprisoul:con:mod" />
+
+			<!-- Attack Stats (Soul Drain) -->
+			<stat name="caprisoul:attack:hit" value="proficiency" />
+			<stat name="caprisoul:attack:hit" value="caprisoul:dex:mod" />
+			<stat name="caprisoul:attack:hit" value="go for the throat:bonus:caprisoul" />
+
+			<!-- Soul Drain uses DEX for hit -->
+			<stat name="caprisoul:attack:damage:piercing" value="1" />
+			<stat name="caprisoul:attack:damage:piercing" value="go for the throat:bonus:caprisoul" />
+			<stat name="caprisoul:attack:dice:necrotic" value="1" />
+
+			<!-- Level-Based Stat Increases (for sheet display) -->
+			<stat name="hit dice gained:companion:caprisoul" value="1" level="4" />
+			<stat name="hit dice gained:companion:caprisoul" value="1" level="8" />
+			<stat name="hit dice gained:companion:caprisoul" value="1" level="12" />
+			<stat name="hit dice gained:companion:caprisoul" value="1" level="16" />
+			<stat name="hit dice gained:companion:caprisoul" value="1" level="19" />
+
+			<!-- Go for the Throat Bonus Initialization -->
+			<stat name="go for the throat:bonus:caprisoul" value="0" />
+		</rules>
+	</element>
+
+	<element name="Caprisoul Improvement" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_CAPRISOUL">
+		<description>
+			<p>Whenever you gain a level beyond 1st in this class, each companion to which you are
+            bonded gains one of the following improvements.
+            Any newly gained companions receive these additional Hit Dice and improvements as if
+            you had them since your 1st level in tamer.</p>
+		</description>
+		<sheet>
+			<description>The Caprisoul has the following Improvements:</description>
+		</sheet>
+		<rules>
+			<stat name="hit dice gained:companion:caprisoul" value="2" />
+
+			<select type="Class Feature" name="Caprisoul Improvement" supports="Caprisoul" default="ID_LT_HGTMH_CAPRISOUL_ACTION_SPIRIT_TRANSFER"/>
+			<select type="Class Feature" name="Caprisoul Improvement (Lvl 2)" supports="Caprisoul" level="2" />
+			<select type="Class Feature" name="Caprisoul Improvement (Lvl 3)" supports="Caprisoul" level="3" />
+			<select type="Class Feature" name="Caprisoul Improvement (Lvl 4)" supports="Caprisoul" level="4" />
+			<select type="Class Feature" name="Caprisoul Improvement (Lvl 5)" supports="Caprisoul" level="5" />
+			<select type="Class Feature" name="Caprisoul Improvement (Lvl 6)" supports="Caprisoul" level="6" />
+			<select type="Class Feature" name="Caprisoul Improvement (Lvl 7)" supports="Caprisoul" level="7" />
+			<select type="Class Feature" name="Caprisoul Improvement (Lvl 8)" supports="Caprisoul" level="8" />
+			<select type="Class Feature" name="Caprisoul Improvement (Lvl 9)" supports="Caprisoul" level="9" />
+			<select type="Class Feature" name="Caprisoul Improvement (Lvl 10)" supports="Caprisoul" level="10" />
+			<select type="Class Feature" name="Caprisoul Improvement (Lvl 11)" supports="Caprisoul" level="11" />
+			<select type="Class Feature" name="Caprisoul Improvement (Lvl 12)" supports="Caprisoul" level="12" />
+			<select type="Class Feature" name="Caprisoul Improvement (Lvl 13)" supports="Caprisoul" level="13" />
+			<select type="Class Feature" name="Caprisoul Improvement (Lvl 14)" supports="Caprisoul" level="14" />
+			<select type="Class Feature" name="Caprisoul Improvement (Lvl 15)" supports="Caprisoul" level="15" />
+			<select type="Class Feature" name="Caprisoul Improvement (Lvl 16)" supports="Caprisoul" level="16" />
+			<select type="Class Feature" name="Caprisoul Improvement (Lvl 17)" supports="Caprisoul" level="17" />
+			<select type="Class Feature" name="Caprisoul Improvement (Lvl 18)" supports="Caprisoul" level="18" />
+			<select type="Class Feature" name="Caprisoul Improvement (Lvl 19)" supports="Caprisoul" level="19" />
+			<select type="Class Feature" name="Caprisoul Improvement (Lvl 20)" supports="Caprisoul" level="20" />
+		</rules>
+	</element>
+
+
+	<!-- Caprisoul's Improvements -->
+    <element name="Spirit Transfer" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CAPRISOUL_ACTION_SPIRIT_TRANSFER">
+        <compendium display="false" />
+        <supports>Caprisoul</supports>
+        <prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
+        <requirements>[level:tamer:1]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action), Passive (companion)</p>
+            <p>When the caprisoul hits with its Soul Drain attack, it stores life force in a pool of soul power equal to the necrotic damage dealt, which has a maximum capacity equal to 10 plus the number of tamer levels the caprisoul's tamer has. As an action, the caprisoul can empty this pool of soul power into one willing creature within 5 feet of it, causing that creature to regain hit points equal to the pool's value.</p>
+            <p>While its pool has life force in it, the caprisoul emits dim light in a 10-foot radius. The caprisoul's Death Burst trait deals additional damage equal to the value in its pool of soul power when it dies. The pool of soul power resets to 0 when the caprisoul's tamer finishes a long rest.</p>
+            <p>After the caprisoul has used this action twice, it can't do so again until its tamer finishes a short or long rest.</p>
+        </description>
+        <sheet action="Action" usage="2/Short Rest">
+            <description>Store soul power (max {{caprisoul:soulpool:max}}) on Soul Drain hit. Action: Restore HP to willing creature within 5ft. While pool has power: Dim light 10ft, Death Burst deals extra damage.</description>
+        </sheet>
+        <rules>
+            <!-- Soul Pool Max Calculation (10 + Tamer Level) -->
+            <stat name="caprisoul:soulpool:max" value="10" />
+            <stat name="caprisoul:soulpool:max" value="level:tamer" />
+        </rules>
+    </element>
+
+    <element name="Immaterial" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CAPRISOUL_ACTION_IMMATERIAL">
+        <compendium display="false" />
+        <supports>Caprisoul</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (bonus action)</p>
+            <p>As a bonus action, the caprisoul turns partially incorporeal. Until the start of its next turn, it has resistance to bludgeoning, piercing, and slashing damage. After the caprisoul uses this action, it can't do so again until its tamer finishes a short or long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Short Rest">
+            <description>Resis B/P/S until start of next turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Quick I" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CAPRISOUL_TRAIT_QUICK_I">
+        <compendium display="false" />
+        <supports>Caprisoul</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The caprisoul's flying speed increases by 10 feet and it gains a +2 bonus to its AC while it isn't wearing armour.</p>
+        </description>
+        <sheet>
+            <description>Fly speed +{{caprisoul:fly}}ft.</description>
+        </sheet>
+        <rules>
+            <stat name="caprisoul:fly" value="10" />
+            <stat name="caprisoul:ac bonus" value="2" />
+        </rules>
+    </element>
+
+    <element name="Soulbeam I" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CAPRISOUL_ACTION_SOULBEAM_I">
+        <compendium display="false" />
+        <supports>Caprisoul</supports>
+        <prerequisite>Prerequisite: 5th-level tamer, Spirit Transfer</prerequisite>
+        <requirements>[level:tamer:5], ID_LT_HGTMH_CAPRISOUL_ACTION_SPIRIT_TRANSFER</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action, the caprisoul unleashes all of the energy stored in its pool of soul power. Each creature in a 5-foot-wide, 60-foot-long line must make a Dexterity saving throw. A creature takes psychic damage equal to the value in the caprisoul's pool on a failure, or half as much damage on a success. The pool then resets to zero.</p>
+            <p>When the caprisoul's tamer reaches 9th level in the tamer class, this action deals an additional 7 (2d6) psychic damage.</p>
+            <p>After the caprisoul has used this action, it can't do so again until its tamer finishes a short or long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Short Rest">
+            <description>{{soulbeam:range}}ft line (5ft wide), DC {{soulbeam:dc}} DEX Save. Damage: Soul Pool value psychic. Pool resets.</description>
+            <description level="9">{{soulbeam:range}}ft line (5ft wide), DC {{soulbeam:dc}} DEX Save. Damage: Soul Pool value + {{soulbeam:damage}}d6 psychic. Pool resets.</description>
+        </sheet>
+        <rules>
+            <stat name="soulbeam:dc" value="caprisoul:dc" />
+            <stat name="soulbeam:range" value="60" />
+
+            <stat name="soulbeam:damage" value="2" level="9" />
+        </rules>
+    </element>
+
+    <element name="Flyby" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CAPRISOUL_TRAIT_FLYBY">
+        <compendium display="false" />
+        <supports>Caprisoul</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The caprisoul doesn't provoke opportunity attacks when it flies out of an enemy's reach.</p>
+        </description>
+        <sheet>
+            <description>Doesn't provoke opportunity attacks when flying.</description>
+        </sheet>
+    </element>
+
+    <element name="Soul Siphon" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CAPRISOUL_TRAIT_SOUL_SIPHON">
+        <compendium display="false" />
+        <supports>Caprisoul</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The caprisoul's Soul Drain attack deals an additional 1d6 necrotic damage (7 (2d6) total). This increases by 1d6 when its tamer reaches 11th level in the tamer class (10 (3d6) total) and 17th level in the tamer class (14 (4d6) total).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="caprisoul:attack:dice:necrotic" value="1" />
+            <stat name="caprisoul:attack:dice:necrotic" value="1" level="11" />
+            <stat name="caprisoul:attack:dice:necrotic" value="1" level="17" />
+        </rules>
+    </element>
+
+    <element name="Quick II" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CAPRISOUL_TRAIT_QUICK_II">
+        <compendium display="false" />
+        <supports>Caprisoul</supports>
+        <prerequisite>Prerequisite: 9th-level tamer, Quick I</prerequisite>
+        <requirements>[level:tamer:9], ID_LT_HGTMH_CAPRISOUL_TRAIT_QUICK_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The caprisoul's flying speed increases by 10 feet and it gains a +2 bonus to its AC while it isn't wearing armour. This is in addition to the increase and bonus from Quick I.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="caprisoul:fly" value="10" />
+            <stat name="caprisoul:ac bonus" value="2" />
+        </rules>
+    </element>
+
+    <element name="Uncanny Dodge" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CAPRISOUL_ACTION_UNCANNY_DODGE">
+        <compendium display="false" />
+        <supports>Caprisoul</supports>
+        <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
+        <requirements>[level:tamer:9]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (reaction)</p>
+            <p>When an attacker that the caprisoul can see hits it with an attack, the caprisoul can use its reaction to halve the attack's damage against it.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>Halve damage from an attack you can see.</description>
+        </sheet>
+    </element>
+
+    <element name="Incorporeality" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CAPRISOUL_TRAIT_INCORPOREALITY">
+        <compendium display="false" />
+        <supports>Caprisoul</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Immaterial</prerequisite>
+        <requirements>[level:tamer:13], ID_LT_HGTMH_CAPRISOUL_ACTION_IMMATERIAL</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>While the caprisoul is under the effect of its Immaterial trait, it can move through other creatures and objects as if they were difficult terrain. If it ends its turn inside an object, it takes 5 (1d10) force damage and is shunted to the nearest unoccupied space.</p>
+        </description>
+        <sheet>
+            <description>While Immaterial: Move through creatures/objects (difficult terrain).</description>
+        </sheet>
+    </element>
+
+    <element name="Soulbeam II" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CAPRISOUL_ACTION_SOULBEAM_II">
+        <compendium display="false" />
+        <supports>Caprisoul</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Soulbeam I</prerequisite>
+        <requirements>[level:tamer:13], ID_LT_HGTMH_CAPRISOUL_ACTION_SOULBEAM_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The length of the caprisoul's Soulbeam line increases to 90 feet, and the caprisoul gains a +1 bonus to the save DC of this action. The action deals an additional 7 (2d6) psychic damage, in addition to the bonus from Soulbeam I (14 (4d6) total extra damage).</p>
+            <p>When the caprisoul's tamer reaches 17th level in the tamer class, this action deals an additional 10 (3d6) psychic damage, in addition to the previous bonuses (24 (7d6) total extra damage).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="soulbeam:dc" value="1" />
+            <stat name="soulbeam:range" value="30" />
+
+            <stat name="soulbeam:damage" value="2" />
+            <stat name="soulbeam:damage" value="3" level="17" /> <!-- Adds another 3d6 at Lvl 17 -->
+        </rules>
+    </element>
+
+    <element name="Soulform" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CAPRISOUL_ACTION_SOULFORM">
+        <compendium display="false" />
+        <supports>Caprisoul</supports>
+        <prerequisite>Prerequisite: 17th-level tamer, Incorporeality or Soulbeam II</prerequisite>
+        <requirements>[level:tamer:17], (ID_LT_HGTMH_CAPRISOUL_TRAIT_INCORPOREALITY | ID_LT_HGTMH_CAPRISOUL_ACTION_SOULBEAM_II)</requirements> <!-- Needs OR condition support -->
+        <description>
+            <p>
+                <b>Type:</b> Active (bonus action)</p>
+            <p>As a bonus action, the caprisoul unleashes its stored pool of soul power, turning into a terrifying, ghostly version of itself, changing in the following ways for 1 minute:</p>
+            <ul>
+                <li>It grows to Medium size.</li>
+                <li>It becomes weightless and can hover while flying.</li>
+                <li>It has resistance to bludgeoning, piercing, and slashing damage.</li>
+                <li>It can move through other creatures and objects as if they were difficult terrain. If it ends its turn inside an object, it takes 5 (1d10) force damage and is shunted to the nearest unoccupied space.</li>
+                <li>It gains a number of temporary hit points equal to the value in its pool of soul power.</li>
+                <li>Its pool of soul power resets to zero.</li>
+                <li>It gains a ranged spell attack: <strong>Soul Lance.</strong> <em>Ranged Spell Attack:</em> Con modifier + PB to hit, range 90 ft., one creature. <em>Hit:</em> 24 (7d6) psychic damage and the target must succeed on a Wisdom saving throw (DC {{caprisoul:dc}}) or be frightened of the caprisoul until the transformation ends. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success.</li>
+            </ul>
+            <p>After the minute elapses, or if the caprisoul is reduced to 0 hit points before then, it falls unconscious until its tamer finishes a long rest. After it uses this action, it can't do so again until its tamer finishes a long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Long Rest">
+            <description>Transform (1 min): Medium size, weightless hover, B/P/S resistance, move through objects/creatures, gain Temp HP = Soul Pool, Soul Pool resets. Soul Lance (Range attack): {{caprisoul:soul lance:hit}} to hit, 90ft, 7d6 psychic, target WIS Save or frightened. Falls unconscious after.</description>
+        </sheet>
+        <rules>
+            <!-- Soul Lance Attack Calculation (CON mod + Prof Bonus) -->
+            <stat name="caprisoul:soul lance:hit" value="caprisoul:con:mod" />
+            <stat name="caprisoul:soul lance:hit" value="proficiency" />
+        </rules>
+    </element>
+    
+    <!-- General Improvements -->
+	<!-- Speed Training -->
+	<element name="Speed Training" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SPEED_TRAINING_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<description>
+			<p>Increase one existing speed by 15 feet up to a maximum of 150% of the creature’s base
+				speed, rounded up to the nearest 5-foot increment.</p>
+			<p>E.g., a base speed of 30 feet can be increased to 45 feet maximum, a base speed of 25
+				feet can be increased to 40 feet, and a base speed of 20 feet to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>Increase one existing speed by 15 feet (Max of 150%)</description>
+		</sheet>
+	</element>
+
+	<!-- Toughen Up -->
+	<element name="Toughen Up" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false">
+			<description>Your companion gains {{hit dice gained:companion:1}} Hit Die, increasing
+				its hit point maximum</description>
+		</sheet>
+		<rules>
+			<stat name="hit dice gained:companion:caprisoul" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:caprisoul" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:caprisoul" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:caprisoul" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:caprisoul" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:caprisoul" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (7)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:caprisoul" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (8)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:caprisoul" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (9)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:caprisoul" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (10)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:caprisoul" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (11)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:caprisoul" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (12)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:caprisoul" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (13)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:caprisoul" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (14)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:caprisoul" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (15)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:caprisoul" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (16)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:caprisoul" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (17)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:caprisoul" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (18)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:caprisoul" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (19)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:caprisoul" value="1" />
+		</rules>
+	</element>
+
+    <!-- Ability Boost -->
+	<element name="Ability Boost" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Caprisoul Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CAPRISOUL</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Caprisoul Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_CAPRISOUL</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Caprisoul Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_CAPRISOUL</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Caprisoul Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_CAPRISOUL</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Caprisoul Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_CAPRISOUL</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Caprisoul Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (7)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_CAPRISOUL</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Caprisoul Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (8)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_CAPRISOUL</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Caprisoul Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (9)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_CAPRISOUL</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Caprisoul Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (10)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_CAPRISOUL</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Caprisoul Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (11)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_CAPRISOUL</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Caprisoul Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (12)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_CAPRISOUL</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Caprisoul Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (13)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_CAPRISOUL</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Caprisoul Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (14)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_CAPRISOUL</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Caprisoul Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (15)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_CAPRISOUL</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Caprisoul Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (16)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_CAPRISOUL</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Caprisoul Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (17)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_CAPRISOUL</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Caprisoul Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (18)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_CAPRISOUL</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Caprisoul Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (19)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_19_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_CAPRISOUL</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Caprisoul Ability Boost" />
+		</rules>
+	</element>
+
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_CAPRISOUL">
+    <compendium display="false" />
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul strength becomes {{caprisoul:str}} (+{{caprisoul:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:str" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul strength becomes {{caprisoul:str}} (+{{caprisoul:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:str" value="1" />
+        <stat name="caprisoul:str:mod" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul strength becomes {{caprisoul:str}} (+{{caprisoul:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:str" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul strength becomes {{caprisoul:str}} (+{{caprisoul:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:str" value="1" />
+        <stat name="caprisoul:str:mod" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul strength becomes {{caprisoul:str}} (+{{caprisoul:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:str" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul strength becomes {{caprisoul:str}} (+{{caprisoul:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:str" value="1" />
+        <stat name="caprisoul:str:mod" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul strength becomes {{caprisoul:str}} (+{{caprisoul:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:str" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul strength becomes {{caprisoul:str}} (+{{caprisoul:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:str" value="1" />
+        <stat name="caprisoul:str:mod" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul strength becomes {{caprisoul:str}} (+{{caprisoul:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:str" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul strength becomes {{caprisoul:str}} (+{{caprisoul:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:str" value="1" />
+        <stat name="caprisoul:str:mod" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_11_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul strength becomes {{caprisoul:str}} (+{{caprisoul:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:str" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_12_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_11_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul strength becomes {{caprisoul:str}} (+{{caprisoul:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:str" value="1" />
+        <stat name="caprisoul:str:mod" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_13_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_12_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul strength becomes {{caprisoul:str}} (+{{caprisoul:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:str" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_14_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_13_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul strength becomes {{caprisoul:str}} (+{{caprisoul:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:str" value="1" />
+        <stat name="caprisoul:str:mod" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_15_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_14_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul strength becomes {{caprisoul:str}} (+{{caprisoul:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:str" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_16_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_15_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul strength becomes {{caprisoul:str}} (+{{caprisoul:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:str" value="1" />
+        <stat name="caprisoul:str:mod" value="1" />
+    </rules>
+</element>
+
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_CAPRISOUL">
+    <compendium display="false" />
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul dexterity becomes {{caprisoul:dex}} (+{{caprisoul:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:dex" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul dexterity becomes {{caprisoul:dex}} (+{{caprisoul:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:dex" value="1" />
+        <stat name="caprisoul:dex:mod" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul dexterity becomes {{caprisoul:dex}} (+{{caprisoul:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:dex" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul dexterity becomes {{caprisoul:dex}} (+{{caprisoul:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:dex" value="1" />
+        <stat name="caprisoul:dex:mod" value="1" />
+    </rules>
+</element>
+
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_CAPRISOUL">
+    <compendium display="false" />
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul constitution becomes {{caprisoul:con}} (+{{caprisoul:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:con" value="1" />
+        <stat name="caprisoul:con:mod" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul constitution becomes {{caprisoul:con}} (+{{caprisoul:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:con" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul constitution becomes {{caprisoul:con}} (+{{caprisoul:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:con" value="1" />
+        <stat name="caprisoul:con:mod" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul constitution becomes {{caprisoul:con}} (+{{caprisoul:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:con" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul constitution becomes {{caprisoul:con}} (+{{caprisoul:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:con" value="1" />
+        <stat name="caprisoul:con:mod" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul constitution becomes {{caprisoul:con}} (+{{caprisoul:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:con" value="1" />
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_7_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul constitution becomes {{caprisoul:con}} (+{{caprisoul:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:con" value="1" />
+        <stat name="caprisoul:con:mod" value="1" />
+    </rules>
+</element>
+
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_CAPRISOUL">
+    <compendium display="false" />
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul intelligence becomes {{caprisoul:int}} (+{{caprisoul:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:int" value="1" />
+        <!-- Base 8 -> 9 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul intelligence becomes {{caprisoul:int}} (+{{caprisoul:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:int" value="1" />
+        <stat name="caprisoul:int:mod" value="1" /> <!-- 9 -> 10 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul intelligence becomes {{caprisoul:int}} (+{{caprisoul:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:int" value="1" /> <!-- 10 -> 11 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul intelligence becomes {{caprisoul:int}} (+{{caprisoul:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:int" value="1" />
+        <stat name="caprisoul:int:mod" value="1" /> <!-- 11 -> 12 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul intelligence becomes {{caprisoul:int}} (+{{caprisoul:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:int" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul intelligence becomes {{caprisoul:int}} (+{{caprisoul:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:int" value="1" />
+        <stat name="caprisoul:int:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul intelligence becomes {{caprisoul:int}} (+{{caprisoul:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:int" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul intelligence becomes {{caprisoul:int}} (+{{caprisoul:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:int" value="1" />
+        <stat name="caprisoul:int:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul intelligence becomes {{caprisoul:int}} (+{{caprisoul:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:int" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul intelligence becomes {{caprisoul:int}} (+{{caprisoul:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:int" value="1" />
+        <stat name="caprisoul:int:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul intelligence becomes {{caprisoul:int}} (+{{caprisoul:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:int" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul intelligence becomes {{caprisoul:int}} (+{{caprisoul:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:int" value="1" />
+        <stat name="caprisoul:int:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_CAPRISOUL">
+    <compendium display="false" />
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul wisdom becomes {{caprisoul:wis}} (+{{caprisoul:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:wis" value="1" />
+        <stat name="caprisoul:wis:mod" value="1" /> <!-- Base 9 -> 10 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul wisdom becomes {{caprisoul:wis}} (+{{caprisoul:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:wis" value="1" /> <!-- 10 -> 11 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul wisdom becomes {{caprisoul:wis}} (+{{caprisoul:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:wis" value="1" />
+        <stat name="caprisoul:wis:mod" value="1" /> <!-- 11 -> 12 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul wisdom becomes {{caprisoul:wis}} (+{{caprisoul:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:wis" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul wisdom becomes {{caprisoul:wis}} (+{{caprisoul:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:wis" value="1" />
+        <stat name="caprisoul:wis:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul wisdom becomes {{caprisoul:wis}} (+{{caprisoul:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:wis" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul wisdom becomes {{caprisoul:wis}} (+{{caprisoul:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:wis" value="1" />
+        <stat name="caprisoul:wis:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul wisdom becomes {{caprisoul:wis}} (+{{caprisoul:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:wis" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul wisdom becomes {{caprisoul:wis}} (+{{caprisoul:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:wis" value="1" />
+        <stat name="caprisoul:wis:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_10_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul wisdom becomes {{caprisoul:wis}} (+{{caprisoul:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:wis" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_11_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_10_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul wisdom becomes {{caprisoul:wis}} (+{{caprisoul:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:wis" value="1" />
+        <stat name="caprisoul:wis:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_CAPRISOUL">
+    <compendium display="false" />
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul charisma becomes {{caprisoul:cha}} (+{{caprisoul:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:cha" value="1" />
+        <stat name="caprisoul:cha:mod" value="1" /> <!-- Base 7 -> 8 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul charisma becomes {{caprisoul:cha}} (+{{caprisoul:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:cha" value="1" /> <!-- 8 -> 9 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul charisma becomes {{caprisoul:cha}} (+{{caprisoul:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:cha" value="1" />
+        <stat name="caprisoul:cha:mod" value="1" /> <!-- 9 -> 10 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul charisma becomes {{caprisoul:cha}} (+{{caprisoul:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:cha" value="1" /> <!-- 10 -> 11 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul charisma becomes {{caprisoul:cha}} (+{{caprisoul:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:cha" value="1" />
+        <stat name="caprisoul:cha:mod" value="1" /> <!-- 11 -> 12 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul charisma becomes {{caprisoul:cha}} (+{{caprisoul:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:cha" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul charisma becomes {{caprisoul:cha}} (+{{caprisoul:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:cha" value="1" />
+        <stat name="caprisoul:cha:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul charisma becomes {{caprisoul:cha}} (+{{caprisoul:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:cha" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul charisma becomes {{caprisoul:cha}} (+{{caprisoul:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:cha" value="1" />
+        <stat name="caprisoul:cha:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul charisma becomes {{caprisoul:cha}} (+{{caprisoul:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:cha" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_11_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul charisma becomes {{caprisoul:cha}} (+{{caprisoul:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:cha" value="1" />
+        <stat name="caprisoul:cha:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_12_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_11_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul charisma becomes {{caprisoul:cha}} (+{{caprisoul:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:cha" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_13_CAPRISOUL">
+    <compendium display="false" />
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_12_CAPRISOUL</requirements>
+    <supports>Caprisoul Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Caprisoul charisma becomes {{caprisoul:cha}} (+{{caprisoul:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="caprisoul:cha" value="1" />
+        <stat name="caprisoul:cha:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<!-- Go For the Throat -->
+	<element name="Go For the Throat" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="go for the throat:bonus:caprisoul" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>[level:tamer:5],
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:caprisoul" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_3_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>
+			[level:tamer:9],ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:caprisoul" value="1" />
+		</rules>
+	</element>
+
+    <!-- Survival Insticts -->
+	<element name="Survival Instincts" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Caprisoul" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Caprisoul" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Caprisoul" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Caprisoul" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Caprisoul" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_6_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Caprisoul" />
+		</rules>
+	</element>
+
+	<element name="Caprisoul Survival Instincts: Strength" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Survival Instinct Caprisoul</supports>
+		<description>
+			<p>Your companion gains proficiency in Strength Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{caprisoul:str:save}} in Strength Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="caprisoul:str:save" value="proficiency" />
+            <stat name="caprisoul:str:save" value="caprisoul:str:mod" />
+        </rules>
+	</element>
+	<element name="Caprisoul Survival Instincts: Dexterity" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Survival Instinct Caprisoul</supports>
+		<description>
+			<p>Your companion gains proficiency in Dexterity Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{caprisoul:dex:save}} in Dexterity Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="caprisoul:dex:save" value="proficiency" />
+            <stat name="caprisoul:dex:save" value="caprisoul:dex:mod" />
+        </rules>
+	</element>
+	<element name="Caprisoul Survival Instincts: Constitution" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Survival Instinct Caprisoul</supports>
+		<description>
+			<p>Your companion gains proficiency in Constitution Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{caprisoul:con:save}} in Constitution Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="caprisoul:con:save" value="proficiency" />
+            <stat name="caprisoul:con:save" value="caprisoul:con:mod" />
+        </rules>
+	</element>
+	<element name="Caprisoul Survival Instincts: Intelligence" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Survival Instinct Caprisoul</supports>
+		<description>
+			<p>Your companion gains proficiency in Intelligence Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{caprisoul:int:save}} in Intelligence Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="caprisoul:int:save" value="proficiency" />
+            <stat name="caprisoul:int:save" value="caprisoul:int:mod" />
+        </rules>
+	</element>
+	<element name="Caprisoul Survival Instincts: Wisdom" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Survival Instinct Caprisoul</supports>
+		<description>
+			<p>Your companion gains proficiency in Wisdom Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{caprisoul:wis:save}} in Wisdom Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="caprisoul:wis:save" value="proficiency" />
+            <stat name="caprisoul:wis:save" value="caprisoul:wis:mod" />
+        </rules>
+	</element>
+	<element name="Caprisoul Survival Instincts: Charisma" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Survival Instinct Caprisoul</supports>
+		<description>
+			<p>Your companion gains proficiency in Charisma Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{caprisoul:cha:save}} in Charisma Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="caprisoul:cha:save" value="proficiency" />
+            <stat name="caprisoul:cha:save" value="caprisoul:cha:mod" />
+        </rules>
+	</element>
+
+    <!-- War Training -->
+	<element name="War Training" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet>
+			<description>Gains proficiency with one armour type or two weapons (Requires GM discretion)</description>
+		</sheet>
+		<!-- Specific proficiency application depends on the system -->
+	</element>
+	<element name="War Training (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_6_CAPRISOUL">
+		<compendium display="false" />
+        <supports>Caprisoul</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_CAPRISOUL</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+</elements>

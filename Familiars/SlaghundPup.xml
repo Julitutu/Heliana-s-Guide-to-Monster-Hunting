@@ -1,0 +1,2014 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Slaghund Pup</name>
+		<description>Slaghund Pup from Humperdink's Biomancy Boutique</description>
+		<update version="0.1.0">
+			<file name="SlaghundPup.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/SlaghundPup.xml" />
+		</update>
+	</info>
+
+	<element name="Slaghund Pup" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_SLAGHUND_PUP">
+		<supports>Familiar, Variant Familiar, Bespoke Companion</supports>
+		<description>
+			<p style="margin-bottom:-5px">
+				<em>Tiny fiend, chaotic neutral</em>
+			</p>
+			<h4 style="margin-top:5px" />
+			<p></p>
+			<p>
+				<strong>Armor Class</strong> 13 (natural armour)</p>
+			<p>
+				<strong>Hit Points</strong> 4 (1d4 + 2)</p>
+			<p>
+				<strong>Speed</strong> 30 ft.</p>
+			<p></p>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead>
+					<tr>
+						<td>STR</td>
+						<td>DEX</td>
+						<td>CON</td>
+						<td>INT</td>
+						<td>WIS</td>
+						<td>CHA</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>13(+1)</td>
+					<td>12(+1)</td>
+					<td>14(+2)</td>
+					<td>6(-2)</td>
+					<td>11(+0)</td>
+					<td>10(+0)</td>
+				</tr>
+			</table>
+			<p>
+				<strong>Skills</strong> Perception +2</p>
+            <p>
+				<strong>Damage Vulnerabilities</strong> cold</p>
+			<p>
+				<strong>Damage Immunities</strong> fire</p>
+			<p>
+				<strong>Senses</strong> darkvision 60 ft., passive Perception 12</p>
+			<p>
+				<strong>Languages</strong> —</p>
+			<p>
+				<strong>Challenge</strong> 1/8 (25 XP) <strong>Proficiency Bonus</strong> +2
+			</p>
+			<p></p>
+			<h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
+			<p>
+				<strong>
+					<em>Heated Weapons.</em>
+				</strong>When the slaghund hits with a weapon attack, it deals an extra 2 (1d4) fire damage (included in attacks).</p>
+            <p>
+				<strong>
+					<em>Heatable Body.</em>
+				</strong>As a bonus action, the slaghund can cause its body to heat up, or return to a normal warm temperature. While its body is heated in this way, a creature that touches the slaghund or hits it with a melee attack while within 5 feet of it takes 2 (1d4) fire damage.</p>
+            <p>
+				<strong>
+					<em>Reactionary Flame.</em>
+				</strong>When the slaghund is surprised, it ignites everything flammable within 1 foot of it that isn't being carried or worn.</p>
+			<p></p>
+			<h4 style="margin-top:15px">Actions</h4>
+			<p></p>
+			<p>
+				<strong>
+					<em>Bite.</em>
+				</strong>
+				<em>Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 4 (1d6+1) piercing damage plus 2 (1d4) fire damage.</p>
+            <p>
+				<strong>
+					<em>Claws.</em>
+				</strong>
+				<em>Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 3 (1d4+1) piercing damage plus 2 (1d4) fire damage.</p>
+			<p></p>
+		</description>
+		<sheet>
+			<description>Slaghund Pup ({{slaghundpup:size}})- Gains {{hit dice gained:companion:slaghundpup}}d{{hit dice size:slaghundpup}} hit dice. DC: {{slaghundpup:dc}}. AC: +{{slaghundpup:ac bonus}}. Bite: +{{slaghundpup:bite:hit}}, DMG: {{slaghundpup:bite:dice}} + {{slaghundpup:bite:damage}} piercing. Claws: +{{slaghundpup:claws:hit}}, DMG: {{slaghundpup:claws:dice}} + {{slaghundpup:claws:damage}} piercing. Heated Weapons/Body: +{{slaghundpup:heated weapons:dice}} fire.</description>
+		</sheet>
+		<rules>
+			<!-- Grant Base Improvements -->
+			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SLAGHUND_PUP" />
+
+			<!-- Base Stats -->
+			<stat name="slaghundpup:str" value="13" />
+			<stat name="slaghundpup:str:mod" value="1" />
+			<stat name="slaghundpup:dex" value="12" />
+			<stat name="slaghundpup:dex:mod" value="1" />
+			<stat name="slaghundpup:con" value="14" />
+			<stat name="slaghundpup:con:mod" value="2" />
+			<stat name="slaghundpup:int" value="6" />
+			<stat name="slaghundpup:int:mod" value="-2" />
+			<stat name="slaghundpup:wis" value="11" />
+			<stat name="slaghundpup:wis:mod" value="0" />
+			<stat name="slaghundpup:cha" value="10" />
+			<stat name="slaghundpup:cha:mod" value="0" />
+
+			<!-- Derived Stats -->
+			<stat name="slaghundpup:size" inline="true" value="Tiny" />
+			<stat name="hit dice size:slaghundpup" value="4" />
+			<stat name="slaghundpup:ac bonus" value="0" />
+			<stat name="slaghundpup:dc" value="8" />
+			<stat name="slaghundpup:dc" value="proficiency" />
+			<stat name="slaghundpup:dc" value="slaghundpup:con:mod" />
+
+            <!-- Heated Weapons Damage -->
+            <stat name="slaghundpup:heated weapons:dice" inline="true" value="1d4" />
+
+			<!-- Attack Stats (Bite) -->
+			<stat name="slaghundpup:bite:hit" value="proficiency" />
+			<stat name="slaghundpup:bite:hit" value="slaghundpup:str:mod" />
+			<stat name="slaghundpup:bite:hit" value="go for the throat:bonus:slaghundpup" />
+			<stat name="slaghundpup:bite:damage" value="slaghundpup:str:mod" />
+			<stat name="slaghundpup:bite:damage" value="go for the throat:bonus:slaghundpup" />
+			<stat name="slaghundpup:bite:dice" inline="true" value="1d6" />
+
+            <!-- Attack Stats (Claws) -->
+            <stat name="slaghundpup:claws:hit" value="proficiency" />
+			<stat name="slaghundpup:claws:hit" value="slaghundpup:str:mod" />
+			<stat name="slaghundpup:claws:hit" value="go for the throat:bonus:slaghundpup" />
+			<stat name="slaghundpup:claws:damage" value="slaghundpup:str:mod" />
+			<stat name="slaghundpup:claws:damage" value="go for the throat:bonus:slaghundpup" />
+			<stat name="slaghundpup:claws:dice" inline="true" value="1d4" />
+
+			<!-- Level-Based Stat Increases (for sheet display) -->
+			<stat name="hit dice gained:companion:slaghundpup" value="1" level="4" />
+			<stat name="hit dice gained:companion:slaghundpup" value="1" level="8" />
+			<stat name="hit dice gained:companion:slaghundpup" value="1" level="12" />
+			<stat name="hit dice gained:companion:slaghundpup" value="1" level="16" />
+			<stat name="hit dice gained:companion:slaghundpup" value="1" level="19" />
+
+            <!-- Go for the Throat Bonus Initialization -->
+            <stat name="go for the throat:bonus:slaghundpup" value="0" />
+		</rules>
+	</element>
+
+    <element name="Slaghund Pup Improvement" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SLAGHUND_PUP">
+        <description>
+            <p>Whenever you gain a level beyond 1st in this class, each companion to which you are
+                bonded gains one of the following improvements.
+                Any newly gained companions receive these additional Hit Dice and improvements as if
+                you had them since your 1st level in tamer.</p>
+        </description>
+        <sheet>
+            <description>The Slaghund Pup has the following Improvements:</description>
+        </sheet>
+        <rules>
+            <stat name="hit dice gained:companion:slaghundpup" value="2" />
+
+            <select type="Class Feature" name="Slaghund Pup Improvement" supports="Slaghund Pup" default="ID_LT_HGTMH_SLAGHUND_PUP_TRAIT_GROWTH_I"/>
+            <select type="Class Feature" name="Slaghund Pup Improvement (Lvl 2)" supports="Slaghund Pup" level="2" />
+            <select type="Class Feature" name="Slaghund Pup Improvement (Lvl 3)" supports="Slaghund Pup" level="3" />
+            <select type="Class Feature" name="Slaghund Pup Improvement (Lvl 4)" supports="Slaghund Pup" level="4" />
+            <select type="Class Feature" name="Slaghund Pup Improvement (Lvl 5)" supports="Slaghund Pup" level="5" />
+            <select type="Class Feature" name="Slaghund Pup Improvement (Lvl 6)" supports="Slaghund Pup" level="6" />
+            <select type="Class Feature" name="Slaghund Pup Improvement (Lvl 7)" supports="Slaghund Pup" level="7" />
+            <select type="Class Feature" name="Slaghund Pup Improvement (Lvl 8)" supports="Slaghund Pup" level="8" />
+            <select type="Class Feature" name="Slaghund Pup Improvement (Lvl 9)" supports="Slaghund Pup" level="9" />
+            <select type="Class Feature" name="Slaghund Pup Improvement (Lvl 10)" supports="Slaghund Pup" level="10" />
+            <select type="Class Feature" name="Slaghund Pup Improvement (Lvl 11)" supports="Slaghund Pup" level="11" />
+            <select type="Class Feature" name="Slaghund Pup Improvement (Lvl 12)" supports="Slaghund Pup" level="12" />
+            <select type="Class Feature" name="Slaghund Pup Improvement (Lvl 13)" supports="Slaghund Pup" level="13" />
+            <select type="Class Feature" name="Slaghund Pup Improvement (Lvl 14)" supports="Slaghund Pup" level="14" />
+            <select type="Class Feature" name="Slaghund Pup Improvement (Lvl 15)" supports="Slaghund Pup" level="15" />
+            <select type="Class Feature" name="Slaghund Pup Improvement (Lvl 16)" supports="Slaghund Pup" level="16" />
+            <select type="Class Feature" name="Slaghund Pup Improvement (Lvl 17)" supports="Slaghund Pup" level="17" />
+            <select type="Class Feature" name="Slaghund Pup Improvement (Lvl 18)" supports="Slaghund Pup" level="18" />
+            <select type="Class Feature" name="Slaghund Pup Improvement (Lvl 19)" supports="Slaghund Pup" level="19" />
+            <select type="Class Feature" name="Slaghund Pup Improvement (Lvl 20)" supports="Slaghund Pup" level="20" />
+        </rules>
+    </element>
+
+
+    <!-- Slaghund Pup's Improvements -->
+    <element name="Growth I" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_SLAGHUND_PUP_TRAIT_GROWTH_I">
+        <compendium display="false" />
+        <supports>Slaghund Pup</supports>
+        <prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
+        <requirements>[level:tamer:1]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The slaghund's size increases to Small and its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage die of its Bite attack increases to a d8 and its Claws to a d6. The slaghund gains this improvement when it becomes a companion; it doesn't cost an improvement.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="slaghundpup:size" inline="true" value="Small" />
+            <stat name="hit dice size:slaghundpup" value="2" /> <!-- d4 to d6 -->
+            <stat name="slaghundpup:bite:dice" inline="true" value="1d8" />
+            <stat name="slaghundpup:claws:dice" inline="true" value="1d6" />
+        </rules>
+    </element>
+
+    <element name="Hound's Speed" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_SLAGHUND_PUP_TRAIT_HOUNDS_SPEED">
+        <compendium display="false" />
+        <supports>Slaghund Pup</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The slaghund's speed increases by 20 feet.</p>
+        </description>
+        <sheet>
+            <description>Speed +{{slaghundpup:speed:bonus}}ft.</description>
+        </sheet>
+        <rules>
+            <stat name="slaghundpup:speed:bonus" value="20"/>
+        </rules>
+    </element>
+
+    <element name="Keen Senses" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_SLAGHUND_PUP_TRAIT_KEEN_SENSES">
+        <compendium display="false" />
+        <supports>Slaghund Pup</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The slaghund has advantage on Wisdom (Perception) checks.</p>
+        </description>
+        <sheet>
+            <description>Advantage on Wisdom (Perception) checks.</description>
+        </sheet>
+    </element>
+
+    <element name="Growth II" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_SLAGHUND_PUP_TRAIT_GROWTH_II">
+        <compendium display="false" />
+        <supports>Slaghund Pup</supports>
+        <prerequisite>Prerequisite: 5th-level tamer, Growth I</prerequisite>
+        <requirements>[level:tamer:5], ID_LT_HGTMH_SLAGHUND_PUP_TRAIT_GROWTH_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The slaghund's size increases to Medium and its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage die of its Bite attack increases to a d10 and its Claws to a d8.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="slaghundpup:size" inline="true" value="Medium" />
+            <stat name="hit dice size:slaghundpup" value="2" /> <!-- d6 to d8 -->
+            <stat name="slaghundpup:bite:dice" inline="true" value="1d10" />
+            <stat name="slaghundpup:claws:dice" inline="true" value="1d8" />
+        </rules>
+    </element>
+
+    <element name="Trailblazer I" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_SLAGHUND_PUP_ACTION_TRAILBLAZER_I">
+        <compendium display="false" />
+        <supports>Slaghund Pup</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action while the slaghund's Heatable Body trait is active, it can make its fires burn even hotter until the start of its next turn, leaving a trail of devastation behind it. After using this action, each space the slaghund moves into bursts into 5-foot-high flames until the start of its next turn. A creature that starts its turn within 5 feet of these flames, or one that starts its turn in the flames' space or moves into the flames' space for the first time on its turn, must make a Constitution saving throw. On a failure, a creature takes 2 (1d4) fire damage for each 5-foot-square of flames within 5 feet of it if it started its turn next to the flames, or 17 (5d6) fire damage if it is in the flames' space. On a success, a creature takes half as much damage.</p>
+            <p>After the slaghund uses this action, it can't do so again until its tamer finishes a short or long rest.</p>
+            <p>When the slaghund's tamer reaches 9th level in the tamer class, this damage increases to 3 (1d6) and 24 (7d6), respectively.</p>
+        </description>
+        <sheet action="Action" usage="1/Short Rest">
+            <description>While Heatable Body active, trail of 5ft high flames (1 round).DC {{trailblazer:dc}} CON Save if start turn near/in flames or enter. Fail: {{trailblazer:near}} fire (near) / {{trailblazer:in}}d6 fire (in). Half on save.</description>
+        </sheet>
+        <rules>
+            <stat name="trailblazer:dc" value="slaghundpup:dc" />
+            <stat name="trailblazer:near" inline="true" value="1d4" />
+            <stat name="trailblazer:in" value="5" />
+            <stat name="trailblazer:near" inline="true" value="1d6" level="9" />
+            <stat name="trailblazer:in" value="2" level="9" /> <!-- 5d6 -> 7d6 -->
+        </rules>
+    </element>
+
+    <element name="Multiattack" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_SLAGHUND_PUP_ACTION_MULTIATTACK">
+        <compendium display="false" />
+        <supports>Slaghund Pup</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action, the slaghund can make two attacks: one with its Bite and one with its Claws.</p>
+        </description>
+        <sheet action="Action">
+            <description>Two Attacks: One Bite attack and one Claws attack.</description>
+        </sheet>
+    </element>
+
+    <element name="Pack Tactics" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_SLAGHUND_PUP_TRAIT_PACK_TACTICS">
+        <compendium display="false" />
+        <supports>Slaghund Pup</supports>
+        <prerequisite>Prerequisite: 9th-level tamer, Keen Senses</prerequisite>
+        <requirements>[level:tamer:9], ID_LT_HGTMH_SLAGHUND_PUP_TRAIT_KEEN_SENSES</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The slaghund has advantage on an attack roll against a creature if at least one of the slaghund's allies is within 5 feet of the creature and the ally isn't incapacitated.</p>
+        </description>
+        <sheet>
+            <description>Advantage on attacks if ally within 5ft of target.</description>
+        </sheet>
+    </element>
+
+    <element name="White Hot" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_SLAGHUND_PUP_TRAIT_WHITE_HOT">
+        <compendium display="false" />
+        <supports>Slaghund Pup</supports>
+        <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
+        <requirements>[level:tamer:9]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion &amp; tamer)</p>
+            <p>The fire damage of the slaghund's Heatable Body and Heated Weapons traits increases to 1d8. While the slaghund is summoned, its tamer has resistance to fire damage.</p>
+        </description>
+        <sheet>
+            <description>While summoned: Tamer gains Fire Resistance.</description>
+        </sheet>
+        <rules>
+            <stat name="slaghundpup:heated weapons:dice" inline="true" value="1d8" />
+        </rules>
+    </element>
+
+    <element name="Growth III" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_SLAGHUND_PUP_TRAIT_GROWTH_III">
+        <compendium display="false" />
+        <supports>Slaghund Pup</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Growth II</prerequisite>
+        <requirements>[level:tamer:13], ID_LT_HGTMH_SLAGHUND_PUP_TRAIT_GROWTH_II</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The slaghund's size increases to Large and its Hit Die size increases to a d10 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage die of its Bite attack increases to a d12 and its Claws to a d10.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="slaghundpup:size" inline="true" value="Large" />
+            <stat name="hit dice size:slaghundpup" value="2" /> <!-- d8 to d10 -->
+            <stat name="slaghundpup:bite:dice" inline="true" value="1d12" />
+            <stat name="slaghundpup:claws:dice" inline="true" value="1d10" />
+        </rules>
+    </element>
+
+    <element name="Trailblazer II" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_SLAGHUND_PUP_ACTION_TRAILBLAZER_II">
+        <compendium display="false" />
+        <supports>Slaghund Pup</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Trailblazer I</prerequisite>
+        <requirements>[level:tamer:13], ID_LT_HGTMH_SLAGHUND_PUP_ACTION_TRAILBLAZER_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The damage of the slaghund's Trailblazer action increases to 4 (1d8) and 31 (9d6), respectively. The slaghund gains a +1 bonus to the save DC of this action.</p>
+            <p>When the slaghund's tamer reaches 17th level in the tamer class, the damage of this action increases to 5 (1d10) and 42 (12d6), respectively.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="trailblazer:dc" value="1" /> <!-- DC bonus for Trailblazer -->
+            <stat name="trailblazer:near" inline="true" value="1d8" /> <!-- d6 -> d8 -->
+            <stat name="trailblazer:in" value="2" /> <!-- 7d6 -> 9d6 -->
+            <stat name="trailblazer:near" inline="true" value="1d10" /> <!-- d8 -> d10 -->
+            <stat name="trailblazer:in" value="3" level="17" /> <!-- 9d6 -> 12d6 -->
+        </rules>
+    </element>
+
+    <element name="Fiery Aura" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_SLAGHUND_PUP_ACTION_FIERY_AURA">
+        <compendium display="false" />
+        <supports>Slaghund Pup</supports>
+        <prerequisite>Prerequisite: 17th-level tamer, White Hot</prerequisite>
+        <requirements>[level:tamer:17], ID_LT_HGTMH_SLAGHUND_PUP_TRAIT_WHITE_HOT</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action while the slaghund's Heatable Body trait is active, it casts the fire shield spell on itself, choosing the warm shield option and requiring no material components.</p>
+            <p>After the slaghund uses this action, it can't do so again until its tamer finishes a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>While Heatable Body active, cast Fire Shield (Warm option, no components).</description>
+        </sheet>
+    </element>
+
+    <!-- General Improvements -->
+	<!-- Speed Training -->
+	<element name="Speed Training" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SPEED_TRAINING_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<description>
+			<p>Increase one existing speed by 15 feet up to a maximum of 150% of the creature’s base
+				speed, rounded up to the nearest 5-foot increment.</p>
+			<p>E.g., a base speed of 30 feet can be increased to 45 feet maximum, a base speed of 25
+				feet can be increased to 40 feet, and a base speed of 20 feet to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>Increase one existing speed by 15 feet (Max of 150%)</description>
+		</sheet>
+	</element>
+
+	<!-- Toughen Up -->
+	<element name="Toughen Up" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false">
+			<description>Your companion gains {{hit dice gained:companion:1}} Hit Die, increasing
+				its hit point maximum</description>
+		</sheet>
+		<rules>
+			<stat name="hit dice gained:companion:slaghundpup" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:slaghundpup" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:slaghundpup" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:slaghundpup" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:slaghundpup" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:slaghundpup" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (7)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:slaghundpup" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (8)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:slaghundpup" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (9)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:slaghundpup" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (10)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:slaghundpup" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (11)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:slaghundpup" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (12)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:slaghundpup" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (13)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:slaghundpup" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (14)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:slaghundpup" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (15)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:slaghundpup" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (16)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:slaghundpup" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (17)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:slaghundpup" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (18)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:slaghundpup" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (19)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:slaghundpup" value="1" />
+		</rules>
+	</element>
+
+    <!-- Ability Boost -->
+	<element name="Ability Boost" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Slaghund Pup Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Slaghund Pup Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Slaghund Pup Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Slaghund Pup Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Slaghund Pup Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Slaghund Pup Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (7)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Slaghund Pup Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (8)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Slaghund Pup Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (9)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Slaghund Pup Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (10)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Slaghund Pup Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (11)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Slaghund Pup Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (12)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Slaghund Pup Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (13)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Slaghund Pup Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (14)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Slaghund Pup Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (15)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Slaghund Pup Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (16)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Slaghund Pup Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (17)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Slaghund Pup Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (18)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Slaghund Pup Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (19)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_19_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Slaghund Pup Ability Boost" />
+		</rules>
+	</element>
+
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_SLAGHUND_PUP">
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup strength becomes {{slaghundpup:str}} (+{{slaghundpup:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:str" value="1" />
+        <stat name="slaghundpup:str:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup strength becomes {{slaghundpup:str}} (+{{slaghundpup:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:str" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup strength becomes {{slaghundpup:str}} (+{{slaghundpup:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:str" value="1" />
+        <stat name="slaghundpup:str:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup strength becomes {{slaghundpup:str}} (+{{slaghundpup:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:str" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup strength becomes {{slaghundpup:str}} (+{{slaghundpup:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:str" value="1" />
+        <stat name="slaghundpup:str:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup strength becomes {{slaghundpup:str}} (+{{slaghundpup:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:str" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup strength becomes {{slaghundpup:str}} (+{{slaghundpup:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:str" value="1" />
+        <stat name="slaghundpup:str:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_SLAGHUND_PUP">
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup dexterity becomes {{slaghundpup:dex}} (+{{slaghundpup:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:dex" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup dexterity becomes {{slaghundpup:dex}} (+{{slaghundpup:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:dex" value="1" />
+        <stat name="slaghundpup:dex:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup dexterity becomes {{slaghundpup:dex}} (+{{slaghundpup:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:dex" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup dexterity becomes {{slaghundpup:dex}} (+{{slaghundpup:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:dex" value="1" />
+        <stat name="slaghundpup:dex:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup dexterity becomes {{slaghundpup:dex}} (+{{slaghundpup:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:dex" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup dexterity becomes {{slaghundpup:dex}} (+{{slaghundpup:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:dex" value="1" />
+        <stat name="slaghundpup:dex:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup dexterity becomes {{slaghundpup:dex}} (+{{slaghundpup:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:dex" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup dexterity becomes {{slaghundpup:dex}} (+{{slaghundpup:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:dex" value="1" />
+        <stat name="slaghundpup:dex:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_SLAGHUND_PUP">
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup constitution becomes {{slaghundpup:con}} (+{{slaghundpup:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:con" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup constitution becomes {{slaghundpup:con}} (+{{slaghundpup:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:con" value="1" />
+        <stat name="slaghundpup:con:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup constitution becomes {{slaghundpup:con}} (+{{slaghundpup:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:con" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup constitution becomes {{slaghundpup:con}} (+{{slaghundpup:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:con" value="1" />
+        <stat name="slaghundpup:con:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup constitution becomes {{slaghundpup:con}} (+{{slaghundpup:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:con" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup constitution becomes {{slaghundpup:con}} (+{{slaghundpup:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:con" value="1" />
+        <stat name="slaghundpup:con:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_SLAGHUND_PUP">
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup intelligence becomes {{slaghundpup:int}} (+{{slaghundpup:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:int" value="1" /> <!-- 6 -> 7 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup intelligence becomes {{slaghundpup:int}} (+{{slaghundpup:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:int" value="1" />
+        <stat name="slaghundpup:int:mod" value="1" /> <!-- 7 -> 8 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup intelligence becomes {{slaghundpup:int}} (+{{slaghundpup:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:int" value="1" /> <!-- 8 -> 9 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup intelligence becomes {{slaghundpup:int}} (+{{slaghundpup:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:int" value="1" />
+        <stat name="slaghundpup:int:mod" value="1" /> <!-- 9 -> 10 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup intelligence becomes {{slaghundpup:int}} (+{{slaghundpup:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:int" value="1" /> <!-- 10 -> 11 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup intelligence becomes {{slaghundpup:int}} (+{{slaghundpup:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:int" value="1" />
+        <stat name="slaghundpup:int:mod" value="1" /> <!-- 11 -> 12 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup intelligence becomes {{slaghundpup:int}} (+{{slaghundpup:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:int" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup intelligence becomes {{slaghundpup:int}} (+{{slaghundpup:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:int" value="1" />
+        <stat name="slaghundpup:int:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup intelligence becomes {{slaghundpup:int}} (+{{slaghundpup:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:int" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup intelligence becomes {{slaghundpup:int}} (+{{slaghundpup:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:int" value="1" />
+        <stat name="slaghundpup:int:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup intelligence becomes {{slaghundpup:int}} (+{{slaghundpup:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:int" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup intelligence becomes {{slaghundpup:int}} (+{{slaghundpup:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:int" value="1" />
+        <stat name="slaghundpup:int:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_13_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup intelligence becomes {{slaghundpup:int}} (+{{slaghundpup:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:int" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_14_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_13_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup intelligence becomes {{slaghundpup:int}} (+{{slaghundpup:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:int" value="1" />
+        <stat name="slaghundpup:int:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_SLAGHUND_PUP">
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup wisdom becomes {{slaghundpup:wis}} (+{{slaghundpup:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:wis" value="1" />
+        <stat name="slaghundpup:wis:mod" value="1" /> <!-- 11 -> 12 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup wisdom becomes {{slaghundpup:wis}} (+{{slaghundpup:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:wis" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup wisdom becomes {{slaghundpup:wis}} (+{{slaghundpup:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:wis" value="1" />
+        <stat name="slaghundpup:wis:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup wisdom becomes {{slaghundpup:wis}} (+{{slaghundpup:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:wis" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup wisdom becomes {{slaghundpup:wis}} (+{{slaghundpup:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:wis" value="1" />
+        <stat name="slaghundpup:wis:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup wisdom becomes {{slaghundpup:wis}} (+{{slaghundpup:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:wis" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup wisdom becomes {{slaghundpup:wis}} (+{{slaghundpup:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:wis" value="1" />
+        <stat name="slaghundpup:wis:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup wisdom becomes {{slaghundpup:wis}} (+{{slaghundpup:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:wis" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup wisdom becomes {{slaghundpup:wis}} (+{{slaghundpup:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:wis" value="1" />
+        <stat name="slaghundpup:wis:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_SLAGHUND_PUP">
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup charisma becomes {{slaghundpup:cha}} (+{{slaghundpup:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:cha" value="1" /> <!-- 10 -> 11 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup charisma becomes {{slaghundpup:cha}} (+{{slaghundpup:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:cha" value="1" />
+        <stat name="slaghundpup:cha:mod" value="1" /> <!-- 11 -> 12 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup charisma becomes {{slaghundpup:cha}} (+{{slaghundpup:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:cha" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup charisma becomes {{slaghundpup:cha}} (+{{slaghundpup:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:cha" value="1" />
+        <stat name="slaghundpup:cha:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup charisma becomes {{slaghundpup:cha}} (+{{slaghundpup:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:cha" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup charisma becomes {{slaghundpup:cha}} (+{{slaghundpup:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:cha" value="1" />
+        <stat name="slaghundpup:cha:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup charisma becomes {{slaghundpup:cha}} (+{{slaghundpup:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:cha" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup charisma becomes {{slaghundpup:cha}} (+{{slaghundpup:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:cha" value="1" />
+        <stat name="slaghundpup:cha:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup charisma becomes {{slaghundpup:cha}} (+{{slaghundpup:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:cha" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_SLAGHUND_PUP">
+    <requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_SLAGHUND_PUP</requirements>
+    <supports>Slaghund Pup Ability Boost</supports>
+    <compendium display="false" />
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Slaghund Pup charisma becomes {{slaghundpup:cha}} (+{{slaghundpup:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="slaghundpup:cha" value="1" />
+        <stat name="slaghundpup:cha:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<!-- Go For the Throat -->
+	<element name="Go For the Throat" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="go for the throat:bonus:slaghundpup" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>[level:tamer:5],
+			ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:slaghundpup" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_3_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>
+			[level:tamer:9],ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:slaghundpup" value="1" />
+		</rules>
+	</element>
+
+    <!-- Survival Insticts -->
+	<element name="Survival Instincts" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Slaghund Pup" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Slaghund Pup" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Slaghund Pup" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Slaghund Pup" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Slaghund Pup" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_6_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Slaghund Pup" />
+		</rules>
+	</element>
+
+	<element name="Slaghund Pup Survival Instincts: Strength" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Survival Instinct Slaghund Pup</supports>
+		<description>
+			<p>Your companion gains proficiency in Strength Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{slaghundpup:str:save}} in Strength Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="slaghundpup:str:save" value="proficiency" />
+            <stat name="slaghundpup:str:save" value="slaghundpup:str:mod" />
+        </rules>
+	</element>
+	<element name="Slaghund Pup Survival Instincts: Dexterity" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Survival Instinct Slaghund Pup</supports>
+		<description>
+			<p>Your companion gains proficiency in Dexterity Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{slaghundpup:dex:save}} in Dexterity Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="slaghundpup:dex:save" value="proficiency" />
+            <stat name="slaghundpup:dex:save" value="slaghundpup:dex:mod" />
+        </rules>
+	</element>
+	<element name="Slaghund Pup Survival Instincts: Constitution" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Survival Instinct Slaghund Pup</supports>
+		<description>
+			<p>Your companion gains proficiency in Constitution Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{slaghundpup:con:save}} in Constitution Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="slaghundpup:con:save" value="proficiency" />
+            <stat name="slaghundpup:con:save" value="slaghundpup:con:mod" />
+        </rules>
+	</element>
+	<element name="Slaghund Pup Survival Instincts: Intelligence" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Survival Instinct Slaghund Pup</supports>
+		<description>
+			<p>Your companion gains proficiency in Intelligence Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{slaghundpup:int:save}} in Intelligence Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="slaghundpup:int:save" value="proficiency" />
+            <stat name="slaghundpup:int:save" value="slaghundpup:int:mod" />
+        </rules>
+	</element>
+	<element name="Slaghund Pup Survival Instincts: Wisdom" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Survival Instinct Slaghund Pup</supports>
+		<description>
+			<p>Your companion gains proficiency in Wisdom Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{slaghundpup:wis:save}} in Wisdom Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="slaghundpup:wis:save" value="proficiency" />
+            <stat name="slaghundpup:wis:save" value="slaghundpup:wis:mod" />
+        </rules>
+	</element>
+	<element name="Slaghund Pup Survival Instincts: Charisma" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Survival Instinct Slaghund Pup</supports>
+		<description>
+			<p>Your companion gains proficiency in Charisma Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{slaghundpup:cha:save}} in Charisma Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="slaghundpup:cha:save" value="proficiency" />
+            <stat name="slaghundpup:cha:save" value="slaghundpup:cha:mod" />
+        </rules>
+	</element>
+
+    <!-- War Training -->
+	<element name="War Training" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet>
+			<description>Gains proficiency with one armour type or two weapons (Requires GM discretion)</description>
+		</sheet>
+		<!-- Specific proficiency application depends on the system -->
+	</element>
+	<element name="War Training (2)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (3)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (4)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (5)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (6)" type="Class Feature" source="Humperdink's Biomancy Boutique" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_6_SLAGHUND_PUP">
+		<compendium display="false" />
+        <supports>Slaghund Pup</supports>
+		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_SLAGHUND_PUP</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+</elements>
