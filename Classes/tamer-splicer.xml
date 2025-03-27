@@ -3,7 +3,7 @@
 	<info>
 		<name>Training Paradigm: Splicer</name>
 		<description>Splicer from Heliana's Guide to Monster Hunting</description>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="tamer-splicer.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Classes/tamer-splicer.xml" /> 
 		</update>
 	</info>
@@ -80,8 +80,8 @@
 			<p class="indent">***A companion can benefit from only one of these three ‘touch’ augments, but can take them up to 2 times (see augment description).</p>
 			<p class="indent">****This augment can be taken multiple times, but can never cause a companion’s size category to increase beyond the maximum size dictated by tamer level (see Tamer Companion Summary table, page 202).</p>
 		</description>
-		<sheet>
-			<description>{{splicer:points}} splicer points. Modify companions (long rest). 1 hr to remove/reallocate.&#13;
+		<sheet usage="{{splicer:points}} splicer points">
+			<description>Modify companions (long rest). 1 hr to remove/reallocate.&#13;
             • Cost 0: Water Breathing&#13;
             • Cost 1: Amphibious, Darkvision, Extra Limbs, Fins &amp; Webbing, Illumination, Keen Hearing, Keen Sight, Keen Smell, Powerful Build, Prehensile Tail, Slippery, Sure-Footed, Web Sense + Web Walk &#13;
             • Cost 2: Burrowing Claws, Long Limbed, Mimicry, Natural Armour, Poisonous Touch, Spider Climb &#13;
