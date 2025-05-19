@@ -171,6 +171,7 @@
 
 <!-- Mushamushi's Improvements -->
     <element name="Hookshot I" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_ACTION_HOOKSHOT_I">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
         <requirements>[level:tamer:1]</requirements>
@@ -192,6 +193,7 @@
     </element>
 
     <element name="Agile" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_TRAIT_AGILE">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
         <requirements>[level:tamer:3]</requirements>
@@ -209,6 +211,7 @@
     </element>
 
     <element name="Single Combat" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_ACTION_SINGLE_COMBAT">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
         <requirements>[level:tamer:3]</requirements>
@@ -223,6 +226,7 @@
     </element>
 
     <element name="Combat Prowess I" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_TRAIT_COMBAT_PROWESS_I">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
         <requirements>[level:tamer:5]</requirements>
@@ -241,6 +245,7 @@
     </element>
 
     <element name="Hookshot II" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_TRAIT_HOOKSHOT_II">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <prerequisite>Prerequisite: 5th-level tamer, Hookshot I</prerequisite>
         <requirements>[level:tamer:5], ID_LT_WOK_MUSHAMUSHI_ACTION_HOOKSHOT_I</requirements>
@@ -257,6 +262,7 @@
     </element>
 
     <element name="Multiattack" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_ACTION_MULTIATTACK">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
         <requirements>[level:tamer:5]</requirements>
@@ -271,6 +277,7 @@
     </element>
 
     <element name="Courageous" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_TRAIT_COURAGEOUS">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
         <requirements>[level:tamer:9]</requirements>
@@ -287,6 +294,7 @@
     </element>
 
     <element name="Adamantine Chitin I" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_TRAIT_ADAMANTINE_CHITIN_I">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
         <requirements>[level:tamer:9]</requirements>
@@ -305,6 +313,7 @@
     </element>
 
     <element name="Adamantine Chitin II" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_TRAIT_ADAMANTINE_CHITIN_II">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <prerequisite>Prerequisite: 13th-level tamer, Adamantine Chitin I</prerequisite>
         <requirements>[level:tamer:13], ID_LT_WOK_MUSHAMUSHI_TRAIT_ADAMANTINE_CHITIN_I</requirements>
@@ -322,6 +331,7 @@
     </element>
 
     <element name="Combat Prowess II" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_TRAIT_COMBAT_PROWESS_II">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <prerequisite>Prerequisite: 13th-level tamer, Combat Prowess I</prerequisite>
         <requirements>[level:tamer:13], ID_LT_WOK_MUSHAMUSHI_TRAIT_COMBAT_PROWESS_I</requirements>
@@ -340,6 +350,7 @@
     </element>
 
     <element name="Hookshot III" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_ACTION_HOOKSHOT_III">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <prerequisite>Prerequisite: 13th-level tamer, Hookshot II</prerequisite>
         <requirements>[level:tamer:13], ID_LT_WOK_MUSHAMUSHI_TRAIT_HOOKSHOT_II</requirements>
@@ -355,6 +366,7 @@
     </element>
 
     <element name="Kaiju Killer" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_ACTION_KAIJU_KILLER">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <prerequisite>Prerequisite: 17th-level tamer</prerequisite>
         <requirements>[level:tamer:17]</requirements>
@@ -372,6 +384,7 @@
 <!-- General Improvements -->
     <!-- Speed Training -->
     <element name="Speed Training" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SPEED_TRAINING_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <description>
             <p>Increase one existing speed by 15 feet up to a maximum of 150% of the creature’s base
@@ -386,6 +399,7 @@
 
     <!-- Toughen Up -->
     <element name="Toughen Up" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <description>
             <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
@@ -401,6 +415,7 @@
         </rules>
     </element>
     <element name="Toughen Up (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_MUSHAMUSHI</requirements>
         <description>
@@ -414,6 +429,7 @@
         </rules>
     </element>
     <element name="Toughen Up (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_MUSHAMUSHI</requirements>
         <description>
@@ -427,6 +443,7 @@
         </rules>
     </element>
     <element name="Toughen Up (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_MUSHAMUSHI</requirements>
         <description>
@@ -440,6 +457,7 @@
         </rules>
     </element>
     <element name="Toughen Up (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_MUSHAMUSHI</requirements>
         <description>
@@ -453,6 +471,7 @@
         </rules>
     </element>
     <element name="Toughen Up (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_MUSHAMUSHI</requirements>
         <description>
@@ -466,6 +485,7 @@
         </rules>
     </element>
     <element name="Toughen Up (7)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_MUSHAMUSHI</requirements>
         <description>
@@ -479,6 +499,7 @@
         </rules>
     </element>
     <element name="Toughen Up (8)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_MUSHAMUSHI</requirements>
         <description>
@@ -492,6 +513,7 @@
         </rules>
     </element>
     <element name="Toughen Up (9)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_MUSHAMUSHI</requirements>
         <description>
@@ -505,6 +527,7 @@
         </rules>
     </element>
     <element name="Toughen Up (10)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_MUSHAMUSHI</requirements>
         <description>
@@ -518,6 +541,7 @@
         </rules>
     </element>
     <element name="Toughen Up (11)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_MUSHAMUSHI</requirements>
         <description>
@@ -531,6 +555,7 @@
         </rules>
     </element>
     <element name="Toughen Up (12)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_MUSHAMUSHI</requirements>
         <description>
@@ -544,6 +569,7 @@
         </rules>
     </element>
     <element name="Toughen Up (13)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_MUSHAMUSHI</requirements>
         <description>
@@ -557,6 +583,7 @@
         </rules>
     </element>
     <element name="Toughen Up (14)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_MUSHAMUSHI</requirements>
         <description>
@@ -570,6 +597,7 @@
         </rules>
     </element>
     <element name="Toughen Up (15)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_MUSHAMUSHI</requirements>
         <description>
@@ -583,6 +611,7 @@
         </rules>
     </element>
     <element name="Toughen Up (16)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_MUSHAMUSHI</requirements>
         <description>
@@ -596,6 +625,7 @@
         </rules>
     </element>
     <element name="Toughen Up (17)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_MUSHAMUSHI</requirements>
         <description>
@@ -609,6 +639,7 @@
         </rules>
     </element>
     <element name="Toughen Up (18)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_MUSHAMUSHI</requirements>
         <description>
@@ -622,6 +653,7 @@
         </rules>
     </element>
     <element name="Toughen Up (19)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_MUSHAMUSHI</requirements>
         <description>
@@ -637,6 +669,7 @@
 
 <!-- Ability Boost -->
     <element name="Ability Boost" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <description>
             <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
@@ -647,6 +680,7 @@
         </rules>
     </element>
     <element name="Ability Boost (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_MUSHAMUSHI</requirements>
         <description>
@@ -658,6 +692,7 @@
         </rules>
     </element>
     <element name="Ability Boost (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_MUSHAMUSHI</requirements>
         <description>
@@ -669,6 +704,7 @@
         </rules>
     </element>
     <element name="Ability Boost (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_MUSHAMUSHI</requirements>
         <description>
@@ -680,6 +716,7 @@
         </rules>
     </element>
     <element name="Ability Boost (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_MUSHAMUSHI</requirements>
         <description>
@@ -691,6 +728,7 @@
         </rules>
     </element>
     <element name="Ability Boost (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_MUSHAMUSHI</requirements>
         <description>
@@ -702,6 +740,7 @@
         </rules>
     </element>
     <element name="Ability Boost (7)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_MUSHAMUSHI</requirements>
         <description>
@@ -713,6 +752,7 @@
         </rules>
     </element>
     <element name="Ability Boost (8)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_MUSHAMUSHI</requirements>
         <description>
@@ -724,6 +764,7 @@
         </rules>
     </element>
     <element name="Ability Boost (9)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_MUSHAMUSHI</requirements>
         <description>
@@ -735,6 +776,7 @@
         </rules>
     </element>
     <element name="Ability Boost (10)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_MUSHAMUSHI</requirements>
         <description>
@@ -746,6 +788,7 @@
         </rules>
     </element>
     <element name="Ability Boost (11)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_MUSHAMUSHI</requirements>
         <description>
@@ -757,6 +800,7 @@
         </rules>
     </element>
     <element name="Ability Boost (12)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_MUSHAMUSHI</requirements>
         <description>
@@ -768,6 +812,7 @@
         </rules>
     </element>
     <element name="Ability Boost (13)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_MUSHAMUSHI</requirements>
         <description>
@@ -779,6 +824,7 @@
         </rules>
     </element>
     <element name="Ability Boost (14)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_MUSHAMUSHI</requirements>
         <description>
@@ -790,6 +836,7 @@
         </rules>
     </element>
     <element name="Ability Boost (15)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_MUSHAMUSHI</requirements>
         <description>
@@ -801,6 +848,7 @@
         </rules>
     </element>
     <element name="Ability Boost (16)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_MUSHAMUSHI</requirements>
         <description>
@@ -812,6 +860,7 @@
         </rules>
     </element>
     <element name="Ability Boost (17)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_MUSHAMUSHI</requirements>
         <description>
@@ -823,6 +872,7 @@
         </rules>
     </element>
     <element name="Ability Boost (18)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_MUSHAMUSHI</requirements>
         <description>
@@ -834,6 +884,7 @@
         </rules>
     </element>
     <element name="Ability Boost (19)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_19_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_MUSHAMUSHI</requirements>
         <description>
@@ -846,6 +897,7 @@
     </element>
 
     <element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
@@ -859,6 +911,7 @@
     </element>
     <element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
@@ -873,6 +926,7 @@
     </element>
     <element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
@@ -886,6 +940,7 @@
     </element>
     <element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
@@ -900,6 +955,7 @@
     </element>
     <element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
@@ -913,6 +969,7 @@
     </element>
     <element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
@@ -927,6 +984,7 @@
     </element>
     <element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
@@ -940,6 +998,7 @@
     </element>
     <element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
@@ -954,6 +1013,7 @@
     </element>
     <element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
@@ -967,6 +1027,7 @@
     </element>
     <element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
@@ -980,6 +1041,7 @@
         </rules>
     </element>
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
@@ -993,6 +1055,7 @@
     </element>
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
@@ -1007,6 +1070,7 @@
     </element>
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
@@ -1020,6 +1084,7 @@
     </element>
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
@@ -1034,6 +1099,7 @@
     </element>
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
@@ -1047,6 +1113,7 @@
     </element>
     <element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
@@ -1060,6 +1127,7 @@
         </rules>
     </element>
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
@@ -1073,6 +1141,7 @@
     </element>
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
@@ -1087,6 +1156,7 @@
     </element>
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
@@ -1100,6 +1170,7 @@
     </element>
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
@@ -1114,6 +1185,7 @@
     </element>
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
@@ -1127,6 +1199,7 @@
     </element>
     <element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
@@ -1140,6 +1213,7 @@
         </rules>
     </element>
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1154,6 +1228,7 @@
     </element>
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1167,6 +1242,7 @@
     </element>
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1181,6 +1257,7 @@
     </element>
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1194,6 +1271,7 @@
     </element>
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1208,6 +1286,7 @@
     </element>
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1221,6 +1300,7 @@
     </element>
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1235,6 +1315,7 @@
     </element>
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1248,6 +1329,7 @@
     </element>
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1262,6 +1344,7 @@
     </element>
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1275,6 +1358,7 @@
     </element>
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1289,6 +1373,7 @@
     </element>
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1302,6 +1387,7 @@
     </element>
     <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_13_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1315,6 +1401,7 @@
         </rules>
     </element>
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
@@ -1328,6 +1415,7 @@
     </element>
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
@@ -1342,6 +1430,7 @@
     </element>
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
@@ -1355,6 +1444,7 @@
     </element>
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
@@ -1369,6 +1459,7 @@
     </element>
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
@@ -1382,6 +1473,7 @@
     </element>
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
@@ -1396,6 +1488,7 @@
     </element>
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
@@ -1409,6 +1502,7 @@
     </element>
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
@@ -1423,6 +1517,7 @@
     </element>
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
@@ -1436,6 +1531,7 @@
     </element>
     <element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_10_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
@@ -1449,6 +1545,7 @@
         </rules>
     </element>
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
@@ -1463,6 +1560,7 @@
     </element>
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
@@ -1476,6 +1574,7 @@
     </element>
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
@@ -1490,6 +1589,7 @@
     </element>
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
@@ -1503,6 +1603,7 @@
     </element>
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
@@ -1517,6 +1618,7 @@
     </element>
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
@@ -1530,6 +1632,7 @@
     </element>
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
@@ -1544,6 +1647,7 @@
     </element>
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
@@ -1557,6 +1661,7 @@
     </element>
     <element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_MUSHAMUSHI">
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_MUSHAMUSHI</requirements>
+        <compendium display="false" />
         <supports>Mushamushi Ability Boost</supports>
         <description>
             <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
@@ -1572,6 +1677,7 @@
 
 <!-- Go For the Throat -->
     <element name="Go For the Throat" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <description>
             <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
@@ -1592,6 +1698,7 @@
         </rules>
     </element>
     <element name="Go For the Throat (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>[level:tamer:5],
             ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_MUSHAMUSHI</requirements>
@@ -1611,6 +1718,7 @@
         </rules>
     </element>
     <element name="Go For the Throat (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_3_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>
             [level:tamer:9],ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_MUSHAMUSHI</requirements>
@@ -1632,6 +1740,7 @@
 
 <!-- Survival Insticts -->
     <element name="Survival Instincts" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <description>
             <p>Your companion gains proficiency in one saving throw.</p>
@@ -1642,6 +1751,7 @@
         </rules>
     </element>
     <element name="Survival Instincts (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_MUSHAMUSHI</requirements>
         <description>
@@ -1653,6 +1763,7 @@
         </rules>
     </element>
     <element name="Survival Instincts (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_MUSHAMUSHI</requirements>
         <description>
@@ -1664,6 +1775,7 @@
         </rules>
     </element>
     <element name="Survival Instincts (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_MUSHAMUSHI</requirements>
         <description>
@@ -1675,6 +1787,7 @@
         </rules>
     </element>
     <element name="Survival Instincts (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_MUSHAMUSHI</requirements>
         <description>
@@ -1686,6 +1799,7 @@
         </rules>
     </element>
     <element name="Survival Instincts (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_6_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_MUSHAMUSHI</requirements>
         <description>
@@ -1698,6 +1812,7 @@
     </element>
 
     <element name="Mushamushi Survival Instincts: Strength" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Survival Instinct Mushamushi</supports>
         <description>
             <p>Your companion gains proficiency in Strength Saving Throws</p>
@@ -1711,6 +1826,7 @@
         </rules>
     </element>
     <element name="Mushamushi Survival Instincts: Dexterity" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Survival Instinct Mushamushi</supports>
         <description>
             <p>Your companion gains proficiency in Dexterity Saving Throws</p>
@@ -1724,6 +1840,7 @@
         </rules>
     </element>
     <element name="Mushamushi Survival Instincts: Constitution" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Survival Instinct Mushamushi</supports>
         <description>
             <p>Your companion gains proficiency in Constitution Saving Throws</p>
@@ -1737,6 +1854,7 @@
         </rules>
     </element>
     <element name="Mushamushi Survival Instincts: Intelligence" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Survival Instinct Mushamushi</supports>
         <description>
             <p>Your companion gains proficiency in Intelligence Saving Throws</p>
@@ -1750,6 +1868,7 @@
         </rules>
     </element>
     <element name="Mushamushi Survival Instincts: Wisdom" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Survival Instinct Mushamushi</supports>
         <description>
             <p>Your companion gains proficiency in Wisdom Saving Throws</p>
@@ -1763,6 +1882,7 @@
         </rules>
     </element>
     <element name="Mushamushi Survival Instincts: Charisma" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Survival Instinct Mushamushi</supports>
         <description>
             <p>Your companion gains proficiency in Charisma Saving Throws</p>
@@ -1778,6 +1898,7 @@
 
 <!-- War Training -->
     <element name="War Training" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <description>
             <p>Your companion gains proficiency with one armour type or two weapons.</p>
@@ -1795,6 +1916,7 @@
         <!-- Specific proficiency application depends on the system -->
     </element>
     <element name="War Training (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_MUSHAMUSHI</requirements>
         <description>
@@ -1812,6 +1934,7 @@
         </sheet>
     </element>
     <element name="War Training (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_MUSHAMUSHI</requirements>
         <description>
@@ -1829,6 +1952,7 @@
         </sheet>
     </element>
     <element name="War Training (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_MUSHAMUSHI</requirements>
         <description>
@@ -1846,6 +1970,7 @@
         </sheet>
     </element>
     <element name="War Training (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_MUSHAMUSHI</requirements>
         <description>
@@ -1859,6 +1984,7 @@
         </sheet>
     </element>
     <element name="War Training (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_6_MUSHAMUSHI">
+        <compendium display="false" />
         <supports>Mushamushi</supports>
         <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_MUSHAMUSHI</requirements>
         <description>

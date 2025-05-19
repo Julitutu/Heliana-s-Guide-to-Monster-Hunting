@@ -161,7 +161,8 @@
 
 <!-- Onibi's Improvements -->
     <element name="Bakekujira’s Touch" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_ONIBI_ACTION_BAKEKUJIRAS_TOUCH">
-        <supports>Onibi</supports>
+        <compendium display="false" />
+		<supports>Onibi</supports>
         <prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
         <requirements>[level:tamer:1]</requirements>
         <description>
@@ -184,7 +185,8 @@
     </element>
 
     <element name="Growth I" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_ONIBI_TRAIT_GROWTH_I">
-        <supports>Onibi</supports>
+        <compendium display="false" />
+		<supports>Onibi</supports>
         <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
         <requirements>[level:tamer:3]</requirements>
         <description>
@@ -202,7 +204,8 @@
     </element>
 
     <element name="Mournful Wail" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_ONIBI_ACTION_MOURNFUL_WAIL">
-        <supports>Onibi</supports>
+        <compendium display="false" />
+		<supports>Onibi</supports>
         <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
         <requirements>[level:tamer:3]</requirements>
         <description>
@@ -222,7 +225,8 @@
     </element>
 
     <element name="Ethereal Maelstrom I" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_ONIBI_ACTION_ETHEREAL_MAELSTROM_I">
-        <supports>Onibi</supports>
+        <compendium display="false" />
+		<supports>Onibi</supports>
         <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
         <requirements>[level:tamer:5]</requirements>
         <description>
@@ -242,7 +246,8 @@
     </element>
 
     <element name="Multiattack" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_ONIBI_ACTION_MULTIATTACK">
-        <supports>Onibi</supports>
+        <compendium display="false" />
+		<supports>Onibi</supports>
         <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
         <requirements>[level:tamer:5]</requirements>
         <description>
@@ -256,7 +261,8 @@
     </element>
 
     <element name="Bakekujira’s Curse" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_ONIBI_ACTION_BAKEKUJIRAS_CURSE">
-        <supports>Onibi</supports>
+        <compendium display="false" />
+		<supports>Onibi</supports>
         <prerequisite>Prerequisite: 9th-level tamer, Bakekujira’s Touch</prerequisite>
         <requirements>[level:tamer:9], ID_LT_WOK_ONIBI_ACTION_BAKEKUJIRAS_TOUCH</requirements>
         <description>
@@ -275,7 +281,8 @@
     </element>
 
     <element name="Growth II" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_ONIBI_TRAIT_GROWTH_II">
-        <supports>Onibi</supports>
+        <compendium display="false" />
+		<supports>Onibi</supports>
         <prerequisite>Prerequisite: 9th-level tamer, Growth I</prerequisite>
         <requirements>[level:tamer:9], ID_LT_WOK_ONIBI_TRAIT_GROWTH_I</requirements>
         <description>
@@ -293,7 +300,8 @@
     </element>
 
     <element name="Grounded Trait Lost" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_ONIBI_TRAIT_GROUNDED_LOST">
-        <supports>Onibi</supports>
+        <compendium display="false" />
+		<supports>Onibi</supports>
         <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
         <requirements>[level:tamer:9]</requirements>
         <description>
@@ -307,7 +315,8 @@
     </element>
 
     <element name="Ethereal Maelstrom II" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_ONIBI_ACTION_ETHEREAL_MAELSTROM_II">
-        <supports>Onibi</supports>
+        <compendium display="false" />
+		<supports>Onibi</supports>
         <prerequisite>Prerequisite: 13th-level tamer, Ethereal Maelstrom I</prerequisite>
         <requirements>[level:tamer:13], ID_LT_WOK_ONIBI_ACTION_ETHEREAL_MAELSTROM_I</requirements>
         <description>
@@ -325,7 +334,8 @@
     </element>
 
     <element name="Ethereal Step" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_ONIBI_ACTION_ETHEREAL_STEP">
-        <supports>Onibi</supports>
+        <compendium display="false" />
+		<supports>Onibi</supports>
         <prerequisite>Prerequisite: 13th-level tamer</prerequisite>
         <requirements>[level:tamer:13]</requirements>
         <description>
@@ -339,7 +349,8 @@
     </element>
 
     <element name="Intangible" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_ONIBI_TRAIT_INTANGIBLE">
-        <supports>Onibi</supports>
+        <compendium display="false" />
+		<supports>Onibi</supports>
         <prerequisite>Prerequisite: 13th-level tamer</prerequisite>
         <requirements>[level:tamer:13]</requirements>
         <description>
@@ -353,7 +364,8 @@
     </element>
 
     <element name="Ethereal Drowning" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_ONIBI_ACTION_ETHEREAL_DROWNING">
-        <supports>Onibi</supports>
+        <compendium display="false" />
+		<supports>Onibi</supports>
         <prerequisite>Prerequisite: 17th-level tamer</prerequisite>
         <requirements>[level:tamer:17]</requirements>
         <description>
@@ -370,6 +382,7 @@
 <!-- General Improvements -->
 	<!-- Speed Training -->
 	<element name="Speed Training" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SPEED_TRAINING_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<description>
 			<p>Increase one existing speed by 15 feet up to a maximum of 150% of the creature’s base
@@ -384,6 +397,7 @@
 
 	<!-- Toughen Up -->
 	<element name="Toughen Up" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<description>
 			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
@@ -399,6 +413,7 @@
 		</rules>
 	</element>
 	<element name="Toughen Up (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_ONIBI</requirements>
 		<description>
@@ -412,6 +427,7 @@
 		</rules>
 	</element>
 	<element name="Toughen Up (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_ONIBI</requirements>
 		<description>
@@ -425,6 +441,7 @@
 		</rules>
 	</element>
 	<element name="Toughen Up (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_ONIBI</requirements>
 		<description>
@@ -438,6 +455,7 @@
 		</rules>
 	</element>
 	<element name="Toughen Up (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_ONIBI</requirements>
 		<description>
@@ -451,6 +469,7 @@
 		</rules>
 	</element>
 	<element name="Toughen Up (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_ONIBI</requirements>
 		<description>
@@ -464,6 +483,7 @@
 		</rules>
 	</element>
 	<element name="Toughen Up (7)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_ONIBI</requirements>
 		<description>
@@ -477,6 +497,7 @@
 		</rules>
 	</element>
 	<element name="Toughen Up (8)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_ONIBI</requirements>
 		<description>
@@ -490,6 +511,7 @@
 		</rules>
 	</element>
 	<element name="Toughen Up (9)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_ONIBI</requirements>
 		<description>
@@ -503,6 +525,7 @@
 		</rules>
 	</element>
 	<element name="Toughen Up (10)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_ONIBI</requirements>
 		<description>
@@ -516,6 +539,7 @@
 		</rules>
 	</element>
 	<element name="Toughen Up (11)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_ONIBI</requirements>
 		<description>
@@ -529,6 +553,7 @@
 		</rules>
 	</element>
 	<element name="Toughen Up (12)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_ONIBI</requirements>
 		<description>
@@ -542,6 +567,7 @@
 		</rules>
 	</element>
 	<element name="Toughen Up (13)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_ONIBI</requirements>
 		<description>
@@ -555,6 +581,7 @@
 		</rules>
 	</element>
 	<element name="Toughen Up (14)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_ONIBI</requirements>
 		<description>
@@ -568,6 +595,7 @@
 		</rules>
 	</element>
 	<element name="Toughen Up (15)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_ONIBI</requirements>
 		<description>
@@ -581,6 +609,7 @@
 		</rules>
 	</element>
 	<element name="Toughen Up (16)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_ONIBI</requirements>
 		<description>
@@ -594,6 +623,7 @@
 		</rules>
 	</element>
 	<element name="Toughen Up (17)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_ONIBI</requirements>
 		<description>
@@ -607,6 +637,7 @@
 		</rules>
 	</element>
 	<element name="Toughen Up (18)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_ONIBI</requirements>
 		<description>
@@ -620,6 +651,7 @@
 		</rules>
 	</element>
 	<element name="Toughen Up (19)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_ONIBI</requirements>
 		<description>
@@ -635,6 +667,7 @@
 
 <!-- Ability Boost -->
 	<element name="Ability Boost" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
@@ -645,6 +678,7 @@
 		</rules>
 	</element>
 	<element name="Ability Boost (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_ONIBI</requirements>
 		<description>
@@ -656,6 +690,7 @@
 		</rules>
 	</element>
 	<element name="Ability Boost (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_ONIBI</requirements>
 		<description>
@@ -667,6 +702,7 @@
 		</rules>
 	</element>
 	<element name="Ability Boost (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_ONIBI</requirements>
 		<description>
@@ -678,6 +714,7 @@
 		</rules>
 	</element>
 	<element name="Ability Boost (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_ONIBI</requirements>
 		<description>
@@ -689,6 +726,7 @@
 		</rules>
 	</element>
     <element name="Ability Boost (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_ONIBI</requirements>
 		<description>
@@ -700,6 +738,7 @@
 		</rules>
 	</element>
     <element name="Ability Boost (7)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_ONIBI</requirements>
 		<description>
@@ -711,6 +750,7 @@
 		</rules>
 	</element>
     <element name="Ability Boost (8)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_ONIBI</requirements>
 		<description>
@@ -722,6 +762,7 @@
 		</rules>
 	</element>
     <element name="Ability Boost (9)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_ONIBI</requirements>
 		<description>
@@ -733,6 +774,7 @@
 		</rules>
 	</element>
     <element name="Ability Boost (10)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_ONIBI</requirements>
 		<description>
@@ -744,6 +786,7 @@
 		</rules>
 	</element>
     <element name="Ability Boost (11)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_ONIBI</requirements>
 		<description>
@@ -755,6 +798,7 @@
 		</rules>
 	</element>
     <element name="Ability Boost (12)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_ONIBI</requirements>
 		<description>
@@ -766,6 +810,7 @@
 		</rules>
 	</element>
     <element name="Ability Boost (13)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_ONIBI</requirements>
 		<description>
@@ -777,6 +822,7 @@
 		</rules>
 	</element>
     <element name="Ability Boost (14)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_ONIBI</requirements>
 		<description>
@@ -788,6 +834,7 @@
 		</rules>
 	</element>
     <element name="Ability Boost (15)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_ONIBI</requirements>
 		<description>
@@ -799,6 +846,7 @@
 		</rules>
 	</element>
     <element name="Ability Boost (16)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_ONIBI</requirements>
 		<description>
@@ -810,6 +858,7 @@
 		</rules>
 	</element>
     <element name="Ability Boost (17)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_ONIBI</requirements>
 		<description>
@@ -821,6 +870,7 @@
 		</rules>
 	</element>
     <element name="Ability Boost (18)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_ONIBI</requirements>
 		<description>
@@ -832,6 +882,7 @@
 		</rules>
 	</element>
     <element name="Ability Boost (19)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_19_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_ONIBI</requirements>
 		<description>
@@ -844,6 +895,7 @@
 	</element>
 
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
@@ -858,6 +910,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
@@ -871,6 +924,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
@@ -885,6 +939,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
@@ -898,6 +953,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
@@ -912,6 +968,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
@@ -925,6 +982,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
@@ -939,6 +997,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
@@ -952,6 +1011,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
@@ -966,6 +1026,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
@@ -979,6 +1040,7 @@
 	</element>
 	<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_11_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
@@ -993,6 +1055,7 @@
 	</element>
 
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
@@ -1007,6 +1070,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
@@ -1020,6 +1084,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
@@ -1034,6 +1099,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
@@ -1047,6 +1113,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
@@ -1061,6 +1128,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
@@ -1074,6 +1142,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
@@ -1088,6 +1157,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
@@ -1101,6 +1171,7 @@
 	</element>
 	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
@@ -1115,6 +1186,7 @@
 	</element>
 
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
@@ -1128,6 +1200,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
@@ -1142,6 +1215,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
@@ -1155,6 +1229,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
@@ -1169,6 +1244,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
@@ -1182,6 +1258,7 @@
 	</element>
 	<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
@@ -1196,6 +1273,7 @@
 	</element>
 
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1209,6 +1287,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1223,6 +1302,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1236,6 +1316,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1250,6 +1331,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1263,6 +1345,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1277,6 +1360,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1290,6 +1374,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1304,6 +1389,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1317,6 +1403,7 @@
 	</element>
 	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
@@ -1331,6 +1418,7 @@
 	</element>
 
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
@@ -1344,6 +1432,7 @@
 	</element>
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
@@ -1358,6 +1447,7 @@
 	</element>
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
@@ -1371,6 +1461,7 @@
 	</element>
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
@@ -1385,6 +1476,7 @@
 	</element>
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
@@ -1398,6 +1490,7 @@
 	</element>
 	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
@@ -1412,6 +1505,7 @@
 	</element>
 
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
@@ -1425,6 +1519,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
@@ -1439,6 +1534,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
@@ -1452,6 +1548,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
@@ -1466,6 +1563,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
@@ -1479,6 +1577,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
@@ -1493,6 +1592,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
@@ -1506,6 +1606,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
@@ -1520,6 +1621,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
@@ -1533,6 +1635,7 @@
 	</element>
 	<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_ONIBI">
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_ONIBI</requirements>
+		<compendium display="false" />
 		<supports>Onibi Ability Boost</supports>
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
@@ -1548,6 +1651,7 @@
 
 <!-- Go For the Throat -->
 	<element name="Go For the Throat" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<description>
 			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
@@ -1568,6 +1672,7 @@
 		</rules>
 	</element>
 	<element name="Go For the Throat (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>[level:tamer:5],
 			ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_ONIBI</requirements>
@@ -1587,6 +1692,7 @@
 		</rules>
 	</element>
 	<element name="Go For the Throat (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_3_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>
 			[level:tamer:9],ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_ONIBI</requirements>
@@ -1608,6 +1714,7 @@
 
 <!-- Survival Insticts -->
 	<element name="Survival Instincts" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<description>
 			<p>Your companion gains proficiency in one saving throw.</p>
@@ -1618,6 +1725,7 @@
 		</rules>
 	</element>
 	<element name="Survival Instincts (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_ONIBI</requirements>
 		<description>
@@ -1629,6 +1737,7 @@
 		</rules>
 	</element>
 	<element name="Survival Instincts (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_ONIBI</requirements>
 		<description>
@@ -1640,6 +1749,7 @@
 		</rules>
 	</element>
 	<element name="Survival Instincts (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_ONIBI</requirements>
 		<description>
@@ -1651,6 +1761,7 @@
 		</rules>
 	</element>
 	<element name="Survival Instincts (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_ONIBI</requirements>
 		<description>
@@ -1662,6 +1773,7 @@
 		</rules>
 	</element>
 	<element name="Survival Instincts (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_6_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_ONIBI</requirements>
 		<description>
@@ -1674,6 +1786,7 @@
 	</element>
 
 	<element name="Onibi Survival Instincts: Strength" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_ONIBI">
+		<compendium display="false" />
 		<supports>Survival Instinct Onibi</supports>
 		<description>
 			<p>Your companion gains proficiency in Strength Saving Throws</p>
@@ -1687,6 +1800,7 @@
         </rules>
 	</element>
 	<element name="Onibi Survival Instincts: Dexterity" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_ONIBI">
+		<compendium display="false" />
 		<supports>Survival Instinct Onibi</supports>
 		<description>
 			<p>Your companion gains proficiency in Dexterity Saving Throws</p>
@@ -1700,6 +1814,7 @@
         </rules>
 	</element>
 	<element name="Onibi Survival Instincts: Constitution" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_ONIBI">
+		<compendium display="false" />
 		<supports>Survival Instinct Onibi</supports>
 		<description>
 			<p>Your companion gains proficiency in Constitution Saving Throws</p>
@@ -1713,6 +1828,7 @@
         </rules>
 	</element>
 	<element name="Onibi Survival Instincts: Intelligence" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_ONIBI">
+		<compendium display="false" />
 		<supports>Survival Instinct Onibi</supports>
 		<description>
 			<p>Your companion gains proficiency in Intelligence Saving Throws</p>
@@ -1726,6 +1842,7 @@
         </rules>
 	</element>
 	<element name="Onibi Survival Instincts: Wisdom" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_ONIBI">
+		<compendium display="false" />
 		<supports>Survival Instinct Onibi</supports>
 		<description>
 			<p>Your companion gains proficiency in Wisdom Saving Throws</p>
@@ -1739,6 +1856,7 @@
         </rules>
 	</element>
 	<element name="Onibi Survival Instincts: Charisma" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_ONIBI">
+		<compendium display="false" />
 		<supports>Survival Instinct Onibi</supports>
 		<description>
 			<p>Your companion gains proficiency in Charisma Saving Throws</p>
@@ -1754,6 +1872,7 @@
 
 <!-- War Training -->
 	<element name="War Training" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<description>
 			<p>Your companion gains proficiency with one armour type or two weapons.</p>
@@ -1771,6 +1890,7 @@
 		<!-- Specific proficiency application depends on the system -->
 	</element>
 	<element name="War Training (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_ONIBI</requirements>
 		<description>
@@ -1788,6 +1908,7 @@
 		</sheet>
 	</element>
 	<element name="War Training (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_ONIBI</requirements>
 		<description>
@@ -1805,6 +1926,7 @@
 		</sheet>
 	</element>
 	<element name="War Training (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_ONIBI</requirements>
 		<description>
@@ -1822,6 +1944,7 @@
 		</sheet>
 	</element>
 	<element name="War Training (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_ONIBI</requirements>
 		<description>
@@ -1839,6 +1962,7 @@
 		</sheet>
 	</element>
 	<element name="War Training (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_6_ONIBI">
+		<compendium display="false" />
 		<supports>Onibi</supports>
 		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_ONIBI</requirements>
 		<description>
