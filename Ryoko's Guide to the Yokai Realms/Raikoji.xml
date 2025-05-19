@@ -1,0 +1,1912 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Raikoji</name>
+		<description>Raikoji from Wrath of the Kaiju</description> <!-- Placeholder Source -->
+		<update version="0.1.0">
+			<file name="Raikoji.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/Raikoji.xml" /> <!-- Placeholder URL -->
+		</update>
+	</info>
+
+	<element name="Raikoji" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_RAIKOJI">
+		<supports>Familiar, Variant Familiar, Bespoke Companion</supports>
+		<description>
+			<p style="margin-bottom:-5px">
+				<em>Tiny elemental, chaotic neutral</em>
+			</p>
+			<h4 style="margin-top:5px" />
+			<p></p>
+			<p>
+				<strong>Armor Class</strong> 12</p>
+			<p>
+				<strong>Hit Points</strong> 4 (1d4 + 2)</p>
+			<p>
+				<strong>Speed</strong> 30 ft., climb 20 ft.</p>
+			<p></p>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead>
+					<tr>
+						<td>STR</td>
+						<td>DEX</td>
+						<td>CON</td>
+						<td>INT</td>
+						<td>WIS</td>
+						<td>CHA</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>8(-1)</td>
+					<td>14(+2)</td>
+					<td>14(+2)</td>
+					<td>7(-2)</td>
+					<td>12(+1)</td>
+					<td>11(+0)</td>
+				</tr>
+			</table>
+            <p>
+				<strong>Damage Resistances</strong> lightning, thunder</p>
+			<p>
+				<strong>Senses</strong> passive Perception 11</p>
+			<p>
+				<strong>Languages</strong> —</p>
+			<p>
+				<strong>Challenge</strong> 1/8 (25 XP) <strong>Proficiency Bonus</strong> +2
+			</p>
+			<p></p>
+			<h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
+			<p>
+				<strong>
+					<em>Accidental Discharge.</em>
+				</strong>Whenever the raikoji rolls a 20 on an attack roll, an arc of lightning jumps from it to the nearest friendly creature within 30 feet of it. The creature must succeed on a DC 12 Dexterity saving throw or take 7 (2d6) lightning damage.</p>
+			<p></p>
+			<h4 style="margin-top:15px">Actions</h4>
+			<p></p>
+			<p>
+				<strong>
+					<em>Claw.</em>
+				</strong>
+				<em>Melee Weapon Attack:</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 4 (1d4 + 2) slashing damage.</p>
+            <p>
+				<strong>
+					<em>Fist.</em>
+				</strong>
+				<em>Melee Weapon Attack:</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 4 (1d4 + 2) bludgeoning damage.</p>
+			<p></p>
+		</description>
+		<sheet>
+			<description>Raikoji ({{raikoji:size}})- Gains {{hit dice gained:companion:raikoji}}d{{hit dice size:raikoji}} hit dice. DC: {{raikoji:dc}}. AC: +{{raikoji:ac bonus}}. Claw: +{{raikoji:claw:hit}}, DMG: {{raikoji:claw:dice}} + {{raikoji:claw:damage}} slashing. Fist: +{{raikoji:fist:hit}}, DMG: {{raikoji:fist:dice}} + {{raikoji:fist:damage}} bludgeoning.</description>
+		</sheet>
+		<rules>
+			<!-- Grant Base Improvements -->
+			<grant type="Class Feature" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_RAIKOJI" />
+
+			<!-- Base Stats -->
+			<stat name="raikoji:str" value="8" />
+			<stat name="raikoji:str:mod" value="-1" />
+			<stat name="raikoji:dex" value="14" />
+			<stat name="raikoji:dex:mod" value="2" />
+			<stat name="raikoji:con" value="14" />
+			<stat name="raikoji:con:mod" value="2" />
+			<stat name="raikoji:int" value="7" />
+			<stat name="raikoji:int:mod" value="-2" />
+			<stat name="raikoji:wis" value="12" />
+			<stat name="raikoji:wis:mod" value="1" />
+			<stat name="raikoji:cha" value="11" />
+			<stat name="raikoji:cha:mod" value="0" />
+
+			<!-- Derived Stats -->
+			<stat name="raikoji:size" inline="true" value="Tiny" />
+			<stat name="hit dice size:raikoji" value="4" />
+			<stat name="raikoji:ac bonus" value="0" /> <!-- Base AC is 12 -->
+			<stat name="raikoji:dc" value="8" />
+			<stat name="raikoji:dc" value="proficiency" />
+			<stat name="raikoji:dc" value="raikoji:dex:mod" /> <!-- Save DC uses DEX mod -->
+
+			<!-- Attack Stats (Claw) -->
+			<stat name="raikoji:claw:hit" value="proficiency" />
+			<stat name="raikoji:claw:hit" value="raikoji:dex:mod" /> <!-- Uses DEX -->
+			<stat name="raikoji:claw:hit" value="go for the throat:bonus:raikoji" />
+			<stat name="raikoji:claw:damage" value="raikoji:dex:mod" />
+			<stat name="raikoji:claw:damage" value="go for the throat:bonus:raikoji" />
+			<stat name="raikoji:claw:dice" inline="true" value="1d4" />
+
+            <!-- Attack Stats (Fist) -->
+            <stat name="raikoji:fist:hit" value="proficiency" />
+			<stat name="raikoji:fist:hit" value="raikoji:dex:mod" /> <!-- Uses DEX -->
+			<stat name="raikoji:fist:hit" value="go for the throat:bonus:raikoji" />
+			<stat name="raikoji:fist:damage" value="raikoji:dex:mod" />
+			<stat name="raikoji:fist:damage" value="go for the throat:bonus:raikoji" />
+			<stat name="raikoji:fist:dice" inline="true" value="1d4" />
+
+			<!-- Level-Based Stat Increases (for sheet display) -->
+			<stat name="hit dice gained:companion:raikoji" value="1" level="4" />
+			<stat name="hit dice gained:companion:raikoji" value="1" level="8" />
+			<stat name="hit dice gained:companion:raikoji" value="1" level="12" />
+			<stat name="hit dice gained:companion:raikoji" value="1" level="16" />
+			<stat name="hit dice gained:companion:raikoji" value="1" level="19" />
+
+            <!-- Go for the Throat Bonus Initialization -->
+            <stat name="go for the throat:bonus:raikoji" value="0" />
+		</rules>
+	</element>
+
+	<element name="Raikoji Improvement" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_RAIKOJI">
+    <description>
+        <p>Whenever you gain a level beyond 1st in this class, each companion to which you are
+            bonded gains one of the following improvements.
+            Any newly gained companions receive these additional Hit Dice and improvements as if
+            you had them since your 1st level in tamer.</p>
+    </description>
+    <sheet>
+        <description>The Raikoji has the following Improvements:</description>
+    </sheet>
+    <rules>
+        <stat name="hit dice gained:companion:raikoji" value="2" />
+
+        <select type="Class Feature" name="Raikoji Improvement" supports="Raikoji" default="ID_LT_WOK_RAIKOJI_TRAIT_EYE_OF_THE_TIGER"/>
+        <select type="Class Feature" name="Raikoji Improvement (Lvl 2)" supports="Raikoji" level="2" />
+        <select type="Class Feature" name="Raikoji Improvement (Lvl 3)" supports="Raikoji" level="3" />
+        <select type="Class Feature" name="Raikoji Improvement (Lvl 4)" supports="Raikoji" level="4" />
+        <select type="Class Feature" name="Raikoji Improvement (Lvl 5)" supports="Raikoji" level="5" />
+        <select type="Class Feature" name="Raikoji Improvement (Lvl 6)" supports="Raikoji" level="6" />
+        <select type="Class Feature" name="Raikoji Improvement (Lvl 7)" supports="Raikoji" level="7" />
+        <select type="Class Feature" name="Raikoji Improvement (Lvl 8)" supports="Raikoji" level="8" />
+        <select type="Class Feature" name="Raikoji Improvement (Lvl 9)" supports="Raikoji" level="9" />
+        <select type="Class Feature" name="Raikoji Improvement (Lvl 10)" supports="Raikoji" level="10" />
+        <select type="Class Feature" name="Raikoji Improvement (Lvl 11)" supports="Raikoji" level="11" />
+        <select type="Class Feature" name="Raikoji Improvement (Lvl 12)" supports="Raikoji" level="12" />
+        <select type="Class Feature" name="Raikoji Improvement (Lvl 13)" supports="Raikoji" level="13" />
+        <select type="Class Feature" name="Raikoji Improvement (Lvl 14)" supports="Raikoji" level="14" />
+        <select type="Class Feature" name="Raikoji Improvement (Lvl 15)" supports="Raikoji" level="15" />
+        <select type="Class Feature" name="Raikoji Improvement (Lvl 16)" supports="Raikoji" level="16" />
+        <select type="Class Feature" name="Raikoji Improvement (Lvl 17)" supports="Raikoji" level="17" />
+        <select type="Class Feature" name="Raikoji Improvement (Lvl 18)" supports="Raikoji" level="18" />
+        <select type="Class Feature" name="Raikoji Improvement (Lvl 19)" supports="Raikoji" level="19" />
+        <select type="Class Feature" name="Raikoji Improvement (Lvl 20)" supports="Raikoji" level="20" />
+    </rules>
+</element>
+
+<!-- Raikoji's Improvements -->
+    <element name="Eye of the Tiger" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_RAIKOJI_TRAIT_EYE_OF_THE_TIGER">
+        <supports>Raikoji</supports>
+        <prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
+        <requirements>[level:tamer:1]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The raikoji gains proficiency in the Perception skill and darkvision out to a range of 60 feet. In addition, the raikoji can use the Search action as a bonus action and treats areas lightly obscured by weather effects, such as light rain or a thin mist, as if they weren’t obscured.</p>
+            <p>The raikoji gains this improvement when it becomes a companion; it doesn't cost an improvement.</p>
+        </description>
+        <sheet>
+            <description>Gains Perception proficiency &amp; Darkvision 60ft. Search as Bonus Action. Ignores light obscurement from weather.</description>
+        </sheet>
+    </element>
+
+    <element name="Growth I" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_RAIKOJI_TRAIT_GROWTH_I">
+        <supports>Raikoji</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The raikoji’s size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its Claw and Fist attacks each increase to a d6.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="raikoji:size" inline="true" value="Small" />
+            <stat name="hit dice size:raikoji" value="2" /> <!-- d4 to d6 -->
+            <stat name="raikoji:claw:dice" inline="true" value="1d6" />
+            <stat name="raikoji:fist:dice" inline="true" value="1d6" />
+        </rules>
+    </element>
+
+    <element name="Lightning Form I" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_RAIKOJI_ACTION_LIGHTNING_FORM_I">
+        <supports>Raikoji</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (bonus action)</p>
+            <p>As a bonus action, the raikoji calls on its elemental essence, transforming its body into pure electricity for 1 minute or until it uses a bonus action to end the effect. Its body retains its basic shape and functions, and it gains the following benefits for the duration:</p>
+            <ul>
+                <li>Its Claw and Fist attacks deal lightning damage instead of their normal damage types.</li>
+                <li>It can take the Dash action as a bonus action.</li>
+                <li>It gains resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.</li>
+            </ul>
+            <p>Once the raikoji has used this bonus action, it can’t do so again until its tamer finishes a long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Long Rest">
+            <description>Transform to pure electricity (1 min or BA end). Claw/Fist deal Lightning DMG. Dash as BA. Resistance to nonmagical B/P/S.</description>
+        </sheet>
+    </element>
+
+    <element name="Charging Charge" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_RAIKOJI_TRAIT_CHARGING_CHARGE">
+        <supports>Raikoji</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The raikoji builds up electrical energy as it moves. If the raikoji moves at least 10 feet on its turn, the next melee attack it hits with before the end of that turn deals an extra 2 (1d4) lightning damage. For each additional 10 feet it moves beyond the first, the die size of this extra damage increases by one step (for example, from a d4 to a d6), up to a maximum of a d12.</p>
+        </description>
+        <sheet>
+            <description>If move &gt;=10ft, next melee hit deals +1d4 Lightning. Increases die size per +10ft (max 1d12).</description>
+        </sheet>
+    </element>
+
+    <element name="Erratic Tempest I" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_RAIKOJI_ACTION_ERRATIC_TEMPEST_I">
+        <supports>Raikoji</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action, the raikoji channels lightning in a random area. When the raikoji uses this action, roll a d6 and consult the table below to determine the shape of the area the lightning manifests in, after which the raikoji can choose where to place the effect.</p>
+            <table style="width:100%; text-align:left;">
+                <thead><tr><th>d6</th><th>Effect</th></tr></thead>
+                <tbody>
+                    <tr><td>1-2</td><td>The raikoji discharges electricity in a 5-foot-wide, 30-foot-long line.</td></tr>
+                    <tr><td>3-4</td><td>The raikoji discharges electricity in a 15-foot cone.</td></tr>
+                    <tr><td>5-6</td><td>The raikoji causes a lightning bolt to strike down on a point of its choice within 30 feet of it, causing electricity to course through a 10-foot radius sphere centred on that point.</td></tr>
+                </tbody>
+            </table>
+            <p>Each creature in the area must make a Dexterity saving throw, taking 22 (5d8) lightning damage on a failed save, or half as much damage on a successful one. Once the raikoji uses this action, it can’t do so again until its tamer finishes a short or long rest.</p>
+            <p>When the raikoji’s tamer reaches 9th level in the tamer class, this action’s damage increases to 27 (6d8).</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>Random area effect (1-2:line ({{raikoji:tempest:line:wide}}/{{raikoji:tempest:line:long}})/3-4:cone ({{raikoji:tempest:cone}})/5-6:sphere ({{raikoji:tempest:sphere:point}}/{{raikoji:tempest:sphere:radius}})), DC {{raikoji:dc}} DEX Save. Fail: {{raikoji:tempest:damage}}d8 lightning (half on save).</description>
+        </sheet>
+        <rules>
+            <stat name="raikoji:tempest:line:wide" value="5" />
+            <stat name="raikoji:tempest:line:long" value="30" />
+            <stat name="raikoji:tempest:cone" value="15" />
+            <stat name="raikoji:tempest:sphere:point" value="30" />
+            <stat name="raikoji:tempest:sphere:radius" value="10" />
+            <stat name="raikoji:tempest:damage" value="5" />
+            <stat name="raikoji:tempest:damage" value="1" level="9"/>
+        </rules>
+    </element>
+
+    <element name="Multiattack" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_RAIKOJI_ACTION_MULTIATTACK">
+        <supports>Raikoji</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action, the raikoji can make two attacks.</p>
+        </description>
+        <sheet action="Action">
+            <description>Make two attacks.</description>
+        </sheet>
+    </element>
+
+    <element name="Growth II" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_RAIKOJI_TRAIT_GROWTH_II">
+        <supports>Raikoji</supports>
+        <prerequisite>Prerequisite: 9th-level tamer, Growth I</prerequisite>
+        <requirements>[level:tamer:9], ID_LT_WOK_RAIKOJI_TRAIT_GROWTH_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The raikoji’s size increases to Medium, its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its Claw and Fist attacks each increase to a d8.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="raikoji:size" inline="true" value="Medium" />
+            <stat name="hit dice size:raikoji" value="2" /> <!-- d6 to d8 -->
+            <stat name="raikoji:claw:dice" inline="true" value="1d8" />
+            <stat name="raikoji:fist:dice" inline="true" value="1d8" />
+        </rules>
+    </element>
+
+    <element name="Shocking Reprisal" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_RAIKOJI_ACTION_SHOCKING_REPRISAL">
+        <supports>Raikoji</supports>
+        <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
+        <requirements>[level:tamer:9]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (reaction)</p>
+            <p>When a creature hits the raikoji with a melee attack, it can use its reaction to unleash an unpredictable surge of lightning in retaliation. Roll a d6 and consult the table below to determine the effect.</p>
+            <table style="width:100%; text-align:left;">
+                <thead><tr><th>d6</th><th>Effect</th></tr></thead>
+                <tbody>
+                    <tr><td>1-2</td><td>A static field briefly discharges around the raikoji. Each creature within 5 feet of it must make a Constitution saving throw, taking 10 (3d6) lightning damage on a failed save, or half as much damage on a successful one.</td></tr>
+                    <tr><td>3-4</td><td>An arc of electricity erupts from the raikoji at a random creature within 15 feet of it, and then from that creature to a different creature other than the raikoji within 15 feet of the first target. Each creature must make a Dexterity saving throw, taking 10 (3d6) lightning damage on a failed save, or half as much damage on a successful one.</td></tr>
+                    <tr><td>5-6</td><td>A powerful bolt of lightning shoots from the raikoji at the attacking creature, who must make a Strength saving throw. On a failed save, the creature takes 10 (3d6) lightning damage, is pushed back 15 feet, and is knocked prone. On a successful save, it takes half as much damage and suffers no additional effects.</td></tr>
+                </tbody>
+            </table>
+            <p>The raikoji can use this reaction a number of times equal to its proficiency bonus, and it regains all expended uses when its tamer finishes a long rest.</p>
+            <p>When the raikoji’s tamer reaches 13th level in the tamer class, the damage of all these effects increases to 14 (4d6).</p>
+        </description>
+        <sheet action="Reaction" usage="{{proficiency}}/Long Rest">
+            <description>On melee hit: Random lightning effect (DC {{raikoji:dc}} relevant Save). Fail: 3d6 lightning + effect (half dmg on save).</description>
+        </sheet>
+        <rules>
+            <stat name="raikoji:shocking:damage" value="3" />
+            <stat name="raikoji:shocking:damage" value="1" level="13"/>
+        </rules>
+    </element>
+
+    <element name="Erratic Tempest II" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_RAIKOJI_ACTION_ERRATIC_TEMPEST_II">
+        <supports>Raikoji</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Erratic Tempest I</prerequisite>
+        <requirements>[level:tamer:13], ID_LT_WOK_RAIKOJI_ACTION_ERRATIC_TEMPEST_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>The damage of the raikoji’s Erratic Tempest I action increases to 36 (8d8). In addition, whenever you roll a d6 to determine its effect, consult the table below instead of the one from Erratic Tempest I.</p>
+            <table style="width:100%; text-align:left;">
+                <thead><tr><th>d6</th><th>Effect</th></tr></thead>
+                <tbody>
+                    <tr><td>1-2</td><td>The raikoji discharges electricity in a 5-foot-wide, 60-foot-long line.</td></tr>
+                    <tr><td>3-4</td><td>The raikoji discharges electricity in a 30-foot cone.</td></tr>
+                    <tr><td>5-6</td><td>The raikoji causes a lightning bolt to strike down on a point of its choice within 60 feet of it, causing electricity to course through a 20-foot radius sphere centred on that point.</td></tr>
+                </tbody>
+            </table>
+            <p>When the raikoji’s tamer reaches 17th level in the tamer class, the Erratic Tempest I action damage increases to 45 (10d8).</p>
+        </description>
+        <sheet display="false"/> <!-- Effects modify Erratic Tempest I -->
+        <rules>
+            <stat name="raikoji:tempest:line:long" value="30" />
+            <stat name="raikoji:tempest:cone" value="15" />
+            <stat name="raikoji:tempest:sphere:point" value="30" />
+            <stat name="raikoji:tempest:sphere:radius" value="10" />
+            <stat name="raikoji:tempest:damage" value="2" />
+            <stat name="raikoji:tempest:damage" value="2" level="17"/>
+        </rules>
+    </element>
+
+    <element name="Lightning Form II" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_RAIKOJI_ACTION_LIGHTNING_FORM_II">
+        <supports>Raikoji</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Lightning Form I</prerequisite>
+        <requirements>[level:tamer:13], ID_LT_WOK_RAIKOJI_ACTION_LIGHTNING_FORM_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (bonus action)</p>
+            <p>As part of the bonus action used to enter its lightning form, the raikoji can transform into a bolt of lightning and immediately move up to 30 feet in a straight line, reverting to its lightning form as normal afterward. During this movement, the raikoji can move through the spaces of other creatures. Each creature whose space the raikoji moves through must make a Dexterity saving throw, taking 14 (4d6) lightning damage on a failed save, or half as much on a successful one.</p>
+            <p>When the raikoji’s tamer reaches 17th level in the tamer class, this damage increases to 17 (5d6).</p>
+        </description>
+        <sheet>
+            <description>BA Lightning Form also allows 30ft line movement through creatures. DEX Save (DC {{raikoji:dc}}) or {{raikoji:lightning_form:damage}}d6 lightning (half on save).</description>
+        </sheet>
+        <rules>
+            <stat name="raikoji:lightning_form:damage" value="4" />
+            <stat name="raikoji:lightning_form:damage" value="1" level="17"/>
+        </rules>
+    </element>
+
+    <element name="Eye of the Storm" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_RAIKOJI_TRAIT_EYE_OF_THE_STORM">
+        <supports>Raikoji</supports>
+        <prerequisite>Prerequisite: 17th-level tamer</prerequisite>
+        <requirements>[level:tamer:17]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The raikoji finds a place of serenity at the centre of its turbulent essence, mastering its power and gaining the following benefits:</p>
+            <ul>
+                <li>It gains immunity to lightning and thunder damage.</li>
+                <li>Whenever a creature takes lightning damage from any of the raikoji’s traits or actions, the raikoji can choose to deal no damage to that creature instead.</li>
+                <li>The raikoji’s tamer can choose their preferred outcome for the raikoji’s Erratic Tempest I action and Shocking Reprisal reaction, instead of rolling a die to determine it. In addition, if an effect from Shocking Reprisal targets a random creature, the raikoji can choose the target instead.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Immunity to lightning &amp; thunder. Can choose to deal no lightning damage from its traits/actions. Tamer chooses outcome for Erratic Tempest/Shocking Reprisal.</description>
+        </sheet>
+    </element>
+
+<!-- General Improvements -->
+	<!-- Speed Training -->
+	<element name="Speed Training" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SPEED_TRAINING_RAIKOJI">
+		<supports>Raikoji</supports>
+		<description>
+			<p>Increase one existing speed by 15 feet up to a maximum of 150% of the creature’s base
+				speed, rounded up to the nearest 5-foot increment.</p>
+			<p>E.g., a base speed of 30 feet can be increased to 45 feet maximum, a base speed of 25
+				feet can be increased to 40 feet, and a base speed of 20 feet to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>Increase one existing speed by 15 feet (Max of 150%)</description>
+		</sheet>
+	</element>
+
+	<!-- Toughen Up -->
+	<element name="Toughen Up" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_RAIKOJI">
+		<supports>Raikoji</supports>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false">
+			<description>Your companion gains {{hit dice gained:companion:1}} Hit Die, increasing
+				its hit point maximum</description>
+		</sheet>
+		<rules>
+			<stat name="hit dice gained:companion:raikoji" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:raikoji" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:raikoji" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:raikoji" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:raikoji" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:raikoji" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (7)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:raikoji" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (8)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:raikoji" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (9)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:raikoji" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (10)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:raikoji" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (11)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:raikoji" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (12)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:raikoji" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (13)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:raikoji" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (14)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:raikoji" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (15)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:raikoji" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (16)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:raikoji" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (17)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:raikoji" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (18)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:raikoji" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (19)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:raikoji" value="1" />
+		</rules>
+	</element>
+
+<!-- Ability Boost -->
+	<element name="Ability Boost" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_RAIKOJI">
+		<supports>Raikoji</supports>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Raikoji Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_RAIKOJI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Raikoji Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_RAIKOJI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Raikoji Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_RAIKOJI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Raikoji Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_RAIKOJI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Raikoji Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_RAIKOJI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Raikoji Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (7)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_RAIKOJI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Raikoji Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (8)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_RAIKOJI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Raikoji Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (9)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_RAIKOJI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Raikoji Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (10)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_RAIKOJI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Raikoji Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (11)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_RAIKOJI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Raikoji Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (12)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_RAIKOJI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Raikoji Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (13)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_RAIKOJI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Raikoji Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (14)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_RAIKOJI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Raikoji Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (15)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_RAIKOJI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Raikoji Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (16)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_RAIKOJI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Raikoji Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (17)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_RAIKOJI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Raikoji Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (18)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_RAIKOJI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Raikoji Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (19)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_19_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_RAIKOJI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Raikoji Ability Boost" />
+		</rules>
+	</element>
+
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_RAIKOJI">
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji strength becomes {{raikoji:str}} (+{{raikoji:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:str" value="1" /> <!-- 8 -> 9 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji strength becomes {{raikoji:str}} (+{{raikoji:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:str" value="1" />
+        <stat name="raikoji:str:mod" value="1" /> <!-- 9 -> 10 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji strength becomes {{raikoji:str}} (+{{raikoji:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:str" value="1" /> <!-- 10 -> 11 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji strength becomes {{raikoji:str}} (+{{raikoji:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:str" value="1" />
+        <stat name="raikoji:str:mod" value="1" /> <!-- 11 -> 12 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji strength becomes {{raikoji:str}} (+{{raikoji:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:str" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji strength becomes {{raikoji:str}} (+{{raikoji:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:str" value="1" />
+        <stat name="raikoji:str:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji strength becomes {{raikoji:str}} (+{{raikoji:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:str" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji strength becomes {{raikoji:str}} (+{{raikoji:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:str" value="1" />
+        <stat name="raikoji:str:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji strength becomes {{raikoji:str}} (+{{raikoji:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:str" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji strength becomes {{raikoji:str}} (+{{raikoji:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:str" value="1" />
+        <stat name="raikoji:str:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_11_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji strength becomes {{raikoji:str}} (+{{raikoji:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:str" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_12_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_11_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji strength becomes {{raikoji:str}} (+{{raikoji:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:str" value="1" />
+        <stat name="raikoji:str:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_RAIKOJI">
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji dexterity becomes {{raikoji:dex}} (+{{raikoji:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:dex" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji dexterity becomes {{raikoji:dex}} (+{{raikoji:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:dex" value="1" />
+        <stat name="raikoji:dex:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji dexterity becomes {{raikoji:dex}} (+{{raikoji:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:dex" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji dexterity becomes {{raikoji:dex}} (+{{raikoji:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:dex" value="1" />
+        <stat name="raikoji:dex:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji dexterity becomes {{raikoji:dex}} (+{{raikoji:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:dex" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji dexterity becomes {{raikoji:dex}} (+{{raikoji:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:dex" value="1" />
+        <stat name="raikoji:dex:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_RAIKOJI">
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji constitution becomes {{raikoji:con}} (+{{raikoji:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:con" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji constitution becomes {{raikoji:con}} (+{{raikoji:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:con" value="1" />
+        <stat name="raikoji:con:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji constitution becomes {{raikoji:con}} (+{{raikoji:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:con" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji constitution becomes {{raikoji:con}} (+{{raikoji:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:con" value="1" />
+        <stat name="raikoji:con:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji constitution becomes {{raikoji:con}} (+{{raikoji:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:con" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji constitution becomes {{raikoji:con}} (+{{raikoji:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:con" value="1" />
+        <stat name="raikoji:con:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_RAIKOJI">
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji intelligence becomes {{raikoji:int}} (+{{raikoji:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:int" value="1" />
+        <stat name="raikoji:int:mod" value="1" /> <!-- 7 -> 8 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji intelligence becomes {{raikoji:int}} (+{{raikoji:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:int" value="1" /> <!-- 8 -> 9 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji intelligence becomes {{raikoji:int}} (+{{raikoji:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:int" value="1" />
+        <stat name="raikoji:int:mod" value="1" /> <!-- 9 -> 10 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji intelligence becomes {{raikoji:int}} (+{{raikoji:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:int" value="1" /> <!-- 10 -> 11 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji intelligence becomes {{raikoji:int}} (+{{raikoji:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:int" value="1" />
+        <stat name="raikoji:int:mod" value="1" /> <!-- 11 -> 12 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji intelligence becomes {{raikoji:int}} (+{{raikoji:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:int" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji intelligence becomes {{raikoji:int}} (+{{raikoji:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:int" value="1" />
+        <stat name="raikoji:int:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji intelligence becomes {{raikoji:int}} (+{{raikoji:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:int" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji intelligence becomes {{raikoji:int}} (+{{raikoji:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:int" value="1" />
+        <stat name="raikoji:int:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji intelligence becomes {{raikoji:int}} (+{{raikoji:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:int" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji intelligence becomes {{raikoji:int}} (+{{raikoji:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:int" value="1" />
+        <stat name="raikoji:int:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji intelligence becomes {{raikoji:int}} (+{{raikoji:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:int" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_13_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji intelligence becomes {{raikoji:int}} (+{{raikoji:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:int" value="1" />
+        <stat name="raikoji:int:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_RAIKOJI">
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji wisdom becomes {{raikoji:wis}} (+{{raikoji:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:wis" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji wisdom becomes {{raikoji:wis}} (+{{raikoji:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:wis" value="1" />
+        <stat name="raikoji:wis:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji wisdom becomes {{raikoji:wis}} (+{{raikoji:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:wis" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji wisdom becomes {{raikoji:wis}} (+{{raikoji:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:wis" value="1" />
+        <stat name="raikoji:wis:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji wisdom becomes {{raikoji:wis}} (+{{raikoji:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:wis" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji wisdom becomes {{raikoji:wis}} (+{{raikoji:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:wis" value="1" />
+        <stat name="raikoji:wis:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji wisdom becomes {{raikoji:wis}} (+{{raikoji:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:wis" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji wisdom becomes {{raikoji:wis}} (+{{raikoji:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:wis" value="1" />
+        <stat name="raikoji:wis:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_RAIKOJI">
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji charisma becomes {{raikoji:cha}} (+{{raikoji:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:cha" value="1" />
+        <stat name="raikoji:cha:mod" value="1" /> <!-- 11 -> 12 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji charisma becomes {{raikoji:cha}} (+{{raikoji:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:cha" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji charisma becomes {{raikoji:cha}} (+{{raikoji:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:cha" value="1" />
+        <stat name="raikoji:cha:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji charisma becomes {{raikoji:cha}} (+{{raikoji:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:cha" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji charisma becomes {{raikoji:cha}} (+{{raikoji:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:cha" value="1" />
+        <stat name="raikoji:cha:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji charisma becomes {{raikoji:cha}} (+{{raikoji:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:cha" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji charisma becomes {{raikoji:cha}} (+{{raikoji:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:cha" value="1" />
+        <stat name="raikoji:cha:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji charisma becomes {{raikoji:cha}} (+{{raikoji:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:cha" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_RAIKOJI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_RAIKOJI</requirements>
+    <supports>Raikoji Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Raikoji charisma becomes {{raikoji:cha}} (+{{raikoji:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="raikoji:cha" value="1" />
+        <stat name="raikoji:cha:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<!-- Go For the Throat -->
+	<element name="Go For the Throat" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_RAIKOJI">
+		<supports>Raikoji</supports>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="go for the throat:bonus:raikoji" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>[level:tamer:5],
+			ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:raikoji" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_3_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>
+			[level:tamer:9],ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:raikoji" value="1" />
+		</rules>
+	</element>
+
+<!-- Survival Insticts -->
+	<element name="Survival Instincts" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_RAIKOJI">
+		<supports>Raikoji</supports>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Raikoji" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Raikoji" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Raikoji" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Raikoji" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Raikoji" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_6_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Raikoji" />
+		</rules>
+	</element>
+
+	<element name="Raikoji Survival Instincts: Strength" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_RAIKOJI">
+		<supports>Survival Instinct Raikoji</supports>
+		<description>
+			<p>Your companion gains proficiency in Strength Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{raikoji:str:save}} in Strength Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="raikoji:str:save" value="proficiency" />
+            <stat name="raikoji:str:save" value="raikoji:str:mod" />
+        </rules>
+	</element>
+	<element name="Raikoji Survival Instincts: Dexterity" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_RAIKOJI">
+		<supports>Survival Instinct Raikoji</supports>
+		<description>
+			<p>Your companion gains proficiency in Dexterity Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{raikoji:dex:save}} in Dexterity Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="raikoji:dex:save" value="proficiency" />
+            <stat name="raikoji:dex:save" value="raikoji:dex:mod" />
+        </rules>
+	</element>
+	<element name="Raikoji Survival Instincts: Constitution" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_RAIKOJI">
+		<supports>Survival Instinct Raikoji</supports>
+		<description>
+			<p>Your companion gains proficiency in Constitution Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{raikoji:con:save}} in Constitution Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="raikoji:con:save" value="proficiency" />
+            <stat name="raikoji:con:save" value="raikoji:con:mod" />
+        </rules>
+	</element>
+	<element name="Raikoji Survival Instincts: Intelligence" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_RAIKOJI">
+		<supports>Survival Instinct Raikoji</supports>
+		<description>
+			<p>Your companion gains proficiency in Intelligence Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{raikoji:int:save}} in Intelligence Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="raikoji:int:save" value="proficiency" />
+            <stat name="raikoji:int:save" value="raikoji:int:mod" />
+        </rules>
+	</element>
+	<element name="Raikoji Survival Instincts: Wisdom" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_RAIKOJI">
+		<supports>Survival Instinct Raikoji</supports>
+		<description>
+			<p>Your companion gains proficiency in Wisdom Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{raikoji:wis:save}} in Wisdom Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="raikoji:wis:save" value="proficiency" />
+            <stat name="raikoji:wis:save" value="raikoji:wis:mod" />
+        </rules>
+	</element>
+	<element name="Raikoji Survival Instincts: Charisma" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_RAIKOJI">
+		<supports>Survival Instinct Raikoji</supports>
+		<description>
+			<p>Your companion gains proficiency in Charisma Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{raikoji:cha:save}} in Charisma Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="raikoji:cha:save" value="proficiency" />
+            <stat name="raikoji:cha:save" value="raikoji:cha:mod" />
+        </rules>
+	</element>
+
+<!-- War Training -->
+	<element name="War Training" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_RAIKOJI">
+		<supports>Raikoji</supports>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet>
+			<description>Gains proficiency with one armour type or two weapons (Requires GM discretion)</description>
+		</sheet>
+		<!-- Specific proficiency application depends on the system -->
+	</element>
+	<element name="War Training (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_6_RAIKOJI">
+		<supports>Raikoji</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_RAIKOJI</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+</elements> <!-- Closing the root elements tag -->

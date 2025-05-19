@@ -1,0 +1,1803 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Shumongani</name>
+		<description>Shumongani from Wrath of the Kaiju</description> <!-- Placeholder Source -->
+		<update version="0.1.0">
+			<file name="Shumongani.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/Shumongani.xml" /> <!-- Placeholder URL -->
+		</update>
+	</info>
+
+	<element name="Shumongani" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_SHUMONGANI">
+		<supports>Familiar, Variant Familiar, Bespoke Companion</supports>
+		<description>
+			<p style="margin-bottom:-5px">
+				<em>Tiny plant, chaotic neutral</em>
+			</p>
+			<h4 style="margin-top:5px" />
+			<p></p>
+			<p>
+				<strong>Armor Class</strong> 14 (natural armour)</p>
+			<p>
+				<strong>Hit Points</strong> 4 (1d4 + 2)</p>
+			<p>
+				<strong>Speed</strong> 30 ft., burrow 10 ft.</p>
+			<p></p>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead>
+					<tr>
+						<td>STR</td>
+						<td>DEX</td>
+						<td>CON</td>
+						<td>INT</td>
+						<td>WIS</td>
+						<td>CHA</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>13(+1)</td>
+					<td>9(-1)</td>
+					<td>15(+2)</td>
+					<td>10(+0)</td>
+					<td>11(+0)</td>
+					<td>14(+2)</td>
+				</tr>
+			</table>
+			<p>
+				<strong>Senses</strong> passive Perception 10</p>
+			<p>
+				<strong>Languages</strong> —</p>
+			<p>
+				<strong>Challenge</strong> 1/8 (25 XP) <strong>Proficiency Bonus</strong> +2
+			</p>
+			<p></p>
+			<h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
+			<p>
+				<strong>
+					<em>Psychic Sensitivity.</em>
+				</strong>When the shumongani takes psychic damage, it gains disadvantage on the next attack roll it makes before the end of its next turn.</p>
+			<p></p>
+			<h4 style="margin-top:15px">Actions</h4>
+			<p></p>
+			<p>
+				<strong>
+					<em>Claw (Unburied Only).</em>
+				</strong>
+				<em>Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 3 (1d4 + 1) bludgeoning damage.</p>
+            <p>
+				<strong>
+					<em>Lantern Flare (Buried Only).</em>
+				</strong>
+				<em>Ranged Spell Attack:</em> +4 to hit, range 30 ft., one target. <em>Hit:</em> 4 (1d4 + 2) radiant damage.
+            </p>
+			<p></p>
+            <h4 style="margin-top:15px">Bonus Actions</h4>
+			<p></p>
+            <p>
+                <strong>
+                    <em>Dig In.</em>
+                </strong>The shumongani partially buries itself in the ground, leaving a portion of its back and its lantern exposed. While it’s buried in this way, the shumongani can’t make Claw attacks, its speed is reduced to 0 feet, and it has disadvantage on Dexterity checks and Dexterity saving throws. In addition, it gains a +2 bonus to AC, it can make Lantern Flare attacks, and the lantern on its back lights up, shedding bright light in a 15-foot radius and dim light for an additional 15 feet. The lantern remains lit until the shumongani resurfaces as a bonus action, or until it’s reduced to 0 hit points.</p>
+		</description>
+		<sheet>
+			<description>Shumongani ({{shumongani:size}})- Gains {{hit dice gained:companion:shumongani}}d{{hit dice size:shumongani}} hit dice. DC: {{shumongani:dc}}. AC: +{{shumongani:ac bonus}}. Claw: +{{shumongani:claw:hit}}, DMG: {{shumongani:claw:dice}} + {{shumongani:claw:damage}} bludg. Lantern Flare: +{{shumongani:lantern_flare:hit}} (Range: {{shumongani:lantern_flare:range}} ft.), DMG: {{shumongani:lantern_flare:dice}} + {{shumongani:lantern_flare:damage}} radiant.</description>
+		</sheet>
+		<rules>
+			<!-- Grant Base Improvements -->
+			<grant type="Class Feature" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SHUMONGANI" />
+
+			<!-- Base Stats -->
+			<stat name="shumongani:str" value="13" />
+			<stat name="shumongani:str:mod" value="1" />
+			<stat name="shumongani:dex" value="9" />
+			<stat name="shumongani:dex:mod" value="-1" />
+			<stat name="shumongani:con" value="15" />
+			<stat name="shumongani:con:mod" value="2" />
+			<stat name="shumongani:int" value="10" />
+			<stat name="shumongani:int:mod" value="0" />
+			<stat name="shumongani:wis" value="11" />
+			<stat name="shumongani:wis:mod" value="0" />
+			<stat name="shumongani:cha" value="14" />
+			<stat name="shumongani:cha:mod" value="2" />
+
+			<!-- Derived Stats -->
+			<stat name="shumongani:size" inline="true" value="Tiny" />
+			<stat name="hit dice size:shumongani" value="4" />
+			<stat name="shumongani:ac bonus" value="0" /> <!-- Base AC is 14 natural armor -->
+			<stat name="shumongani:dc" value="8" />
+			<stat name="shumongani:dc" value="proficiency" />
+			<stat name="shumongani:dc" value="shumongani:cha:mod" /> <!-- Save DC uses CHA mod -->
+
+			<!-- Attack Stats (Claw) -->
+			<stat name="shumongani:claw:hit" value="proficiency" />
+			<stat name="shumongani:claw:hit" value="shumongani:str:mod" />
+			<stat name="shumongani:claw:hit" value="go for the throat:bonus:shumongani" />
+			<stat name="shumongani:claw:damage" value="shumongani:str:mod" />
+			<stat name="shumongani:claw:damage" value="go for the throat:bonus:shumongani" />
+			<stat name="shumongani:claw:dice" inline="true" value="1d4" />
+
+            <!-- Attack Stats (Lantern Flare) -->
+            <stat name="shumongani:lantern_flare:hit" value="proficiency" />
+			<stat name="shumongani:lantern_flare:hit" value="shumongani:cha:mod" />
+            <stat name="shumongani:lantern_flare:damage" value="shumongani:cha:mod" />
+			<stat name="shumongani:lantern_flare:dice" inline="true" value="1d4" />
+			<stat name="shumongani:lantern_flare:range" value="30" />
+            
+            <!-- Earthen Grip DC -->
+            <stat name="shumongani:earthen_grip:dc" value="8" />
+            <stat name="shumongani:earthen_grip:dc" value="proficiency" />
+            <stat name="shumongani:earthen_grip:dc" value="shumongani:str:mod" />
+
+
+			<!-- Level-Based Stat Increases (for sheet display) -->
+			<stat name="hit dice gained:companion:shumongani" value="1" level="4" />
+			<stat name="hit dice gained:companion:shumongani" value="1" level="8" />
+			<stat name="hit dice gained:companion:shumongani" value="1" level="12" />
+			<stat name="hit dice gained:companion:shumongani" value="1" level="16" />
+			<stat name="hit dice gained:companion:shumongani" value="1" level="19" />
+
+            <!-- Go for the Throat Bonus Initialization -->
+            <stat name="go for the throat:bonus:shumongani" value="0" />
+		</rules>
+	</element>
+
+	<element name="Shumongani Improvement" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SHUMONGANI">
+    <description>
+        <p>Whenever you gain a level beyond 1st in this class, each companion to which you are
+            bonded gains one of the following improvements.
+            Any newly gained companions receive these additional Hit Dice and improvements as if
+            you had them since your 1st level in tamer.</p>
+    </description>
+    <sheet>
+        <description>The Shumongani has the following Improvements:</description>
+    </sheet>
+    <rules>
+        <stat name="hit dice gained:companion:shumongani" value="2" />
+
+        <select type="Class Feature" name="Shumongani Improvement" supports="Shumongani" default="ID_LT_WOK_SHUMONGANI_TRAIT_GROWTH_I"/>
+        <select type="Class Feature" name="Shumongani Improvement (Lvl 2)" supports="Shumongani" level="2" />
+        <select type="Class Feature" name="Shumongani Improvement (Lvl 3)" supports="Shumongani" level="3" />
+        <select type="Class Feature" name="Shumongani Improvement (Lvl 4)" supports="Shumongani" level="4" />
+        <select type="Class Feature" name="Shumongani Improvement (Lvl 5)" supports="Shumongani" level="5" />
+        <select type="Class Feature" name="Shumongani Improvement (Lvl 6)" supports="Shumongani" level="6" />
+        <select type="Class Feature" name="Shumongani Improvement (Lvl 7)" supports="Shumongani" level="7" />
+        <select type="Class Feature" name="Shumongani Improvement (Lvl 8)" supports="Shumongani" level="8" />
+        <select type="Class Feature" name="Shumongani Improvement (Lvl 9)" supports="Shumongani" level="9" />
+        <select type="Class Feature" name="Shumongani Improvement (Lvl 10)" supports="Shumongani" level="10" />
+        <select type="Class Feature" name="Shumongani Improvement (Lvl 11)" supports="Shumongani" level="11" />
+        <select type="Class Feature" name="Shumongani Improvement (Lvl 12)" supports="Shumongani" level="12" />
+        <select type="Class Feature" name="Shumongani Improvement (Lvl 13)" supports="Shumongani" level="13" />
+        <select type="Class Feature" name="Shumongani Improvement (Lvl 14)" supports="Shumongani" level="14" />
+        <select type="Class Feature" name="Shumongani Improvement (Lvl 15)" supports="Shumongani" level="15" />
+        <select type="Class Feature" name="Shumongani Improvement (Lvl 16)" supports="Shumongani" level="16" />
+        <select type="Class Feature" name="Shumongani Improvement (Lvl 17)" supports="Shumongani" level="17" />
+        <select type="Class Feature" name="Shumongani Improvement (Lvl 18)" supports="Shumongani" level="18" />
+        <select type="Class Feature" name="Shumongani Improvement (Lvl 19)" supports="Shumongani" level="19" />
+        <select type="Class Feature" name="Shumongani Improvement (Lvl 20)" supports="Shumongani" level="20" />
+    </rules>
+</element>
+
+<!-- Shumongani's Improvements -->
+    <element name="Growth I" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_SHUMONGANI_TRAIT_GROWTH_I">
+        <supports>Shumongani</supports>
+        <prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
+        <requirements>[level:tamer:1]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The shumongani’s size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its Claw and Lantern Flare attacks each increase to a d6.</p>
+            <p>The shumongani gains this improvement when it becomes a companion; it doesn't cost an improvement.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="shumongani:size" inline="true" value="Small" />
+            <stat name="hit dice size:shumongani" value="2" /> <!-- d4 to d6 -->
+            <stat name="shumongani:claw:dice" inline="true" value="1d6" />
+            <stat name="shumongani:lantern_flare:dice" inline="true" value="1d6" />
+        </rules>
+    </element>
+
+    <element name="Earthen Grip" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_SHUMONGANI_ACTION_EARTHEN_GRIP">
+        <supports>Shumongani</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active</p>
+            <p>When the shumongani hits a creature no more than one size larger than it with a Claw attack, it can choose to deal no damage with the attack. If it does, the creature is grappled instead. The escape DC for the grapple equals 8 + the tamer’s proficiency bonus + the shumongani’s Strength modifier. If the shumongani is buried, a creature grappled by it has disadvantage on ability checks made to escape the grapple. Each of the shumongani’s two claws can grapple only one target at a time.</p>
+        </description>
+        <sheet>
+            <description>On Claw hit (target &lt;=1 size larger), can forgo damage to grapple. Escape DC {{shumongani:earthen_grip:dc}}. If buried, DISADV on escape checks. Max 1 grapple per claw.</description>
+        </sheet>
+    </element>
+
+    <element name="Light Show I" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_SHUMONGANI_ACTION_LIGHT_SHOW_I">
+        <supports>Shumongani</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (bonus action)</p>
+            <p>When the shumongani’s lantern lights up as part of its Dig In bonus action, the shumongani’s tamer can choose a colour for the light. The damage type of the shumongani’s Lantern Flare attack changes depending on the chosen colour, and each colour produces an aura with a different effect, as detailed in the table below.</p>
+            <table>
+                <thead><tr><th>Colour</th><th>Damage Type</th><th>Aura Effect</th></tr></thead>
+                <tbody>
+                    <tr><td>Yellow</td><td>Radiant</td><td><strong>Warding.</strong> The shumongani chooses a friendly creature other than itself. While that creature is within the lantern’s bright light, it gains a +1 bonus to AC.</td></tr>
+                    <tr><td>Red</td><td>Fire</td><td><strong>Incendiary.</strong> The shumongani chooses a friendly creature other than itself. While that creature is within the lantern’s bright light, the first attack it hits with on each turn deals an extra 1d6 fire damage.</td></tr>
+                </tbody>
+            </table>
+        </description>
+        <sheet action="Bonus Action">
+            <description>When Dig In lights lantern, choose color: Yellow (Radiant DMG, +1 AC aura to 1 ally) or Red (Fire DMG, +1d6 Fire DMG aura to 1 ally).</description>
+        </sheet>
+        <!-- Rules for damage type and aura effects would need system support -->
+    </element>
+
+    <element name="Growth II" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_SHUMONGANI_TRAIT_GROWTH_II">
+        <supports>Shumongani</supports>
+        <prerequisite>Prerequisite: 5th-level tamer, Growth I</prerequisite>
+        <requirements>[level:tamer:5], ID_LT_WOK_SHUMONGANI_TRAIT_GROWTH_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The shumongani’s size increases to Medium, its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its Claw and Lantern Flare attacks each increase to a d8.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="shumongani:size" inline="true" value="Medium" />
+            <stat name="hit dice size:shumongani" value="2" /> <!-- d6 to d8 -->
+            <stat name="shumongani:claw:dice" inline="true" value="1d8" />
+            <stat name="shumongani:lantern_flare:dice" inline="true" value="1d8" />
+        </rules>
+    </element>
+
+    <element name="Multiattack" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_SHUMONGANI_ACTION_MULTIATTACK">
+        <supports>Shumongani</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action, the shumongani can make two attacks.</p>
+        </description>
+        <sheet action="Action">
+            <description>Make two attacks.</description>
+        </sheet>
+    </element>
+
+    <element name="Shrine’s Boon" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_SHUMONGANI_ACTION_SHRINES_BOON">
+        <supports>Shumongani</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (bonus action)</p>
+            <p>As a bonus action while its lantern is lit, the shumongani can cast the bless spell, the targets of which must be within the lantern’s bright light. If the shumongani is recalled to its vessel, it stops concentrating on this spell. Once the shumongani uses this bonus action, it can’t do so again until its tamer finishes a short or long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Short Rest">
+            <description>While lantern lit: Cast Bless (targets in bright light).</description>
+        </sheet>
+    </element>
+
+    <element name="Light Show II" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_SHUMONGANI_ACTION_LIGHT_SHOW_II">
+        <supports>Shumongani</supports>
+        <prerequisite>Prerequisite: 9th-level tamer, Light Show I</prerequisite>
+        <requirements>[level:tamer:9], ID_LT_WOK_SHUMONGANI_ACTION_LIGHT_SHOW_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (bonus action)</p>
+            <p>The shumongani gains a new colour option for its lantern, and the effects of the auras are increased, as detailed in the table below. These effects replace those of Light Show I.</p>
+            <table>
+                <thead><tr><th>Colour</th><th>Damage Type</th><th>Aura Effect</th></tr></thead>
+                <tbody>
+                    <tr><td>Yellow</td><td>Radiant</td><td><strong>Warding.</strong> Each friendly creature other than the shumongani within the lantern’s bright light gains a +1 bonus to AC.</td></tr>
+                    <tr><td>Red</td><td>Fire</td><td><strong>Incendiary.</strong> Each friendly creature other than the shumongani within the lantern’s bright light deals an extra 1d6 fire damage with the first attack that it hits with on each turn.</td></tr>
+                    <tr><td>Purple</td><td>Necrotic</td><td><strong>Withering.</strong> When a hostile creature starts its turn within the shumongani’s bright light or enters it for the first time on a turn, it must make a Constitution saving throw. On a failed save, it takes 1d6 necrotic damage and, until the end of the shumongani’s next turn, its speed is halved, and it has disadvantage on the next attack roll it makes.</td></tr>
+                </tbody>
+            </table>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Upgrades Light Show I: Yellow (+1 AC aura to all allies), Red (+1d6 Fire DMG aura to all allies), Purple (Necrotic DMG, aura: hostile CON Save or 1d6 necrotic, speed halved, DISADV on next attack).</description>
+        </sheet>
+    </element>
+
+    <element name="Shrine’s Burden" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_SHUMONGANI_ACTION_SHRINES_BURDEN">
+        <supports>Shumongani</supports>
+        <prerequisite>Prerequisite: 9th-level tamer, Shrine’s Boon</prerequisite>
+        <requirements>[level:tamer:9], ID_LT_WOK_SHUMONGANI_ACTION_SHRINES_BOON</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (bonus action)</p>
+            <p>When the shumongani casts the bless spell as part of its Shrine’s Boon improvement, it can simultaneously cast the bane spell, the targets of which must be within the lantern’s bright light. The shumongani can maintain concentration on both spells simultaneously. Whenever it must make a saving throw to maintain concentration, it makes a single saving throw for both spells. Whenever the effect of one spell ends, the other does as well.</p>
+        </description>
+        <sheet>
+            <description>When using Shrine's Boon (Bless), can also cast Bane simultaneously (targets in bright light). Single concentration for both.</description>
+        </sheet>
+    </element>
+
+    <element name="Growth III" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_SHUMONGANI_TRAIT_GROWTH_III">
+        <supports>Shumongani</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Growth II</prerequisite>
+        <requirements>[level:tamer:13], ID_LT_WOK_SHUMONGANI_TRAIT_GROWTH_II</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The shumongani’s size increases to Large, its Hit Die size increases to a d10 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its Claw and Lantern Flare attacks each increase to a d10.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="shumongani:size" inline="true" value="Large" />
+            <stat name="hit dice size:shumongani" value="2" /> <!-- d8 to d10 -->
+            <stat name="shumongani:claw:dice" inline="true" value="1d10" />
+            <stat name="shumongani:lantern_flare:dice" inline="true" value="1d10" />
+        </rules>
+    </element>
+
+    <element name="Luminosity" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_SHUMONGANI_TRAIT_LUMINOSITY">
+        <supports>Shumongani</supports>
+        <prerequisite>Prerequisite: 13th-level tamer</prerequisite>
+        <requirements>[level:tamer:13]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>While the shumongani’s lantern is lit, it sheds bright light in a 30-foot radius and dim light for an additional 30 feet. If the bright light of the shumongani’s lantern overlaps with magical darkness created by a spell of 2nd level or lower, that spell is dispelled. Additionally, the shumongani’s Lantern Flare attack’s range increases to 60 feet, and it deals an extra damage die on a hit.</p>
+        </description>
+        <sheet>
+            <description>Lantern light: 30ft bright/30ft dim. Dispels magical darkness (2nd level or lower).</description>
+        </sheet>
+		<rules>
+			<stat name="shumongani:lantern_flare:range" value="30" />
+			<stat name="shumongani:lantern_flare:dice" inline="true" value="2d4" />
+		</rules>
+    </element>
+
+    <element name="Light Show III" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_SHUMONGANI_ACTION_LIGHT_SHOW_III">
+        <supports>Shumongani</supports>
+        <prerequisite>Prerequisite: 17th-level tamer, Light Show II</prerequisite>
+        <requirements>[level:tamer:17], ID_LT_WOK_SHUMONGANI_ACTION_LIGHT_SHOW_II</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (bonus action)</p>
+            <p>When the shumongani’s lantern lights up as part of its Dig In bonus action, the shumongani’s tamer can choose to display all three colours at once until the start of the shumongani’s next turn. For the duration, the aura effects of all three colours are active and, when the shumongani makes a Lantern Flare attack, it makes three attacks instead—one of each damage type. At the start of the shumongani’s next turn, its tamer chooses a colour, and all colours that weren’t chosen fade away.</p>
+            <p>Once the shumongani has activated all three colours simultaneously in this way, it can’t do so again until its tamer finishes a long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Long Rest">
+            <description>When Dig In lights lantern: display all 3 colors (1 turn). All 3 auras active. Lantern Flare makes 3 attacks (1 of each damage type). Tamer chooses 1 color to persist at start of next turn.</description>
+        </sheet>
+    </element>
+
+<!-- General Improvements -->
+	<!-- Speed Training -->
+	<element name="Speed Training" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SPEED_TRAINING_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<description>
+			<p>Increase one existing speed by 15 feet up to a maximum of 150% of the creature’s base
+				speed, rounded up to the nearest 5-foot increment.</p>
+			<p>E.g., a base speed of 30 feet can be increased to 45 feet maximum, a base speed of 25
+				feet can be increased to 40 feet, and a base speed of 20 feet to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>Increase one existing speed by 15 feet (Max of 150%)</description>
+		</sheet>
+	</element>
+
+	<!-- Toughen Up -->
+	<element name="Toughen Up" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false">
+			<description>Your companion gains {{hit dice gained:companion:1}} Hit Die, increasing
+				its hit point maximum</description>
+		</sheet>
+		<rules>
+			<stat name="hit dice gained:companion:shumongani" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:shumongani" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:shumongani" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:shumongani" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:shumongani" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:shumongani" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (7)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:shumongani" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (8)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:shumongani" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (9)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:shumongani" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (10)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:shumongani" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (11)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:shumongani" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (12)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:shumongani" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (13)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:shumongani" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (14)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:shumongani" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (15)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:shumongani" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (16)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:shumongani" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (17)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:shumongani" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (18)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:shumongani" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (19)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:shumongani" value="1" />
+		</rules>
+	</element>
+
+<!-- Ability Boost -->
+	<element name="Ability Boost" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Shumongani Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_SHUMONGANI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Shumongani Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_SHUMONGANI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Shumongani Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_SHUMONGANI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Shumongani Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_SHUMONGANI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Shumongani Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_SHUMONGANI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Shumongani Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (7)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_SHUMONGANI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Shumongani Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (8)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_SHUMONGANI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Shumongani Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (9)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_SHUMONGANI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Shumongani Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (10)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_SHUMONGANI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Shumongani Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (11)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_SHUMONGANI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Shumongani Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (12)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_SHUMONGANI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Shumongani Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (13)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_SHUMONGANI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Shumongani Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (14)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_SHUMONGANI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Shumongani Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (15)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_SHUMONGANI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Shumongani Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (16)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_SHUMONGANI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Shumongani Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (17)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_SHUMONGANI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Shumongani Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (18)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_SHUMONGANI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Shumongani Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (19)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_19_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_SHUMONGANI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Shumongani Ability Boost" />
+		</rules>
+	</element>
+
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_SHUMONGANI">
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani strength becomes {{shumongani:str}} (+{{shumongani:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:str" value="1" />
+        <stat name="shumongani:str:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani strength becomes {{shumongani:str}} (+{{shumongani:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:str" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani strength becomes {{shumongani:str}} (+{{shumongani:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:str" value="1" />
+        <stat name="shumongani:str:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani strength becomes {{shumongani:str}} (+{{shumongani:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:str" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani strength becomes {{shumongani:str}} (+{{shumongani:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:str" value="1" />
+        <stat name="shumongani:str:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani strength becomes {{shumongani:str}} (+{{shumongani:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:str" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani strength becomes {{shumongani:str}} (+{{shumongani:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:str" value="1" />
+        <stat name="shumongani:str:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_SHUMONGANI">
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani dexterity becomes {{shumongani:dex}} (+{{shumongani:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:dex" value="1" />
+        <stat name="shumongani:dex:mod" value="1" /> <!-- 9 -> 10 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani dexterity becomes {{shumongani:dex}} (+{{shumongani:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:dex" value="1" /> <!-- 10 -> 11 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani dexterity becomes {{shumongani:dex}} (+{{shumongani:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:dex" value="1" />
+        <stat name="shumongani:dex:mod" value="1" /> <!-- 11 -> 12 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani dexterity becomes {{shumongani:dex}} (+{{shumongani:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:dex" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani dexterity becomes {{shumongani:dex}} (+{{shumongani:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:dex" value="1" />
+        <stat name="shumongani:dex:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani dexterity becomes {{shumongani:dex}} (+{{shumongani:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:dex" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani dexterity becomes {{shumongani:dex}} (+{{shumongani:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:dex" value="1" />
+        <stat name="shumongani:dex:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani dexterity becomes {{shumongani:dex}} (+{{shumongani:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:dex" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani dexterity becomes {{shumongani:dex}} (+{{shumongani:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:dex" value="1" />
+        <stat name="shumongani:dex:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_10_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani dexterity becomes {{shumongani:dex}} (+{{shumongani:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:dex" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_11_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_10_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani dexterity becomes {{shumongani:dex}} (+{{shumongani:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:dex" value="1" />
+        <stat name="shumongani:dex:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_SHUMONGANI">
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani constitution becomes {{shumongani:con}} (+{{shumongani:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:con" value="1" />
+        <stat name="shumongani:con:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani constitution becomes {{shumongani:con}} (+{{shumongani:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:con" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani constitution becomes {{shumongani:con}} (+{{shumongani:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:con" value="1" />
+        <stat name="shumongani:con:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani constitution becomes {{shumongani:con}} (+{{shumongani:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:con" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani constitution becomes {{shumongani:con}} (+{{shumongani:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:con" value="1" />
+        <stat name="shumongani:con:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_SHUMONGANI">
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani intelligence becomes {{shumongani:int}} (+{{shumongani:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:int" value="1" /> <!-- 10 -> 11 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani intelligence becomes {{shumongani:int}} (+{{shumongani:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:int" value="1" />
+        <stat name="shumongani:int:mod" value="1" /> <!-- 11 -> 12 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani intelligence becomes {{shumongani:int}} (+{{shumongani:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:int" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani intelligence becomes {{shumongani:int}} (+{{shumongani:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:int" value="1" />
+        <stat name="shumongani:int:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani intelligence becomes {{shumongani:int}} (+{{shumongani:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:int" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani intelligence becomes {{shumongani:int}} (+{{shumongani:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:int" value="1" />
+        <stat name="shumongani:int:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani intelligence becomes {{shumongani:int}} (+{{shumongani:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:int" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani intelligence becomes {{shumongani:int}} (+{{shumongani:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:int" value="1" />
+        <stat name="shumongani:int:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani intelligence becomes {{shumongani:int}} (+{{shumongani:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:int" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani intelligence becomes {{shumongani:int}} (+{{shumongani:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:int" value="1" />
+        <stat name="shumongani:int:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_SHUMONGANI">
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani wisdom becomes {{shumongani:wis}} (+{{shumongani:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:wis" value="1" />
+        <stat name="shumongani:wis:mod" value="1" /> <!-- 11 -> 12 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani wisdom becomes {{shumongani:wis}} (+{{shumongani:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:wis" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani wisdom becomes {{shumongani:wis}} (+{{shumongani:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:wis" value="1" />
+        <stat name="shumongani:wis:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani wisdom becomes {{shumongani:wis}} (+{{shumongani:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:wis" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani wisdom becomes {{shumongani:wis}} (+{{shumongani:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:wis" value="1" />
+        <stat name="shumongani:wis:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani wisdom becomes {{shumongani:wis}} (+{{shumongani:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:wis" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani wisdom becomes {{shumongani:wis}} (+{{shumongani:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:wis" value="1" />
+        <stat name="shumongani:wis:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani wisdom becomes {{shumongani:wis}} (+{{shumongani:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:wis" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani wisdom becomes {{shumongani:wis}} (+{{shumongani:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:wis" value="1" />
+        <stat name="shumongani:wis:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_SHUMONGANI">
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani charisma becomes {{shumongani:cha}} (+{{shumongani:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:cha" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani charisma becomes {{shumongani:cha}} (+{{shumongani:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:cha" value="1" />
+        <stat name="shumongani:cha:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani charisma becomes {{shumongani:cha}} (+{{shumongani:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:cha" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani charisma becomes {{shumongani:cha}} (+{{shumongani:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:cha" value="1" />
+        <stat name="shumongani:cha:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani charisma becomes {{shumongani:cha}} (+{{shumongani:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:cha" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_SHUMONGANI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_SHUMONGANI</requirements>
+    <supports>Shumongani Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Shumongani charisma becomes {{shumongani:cha}} (+{{shumongani:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="shumongani:cha" value="1" />
+        <stat name="shumongani:cha:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<!-- Go For the Throat -->
+	<element name="Go For the Throat" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="go for the throat:bonus:shumongani" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>[level:tamer:5],
+			ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:shumongani" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_3_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>
+			[level:tamer:9],ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:shumongani" value="1" />
+		</rules>
+	</element>
+
+<!-- Survival Insticts -->
+	<element name="Survival Instincts" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Shumongani" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Shumongani" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Shumongani" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Shumongani" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Shumongani" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_6_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Shumongani" />
+		</rules>
+	</element>
+
+	<element name="Shumongani Survival Instincts: Strength" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_SHUMONGANI">
+		<supports>Survival Instinct Shumongani</supports>
+		<description>
+			<p>Your companion gains proficiency in Strength Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{shumongani:str:save}} in Strength Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="shumongani:str:save" value="proficiency" />
+            <stat name="shumongani:str:save" value="shumongani:str:mod" />
+        </rules>
+	</element>
+	<element name="Shumongani Survival Instincts: Dexterity" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_SHUMONGANI">
+		<supports>Survival Instinct Shumongani</supports>
+		<description>
+			<p>Your companion gains proficiency in Dexterity Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{shumongani:dex:save}} in Dexterity Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="shumongani:dex:save" value="proficiency" />
+            <stat name="shumongani:dex:save" value="shumongani:dex:mod" />
+        </rules>
+	</element>
+	<element name="Shumongani Survival Instincts: Constitution" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_SHUMONGANI">
+		<supports>Survival Instinct Shumongani</supports>
+		<description>
+			<p>Your companion gains proficiency in Constitution Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{shumongani:con:save}} in Constitution Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="shumongani:con:save" value="proficiency" />
+            <stat name="shumongani:con:save" value="shumongani:con:mod" />
+        </rules>
+	</element>
+	<element name="Shumongani Survival Instincts: Intelligence" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_SHUMONGANI">
+		<supports>Survival Instinct Shumongani</supports>
+		<description>
+			<p>Your companion gains proficiency in Intelligence Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{shumongani:int:save}} in Intelligence Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="shumongani:int:save" value="proficiency" />
+            <stat name="shumongani:int:save" value="shumongani:int:mod" />
+        </rules>
+	</element>
+	<element name="Shumongani Survival Instincts: Wisdom" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_SHUMONGANI">
+		<supports>Survival Instinct Shumongani</supports>
+		<description>
+			<p>Your companion gains proficiency in Wisdom Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{shumongani:wis:save}} in Wisdom Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="shumongani:wis:save" value="proficiency" />
+            <stat name="shumongani:wis:save" value="shumongani:wis:mod" />
+        </rules>
+	</element>
+	<element name="Shumongani Survival Instincts: Charisma" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_SHUMONGANI">
+		<supports>Survival Instinct Shumongani</supports>
+		<description>
+			<p>Your companion gains proficiency in Charisma Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{shumongani:cha:save}} in Charisma Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="shumongani:cha:save" value="proficiency" />
+            <stat name="shumongani:cha:save" value="shumongani:cha:mod" />
+        </rules>
+	</element>
+
+<!-- War Training -->
+	<element name="War Training" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet>
+			<description>Gains proficiency with one armour type or two weapons (Requires GM discretion)</description>
+		</sheet>
+		<!-- Specific proficiency application depends on the system -->
+	</element>
+	<element name="War Training (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_6_SHUMONGANI">
+		<supports>Shumongani</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_SHUMONGANI</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+</elements> <!-- Closing the root elements tag -->

@@ -1,0 +1,1878 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Mushamushi</name>
+        <description>Mushamushi from Wrath of the Kaiju</description> 
+        <update version="0.1.0">
+            <file name="Mushamushi.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/Mushamushi.xml" /> 
+        </update>
+    </info>
+
+    <element name="Mushamushi" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI">
+        <supports>Familiar, Variant Familiar, Bespoke Companion</supports>
+        <description>
+            <p style="margin-bottom:-5px">
+                <em>Tiny monstrosity, lawful neutral</em>
+            </p>
+            <h4 style="margin-top:5px" />
+            <p></p>
+            <p>
+                <strong>Armor Class</strong> 14 (natural armour)</p>
+            <p>
+                <strong>Hit Points</strong> 4 (1d4 + 2)</p>
+            <p>
+                <strong>Speed</strong> 30 ft., climb 20 ft.</p>
+            <p></p>
+            <table style="text-align:center;margin-top:10px;margin-bottom:10px">
+                <thead>
+                    <tr>
+                        <td>STR</td>
+                        <td>DEX</td>
+                        <td>CON</td>
+                        <td>INT</td>
+                        <td>WIS</td>
+                        <td>CHA</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>10(+0)</td>
+                    <td>14(+2)</td>
+                    <td>14(+2)</td>
+                    <td>7(-2)</td>
+                    <td>10(+0)</td>
+                    <td>11(+0)</td>
+                </tr>
+            </table>
+            <p>
+                <strong>Senses</strong> passive Perception 10</p>
+            <p>
+                <strong>Languages</strong> —</p>
+            <p>
+                <strong>Challenge</strong> 1/8 (25 XP) <strong>Proficiency Bonus</strong> +2
+            </p>
+            <p></p>
+            <h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
+            <p>
+                <strong>
+                    <em>Charge.</em>
+                </strong>If the mushamushi moves at least 20 feet straight toward a target and then immediately hits it with a Horn attack, the target takes an extra 5 (2d4) piercing damage.</p>
+            <p>
+                <strong>
+                    <em>Small Fry.</em>
+                </strong>The mushamushi has disadvantage on attack rolls against creatures of its size or smaller.</p>
+            <p></p>
+            <h4 style="margin-top:15px">Actions</h4>
+            <p></p>
+            <p>
+                <strong>
+                    <em>Horn.</em>
+                </strong>
+                <em>Melee Weapon Attack:</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 4 (1d4 + 2) piercing damage.</p>
+            <p>
+                <strong>
+                    <em>Kama.</em>
+                </strong>
+                <em>Melee Weapon Attack:</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 4 (1d4 + 2) slashing damage.</p>
+            <p></p>
+        </description>
+        <sheet>
+            <description>Mushamushi ({{mushamushi:size}})- Gains {{hit dice gained:companion:mushamushi}}d{{hit dice size:mushamushi}} hit dice. DC: {{mushamushi:dc}}. AC: +{{mushamushi:ac bonus}}. Horn: +{{mushamushi:horn:hit}}, DMG: {{mushamushi:horn:dice}} + {{mushamushi:horn:damage}} piercing. Kama: +{{mushamushi:kama:hit}}, DMG: {{mushamushi:kama:dice}} + {{mushamushi:kama:damage}} slashing. Charge: {{mushamushi:charge:dice}}</description>
+        </sheet>
+        <rules>
+            <!-- Grant Base Improvements -->
+            <grant type="Class Feature" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_MUSHAMUSHI" />
+
+            <!-- Base Stats -->
+            <stat name="mushamushi:str" value="10" />
+            <stat name="mushamushi:str:mod" value="0" />
+            <stat name="mushamushi:dex" value="14" />
+            <stat name="mushamushi:dex:mod" value="2" />
+            <stat name="mushamushi:con" value="14" />
+            <stat name="mushamushi:con:mod" value="2" />
+            <stat name="mushamushi:int" value="7" />
+            <stat name="mushamushi:int:mod" value="-2" />
+            <stat name="mushamushi:wis" value="10" />
+            <stat name="mushamushi:wis:mod" value="0" />
+            <stat name="mushamushi:cha" value="11" />
+            <stat name="mushamushi:cha:mod" value="0" />
+
+            <!-- Derived Stats -->
+            <stat name="mushamushi:size" inline="true" value="Tiny" />
+            <stat name="hit dice size:mushamushi" value="4" />
+            <stat name="mushamushi:ac bonus" value="0" />
+            <stat name="mushamushi:dc" value="8" />
+            <stat name="mushamushi:dc" value="proficiency" />
+            <stat name="mushamushi:dc" value="mushamushi:dex:mod" /> <!-- Save DC uses DEX mod -->
+
+            <!-- Attack Stats (Horn) -->
+            <stat name="mushamushi:horn:hit" value="proficiency" />
+            <stat name="mushamushi:horn:hit" value="mushamushi:dex:mod" /> <!-- Assuming DEX based on +4 to hit -->
+            <stat name="mushamushi:horn:hit" value="go for the throat:bonus:mushamushi" />
+            <stat name="mushamushi:horn:damage" value="mushamushi:dex:mod" />
+            <stat name="mushamushi:horn:damage" value="go for the throat:bonus:mushamushi" />
+            <stat name="mushamushi:horn:dice" inline="true" value="1d4" />
+            <stat name="mushamushi:charge:dice" inline="true" value="2d4" /> <!-- For Charge trait display -->
+
+            <!-- Attack Stats (Kama) -->
+            <stat name="mushamushi:kama:hit" value="proficiency" />
+            <stat name="mushamushi:kama:hit" value="mushamushi:dex:mod" /> <!-- Assuming DEX based on +4 to hit -->
+            <stat name="mushamushi:kama:hit" value="go for the throat:bonus:mushamushi" />
+            <stat name="mushamushi:kama:damage" value="mushamushi:dex:mod" />
+            <stat name="mushamushi:kama:damage" value="go for the throat:bonus:mushamushi" />
+            <stat name="mushamushi:kama:dice" inline="true" value="1d4" />
+
+            <!-- Level-Based Stat Increases (for sheet display) -->
+            <stat name="hit dice gained:companion:mushamushi" value="1" level="4" />
+            <stat name="hit dice gained:companion:mushamushi" value="1" level="8" />
+            <stat name="hit dice gained:companion:mushamushi" value="1" level="12" />
+            <stat name="hit dice gained:companion:mushamushi" value="1" level="16" />
+            <stat name="hit dice gained:companion:mushamushi" value="1" level="19" />
+
+            <!-- Go for the Throat Bonus Initialization -->
+            <stat name="go for the throat:bonus:mushamushi" value="0" />
+        </rules>
+    </element>
+
+    <element name="Mushamushi Improvement" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_MUSHAMUSHI">
+    <description>
+        <p>Whenever you gain a level beyond 1st in this class, each companion to which you are
+            bonded gains one of the following improvements.
+            Any newly gained companions receive these additional Hit Dice and improvements as if
+            you had them since your 1st level in tamer.</p>
+    </description>
+    <sheet>
+        <description>The Mushamushi has the following Improvements:</description>
+    </sheet>
+    <rules>
+        <stat name="hit dice gained:companion:mushamushi" value="2" />
+
+        <select type="Class Feature" name="Mushamushi Improvement" supports="Mushamushi" default="ID_LT_WOK_MUSHAMUSHI_ACTION_HOOKSHOT_I"/>
+        <select type="Class Feature" name="Mushamushi Improvement (Lvl 2)" supports="Mushamushi" level="2" />
+        <select type="Class Feature" name="Mushamushi Improvement (Lvl 3)" supports="Mushamushi" level="3" />
+        <select type="Class Feature" name="Mushamushi Improvement (Lvl 4)" supports="Mushamushi" level="4" />
+        <select type="Class Feature" name="Mushamushi Improvement (Lvl 5)" supports="Mushamushi" level="5" />
+        <select type="Class Feature" name="Mushamushi Improvement (Lvl 6)" supports="Mushamushi" level="6" />
+        <select type="Class Feature" name="Mushamushi Improvement (Lvl 7)" supports="Mushamushi" level="7" />
+        <select type="Class Feature" name="Mushamushi Improvement (Lvl 8)" supports="Mushamushi" level="8" />
+        <select type="Class Feature" name="Mushamushi Improvement (Lvl 9)" supports="Mushamushi" level="9" />
+        <select type="Class Feature" name="Mushamushi Improvement (Lvl 10)" supports="Mushamushi" level="10" />
+        <select type="Class Feature" name="Mushamushi Improvement (Lvl 11)" supports="Mushamushi" level="11" />
+        <select type="Class Feature" name="Mushamushi Improvement (Lvl 12)" supports="Mushamushi" level="12" />
+        <select type="Class Feature" name="Mushamushi Improvement (Lvl 13)" supports="Mushamushi" level="13" />
+        <select type="Class Feature" name="Mushamushi Improvement (Lvl 14)" supports="Mushamushi" level="14" />
+        <select type="Class Feature" name="Mushamushi Improvement (Lvl 15)" supports="Mushamushi" level="15" />
+        <select type="Class Feature" name="Mushamushi Improvement (Lvl 16)" supports="Mushamushi" level="16" />
+        <select type="Class Feature" name="Mushamushi Improvement (Lvl 17)" supports="Mushamushi" level="17" />
+        <select type="Class Feature" name="Mushamushi Improvement (Lvl 18)" supports="Mushamushi" level="18" />
+        <select type="Class Feature" name="Mushamushi Improvement (Lvl 19)" supports="Mushamushi" level="19" />
+        <select type="Class Feature" name="Mushamushi Improvement (Lvl 20)" supports="Mushamushi" level="20" />
+    </rules>
+    </element>
+
+<!-- Mushamushi's Improvements -->
+    <element name="Hookshot I" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_ACTION_HOOKSHOT_I">
+        <supports>Mushamushi</supports>
+        <prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
+        <requirements>[level:tamer:1]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>The mushamushi gains the following action option:</p>
+            <p><strong>Hook.</strong> <em>Ranged Weapon Attack:</em> +4 to hit, range 30 ft., one target more than one size larger than the mushamushi. <em>Hit:</em> The mushamushi pulls itself to within 5 feet of the target and remains attached to it until it removes the hook as a bonus action, or until it moves or is moved more than 5 feet from the target. If the target is a creature, it can use its action to detach the mushamushi with a successful Strength (Athletics) check against the mushamushi’s save DC.</p>
+            <p>While attached to a creature, the mushamushi moves with the creature, it can climb the creature as it would a normal surface, it can end its turn in the creature’s space, and the creature’s space isn’t considered difficult terrain for the mushamushi.</p>
+            <p>The mushamushi gains this improvement when it becomes a companion; it doesn't cost an improvement.</p>
+        </description>
+        <sheet action="Action">
+            <description>Hook: +{{mushamushi:hook:hit}} to hit, range 30ft, target &gt;1 size larger. Hit: Pull to within 5ft, attach (BA remove, move away, or target STR check vs DC {{mushamushi:dc}}). While attached: moves with target, can climb, end turn in space, space not difficult.</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:hook:hit" value="mushamushi:dex:mod" />
+            <stat name="mushamushi:hook:hit" value="proficiency" />
+        </rules>
+    </element>
+
+    <element name="Agile" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_TRAIT_AGILE">
+        <supports>Mushamushi</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The mushamushi’s speed increases by 10 feet. In addition, when the mushamushi hits a creature with a melee attack, it doesn’t provoke opportunity attacks from that creature for the rest of the turn.</p>
+        </description>
+        <sheet>
+            <description>Speed +{{mushamushi:speed:bonus}}ft. Hitting with melee attack avoids OAs from that creature for rest of turn.</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:speed:bonus" value="10"/>
+        </rules>
+    </element>
+
+    <element name="Single Combat" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_ACTION_SINGLE_COMBAT">
+        <supports>Mushamushi</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (bonus action)</p>
+            <p>As a bonus action, the mushamushi can issue a challenge against a creature that it can see that is at least one size larger than it. If the creature can see or hear the mushamushi, the creature must succeed on a Wisdom saving throw or become the mushamushi’s sworn foe for 1 minute. The effect ends early if the mushamushi uses this improvement again, attacks a creature other than its sworn foe, or if a creature that isn’t the mushamushi attacks the mushamushi’s sworn foe. While a creature is the mushamushi’s sworn foe, it can’t willingly move away from the mushamushi.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Challenge target (&gt;1 size larger, can see/hear): WIS Save (DC {{mushamushi:dc}}) or sworn foe (1 min). Foe can't move away. Ends if conditions met.</description>
+        </sheet>
+    </element>
+
+    <element name="Combat Prowess I" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_TRAIT_COMBAT_PROWESS_I">
+        <supports>Mushamushi</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The damage die of the mushamushi’s Kama attack increases to a d6. In addition, the extra damage dealt by its Charge trait increases to 9 (2d8).</p>
+            <p>When the mushamushi’s tamer reaches 9th level in this class, the damage die of the mushamushi’s Kama attack increases to a d8.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="mushamushi:kama:dice" inline="true" value="1d6" />
+            <stat name="mushamushi:charge:dice" inline="true" value="2d8" />
+            <stat name="mushamushi:kama:dice" inline="true" value="1d8" level="9"/>
+        </rules>
+    </element>
+
+    <element name="Hookshot II" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_TRAIT_HOOKSHOT_II">
+        <supports>Mushamushi</supports>
+        <prerequisite>Prerequisite: 5th-level tamer, Hookshot I</prerequisite>
+        <requirements>[level:tamer:5], ID_LT_WOK_MUSHAMUSHI_ACTION_HOOKSHOT_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>While the mushamushi is attached to a creature, that creature has disadvantage on attack rolls against it. In addition, if that creature rolls a 1 on an attack roll against the mushamushi, it takes 7 (2d6) damage of the type the attack would have dealt. If the attack could deal more than one damage type, the creature chooses which type of damage it takes.</p>
+            <p>When the mushamushi’s tamer reaches 9th level in the tamer class, a creature to which the mushamushi is attached takes damage if it rolls a 3 or lower on an attack roll against the mushamushi, and that damage increases to 9 (2d8).</p>
+        </description>
+        <sheet>
+            <description>While attached: Target has DISADV on attacks vs Mushamushi. If target rolls 1 on attack vs Mushamushi, target takes 2d6 damage.</description>
+            <description level="9">While attached: Target has DISADV on attacks vs Mushamushi. If target rolls 3 or lower on attack vs Mushamushi, target takes 2d8 damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Multiattack" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_ACTION_MULTIATTACK">
+        <supports>Mushamushi</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action, the mushamushi can make two attacks.</p>
+        </description>
+        <sheet action="Action">
+            <description>Make two attacks.</description>
+        </sheet>
+    </element>
+
+    <element name="Courageous" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_TRAIT_COURAGEOUS">
+        <supports>Mushamushi</supports>
+        <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
+        <requirements>[level:tamer:9]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion &amp; tamer)</p>
+            <p>The mushamushi has advantage on saving throws against being frightened by creatures larger than it. In addition, when the mushamushi rolls initiative and can see a hostile creature that’s larger than it, it gains 11 (2d10) temporary hit points, which last for 1 minute. While the mushamushi’s tamer is within 30 feet of the mushamushi and can see it, this benefit extends to them (against creatures larger than the tamer).</p>
+            <p>When the mushamushi’s tamer reaches 13th level in this class, the temporary hit points increase to 16 (3d10).</p>
+        </description>
+        <sheet>
+            <description>ADV on saves vs frightened by larger creatures. On initiative vs larger creature: gain 2d10 Temp HP (1 min). Tamer (within 30ft, can see) gains same benefit.</description>
+            <description level="9">ADV on saves vs frightened by larger creatures. On initiative vs larger creature: gain 3d10 Temp HP (1 min). Tamer (within 30ft, can see) gains same benefit.</description>
+        </sheet>
+    </element>
+
+    <element name="Adamantine Chitin I" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_TRAIT_ADAMANTINE_CHITIN_I">
+        <supports>Mushamushi</supports>
+        <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
+        <requirements>[level:tamer:9]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The mushamushi gains two extra Hit Dice and a +2 bonus to AC while it isn’t wearing armour. In addition, any critical hit against it becomes a normal hit.</p>
+        </description>
+        <sheet>
+            <description>Crits vs Mushamushi become normal hits.</description>
+        </sheet>
+        <rules>
+            <stat name="hit dice gained:companion:mushamushi" value="2" />
+            <stat name="mushamushi:ac bonus" value="2" />
+        </rules>
+    </element>
+
+    <element name="Adamantine Chitin II" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_TRAIT_ADAMANTINE_CHITIN_II">
+        <supports>Mushamushi</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Adamantine Chitin I</prerequisite>
+        <requirements>[level:tamer:13], ID_LT_WOK_MUSHAMUSHI_TRAIT_ADAMANTINE_CHITIN_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The mushamushi gains a +2 bonus to AC while it isn’t wearing armour. This bonus is in addition to the bonus from Adamantine Chitin I. In addition, it gains resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.</p>
+        </description>
+        <sheet>
+            <description>Resis to nonmagical B/P/S damage.</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:ac bonus" value="2" />
+        </rules>
+    </element>
+
+    <element name="Combat Prowess II" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_TRAIT_COMBAT_PROWESS_II">
+        <supports>Mushamushi</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Combat Prowess I</prerequisite>
+        <requirements>[level:tamer:13], ID_LT_WOK_MUSHAMUSHI_TRAIT_COMBAT_PROWESS_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The damage die of the mushamushi’s Kama attack increases to a d10. In addition, the extra damage dealt by its Charge trait increases to 11 (2d10).</p>
+            <p>When the mushamushi’s tamer reaches 17th level in this class, the damage die of the mushamushi’s Kama attack increases to a d12.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="mushamushi:kama:dice" inline="true" value="1d10" />
+            <stat name="mushamushi:charge:dice" inline="true" value="2d10" />
+            <stat name="mushamushi:kama:dice" inline="true" value="1d12" level="17"/>
+        </rules>
+    </element>
+
+    <element name="Hookshot III" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_ACTION_HOOKSHOT_III">
+        <supports>Mushamushi</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Hookshot II</prerequisite>
+        <requirements>[level:tamer:13], ID_LT_WOK_MUSHAMUSHI_TRAIT_HOOKSHOT_II</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (reaction)</p>
+            <p>When the mushamushi hits a creature with its Hook attack, it can use its reaction to attempt to wrap the rope around the creature’s legs in the process of pulling itself towards it. The creature must succeed on a Dexterity saving throw or be knocked prone. If the creature fails the saving throw by 5 or more, it gets tangled in the rope and its speed is reduced to 0 feet until freed. A creature can use an action to make a Strength (Athletics) check against the mushamushi’s save DC, freeing itself or a creature within its reach on a success.</p>
+            <p>Once a creature succeeds on the ability check to free itself or another creature from the rope, the mushamushi can’t use this reaction again until it spends 1 minute repairing its rope.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>On Hook hit: Target DEX Save (DC {{mushamushi:dc}}) or prone. Fail by 5+: speed 0 until freed (STR check vs DC {{mushamushi:dc}}). Usable once per creature freed, until rope repaired (1 min).</description>
+        </sheet>
+    </element>
+
+    <element name="Kaiju Killer" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_MUSHAMUSHI_ACTION_KAIJU_KILLER">
+        <supports>Mushamushi</supports>
+        <prerequisite>Prerequisite: 17th-level tamer</prerequisite>
+        <requirements>[level:tamer:17]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action, the mushamushi can unleash a devastating series of strikes on a creature within 5 feet of it, aiming for weak spots such as eyes, ears, and joints. The creature must make a Dexterity saving throw. On a failed save, it takes 9 (2d8) slashing damage for each size category larger than the mushamushi it is. If the creature is more than one size larger than the mushamushi, it also becomes blinded, deafened, and has its speed reduced to 0 feet, all of which last until the start of the mushamushi’s next turn. On a successful save, a creature takes half as much damage and suffers no additional effects.</p>
+            <p>Once the mushamushi uses this action, it can’t do so again until its tamer finishes a short or long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>Target within 5ft: DEX Save (DC {{mushamushi:dc}}). Fail: 2d8 slashing per size category larger. If &gt;1 size larger: also blinded, deafened, speed 0 (until start of Mushamushi's next turn). Half damage, no effects on save.</description>
+        </sheet>
+    </element>
+
+<!-- General Improvements -->
+    <!-- Speed Training -->
+    <element name="Speed Training" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SPEED_TRAINING_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <description>
+            <p>Increase one existing speed by 15 feet up to a maximum of 150% of the creature’s base
+                speed, rounded up to the nearest 5-foot increment.</p>
+            <p>E.g., a base speed of 30 feet can be increased to 45 feet maximum, a base speed of 25
+                feet can be increased to 40 feet, and a base speed of 20 feet to 30 feet.</p>
+        </description>
+        <sheet>
+            <description>Increase one existing speed by 15 feet (Max of 150%)</description>
+        </sheet>
+    </element>
+
+    <!-- Toughen Up -->
+    <element name="Toughen Up" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false">
+            <description>Your companion gains {{hit dice gained:companion:1}} Hit Die, increasing
+                its hit point maximum</description>
+        </sheet>
+        <rules>
+            <stat name="hit dice gained:companion:mushamushi" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:mushamushi" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:mushamushi" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:mushamushi" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:mushamushi" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:mushamushi" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (7)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:mushamushi" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (8)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:mushamushi" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (9)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:mushamushi" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (10)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:mushamushi" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (11)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:mushamushi" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (12)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:mushamushi" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (13)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:mushamushi" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (14)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:mushamushi" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (15)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:mushamushi" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (16)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:mushamushi" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (17)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:mushamushi" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (18)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:mushamushi" value="1" />
+        </rules>
+    </element>
+    <element name="Toughen Up (19)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+                Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+                companion’s Constitution modifier (minimum of 0).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="hit dice gained:companion:mushamushi" value="1" />
+        </rules>
+    </element>
+
+<!-- Ability Boost -->
+    <element name="Ability Boost" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Mushamushi Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_MUSHAMUSHI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Mushamushi Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_MUSHAMUSHI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Mushamushi Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_MUSHAMUSHI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Mushamushi Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_MUSHAMUSHI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Mushamushi Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_MUSHAMUSHI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Mushamushi Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (7)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_MUSHAMUSHI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Mushamushi Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (8)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_MUSHAMUSHI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Mushamushi Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (9)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_MUSHAMUSHI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Mushamushi Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (10)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_MUSHAMUSHI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Mushamushi Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (11)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_MUSHAMUSHI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Mushamushi Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (12)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_MUSHAMUSHI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Mushamushi Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (13)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_MUSHAMUSHI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Mushamushi Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (14)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_MUSHAMUSHI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Mushamushi Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (15)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_MUSHAMUSHI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Mushamushi Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (16)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_MUSHAMUSHI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Mushamushi Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (17)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_MUSHAMUSHI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Mushamushi Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (18)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_MUSHAMUSHI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Mushamushi Ability Boost" />
+        </rules>
+    </element>
+    <element name="Ability Boost (19)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_19_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_MUSHAMUSHI</requirements>
+        <description>
+            <p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Ability Boost" supports="Mushamushi Ability Boost" />
+        </rules>
+    </element>
+
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_MUSHAMUSHI">
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi strength becomes {{mushamushi:str}} (+{{mushamushi:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:str" value="1" /> <!-- 10 -> 11 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi strength becomes {{mushamushi:str}} (+{{mushamushi:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:str" value="1" />
+            <stat name="mushamushi:str:mod" value="1" /> <!-- 11 -> 12 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi strength becomes {{mushamushi:str}} (+{{mushamushi:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:str" value="1" /> <!-- 12 -> 13 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi strength becomes {{mushamushi:str}} (+{{mushamushi:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:str" value="1" />
+            <stat name="mushamushi:str:mod" value="1" /> <!-- 13 -> 14 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi strength becomes {{mushamushi:str}} (+{{mushamushi:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:str" value="1" /> <!-- 14 -> 15 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi strength becomes {{mushamushi:str}} (+{{mushamushi:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:str" value="1" />
+            <stat name="mushamushi:str:mod" value="1" /> <!-- 15 -> 16 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi strength becomes {{mushamushi:str}} (+{{mushamushi:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:str" value="1" /> <!-- 16 -> 17 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi strength becomes {{mushamushi:str}} (+{{mushamushi:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:str" value="1" />
+            <stat name="mushamushi:str:mod" value="1" /> <!-- 17 -> 18 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi strength becomes {{mushamushi:str}} (+{{mushamushi:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:str" value="1" /> <!-- 18 -> 19 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi strength becomes {{mushamushi:str}} (+{{mushamushi:str:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:str" value="1" />
+            <stat name="mushamushi:str:mod" value="1" /> <!-- 19 -> 20 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_MUSHAMUSHI">
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi dexterity becomes {{mushamushi:dex}} (+{{mushamushi:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:dex" value="1" /> <!-- 14 -> 15 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi dexterity becomes {{mushamushi:dex}} (+{{mushamushi:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:dex" value="1" />
+            <stat name="mushamushi:dex:mod" value="1" /> <!-- 15 -> 16 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi dexterity becomes {{mushamushi:dex}} (+{{mushamushi:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:dex" value="1" /> <!-- 16 -> 17 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi dexterity becomes {{mushamushi:dex}} (+{{mushamushi:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:dex" value="1" />
+            <stat name="mushamushi:dex:mod" value="1" /> <!-- 17 -> 18 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi dexterity becomes {{mushamushi:dex}} (+{{mushamushi:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:dex" value="1" /> <!-- 18 -> 19 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi dexterity becomes {{mushamushi:dex}} (+{{mushamushi:dex:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:dex" value="1" />
+            <stat name="mushamushi:dex:mod" value="1" /> <!-- 19 -> 20 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_MUSHAMUSHI">
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi constitution becomes {{mushamushi:con}} (+{{mushamushi:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:con" value="1" /> <!-- 14 -> 15 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi constitution becomes {{mushamushi:con}} (+{{mushamushi:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:con" value="1" />
+            <stat name="mushamushi:con:mod" value="1" /> <!-- 15 -> 16 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi constitution becomes {{mushamushi:con}} (+{{mushamushi:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:con" value="1" /> <!-- 16 -> 17 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi constitution becomes {{mushamushi:con}} (+{{mushamushi:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:con" value="1" />
+            <stat name="mushamushi:con:mod" value="1" /> <!-- 17 -> 18 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi constitution becomes {{mushamushi:con}} (+{{mushamushi:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:con" value="1" /> <!-- 18 -> 19 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi constitution becomes {{mushamushi:con}} (+{{mushamushi:con:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:con" value="1" />
+            <stat name="mushamushi:con:mod" value="1" /> <!-- 19 -> 20 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_MUSHAMUSHI">
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi intelligence becomes {{mushamushi:int}} (+{{mushamushi:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:int" value="1" />
+            <stat name="mushamushi:int:mod" value="1" /> <!-- 7 -> 8 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi intelligence becomes {{mushamushi:int}} (+{{mushamushi:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:int" value="1" /> <!-- 8 -> 9 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi intelligence becomes {{mushamushi:int}} (+{{mushamushi:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:int" value="1" />
+            <stat name="mushamushi:int:mod" value="1" /> <!-- 9 -> 10 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi intelligence becomes {{mushamushi:int}} (+{{mushamushi:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:int" value="1" /> <!-- 10 -> 11 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi intelligence becomes {{mushamushi:int}} (+{{mushamushi:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:int" value="1" />
+            <stat name="mushamushi:int:mod" value="1" /> <!-- 11 -> 12 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi intelligence becomes {{mushamushi:int}} (+{{mushamushi:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:int" value="1" /> <!-- 12 -> 13 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi intelligence becomes {{mushamushi:int}} (+{{mushamushi:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:int" value="1" />
+            <stat name="mushamushi:int:mod" value="1" /> <!-- 13 -> 14 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi intelligence becomes {{mushamushi:int}} (+{{mushamushi:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:int" value="1" /> <!-- 14 -> 15 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi intelligence becomes {{mushamushi:int}} (+{{mushamushi:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:int" value="1" />
+            <stat name="mushamushi:int:mod" value="1" /> <!-- 15 -> 16 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi intelligence becomes {{mushamushi:int}} (+{{mushamushi:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:int" value="1" /> <!-- 16 -> 17 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi intelligence becomes {{mushamushi:int}} (+{{mushamushi:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:int" value="1" />
+            <stat name="mushamushi:int:mod" value="1" /> <!-- 17 -> 18 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi intelligence becomes {{mushamushi:int}} (+{{mushamushi:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:int" value="1" /> <!-- 18 -> 19 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_13_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi intelligence becomes {{mushamushi:int}} (+{{mushamushi:int:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:int" value="1" />
+            <stat name="mushamushi:int:mod" value="1" /> <!-- 19 -> 20 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_MUSHAMUSHI">
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi wisdom becomes {{mushamushi:wis}} (+{{mushamushi:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:wis" value="1" /> <!-- 10 -> 11 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi wisdom becomes {{mushamushi:wis}} (+{{mushamushi:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:wis" value="1" />
+            <stat name="mushamushi:wis:mod" value="1" /> <!-- 11 -> 12 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi wisdom becomes {{mushamushi:wis}} (+{{mushamushi:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:wis" value="1" /> <!-- 12 -> 13 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi wisdom becomes {{mushamushi:wis}} (+{{mushamushi:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:wis" value="1" />
+            <stat name="mushamushi:wis:mod" value="1" /> <!-- 13 -> 14 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi wisdom becomes {{mushamushi:wis}} (+{{mushamushi:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:wis" value="1" /> <!-- 14 -> 15 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi wisdom becomes {{mushamushi:wis}} (+{{mushamushi:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:wis" value="1" />
+            <stat name="mushamushi:wis:mod" value="1" /> <!-- 15 -> 16 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi wisdom becomes {{mushamushi:wis}} (+{{mushamushi:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:wis" value="1" /> <!-- 16 -> 17 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi wisdom becomes {{mushamushi:wis}} (+{{mushamushi:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:wis" value="1" />
+            <stat name="mushamushi:wis:mod" value="1" /> <!-- 17 -> 18 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi wisdom becomes {{mushamushi:wis}} (+{{mushamushi:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:wis" value="1" /> <!-- 18 -> 19 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_10_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi wisdom becomes {{mushamushi:wis}} (+{{mushamushi:wis:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:wis" value="1" />
+            <stat name="mushamushi:wis:mod" value="1" /> <!-- 19 -> 20 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_MUSHAMUSHI">
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi charisma becomes {{mushamushi:cha}} (+{{mushamushi:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:cha" value="1" />
+            <stat name="mushamushi:cha:mod" value="1" /> <!-- 11 -> 12 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi charisma becomes {{mushamushi:cha}} (+{{mushamushi:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:cha" value="1" /> <!-- 12 -> 13 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi charisma becomes {{mushamushi:cha}} (+{{mushamushi:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:cha" value="1" />
+            <stat name="mushamushi:cha:mod" value="1" /> <!-- 13 -> 14 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi charisma becomes {{mushamushi:cha}} (+{{mushamushi:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:cha" value="1" /> <!-- 14 -> 15 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi charisma becomes {{mushamushi:cha}} (+{{mushamushi:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:cha" value="1" />
+            <stat name="mushamushi:cha:mod" value="1" /> <!-- 15 -> 16 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi charisma becomes {{mushamushi:cha}} (+{{mushamushi:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:cha" value="1" /> <!-- 16 -> 17 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi charisma becomes {{mushamushi:cha}} (+{{mushamushi:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:cha" value="1" />
+            <stat name="mushamushi:cha:mod" value="1" /> <!-- 17 -> 18 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi charisma becomes {{mushamushi:cha}} (+{{mushamushi:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:cha" value="1" /> <!-- 18 -> 19 -->
+        </rules>
+    </element>
+    <element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_MUSHAMUSHI">
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_MUSHAMUSHI</requirements>
+        <supports>Mushamushi Ability Boost</supports>
+        <description>
+            <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+        </description>
+        <sheet display="false">
+            <description>The Mushamushi charisma becomes {{mushamushi:cha}} (+{{mushamushi:cha:mod}})</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:cha" value="1" />
+            <stat name="mushamushi:cha:mod" value="1" /> <!-- 19 -> 20 -->
+        </rules>
+    </element>
+
+<!-- Go For the Throat -->
+    <element name="Go For the Throat" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <description>
+            <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+                weapons or unarmed strikes.</p>
+            <p>
+                <i>Your companions can each benefit from this feature once. When you reach 5th level
+                    in this class, your companions can each benefit from this feature twice. When
+                    you reach 9th level in this class, your companions can each benefit from this
+                    feature three times. This improvement does not affect attacks made with weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>
+            </description>
+        </sheet>
+        <rules>
+            <stat name="go for the throat:bonus:mushamushi" value="1" />
+        </rules>
+    </element>
+    <element name="Go For the Throat (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>[level:tamer:5],
+            ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+                weapons or unarmed strikes.</p>
+            <p>
+                <i>Your companions can each benefit from this feature once. When you reach 5th level
+                    in this class, your companions can each benefit from this feature twice. When
+                    you reach 9th level in this class, your companions can each benefit from this
+                    feature three times. This improvement does not affect attacks made with weapons.</i>
+            </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="go for the throat:bonus:mushamushi" value="1" />
+        </rules>
+    </element>
+    <element name="Go For the Throat (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_3_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>
+            [level:tamer:9],ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+                weapons or unarmed strikes.</p>
+            <p>
+                <i>Your companions can each benefit from this feature once. When you reach 5th level
+                    in this class, your companions can each benefit from this feature twice. When
+                    you reach 9th level in this class, your companions can each benefit from this
+                    feature three times. This improvement does not affect attacks made with weapons.</i>
+            </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="go for the throat:bonus:mushamushi" value="1" />
+        </rules>
+    </element>
+
+<!-- Survival Insticts -->
+    <element name="Survival Instincts" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Mushamushi" />
+        </rules>
+    </element>
+    <element name="Survival Instincts (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Mushamushi" />
+        </rules>
+    </element>
+    <element name="Survival Instincts (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Mushamushi" />
+        </rules>
+    </element>
+    <element name="Survival Instincts (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Mushamushi" />
+        </rules>
+    </element>
+    <element name="Survival Instincts (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Mushamushi" />
+        </rules>
+    </element>
+    <element name="Survival Instincts (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_6_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains proficiency in one saving throw.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Survival Instict" supports="Survival Instinct Mushamushi" />
+        </rules>
+    </element>
+
+    <element name="Mushamushi Survival Instincts: Strength" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_MUSHAMUSHI">
+        <supports>Survival Instinct Mushamushi</supports>
+        <description>
+            <p>Your companion gains proficiency in Strength Saving Throws</p>
+        </description>
+        <sheet>
+            <description>+{{mushamushi:str:save}} in Strength Saving Throws</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:str:save" value="proficiency" />
+            <stat name="mushamushi:str:save" value="mushamushi:str:mod" />
+        </rules>
+    </element>
+    <element name="Mushamushi Survival Instincts: Dexterity" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_MUSHAMUSHI">
+        <supports>Survival Instinct Mushamushi</supports>
+        <description>
+            <p>Your companion gains proficiency in Dexterity Saving Throws</p>
+        </description>
+        <sheet>
+            <description>+{{mushamushi:dex:save}} in Dexterity Saving Throws</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:dex:save" value="proficiency" />
+            <stat name="mushamushi:dex:save" value="mushamushi:dex:mod" />
+        </rules>
+    </element>
+    <element name="Mushamushi Survival Instincts: Constitution" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_MUSHAMUSHI">
+        <supports>Survival Instinct Mushamushi</supports>
+        <description>
+            <p>Your companion gains proficiency in Constitution Saving Throws</p>
+        </description>
+        <sheet>
+            <description>+{{mushamushi:con:save}} in Constitution Saving Throws</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:con:save" value="proficiency" />
+            <stat name="mushamushi:con:save" value="mushamushi:con:mod" />
+        </rules>
+    </element>
+    <element name="Mushamushi Survival Instincts: Intelligence" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_MUSHAMUSHI">
+        <supports>Survival Instinct Mushamushi</supports>
+        <description>
+            <p>Your companion gains proficiency in Intelligence Saving Throws</p>
+        </description>
+        <sheet>
+            <description>+{{mushamushi:int:save}} in Intelligence Saving Throws</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:int:save" value="proficiency" />
+            <stat name="mushamushi:int:save" value="mushamushi:int:mod" />
+        </rules>
+    </element>
+    <element name="Mushamushi Survival Instincts: Wisdom" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_MUSHAMUSHI">
+        <supports>Survival Instinct Mushamushi</supports>
+        <description>
+            <p>Your companion gains proficiency in Wisdom Saving Throws</p>
+        </description>
+        <sheet>
+            <description>+{{mushamushi:wis:save}} in Wisdom Saving Throws</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:wis:save" value="proficiency" />
+            <stat name="mushamushi:wis:save" value="mushamushi:wis:mod" />
+        </rules>
+    </element>
+    <element name="Mushamushi Survival Instincts: Charisma" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_MUSHAMUSHI">
+        <supports>Survival Instinct Mushamushi</supports>
+        <description>
+            <p>Your companion gains proficiency in Charisma Saving Throws</p>
+        </description>
+        <sheet>
+            <description>+{{mushamushi:cha:save}} in Charisma Saving Throws</description>
+        </sheet>
+        <rules>
+            <stat name="mushamushi:cha:save" value="proficiency" />
+            <stat name="mushamushi:cha:save" value="mushamushi:cha:mod" />
+        </rules>
+    </element>
+
+<!-- War Training -->
+    <element name="War Training" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+                    gained proficiency in the prerequisite lighter armour types. For example, to
+                    gain proficiency in heavy armour, you must take this improvement 3 times: light,
+                    then medium, then heavy. Work with your GM to figure out if and how a creature
+                    can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet>
+            <description>Gains proficiency with one armour type or two weapons (Requires GM discretion)</description>
+        </sheet>
+        <!-- Specific proficiency application depends on the system -->
+    </element>
+    <element name="War Training (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+                    gained proficiency in the prerequisite lighter armour types. For example, to
+                    gain proficiency in heavy armour, you must take this improvement 3 times: light,
+                    then medium, then heavy. Work with your GM to figure out if and how a creature
+                    can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>Gains proficiency with one armour type or two weapons</description>
+        </sheet>
+    </element>
+    <element name="War Training (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+                    gained proficiency in the prerequisite lighter armour types. For example, to
+                    gain proficiency in heavy armour, you must take this improvement 3 times: light,
+                    then medium, then heavy. Work with your GM to figure out if and how a creature
+                    can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>Gains proficiency with one armour type or two weapons</description>
+        </sheet>
+    </element>
+    <element name="War Training (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+                    gained proficiency in the prerequisite lighter armour types. For example, to
+                    gain proficiency in heavy armour, you must take this improvement 3 times: light,
+                    then medium, then heavy. Work with your GM to figure out if and how a creature
+                    can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>Gains proficiency with one armour type or two weapons</description>
+        </sheet>
+    </element>
+    <element name="War Training (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has gained proficiency in the prerequisite lighter armour types. For example, to gain proficiency in heavy armour, you must take this improvement 3 times: light, then medium, then heavy. Work with your GM to figure out if and how a creature can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>Gains proficiency with one armour type or two weapons</description>
+        </sheet>
+    </element>
+    <element name="War Training (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_6_MUSHAMUSHI">
+        <supports>Mushamushi</supports>
+        <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_MUSHAMUSHI</requirements>
+        <description>
+            <p>Your companion gains proficiency with one armour type or two weapons.</p>
+            <p>
+                <i>Your companion can’t gain proficiency in medium and heavy armour until it has
+                    gained proficiency in the prerequisite lighter armour types. For example, to
+                    gain proficiency in heavy armour, you must take this improvement 3 times: light,
+                    then medium, then heavy. Work with your GM to figure out if and how a creature
+                    can wield shields and weapons.</i>
+            </p>
+        </description>
+        <sheet display="false">
+            <description>Gains proficiency with one armour type or two weapons</description>
+        </sheet>
+    </element>
+</elements> <!-- Closing the root elements tag -->

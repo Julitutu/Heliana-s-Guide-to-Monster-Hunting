@@ -1,0 +1,1855 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Tatsugoi</name>
+		<description>Tatsugoi from Wrath of the Kaiju</description> <!-- Placeholder Source -->
+		<update version="0.1.0">
+			<file name="Tatsugoi.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/Tatsugoi.xml" /> <!-- Placeholder URL -->
+		</update>
+	</info>
+
+	<element name="Tatsugoi" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_TATSUGOI">
+		<supports>Familiar, Variant Familiar, Bespoke Companion</supports>
+		<description>
+			<p style="margin-bottom:-5px">
+				<em>Tiny monstrosity, chaotic neutral</em>
+			</p>
+			<h4 style="margin-top:5px" />
+			<p></p>
+			<p>
+				<strong>Armor Class</strong> 13 (natural armour)</p>
+			<p>
+				<strong>Hit Points</strong> 4 (1d4 + 2)</p>
+			<p>
+				<strong>Speed</strong> 30 ft., fly 30 ft., swim 30 ft.</p>
+			<p></p>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead>
+					<tr>
+						<td>STR</td>
+						<td>DEX</td>
+						<td>CON</td>
+						<td>INT</td>
+						<td>WIS</td>
+						<td>CHA</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>14(+2)</td>
+					<td>12(+1)</td>
+					<td>14(+2)</td>
+					<td>7(-2)</td>
+					<td>9(-1)</td>
+					<td>12(+1)</td>
+				</tr>
+			</table>
+			<p>
+				<strong>Senses</strong> passive Perception 9</p>
+			<p>
+				<strong>Languages</strong> understands Common and Draconic but can’t speak</p>
+			<p>
+				<strong>Challenge</strong> 1/8 (25 XP) <strong>Proficiency Bonus</strong> +2
+			</p>
+			<p></p>
+			<h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
+			<p>
+				<strong>
+					<em>Reckless Attack (Recharges After a Short or Long Rest).</em>
+				</strong>When the tatsugoi makes its first attack on its turn, it can decide to attack recklessly. Doing so gives it advantage on melee weapon attack rolls until the end of its turn, but attack rolls against it have advantage until its next turn.</p>
+			<p></p>
+			<h4 style="margin-top:15px">Actions</h4>
+			<p></p>
+			<p>
+				<strong>
+					<em>Horns.</em>
+				</strong>
+				<em>Melee Weapon Attack:</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 4 (1d4 + 2) piercing damage.</p>
+			<p></p>
+		</description>
+		<sheet>
+			<description>Tatsugoi ({{tatsugoi:creature}}, {{tatsugoi:size}})- Gains {{hit dice gained:companion:tatsugoi}}d{{hit dice size:tatsugoi}} hit dice. DC: {{tatsugoi:dc}}. AC: +{{tatsugoi:ac bonus}}. Horns: +{{tatsugoi:horns:hit}}, DMG: {{tatsugoi:horns:dice}} + {{tatsugoi:horns:damage}} piercing.</description>
+		</sheet>
+		<rules>
+			<!-- Grant Base Improvements -->
+			<grant type="Class Feature" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TATSUGOI" />
+
+			<!-- Base Stats -->
+			<stat name="tatsugoi:str" value="14" />
+			<stat name="tatsugoi:str:mod" value="2" />
+			<stat name="tatsugoi:dex" value="12" />
+			<stat name="tatsugoi:dex:mod" value="1" />
+			<stat name="tatsugoi:con" value="14" />
+			<stat name="tatsugoi:con:mod" value="2" />
+			<stat name="tatsugoi:int" value="7" />
+			<stat name="tatsugoi:int:mod" value="-2" />
+			<stat name="tatsugoi:wis" value="9" />
+			<stat name="tatsugoi:wis:mod" value="-1" />
+			<stat name="tatsugoi:cha" value="12" />
+			<stat name="tatsugoi:cha:mod" value="1" />
+
+			<!-- Derived Stats -->
+			<stat name="tatsugoi:size" inline="true" value="Tiny" />
+            <stat name="tatsugoi:creature" inline="true" value="Monstruosity" />
+			<stat name="hit dice size:tatsugoi" value="4" />
+			<stat name="tatsugoi:ac bonus" value="0" /> <!-- Base AC is 13 natural armor -->
+			<stat name="tatsugoi:dc" value="8" />
+			<stat name="tatsugoi:dc" value="proficiency" />
+			<stat name="tatsugoi:dc" value="tatsugoi:con:mod" /> <!-- Save DC uses CON mod -->
+
+			<!-- Attack Stats (Horns) -->
+			<stat name="tatsugoi:horns:hit" value="proficiency" />
+			<stat name="tatsugoi:horns:hit" value="tatsugoi:str:mod" /> <!-- Horns use STR -->
+			<stat name="tatsugoi:horns:hit" value="go for the throat:bonus:tatsugoi" />
+			<stat name="tatsugoi:horns:damage" value="tatsugoi:str:mod" />
+			<stat name="tatsugoi:horns:damage" value="go for the throat:bonus:tatsugoi" />
+			<stat name="tatsugoi:horns:dice" inline="true" value="1d4" />
+
+			<!-- Level-Based Stat Increases (for sheet display) -->
+			<stat name="hit dice gained:companion:tatsugoi" value="1" level="4" />
+			<stat name="hit dice gained:companion:tatsugoi" value="1" level="8" />
+			<stat name="hit dice gained:companion:tatsugoi" value="1" level="12" />
+			<stat name="hit dice gained:companion:tatsugoi" value="1" level="16" />
+			<stat name="hit dice gained:companion:tatsugoi" value="1" level="19" />
+
+            <!-- Go for the Throat Bonus Initialization -->
+            <stat name="go for the throat:bonus:tatsugoi" value="0" />
+		</rules>
+	</element>
+
+	<element name="Tatsugoi Improvement" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TATSUGOI">
+    <description>
+        <p>Whenever you gain a level beyond 1st in this class, each companion to which you are
+            bonded gains one of the following improvements.
+            Any newly gained companions receive these additional Hit Dice and improvements as if
+            you had them since your 1st level in tamer.</p>
+    </description>
+    <sheet>
+        <description>The Tatsugoi has the following Improvements:</description>
+    </sheet>
+    <rules>
+        <stat name="hit dice gained:companion:tatsugoi" value="2" />
+
+        <select type="Class Feature" name="Tatsugoi Improvement" supports="Tatsugoi" default="ID_LT_WOK_TATSUGOI_TRAIT_GROWTH_I"/>
+        <select type="Class Feature" name="Tatsugoi Improvement (Lvl 2)" supports="Tatsugoi" level="2" />
+        <select type="Class Feature" name="Tatsugoi Improvement (Lvl 3)" supports="Tatsugoi" level="3" />
+        <select type="Class Feature" name="Tatsugoi Improvement (Lvl 4)" supports="Tatsugoi" level="4" />
+        <select type="Class Feature" name="Tatsugoi Improvement (Lvl 5)" supports="Tatsugoi" level="5" />
+        <select type="Class Feature" name="Tatsugoi Improvement (Lvl 6)" supports="Tatsugoi" level="6" />
+        <select type="Class Feature" name="Tatsugoi Improvement (Lvl 7)" supports="Tatsugoi" level="7" />
+        <select type="Class Feature" name="Tatsugoi Improvement (Lvl 8)" supports="Tatsugoi" level="8" />
+        <select type="Class Feature" name="Tatsugoi Improvement (Lvl 9)" supports="Tatsugoi" level="9" />
+        <select type="Class Feature" name="Tatsugoi Improvement (Lvl 10)" supports="Tatsugoi" level="10" />
+        <select type="Class Feature" name="Tatsugoi Improvement (Lvl 11)" supports="Tatsugoi" level="11" />
+        <select type="Class Feature" name="Tatsugoi Improvement (Lvl 12)" supports="Tatsugoi" level="12" />
+        <select type="Class Feature" name="Tatsugoi Improvement (Lvl 13)" supports="Tatsugoi" level="13" />
+        <select type="Class Feature" name="Tatsugoi Improvement (Lvl 14)" supports="Tatsugoi" level="14" />
+        <select type="Class Feature" name="Tatsugoi Improvement (Lvl 15)" supports="Tatsugoi" level="15" />
+        <select type="Class Feature" name="Tatsugoi Improvement (Lvl 16)" supports="Tatsugoi" level="16" />
+        <select type="Class Feature" name="Tatsugoi Improvement (Lvl 17)" supports="Tatsugoi" level="17" />
+        <select type="Class Feature" name="Tatsugoi Improvement (Lvl 18)" supports="Tatsugoi" level="18" />
+        <select type="Class Feature" name="Tatsugoi Improvement (Lvl 19)" supports="Tatsugoi" level="19" />
+        <select type="Class Feature" name="Tatsugoi Improvement (Lvl 20)" supports="Tatsugoi" level="20" />
+    </rules>
+	</element>
+
+<!-- Tatsugoi's Improvements -->
+    <element name="Growth I" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_TATSUGOI_TRAIT_GROWTH_I">
+        <supports>Tatsugoi</supports>
+        <prerequisite>Prerequisite: Become a tamer’s companion</prerequisite>
+        <requirements>[level:tamer:1]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The tatsugoi’s size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage die of its Horns attack increases to a d6.</p>
+            <p>The tatsugoi gains this improvement when it becomes a companion; it doesn't cost an improvement.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="tatsugoi:size" inline="true" value="Small" />
+            <stat name="hit dice size:tatsugoi" value="2" /> <!-- d4 to d6 -->
+            <stat name="tatsugoi:horns:dice" inline="true" value="1d6" />
+        </rules>
+    </element>
+
+    <element name="Dragon Soul I" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_TATSUGOI_TRAIT_DRAGON_SOUL_I">
+        <supports>Tatsugoi</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The draconic spark within the tatsugoi grants it extra vigour when it begins to falter. When the tatsugoi’s hit points are reduced below half of their maximum, roll a number of d6s equal to its proficiency bonus. The tatsugoi gains temporary hit points equal to the result. Once this improvement has triggered, the tatsugoi can’t benefit from it again until its tamer finishes a long rest.</p>
+        </description>
+        <sheet usage="1/{{dragon soul:recharge}} Rest">
+            <description>When HP &lt; half max, gain Temp HP = PB d6s.</description>
+        </sheet>
+        <rules>
+            <stat name="dragon soul:recharge" inline="true" value="Long" />
+        </rules>
+    </element>
+
+    <element name="Foolhardy" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_TATSUGOI_TRAIT_FOOLHARDY">
+        <supports>Tatsugoi</supports>
+        <prerequisite>Prerequisite: 3rd-level tamer</prerequisite>
+        <requirements>[level:tamer:3]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The tatsugoi can use its Reckless Attack feature at will.</p>
+        </description>
+        <sheet>
+            <description>Can use Reckless Attack feature at will (no longer recharges).</description>
+        </sheet>
+    </element>
+
+    <element name="Growth II" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_TATSUGOI_TRAIT_GROWTH_II">
+        <supports>Tatsugoi</supports>
+        <prerequisite>Prerequisite: 5th-level tamer, Growth I</prerequisite>
+        <requirements>[level:tamer:5], ID_LT_WOK_TATSUGOI_TRAIT_GROWTH_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The tatsugoi’s size increases to Medium, its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage die of its Horns attack increases to a d8.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="tatsugoi:size" inline="true" value="Medium" />
+            <stat name="hit dice size:tatsugoi" value="2" /> <!-- d6 to d8 -->
+            <stat name="tatsugoi:horns:dice" inline="true" value="1d8" />
+        </rules>
+    </element>
+
+    <element name="Multiattack" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_TATSUGOI_ACTION_MULTIATTACK">
+        <supports>Tatsugoi</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action, the tatsugoi can make two attacks.</p>
+        </description>
+        <sheet action="Action">
+            <description>Make two attacks.</description>
+        </sheet>
+    </element>
+
+    <element name="Radiant Breath I" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_TATSUGOI_ACTION_RADIANT_BREATH_I">
+        <supports>Tatsugoi</supports>
+        <prerequisite>Prerequisite: 5th-level tamer</prerequisite>
+        <requirements>[level:tamer:5]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>As an action, the tatsugoi spews a wave of radiant energy in a 20-foot cone. Each creature in the area must make a Constitution saving throw, taking 14 (4d6) radiant damage on a failed save, or half as much damage on a successful one. Once the tatsugoi uses this action, it can’t do so again until its tamer finishes a short or long rest.</p>
+            <p>When the tatsugoi’s tamer reaches 9th level in the tamer class, this action’s damage increases to 17 (5d6).</p>
+        </description>
+        <sheet action="Action" usage="1/Short Rest">
+            <description>{{tatsugoi:radiant_breath:cone}}ft cone, DC {{tatsugoi:dc}} CON Save. Fail: {{tatsugoi:radiant_breath:damage}}d6 radiant (half on save).</description>
+        </sheet>
+        <rules>
+            <stat name="tatsugoi:radiant_breath:cone" value="20" />
+            <stat name="tatsugoi:radiant_breath:damage" value="4" />
+            <stat name="tatsugoi:radiant_breath:damage" value="1" level="9"/>
+        </rules>
+    </element>
+
+    <element name="Dragon Soul II" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_TATSUGOI_TRAIT_DRAGON_SOUL_II">
+        <supports>Tatsugoi</supports>
+        <prerequisite>Prerequisite: 9th-level tamer, Dragon Soul I</prerequisite>
+        <requirements>[level:tamer:9], ID_LT_WOK_TATSUGOI_TRAIT_DRAGON_SOUL_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The tatsugoi’s Dragon Soul I improvement can be triggered again after its tamer finishes a short or long rest. In addition, the tatsugoi’s draconic soul allows it to fight even more fiercely when injured. While the tatsugoi is below half of its maximum hit points, its attacks deal an extra 2 (1d4) radiant damage on a hit.</p>
+        </description>
+        <sheet>
+            <description>While below half HP, attacks deal +1d4 radiant damage.</description>
+        </sheet>
+        <rules>
+            <stat name="dragon soul:recharge" inline="true" value="Short" />
+        </rules>
+    </element>
+
+    <element name="Dragon Scales" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_TATSUGOI_TRAIT_DRAGON_SCALES">
+        <supports>Tatsugoi</supports>
+        <prerequisite>Prerequisite: 9th-level tamer</prerequisite>
+        <requirements>[level:tamer:9]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The tatsugoi gains a +2 bonus to AC while it isn’t wearing armour. While the tatsugoi is below half of its maximum hit points, it has resistance to radiant damage.</p>
+            <p>When the tatsugoi’s tamer reaches 13th level in the tamer class, the bonus to AC increases to +4.</p>
+        </description>
+        <sheet>
+            <description>While below half HP, gains Radiant Resistance.</description>
+        </sheet>
+        <rules>
+            <stat name="tatsugoi:ac bonus" value="2" />
+            <stat name="tatsugoi:ac bonus" value="2" level="13" /> <!-- +2 to +4 -->
+        </rules>
+    </element>
+
+    <element name="Growth III" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_TATSUGOI_TRAIT_GROWTH_III">
+        <supports>Tatsugoi</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Growth II</prerequisite>
+        <requirements>[level:tamer:13], ID_LT_WOK_TATSUGOI_TRAIT_GROWTH_II</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion)</p>
+            <p>The tatsugoi’s size increases to Large, its Hit Die size increases to a d10 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage die of its Horns attack increases to a d10.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="tatsugoi:size" inline="true" value="Large" />
+            <stat name="hit dice size:tatsugoi" value="2" /> <!-- d8 to d10 -->
+            <stat name="tatsugoi:horns:dice" inline="true" value="1d10" />
+        </rules>
+    </element>
+
+    <element name="Radiant Breath II" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_TATSUGOI_ACTION_RADIANT_BREATH_II">
+        <supports>Tatsugoi</supports>
+        <prerequisite>Prerequisite: 13th-level tamer, Radiant Breath I</prerequisite>
+        <requirements>[level:tamer:13], ID_LT_WOK_TATSUGOI_ACTION_RADIANT_BREATH_I</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (action)</p>
+            <p>The damage of the tatsugoi’s Radiant Breath I action increases to 21 (6d6), and its area increases to a 30-foot cone. In addition, the tatsugoi’s draconic spark empowers it when it emulates a dragon’s breath. When the tatsugoi uses this action, it gains temporary hit points equal to half the radiant damage dealt to one of the affected creatures.</p>
+            <p>When the tatsugoi’s tamer reaches 17th level in the tamer class, this action’s damage increases to 24 (7d6).</p>
+        </description>
+        <sheet>
+            <description>Gains Temp HP = half damage dealt to 1 target.</description>
+        </sheet>
+        <rules>
+            <stat name="tatsugoi:radiant_breath:cone" value="10" />
+            <stat name="tatsugoi:radiant_breath:damage" value="1" />
+            <stat name="tatsugoi:radiant_breath:damage" value="1" level="17"/>
+        </rules>
+    </element>
+
+    <element name="Water Form" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_TATSUGOI_ACTION_WATER_FORM">
+        <supports>Tatsugoi</supports>
+        <prerequisite>Prerequisite: 13th-level tamer</prerequisite>
+        <requirements>[level:tamer:13]</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Active (reaction)</p>
+            <p>When the tatsugoi is hit by an attack, it can use its reaction to transform its body into water. When it does so, it gains resistance against all damage types except for cold, force, lightning, and poison until the end of the current turn, including against the triggering attack.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>When hit by attack: Transform to water. Gain resistance to all damage except cold, force, lightning, poison until end of current turn (includes triggering attack).</description>
+        </sheet>
+    </element>
+
+    <element name="Dragon Soul III" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_TATSUGOI_TRAIT_DRAGON_SOUL_III">
+        <supports>Tatsugoi</supports>
+        <prerequisite>Prerequisite: 17th-level tamer, Dragon Soul II</prerequisite>
+        <requirements>[level:tamer:17], ID_LT_WOK_TATSUGOI_TRAIT_DRAGON_SOUL_II</requirements>
+        <description>
+            <p>
+                <b>Type:</b> Passive (companion), Active (action)</p>
+            <p>The tatsugoi finally achieves its full potential. Its creature type changes to Dragon, it gains blindsight out to 15 feet, and the extra radiant damage it deals with its attacks when below half of its maximum hit points increases to 3 (1d6).</p>
+            <p>In addition, it gains the two following traits:</p>
+            <ul>
+                <li><strong>Legendary Resistance.</strong> When the tatsugoi fails a saving throw, it can choose to succeed instead. (1/Long Rest)</li>
+                <li><strong>Bakuryō’s Blessing.</strong> As an action, the tatsugoi can cast the Bakuryō’s blessed blizzard* spell, requiring no material or verbal components. (1/Long Rest)</li>
+            </ul>
+            <p>Once the tatsugoi has used one of these traits, it can’t use that trait again until its tamer finishes a long rest.</p>
+            <p><em>*Bakuryō’s blessed blizzard spell details needed.</em></p>
+        </description>
+        <sheet>
+            <description>Blindsight 15ft. Radiant DMG below half HP increases to 1d6. Legendary Resistance (1/LR). Action: Cast Bakuryō’s blessed blizzard (1/LR, no M/V).</description>
+        </sheet>
+        <rules>
+            <stat name="tatsugoi:creature" inline="true" value="Dragon" />
+        </rules>
+    </element>
+
+<!-- General Improvements -->
+	<!-- Speed Training -->
+	<element name="Speed Training" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SPEED_TRAINING_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<description>
+			<p>Increase one existing speed by 15 feet up to a maximum of 150% of the creature’s base
+				speed, rounded up to the nearest 5-foot increment.</p>
+			<p>E.g., a base speed of 30 feet can be increased to 45 feet maximum, a base speed of 25
+				feet can be increased to 40 feet, and a base speed of 20 feet to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>Increase one existing speed by 15 feet (Max of 150%)</description>
+		</sheet>
+	</element>
+
+	<!-- Toughen Up -->
+	<element name="Toughen Up" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false">
+			<description>Your companion gains {{hit dice gained:companion:1}} Hit Die, increasing
+				its hit point maximum</description>
+		</sheet>
+		<rules>
+			<stat name="hit dice gained:companion:tatsugoi" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatsugoi" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_2_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatsugoi" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_3_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatsugoi" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_4_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatsugoi" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_5_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatsugoi" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (7)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_6_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatsugoi" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (8)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_7_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatsugoi" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (9)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_8_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatsugoi" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (10)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_9_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatsugoi" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (11)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_10_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatsugoi" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (12)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_11_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatsugoi" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (13)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_12_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatsugoi" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (14)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_13_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatsugoi" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (15)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_14_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatsugoi" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (16)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_15_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatsugoi" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (17)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_16_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatsugoi" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (18)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_17_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatsugoi" value="1" />
+		</rules>
+	</element>
+	<element name="Toughen Up (19)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_19_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TOUGHEN_UP_18_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains an additional Hit Die, increasing its hit point maximum.
+				Increase your companion’s hit point maximum by rolling this Hit Die and adding your
+				companion’s Constitution modifier (minimum of 0).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hit dice gained:companion:tatsugoi" value="1" />
+		</rules>
+	</element>
+
+<!-- Ability Boost -->
+	<element name="Ability Boost" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatsugoi Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_TATSUGOI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatsugoi Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_2_TATSUGOI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatsugoi Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_3_TATSUGOI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatsugoi Ability Boost" />
+		</rules>
+	</element>
+	<element name="Ability Boost (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_4_TATSUGOI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatsugoi Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_5_TATSUGOI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatsugoi Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (7)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_6_TATSUGOI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatsugoi Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (8)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_7_TATSUGOI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatsugoi Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (9)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_8_TATSUGOI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatsugoi Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (10)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_9_TATSUGOI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatsugoi Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (11)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_10_TATSUGOI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatsugoi Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (12)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_11_TATSUGOI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatsugoi Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (13)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_12_TATSUGOI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatsugoi Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (14)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_13_TATSUGOI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatsugoi Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (15)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_14_TATSUGOI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatsugoi Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (16)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_15_TATSUGOI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatsugoi Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (17)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_16_TATSUGOI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatsugoi Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (18)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_17_TATSUGOI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatsugoi Ability Boost" />
+		</rules>
+	</element>
+    <element name="Ability Boost (19)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_19_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_18_TATSUGOI</requirements>
+		<description>
+			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Boost" supports="Tatsugoi Ability Boost" />
+		</rules>
+	</element>
+
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_TATSUGOI">
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi strength becomes {{tatsugoi:str}} (+{{tatsugoi:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:str" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi strength becomes {{tatsugoi:str}} (+{{tatsugoi:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:str" value="1" />
+        <stat name="tatsugoi:str:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi strength becomes {{tatsugoi:str}} (+{{tatsugoi:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:str" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi strength becomes {{tatsugoi:str}} (+{{tatsugoi:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:str" value="1" />
+        <stat name="tatsugoi:str:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi strength becomes {{tatsugoi:str}} (+{{tatsugoi:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:str" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Strength)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi strength becomes {{tatsugoi:str}} (+{{tatsugoi:str:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:str" value="1" />
+        <stat name="tatsugoi:str:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_TATSUGOI">
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi dexterity becomes {{tatsugoi:dex}} (+{{tatsugoi:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:dex" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi dexterity becomes {{tatsugoi:dex}} (+{{tatsugoi:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:dex" value="1" />
+        <stat name="tatsugoi:dex:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi dexterity becomes {{tatsugoi:dex}} (+{{tatsugoi:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:dex" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi dexterity becomes {{tatsugoi:dex}} (+{{tatsugoi:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:dex" value="1" />
+        <stat name="tatsugoi:dex:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi dexterity becomes {{tatsugoi:dex}} (+{{tatsugoi:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:dex" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi dexterity becomes {{tatsugoi:dex}} (+{{tatsugoi:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:dex" value="1" />
+        <stat name="tatsugoi:dex:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi dexterity becomes {{tatsugoi:dex}} (+{{tatsugoi:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:dex" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Dexterity)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi dexterity becomes {{tatsugoi:dex}} (+{{tatsugoi:dex:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:dex" value="1" />
+        <stat name="tatsugoi:dex:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_TATSUGOI">
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi constitution becomes {{tatsugoi:con}} (+{{tatsugoi:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:con" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi constitution becomes {{tatsugoi:con}} (+{{tatsugoi:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:con" value="1" />
+        <stat name="tatsugoi:con:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi constitution becomes {{tatsugoi:con}} (+{{tatsugoi:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:con" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi constitution becomes {{tatsugoi:con}} (+{{tatsugoi:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:con" value="1" />
+        <stat name="tatsugoi:con:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi constitution becomes {{tatsugoi:con}} (+{{tatsugoi:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:con" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Constitution)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi constitution becomes {{tatsugoi:con}} (+{{tatsugoi:con:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:con" value="1" />
+        <stat name="tatsugoi:con:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_TATSUGOI">
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi intelligence becomes {{tatsugoi:int}} (+{{tatsugoi:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:int" value="1" />
+        <stat name="tatsugoi:int:mod" value="1" /> <!-- 7 -> 8 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi intelligence becomes {{tatsugoi:int}} (+{{tatsugoi:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:int" value="1" /> <!-- 8 -> 9 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi intelligence becomes {{tatsugoi:int}} (+{{tatsugoi:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:int" value="1" />
+        <stat name="tatsugoi:int:mod" value="1" /> <!-- 9 -> 10 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi intelligence becomes {{tatsugoi:int}} (+{{tatsugoi:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:int" value="1" /> <!-- 10 -> 11 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi intelligence becomes {{tatsugoi:int}} (+{{tatsugoi:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:int" value="1" />
+        <stat name="tatsugoi:int:mod" value="1" /> <!-- 11 -> 12 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi intelligence becomes {{tatsugoi:int}} (+{{tatsugoi:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:int" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi intelligence becomes {{tatsugoi:int}} (+{{tatsugoi:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:int" value="1" />
+        <stat name="tatsugoi:int:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi intelligence becomes {{tatsugoi:int}} (+{{tatsugoi:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:int" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi intelligence becomes {{tatsugoi:int}} (+{{tatsugoi:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:int" value="1" />
+        <stat name="tatsugoi:int:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi intelligence becomes {{tatsugoi:int}} (+{{tatsugoi:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:int" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi intelligence becomes {{tatsugoi:int}} (+{{tatsugoi:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:int" value="1" />
+        <stat name="tatsugoi:int:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi intelligence becomes {{tatsugoi:int}} (+{{tatsugoi:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:int" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Intelligence)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_13_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi intelligence becomes {{tatsugoi:int}} (+{{tatsugoi:int:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:int" value="1" />
+        <stat name="tatsugoi:int:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_TATSUGOI">
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi wisdom becomes {{tatsugoi:wis}} (+{{tatsugoi:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:wis" value="1" />
+        <stat name="tatsugoi:wis:mod" value="1" /> <!-- 9 -> 10 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi wisdom becomes {{tatsugoi:wis}} (+{{tatsugoi:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:wis" value="1" /> <!-- 10 -> 11 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi wisdom becomes {{tatsugoi:wis}} (+{{tatsugoi:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:wis" value="1" />
+        <stat name="tatsugoi:wis:mod" value="1" /> <!-- 11 -> 12 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi wisdom becomes {{tatsugoi:wis}} (+{{tatsugoi:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:wis" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi wisdom becomes {{tatsugoi:wis}} (+{{tatsugoi:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:wis" value="1" />
+        <stat name="tatsugoi:wis:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi wisdom becomes {{tatsugoi:wis}} (+{{tatsugoi:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:wis" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi wisdom becomes {{tatsugoi:wis}} (+{{tatsugoi:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:wis" value="1" />
+        <stat name="tatsugoi:wis:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi wisdom becomes {{tatsugoi:wis}} (+{{tatsugoi:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:wis" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi wisdom becomes {{tatsugoi:wis}} (+{{tatsugoi:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:wis" value="1" />
+        <stat name="tatsugoi:wis:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_10_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi wisdom becomes {{tatsugoi:wis}} (+{{tatsugoi:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:wis" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Wisdom)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_11_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_10_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi wisdom becomes {{tatsugoi:wis}} (+{{tatsugoi:wis:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:wis" value="1" />
+        <stat name="tatsugoi:wis:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_TATSUGOI">
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi charisma becomes {{tatsugoi:cha}} (+{{tatsugoi:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:cha" value="1" /> <!-- 12 -> 13 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi charisma becomes {{tatsugoi:cha}} (+{{tatsugoi:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:cha" value="1" />
+        <stat name="tatsugoi:cha:mod" value="1" /> <!-- 13 -> 14 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi charisma becomes {{tatsugoi:cha}} (+{{tatsugoi:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:cha" value="1" /> <!-- 14 -> 15 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi charisma becomes {{tatsugoi:cha}} (+{{tatsugoi:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:cha" value="1" />
+        <stat name="tatsugoi:cha:mod" value="1" /> <!-- 15 -> 16 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi charisma becomes {{tatsugoi:cha}} (+{{tatsugoi:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:cha" value="1" /> <!-- 16 -> 17 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi charisma becomes {{tatsugoi:cha}} (+{{tatsugoi:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:cha" value="1" />
+        <stat name="tatsugoi:cha:mod" value="1" /> <!-- 17 -> 18 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi charisma becomes {{tatsugoi:cha}} (+{{tatsugoi:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:cha" value="1" /> <!-- 18 -> 19 -->
+    </rules>
+</element>
+<element name="Ability Boost (Charisma)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_TATSUGOI">
+    <requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_TATSUGOI</requirements>
+    <supports>Tatsugoi Ability Boost</supports>
+    <description>
+        <p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
+    </description>
+    <sheet display="false">
+        <description>The Tatsugoi charisma becomes {{tatsugoi:cha}} (+{{tatsugoi:cha:mod}})</description>
+    </sheet>
+    <rules>
+        <stat name="tatsugoi:cha" value="1" />
+        <stat name="tatsugoi:cha:mod" value="1" /> <!-- 19 -> 20 -->
+    </rules>
+</element>
+
+<!-- Go For the Throat -->
+	<element name="Go For the Throat" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="go for the throat:bonus:tatsugoi" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>[level:tamer:5],
+			ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:tatsugoi" value="1" />
+		</rules>
+	</element>
+	<element name="Go For the Throat (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_3_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>
+			[level:tamer:9],ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_GO_FOR_THE_THROAT_2_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains a +1 bonus to its attack and damage rolls made with its natural
+				weapons or unarmed strikes.</p>
+			<p>
+				<i>Your companions can each benefit from this feature once. When you reach 5th level
+					in this class, your companions can each benefit from this feature twice. When
+					you reach 9th level in this class, your companions can each benefit from this
+					feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="go for the throat:bonus:tatsugoi" value="1" />
+		</rules>
+	</element>
+
+<!-- Survival Insticts -->
+	<element name="Survival Instincts" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Tatsugoi" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Tatsugoi" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_2_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Tatsugoi" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_3_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Tatsugoi" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_4_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Tatsugoi" />
+		</rules>
+	</element>
+	<element name="Survival Instincts (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_6_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_5_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains proficiency in one saving throw.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct Tatsugoi" />
+		</rules>
+	</element>
+
+	<element name="Tatsugoi Survival Instincts: Strength" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_TATSUGOI">
+		<supports>Survival Instinct Tatsugoi</supports>
+		<description>
+			<p>Your companion gains proficiency in Strength Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{tatsugoi:str:save}} in Strength Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="tatsugoi:str:save" value="proficiency" />
+            <stat name="tatsugoi:str:save" value="tatsugoi:str:mod" />
+        </rules>
+	</element>
+	<element name="Tatsugoi Survival Instincts: Dexterity" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_TATSUGOI">
+		<supports>Survival Instinct Tatsugoi</supports>
+		<description>
+			<p>Your companion gains proficiency in Dexterity Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{tatsugoi:dex:save}} in Dexterity Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="tatsugoi:dex:save" value="proficiency" />
+            <stat name="tatsugoi:dex:save" value="tatsugoi:dex:mod" />
+        </rules>
+	</element>
+	<element name="Tatsugoi Survival Instincts: Constitution" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_TATSUGOI">
+		<supports>Survival Instinct Tatsugoi</supports>
+		<description>
+			<p>Your companion gains proficiency in Constitution Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{tatsugoi:con:save}} in Constitution Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="tatsugoi:con:save" value="proficiency" />
+            <stat name="tatsugoi:con:save" value="tatsugoi:con:mod" />
+        </rules>
+	</element>
+	<element name="Tatsugoi Survival Instincts: Intelligence" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_TATSUGOI">
+		<supports>Survival Instinct Tatsugoi</supports>
+		<description>
+			<p>Your companion gains proficiency in Intelligence Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{tatsugoi:int:save}} in Intelligence Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="tatsugoi:int:save" value="proficiency" />
+            <stat name="tatsugoi:int:save" value="tatsugoi:int:mod" />
+        </rules>
+	</element>
+	<element name="Tatsugoi Survival Instincts: Wisdom" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_TATSUGOI">
+		<supports>Survival Instinct Tatsugoi</supports>
+		<description>
+			<p>Your companion gains proficiency in Wisdom Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{tatsugoi:wis:save}} in Wisdom Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="tatsugoi:wis:save" value="proficiency" />
+            <stat name="tatsugoi:wis:save" value="tatsugoi:wis:mod" />
+        </rules>
+	</element>
+	<element name="Tatsugoi Survival Instincts: Charisma" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_TATSUGOI">
+		<supports>Survival Instinct Tatsugoi</supports>
+		<description>
+			<p>Your companion gains proficiency in Charisma Saving Throws</p>
+		</description>
+		<sheet>
+			<description>+{{tatsugoi:cha:save}} in Charisma Saving Throws</description>
+		</sheet>
+        <rules>
+            <stat name="tatsugoi:cha:save" value="proficiency" />
+            <stat name="tatsugoi:cha:save" value="tatsugoi:cha:mod" />
+        </rules>
+	</element>
+
+<!-- War Training -->
+	<element name="War Training" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet>
+			<description>Gains proficiency with one armour type or two weapons (Requires GM discretion)</description>
+		</sheet>
+		<!-- Specific proficiency application depends on the system -->
+	</element>
+	<element name="War Training (2)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (3)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (4)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (5)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+	<element name="War Training (6)" type="Class Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_6_TATSUGOI">
+		<supports>Tatsugoi</supports>
+		<requirements>ID_LT_WOK_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_TATSUGOI</requirements>
+		<description>
+			<p>Your companion gains proficiency with one armour type or two weapons.</p>
+			<p>
+				<i>Your companion can’t gain proficiency in medium and heavy armour until it has
+					gained proficiency in the prerequisite lighter armour types. For example, to
+					gain proficiency in heavy armour, you must take this improvement 3 times: light,
+					then medium, then heavy. Work with your GM to figure out if and how a creature
+					can wield shields and weapons.</i>
+			</p>
+		</description>
+		<sheet display="false">
+			<description>Gains proficiency with one armour type or two weapons</description>
+		</sheet>
+	</element>
+</elements> <!-- Closing the root elements tag -->
