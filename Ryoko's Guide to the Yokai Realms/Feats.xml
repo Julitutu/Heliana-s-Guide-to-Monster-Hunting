@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats (Wrath of the Kaiju)</name>
+		<description>Feats from Ryoko's Guide to the Yokai Realms - Wrath of the Kaiju.</description>
+		<update version="0.1.0">
+			<file name="Feats.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/Feats.xml" />
+		</update>
+	</info>
+
+	<element name="Beguiling Wordsmith" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_BEGUILING_WORDSMITH">
+		<description>
+			<p>Your time among the charming and eloquent members of the Silk Purse has taught you the art of persuasive communication. You gain the following benefits:</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You gain proficiency in the Persuasion skill, and become fluent in one language of your choice.</li>
+				<li>Your words are hypnotic, dancing with promises of elegance and wealth. Over the course of 1 minute interacting with a non-hostile creature, you can attempt to charm them. That creature must succeed on a Wisdom saving throw (DC 8 + your Charisma modifier + your proficiency bonus) or be charmed by you for 1 hour. Creatures easily tempted by promises of status and wealth (at the GM’s discretion) have disadvantage on this saving throw. If a creature succeeds on this saving throw, it becomes immune to this effect from you, recognising your attempt to influence it.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Over 1 min interacting with a non-hostile creature, you can attempt to charm them (Wis save DC {{beguiling wordsmith:dc}}) for 1 hour. Creatures easily tempted by status/wealth have disadvantage. Success makes them immune, recognising your attempt to influence it.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Beguiling Wordsmith)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<select type="Language" name="Language (Beguiling Wordsmith)" supports="Standard||Exotic" />
+			<stat name="beguiling wordsmith:dc" value="8" />
+			<stat name="beguiling wordsmith:dc" value="proficiency" />
+			<stat name="beguiling wordsmith:dc" value="charisma:modifier" />
+		</rules>
+	</element>
+
+	<element name="Blessing of the Colossus" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_BLESSING_OF_THE_COLOSSUS">
+		<prerequisite>8th Level</prerequisite>
+		<requirements>[level:8]</requirements>
+		<description>
+			<p>You have received a boon of incredible power from a giant or kaiju, allowing you to increase your size. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Strength or Constitution score by 1, to a maximum of 20.</li>
+				<li>As an action, you can invoke the power of a colossus to grow immensely. Your size becomes Large, if there is room and you aren’t already larger, and your equipment increases in size to match. Your reach increases by 5 feet, your walking speed increases by 10 feet, and your weapon attacks deal an additional 1d8 damage on a hit. These changes last for 1 minute, or until you fall unconscious. Once you use this action, you cannot do so again until you finish a long rest.</li>
+			</ul>
+		</description>
+		<sheet usage="1/Long Rest" action="Action">
+			<description>You can invoke the power of a colossus to grow immensely. Your size becomes Large, if there is room and you aren’t already larger, and your equipment increases in size to match. Your reach increases by 5 feet, your walking speed increases by 10 feet, and your weapon attacks deal an additional 1d8 damage on a hit. These changes last for 1 minute, or until you fall unconscious.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Blessing of the Colossus)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION" />
+		</rules>
+	</element>
+
+	<element name="Expert Grappler" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_EXPERT_GRAPPLER">
+		<description>
+			<p>You are a master of grappling, able to use your size and strength to devastating effect in close-quarters combat. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Strength score by 1, to a maximum of 20.</li>
+				<li>You have advantage on ability checks and saving throws to avoid being moved against your will or knocked prone.</li>
+				<li>Creatures can’t have advantage on Athletics or Acrobatics checks to escape your grapples.</li>
+				<li>Creatures grappled by you have disadvantage on ranged weapon attacks and spell attacks that require somatic components.</li>
+				<li>When a creature within your reach provokes an opportunity attack from you, you can use your reaction to attempt to grapple the provoking creature.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You gain the following benefits&#13;
+				• Advantage on checks/saves to avoid being moved/prone.&#13;
+				• Creatures can’t have advantage to escape your grapples.&#13;
+				• Creatures grappled by you have disadvantage on ranged weapon attacks and spell attacks (somatic).&#13;
+				• Reaction: When a creature provokes an OA, can attempt to grapple it instead.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" />
+		</rules>
+	</element>
+
+	<element name="Finisher" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_FINISHER">
+		<description>
+			<p>With lethal precision, you are a master of delivering killing blows, and revel in the destruction of your enemies. You gain the following benefits:</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>When you score a critical hit against a creature, or hit a prone creature with an attack roll, you deal extra force damage to it equal to twice your proficiency bonus.</li>
+				<li>When you reduce a creature to 0 hit points, you can use your reaction to gain temporary hit points equal to twice that creature’s Challenge Rating or level (minimum of 1). You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>On crit or hitting prone creature, deal +{{finisher:damage}} force damage.
+			Reaction ({{proficiency}}/SR): When reducing creature to 0 HP, gain temp HP = 2x CR/level (min 1).</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Finisher)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<stat name="finisher:damage" value="proficiency" />
+			<stat name="finisher:damage" value="proficiency" />
+            <stat name="finisher:reactionuses" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Hanabi Tinkerer" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_HANABI_TINKERER">
+		<description>
+			<p>Under the tutelage of the College of Hanabi, or through study of a treatise on their technique, you have developed the knowledge to infuse objects with simple magic. You gain the following benefits:</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You gain proficiency in the Arcana skill and with one tool of your choice.</li>
+				<li>At the end of a long rest, you can infuse one Tiny or Small nonmagical object you touch with magic. That object becomes magical, and gains one of the following effects of your choice:
+					<ul>
+						<li><b>Light.</b> As a bonus action, a creature holding the object can cause it to shed bright light in a 20-foot radius and dim light for a further 20 feet. The light is coloured as you like when you infuse the object. Completely covering the object with something opaque blocks the light. A creature holding the object can use a bonus action to quench the light.</li>
+						<li><b>Sound.</b> As an action when you are within 30 feet of the object, you can cause it to emit a sound, ranging in volume from a whisper to a scream. It can’t replicate words, but it can replicate a scream of pain, a dragon’s roar, incoherent murmuring, the shattering of glass, birdsong, or other noises. The sounds can last for up to six seconds, and can be continuous, or you can make discrete sounds at different times over that time.</li>
+						<li><b>Boom.</b> As an action when you are within 60 feet of the object, you can cause it to explode, destroying the object in the process. Each creature within 5 feet of the object must make a Dexterity saving throw (DC8 + twice your proficiency bonus) taking 2d6 fire damage on a failed save, or half as much damage on a successful one. When you infuse the item, you can choose for the explosion to be silent, or emit a tremendous boom that can be heard up to 500 feet away.</li>
+					</ul>
+				</li>
+			</ul>
+			<p class="indent">The object you infuse with magic remains magical until it is destroyed, or until you use this feat to infuse an item again.</p>
+		</description>
+		<sheet usage="1 Infusion/Long Rest">
+			<description>Gain proficiency in Arcana and one tool.&#13;
+			At end of a long rest, infuse 1 Tiny/Small nonmagical object with one effect (Light, Sound, or Boom). Magical until destroyed or new infusion.&#13;
+			• Light: BA for 20ft bright/20ft dim light.&#13;
+			• Sound: Action (within 30ft) for 6s sound (whisper to scream).&#13;
+			• Boom: Action (within 60ft) to explode. Dex save (DC {{hanabi tinkerer:boom:dc}}) vs 2d6 fire (Half on success) (5ft radius). Silent or loud boom (500 feet).</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Hanabi Tinkerer)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<select type="Proficiency" name="Tool Proficiency (Hanabi Tinkerer)" supports="Tool" />
+			<stat name="hanabi tinkerer:boom:dc" value="8" />
+			<stat name="hanabi tinkerer:boom:dc" value="proficiency" />
+			<stat name="hanabi tinkerer:boom:dc" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Hakuryū River Conduit" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_HAKURYU_RIVER_CONDUIT">
+		<description>
+			<p>You have studied the thrumming magic of the Hakuryū river, a coiling roil of magic that flows through the Ryo Valley. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>
+				<li>You learn the <i>ice moon*</i> spell, and can cast it a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest. You can also cast it with any spell slots you have. The ability score you increase with this feat is your spellcasting ability when you cast <i>ice moon</i> using this feat.</li>
+				<li>Over the course of 10 minutes, you can animate an area of water within 10 feet of you that fits within a 5-foot cube, turning it into a quasi-sentient creature. It uses the giant crab, pony, or mule stat block (your choice), except it is an Elemental, not a Beast, and it can move across water as though it were solid ground. The creature obeys your verbal commands (no action required by you), and disintegrates back into water after a number of hours equal to your proficiency bonus, if it falls to 0 hit points, or if you dismiss it as an action. Once you create a creature with this feat, you cannot do so again until you finish a long rest.</li>
+			</ul>
+			<p class="ft"><i>*Spell from Ryoko's Guide to the Yokai Realms</i></p>
+		</description>
+		<sheet>
+			<description>Learn Ice Moon spell. Cast {{proficiency}} times/LR without slot, or with slots (uses chosen ASI stat).
+			10 min: Animate 5ft cube of water into Elemental (Giant Crab, Pony, or Mule stats). Obeys commands. Lasts {{proficiency}} hours, 0 HP, or dismissed. 1/LR.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Hakuryū River Conduit)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<grant type="Spell" id="ID_RGTTYR_SPELL_ICE_MOON" />
+		</rules>
+	</element>
+
+    <element name="Historiomancer" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_HISTORIOMANCER">
+		<description>
+			<p>You are a member of the Chroniclers, or have studied alongside them in the art of historiomancy, granting you the following benefits:</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You gain proficiency in the History skill.</li>
+				<li>Over the course of 10 minutes without moving, you can focus on the area within 30 feet of yourself, as if concentrating on a spell. At the end of the 10 minutes, you identify any objects within that area that are magical or cursed. You also gain a mental image of events that occurred in that area within the last 24 hours, including creatures that entered or left, objects they interacted with, and actions they took. These visions do not include sound or other sensory information. Creatures and objects obscured from divination magic appear as voids of darkness, and you are unable to identify their size or shape. Once you use this benefit, you cannot do so again until you finish a short or long rest.</li>
+			</ul>
+			<p class="indent">When you perform this ritual, you can extend it into a much deeper meditation in order to peer further into an area’s history. If you concentrate for 8 hours rather than 10 minutes, you gain a mental image of all events that occurred in that area within the last month. You can repeat this 8 hour ritual daily to delve deeper into the past. For each consecutive day you repeat the ritual, you look one month further back in time.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>10 min focus (conc.): Identify magic/cursed objects in 30ft. See mental images of events in area (last 24hrs, no sound). Obscured creatures/objects are voids.&#13;
+			Extended Ritual: 8 hours conc. for visions of last month. Repeat daily to go 1 month further back per day.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Historiomancer)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+		</rules>
+	</element>
+
+	<element name="Horn Pit Gladiator" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_HORN_PIT_GLADIATOR">
+		<description>
+			<p>You have honed your skills in the brutal Horn Pits of Kihōsō City. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Strength, Dexterity, or Constitution score by 1, to a maximum of 20.</li>
+				<li>When you hit a creature with an attack roll, you can mark that creature as your target for single combat for 1 minute. You can only have one creature marked in this way at a time, and you can mark creatures in this way a number of times equal to your proficiency bonus. You regain all expended uses of this feature when you finish a long rest. Marking a creature grants the following benefits:
+					<ul>
+						<li>If the marked creature attacks a creature other than you while it is within your reach, you can use your reaction to make a weapon attack against the marked creature, with advantage.</li>
+						<li>At the end of the marked creature’s turn, you can use your reaction to move up to your speed towards it, ending your movement as close to it as possible.</li>
+						<li>If you reduce the marked creature to 0 hit points, you gain temporary hit points equal to twice your proficiency bonus.</li>
+					</ul>
+				</li>
+			</ul>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you hit a creature, mark it for 1 min (1 target at a time).&#13;
+			• Marked attacks other in reach: Reaction attack with advantage.&#13;
+			• End of marked's turn: Reaction move speed towards it.&#13;
+			• Reduce marked to 0 HP: Gain {{horn pit gladiator:temphp}} temp HP.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Horn Pit Gladiator)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION" />
+			<stat name="horn pit gladiator:temphp" value="proficiency" />
+			<stat name="horn pit gladiator:temphp" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Ironspire Veteran" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_IRONSPIRE_VETERAN">
+		<description>
+			<p>You have trained in the ways of the ironspire warriors, who cut their teeth in fierce battles with mighty, flying ironwyrms. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+				<li>Attacking at long range doesn’t impose disadvantage on your ranged weapon attack rolls.</li>
+				<li>The first time you hit a Huge or smaller airborne creature with an attack roll using a thrown or melee weapon on your turn, that creature must succeed on a Strength saving throw or fall prone (DC = 8 + the modifier of the ability you increases with this feat + your proficiency bonus).</li>
+				<li>When you score a critical hit against an airborne creature, that creature falls prone.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description>No disadvantage at long range (ranged weapons).&#13;
+			First hit on Huge/smaller airborne creature (thrown/melee): Str save (DC {{ironspire veteran:dc}}) or prone.&#13;
+			Crit on airborne creature: Falls prone.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Ironspire Veteran Ability Choice" supports="ID_LT_WOK_FEAT_FEATURE_IRONSPIRE_VETERAN_STRENGTH|ID_LT_WOK_FEAT_FEATURE_IRONSPIRE_VETERAN_DEXTERITY" />
+		</rules>
+	</element>
+
+	<element name="Ironspire Veteran (Strength)" type="Feat Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_FEATURE_IRONSPIRE_VETERAN_STRENGTH">
+		<compendium display="false" />
+		<supports>ID_LT_WOK_FEAT_FEATURE_IRONSPIRE_VETERAN_STRENGTH</supports>
+		<description><p>No disadvantage at long range (ranged weapons).&#13;
+			First hit on Huge/smaller airborne creature (thrown/melee): Str save (DC {{ironspire veteran:dc}}) or prone.&#13;
+			Crit on airborne creature: Falls prone.</p></description>
+		<rules>
+			<stat name="strength" value="1" alt="Ironspire Veteran" />
+			<stat name="ironspire veteran:dc" value="8" />
+			<stat name="ironspire veteran:dc" value="strength:modifier" />
+			<stat name="ironspire veteran:dc" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Ironspire Veteran (Dexterity)" type="Feat Feature" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_FEATURE_IRONSPIRE_VETERAN_DEXTERITY">
+		<compendium display="false" />
+		<supports>ID_LT_WOK_FEAT_FEATURE_IRONSPIRE_VETERAN_DEXTERITY</supports>
+		<description><p>No disadvantage at long range (ranged weapons).&#13;
+			First hit on Huge/smaller airborne creature (thrown/melee): Str save (DC {{ironspire veteran:dc}}) or prone.&#13;
+			Crit on airborne creature: Falls prone.</p></description>
+		<rules>
+			<stat name="dexterity" value="1" alt="Ironspire Veteran" />
+			<stat name="ironspire veteran:dc" value="8" />
+			<stat name="ironspire veteran:dc" value="dexterity:modifier" />
+			<stat name="ironspire veteran:dc" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Kaiju Brawler" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_KAIJU_BRAWLER">
+		<prerequisite>Expert Grappler and Blessing of the Colossus Feats</prerequisite>
+		<requirements>ID_LT_WOK_FEAT_EXPERT_GRAPPLER,ID_LT_WOK_FEAT_BLESSING_OF_THE_COLOSSUS</requirements>
+		<description>
+			<p>The magic of your boon is magnified, allowing you the power to grapple with gods. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Strength score by 1, to a maximum of 20.</li>
+				<li>When you use the Blessing of the Colossus feat to increase your size, you grow to Huge if there is room, and your weapon attacks deal an additional 1d8 damage on a hit.</li>
+				<li>While you are Huge or larger, if you use the Attack action on your turn to shove a creature and knock it prone, you can make one weapon attack against that creature as a bonus action on that turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Blessing of the Colossus: Grow to Huge, weapon attacks +1d8 damage.&#13;
+			While Huge+: If Attack action shoves prone, BA weapon attack vs creature.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" />
+		</rules>
+	</element>
+
+	<element name="Paragon of the Kirin" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_PARAGON_OF_THE_KIRIN">
+		<description>
+			<p>You are a member of the Heirs of Kirin, or have closely observed their ways and adopted their philosophy. You are adept at restoring others with healing kits, potions, and salves. You gain the following benefits:</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You gain proficiency in the Medicine skill.</li>
+				<li>You can drink a potion, or administer a potion to an ally, as a bonus action.</li>
+				<li>When you use an object, such as a potion, and would normally roll one or more dice to restore hit points to a creature, you instead use the highest number possible for each die. For example, instead of restoring 2d4 + 2 hit points with a potion of healing, you restore 10.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Drink/administer potion as BA.&#13;
+			When using an object to restore HP, use max possible for each die.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Paragon of the Kirin)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+		</rules>
+	</element>
+
+	<element name="Pondermoss Wanderer" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_PONDERMOSS_WANDERER">
+		<description>
+			<p>You have spent time in the Pondermoss Weald, and carry a fragment of the power of the forest with you. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>
+				<li>You gain proficiency in the Nature skill.</li>
+				<li>You learn the <i>speak with plants</i> spell, and can cast it once, regaining the ability to do so when you finish a long rest. You can also cast it with any spell slots you have of 3rd level or higher.</li>
+				<li>Over the course of 10 minutes, you can imbue one Tiny or Small plant you touch with limited sentience. That plant magically transforms into an awakened shrub for the next 24 hours, after which time it reverts to being a normal plant. Once you imbue a plant in this way, you can’t do so again until you finish a long rest. The awakened shrub is friendly towards you. Absent from your commands, it defends itself only. If you are within 10 miles of the plant, you can enter a trance as an action. During this trance, you can see and hear from the plant as if you were located where it is. While you are using your senses at the plant’s location, you are blinded and deafened in regard to your own surroundings. The trance lasts until you dismiss it (no action required), you take damage, you are incapacitated, or the shrub reverts back to a normal plant.</li>
+			</ul>
+		</description>
+		<sheet usage="Speak with Plants 1/LR, Imbue Plant 1/LR">
+			<description>Learn Speak with Plants (1/LR free, or slots).&#13;
+			10 min: Imbue Tiny/Small plant into Awakened Shrub for 24hrs. Friendly, defends self.&#13;
+			Trance (Action, within 10 miles): See/hear from shrub. Blinded/deafened to own surroundings. Ends on dismiss, damage, incapacitated, or shrub reverts.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Pondermoss Wanderer)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_PLANTS" />
+		</rules>
+	</element>
+
+	<element name="Rising Blossom Sectary" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_RISING_BLOSSOM_SECTARY">
+		<description>
+			<p>You are a courageous member of the Rising Blossoms, a faction of rebels and iconoclasts dedicated to changing the world for the betterment of the people. You gain the following benefits:</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You gain proficiency in the Stealth skill.</li>
+				<li>When you make a saving throw to avoid or end the charmed or frightened condition, you can grant yourself advantage on the save. You can do this a number of times equal to your proficiency bonus, regaining all expended uses upon finishing a long rest.</li>
+				<li>When you hit a creature with an attack roll, you can use your reaction to target one creature within 30 feet of you that is charmed or frightened by the creature you hit; the condition ends for that creature.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Advantage on save vs charmed/frightened ({{proficiency}}/LR).&#13;
+			Reaction: When you hit a creature, end charmed/frightened on 1 creature within 30ft (if condition from creature you hit).</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Rising Blossom Sectary)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+		</rules>
+	</element>
+
+	<element name="Umigiri Fogblade" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_UMIGIRI_FOGBLADE">
+		<description>
+			<p>You have trained in the dense, rolling fog along the dangerous Umigiri Coast. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Strength, Dexterity, or Constitution score by 1, to a maximum of 20.</li>
+				<li>When you hit a creature with a melee weapon attack, you can cause the weapon to exude a dense fog in a 10-foot radius. If you hit with an unarmed strike, the fog exudes from your breath. The area of the fog is heavily obscured for all creatures other than you until the start of your next turn. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
+			</ul>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you hit with a melee weapon attack (or unarmed strike), create a 10ft radius of dense fog. Area heavily obscured for others (not you) until start of your next turn.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Umigiri Fogblade)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION" />
+		</rules>
+	</element>
+
+	<element name="Gift of Bakuryō" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_GIFT_OF_BAKURYO">
+		<prerequisite>4th Level</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<p>You have been blessed with a minor boon of power from the koi dragon kaiju Bakuryō, granting you the following benefits:</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You gain 2 Rampage Points.</li>
+				<li>You learn the <i>sacred flame</i> cantrip. You also learn the <i>calm waters*</i> and <i>ice moon*</i> spells, and can expend 1 Rampage Point to cast either one without material components, using Constitution as your spellcasting ability. If you have the Spellcasting or Pact Magic class features, you can use that feature’s spellcasting ability instead, and you can cast these spells with any spell slots you have of the appropriate level. When you cast <i>calm waters</i> or <i>ice moon</i> in this way, you can expend additional Rampage Points; the level of the spell increases by 1 for each additional point you expend in the casting.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Gain 2 Rampage Points.&#13;
+			Learn Sacred Flame. Learn Calm Waters* &amp; Ice Moon*. Cast either for 1 RP (no material, Con or class spellcasting). Can upcast with more RP. Can also cast with slots.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Gift of Bakuryō)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<grant type="Spell" id="ID_PHB_SPELL_SACRED_FLAME" />
+			<grant type="Spell" id="ID_RGTTYR_SPELL_CALM_WATERS" />
+			<grant type="Spell" id="ID_RGTTYR_SPELL_ICE_MOON" />
+		</rules>
+	</element>
+
+	<element name="Fragment of Bakuryō" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_FRAGMENT_OF_BAKURYO">
+		<prerequisite>4th Level</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<p>A fragment of the koi dragon kaiju Bakuryō churns within you, granting you the following benefits:</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You gain 2 Rampage Points.</li>
+				<li>As an action, you can expend 2 Rampage Points to emit a dazzling burst of light, attempting to seize command of the spirit of a creature you can see within 30 feet of yourself. That creature must succeed on a Charisma saving throw (DC = 8 + Proficiency Bonus + Constitution Modifier OR Class Spellcasting Ability Modifier) or its body is overwhelmed with divine magic, causing it to be restrained and lifted 30 feet in the air where it hovers in place. This effect lasts until the end of that creature’s next turn, at which time it falls if it is unsupported. Once a creature succeeds on a saving throw against this effect, it is immune to the effect for the next 24 hours.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Gain 2 Rampage Points.&#13;
+			Action (2 RP): Target creature in 30ft. Cha save (DC {{fragment of bakuryo:dc}}) or restrained &amp; lifted 30ft until end of its next turn. Immune on success for 24h.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Fragment of Bakuryō)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<stat name="fragment of bakuryo:dc" value="8" />
+			<stat name="fragment of bakuryo:dc" value="proficiency" />
+			<stat name="fragment of bakuryo:dc" value="constitution:modifier" />
+		</rules>
+	</element>
+
+	<element name="Scion of Bakuryō" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_SCION_OF_BAKURYO">
+		<prerequisite>Gift of Bakuryō and Fragment of Bakuryō Feats</prerequisite>
+		<requirements>ID_LT_WOK_FEAT_GIFT_OF_BAKURYO,ID_LT_WOK_FEAT_FRAGMENT_OF_BAKURYO</requirements>
+		<description>
+			<p>You are a vassal of the koi dragon Bakuryō—her divine power incarnate. You gain the following benefits:</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You have a swimming speed equal to your walking speed.</li>
+				<li>You gain 3 Rampage Points.</li>
+				<li>You learn the <i>water wyrm*</i> spell and can expend 3 Rampage Points to cast it without material components, using Constitution as your spellcasting ability. If you have the Spellcasting or Pact Magic class features, you can use that feature’s spellcasting ability instead, and you can cast the spell with any spell slots you have of 3rd level or higher. When you cast the spell using this feat, it does not require concentration and lasts for the duration, or until you use this benefit again.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Gain 3 Rampage Points.&#13;
+			Learn Water Wyrm*. Cast for 3 RP (no material, no conc., Con or class spellcasting). Lasts duration or until used again. Can also cast with slots.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Scion of Bakuryō)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<stat name="speed:swim" value="speed" bonus="base" />
+			<grant type="Spell" id="ID_RGTTYR_SPELL_WATER_WYRM" />
+		</rules>
+	</element>
+
+	<element name="Gift of Iminada" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_GIFT_OF_IMINADA">
+		<prerequisite>4th Level</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<p>You have been blessed with a minor boon of power from the bakekujira kaiju Iminada, granting you the following benefits:</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You gain 2 Rampage Points.</li>
+				<li>You learn the <i>spare the dying</i> cantrip. You also learn the <i>cure wounds</i> and <i>inflict wounds</i> spells, and can expend 1 Rampage point to cast either one without material components, using Constitution as your spellcasting ability. If you have the Spellcasting or Pact Magic class features, you can use that feature’s spellcasting ability instead. When you cast <i>cure wounds</i> or <i>inflict wounds</i> with this feat, you can expend additional Rampage Points; the level of the spell increases by 1 for each additional point you expend in the casting.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Gain 2 Rampage Points.&#13;
+			Learn Spare the Dying. Learn Cure Wounds &amp; Inflict Wounds. Cast either for 1 RP (no material, Con or class spellcasting). Can upcast with more RP. Can also cast with slots.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Gift of Iminada)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPARE_THE_DYING" />
+			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" />
+			<grant type="Spell" id="ID_PHB_SPELL_INFLICT_WOUNDS" />
+		</rules>
+	</element>
+
+	<element name="Fragment of Iminada" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_FRAGMENT_OF_IMINADA">
+		<prerequisite>4th Level</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<p>A fragment of the undead kaiju Iminada roils within you, granting you the following benefits:</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You gain 2 Rampage Points.</li>
+				<li>As a bonus action, you can expend 2 Rampage Points to magically teleport to an unoccupied space you can see within 60 feet of yourself. Alternatively, you use an action to expend 2 Rampage Points to attempt to magically teleport one creature you can see within 30 feet of yourself. That creature must succeed on a Charisma saving throw (it can choose to fail, DC = 8 + Proficiency Bonus + Constitution Modifier OR Class Spellcasting Ability Modifier) or be teleported to an unoccupied space you can see within 30 feet of you. You can target one additional creature with this action for every 2 additional Rampage Points you expend.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Gain 2 Rampage Points.&#13;
+			BA (2 RP): Teleport self 60ft.&#13;
+			Action (2 RP): Teleport 1 creature in 30ft. Cha save (DC {{fragment of iminada:dc}}, can fail) or teleported to space you see in 30ft. +1 creature per +2 RP.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Fragment of Iminada)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<stat name="fragment of iminada:dc" value="8" />
+			<stat name="fragment of iminada:dc" value="proficiency" />
+			<stat name="fragment of iminada:dc" value="constitution:modifier" />
+		</rules>
+	</element>
+
+	<element name="Scion of Iminada" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_SCION_OF_IMINADA">
+		<prerequisite>Gift of Iminada and Fragment of Iminada Feats</prerequisite>
+		<requirements>ID_LT_WOK_FEAT_GIFT_OF_IMINADA,ID_LT_WOK_FEAT_FRAGMENT_OF_IMINADA</requirements>
+		<description>
+			<p>You are a vassal of the bakekujira Iminada—its undead fury incarnate. You gain the following benefits:</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You have a swimming speed equal to your walking speed.</li>
+				<li>You gain 3 Rampage Points.</li>
+				<li>As an action, you can expend 3 Rampage Points to conjure a haunting, magical song that reverberates out from your body in a 15-foot radius. Each creature of your choice within that area that can hear you must succeed on a Constitution saving throw (DC = 8 + Proficiency Bonus + Constitution Modifier OR Class Spellcasting Ability Modifier) or be wrecked with necrotic energy, taking 8d6 necrotic damage on a failed save, or half as much damage on a successful one.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Gain 3 Rampage Points.&#13;
+			Action (3 RP): 15ft radius song. Creatures of choice Con save (DC {{scion of iminada:dc}}) or 8d6 necrotic (half on success).</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Scion of Iminada)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+            <stat name="speed:swim" value="speed" bonus="base" />
+			<stat name="scion of iminada:dc" value="8" />
+			<stat name="scion of iminada:dc" value="proficiency" />
+			<stat name="scion of iminada:dc" value="constitution:modifier" />
+		</rules>
+	</element>
+
+	<element name="Gift of Magatsuchi" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_GIFT_OF_MAGATSUCHI">
+		<prerequisite>4th Level</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<p>You have been blessed with a minor boon of power from the plant kaiju Magatsuchi, granting you the following benefits.</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You gain 2 Rampage Points.</li>
+				<li>You learn the <i>earthen fist*</i> cantrip. You also learn the <i>earthen uppercut*</i> and <i>entangle</i> spells and can expend 1 Rampage Point to cast either one without material components, using Constitution as your spellcasting ability. If you have the Spellcasting or Pact Magic class features, you can use that feature’s spellcasting ability instead, and you can cast these spells with any spell slots you have. When you cast <i>earthen uppercut</i> or <i>entangle</i> with this feat, you can expend additional Rampage Points; the level of the spell increases by 1 for each additional point you expend in the casting.</li>
+			</ul>
+			<p class="ft">*See Appendix B (Ryoko's Guide to the Yokai Realms)</p>
+		</description>
+		<sheet>
+			<description>Gain 2 Rampage Points.&#13;
+			Learn Earthen Fist*. Learn Earthen Uppercut* &amp; Entangle. Cast either for 1 RP (no material, Con or class spellcasting). Can upcast with more RP. Can also cast with slots.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Gift of Magatsuchi)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<grant type="Spell" id="ID_RGTTYR_SPELL_EARTHEN_FIST" />
+			<grant type="Spell" id="ID_RGTTYR_SPELL_EARTHEN_UPPERCUT" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENTANGLE" />
+		</rules>
+	</element>
+
+	<element name="Fragment of Magatsuchi" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_FRAGMENT_OF_MAGATSUCHI">
+		<prerequisite>4th Level</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<p>A fragment of the plant kaiju Magatsuchi blooms within you, granting you the following benefits:</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You gain 2 Rampage Points.</li>
+				<li>As an action, you can expend 2 Rampage Points to unleash a torrent of amber-tipped leaves in a 20-foot cone originating from you. Each creature in that area must make a Dexterity saving throw (DC = 8 + Proficiency Bonus + Constitution Modifier OR Class Spellcasting Ability Modifier) taking 4d6 piercing damage on a failed save, or half as much damage on a successful one.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Gain 2 Rampage Points.&#13;
+			Action (2 RP): 20ft cone of leaves. Dex save (DC {{fragment of magatsuchi:dc}}) or 4d6 piercing (half on success).</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Fragment of Magatsuchi)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<stat name="fragment of magatsuchi:dc" value="8" />
+			<stat name="fragment of magatsuchi:dc" value="proficiency" />
+			<stat name="fragment of magatsuchi:dc" value="constitution:modifier" />
+		</rules>
+	</element>
+
+	<element name="Scion of Magatsuchi" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_SCION_OF_MAGATSUCHI">
+		<prerequisite>Gift of Magatsuchi and Fragment of Magatsuchi feats</prerequisite>
+		<requirements>ID_LT_WOK_FEAT_GIFT_OF_MAGATSUCHI,ID_LT_WOK_FEAT_FRAGMENT_OF_MAGATSUCHI</requirements>
+		<description>
+			<p>You are a vassal of the plant kaiju Magatsuchi—its primal power incarnate. You gain the following benefits:</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You gain 3 Rampage Points.</li>
+				<li>As a bonus action, you can expend 3 Rampage Points to channel your magic and power through vibrations in the earth. For the next minute, you gain tremorsense out to 30 feet, and you can make melee attack rolls and cast spells with the range of touch targeting creatures you can see using this tremorsense, regardless of your reach.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Gain 3 Rampage Points.&#13;
+			BA (3 RP): For 1 min, gain tremorsense 30ft. Can make melee attacks &amp; cast touch spells vs creatures seen with tremorsense, regardless of reach.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Scion of Magatsuchi)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<grant type="Vision" id="ID_VISION_TREMORSENSE" />
+			<stat name="tremorsense:range" value="30" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Gift of Nomi" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_GIFT_OF_NOMI">
+		<prerequisite>4th Level</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<p>You have been blessed with a minor boon of power from the kabuto kaiju Nomi, granting you the following benefits:</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You gain 2 Rampage Points.</li>
+				<li>You gain proficiency in the Athletics skill. If you already have proficiency in that skill, you gain expertise instead; your proficiency bonus is doubled for any ability checks you make using the skill.</li>
+				<li>You can use a bonus action to expend 1 Rampage Point and attempt to grapple or shove a creature within your reach. When you use this benefit, you can spend 1 additional Rampage Point to impose disadvantage on your target’s ability check made to contest your grapple or shove.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Gain 2 Rampage Points.&#13;
+			Proficiency in Athletics (expertise if already proficient).&#13;
+			BA (1 RP): Grapple or shove. Spend +1 RP for disadvantage on target's contesting check.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Gift of Nomi)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_ATHLETICS" />
+		</rules>
+	</element>
+
+	<element name="Fragment of Nomi" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_FRAGMENT_OF_NOMI">
+		<prerequisite>4th Level</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<p>A fragment of the kabuto kaiju Nomi buzzes within you, granting you the following benefits:</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You gain 2 Rampage Points.</li>
+				<li>Using the Attack action, you can expend 2 Rampage Points to throw one creature you are grappling up to 30 feet in any direction. If you’re able to make multiple attacks with the Attack action, this throw replaces one of them. If the creature collides with an obstacle that prevents it from moving the full distance, it takes 10 (3d6) bludgeoning damage before falling down.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Gain 2 Rampage Points.&#13;
+			Attack action (2 RP): Throw 1 grappled creature up to 30ft (replaces 1 attack). Collision = 3d6 bludgeoning, then falls.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Fragment of Nomi)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Scion of Nomi" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_SCION_OF_NOMI">
+		<prerequisite>Gift of Nomi and Fragment of Nomi feats</prerequisite>
+		<requirements>ID_LT_WOK_FEAT_GIFT_OF_NOMI,ID_LT_WOK_FEAT_FRAGMENT_OF_NOMI</requirements>
+		<description>
+			<p>You are a vassal of the kabuto kaiju Nomi—its bestial fury incarnate. You gain the following benefits:</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You gain 3 Rampage Points.</li>
+				<li>At the start of your turn, you can expend 1 Rampage Point to sprout spectral, insectoid wings. Until the end of your turn, you gain a flying speed equal to your walking speed, and can hover. This speed isn’t reduced by dragging a creature you’re grappling. If you are airborne and unsupported at the end of your turn, you fall.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Gain 3 Rampage Points.&#13;
+			Start of turn (1 RP): Gain spectral insectoid wings. Flying speed = walking speed, can hover. Ends end of turn. Speed not reduced by grappling. Fall if airborne &amp; unsupported.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Scion of Nomi)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Gift of Raiko" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_GIFT_OF_RAIKO">
+		<prerequisite>4th Level</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<p>You have been blessed with a minor boon of power from the elemental kaiju Raiko, granting you the following benefits.</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You gain 2 Rampage Points.</li>
+				<li>You learn the <i>shocking grasp</i> cantrip. You also learn the <i>flash*</i> and <i>wind drake*</i> spells, and can expend 1 Rampage Point to cast either one without material components, using Constitution as your spellcasting ability. If you have the Spellcasting or Pact Magic class features, you can use that feature’s spellcasting ability instead, and you can cast these spells with any spell slots you have. When you cast <i>flash</i> or <i>wind drake</i> with this feat, you can expend additional Rampage Points; the level of the spell increases by 1 for each additional point you expend in the casting.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Gain 2 Rampage Points.&#13;
+			Learn Shocking Grasp. Learn Flash* &amp; Wind Drake*. Cast either for 1 RP (no material, Con or class spellcasting). Can upcast with more RP. Can also cast with slots.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Gift of Raiko)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<grant type="Spell" id="ID_PHB_SPELL_SHOCKING_GRASP" />
+			<grant type="Spell" id="ID_RGTTYR_SPELL_FLASH" />
+			<grant type="Spell" id="ID_RGTTYR_SPELL_WIND_DRAKE" />
+		</rules>
+	</element>
+
+	<element name="Fragment of Raiko" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_FRAGMENT_OF_RAIKO">
+		<prerequisite>4th Level</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<p>A fragment of the elemental kaiju Raiko crackles within you, granting you the following benefits:</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You gain 2 Rampage Points.</li>
+				<li>As an action, you can expend 1 Rampage Point to detonate a chaotic, magical burst of electricity. Each creature within 30 feet of you (including you) must make a Dexterity saving throw (DC = 8 + Proficiency Bonus + Constitution Modifier OR Class Spellcasting Ability Modifier) as bolts of lightning spiral through the air. The creature with the lowest result takes a number of d10s of lightning damage equal to your proficiency bonus. When you use this benefit, you can expend additional Rampage Points to grant a number of creatures of your choice advantage on the saving throw equal to the number of additional Rampage Points you expend.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Gain 2 Rampage Points.&#13;
+			Action (1 RP): 30ft burst. All Dex save (DC {{fragment of raiko:dc}}). Lowest roll takes {{proficiency}}d10 lightning. Spend +RP for adv on save for chosen creatures.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Fragment of Raiko)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<stat name="fragment of raiko:dc" value="8" />
+			<stat name="fragment of raiko:dc" value="proficiency" />
+			<stat name="fragment of raiko:dc" value="constitution:modifier" />
+		</rules>
+	</element>
+
+	<element name="Scion of Raiko" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_SCION_OF_RAIKO">
+		<prerequisite>Gift of Raiko and Fragment of Raiko feats</prerequisite>
+		<requirements>ID_LT_WOK_FEAT_GIFT_OF_RAIKO,ID_LT_WOK_FEAT_FRAGMENT_OF_RAIKO</requirements>
+		<description>
+			<p>You are a vassal of the elemental beast Raiko—its tempestuous wrath incarnate. You gain the following benefits:</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You have resistance to lightning damage.</li>
+				<li>You gain 3 Rampage Points.</li>
+				<li>As a bonus action, you can expend 2 Rampage Points to magically transform you and all objects you are wearing and carrying transform into a bolt of pure, crackling energy. You move in a straight line, passing through creatures and objects, and reform in an unoccupied space up to 60 feet away. Each creature you move through in this way must succeed on a Dexterity saving throw (DC = 8 + Proficiency Bonus + Constitution Modifier OR Class Spellcasting Ability Modifier) or take 1d8 lightning damage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Gain 3 Rampage Points.&#13;
+			BA (2 RP): Transform into lightning bolt. Move 60ft straight, through creatures/objects. Reform. Creatures moved through Dex save (DC {{scion of raiko:dc}}) or 1d8 lightning.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Scion of Raiko)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<stat name="scion of raiko:dc" value="8" />
+			<stat name="scion of raiko:dc" value="proficiency" />
+			<stat name="scion of raiko:dc" value="constitution:modifier" />
+		</rules>
+	</element>
+
+	<element name="Kaiju Conduit" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_KAIJU_CONDUIT">
+		<prerequisite>A feat that grants Rampage Points</prerequisite>
+        <requirements>ID_LT_WOK_FEAT_SCION_OF_RAIKO|ID_LT_WOK_FEAT_FRAGMENT_OF_RAIKO|ID_LT_WOK_FEAT_GIFT_OF_RAIKO|ID_LT_WOK_FEAT_SCION_OF_NOMI|ID_LT_WOK_FEAT_FRAGMENT_OF_NOMI|ID_LT_WOK_FEAT_GIFT_OF_NOMI|ID_LT_WOK_FEAT_SCION_OF_MAGATSUCHI|ID_LT_WOK_FEAT_FRAGMENT_OF_MAGATSUCHI|ID_LT_WOK_FEAT_GIFT_OF_MAGATSUCHI|ID_LT_WOK_FEAT_SCION_OF_IMINADA|ID_LT_WOK_FEAT_FRAGMENT_OF_IMINADA|ID_LT_WOK_FEAT_GIFT_OF_IMINADA|ID_LT_WOK_FEAT_SCION_OF_BAKURYO|ID_LT_WOK_FEAT_FRAGMENT_OF_BAKURYO|ID_LT_WOK_FEAT_GIFT_OF_BAKURYO</requirements>
+		<description>
+			<p>You have an uncanny connection to kaiju, their power manifesting with unusual potency within you. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Constitution score by 1, to a maximum of 20.</li>
+				<li>You gain 3 Rampage Points.</li>
+			</ul>
+			<p class="indent">This feat can be taken multiple times.</p>
+		</description>
+		<sheet>
+			<description>You gain {{rampage:points}} Rampage Points.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+            <stat name="rampage:points" value="3" />
+        </rules>
+	</element>
+    <element name="Kaiju Conduit (2)" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_KAIJU_CONDUIT_2">
+		<prerequisite>A feat that grants Rampage Points</prerequisite>
+        <requirements>ID_LT_WOK_FEAT_KAIJU_CONDUIT</requirements>
+		<description>
+			<p>You have an uncanny connection to kaiju, their power manifesting with unusual potency within you. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Constitution score by 1, to a maximum of 20.</li>
+				<li>You gain 3 Rampage Points.</li>
+			</ul>
+			<p class="indent">This feat can be taken multiple times.</p>
+		</description>
+		<sheet display="false">
+			<description>+3 Rampage Points.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+            <stat name="rampage:points" value="3" />
+        </rules>
+	</element>
+    <element name="Kaiju Conduit (3)" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_KAIJU_CONDUIT_3">
+		<prerequisite>A feat that grants Rampage Points</prerequisite>
+        <requirements>ID_LT_WOK_FEAT_KAIJU_CONDUIT_2</requirements>
+		<description>
+			<p>You have an uncanny connection to kaiju, their power manifesting with unusual potency within you. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Constitution score by 1, to a maximum of 20.</li>
+				<li>You gain 3 Rampage Points.</li>
+			</ul>
+			<p class="indent">This feat can be taken multiple times.</p>
+		</description>
+		<sheet display="false">
+			<description>+3 Rampage Points.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+            <stat name="rampage:points" value="3" />
+        </rules>
+	</element>
+	<element name="Kaiju Conduit (4)" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_KAIJU_CONDUIT_4">
+		<prerequisite>A feat that grants Rampage Points</prerequisite>
+        <requirements>ID_LT_WOK_FEAT_KAIJU_CONDUIT_3</requirements>
+		<description>
+			<p>You have an uncanny connection to kaiju, their power manifesting with unusual potency within you. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Constitution score by 1, to a maximum of 20.</li>
+				<li>You gain 3 Rampage Points.</li>
+			</ul>
+			<p class="indent">This feat can be taken multiple times.</p>
+		</description>
+		<sheet display="false">
+			<description>+3 Rampage Points.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+            <stat name="rampage:points" value="3" />
+        </rules>
+	</element>
+
+	<element name="Kaiju Conduit (5)" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_KAIJU_CONDUIT_5">
+		<prerequisite>A feat that grants Rampage Points</prerequisite>
+        <requirements>ID_LT_WOK_FEAT_KAIJU_CONDUIT_4</requirements>
+		<description>
+			<p>You have an uncanny connection to kaiju, their power manifesting with unusual potency within you. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Constitution score by 1, to a maximum of 20.</li>
+				<li>You gain 3 Rampage Points.</li>
+			</ul>
+			<p class="indent">This feat can be taken multiple times.</p>
+		</description>
+		<sheet display="false">
+			<description>+3 Rampage Points.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+            <stat name="rampage:points" value="3" />
+        </rules>
+	</element>
+
+	<element name="Kaiju Conduit (6)" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_KAIJU_CONDUIT_6">
+		<prerequisite>A feat that grants Rampage Points</prerequisite>
+        <requirements>ID_LT_WOK_FEAT_KAIJU_CONDUIT_5</requirements>
+		<description>
+			<p>You have an uncanny connection to kaiju, their power manifesting with unusual potency within you. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Constitution score by 1, to a maximum of 20.</li>
+				<li>You gain 3 Rampage Points.</li>
+			</ul>
+			<p class="indent">This feat can be taken multiple times.</p>
+		</description>
+		<sheet display="false">
+			<description>+3 Rampage Points.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+            <stat name="rampage:points" value="3" />
+        </rules>
+	</element>
+
+	<element name="Kaiju Conduit (7)" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_KAIJU_CONDUIT_7">
+		<prerequisite>A feat that grants Rampage Points</prerequisite>
+        <requirements>ID_LT_WOK_FEAT_KAIJU_CONDUIT_6</requirements>
+		<description>
+			<p>You have an uncanny connection to kaiju, their power manifesting with unusual potency within you. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Constitution score by 1, to a maximum of 20.</li>
+				<li>You gain 3 Rampage Points.</li>
+			</ul>
+			<p class="indent">This feat can be taken multiple times.</p>
+		</description>
+		<sheet display="false">
+			<description>+3 Rampage Points.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+            <stat name="rampage:points" value="3" />
+        </rules>
+	</element>
+
+	<element name="Kaiju Conduit (8)" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_KAIJU_CONDUIT_8">
+		<prerequisite>A feat that grants Rampage Points</prerequisite>
+        <requirements>ID_LT_WOK_FEAT_KAIJU_CONDUIT_7</requirements>
+		<description>
+			<p>You have an uncanny connection to kaiju, their power manifesting with unusual potency within you. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Constitution score by 1, to a maximum of 20.</li>
+				<li>You gain 3 Rampage Points.</li>
+			</ul>
+			<p class="indent">This feat can be taken multiple times.</p>
+		</description>
+		<sheet display="false">
+			<description>+3 Rampage Points.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+            <stat name="rampage:points" value="3" />
+        </rules>
+	</element>
+
+	<element name="Kaiju Conduit (9)" type="Feat" source="Wrath of the Kaiju" id="ID_LT_WOK_FEAT_KAIJU_CONDUIT_9">
+		<prerequisite>A feat that grants Rampage Points</prerequisite>
+        <requirements>ID_LT_WOK_FEAT_KAIJU_CONDUIT_8</requirements>
+		<description>
+			<p>You have an uncanny connection to kaiju, their power manifesting with unusual potency within you. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Constitution score by 1, to a maximum of 20.</li>
+				<li>You gain 3 Rampage Points.</li>
+			</ul>
+			<p class="indent">This feat can be taken multiple times.</p>
+		</description>
+		<sheet display="false">
+			<description>+3 Rampage Points.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+            <stat name="rampage:points" value="3" />
+        </rules>
+	</element>
+</elements>
