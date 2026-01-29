@@ -3,13 +3,111 @@
 	<info>
 		<name>Companions Templates</name>
 		<description>Companion Template 5 from Heliana's Guide to Monster Hunting</description>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="companion-template-5.xml"
 				url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/companion-template-5.xml" />
 		</update>
 	</info>
 
 	<!--Companion 5 -->
+	<element name="CR 0 Companion" type="Class Feature"
+		source="Heliana's Guide to Monster Hunting"
+		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_ZERO_COMPANION_5">
+		<supports>Tamed Companion 5</supports>
+		<description>
+			<p style="margin-bottom:-5px">
+				<em>_______, _______</em>
+			</p>
+			<h4 style="margin-top:5px" />
+			<p> </p>
+			<p><strong>Armor Class</strong> ____________</p>
+			<p><strong>Hit Points</strong> _____________</p>
+			<p><strong>Speed</strong> _____________</p>
+			<p> </p>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead>
+					<tr>
+						<td>STR</td>
+						<td>DEX</td>
+						<td>CON</td>
+						<td>INT</td>
+						<td>WIS</td>
+						<td>CHA</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>___(__)</td>
+					<td>___(__)</td>
+					<td>___(__)</td>
+					<td>___(__)</td>
+					<td>___(__)</td>
+					<td>___(__)</td>
+				</tr>
+			</table>
+			<p><strong>Skills</strong> _____________</p>
+			<p><strong>Senses</strong> passive Perception __,__________</p>
+			<p><strong>Languages</strong> —</p>
+			<p><strong>Size</strong> ____</p>
+			<p> </p>
+			<h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
+			<p><strong>
+					<em>_________.</em>
+				</strong>______________.</p>
+			<p> </p>
+			<p><strong>
+					<em>_________.</em>
+				</strong>______________.</p>
+			<p> </p>
+			<p><strong>
+					<em>_________.</em>
+				</strong>______________.</p>
+			<p> </p>
+			<h4 style="margin-top:15px">Actions</h4>
+			<p> </p>
+			<p><strong>
+					<em>________. </em>
+				</strong><em>Melee Weapon Attack:</em> +___
+				to hit, reach __ ft., one target. <em>Hit:</em> __ (___ + _) ____ damage.</p>
+			<p></p>
+			<p><strong>
+					<em>______. </em>
+				</strong><em>Ranged Weapon Attack:</em> +___ to
+				hit, reach __ ft., one target. <em>Hit:</em> __ (___ + _) ______ damage.</p>
+			<p></p>
+			<p><strong>
+					<em>__________. </em>
+				</strong>_________________________</p>
+		</description>
+		<sheet>
+			<description>___________ (CR 0) - {{size:5}}, {{type:5}}, It gain {{hit dice gained:companion:5}} hit dice. ATK/DMG: +{{go for the throat:bonus:5}}</description>
+		</sheet>
+		<rules>
+			<!-- Creature Type -->
+			<select type="Class Feature" name="Type" supports="Creature Type 5" />
+
+			<!-- Creature Size -->
+			<select type="Class Feature" name="Size" supports="Companion Size 5" />
+
+			<grant type="Class Feature"
+				id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_HALF_5"
+				requirements="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILY" />
+
+			<stat name="hit dice gained:companion:5" value="1" level="4" />
+			<stat name="hit dice gained:companion:5" value="1" level="8" />
+			<stat name="hit dice gained:companion:5" value="1" level="12" />
+			<stat name="hit dice gained:companion:5" value="1" level="16" />
+			<stat name="hit dice gained:companion:5" value="1" level="19" />
+
+			<stat name="companion:5:str" value="0" />
+			<stat name="companion:5:dex" value="0" />
+			<stat name="companion:5:con" value="0" />
+			<stat name="companion:5:int" value="0" />
+			<stat name="companion:5:wis" value="0" />
+			<stat name="companion:5:cha" value="0" />
+
+			<stat name="go for the throat:bonus:5" value="0" />
+		</rules>
+	</element>
 	<element name="CR 1/2 Companion" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_HALF_COMPANION_5">
@@ -97,6 +195,15 @@
 			<stat name="hit dice gained:companion:5" value="1" level="12" />
 			<stat name="hit dice gained:companion:5" value="1" level="16" />
 			<stat name="hit dice gained:companion:5" value="1" level="19" />
+
+			<stat name="companion:5:str" value="0" />
+			<stat name="companion:5:dex" value="0" />
+			<stat name="companion:5:con" value="0" />
+			<stat name="companion:5:int" value="0" />
+			<stat name="companion:5:wis" value="0" />
+			<stat name="companion:5:cha" value="0" />
+
+			<stat name="go for the throat:bonus:5" value="0" />
 		</rules>
 	</element>
 	<element name="CR 1 Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting"
@@ -184,6 +291,15 @@
 			<stat name="hit dice gained:companion:5" value="1" level="12" />
 			<stat name="hit dice gained:companion:5" value="1" level="16" />
 			<stat name="hit dice gained:companion:5" value="1" level="19" />
+
+			<stat name="companion:5:str" value="0" />
+			<stat name="companion:5:dex" value="0" />
+			<stat name="companion:5:con" value="0" />
+			<stat name="companion:5:int" value="0" />
+			<stat name="companion:5:wis" value="0" />
+			<stat name="companion:5:cha" value="0" />
+
+			<stat name="go for the throat:bonus:5" value="0" />
 		</rules>
 	</element>
 	<element name="CR 2 Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting"
@@ -272,6 +388,15 @@
 			<stat name="hit dice gained:companion:5" value="1" level="12" />
 			<stat name="hit dice gained:companion:5" value="1" level="16" />
 			<stat name="hit dice gained:companion:5" value="1" level="19" />
+
+			<stat name="companion:5:str" value="0" />
+			<stat name="companion:5:dex" value="0" />
+			<stat name="companion:5:con" value="0" />
+			<stat name="companion:5:int" value="0" />
+			<stat name="companion:5:wis" value="0" />
+			<stat name="companion:5:cha" value="0" />
+
+			<stat name="go for the throat:bonus:5" value="0" />
 		</rules>
 	</element>
 	<element name="CR 3 Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting"
@@ -358,6 +483,15 @@
 			<stat name="hit dice gained:companion:5" value="1" level="12" />
 			<stat name="hit dice gained:companion:5" value="1" level="16" />
 			<stat name="hit dice gained:companion:5" value="1" level="19" />
+
+			<stat name="companion:5:str" value="0" />
+			<stat name="companion:5:dex" value="0" />
+			<stat name="companion:5:con" value="0" />
+			<stat name="companion:5:int" value="0" />
+			<stat name="companion:5:wis" value="0" />
+			<stat name="companion:5:cha" value="0" />
+
+			<stat name="go for the throat:bonus:5" value="0" />
 		</rules>
 	</element>
 	<element name="CR 4 Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting"
@@ -443,6 +577,15 @@
 
 			<stat name="hit dice gained:companion:5" value="1" level="16" />
 			<stat name="hit dice gained:companion:5" value="1" level="19" />
+
+			<stat name="companion:5:str" value="0" />
+			<stat name="companion:5:dex" value="0" />
+			<stat name="companion:5:con" value="0" />
+			<stat name="companion:5:int" value="0" />
+			<stat name="companion:5:wis" value="0" />
+			<stat name="companion:5:cha" value="0" />
+
+			<stat name="go for the throat:bonus:5" value="0" />
 		</rules>
 	</element>
 	<element name="CR 5 Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting"
@@ -527,11 +670,21 @@
 				id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_FIVE_5" />
 
 			<stat name="hit dice gained:companion:5" value="1" level="19" />
+
+			<stat name="companion:5:str" value="0" />
+			<stat name="companion:5:dex" value="0" />
+			<stat name="companion:5:con" value="0" />
+			<stat name="companion:5:int" value="0" />
+			<stat name="companion:5:wis" value="0" />
+			<stat name="companion:5:cha" value="0" />
+
+			<stat name="go for the throat:bonus:5" value="0" />
 		</rules>
 	</element>
 	<element name="CR 6 Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_SIX_COMPANION_5">
 		<supports>Tamed Companion 5</supports>
+		<requirements>[level:tamer:19]</requirements>
 		<description>
 			<p style="margin-bottom:-5px">
 				<em>_______, _______</em>
@@ -608,10 +761,33 @@
 
 			<grant type="Class Feature"
 				id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SIX_5" />
+
+			<stat name="companion:5:str" value="0" />
+			<stat name="companion:5:dex" value="0" />
+			<stat name="companion:5:con" value="0" />
+			<stat name="companion:5:int" value="0" />
+			<stat name="companion:5:wis" value="0" />
+			<stat name="companion:5:cha" value="0" />
+
+			<stat name="go for the throat:bonus:5" value="0" />
 		</rules>
 	</element>
 
 	<!-- Companions Options -->
+	<element name="Tiny" type="Class Feature" source="Internal"
+		id="ID_INTERNAL_CLASS_FEATURE_TINY_5">
+		<supports>Companion Size 5</supports>
+		<description>
+			<p>Your companion's size is Tiny.</p>
+		</description>
+		<sheet display="false">
+			<description>Your companion's size is Tiny.</description>
+		</sheet>
+		<compendium display="false" />
+		<rules>
+			<stat name="size" inline="true" value="Tiny"/>
+		</rules>
+	</element>
 
 	<element name="Small" type="Class Feature" source="Internal"
 		id="ID_INTERNAL_CLASS_FEATURE_SMALL_5">
@@ -1150,7 +1326,7 @@
 				companion’s Constitution modifier (minimum of 0).</p>
 		</description>
 		<sheet display="false">
-			<description>Your companion gains {{hit dice gained:companion:1}} Hit Die, increasing
+			<description>Your companion gains {{hit dice gained:companion:5}} Hit Die, increasing
 				its hit point maximum</description>
 		</sheet>
 		<rules>
@@ -1436,7 +1612,7 @@
 		<description>
 			<p>Increase one of your companion's ability scores by 1, to a maximum of 20.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>Ability Boost: STR ({{companion:5:str}}), DEX ({{companion:5:dex}}), CON ({{companion:5:con}}),INT ({{companion:5:int}}), WIS ({{companion:5:wis}}), CHA ({{companion:5:cha}}).</description>
 		</sheet>
 		<rules>
@@ -1769,9 +1945,7 @@
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet>
-			<description>STR increase by {{companion:5:str}} (Max 20)</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<stat name="companion:5:str" value="1" />
 		</rules>
@@ -1783,9 +1957,7 @@
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet>
-			<description>STR increase by {{companion:5:str}} (Max 20)</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<stat name="companion:5:str" value="1" />
 		</rules>
@@ -1797,9 +1969,7 @@
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet>
-			<description>STR increase by {{companion:5:str}} (Max 20)</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<stat name="companion:5:str" value="1" />
 		</rules>
@@ -1811,9 +1981,7 @@
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet>
-			<description>STR increase by {{companion:5:str}} (Max 20)</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<stat name="companion:5:str" value="1" />
 		</rules>
@@ -1825,9 +1993,7 @@
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet>
-			<description>STR increase by {{companion:5:str}} (Max 20)</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<stat name="companion:5:str" value="1" />
 		</rules>
@@ -1839,9 +2005,7 @@
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet>
-			<description>STR increase by {{companion:5:str}} (Max 20)</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<stat name="companion:5:str" value="1" />
 		</rules>
@@ -1853,9 +2017,7 @@
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet>
-			<description>STR increase by {{companion:5:str}} (Max 20)</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<stat name="companion:5:str" value="1" />
 		</rules>
@@ -1867,9 +2029,7 @@
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet>
-			<description>STR increase by {{companion:5:str}} (Max 20)</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<stat name="companion:5:str" value="1" />
 		</rules>
@@ -1881,9 +2041,7 @@
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet>
-			<description>STR increase by {{companion:5:str}} (Max 20)</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<stat name="companion:5:str" value="1" />
 		</rules>
@@ -1895,9 +2053,7 @@
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet>
-			<description>STR increase by {{companion:5:str}} (Max 20)</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<stat name="companion:5:str" value="1" />
 		</rules>
@@ -1909,9 +2065,7 @@
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet>
-			<description>STR increase by {{companion:5:str}} (Max 20)</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<stat name="companion:5:str" value="1" />
 		</rules>
@@ -1923,9 +2077,7 @@
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet>
-			<description>STR increase by {{companion:5:str}} (Max 20)</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<stat name="companion:5:str" value="1" />
 		</rules>
@@ -1937,9 +2089,7 @@
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet>
-			<description>STR increase by {{companion:5:str}} (Max 20)</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<stat name="companion:5:str" value="1" />
 		</rules>
@@ -1951,9 +2101,7 @@
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet>
-			<description>STR increase by {{companion:5:str}} (Max 20)</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<stat name="companion:5:str" value="1" />
 		</rules>
@@ -1965,9 +2113,7 @@
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet>
-			<description>STR increase by {{companion:5:str}} (Max 20)</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<stat name="companion:5:str" value="1" />
 		</rules>
@@ -1979,9 +2125,7 @@
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet>
-			<description>STR increase by {{companion:5:str}} (Max 20)</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<stat name="companion:5:str" value="1" />
 		</rules>
@@ -1993,9 +2137,7 @@
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet>
-			<description>STR increase by {{companion:5:str}} (Max 20)</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<stat name="companion:5:str" value="1" />
 		</rules>
@@ -2007,9 +2149,7 @@
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet>
-			<description>STR increase by {{companion:5:str}} (Max 20)</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<stat name="companion:5:str" value="1" />
 		</rules>
@@ -2021,7 +2161,7 @@
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet display="false">
+		<sheet>
 			<description>DEX increase by {{companion:5:dex}} (Max 20)</description>
 		</sheet>
 		<rules>
@@ -2287,7 +2427,7 @@
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet display="false">
+		<sheet>
 			<description>CON increase by {{companion:5:con}} (Max 20)</description>
 		</sheet>
 		<rules>
@@ -2553,7 +2693,7 @@
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet display="false">
+		<sheet>
 			<description>INT increase by {{companion:5:int}} (Max 20)</description>
 		</sheet>
 		<rules>
@@ -2819,7 +2959,7 @@
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet display="false">
+		<sheet>
 			<description>WIS increase by {{companion:5:wis}} (Max 20)</description>
 		</sheet>
 		<rules>
@@ -3084,7 +3224,7 @@
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
-		<sheet display="false">
+		<sheet>
 			<description>CHA increase by {{companion:5:cha}} (Max 20)</description>
 		</sheet>
 		<rules>
