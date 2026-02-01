@@ -3,16 +3,14 @@
 	<info>
 		<name>Companions Templates</name>
 		<description>Companion Template 2 from Heliana's Guide to Monster Hunting</description>
-		<update version="0.1.3">
+		<update version="0.1.2">
 			<file name="companion-template-2.xml"
 				url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/companion-template-2.xml" />
 		</update>
 	</info>
 
 	<!--Companion 2 -->
-	<element name="CR 0 Companion" type="Class Feature"
-		source="Heliana's Guide to Monster Hunting"
-		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_ZERO_COMPANION_2">
+	<element name="Companion 2" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_2">
 		<supports>Tamed Companion 2</supports>
 		<description>
 			<p style="margin-bottom:-5px">
@@ -79,24 +77,19 @@
 				</strong>_________________________</p>
 		</description>
 		<sheet>
-			<description>___________ (CR 0) - {{size:2}}, {{type:2}}, It gain {{hit dice gained:companion:2}} hit dice. ATK/DMG: +{{go for the throat:bonus:2}}</description>
+			<description>___________ (CR {{companion:cr:2}}) - {{size:2}}, {{type:2}}, Prof: {{proficiency}}. It gain {{hit dice gained:companion:2}} hit dice. ATK/DMG: +{{go for the throat:bonus:2}}</description>
 		</sheet>
 		<rules>
 			<!-- Creature Type -->
-			<select type="Class Feature" name="Type" supports="Creature Type 2" />
+			<select type="Class Feature" name="Companion 2: Type" supports="Creature Type 2" />
 
 			<!-- Creature Size -->
-			<select type="Class Feature" name="Size" supports="Companion Size 2" />
+			<select type="Class Feature" name="Companion 2: Size" supports="Companion Size 2" />
 
-			<grant type="Class Feature"
-				id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_HALF_1"/>
-
-			<stat name="hit dice gained:companion:2" value="1" level="4" />
-			<stat name="hit dice gained:companion:2" value="1" level="8" />
-			<stat name="hit dice gained:companion:2" value="1" level="12" />
-			<stat name="hit dice gained:companion:2" value="1" level="16" />
-			<stat name="hit dice gained:companion:2" value="1" level="19" />
+			<select type="Class Feature" name="Companion 2: CR" supports="Companion 2 CR" />
 			
+			<stat name="hit dice gained:companion:2" value="0" />
+
 			<stat name="companion:2:str" value="0" />
 			<stat name="companion:2:dex" value="0" />
 			<stat name="companion:2:con" value="0" />
@@ -107,373 +100,125 @@
 			<stat name="go for the throat:bonus:2" value="0" />
 		</rules>
 	</element>
-	<element name="CR 1/2 Companion" type="Class Feature"
-		source="Heliana's Guide to Monster Hunting"
-		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_HALF_COMPANION_2">
-		<supports>Tamed Companion 2</supports>
+
+	<!-- Companion CR -->
+	<element name="CR 0" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_2_CR_0">
+		<supports>Companion 2 CR</supports>
 		<description>
-			<p style="margin-bottom:-5px">
-				<em>_______, _______</em>
-			</p>
-			<h4 style="margin-top:5px" />
-			<p> </p>
-			<p><strong>Armor Class</strong> ____________</p>
-			<p><strong>Hit Points</strong> _____________</p>
-			<p><strong>Speed</strong> _____________</p>
-			<p> </p>
-			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
-				<thead>
-					<tr>
-						<td>STR</td>
-						<td>DEX</td>
-						<td>CON</td>
-						<td>INT</td>
-						<td>WIS</td>
-						<td>CHA</td>
-					</tr>
-				</thead>
-				<tr>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-				</tr>
-			</table>
-			<p><strong>Skills</strong> _____________</p>
-			<p><strong>Senses</strong> passive Perception __,__________</p>
-			<p><strong>Languages</strong> —</p>
-			<p><strong>Size</strong> ____</p>
-			<p> </p>
-			<h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
-			<p><strong>
-					<em>_________.</em>
-				</strong>______________.</p>
-			<p> </p>
-			<p><strong>
-					<em>_________.</em>
-				</strong>______________.</p>
-			<p> </p>
-			<p><strong>
-					<em>_________.</em>
-				</strong>______________.</p>
-			<p> </p>
-			<h4 style="margin-top:15px">Actions</h4>
-			<p> </p>
-			<p><strong>
-					<em>________. </em>
-				</strong><em>Melee Weapon Attack:</em> +___
-				to hit, reach __ ft., one target. <em>Hit:</em> __ (___ + _) ____ damage.</p>
-			<p></p>
-			<p><strong>
-					<em>______. </em>
-				</strong><em>Ranged Weapon Attack:</em> +___ to
-				hit, reach __ ft., one target. <em>Hit:</em> __ (___ + _) ______ damage.</p>
-			<p></p>
-			<p><strong>
-					<em>__________. </em>
-				</strong>_________________________</p>
+			<p>Your companion is a CR 0</p>
 		</description>
-		<sheet>
-			<description>___________ (CR 1/2) - {{size:2}}, {{type:2}}, It gain {{hit dice gained:companion:2}} hit dice. ATK/DMG: +{{go for the throat:bonus:2}}</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
-			<!-- Creature Type -->
-			<select type="Class Feature" name="Type" supports="Creature Type 2" />
+			<stat name="companion:cr:2" value="0" inline="true"/>
 
-			<!-- Creature Size -->
-			<select type="Class Feature" name="Size" supports="Companion Size 2" />
-
-			<grant type="Class Feature"
-				id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_HALF_2"/>
+			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_HALF_2"/>
 
 			<stat name="hit dice gained:companion:2" value="1" level="4" />
 			<stat name="hit dice gained:companion:2" value="1" level="8" />
 			<stat name="hit dice gained:companion:2" value="1" level="12" />
 			<stat name="hit dice gained:companion:2" value="1" level="16" />
 			<stat name="hit dice gained:companion:2" value="1" level="19" />
-
-			<stat name="companion:2:str" value="0" />
-			<stat name="companion:2:dex" value="0" />
-			<stat name="companion:2:con" value="0" />
-			<stat name="companion:2:int" value="0" />
-			<stat name="companion:2:wis" value="0" />
-			<stat name="companion:2:cha" value="0" />
-
-			<stat name="go for the throat:bonus:2" value="0" />
 		</rules>
 	</element>
-	<element name="CR 1 Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting"
-		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_ONE_COMPANION_2">
-		<supports>Tamed Companion 2</supports>
+	<element name="CR 1/8" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_2_CR_1_8">
+		<supports>Companion 2 CR</supports>
+		<description>
+			<p>Your companion is a CR 1/8</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="companion:cr:2" value="1/8" inline="true"/>
+
+			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_HALF_2"/>
+
+			<stat name="hit dice gained:companion:2" value="1" level="4" />
+			<stat name="hit dice gained:companion:2" value="1" level="8" />
+			<stat name="hit dice gained:companion:2" value="1" level="12" />
+			<stat name="hit dice gained:companion:2" value="1" level="16" />
+			<stat name="hit dice gained:companion:2" value="1" level="19" />
+		</rules>
+	</element>
+	<element name="CR 1/4" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_2_CR_1_4">
+		<supports>Companion 2 CR</supports>
+		<description>
+			<p>Your companion is a CR 1/4</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="companion:cr:2" value="1/4" inline="true"/>
+
+			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_HALF_2"/>
+
+			<stat name="hit dice gained:companion:2" value="1" level="4" />
+			<stat name="hit dice gained:companion:2" value="1" level="8" />
+			<stat name="hit dice gained:companion:2" value="1" level="12" />
+			<stat name="hit dice gained:companion:2" value="1" level="16" />
+			<stat name="hit dice gained:companion:2" value="1" level="19" />
+		</rules>
+	</element>
+	<element name="CR 1/2" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_2_CR_1_2">
+		<supports>Companion 2 CR</supports>
+		<description>
+			<p>Your companion is a CR 1/2</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="companion:cr:2" value="1/2" inline="true"/>
+			
+			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_HALF_2"/>
+			
+			<stat name="hit dice gained:companion:2" value="1" level="4" />
+			<stat name="hit dice gained:companion:2" value="1" level="8" />
+			<stat name="hit dice gained:companion:2" value="1" level="12" />
+			<stat name="hit dice gained:companion:2" value="1" level="16" />
+			<stat name="hit dice gained:companion:2" value="1" level="19" />
+		</rules>
+	</element>
+	<element name="CR 1" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_2_CR_1">
+		<supports>Companion 2 CR</supports>
 		<requirements>[level:tamer:4]</requirements>
 		<description>
-			<p style="margin-bottom:-5px">
-				<em>_______, _______</em>
-			</p>
-			<h4 style="margin-top:5px" />
-			<p> </p>
-			<p><strong>Armor Class</strong> ____________</p>
-			<p><strong>Hit Points</strong> _____________</p>
-			<p><strong>Speed</strong> _____________</p>
-			<p> </p>
-			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
-				<thead>
-					<tr>
-						<td>STR</td>
-						<td>DEX</td>
-						<td>CON</td>
-						<td>INT</td>
-						<td>WIS</td>
-						<td>CHA</td>
-					</tr>
-				</thead>
-				<tr>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-				</tr>
-			</table>
-			<p><strong>Skills</strong> _____________</p>
-			<p><strong>Senses</strong> passive Perception __,__________</p>
-			<p><strong>Languages</strong> —</p>
-			<p><strong>Size</strong> ____</p>
-			<p> </p>
-			<h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
-			<p><strong>
-					<em>_________.</em>
-				</strong>______________.</p>
-			<p> </p>
-			<p><strong>
-					<em>_________.</em>
-				</strong>______________.</p>
-			<p> </p>
-			<p><strong>
-					<em>_________.</em>
-				</strong>______________.</p>
-			<p> </p>
-			<h4 style="margin-top:15px">Actions</h4>
-			<p> </p>
-			<p><strong>
-					<em>________. </em>
-				</strong><em>Melee Weapon Attack:</em> +___
-				to hit, reach __ ft., one target. <em>Hit:</em> __ (___ + _) ____ damage.</p>
-			<p></p>
-			<p><strong>
-					<em>______. </em>
-				</strong><em>Ranged Weapon Attack:</em> +___ to
-				hit, reach __ ft., one target. <em>Hit:</em> __ (___ + _) ______ damage.</p>
-			<p></p>
-			<p><strong>
-					<em>__________. </em>
-				</strong>_________________________</p>
+			<p>Your companion is a CR 1</p>
 		</description>
-		<sheet>
-			<description>___________ (CR 1) - {{size:2}}, {{type:2}}, It gain {{hit dice gained:companion:2}} hit dice. ATK/DMG: +{{go for the throat:bonus:2}}</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
-			<!-- Creature Type -->
-			<select type="Class Feature" name="Type" supports="Creature Type 2" />
+			<stat name="companion:cr:2" value="1" inline="true"/>
 
-			<!-- Creature Size -->
-			<select type="Class Feature" name="Size" supports="Companion Size 2" />
-
-			<grant type="Class Feature"
-				id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ONE_2" />
+			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ONE_2"/>
 
 			<stat name="hit dice gained:companion:2" value="1" level="8" />
 			<stat name="hit dice gained:companion:2" value="1" level="12" />
 			<stat name="hit dice gained:companion:2" value="1" level="16" />
 			<stat name="hit dice gained:companion:2" value="1" level="19" />
-
-			<stat name="companion:2:str" value="0" />
-			<stat name="companion:2:dex" value="0" />
-			<stat name="companion:2:con" value="0" />
-			<stat name="companion:2:int" value="0" />
-			<stat name="companion:2:wis" value="0" />
-			<stat name="companion:2:cha" value="0" />
-
-			<stat name="go for the throat:bonus:2" value="0" />
 		</rules>
 	</element>
-	<element name="CR 2 Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting"
-		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_TWO_COMPANION_2">
-		<supports>Tamed Companion 2</supports>
+	<element name="CR 2" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_2_CR_2">
+		<supports>Companion 2 CR</supports>
 		<requirements>[level:tamer:7]</requirements>
 		<description>
-			<p style="margin-bottom:-5px">
-				<em>_______, _______</em>
-			</p>
-			<h4 style="margin-top:5px" />
-			<p> </p>
-			<p><strong>Armor Class</strong> ____________</p>
-			<p><strong>Hit Points</strong> _____________</p>
-			<p><strong>Speed</strong> _____________</p>
-			<p> </p>
-			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
-				<thead>
-					<tr>
-						<td>STR</td>
-						<td>DEX</td>
-						<td>CON</td>
-						<td>INT</td>
-						<td>WIS</td>
-						<td>CHA</td>
-					</tr>
-				</thead>
-				<tr>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-				</tr>
-			</table>
-			<p><strong>Skills</strong> _____________</p>
-			<p><strong>Senses</strong> passive Perception __,__________</p>
-			<p><strong>Languages</strong> —</p>
-			<p><strong>Size</strong> ____</p>
-			<p> </p>
-			<h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
-			<p><strong>
-					<em>_________.</em>
-				</strong>______________.</p>
-			<p> </p>
-			<p><strong>
-					<em>_________.</em>
-				</strong>______________.</p>
-			<p> </p>
-			<p><strong>
-					<em>_________.</em>
-				</strong>______________.</p>
-			<p> </p>
-			<h4 style="margin-top:15px">Actions</h4>
-			<p> </p>
-			<p><strong>
-					<em>________. </em>
-				</strong><em>Melee Weapon Attack:</em> +___
-				to hit, reach __ ft., one target. <em>Hit:</em> __ (___ + _) ____ damage.</p>
-			<p></p>
-			<p><strong>
-					<em>______. </em>
-				</strong><em>Ranged Weapon Attack:</em> +___ to
-				hit, reach __ ft., one target. <em>Hit:</em> __ (___ + _) ______ damage.</p>
-			<p></p>
-			<p><strong>
-					<em>__________. </em>
-				</strong>_________________________</p>
+			<p>Your companion is a CR 2</p>
 		</description>
-		<sheet>
-			<description>___________ (CR 2) - {{size:2}}, {{type:2}}, It gain {{hit dice gained:companion:2}} hit dice. ATK/DMG: +{{go for the throat:bonus:2}}</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
-			<!-- Creature Type -->
-			<select type="Class Feature" name="Type" supports="Creature Type 2" />
+			<stat name="companion:cr:2" value="2" inline="true"/>
 
-			<!-- Creature Size -->
-			<select type="Class Feature" name="Size" supports="Companion Size 2" />
-
-
-			<grant type="Class Feature"
-				id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TWO_2" />
+			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_TWO_2" />
 
 			<stat name="hit dice gained:companion:2" value="1" level="8" />
 			<stat name="hit dice gained:companion:2" value="1" level="12" />
 			<stat name="hit dice gained:companion:2" value="1" level="16" />
 			<stat name="hit dice gained:companion:2" value="1" level="19" />
-
-			<stat name="companion:2:str" value="0" />
-			<stat name="companion:2:dex" value="0" />
-			<stat name="companion:2:con" value="0" />
-			<stat name="companion:2:int" value="0" />
-			<stat name="companion:2:wis" value="0" />
-			<stat name="companion:2:cha" value="0" />
-
-			<stat name="go for the throat:bonus:2" value="0" />
 		</rules>
 	</element>
-	<element name="CR 3 Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting"
-		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_THREE_COMPANION_2">
-		<supports>Tamed Companion 2</supports>
+	<element name="CR 3" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_2_CR_3">
+		<supports>Companion 2 CR</supports>
 		<requirements>[level:tamer:10]</requirements>
 		<description>
-			<p style="margin-bottom:-5px">
-				<em>_______, _______</em>
-			</p>
-			<h4 style="margin-top:5px" />
-			<p> </p>
-			<p><strong>Armor Class</strong> ____________</p>
-			<p><strong>Hit Points</strong> _____________</p>
-			<p><strong>Speed</strong> _____________</p>
-			<p> </p>
-			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
-				<thead>
-					<tr>
-						<td>STR</td>
-						<td>DEX</td>
-						<td>CON</td>
-						<td>INT</td>
-						<td>WIS</td>
-						<td>CHA</td>
-					</tr>
-				</thead>
-				<tr>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-				</tr>
-			</table>
-			<p><strong>Skills</strong> _____________</p>
-			<p><strong>Senses</strong> passive Perception __,__________</p>
-			<p><strong>Languages</strong> —</p>
-			<p><strong>Size</strong> ____</p>
-			<p> </p>
-			<h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
-			<p><strong>
-					<em>_________.</em>
-				</strong>______________.</p>
-			<p> </p>
-			<p><strong>
-					<em>_________.</em>
-				</strong>______________.</p>
-			<p> </p>
-			<p><strong>
-					<em>_________.</em>
-				</strong>______________.</p>
-			<p> </p>
-			<h4 style="margin-top:15px">Actions</h4>
-			<p> </p>
-			<p><strong>
-					<em>________. </em>
-				</strong><em>Melee Weapon Attack:</em> +___
-				to hit, reach __ ft., one target. <em>Hit:</em> __ (___ + _) ____ damage.</p>
-			<p></p>
-			<p><strong>
-					<em>______. </em>
-				</strong><em>Ranged Weapon Attack:</em> +___ to
-				hit, reach __ ft., one target. <em>Hit:</em> __ (___ + _) ______ damage.</p>
-			<p></p>
-			<p><strong>
-					<em>__________. </em>
-				</strong>_________________________</p>
+			<p>Your companion is a CR 3</p>
 		</description>
-		<sheet>
-			<description>___________ (CR 3) -  {{size:2}}, {{type:2}}, It gain {{hit dice gained:companion:2}} hit dice. ATK/DMG: +{{go for the throat:bonus:2}}</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
-			<!-- Creature Type -->
-			<select type="Class Feature" name="Type" supports="Creature Type 2" />
-
-			<!-- Creature Size -->
-			<select type="Class Feature" name="Size" supports="Companion Size 2" />
+			<stat name="companion:cr:2" value="3" inline="true"/>
 
 			<grant type="Class Feature"
 				id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_THREE_2" />
@@ -481,293 +226,51 @@
 			<stat name="hit dice gained:companion:2" value="1" level="12" />
 			<stat name="hit dice gained:companion:2" value="1" level="16" />
 			<stat name="hit dice gained:companion:2" value="1" level="19" />
-
-			<stat name="companion:2:str" value="0" />
-			<stat name="companion:2:dex" value="0" />
-			<stat name="companion:2:con" value="0" />
-			<stat name="companion:2:int" value="0" />
-			<stat name="companion:2:wis" value="0" />
-			<stat name="companion:2:cha" value="0" />
-
-			<stat name="go for the throat:bonus:2" value="0" />
 		</rules>
 	</element>
-	<element name="CR 4 Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting"
-		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_FOUR_COMPANION_2">
-		<supports>Tamed Companion 2</supports>
+	<element name="CR 4" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_2_CR_4">
+		<supports>Companion 2 CR</supports>
 		<requirements>[level:tamer:13]</requirements>
 		<description>
-			<p style="margin-bottom:-5px">
-				<em>_______, _______</em>
-			</p>
-			<h4 style="margin-top:5px" />
-			<p> </p>
-			<p><strong>Armor Class</strong> ____________</p>
-			<p><strong>Hit Points</strong> _____________</p>
-			<p><strong>Speed</strong> _____________</p>
-			<p> </p>
-			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
-				<thead>
-					<tr>
-						<td>STR</td>
-						<td>DEX</td>
-						<td>CON</td>
-						<td>INT</td>
-						<td>WIS</td>
-						<td>CHA</td>
-					</tr>
-				</thead>
-				<tr>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-				</tr>
-			</table>
-			<p><strong>Skills</strong> _____________</p>
-			<p><strong>Senses</strong> passive Perception __,__________</p>
-			<p><strong>Languages</strong> —</p>
-			<p><strong>Size</strong> ____</p>
-			<p> </p>
-			<h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
-			<p><strong>
-					<em>_________.</em>
-				</strong>______________.</p>
-			<p> </p>
-			<p><strong>
-					<em>_________.</em>
-				</strong>______________.</p>
-			<p> </p>
-			<p><strong>
-					<em>_________.</em>
-				</strong>______________.</p>
-			<p> </p>
-			<h4 style="margin-top:15px">Actions</h4>
-			<p> </p>
-			<p><strong>
-					<em>________. </em>
-				</strong><em>Melee Weapon Attack:</em> +___
-				to hit, reach __ ft., one target. <em>Hit:</em> __ (___ + _) ____ damage.</p>
-			<p></p>
-			<p><strong>
-					<em>______. </em>
-				</strong><em>Ranged Weapon Attack:</em> +___ to
-				hit, reach __ ft., one target. <em>Hit:</em> __ (___ + _) ______ damage.</p>
-			<p></p>
-			<p><strong>
-					<em>__________. </em>
-				</strong>_________________________</p>
+			<p>Your companion is a CR 4</p>
 		</description>
-		<sheet>
-			<description>___________ (CR 4) - {{size:2}}, {{type:2}}, It gain {{hit dice gained:companion:2}} hit dice. ATK/DMG: +{{go for the throat:bonus:2}}</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
-			<!-- Creature Type -->
-			<select type="Class Feature" name="Type" supports="Creature Type 2" />
-
-			<!-- Creature Size -->
-			<select type="Class Feature" name="Size" supports="Companion Size 2" />
+			<stat name="companion:cr:2" value="4" inline="true"/>
 
 			<grant type="Class Feature"
 				id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_FOUR_2" />
 
 			<stat name="hit dice gained:companion:2" value="1" level="16" />
 			<stat name="hit dice gained:companion:2" value="1" level="19" />
-
-			<stat name="companion:2:str" value="0" />
-			<stat name="companion:2:dex" value="0" />
-			<stat name="companion:2:con" value="0" />
-			<stat name="companion:2:int" value="0" />
-			<stat name="companion:2:wis" value="0" />
-			<stat name="companion:2:cha" value="0" />
-
-			<stat name="go for the throat:bonus:2" value="0" />
 		</rules>
 	</element>
-	<element name="CR 5 Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting"
-		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_FIVE_COMPANION_2">
-		<supports>Tamed Companion 2</supports>
+	<element name="CR 5" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_2_CR_5">
+		<supports>Companion 2 CR</supports>
 		<requirements>[level:tamer:16]</requirements>
 		<description>
-			<p style="margin-bottom:-5px">
-				<em>_______, _______</em>
-			</p>
-			<h4 style="margin-top:5px" />
-			<p> </p>
-			<p><strong>Armor Class</strong> ____________</p>
-			<p><strong>Hit Points</strong> _____________</p>
-			<p><strong>Speed</strong> _____________</p>
-			<p> </p>
-			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
-				<thead>
-					<tr>
-						<td>STR</td>
-						<td>DEX</td>
-						<td>CON</td>
-						<td>INT</td>
-						<td>WIS</td>
-						<td>CHA</td>
-					</tr>
-				</thead>
-				<tr>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-				</tr>
-			</table>
-			<p><strong>Skills</strong> _____________</p>
-			<p><strong>Senses</strong> passive Perception __,__________</p>
-			<p><strong>Languages</strong> —</p>
-			<p><strong>Size</strong> ____</p>
-			<p> </p>
-			<h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
-			<p><strong>
-					<em>_________.</em>
-				</strong>______________.</p>
-			<p> </p>
-			<p><strong>
-					<em>_________.</em>
-				</strong>______________.</p>
-			<p> </p>
-			<p><strong>
-					<em>_________.</em>
-				</strong>______________.</p>
-			<p> </p>
-			<h4 style="margin-top:15px">Actions</h4>
-			<p> </p>
-			<p><strong>
-					<em>________. </em>
-				</strong><em>Melee Weapon Attack:</em> +___
-				to hit, reach __ ft., one target. <em>Hit:</em> __ (___ + _) ____ damage.</p>
-			<p></p>
-			<p><strong>
-					<em>______. </em>
-				</strong><em>Ranged Weapon Attack:</em> +___ to
-				hit, reach __ ft., one target. <em>Hit:</em> __ (___ + _) ______ damage.</p>
-			<p></p>
-			<p><strong>
-					<em>__________. </em>
-				</strong>_________________________</p>
+			<p>Your companion is a CR 5</p>
 		</description>
-		<sheet>
-			<description>___________ (CR 5) - {{size:2}}, {{type:2}}, It gain {{hit dice gained:companion:2}} hit dice. ATK/DMG: +{{go for the throat:bonus:2}}</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
-			<!-- Creature Type -->
-			<select type="Class Feature" name="Type" supports="Creature Type 2" />
-
-			<!-- Creature Size -->
-			<select type="Class Feature" name="Size" supports="Companion Size 2" />
+			<stat name="companion:cr:2" value="5" inline="true"/>
 
 			<grant type="Class Feature"
 				id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_FIVE_2" />
 
-			<stat name="hit dice gained:companion:2" value="1" level="19" />
-
-			<stat name="companion:2:str" value="0" />
-			<stat name="companion:2:dex" value="0" />
-			<stat name="companion:2:con" value="0" />
-			<stat name="companion:2:int" value="0" />
-			<stat name="companion:2:wis" value="0" />
-			<stat name="companion:2:cha" value="0" />
-
-			<stat name="go for the throat:bonus:2" value="0" />
-		</rules>
+			<stat name="hit dice gained:companion:2" value="1" level="19" />		</rules>
 	</element>
-	<element name="CR 6 Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting"
-		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_SIX_COMPANION_2">
-		<supports>Tamed Companion 2</supports>
+	<element name="CR 6" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_2_CR_6">
+		<supports>Companion 2 CR</supports>
 		<requirements>[level:tamer:19]</requirements>
 		<description>
-			<p style="margin-bottom:-5px">
-				<em>_______, _______</em>
-			</p>
-			<h4 style="margin-top:5px" />
-			<p> </p>
-			<p><strong>Armor Class</strong> ____________</p>
-			<p><strong>Hit Points</strong> _____________</p>
-			<p><strong>Speed</strong> _____________</p>
-			<p> </p>
-			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
-				<thead>
-					<tr>
-						<td>STR</td>
-						<td>DEX</td>
-						<td>CON</td>
-						<td>INT</td>
-						<td>WIS</td>
-						<td>CHA</td>
-					</tr>
-				</thead>
-				<tr>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-					<td>___(__)</td>
-				</tr>
-			</table>
-			<p><strong>Skills</strong> _____________</p>
-			<p><strong>Senses</strong> passive Perception __,__________</p>
-			<p><strong>Languages</strong> —</p>
-			<p><strong>Size</strong> ____</p>
-			<p> </p>
-			<h4 style="margin-top:10px; margin-bottom:10px">Traits</h4>
-			<p><strong>
-					<em>_________.</em>
-				</strong>______________.</p>
-			<p> </p>
-			<p><strong>
-					<em>_________.</em>
-				</strong>______________.</p>
-			<p> </p>
-			<p><strong>
-					<em>_________.</em>
-				</strong>______________.</p>
-			<p> </p>
-			<h4 style="margin-top:15px">Actions</h4>
-			<p> </p>
-			<p><strong>
-					<em>________. </em>
-				</strong><em>Melee Weapon Attack:</em> +___
-				to hit, reach __ ft., one target. <em>Hit:</em> __ (___ + _) ____ damage.</p>
-			<p></p>
-			<p><strong>
-					<em>______. </em>
-				</strong><em>Ranged Weapon Attack:</em> +___ to
-				hit, reach __ ft., one target. <em>Hit:</em> __ (___ + _) ______ damage.</p>
-			<p></p>
-			<p><strong>
-					<em>__________. </em>
-				</strong>_________________________</p>
+			<p>Your companion is a CR 6</p>
 		</description>
-		<sheet>
-			<description>___________ (CR 6) - {{size:2}}, {{type:2}}. It gain {{hit dice gained:companion:2}} hit dice. ATK/DMG: +{{go for the throat:bonus:2}}</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
-			<!-- Creature Type -->
-			<select type="Class Feature" name="Type" supports="Creature Type 2" />
+			<stat name="companion:cr:2" value="6" inline="true"/>
 
-			<!-- Creature Size -->
-			<select type="Class Feature" name="Size" supports="Companion Size 2" />
-
-			<grant type="Class Feature"
-				id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SIX_2" />
-
-			<stat name="companion:2:str" value="0" />
-			<stat name="companion:2:dex" value="0" />
-			<stat name="companion:2:con" value="0" />
-			<stat name="companion:2:int" value="0" />
-			<stat name="companion:2:wis" value="0" />
-			<stat name="companion:2:cha" value="0" />
-
-			<stat name="go for the throat:bonus:2" value="0" />
+			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SIX_2" />
 		</rules>
 	</element>
 
@@ -1082,43 +585,43 @@
 			<description>Your Companion has the following Improvements:</description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 2)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 2)"
 				supports="Companion Improvement 2" level="2" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 3)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 3)"
 				supports="Companion Improvement 2" level="3" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 4)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 4)"
 				supports="Companion Improvement 2" level="4" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 5)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 5)"
 				supports="Companion Improvement 2" level="5" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 6)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 6)"
 				supports="Companion Improvement 2" level="6" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 7)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 7)"
 				supports="Companion Improvement 2" level="7" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 8)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 8)"
 				supports="Companion Improvement 2" level="8" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 9)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 9)"
 				supports="Companion Improvement 2" level="9" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 10)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 10)"
 				supports="Companion Improvement 2" level="10" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 11)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 11)"
 				supports="Companion Improvement 2" level="11" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 12)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 12)"
 				supports="Companion Improvement 2" level="12" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 13)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 13)"
 				supports="Companion Improvement 2" level="13" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 14)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 14)"
 				supports="Companion Improvement 2" level="14" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 15)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 15)"
 				supports="Companion Improvement 2" level="15" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 16)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 16)"
 				supports="Companion Improvement 2" level="16" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 17)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 17)"
 				supports="Companion Improvement 2" level="17" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 18)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 18)"
 				supports="Companion Improvement 2" level="18" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 19)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 19)"
 				supports="Companion Improvement 2" level="19" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 20)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 20)"
 				supports="Companion Improvement 2" level="20" />
 		</rules>
 	</element>
@@ -1132,37 +635,37 @@
 				you had them since your 1st level in tamer.</p>
 		</description>
 		<rules>
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 5)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 5)"
 				supports="Companion Improvement 2" level="5" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 6)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 6)"
 				supports="Companion Improvement 2" level="6" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 7)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 7)"
 				supports="Companion Improvement 2" level="7" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 8)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 8)"
 				supports="Companion Improvement 2" level="8" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 9)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 9)"
 				supports="Companion Improvement 2" level="9" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 10)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 10)"
 				supports="Companion Improvement 2" level="10" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 11)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 11)"
 				supports="Companion Improvement 2" level="11" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 12)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 12)"
 				supports="Companion Improvement 2" level="12" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 13)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 13)"
 				supports="Companion Improvement 2" level="13" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 14)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 14)"
 				supports="Companion Improvement 2" level="14" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 15)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 15)"
 				supports="Companion Improvement 2" level="15" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 16)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 16)"
 				supports="Companion Improvement 2" level="16" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 17)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 17)"
 				supports="Companion Improvement 2" level="17" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 18)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 18)"
 				supports="Companion Improvement 2" level="18" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 19)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 19)"
 				supports="Companion Improvement 2" level="19" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 20)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 20)"
 				supports="Companion Improvement 2" level="20" />
 		</rules>
 	</element>
@@ -1176,31 +679,31 @@
 				you had them since your 1st level in tamer.</p>
 		</description>
 		<rules>
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 8)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 8)"
 				supports="Companion Improvement 2" level="8" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 9)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 9)"
 				supports="Companion Improvement 2" level="9" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 10)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 10)"
 				supports="Companion Improvement 2" level="10" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 11)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 11)"
 				supports="Companion Improvement 2" level="11" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 12)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 12)"
 				supports="Companion Improvement 2" level="12" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 13)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 13)"
 				supports="Companion Improvement 2" level="13" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 14)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 14)"
 				supports="Companion Improvement 2" level="14" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 15)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 15)"
 				supports="Companion Improvement 2" level="15" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 16)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 16)"
 				supports="Companion Improvement 2" level="16" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 17)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 17)"
 				supports="Companion Improvement 2" level="17" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 18)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 18)"
 				supports="Companion Improvement 2" level="18" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 19)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 19)"
 				supports="Companion Improvement 2" level="19" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 20)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 20)"
 				supports="Companion Improvement 2" level="20" />
 		</rules>
 	</element>
@@ -1214,25 +717,25 @@
 				you had them since your 1st level in tamer.</p>
 		</description>
 		<rules>
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 11)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 11)"
 				supports="Companion Improvement 2" level="11" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 12)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 12)"
 				supports="Companion Improvement 2" level="12" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 13)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 13)"
 				supports="Companion Improvement 2" level="13" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 14)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 14)"
 				supports="Companion Improvement 2" level="14" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 15)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 15)"
 				supports="Companion Improvement 2" level="15" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 16)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 16)"
 				supports="Companion Improvement 2" level="16" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 17)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 17)"
 				supports="Companion Improvement 2" level="17" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 18)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 18)"
 				supports="Companion Improvement 2" level="18" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 19)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 19)"
 				supports="Companion Improvement 2" level="19" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 20)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 20)"
 				supports="Companion Improvement 2" level="20" />
 		</rules>
 	</element>
@@ -1246,19 +749,19 @@
 				you had them since your 1st level in tamer.</p>
 		</description>
 		<rules>
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 14)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 14)"
 				supports="Companion Improvement 2" level="14" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 15)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 15)"
 				supports="Companion Improvement 2" level="15" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 16)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 16)"
 				supports="Companion Improvement 2" level="16" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 17)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 17)"
 				supports="Companion Improvement 2" level="17" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 18)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 18)"
 				supports="Companion Improvement 2" level="18" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 19)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 19)"
 				supports="Companion Improvement 2" level="19" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 20)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 20)"
 				supports="Companion Improvement 2" level="20" />
 		</rules>
 	</element>
@@ -1272,13 +775,13 @@
 				you had them since your 1st level in tamer.</p>
 		</description>
 		<rules>
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 17)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 17)"
 				supports="Companion Improvement 2" level="17" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 18)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 18)"
 				supports="Companion Improvement 2" level="18" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 19)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 19)"
 				supports="Companion Improvement 2" level="19" />
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 20)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 20)"
 				supports="Companion Improvement 2" level="20" />
 		</rules>
 	</element>
@@ -1292,14 +795,14 @@
 				you had them since your 1st level in tamer.</p>
 		</description>
 		<rules>
-			<select type="Class Feature" name="Companion 2 Improvement (Lvl 20)"
+			<select type="Class Feature" name="Companion 2: Improvement (Lvl 20)"
 				supports="Companion Improvement 2" level="20" />
 		</rules>
 	</element>
 
 	<!-- Companions Improvements -->
 	<!-- Speed Training -->
-	<element name="Speed Training" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+	<element name="Companion 2: Speed Training" type="Class Feature" source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SPEED_TRAINING_2">
 		<supports>Companion Improvement 2</supports>
 		<compendium display="false" />
@@ -1310,7 +813,7 @@
 				feet can be increased to 40 feet, and a base speed of 20 feet to 30 feet.</p>
 		</description>
 		<sheet>
-			<description>Increase one existing speed by 15 feet (Max of 150%)</description>
+			<description>+15ft to one speed (Max 150%)</description>
 		</sheet>
 	</element>
 
@@ -1924,20 +1427,20 @@
 		</rules>
 	</element>
 
-	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_2">
+	<element name="Companion 2: Strength" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_2">
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's strength scores by 1, to a maximum of 20</p>
 		</description>
 		<sheet>
-			<description>STR increase by {{companion:2:str}} (Max 20)</description>
+			<description>+{{companion:2:str}} (Max 20)</description>
 		</sheet>
 		<rules>
 			<stat name="companion:2:str" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_2">
+	<element name="Strength" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_1_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -1949,7 +1452,7 @@
 			<stat name="companion:2:str" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_2">
+	<element name="Strength" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_2_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -1961,7 +1464,7 @@
 			<stat name="companion:2:str" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_2">
+	<element name="Strength" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_3_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -1973,7 +1476,7 @@
 			<stat name="companion:2:str" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_2">
+	<element name="Strength" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_4_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -1985,7 +1488,7 @@
 			<stat name="companion:2:str" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_2">
+	<element name="Strength" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_5_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -1997,7 +1500,7 @@
 			<stat name="companion:2:str" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_2">
+	<element name="Strength" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_6_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2009,7 +1512,7 @@
 			<stat name="companion:2:str" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_2">
+	<element name="Strength" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_7_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2021,7 +1524,7 @@
 			<stat name="companion:2:str" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_2">
+	<element name="Strength" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_8_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2033,7 +1536,7 @@
 			<stat name="companion:2:str" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_2">
+	<element name="Strength" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_9_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2045,7 +1548,7 @@
 			<stat name="companion:2:str" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_11_2">
+	<element name="Strength" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_11_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_10_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2057,7 +1560,7 @@
 			<stat name="companion:2:str" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_12_2">
+	<element name="Strength" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_12_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_11_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2069,7 +1572,7 @@
 			<stat name="companion:2:str" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_13_2">
+	<element name="Strength" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_13_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_12_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2081,7 +1584,7 @@
 			<stat name="companion:2:str" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_14_2">
+	<element name="Strength" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_14_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_13_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2093,7 +1596,7 @@
 			<stat name="companion:2:str" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_15_2">
+	<element name="Strength" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_15_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_14_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2105,7 +1608,7 @@
 			<stat name="companion:2:str" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_16_2">
+	<element name="Strength" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_16_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_15_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2117,7 +1620,7 @@
 			<stat name="companion:2:str" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_17_2">
+	<element name="Strength" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_17_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_16_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2129,7 +1632,7 @@
 			<stat name="companion:2:str" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_18_2">
+	<element name="Strength" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_18_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_17_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2141,7 +1644,7 @@
 			<stat name="companion:2:str" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Strength)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_19_2">
+	<element name="Strength" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_19_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_STRENGTH_18_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2154,20 +1657,20 @@
 		</rules>
 	</element>
 	
-	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_2">
+	<element name="Companion 2: Dexterity" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_2">
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's dexterity scores by 1, to a maximum of 20</p>
 		</description>
 		<sheet>
-			<description>DEX increase by {{companion:2:dex}} (Max 20)</description>
+			<description>+{{companion:2:dex}} (Max 20)</description>
 		</sheet>
 		<rules>
 			<stat name="companion:2:dex" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_2">
+	<element name="Dexterity" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_1_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2181,7 +1684,7 @@
 			<stat name="companion:2:dex" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_2">
+	<element name="Dexterity" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_2_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2195,7 +1698,7 @@
 			<stat name="companion:2:dex" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_2">
+	<element name="Dexterity" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_3_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2209,7 +1712,7 @@
 			<stat name="companion:2:dex" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_2">
+	<element name="Dexterity" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_4_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2223,7 +1726,7 @@
 			<stat name="companion:2:dex" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_2">
+	<element name="Dexterity" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_5_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2237,7 +1740,7 @@
 			<stat name="companion:2:dex" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_2">
+	<element name="Dexterity" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_6_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2251,7 +1754,7 @@
 			<stat name="companion:2:dex" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_2">
+	<element name="Dexterity" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_7_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2265,7 +1768,7 @@
 			<stat name="companion:2:dex" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_2">
+	<element name="Dexterity" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_8_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2279,7 +1782,7 @@
 			<stat name="companion:2:dex" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_10_2">
+	<element name="Dexterity" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_10_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_9_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2293,7 +1796,7 @@
 			<stat name="companion:2:dex" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_11_2">
+	<element name="Dexterity" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_11_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_10_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2307,7 +1810,7 @@
 			<stat name="companion:2:dex" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_12_2">
+	<element name="Dexterity" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_12_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_11_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2321,7 +1824,7 @@
 			<stat name="companion:2:dex" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_13_2">
+	<element name="Dexterity" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_13_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_12_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2335,7 +1838,7 @@
 			<stat name="companion:2:dex" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_14_2">
+	<element name="Dexterity" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_14_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_13_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2349,7 +1852,7 @@
 			<stat name="companion:2:dex" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_15_2">
+	<element name="Dexterity" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_15_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_14_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2363,7 +1866,7 @@
 			<stat name="companion:2:dex" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_16_2">
+	<element name="Dexterity" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_16_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_15_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2377,7 +1880,7 @@
 			<stat name="companion:2:dex" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_17_2">
+	<element name="Dexterity" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_17_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_16_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2391,7 +1894,7 @@
 			<stat name="companion:2:dex" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_18_2">
+	<element name="Dexterity" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_18_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_17_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2405,7 +1908,7 @@
 			<stat name="companion:2:dex" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Dexterity)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_19_2">
+	<element name="Dexterity" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_19_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_DEXTERITY_18_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2420,20 +1923,20 @@
 		</rules>
 	</element>
 	
-	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_2">
+	<element name="Companion 2: Constitution" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_2">
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's constitution scores by 1, to a maximum of 20</p>
 		</description>
 		<sheet>
-			<description>CON increase by {{companion:2:con}} (Max 20)</description>
+			<description>+{{companion:2:con}} (Max 20)</description>
 		</sheet>
 		<rules>
 			<stat name="companion:2:con" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_2">
+	<element name="Constitution" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_1_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2447,7 +1950,7 @@
 			<stat name="companion:2:con" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_2">
+	<element name="Constitution" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_2_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2461,7 +1964,7 @@
 			<stat name="companion:2:con" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_2">
+	<element name="Constitution" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_3_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2475,7 +1978,7 @@
 			<stat name="companion:2:con" value="1" />
 		</rules>
 	</element>
-		<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_2">
+	<element name="Constitution" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_2">
 			<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_4_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2489,7 +1992,7 @@
 			<stat name="companion:2:con" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_2">
+	<element name="Constitution" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_5_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2503,7 +2006,7 @@
 			<stat name="companion:2:con" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_7_2">
+	<element name="Constitution" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_7_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_6_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2517,7 +2020,7 @@
 			<stat name="companion:2:con" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_8_2">
+	<element name="Constitution" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_8_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_7_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2531,7 +2034,7 @@
 			<stat name="companion:2:con" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_9_2">
+	<element name="Constitution" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_9_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_8_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2545,7 +2048,7 @@
 			<stat name="companion:2:con" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_10_2">
+	<element name="Constitution" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_10_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_9_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2559,7 +2062,7 @@
 			<stat name="companion:2:con" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_11_2">
+	<element name="Constitution" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_11_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_10_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2573,7 +2076,7 @@
 			<stat name="companion:2:con" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_12_2">
+	<element name="Constitution" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_12_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_11_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2587,7 +2090,7 @@
 			<stat name="companion:2:con" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_13_2">
+	<element name="Constitution" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_13_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_12_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2601,7 +2104,7 @@
 			<stat name="companion:2:con" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_14_2">
+	<element name="Constitution" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_14_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_13_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2615,7 +2118,7 @@
 			<stat name="companion:2:con" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_15_2">
+	<element name="Constitution" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_15_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_14_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2629,7 +2132,7 @@
 			<stat name="companion:2:con" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_16_2">
+	<element name="Constitution" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_16_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_15_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2643,7 +2146,7 @@
 			<stat name="companion:2:con" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_17_2">
+	<element name="Constitution" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_17_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_16_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2657,7 +2160,7 @@
 			<stat name="companion:2:con" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_18_2">
+	<element name="Constitution" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_18_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_17_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2671,7 +2174,7 @@
 			<stat name="companion:2:con" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Constitution)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_19_2">
+	<element name="Constitution" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_19_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CONSTITUTION_18_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2686,20 +2189,20 @@
 		</rules>
 	</element>
 	
-	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_2">
+	<element name="Companion 2: Intelligence" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_2">
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's intelligence scores by 1, to a maximum of 20</p>
 		</description>
 		<sheet>
-			<description>INT increase by {{companion:2:int}} (Max 20)</description>
+			<description>+{{companion:2:int}} (Max 20)</description>
 		</sheet>
 		<rules>
 			<stat name="companion:2:int" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_2">
+	<element name="Intelligence" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_1_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2713,7 +2216,7 @@
 			<stat name="companion:2:int" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_2">
+	<element name="Intelligence" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_2_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2727,7 +2230,7 @@
 			<stat name="companion:2:int" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_2">
+	<element name="Intelligence" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_3_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2741,7 +2244,7 @@
 			<stat name="companion:2:int" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_2">
+	<element name="Intelligence" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_4_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2755,7 +2258,7 @@
 			<stat name="companion:2:int" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_2">
+	<element name="Intelligence" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_5_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2769,7 +2272,7 @@
 			<stat name="companion:2:int" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_2">
+	<element name="Intelligence" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_6_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2783,7 +2286,7 @@
 			<stat name="companion:2:int" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_2">
+	<element name="Intelligence" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_7_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2797,7 +2300,7 @@
 			<stat name="companion:2:int" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_2">
+	<element name="Intelligence" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_8_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2811,7 +2314,7 @@
 			<stat name="companion:2:int" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_2">
+	<element name="Intelligence" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_9_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2825,7 +2328,7 @@
 			<stat name="companion:2:int" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_2">
+	<element name="Intelligence" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_10_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2839,7 +2342,7 @@
 			<stat name="companion:2:int" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_2">
+	<element name="Intelligence" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_11_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2853,7 +2356,7 @@
 			<stat name="companion:2:int" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_13_2">
+	<element name="Intelligence" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_13_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_12_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2867,7 +2370,7 @@
 			<stat name="companion:2:int" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_14_2">
+	<element name="Intelligence" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_14_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_13_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2881,7 +2384,7 @@
 			<stat name="companion:2:int" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_15_2">
+	<element name="Intelligence" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_15_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_14_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2895,7 +2398,7 @@
 			<stat name="companion:2:int" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_16_2">
+	<element name="Intelligence" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_16_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_15_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2909,7 +2412,7 @@
 			<stat name="companion:2:int" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_17_2">
+	<element name="Intelligence" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_17_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_16_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2923,7 +2426,7 @@
 			<stat name="companion:2:int" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_18_2">
+	<element name="Intelligence" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_18_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_17_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2937,7 +2440,7 @@
 			<stat name="companion:2:int" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_19_2">
+	<element name="Intelligence" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_19_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_INTELLIGENCE_18_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2952,20 +2455,20 @@
 		</rules>
 	</element>
 
-    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_2">
+    <element name="Companion 2: Wisdom" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_2">
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's wisdom scores by 1, to a maximum of 20</p>
 		</description>
 		<sheet>
-			<description>WIS increase by {{companion:2:wis}} (Max 20)</description>
+			<description>+{{companion:2:wis}} (Max 20)</description>
 		</sheet>
 		<rules>
 			<stat name="companion:2:wis" value="1" />
 		</rules>
 	</element>
-    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_2">
+    <element name="Wisdom" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_1_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2979,7 +2482,7 @@
 			<stat name="companion:2:wis" value="1" />
 		</rules>
 	</element>
-    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_2">
+    <element name="Wisdom" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_2_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -2993,7 +2496,7 @@
 			<stat name="companion:2:wis" value="1" />
 		</rules>
 	</element>
-    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_2">
+    <element name="Wisdom" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_3_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3007,7 +2510,7 @@
 			<stat name="companion:2:wis" value="1" />
 		</rules>
 	</element>
-    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_2">
+    <element name="Wisdom" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_4_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3021,7 +2524,7 @@
 			<stat name="companion:2:wis" value="1" />
 		</rules>
 	</element>
-    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_2">
+    <element name="Wisdom" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_5_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3035,7 +2538,7 @@
 			<stat name="companion:2:wis" value="1" />
 		</rules>
 	</element>
-    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_2">
+    <element name="Wisdom" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_6_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3049,7 +2552,7 @@
 			<stat name="companion:2:wis" value="1" />
 		</rules>
 	</element>
-    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_2">
+    <element name="Wisdom" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_7_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3063,7 +2566,7 @@
 			<stat name="companion:2:wis" value="1" />
 		</rules>
 	</element>
-    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_2">
+    <element name="Wisdom" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_8_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3077,7 +2580,7 @@
 			<stat name="companion:2:wis" value="1" />
 		</rules>
 	</element>
-    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_10_2">
+    <element name="Wisdom" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_10_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_9_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3091,7 +2594,7 @@
 			<stat name="companion:2:wis" value="1" />
 		</rules>
 	</element>
-		<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_11_2">
+		<element name="Wisdom" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_11_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_10_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3105,7 +2608,7 @@
 			<stat name="companion:2:wis" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_12_2">
+	<element name="Wisdom" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_12_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_11_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3119,7 +2622,7 @@
 			<stat name="companion:2:wis" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_13_2">
+	<element name="Wisdom" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_13_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_12_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3133,7 +2636,7 @@
 			<stat name="companion:2:wis" value="1" />
 		</rules>
 	</element>
-    <element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_14_2">
+    <element name="Wisdom" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_14_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_13_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3147,7 +2650,7 @@
 			<stat name="companion:2:wis" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_15_2">
+	<element name="Wisdom" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_15_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_14_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3161,7 +2664,7 @@
 			<stat name="companion:2:wis" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_16_2">
+	<element name="Wisdom" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_16_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_15_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3175,7 +2678,7 @@
 			<stat name="companion:2:wis" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_17_2">
+	<element name="Wisdom" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_17_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_16_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3189,7 +2692,7 @@
 			<stat name="companion:2:wis" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_18_2">
+	<element name="Wisdom" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_18_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_17_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3203,7 +2706,7 @@
 			<stat name="companion:2:wis" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_19_2">
+	<element name="Wisdom" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_19_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_WISDOM_18_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3217,20 +2720,21 @@
 			<stat name="companion:2:wis" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_2">
+
+	<element name="Companion 2: Charisma" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_2">
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
 		<description>
 			<p>Increase one of your companion's charisma scores by 1, to a maximum of 20</p>
 		</description>
 		<sheet>
-			<description>CHA increase by {{companion:2:cha}} (Max 20)</description>
+			<description>+{{companion:2:cha}} (Max 20)</description>
 		</sheet>
 		<rules>
 			<stat name="companion:2:cha" value="1" />
 		</rules>
 	</element>
-    <element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_2">
+    <element name="Charisma" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_1_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3244,7 +2748,7 @@
 			<stat name="companion:2:cha" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_2">
+	<element name="Charisma" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_2_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3258,7 +2762,7 @@
 			<stat name="companion:2:cha" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_2">
+	<element name="Charisma" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_3_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3272,7 +2776,7 @@
 			<stat name="companion:2:cha" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_2">
+	<element name="Charisma" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_4_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3286,7 +2790,7 @@
 			<stat name="companion:2:cha" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_2">
+	<element name="Charisma" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_5_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3300,7 +2804,7 @@
 			<stat name="companion:2:cha" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_2">
+	<element name="Charisma" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_6_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3314,7 +2818,7 @@
 			<stat name="companion:2:cha" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_2">
+	<element name="Charisma" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_7_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3328,7 +2832,7 @@
 			<stat name="companion:2:cha" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_2">
+	<element name="Charisma" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_8_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3342,7 +2846,7 @@
 			<stat name="companion:2:cha" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_2">
+	<element name="Charisma" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_9_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3356,7 +2860,7 @@
 			<stat name="companion:2:cha" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_11_2">
+	<element name="Charisma" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_11_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_10_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3370,7 +2874,7 @@
 			<stat name="companion:2:cha" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_12_2">
+	<element name="Charisma" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_12_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_11_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3384,7 +2888,7 @@
 			<stat name="companion:2:cha" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_13_2">
+	<element name="Charisma" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_13_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_12_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3398,7 +2902,7 @@
 			<stat name="companion:2:cha" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_14_2">
+	<element name="Charisma" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_14_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_13_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3412,7 +2916,7 @@
 			<stat name="companion:2:cha" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_15_2">
+	<element name="Charisma" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_15_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_14_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3426,7 +2930,7 @@
 			<stat name="companion:2:cha" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_16_2">
+	<element name="Charisma" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_16_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_15_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3440,7 +2944,7 @@
 			<stat name="companion:2:cha" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_17_2">
+	<element name="Charisma" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_17_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_16_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3454,7 +2958,7 @@
 			<stat name="companion:2:cha" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_18_2">
+	<element name="Charisma" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_18_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_17_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3468,7 +2972,7 @@
 			<stat name="companion:2:cha" value="1" />
 		</rules>
 	</element>
-	<element name="Ability Boost (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_19_2">
+	<element name="Charisma" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_19_2">
 		<requirements>ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_ABILITY_BOOST_CHARISMA_18_2</requirements>
 		<supports>Companion 2 Ability Boost</supports>
 		<compendium display="false" />
@@ -3644,7 +3148,7 @@
 			<select type="Class Feature" name="Survival Instict" supports="Survival Instinct 2" />
 		</rules>
 	</element>
-	<element name="Companion 2 Survival Instincts: Strength" type="Class Feature"
+	<element name="Companion 2: Strength ST" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_STRENGTH_2">
 		<supports>Survival Instinct 2</supports>
@@ -3653,10 +3157,10 @@
 			<p>Your companion gains proficiency in Strength Saving Throws</p>
 		</description>
 		<sheet>
-			<description>+{{proficiency}} in Strength Saving Throws</description>
+			<description>+{{proficiency}} Str ST</description>
 		</sheet>
 	</element>
-	<element name="Companion 2 Survival Instincts: Dexterity" type="Class Feature"
+	<element name="Companion 2: Dexterity ST" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_DEXTERITY_2">
 		<supports>Survival Instinct 2</supports>
@@ -3665,10 +3169,10 @@
 			<p>Your companion gains proficiency in Dexterity Saving Throws</p>
 		</description>
 		<sheet>
-			<description>+{{proficiency}} in Dexterity Saving Throws</description>
+			<description>+{{proficiency}} Dex ST</description>
 		</sheet>
 	</element>
-	<element name="Companion 2 Survival Instincts: Constitution" type="Class Feature"
+	<element name="Companion 2: Constitution ST" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CONSTITUTION_2">
 		<supports>Survival Instinct 2</supports>
@@ -3677,10 +3181,10 @@
 			<p>Your companion gains proficiency in Constitution Saving Throws</p>
 		</description>
 		<sheet>
-			<description>+{{proficiency}} in Constitution Saving Throws</description>
+			<description>+{{proficiency}} Con ST</description>
 		</sheet>
 	</element>
-	<element name="Companion 2 Survival Instincts: Intelligence" type="Class Feature"
+	<element name="Companion 2: Intelligence ST" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_INTELLIGENCE_2">
 		<supports>Survival Instinct 2</supports>
@@ -3689,10 +3193,10 @@
 			<p>Your companion gains proficiency in Intelligence Saving Throws</p>
 		</description>
 		<sheet>
-			<description>+{{proficiency}} in Intelligence Saving Throws</description>
+			<description>+{{proficiency}} Int ST</description>
 		</sheet>
 	</element>
-	<element name="Companion 2 Survival Instincts: Wisdom" type="Class Feature"
+	<element name="Companion 2: Wisdom ST" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_WISDOM_2">
 		<supports>Survival Instinct 2</supports>
@@ -3701,10 +3205,10 @@
 			<p>Your companion gains proficiency in Wisdom Saving Throws</p>
 		</description>
 		<sheet>
-			<description>+{{proficiency}} in Wisdom Saving Throws</description>
+			<description>+{{proficiency}} Wis ST</description>
 		</sheet>
 	</element>
-	<element name="Companion 2 Survival Instincts: Charisma" type="Class Feature"
+	<element name="Companion 2: Charisma ST" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_SURVIVAL_INSTINCTS_CHARISMA_2">
 		<supports>Survival Instinct 2</supports>
@@ -3713,12 +3217,12 @@
 			<p>Your companion gains proficiency in Strength Saving Throws</p>
 		</description>
 		<sheet>
-			<description>+{{proficiency}} in Strength Saving Throws</description>
+			<description>+{{proficiency}} Cha ST</description>
 		</sheet>
 	</element>
 
-	<!-- War Training -->
-	<element name="War Training" type="Class Feature" source="Heliana's Guide to Monster Hunting"
+	<!-- Companion 2: War Training -->
+	<element name="Companion 2: War Training" type="Class Feature" source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2">
 		<supports>Companion Improvement 2</supports>
 		<compendium display="false" />
@@ -3732,9 +3236,12 @@
 					can wield shields and weapons.</i>
 			</p>
 		</description>
-		<sheet><description></description>		</sheet>
+		<sheet>
+			<description>Proficiency with __________.
+			</description>
+		</sheet>
 	</element>
-	<element name="War Training (2)" type="Class Feature"
+	<element name="Companion 2: War Training (2)" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_2_2">
 		<supports>Companion Improvement 2</supports>
@@ -3750,9 +3257,12 @@
 					can wield shields and weapons.</i>
 			</p>
 		</description>
-		<sheet><description></description>		</sheet>
+		<sheet>
+			<description>Proficiency with __________.
+			</description>
+		</sheet>
 	</element>
-	<element name="War Training (3)" type="Class Feature"
+	<element name="Companion 2: War Training (3)" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_3_2">
 		<supports>Companion Improvement 2</supports>
@@ -3769,9 +3279,12 @@
 					can wield shields and weapons.</i>
 			</p>
 		</description>
-		<sheet><description></description>		</sheet>
+		<sheet>
+			<description>Proficiency with __________.
+			</description>
+		</sheet>
 	</element>
-	<element name="War Training (4)" type="Class Feature"
+	<element name="Companion 2: War Training (4)" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_4_2">
 		<supports>Companion Improvement 2</supports>
@@ -3788,9 +3301,12 @@
 					can wield shields and weapons.</i>
 			</p>
 		</description>
-		<sheet><description></description>		</sheet>
+		<sheet>
+			<description>Proficiency with __________.
+			</description>
+		</sheet>
 	</element>
-	<element name="War Training (5)" type="Class Feature"
+	<element name="Companion 2: War Training (5)" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_5_2">
 		<supports>Companion Improvement 2</supports>
@@ -3807,9 +3323,12 @@
 					can wield shields and weapons.</i>
 			</p>
 		</description>
-		<sheet><description></description>		</sheet>
+		<sheet>
+			<description>Proficiency with __________.
+			</description>
+		</sheet>
 	</element>
-	<element name="War Training (6)" type="Class Feature"
+	<element name="Companion 2: War Training (6)" type="Class Feature"
 		source="Heliana's Guide to Monster Hunting"
 		id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_IMPROVEMENT_TRAINING_WAR_TRAINING_6_2">
 		<supports>Companion Improvement 2</supports>
@@ -3826,7 +3345,10 @@
 					can wield shields and weapons.</i>
 			</p>
 		</description>
-		<sheet><description></description>		</sheet>
+		<sheet>
+			<description>Proficiency with __________.
+			</description>
+		</sheet>
 	</element>
 
 	<!-- Splicer Augments 
