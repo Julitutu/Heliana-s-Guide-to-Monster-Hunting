@@ -3,7 +3,7 @@
 	<info>
 		<name>Tamer</name>
 		<description>The Tamer class from Heliana's Guide to Monster Hunting</description>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="Tamer.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Classes/Tamer.xml" />
 		</update>
 	</info>
@@ -1771,6 +1771,7 @@
 	<append id="ID_PHB_SPELL_RARYS_TELEPATHIC_BOND">
   		<supports>Tamer</supports>
 	</append>
+
 
 
 
