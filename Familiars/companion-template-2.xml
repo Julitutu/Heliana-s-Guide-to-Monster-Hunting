@@ -3,7 +3,7 @@
 	<info>
 		<name>Companions Templates</name>
 		<description>Companion Template 2 from Heliana's Guide to Monster Hunting</description>
-		<update version="0.1.2">
+		<update version="0.1.4">
 			<file name="companion-template-2.xml"
 				url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Familiars/companion-template-2.xml" />
 		</update>
@@ -3788,3 +3788,4 @@
 		</rules>
     </element> -->
 </elements>
+
