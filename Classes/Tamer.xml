@@ -7,7 +7,6 @@
 			<file name="Tamer.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Classes/Tamer.xml" />
 		</update>
 	</info>
-
 	<element name="Tamer" type="Class" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_TAMER">
 		<description>
 			<p>Flourishing a gilded skull snatched from within the folds of a cloak, a dwarf summons a fierce-eyed angel in a flare of blinding radiance, emphatically encouraging it to fantastical feats of fury.</p>
@@ -28,55 +27,301 @@
 						<td class="left">Features</td>
 						<td class="col-5">Cantrips Known</td>
 						<td class="col-5">Spells Known</td>
-						<td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td>
+						<td>1st</td>
+						<td>2nd</td>
+						<td>3rd</td>
+						<td>4th</td>
+						<td>5th</td>
 					</tr>
 				</thead>
-				<tr><td>1st</td><td>+2</td><td class="left">Pocket Familiar, Monster Trainer, Soul Bond, Tame Creature</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>2nd</td><td>+2</td><td class="left">Bolster, Psychic Bond, Spellcasting</td><td>2</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>3rd</td><td>+2</td><td class="left">Pocket Family, Training Paradigm</td><td>2</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>4th</td><td>+2</td><td class="left">Ability Score Improvement</td><td>2</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>5th</td><td>+3</td><td class="left">Multiattack, Malleable Presence</td><td>2</td><td>4</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>6th</td><td>+3</td><td class="left">Alpha Strike, Wilful Blows</td><td>2</td><td>4</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>7th</td><td>+3</td><td class="left">Pocket Family (2), Training Paradigm Feature</td><td>2</td><td>5</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>2</td><td>5</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>9th</td><td>+4</td><td class="left">—</td><td>2</td><td>6</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
-				<tr><td>10th</td><td>+4</td><td class="left">Training Paradigm Feature</td><td>3</td><td>6</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
-				<tr><td>11th</td><td>+4</td><td class="left">Pocket Family (3)</td><td>3</td><td>7</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
-				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td>3</td><td>7</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
-				<tr><td>13th</td><td>+5</td><td class="left">Switcheroo</td><td>3</td><td>8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
-				<tr><td>14th</td><td>+5</td><td class="left">Training Paradigm Feature</td><td>4</td><td>8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
-				<tr><td>15th</td><td>+5</td><td class="left">Pocket Family (4)</td><td>4</td><td>9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
-				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>4</td><td>9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
-				<tr><td>17th</td><td>+6</td><td class="left">Magnificent Presence</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
-				<tr><td>18th</td><td>+6</td><td class="left">Training Paradigm Feature</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
-				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement, Pocket Family (5)</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
-				<tr><td>20th</td><td>+6</td><td class="left">Summon the Horde</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+				<tr>
+					<td>1st</td>
+					<td>+2</td>
+					<td class="left">Pocket Familiar, Monster Trainer, Soul Bond, Tame Creature</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>2nd</td>
+					<td>+2</td>
+					<td class="left">Bolster, Psychic Bond, Spellcasting</td>
+					<td>2</td>
+					<td>2</td>
+					<td>2</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>3rd</td>
+					<td>+2</td>
+					<td class="left">Pocket Family, Training Paradigm</td>
+					<td>2</td>
+					<td>3</td>
+					<td>3</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>4th</td>
+					<td>+2</td>
+					<td class="left">Ability Score Improvement</td>
+					<td>2</td>
+					<td>3</td>
+					<td>3</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>5th</td>
+					<td>+3</td>
+					<td class="left">Multiattack, Malleable Presence</td>
+					<td>2</td>
+					<td>4</td>
+					<td>4</td>
+					<td>2</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>6th</td>
+					<td>+3</td>
+					<td class="left">Alpha Strike, Wilful Blows</td>
+					<td>2</td>
+					<td>4</td>
+					<td>4</td>
+					<td>2</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>7th</td>
+					<td>+3</td>
+					<td class="left">Pocket Family (2), Training Paradigm Feature</td>
+					<td>2</td>
+					<td>5</td>
+					<td>4</td>
+					<td>3</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>8th</td>
+					<td>+3</td>
+					<td class="left">Ability Score Improvement</td>
+					<td>2</td>
+					<td>5</td>
+					<td>4</td>
+					<td>3</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>9th</td>
+					<td>+4</td>
+					<td class="left">—</td>
+					<td>2</td>
+					<td>6</td>
+					<td>4</td>
+					<td>3</td>
+					<td>2</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>10th</td>
+					<td>+4</td>
+					<td class="left">Training Paradigm Feature</td>
+					<td>3</td>
+					<td>6</td>
+					<td>4</td>
+					<td>3</td>
+					<td>2</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>11th</td>
+					<td>+4</td>
+					<td class="left">Pocket Family (3)</td>
+					<td>3</td>
+					<td>7</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>12th</td>
+					<td>+4</td>
+					<td class="left">Ability Score Improvement</td>
+					<td>3</td>
+					<td>7</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>13th</td>
+					<td>+5</td>
+					<td class="left">Switcheroo</td>
+					<td>3</td>
+					<td>8</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>1</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>14th</td>
+					<td>+5</td>
+					<td class="left">Training Paradigm Feature</td>
+					<td>4</td>
+					<td>8</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>1</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>15th</td>
+					<td>+5</td>
+					<td class="left">Pocket Family (4)</td>
+					<td>4</td>
+					<td>9</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>2</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>16th</td>
+					<td>+5</td>
+					<td class="left">Ability Score Improvement</td>
+					<td>4</td>
+					<td>9</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>2</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>17th</td>
+					<td>+6</td>
+					<td class="left">Magnificent Presence</td>
+					<td>4</td>
+					<td>10</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>18th</td>
+					<td>+6</td>
+					<td class="left">Training Paradigm Feature</td>
+					<td>4</td>
+					<td>10</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>19th</td>
+					<td>+6</td>
+					<td class="left">Ability Score Improvement, Pocket Family (5)</td>
+					<td>4</td>
+					<td>11</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>20th</td>
+					<td>+6</td>
+					<td class="left">Summon the Horde</td>
+					<td>4</td>
+					<td>11</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>2</td>
+				</tr>
 			</table>
 			<h3>CLASS FEATURES</h3>
 			<p>As a tamer, you gain the following class features.</p>
 			<h5>HIT POINTS</h5>
 			<ul class="unstyled">
-				<li><strong>Hit Dice:</strong> 1d8 per tamer level</li>
-				<li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
-				<li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per tamer level after 1st</li>
+				<li>
+					<strong>Hit Dice:</strong> 1d8 per tamer level
+				</li>
+				<li>
+					<strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier
+				</li>
+				<li>
+					<strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per tamer level after 1st
+				</li>
 			</ul>
 			<h5>PROFICIENCIES</h5>
 			<ul class="unstyled mb">
-				<li><strong>Armor:</strong> Light armor, medium armor, shields</li>
-				<li><strong>Weapons:</strong> Simple weapons, nets</li>
-				<li><strong>Tools:</strong> One type of artisan’s tools or one musical instrument of your choice</li>
+				<li>
+					<strong>Armor:</strong> Light armor, medium armor, shields
+				</li>
+				<li>
+					<strong>Weapons:</strong> Simple weapons, nets
+				</li>
+				<li>
+					<strong>Tools:</strong> One type of artisan’s tools or one musical instrument of your choice
+				</li>
 			</ul>
 			<ul class="unstyled">
-				<li><strong>Saving Throws:</strong> Constitution, Charisma</li>
-				<li><strong>Skills:</strong> Choose two from Animal Handling, Insight, Medicine, Nature, Perception, and Persuasion</li>
+				<li>
+					<strong>Saving Throws:</strong> Constitution, Charisma
+				</li>
+				<li>
+					<strong>Skills:</strong> Choose two from Animal Handling, Insight, Medicine, Nature, Perception, and Persuasion
+				</li>
 			</ul>
 			<h5>EQUIPMENT</h5>
 			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
 			<ul>
-				<li><i>(a)</i> scale mail or <i>(b)</i> leather armor</li>
+				<li>
+					<i>(a)</i> scale mail or
+					<i>(b)</i> leather armor
+				</li>
 				<li>A simple melee weapon, a net, and a shield</li>
 				<li>A light crossbow and 20 bolts</li>
-				<li><i>(a)</i> a dungeoneer’s pack or <i>(b)</i> an explorer’s pack</li>
+				<li>
+					<i>(a)</i> a dungeoneer’s pack or
+					<i>(b)</i> an explorer’s pack
+				</li>
 			</ul>
 			<p>If you forgo this starting equipment, as well as the items offered by your background, you start with 5d4 x 10 gp to buy your equipment.</p>
 			<div element="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR" />
@@ -148,27 +393,46 @@
 			</rules>
 		</multiclass>
 	</element>
-
 	<!-- Pocket Familiar -->
 	<element name="Pocket Familiar" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_POCKET_FAMILIAR</requirements>
 		<description>
-			<p><em>1st-level Tamer feature</em></p>
+			<p>
+				<em>1st-level Tamer feature</em>
+			</p>
 			<p>You become bonded to a companion that accompanies you on your adventures and is trained to fight alongside you. Choose a Small or smaller creature with a challenge rating of 1/2 or lower that isn’t a humanoid, giant, or swarm to become your companion. When a creature becomes your companion, it has a maximum number of hit points equal to the average of its Hit Dice, as indicated in its statistics, and it can’t cast spells. Work with your GM to find a companion that suits your campaign world. This companion obeys your commands and is friendly to you and your allies.</p>
-			<p><strong>Vessel.</strong> When not summoned, your companion exists inside a magical vessel of your own design, such as a painted animal skull, bejewelled egg, or crystal sphere. While in this vessel, the companion has full cover from all attacks and other effects, is unaffected by area of effects that originate from outside the vessel, and exists in stasis; it doesn’t need to eat, drink, sleep, or breathe, and it is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralised. A companion at 0 hit points is instantly stabilised when it enters its vessel. If a vessel is broken, or a companion is released from its vessel for any other reason, the creature within it ceases to be a tamer’s companion. It acts according to its own wishes and retains any improvements it gained while a companion.</p>
-			<div class="sidebar"> 
-			<h5>Home Planes</h5>
-			<p>Some magical effects, like the banishment spell, have the ability to permanently banish a creature back to its home plane. When a creature becomes your companion, its home plane becomes the demiplane within its vessel. If the companion becomes permanently banished by such a spell, it simply reappears in this vessel.</p></div>
-			<p><strong>Summoning.</strong> As an action, you can summon your companion from a vessel, causing it to appear in an unoccupied space that you can see within 30 feet of you, or any unoccupied space within 5 feet of you. You can dismiss a companion within 30 feet of you as a bonus action or action, drawing it back into its vessel. To summon or dismiss a companion, you must be holding its vessel in hand. You can only have one companion summoned at a time.</p>
+			<p>
+				<strong>Vessel.</strong> When not summoned, your companion exists inside a magical vessel of your own design, such as a painted animal skull, bejewelled egg, or crystal sphere. While in this vessel, the companion has full cover from all attacks and other effects, is unaffected by area of effects that originate from outside the vessel, and exists in stasis; it doesn’t need to eat, drink, sleep, or breathe, and it is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralised. A companion at 0 hit points is instantly stabilised when it enters its vessel. If a vessel is broken, or a companion is released from its vessel for any other reason, the creature within it ceases to be a tamer’s companion. It acts according to its own wishes and retains any improvements it gained while a companion.
+			</p>
 			<div class="sidebar">
-			<h5>Dominated Companions</h5>
-			<p>A companion that is controlled by another creature, such as by the dominate monster spell, can try to resist being recalled into its vessel. When you try to recall such a creature into its vessel, it can make a Charisma saving throw against your tamer spell save DC. On a failed saving throw, it is recalled, while on a success, it is not.</p></div>
-			<p><strong>Combat.</strong> In combat, your companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action or action on your turn to command it to take different actions. Those actions can be in its statistics or some other action, bonus action, or object interaction. If you are incapacitated, the companion can take any action of its choice, not just Dodge. Your companion can’t take the Multiattack action until you reach 5th level in this class, even if it would otherwise be able to.</p>
-			<p><strong>Rest.</strong> A companion gains the benefits of a long rest when its tamer finishes a long rest; if it has at least 1 hit point, it regains all its hit points when you finish a long rest. Unlike other creatures, a companion can’t spend its own Hit Dice to recover hit points at the end of a short rest. See the Soul Bond feature for details on recovering hit points.</p>
-			<p><strong>Items.</strong> Armour, barding, and weapons can be equipped to enhance your companion. A companion can wear or carry any equipment that their size and body shape permits. However, your companion must be proficient with the armour or weapon to make full use of it. If your companion wears armour that it lacks proficiency with, it has disadvantage on any ability check, saving throw, or attack roll that involves Strength or Dexterity. A companion that is not proficient with a weapon type does not add its proficiency bonus to attack rolls made with that weapon type.</p>
-			<p><strong>Item Bonding.</strong> Over the course of an hour, you can bond a companion to one object that it can wear or carry that is not any sort of container or storage. When a companion is recalled, all items it is wearing or carrying that it is not bonded to are dropped in the space from which it was recalled. A companion can be bonded to up to 3 items at any one time. Companions can’t attune to magic items, unless they have a specific ability that allows them to do so (e.g. Proto-Attunement, page 238).</p>
-			<p><strong>Companion Barding.</strong> You can purchase armour for your companion. Any type of armour can be purchased as barding. The cost and weight is doubled for each size category above Medium, and halved for each size category below Small. In addition, the cost is further doubled if the companion is not humanoid in shape.</p>
-			<p><strong>Companion Barding Cost</strong></p>
+				<h5>Home Planes</h5>
+				<p>Some magical effects, like the banishment spell, have the ability to permanently banish a creature back to its home plane. When a creature becomes your companion, its home plane becomes the demiplane within its vessel. If the companion becomes permanently banished by such a spell, it simply reappears in this vessel.</p>
+			</div>
+			<p>
+				<strong>Summoning.</strong> As an action, you can summon your companion from a vessel, causing it to appear in an unoccupied space that you can see within 30 feet of you, or any unoccupied space within 5 feet of you. You can dismiss a companion within 30 feet of you as a bonus action or action, drawing it back into its vessel. To summon or dismiss a companion, you must be holding its vessel in hand. You can only have one companion summoned at a time.
+			</p>
+			<div class="sidebar">
+				<h5>Dominated Companions</h5>
+				<p>A companion that is controlled by another creature, such as by the dominate monster spell, can try to resist being recalled into its vessel. When you try to recall such a creature into its vessel, it can make a Charisma saving throw against your tamer spell save DC. On a failed saving throw, it is recalled, while on a success, it is not.</p>
+			</div>
+			<p>
+				<strong>Combat.</strong> In combat, your companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action or action on your turn to command it to take different actions. Those actions can be in its statistics or some other action, bonus action, or object interaction. If you are incapacitated, the companion can take any action of its choice, not just Dodge. Your companion can’t take the Multiattack action until you reach 5th level in this class, even if it would otherwise be able to.
+			</p>
+			<p>
+				<strong>Rest.</strong> A companion gains the benefits of a long rest when its tamer finishes a long rest; if it has at least 1 hit point, it regains all its hit points when you finish a long rest. Unlike other creatures, a companion can’t spend its own Hit Dice to recover hit points at the end of a short rest. See the Soul Bond feature for details on recovering hit points.
+			</p>
+			<p>
+				<strong>Items.</strong> Armour, barding, and weapons can be equipped to enhance your companion. A companion can wear or carry any equipment that their size and body shape permits. However, your companion must be proficient with the armour or weapon to make full use of it. If your companion wears armour that it lacks proficiency with, it has disadvantage on any ability check, saving throw, or attack roll that involves Strength or Dexterity. A companion that is not proficient with a weapon type does not add its proficiency bonus to attack rolls made with that weapon type.
+			</p>
+			<p>
+				<strong>Item Bonding.</strong> Over the course of an hour, you can bond a companion to one object that it can wear or carry that is not any sort of container or storage. When a companion is recalled, all items it is wearing or carrying that it is not bonded to are dropped in the space from which it was recalled. A companion can be bonded to up to 3 items at any one time. Companions can’t attune to magic items, unless they have a specific ability that allows them to do so (e.g. Proto-Attunement, page 238).
+			</p>
+			<p>
+				<strong>Companion Barding.</strong> You can purchase armour for your companion. Any type of armour can be purchased as barding. The cost and weight is doubled for each size category above Medium, and halved for each size category below Small. In addition, the cost is further doubled if the companion is not humanoid in shape.
+			</p>
+			<p>
+				<strong>Companion Barding Cost</strong>
+			</p>
 			<table>
 				<thead>
 					<tr>
@@ -177,72 +441,88 @@
 						<td class="col-30" style="text-align:center">Abstract Shape Cost</td>
 					</tr>
 				</thead>
-					<tr>
-						<td style="text-align:center">Tiny</td>
-						<td style="text-align:center">0.5x</td>
-						<td style="text-align:center">1x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Small</td>
-						<td style="text-align:center">1x</td>
-						<td style="text-align:center">2x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Medium</td>
-						<td style="text-align:center">1x</td>
-						<td style="text-align:center">2x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Large</td>
-						<td style="text-align:center">2x</td>
-						<td style="text-align:center">4x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Huge</td>
-						<td style="text-align:center">4x</td>
-						<td style="text-align:center">8x</td>
-					</tr>
+				<tr>
+					<td style="text-align:center">Tiny</td>
+					<td style="text-align:center">0.5x</td>
+					<td style="text-align:center">1x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Small</td>
+					<td style="text-align:center">1x</td>
+					<td style="text-align:center">2x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Medium</td>
+					<td style="text-align:center">1x</td>
+					<td style="text-align:center">2x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Large</td>
+					<td style="text-align:center">2x</td>
+					<td style="text-align:center">4x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Huge</td>
+					<td style="text-align:center">4x</td>
+					<td style="text-align:center">8x</td>
+				</tr>
 			</table>
 		</description>
 		<sheet action="Action">
 			<description>Summon/dismiss companion (action/bonus action). Companion dodges unless commanded (bonus action/action).</description>
 		</sheet>
-		<rules> 
+		<rules>
 			<select type="Class Feature" name="Companion 1" supports="Pocket Familiar 1" />
 		</rules>
 	</element>
-
-		<!-- Pocket Familiar 1 -->
-		<element name="Bespoke Familiar" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_BESPOKE_FAMILIAR_1">
-			<supports>Pocket Familiar 1</supports>
-			<description>
+	<!-- Pocket Familiar 1 -->
+	<element name="Bespoke Familiar" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_BESPOKE_FAMILIAR_1">
+		<supports>Pocket Familiar 1</supports>
+		<description>
 			</description>
-			<sheet display="false">
-				<description>Your Bespoke Familiars is:</description>
-			</sheet>
-			<rules>
-				<select type="Class Feature" name="Pocket Familiar 1" supports="Bespoke Companion" />
-			</rules>
-		</element>
-
-		<element name="Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_COMPANION_1">
-			<supports>Pocket Familiar 1</supports>
-			<description>
+		<sheet display="false">
+			<description>Your Bespoke Familiars is:</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Pocket Familiar 1" supports="Bespoke Companion" />
+		</rules>
+	</element>
+	<element name="Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_COMPANION_1">
+		<supports>Pocket Familiar 1</supports>
+		<description>
 			<p>You become bonded to a companion that accompanies you on your adventures and is trained to fight alongside you. Choose a Small or smaller creature with a challenge rating of 1/2 or lower that isn’t a humanoid, giant, or swarm to become your companion. When a creature becomes your companion, it has a maximum number of hit points equal to the average of its Hit Dice, as indicated in its statistics, and it can’t cast spells. Work with your GM to find a companion that suits your campaign world. This companion obeys your commands and is friendly to you and your allies.</p>
-			<p><strong>Vessel.</strong> When not summoned, your companion exists inside a magical vessel of your own design, such as a painted animal skull, bejewelled egg, or crystal sphere. While in this vessel, the companion has full cover from all attacks and other effects, is unaffected by area of effects that originate from outside the vessel, and exists in stasis; it doesn’t need to eat, drink, sleep, or breathe, and it is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralised. A companion at 0 hit points is instantly stabilised when it enters its vessel. If a vessel is broken, or a companion is released from its vessel for any other reason, the creature within it ceases to be a tamer’s companion. It acts according to its own wishes and retains any improvements it gained while a companion.</p>
-			<div class="sidebar"> 
-			<h5>Home Planes</h5>
-			<p>Some magical effects, like the banishment spell, have the ability to permanently banish a creature back to its home plane. When a creature becomes your companion, its home plane becomes the demiplane within its vessel. If the companion becomes permanently banished by such a spell, it simply reappears in this vessel.</p></div>
-			<p><strong>Summoning.</strong> As an action, you can summon your companion from a vessel, causing it to appear in an unoccupied space that you can see within 30 feet of you, or any unoccupied space within 5 feet of you. You can dismiss a companion within 30 feet of you as a bonus action or action, drawing it back into its vessel. To summon or dismiss a companion, you must be holding its vessel in hand. You can only have one companion summoned at a time.</p>
+			<p>
+				<strong>Vessel.</strong> When not summoned, your companion exists inside a magical vessel of your own design, such as a painted animal skull, bejewelled egg, or crystal sphere. While in this vessel, the companion has full cover from all attacks and other effects, is unaffected by area of effects that originate from outside the vessel, and exists in stasis; it doesn’t need to eat, drink, sleep, or breathe, and it is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralised. A companion at 0 hit points is instantly stabilised when it enters its vessel. If a vessel is broken, or a companion is released from its vessel for any other reason, the creature within it ceases to be a tamer’s companion. It acts according to its own wishes and retains any improvements it gained while a companion.
+			</p>
 			<div class="sidebar">
-			<h5>Dominated Companions</h5>
-			<p>A companion that is controlled by another creature, such as by the dominate monster spell, can try to resist being recalled into its vessel. When you try to recall such a creature into its vessel, it can make a Charisma saving throw against your tamer spell save DC. On a failed saving throw, it is recalled, while on a success, it is not.</p></div>
-			<p><strong>Combat.</strong> In combat, your companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action or action on your turn to command it to take different actions. Those actions can be in its statistics or some other action, bonus action, or object interaction. If you are incapacitated, the companion can take any action of its choice, not just Dodge. Your companion can’t take the Multiattack action until you reach 5th level in this class, even if it would otherwise be able to.</p>
-			<p><strong>Rest.</strong> A companion gains the benefits of a long rest when its tamer finishes a long rest; if it has at least 1 hit point, it regains all its hit points when you finish a long rest. Unlike other creatures, a companion can’t spend its own Hit Dice to recover hit points at the end of a short rest. See the Soul Bond feature for details on recovering hit points.</p>
-			<p><strong>Items.</strong> Armour, barding, and weapons can be equipped to enhance your companion. A companion can wear or carry any equipment that their size and body shape permits. However, your companion must be proficient with the armour or weapon to make full use of it. If your companion wears armour that it lacks proficiency with, it has disadvantage on any ability check, saving throw, or attack roll that involves Strength or Dexterity. A companion that is not proficient with a weapon type does not add its proficiency bonus to attack rolls made with that weapon type.</p>
-			<p><strong>Item Bonding.</strong> Over the course of an hour, you can bond a companion to one object that it can wear or carry that is not any sort of container or storage. When a companion is recalled, all items it is wearing or carrying that it is not bonded to are dropped in the space from which it was recalled. A companion can be bonded to up to 3 items at any one time. Companions can’t attune to magic items, unless they have a specific ability that allows them to do so (e.g. Proto-Attunement, page 238).</p>
-			<p><strong>Companion Barding.</strong> You can purchase armour for your companion. Any type of armour can be purchased as barding. The cost and weight is doubled for each size category above Medium, and halved for each size category below Small. In addition, the cost is further doubled if the companion is not humanoid in shape.</p>
-			<p><strong>Companion Barding Cost</strong></p>
+				<h5>Home Planes</h5>
+				<p>Some magical effects, like the banishment spell, have the ability to permanently banish a creature back to its home plane. When a creature becomes your companion, its home plane becomes the demiplane within its vessel. If the companion becomes permanently banished by such a spell, it simply reappears in this vessel.</p>
+			</div>
+			<p>
+				<strong>Summoning.</strong> As an action, you can summon your companion from a vessel, causing it to appear in an unoccupied space that you can see within 30 feet of you, or any unoccupied space within 5 feet of you. You can dismiss a companion within 30 feet of you as a bonus action or action, drawing it back into its vessel. To summon or dismiss a companion, you must be holding its vessel in hand. You can only have one companion summoned at a time.
+			</p>
+			<div class="sidebar">
+				<h5>Dominated Companions</h5>
+				<p>A companion that is controlled by another creature, such as by the dominate monster spell, can try to resist being recalled into its vessel. When you try to recall such a creature into its vessel, it can make a Charisma saving throw against your tamer spell save DC. On a failed saving throw, it is recalled, while on a success, it is not.</p>
+			</div>
+			<p>
+				<strong>Combat.</strong> In combat, your companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action or action on your turn to command it to take different actions. Those actions can be in its statistics or some other action, bonus action, or object interaction. If you are incapacitated, the companion can take any action of its choice, not just Dodge. Your companion can’t take the Multiattack action until you reach 5th level in this class, even if it would otherwise be able to.
+			</p>
+			<p>
+				<strong>Rest.</strong> A companion gains the benefits of a long rest when its tamer finishes a long rest; if it has at least 1 hit point, it regains all its hit points when you finish a long rest. Unlike other creatures, a companion can’t spend its own Hit Dice to recover hit points at the end of a short rest. See the Soul Bond feature for details on recovering hit points.
+			</p>
+			<p>
+				<strong>Items.</strong> Armour, barding, and weapons can be equipped to enhance your companion. A companion can wear or carry any equipment that their size and body shape permits. However, your companion must be proficient with the armour or weapon to make full use of it. If your companion wears armour that it lacks proficiency with, it has disadvantage on any ability check, saving throw, or attack roll that involves Strength or Dexterity. A companion that is not proficient with a weapon type does not add its proficiency bonus to attack rolls made with that weapon type.
+			</p>
+			<p>
+				<strong>Item Bonding.</strong> Over the course of an hour, you can bond a companion to one object that it can wear or carry that is not any sort of container or storage. When a companion is recalled, all items it is wearing or carrying that it is not bonded to are dropped in the space from which it was recalled. A companion can be bonded to up to 3 items at any one time. Companions can’t attune to magic items, unless they have a specific ability that allows them to do so (e.g. Proto-Attunement, page 238).
+			</p>
+			<p>
+				<strong>Companion Barding.</strong> You can purchase armour for your companion. Any type of armour can be purchased as barding. The cost and weight is doubled for each size category above Medium, and halved for each size category below Small. In addition, the cost is further doubled if the companion is not humanoid in shape.
+			</p>
+			<p>
+				<strong>Companion Barding Cost</strong>
+			</p>
 			<table>
 				<thead>
 					<tr>
@@ -251,46 +531,48 @@
 						<td class="col-30" style="text-align:center">Abstract Shape Cost</td>
 					</tr>
 				</thead>
-					<tr>
-						<td style="text-align:center">Tiny</td>
-						<td style="text-align:center">0.5x</td>
-						<td style="text-align:center">1x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Small</td>
-						<td style="text-align:center">1x</td>
-						<td style="text-align:center">2x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Medium</td>
-						<td style="text-align:center">1x</td>
-						<td style="text-align:center">2x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Large</td>
-						<td style="text-align:center">2x</td>
-						<td style="text-align:center">4x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Huge</td>
-						<td style="text-align:center">4x</td>
-						<td style="text-align:center">8x</td>
-					</tr>
+				<tr>
+					<td style="text-align:center">Tiny</td>
+					<td style="text-align:center">0.5x</td>
+					<td style="text-align:center">1x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Small</td>
+					<td style="text-align:center">1x</td>
+					<td style="text-align:center">2x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Medium</td>
+					<td style="text-align:center">1x</td>
+					<td style="text-align:center">2x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Large</td>
+					<td style="text-align:center">2x</td>
+					<td style="text-align:center">4x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Huge</td>
+					<td style="text-align:center">4x</td>
+					<td style="text-align:center">8x</td>
+				</tr>
 			</table>
-			</description>
-			<sheet display="false">
-				<description>Your companions is:</description>
-			</sheet>
-			<rules>
-				<select type="Class Feature" name="Pocket Familiar 1" supports="Tamed Companion 1" />
-			</rules>
-		</element>
-
+		</description>
+		<sheet display="false">
+			<description>Your companions is:</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_1" />
+			<!-- <select type="Class Feature" name="Pocket Familiar 1" supports="Tamed Companion 1" /> -->
+		</rules>
+	</element>
 	<!-- Soul Bond -->
 	<element name="Soul Bond" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_SOUL_BOND">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_SOUL_BOND</requirements>
 		<description>
-			<p><em>1st-level Tamer feature</em></p>
+			<p>
+				<em>1st-level Tamer feature</em>
+			</p>
 			<p>Companions make death saving throws, die, and can be revived like any player character. A companion that has been stabilised remains unconscious until it regains hit points, or until you finish a long rest. Companions that are stable and have 0 hit points when you finish a long rest regain half their maximum hit points.</p>
 			<p class="indent">You have a pool of healing power equal to five times your tamer level that replenishes when you finish a long rest. Whenever you finish a short rest, you can choose to draw power from that pool, restoring a total number of hit points amongst your companions up to the maximum amount remaining in your pool.</p>
 		</description>
@@ -305,14 +587,17 @@
 			<stat name="soul bond" value="level:tamer" />
 		</rules>
 	</element>
-
 	<!-- Monster Trainer -->
 	<element name="Monster Trainer" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_MONSTER_TRAINER">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_MONSTER_TRAINER</requirements>
 		<description>
-			<p><em>1st-level Tamer feature</em></p>
+			<p>
+				<em>1st-level Tamer feature</em>
+			</p>
 			<p>As you gain levels in this class, your companions become more powerful. Your companions use your proficiency bonus instead of their own, potentially increasing their attack, saving throw, and skill modifiers, and their saving throw DCs.</p>
-			<p><strong>Training.</strong> Whenever you gain an Ability Score Improvement from gaining a level in the tamer class, you pass on your hardened resolve to all your companions, causing them to gain 1 additional Hit Die. Increase your companion’s hit point maximum by rolling this Hit Die and adding your companion’s Constitution modifier (minimum of 0).</p>
+			<p>
+				<strong>Training.</strong> Whenever you gain an Ability Score Improvement from gaining a level in the tamer class, you pass on your hardened resolve to all your companions, causing them to gain 1 additional Hit Die. Increase your companion’s hit point maximum by rolling this Hit Die and adding your companion’s Constitution modifier (minimum of 0).
+			</p>
 			<p>Whenever you gain a level beyond 1st in this class, each companion to which you are bonded gains one of the following improvements. The familiars in Chapter 8 have unique improvements that can be taken instead of these.</p>
 			<p>Any newly gained companions receive these additional Hit Dice and improvements as if you had them since your 1st level in tamer.</p>
 			<h5 class="caption">COMPANION IMPROVEMENT TRAINING TABLE</h5>
@@ -350,15 +635,21 @@
 					</tr>
 				</tbody>
 			</table>
-			<p class="indent"><i>*E.g., a base speed of 30 feet can be increased to 45 feet maximum, a base speed of 25 feet can be increased to 40 feet, and a base speed of 20 feet to 30 feet.</i></p>
-			<p class="indent"><i>**Your companions can each benefit from this feature once. When you reach 5th level in this class, your companions can each benefit from this feature twice. When you reach 9th level in this class, your companions can each benefit from this feature three times. This improvement does not affect attacks made with weapons.</i></p>
-			<p class="indent"><i>***Your companion can’t gain proficiency in medium and heavy armour until it has gained proficiency in the prerequisite lighter armour types. For example, to gain proficiency in heavy armour, you must take this improvement 3 times: light, then medium, then heavy. Work with your GM to figure out if and how a creature can wield shields and weapons.</i></p>
+			<p class="indent">
+				<i>*E.g., a base speed of 30 feet can be increased to 45 feet maximum, a base speed of 25 feet can be increased to 40 feet, and a base speed of 20 feet to 30 feet.</i>
+			</p>
+			<p class="indent">
+				<i>**Your companions can each benefit from this feature once. When you reach 5th level in this class, your companions can each benefit from this feature twice. When you reach 9th level in this class, your companions can each benefit from this feature three times. This improvement does not affect attacks made with weapons.</i>
+			</p>
+			<p class="indent">
+				<i>***Your companion can’t gain proficiency in medium and heavy armour until it has gained proficiency in the prerequisite lighter armour types. For example, to gain proficiency in heavy armour, you must take this improvement 3 times: light, then medium, then heavy. Work with your GM to figure out if and how a creature can wield shields and weapons.</i>
+			</p>
 			<div class="sidebar">
-			<h5>Abilities and Proficiency</h5>
-			<p>As your companions’ ability scores change—often through Companion Improvement Training—their skill modififiers, saving throws, attack modififiers, and saving throw DCs will also change. Working out what ability a creature’s attack or saving throw uses can require a bit of detective work.</p>
-			<p>First you have to know the creature’s profificiency bonus (PB). Luckily this is quite easy: it all depends on the creature’s CR and players’ PB. A creatures’ base PB is +2 at CR 0-4 and +3 at CR 5-6. To proceed, subtract the creature’s PB from its modififiers/save DCs. For save DCs, subtract an additional 8 from the DC. Finally, match the remaining values to the ability score modififiers.</p>
-			<p>Let’s use the CR 4 red dragon wyrmling’s bite attack and breath weapon as an example. It has a PB of +2, a Strength of 19 (+4), a Dexterity of 10 (+0), and a Constitution of 17 (+3). Its bite attack has a +6 modififier, while its breath weapon has a DC 13 Dexterity saving throw. Subtracting the PB from these values (and 8 from the DC), we are left with +4 and DC 3. We can deduce that the bite attack uses Strength (the +4 matches the wyrmling’s Strength modififier), and the fifire breath uses Constitution (DC 3 matches the wyrmling’s +3 Constitution modififier).</p>
-			<p>If the wyrmling’s tamer is 13th level (with a PB of +5), then the wyrmling’s PB increases from +2 to +5 when it becomes a companion. This results in its attack modififier and save DC increasing to +9 and DC 16, respectively.</p>
+				<h5>Abilities and Proficiency</h5>
+				<p>As your companions’ ability scores change—often through Companion Improvement Training—their skill modififiers, saving throws, attack modififiers, and saving throw DCs will also change. Working out what ability a creature’s attack or saving throw uses can require a bit of detective work.</p>
+				<p>First you have to know the creature’s profificiency bonus (PB). Luckily this is quite easy: it all depends on the creature’s CR and players’ PB. A creatures’ base PB is +2 at CR 0-4 and +3 at CR 5-6. To proceed, subtract the creature’s PB from its modififiers/save DCs. For save DCs, subtract an additional 8 from the DC. Finally, match the remaining values to the ability score modififiers.</p>
+				<p>Let’s use the CR 4 red dragon wyrmling’s bite attack and breath weapon as an example. It has a PB of +2, a Strength of 19 (+4), a Dexterity of 10 (+0), and a Constitution of 17 (+3). Its bite attack has a +6 modififier, while its breath weapon has a DC 13 Dexterity saving throw. Subtracting the PB from these values (and 8 from the DC), we are left with +4 and DC 3. We can deduce that the bite attack uses Strength (the +4 matches the wyrmling’s Strength modififier), and the fifire breath uses Constitution (DC 3 matches the wyrmling’s +3 Constitution modififier).</p>
+				<p>If the wyrmling’s tamer is 13th level (with a PB of +5), then the wyrmling’s PB increases from +2 to +5 when it becomes a companion. This results in its attack modififier and save DC increasing to +9 and DC 16, respectively.</p>
 			</div>
 		</description>
 		<sheet display="false">
@@ -366,19 +657,25 @@
 			</description>
 		</sheet>
 	</element>
-
 	<!-- Tame Creature -->
 	<element name="Tame Creature" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_TAME_CREATURE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_MAGICAL_TAME_CREATURE</requirements>
 		<description>
-			<p><em>1st-level Tamer feature</em></p>
+			<p>
+				<em>1st-level Tamer feature</em>
+			</p>
 			<p>One way to defeat deadly foes: have deadlier friends. As you explore, you will encounter new creatures which you may wish to make your companions. You can tame a Small or smaller creature of CR ½ or lower, as described below. As you gain levels in this class, the size and challenge rating of creatures you can tame increases, as shown in the Tamer Companion Summary table.</p>
-			<p><strong>Vessel. </strong> To tame a companion, you must first prepare a vessel using special inks, gems, or other materials. Preparing the vessel takes 8 hours of work and components with a value in gold pieces equal to at least one hundred times the target creature’s CR.</p>
+			<p>
+				<strong>Vessel. </strong> To tame a companion, you must first prepare a vessel using special inks, gems, or other materials. Preparing the vessel takes 8 hours of work and components with a value in gold pieces equal to at least one hundred times the target creature’s CR.
+			</p>
 			<div class="sidebar">
-			<h5>Vessels and Cost</h5>
-			<p class="indent">At 4th level, you can capture creatures of CR 1 and below. To capture a CR ½ or CR 1 creature, you need a vessel worth 50 gp or 100 gp, respectively. If you try to use a vessel worth 50 gp to capture a CR 1 creature, the creature automatically succeeds on its saving throw, and the vessel can be recovered. You can always break down the components of an old vessel to craft a new one as part of the vessel preparation process.</p>
-			<p class="indent">You can release a companion from a vessel at any point. The vessel remains intact, and can be used to tame a new creature.</p></div>
-			<p><strong>Taming a Creature.</strong> As an action, you can throw an empty vessel at a creature you can see within 30 feet of you. The creature must succeed on a Charisma saving throw against your tamer spell save DC or be trapped within the vessel. A creature automatically succeeds on this saving throw if:</p>
+				<h5>Vessels and Cost</h5>
+				<p class="indent">At 4th level, you can capture creatures of CR 1 and below. To capture a CR ½ or CR 1 creature, you need a vessel worth 50 gp or 100 gp, respectively. If you try to use a vessel worth 50 gp to capture a CR 1 creature, the creature automatically succeeds on its saving throw, and the vessel can be recovered. You can always break down the components of an old vessel to craft a new one as part of the vessel preparation process.</p>
+				<p class="indent">You can release a companion from a vessel at any point. The vessel remains intact, and can be used to tame a new creature.</p>
+			</div>
+			<p>
+				<strong>Taming a Creature.</strong> As an action, you can throw an empty vessel at a creature you can see within 30 feet of you. The creature must succeed on a Charisma saving throw against your tamer spell save DC or be trapped within the vessel. A creature automatically succeeds on this saving throw if:
+			</p>
 			<ul>
 				<li>It is a humanoid, giant, or swarm.</li>
 				<li>It is larger than your maximum companion size (use a creature’s unaltered size if it is under the influence of a size-changing magical effect, such as enlarge/reduce).</li>
@@ -388,10 +685,12 @@
 			</ul>
 			<p>If a creature doesn’t automatically succeed on this saving throw for one of the above reasons, and has either fewer than ten hit points or one-quarter of its hit points, it automatically fails this saving throw. A creature that fails the saving throw is trapped in your vessel and becomes your companion when you next finish a long rest.</p>
 			<div class="sidebar">
-			<h5>Optional Rule: Non-Combat Taming</h5>
-			<p>If a player impresses a celestial with an especially noble act, or rears a creature from an egg, that creature might be willing to become a tamer’s companion. If so, feel free to ignore the usual rules regarding saving throws on taming, and let the beautiful story of companionship unfold!</p>
+				<h5>Optional Rule: Non-Combat Taming</h5>
+				<p>If a player impresses a celestial with an especially noble act, or rears a creature from an egg, that creature might be willing to become a tamer’s companion. If so, feel free to ignore the usual rules regarding saving throws on taming, and let the beautiful story of companionship unfold!</p>
 			</div>
-			<p><strong>Lost Traits.</strong> When a creature becomes your companion, it loses the following from its stat block:</p>
+			<p>
+				<strong>Lost Traits.</strong> When a creature becomes your companion, it loses the following from its stat block:
+			</p>
 			<ul>
 				<li>The ability to cast any spells (though it retains its spells known, see Psychic Bond, page 201).</li>
 				<li>Any summoning actions or actions that create additional creatures (such as a wraith’s Create Specter action or an ooze’s Split reaction).</li>
@@ -401,33 +700,37 @@
 				<li>Any lair actions and regional effects.</li>
 			</ul>
 			<div class="sidebar">
-			<h5>Powerful Companion Abilities</h5>
-			<p>Some monster features are very powerful, and aren’t designed for use by players. The two most common are recharge actions and gazes. You can help make a companion more balanced by changing these features slightly. It’s advised to approach this on a case-by-case basis, as each feature is difffferent, and some might not require changing.</p>
-			<p><strong>Recharge Abilities.</strong> Some creatures’ actions have the addendum “Recharge (5-6)”. This means that after a creature uses that action, it can’t use it again until it has recharged. At the start of the creature’s turn, you roll a d6, and if the result is a 5 or higher, the action recharges. No class has recharge abilities, in part because they add a lot of randomness to the game. Instead of using this recharge mechanic, you can simply change any ability with a recharge to one of the following:</p>
-			<h5 class="caption">Recharge Condition Companion Recharge</h5>
-			<table>
-				<thead>
-					<tr>
-						<td class="col-30" style="text-align:center">Recharge</td>
-						<td class="col-30" style="text-align:center">Condition</td>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td style="text-align:center">Recharge (4-6)</td>
-						<td style="text-align:center">Recharges after 1 minute</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Recharge (5-6)</td>
-						<td style="text-align:center">Recharges after 10 minutes</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Recharge (6)</td>
-						<td style="text-align:center">Recharges on a short or long rest</td>
-					</tr>
-				</tbody>
-			</table>
-			<p><strong>Perpetually Active Abilities.</strong> Some traits, like a medusa’s Petrifying Gaze, which is perpetually active and has the power of a 6th level spell, have the potential to become overpowered and repetitive. To balance this, you can add the caveat that “after a creature makes a saving throw against this effffect, it is immune to the effffect for the next 24 hours”. Work with your GM to fifind a balanced solution for your game.</p>
+				<h5>Powerful Companion Abilities</h5>
+				<p>Some monster features are very powerful, and aren’t designed for use by players. The two most common are recharge actions and gazes. You can help make a companion more balanced by changing these features slightly. It’s advised to approach this on a case-by-case basis, as each feature is difffferent, and some might not require changing.</p>
+				<p>
+					<strong>Recharge Abilities.</strong> Some creatures’ actions have the addendum “Recharge (5-6)”. This means that after a creature uses that action, it can’t use it again until it has recharged. At the start of the creature’s turn, you roll a d6, and if the result is a 5 or higher, the action recharges. No class has recharge abilities, in part because they add a lot of randomness to the game. Instead of using this recharge mechanic, you can simply change any ability with a recharge to one of the following:
+				</p>
+				<h5 class="caption">Recharge Condition Companion Recharge</h5>
+				<table>
+					<thead>
+						<tr>
+							<td class="col-30" style="text-align:center">Recharge</td>
+							<td class="col-30" style="text-align:center">Condition</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td style="text-align:center">Recharge (4-6)</td>
+							<td style="text-align:center">Recharges after 1 minute</td>
+						</tr>
+						<tr>
+							<td style="text-align:center">Recharge (5-6)</td>
+							<td style="text-align:center">Recharges after 10 minutes</td>
+						</tr>
+						<tr>
+							<td style="text-align:center">Recharge (6)</td>
+							<td style="text-align:center">Recharges on a short or long rest</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					<strong>Perpetually Active Abilities.</strong> Some traits, like a medusa’s Petrifying Gaze, which is perpetually active and has the power of a 6th level spell, have the potential to become overpowered and repetitive. To balance this, you can add the caveat that “after a creature makes a saving throw against this effffect, it is immune to the effffect for the next 24 hours”. Work with your GM to fifind a balanced solution for your game.
+				</p>
 			</div>
 			<h5 class="caption">Tamer Companion Summary</h5>
 			<table class="class-features">
@@ -437,7 +740,13 @@
 						<td class="col-5">Maximum # of Bonded Companions</td>
 						<td class="col-10">Maximum Companion Size</td>
 						<td class="col-10">Maximum Companion CR</td>
-						<td>CR 1/2*</td><td>CR 1*</td><td>CR 2*</td><td>CR 3*</td><td>CR 4*</td><td>CR 5*</td><td>CR 6*</td>
+						<td>CR 1/2*</td>
+						<td>CR 1*</td>
+						<td>CR 2*</td>
+						<td>CR 3*</td>
+						<td>CR 4*</td>
+						<td>CR 5*</td>
+						<td>CR 6*</td>
 					</tr>
 				</thead>
 				<tr>
@@ -700,19 +1009,21 @@
 					<td>1/0</td>
 				</tr>
 			</table>
-			<p><i>* Improvements/Hit Dice Gained on Taming</i></p>
+			<p>
+				<i>* Improvements/Hit Dice Gained on Taming</i>
+			</p>
 		</description>
 		<sheet>
 			<description>Action: Throw vessel (DC {{tamer:spellcasting:dc}} Cha save) to tame.</description>
 		</sheet>
 	</element>
-
 	<!-- Spellcasting -->
-
 	<element name="Spellcasting" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_SPELLCASTING">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_SPELLCASTING, (!ID_LT_HGTMH_CLASS_FEATURE_TAMER_SPELLCASTING_INTELLIGENCE|!ID_LT_HGTMH_CLASS_FEATURE_TAMER_SPELLCASTING_WISDOM|!ID_LT_HGTMH_CLASS_FEATURE_TAMER_SPELLCASTING_CHARISMA)</requirements>
 		<description>
-			<p><em>2nd-level artificer feature</em></p>
+			<p>
+				<em>2nd-level artificer feature</em>
+			</p>
 			<p>By 2nd level, you have learned to harness your mental fortitude to augment the potential of others. You can cast tamer spells. See page 495 for the tamer spell list.</p>
 			<h5>CANTRIPS</h5>
 			<p>At 2nd level, you know two cantrips of your choice from the tamer spell list. You learn additional tamer cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Tamer table.</p>
@@ -726,8 +1037,12 @@
 			<h5>SPELLCASTING ABILITY</h5>
 			<p>When you gain your first level in this class, choose whether you use your knowledge (Intelligence), willpower (Wisdom), or force of personality (Charisma) as your spellcasting ability for your tamer spells. You use this spellcasting ability whenever a spell refers to your spellcasting ability. In addition, you use your spellcasting ability modifier when setting the saving throw DC for a tamer spell you cast and when making an attack roll with one.</p>
 			<center>
-				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
-				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+				<p>
+					<strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier
+				</p>
+				<p>
+					<strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier
+				</p>
 			</center>
 			<h5>SPELLCASTING FOCUS</h5>
 			<p>You can use a creature’s vessel as a spellcasting focus for your tamer spells.</p>
@@ -739,7 +1054,9 @@
 	<element name="Spellcasting (Intelligence)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_SPELLCASTING_INTELLIGENCE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_SPELLCASTING</requirements>
 		<description>
-			<p><em>2nd-level artificer feature</em></p>
+			<p>
+				<em>2nd-level artificer feature</em>
+			</p>
 			<p>By 2nd level, you have learned to harness your mental fortitude to augment the potential of others. You can cast tamer spells. See page 495 for the tamer spell list.</p>
 			<h5>CANTRIPS</h5>
 			<p>At 2nd level, you know two cantrips of your choice from the tamer spell list. You learn additional tamer cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Tamer table.</p>
@@ -753,8 +1070,12 @@
 			<h5>SPELLCASTING ABILITY</h5>
 			<p>When you gain your first level in this class, choose whether you use your knowledge (Intelligence), willpower (Wisdom), or force of personality (Charisma) as your spellcasting ability for your tamer spells. You use this spellcasting ability whenever a spell refers to your spellcasting ability. In addition, you use your spellcasting ability modifier when setting the saving throw DC for a tamer spell you cast and when making an attack roll with one.</p>
 			<center>
-				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
-				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+				<p>
+					<strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier
+				</p>
+				<p>
+					<strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier
+				</p>
 			</center>
 			<h5>SPELLCASTING FOCUS</h5>
 			<p>You can use a creature’s vessel as a spellcasting focus for your tamer spells.</p>
@@ -767,7 +1088,6 @@
 		</spellcasting>
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
-			
 			<stat name="tamer:spellcasting:slots:1" value="2" level="2" />
 			<stat name="tamer:spellcasting:slots:1" value="1" level="3" />
 			<stat name="tamer:spellcasting:slots:1" value="1" level="5" />
@@ -780,11 +1100,9 @@
 			<stat name="tamer:spellcasting:slots:4" value="1" level="17" />
 			<stat name="tamer:spellcasting:slots:5" value="1" level="17" />
 			<stat name="tamer:spellcasting:slots:5" value="1" level="19" />
-
 			<select type="Spell" name="Cantrip, Tamer" supports="$(spellcasting:list), 0" level="2" number="2" spellcasting="Tamer" />
 			<select type="Spell" name="Cantrip, Tamer" supports="$(spellcasting:list), 0" level="10" spellcasting="Tamer" />
 			<select type="Spell" name="Cantrip, Tamer" supports="$(spellcasting:list), 0" level="14" spellcasting="Tamer" />
-			
 			<select type="Spell" name="Spellcasting (Tamer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="2" spellcasting="Tamer"/>
 			<select type="Spell" name="Spellcasting (Tamer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" spellcasting="Tamer"/>
 			<select type="Spell" name="Spellcasting (Tamer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" spellcasting="Tamer"/>
@@ -795,12 +1113,9 @@
 			<select type="Spell" name="Spellcasting (Tamer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" spellcasting="Tamer"/>
 			<select type="Spell" name="Spellcasting (Tamer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" spellcasting="Tamer"/>
 			<select type="Spell" name="Spellcasting (Tamer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Tamer"/>
-
 			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_BOLSTER_INTELLIGENCE" />
-
 			<stat name="tamer:spell:modifier" value="proficiency" />
 			<stat name="tamer:spell:modifier" value="intelligence:modifier" />
-
 			<stat name="tamer:spellcasting:min" value="1" bonus="base" />
 			<stat name="tamer:spellcasting:min" value="tamer:spell:modifier" bonus="base" />
 		</rules>
@@ -808,7 +1123,9 @@
 	<element name="Spellcasting (Wisdom)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_SPELLCASTING_WISDOM">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_SPELLCASTING</requirements>
 		<description>
-			<p><em>2nd-level artificer feature</em></p>
+			<p>
+				<em>2nd-level artificer feature</em>
+			</p>
 			<p>By 2nd level, you have learned to harness your mental fortitude to augment the potential of others. You can cast tamer spells. See page 495 for the tamer spell list.</p>
 			<h5>CANTRIPS</h5>
 			<p>At 2nd level, you know two cantrips of your choice from the tamer spell list. You learn additional tamer cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Tamer table.</p>
@@ -822,8 +1139,12 @@
 			<h5>SPELLCASTING ABILITY</h5>
 			<p>When you gain your first level in this class, choose whether you use your knowledge (Intelligence), willpower (Wisdom), or force of personality (Charisma) as your spellcasting ability for your tamer spells. You use this spellcasting ability whenever a spell refers to your spellcasting ability. In addition, you use your spellcasting ability modifier when setting the saving throw DC for a tamer spell you cast and when making an attack roll with one.</p>
 			<center>
-				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
-				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+				<p>
+					<strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier
+				</p>
+				<p>
+					<strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier
+				</p>
 			</center>
 			<h5>SPELLCASTING FOCUS</h5>
 			<p>You can use a creature’s vessel as a spellcasting focus for your tamer spells.</p>
@@ -836,7 +1157,6 @@
 		</spellcasting>
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
-			
 			<stat name="tamer:spellcasting:slots:1" value="2" level="2" />
 			<stat name="tamer:spellcasting:slots:1" value="1" level="3" />
 			<stat name="tamer:spellcasting:slots:1" value="1" level="5" />
@@ -849,11 +1169,9 @@
 			<stat name="tamer:spellcasting:slots:4" value="1" level="17" />
 			<stat name="tamer:spellcasting:slots:5" value="1" level="17" />
 			<stat name="tamer:spellcasting:slots:5" value="1" level="19" />
-
 			<select type="Spell" name="Cantrip, Tamer" supports="$(spellcasting:list), 0" level="2" number="2" spellcasting="Tamer" />
 			<select type="Spell" name="Cantrip, Tamer" supports="$(spellcasting:list), 0" level="10" spellcasting="Tamer" />
 			<select type="Spell" name="Cantrip, Tamer" supports="$(spellcasting:list), 0" level="14" spellcasting="Tamer" />
-			
 			<select type="Spell" name="Spellcasting (Tamer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="2" spellcasting="Tamer"/>
 			<select type="Spell" name="Spellcasting (Tamer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" spellcasting="Tamer"/>
 			<select type="Spell" name="Spellcasting (Tamer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" spellcasting="Tamer"/>
@@ -864,12 +1182,9 @@
 			<select type="Spell" name="Spellcasting (Tamer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" spellcasting="Tamer"/>
 			<select type="Spell" name="Spellcasting (Tamer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" spellcasting="Tamer"/>
 			<select type="Spell" name="Spellcasting (Tamer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Tamer"/>
-
 			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_BOLSTER_WISDOM" />
-
 			<stat name="tamer:spell:modifier" value="proficiency" />
 			<stat name="tamer:spell:modifier" value="wisdom:modifier" />
-
 			<stat name="tamer:spellcasting:min" value="1" bonus="base" />
 			<stat name="tamer:spellcasting:min" value="tamer:spell:modifier" bonus="base" />
 		</rules>
@@ -877,7 +1192,9 @@
 	<element name="Spellcasting (Charisma)" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_SPELLCASTING_CHARISMA">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_SPELLCASTING</requirements>
 		<description>
-			<p><em>2nd-level artificer feature</em></p>
+			<p>
+				<em>2nd-level artificer feature</em>
+			</p>
 			<p>By 2nd level, you have learned to harness your mental fortitude to augment the potential of others. You can cast tamer spells. See page 495 for the tamer spell list.</p>
 			<h5>CANTRIPS</h5>
 			<p>At 2nd level, you know two cantrips of your choice from the tamer spell list. You learn additional tamer cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Tamer table.</p>
@@ -891,8 +1208,12 @@
 			<h5>SPELLCASTING ABILITY</h5>
 			<p>When you gain your first level in this class, choose whether you use your knowledge (Intelligence), willpower (Wisdom), or force of personality (Charisma) as your spellcasting ability for your tamer spells. You use this spellcasting ability whenever a spell refers to your spellcasting ability. In addition, you use your spellcasting ability modifier when setting the saving throw DC for a tamer spell you cast and when making an attack roll with one.</p>
 			<center>
-				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Charisma modifier</p>
-				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Charisma modifier</p>
+				<p>
+					<strong>Spell save DC</strong> = 8 + your proficiency bonus + your Charisma modifier
+				</p>
+				<p>
+					<strong>Spell attack modifier</strong> = your proficiency bonus + your Charisma modifier
+				</p>
 			</center>
 			<h5>SPELLCASTING FOCUS</h5>
 			<p>You can use a creature’s vessel as a spellcasting focus for your tamer spells.</p>
@@ -905,7 +1226,6 @@
 		</spellcasting>
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
-			
 			<stat name="tamer:spellcasting:slots:1" value="2" level="2" />
 			<stat name="tamer:spellcasting:slots:1" value="1" level="3" />
 			<stat name="tamer:spellcasting:slots:1" value="1" level="5" />
@@ -918,11 +1238,9 @@
 			<stat name="tamer:spellcasting:slots:4" value="1" level="17" />
 			<stat name="tamer:spellcasting:slots:5" value="1" level="17" />
 			<stat name="tamer:spellcasting:slots:5" value="1" level="19" />
-
 			<select type="Spell" name="Cantrip, Tamer" supports="$(spellcasting:list), 0" level="2" number="2" spellcasting="Tamer" />
 			<select type="Spell" name="Cantrip, Tamer" supports="$(spellcasting:list), 0" level="10" spellcasting="Tamer" />
 			<select type="Spell" name="Cantrip, Tamer" supports="$(spellcasting:list), 0" level="14" spellcasting="Tamer" />
-			
 			<select type="Spell" name="Spellcasting (Tamer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="2" spellcasting="Tamer"/>
 			<select type="Spell" name="Spellcasting (Tamer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" spellcasting="Tamer"/>
 			<select type="Spell" name="Spellcasting (Tamer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" spellcasting="Tamer"/>
@@ -933,29 +1251,29 @@
 			<select type="Spell" name="Spellcasting (Tamer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" spellcasting="Tamer"/>
 			<select type="Spell" name="Spellcasting (Tamer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" spellcasting="Tamer"/>
 			<select type="Spell" name="Spellcasting (Tamer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Tamer"/>
-
 			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_BOLSTER_CHARISMA" />
-
 			<stat name="tamer:spell:modifier" value="proficiency" />
 			<stat name="tamer:spell:modifier" value="charisma:modifier" />
-
 			<stat name="tamer:spellcasting:min" value="1" bonus="base" />
 			<stat name="tamer:spellcasting:min" value="tamer:spell:modifier" bonus="base" />
 		</rules>
 	</element>
-
 	<!-- Bolster -->
 	<element name="Bolster" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_BOLSTER">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_BOLSTER, (!ID_LT_HGTMH_CLASS_FEATURE_TAMER_BOLSTER_INTELLIGENCE|!ID_LT_HGTMH_CLASS_FEATURE_TAMER_BOLSTER_WISDOM|!ID_LT_HGTMH_CLASS_FEATURE_TAMER_BOLSTER_CHARISMA)</requirements>
 		<description>
-			<p><em>2nd-level Tamer feature</em></p>
+			<p>
+				<em>2nd-level Tamer feature</em>
+			</p>
 			<p>While your companion is within 100 feet of you and you are holding its vessel, or if you are holding its vessel with it inside, you can use an action to expend one spell slot to restore hit points to your companion equal to your spellcasting ability modifier (minimum 1) plus an additional 2d4 per level of the spell slot expended.</p>
 		</description>
 	</element>
 	<element name="Bolster" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_BOLSTER_INTELLIGENCE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_BOLSTER</requirements>
 		<description>
-			<p><em>2nd-level Tamer feature</em></p>
+			<p>
+				<em>2nd-level Tamer feature</em>
+			</p>
 			<p>While your companion is within 100 feet of you and you are holding its vessel, or if you are holding its vessel with it inside, you can use an action to expend one spell slot to restore hit points to your companion equal to your spellcasting ability modifier (minimum 1) plus an additional 2d4 per level of the spell slot expended.</p>
 		</description>
 		<sheet action="Action">
@@ -965,7 +1283,9 @@
 	<element name="Bolster" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_BOLSTER_WISDOM">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_BOLSTER</requirements>
 		<description>
-			<p><em>2nd-level Tamer feature</em></p>
+			<p>
+				<em>2nd-level Tamer feature</em>
+			</p>
 			<p>While your companion is within 100 feet of you and you are holding its vessel, or if you are holding its vessel with it inside, you can use an action to expend one spell slot to restore hit points to your companion equal to your spellcasting ability modifier (minimum 1) plus an additional 2d4 per level of the spell slot expended.</p>
 		</description>
 		<sheet action="Action">
@@ -975,32 +1295,38 @@
 	<element name="Bolster" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_BOLSTER_CHARISMA">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_BOLSTER</requirements>
 		<description>
-			<p><em>2nd-level Tamer feature</em></p>
+			<p>
+				<em>2nd-level Tamer feature</em>
+			</p>
 			<p>While your companion is within 100 feet of you and you are holding its vessel, or if you are holding its vessel with it inside, you can use an action to expend one spell slot to restore hit points to your companion equal to your spellcasting ability modifier (minimum 1) plus an additional 2d4 per level of the spell slot expended.</p>
 		</description>
 		<sheet action="Action">
 			<description>Expend spell slot: heal companion {{tamer:spellcasting:min}} + 2d4/level.</description>
 		</sheet>
 	</element>
-
 	<!-- Psychic Bond -->
 	<element name="Psychic Bond" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_PSYCHIC_BOND">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_MAGICAL_PSYCHIC_BOND</requirements>
 		<description>
-			<p><em>2nd-level Tamer feature</em></p>
+			<p>
+				<em>2nd-level Tamer feature</em>
+			</p>
 			<p>While your companion is within 100 feet of you, you can communicate with it telepathically. Additionally, as an action, you can see through your companion’s eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the companion has. During this time, you are deaf and blind with regard to your own senses.</p>
-			<p><strong>Spell Swap.</strong> While your companion is summoned, is within 100 feet of you, and you hold its vessel, any spells your companion knows are added to your known spells. In addition, when you cast a spell with a range of self or touch, your companion can be the target of that spell.</p>
+			<p>
+				<strong>Spell Swap.</strong> While your companion is summoned, is within 100 feet of you, and you hold its vessel, any spells your companion knows are added to your known spells. In addition, when you cast a spell with a range of self or touch, your companion can be the target of that spell.
+			</p>
 		</description>
 		<sheet action="Action">
 			<description>Telepathy (100ft). Action: See through companion's senses. Spell Swap.</description>
 		</sheet>
 	</element>
-	
 	<!-- Pocket Family -->
 	<element name="Pocket Family" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILY">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_POCKET_FAMILY</requirements>
 		<description>
-			<p><em>3rd-level Tamer feature</em></p>
+			<p>
+				<em>3rd-level Tamer feature</em>
+			</p>
 			<p>As you gain levels in this class, the number of companions and maximum size of companion to which you can become bonded increases. You can be bonded to two, three, four, five, or six creatures at 3rd, 7th, 11th, 15th, and 19th level, respectively. Your companions can be sized Medium at 5th level, Large at 11th level, and Huge at 17th level. If you are already bonded to your maximum number of companions and become bonded to a new companion, you must choose one existing companion to release from its vessel.</p>
 			<p>When you bond with a new companion, the companion gains improvements and Hit Dice based on its CR and your tamer level. See the Tamer Companion Summary table (page 198) for details.</p>
 		</description>
@@ -1016,38 +1342,54 @@
 			<select type="Class Feature" name="Companion 6" supports="Pocket Familiar 6"  level="19"/>
 		</rules>
 	</element>
-
 	<!-- Pocket Familiar 2 -->
-		<element name="Bespoke Familiar" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_BESPOKE_FAMILIAR_2">
-			<supports>Pocket Familiar 2</supports>
-			<description>
+	<element name="Bespoke Familiar" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_BESPOKE_FAMILIAR_2">
+		<supports>Pocket Familiar 2</supports>
+		<description>
 			</description>
-			<sheet display="false">
-				<description>Your Bespoke Familiars is:</description>
-			</sheet>
-			<rules>
-				<select type="Class Feature" name="Pocket Familiar 2" supports="Bespoke Companion" />
-			</rules>
-		</element>
-
-		<element name="Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_COMPANION_2">
-			<supports>Pocket Familiar 2</supports>
-			<description>
-				<p>You become bonded to a companion that accompanies you on your adventures and is trained to fight alongside you. Choose a Small or smaller creature with a challenge rating of 1/2 or lower that isn’t a humanoid, giant, or swarm to become your companion. When a creature becomes your companion, it has a maximum number of hit points equal to the average of its Hit Dice, as indicated in its statistics, and it can’t cast spells. Work with your GM to find a companion that suits your campaign world. This companion obeys your commands and is friendly to you and your allies.</p>
-			<p><strong>Vessel.</strong> When not summoned, your companion exists inside a magical vessel of your own design, such as a painted animal skull, bejewelled egg, or crystal sphere. While in this vessel, the companion has full cover from all attacks and other effects, is unaffected by area of effects that originate from outside the vessel, and exists in stasis; it doesn’t need to eat, drink, sleep, or breathe, and it is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralised. A companion at 0 hit points is instantly stabilised when it enters its vessel. If a vessel is broken, or a companion is released from its vessel for any other reason, the creature within it ceases to be a tamer’s companion. It acts according to its own wishes and retains any improvements it gained while a companion.</p>
-			<div class="sidebar"> 
-			<h5>Home Planes</h5>
-			<p>Some magical effects, like the banishment spell, have the ability to permanently banish a creature back to its home plane. When a creature becomes your companion, its home plane becomes the demiplane within its vessel. If the companion becomes permanently banished by such a spell, it simply reappears in this vessel.</p></div>
-			<p><strong>Summoning.</strong> As an action, you can summon your companion from a vessel, causing it to appear in an unoccupied space that you can see within 30 feet of you, or any unoccupied space within 5 feet of you. You can dismiss a companion within 30 feet of you as a bonus action or action, drawing it back into its vessel. To summon or dismiss a companion, you must be holding its vessel in hand. You can only have one companion summoned at a time.</p>
+		<sheet display="false">
+			<description>Your Bespoke Familiars is:</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Pocket Familiar 2" supports="Bespoke Companion" />
+		</rules>
+	</element>
+	<element name="Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_COMPANION_2">
+		<supports>Pocket Familiar 2</supports>
+		<description>
+			<p>You become bonded to a companion that accompanies you on your adventures and is trained to fight alongside you. Choose a Small or smaller creature with a challenge rating of 1/2 or lower that isn’t a humanoid, giant, or swarm to become your companion. When a creature becomes your companion, it has a maximum number of hit points equal to the average of its Hit Dice, as indicated in its statistics, and it can’t cast spells. Work with your GM to find a companion that suits your campaign world. This companion obeys your commands and is friendly to you and your allies.</p>
+			<p>
+				<strong>Vessel.</strong> When not summoned, your companion exists inside a magical vessel of your own design, such as a painted animal skull, bejewelled egg, or crystal sphere. While in this vessel, the companion has full cover from all attacks and other effects, is unaffected by area of effects that originate from outside the vessel, and exists in stasis; it doesn’t need to eat, drink, sleep, or breathe, and it is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralised. A companion at 0 hit points is instantly stabilised when it enters its vessel. If a vessel is broken, or a companion is released from its vessel for any other reason, the creature within it ceases to be a tamer’s companion. It acts according to its own wishes and retains any improvements it gained while a companion.
+			</p>
 			<div class="sidebar">
-			<h5>Dominated Companions</h5>
-			<p>A companion that is controlled by another creature, such as by the dominate monster spell, can try to resist being recalled into its vessel. When you try to recall such a creature into its vessel, it can make a Charisma saving throw against your tamer spell save DC. On a failed saving throw, it is recalled, while on a success, it is not.</p></div>
-			<p><strong>Combat.</strong> In combat, your companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action or action on your turn to command it to take different actions. Those actions can be in its statistics or some other action, bonus action, or object interaction. If you are incapacitated, the companion can take any action of its choice, not just Dodge. Your companion can’t take the Multiattack action until you reach 5th level in this class, even if it would otherwise be able to.</p>
-			<p><strong>Rest.</strong> A companion gains the benefits of a long rest when its tamer finishes a long rest; if it has at least 1 hit point, it regains all its hit points when you finish a long rest. Unlike other creatures, a companion can’t spend its own Hit Dice to recover hit points at the end of a short rest. See the Soul Bond feature for details on recovering hit points.</p>
-			<p><strong>Items.</strong> Armour, barding, and weapons can be equipped to enhance your companion. A companion can wear or carry any equipment that their size and body shape permits. However, your companion must be proficient with the armour or weapon to make full use of it. If your companion wears armour that it lacks proficiency with, it has disadvantage on any ability check, saving throw, or attack roll that involves Strength or Dexterity. A companion that is not proficient with a weapon type does not add its proficiency bonus to attack rolls made with that weapon type.</p>
-			<p><strong>Item Bonding.</strong> Over the course of an hour, you can bond a companion to one object that it can wear or carry that is not any sort of container or storage. When a companion is recalled, all items it is wearing or carrying that it is not bonded to are dropped in the space from which it was recalled. A companion can be bonded to up to 3 items at any one time. Companions can’t attune to magic items, unless they have a specific ability that allows them to do so (e.g. Proto-Attunement, page 238).</p>
-			<p><strong>Companion Barding.</strong> You can purchase armour for your companion. Any type of armour can be purchased as barding. The cost and weight is doubled for each size category above Medium, and halved for each size category below Small. In addition, the cost is further doubled if the companion is not humanoid in shape.</p>
-			<p><strong>Companion Barding Cost</strong></p>
+				<h5>Home Planes</h5>
+				<p>Some magical effects, like the banishment spell, have the ability to permanently banish a creature back to its home plane. When a creature becomes your companion, its home plane becomes the demiplane within its vessel. If the companion becomes permanently banished by such a spell, it simply reappears in this vessel.</p>
+			</div>
+			<p>
+				<strong>Summoning.</strong> As an action, you can summon your companion from a vessel, causing it to appear in an unoccupied space that you can see within 30 feet of you, or any unoccupied space within 5 feet of you. You can dismiss a companion within 30 feet of you as a bonus action or action, drawing it back into its vessel. To summon or dismiss a companion, you must be holding its vessel in hand. You can only have one companion summoned at a time.
+			</p>
+			<div class="sidebar">
+				<h5>Dominated Companions</h5>
+				<p>A companion that is controlled by another creature, such as by the dominate monster spell, can try to resist being recalled into its vessel. When you try to recall such a creature into its vessel, it can make a Charisma saving throw against your tamer spell save DC. On a failed saving throw, it is recalled, while on a success, it is not.</p>
+			</div>
+			<p>
+				<strong>Combat.</strong> In combat, your companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action or action on your turn to command it to take different actions. Those actions can be in its statistics or some other action, bonus action, or object interaction. If you are incapacitated, the companion can take any action of its choice, not just Dodge. Your companion can’t take the Multiattack action until you reach 5th level in this class, even if it would otherwise be able to.
+			</p>
+			<p>
+				<strong>Rest.</strong> A companion gains the benefits of a long rest when its tamer finishes a long rest; if it has at least 1 hit point, it regains all its hit points when you finish a long rest. Unlike other creatures, a companion can’t spend its own Hit Dice to recover hit points at the end of a short rest. See the Soul Bond feature for details on recovering hit points.
+			</p>
+			<p>
+				<strong>Items.</strong> Armour, barding, and weapons can be equipped to enhance your companion. A companion can wear or carry any equipment that their size and body shape permits. However, your companion must be proficient with the armour or weapon to make full use of it. If your companion wears armour that it lacks proficiency with, it has disadvantage on any ability check, saving throw, or attack roll that involves Strength or Dexterity. A companion that is not proficient with a weapon type does not add its proficiency bonus to attack rolls made with that weapon type.
+			</p>
+			<p>
+				<strong>Item Bonding.</strong> Over the course of an hour, you can bond a companion to one object that it can wear or carry that is not any sort of container or storage. When a companion is recalled, all items it is wearing or carrying that it is not bonded to are dropped in the space from which it was recalled. A companion can be bonded to up to 3 items at any one time. Companions can’t attune to magic items, unless they have a specific ability that allows them to do so (e.g. Proto-Attunement, page 238).
+			</p>
+			<p>
+				<strong>Companion Barding.</strong> You can purchase armour for your companion. Any type of armour can be purchased as barding. The cost and weight is doubled for each size category above Medium, and halved for each size category below Small. In addition, the cost is further doubled if the companion is not humanoid in shape.
+			</p>
+			<p>
+				<strong>Companion Barding Cost</strong>
+			</p>
 			<table>
 				<thead>
 					<tr>
@@ -1056,72 +1398,89 @@
 						<td class="col-30" style="text-align:center">Abstract Shape Cost</td>
 					</tr>
 				</thead>
-					<tr>
-						<td style="text-align:center">Tiny</td>
-						<td style="text-align:center">0.5x</td>
-						<td style="text-align:center">1x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Small</td>
-						<td style="text-align:center">1x</td>
-						<td style="text-align:center">2x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Medium</td>
-						<td style="text-align:center">1x</td>
-						<td style="text-align:center">2x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Large</td>
-						<td style="text-align:center">2x</td>
-						<td style="text-align:center">4x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Huge</td>
-						<td style="text-align:center">4x</td>
-						<td style="text-align:center">8x</td>
-					</tr>
+				<tr>
+					<td style="text-align:center">Tiny</td>
+					<td style="text-align:center">0.5x</td>
+					<td style="text-align:center">1x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Small</td>
+					<td style="text-align:center">1x</td>
+					<td style="text-align:center">2x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Medium</td>
+					<td style="text-align:center">1x</td>
+					<td style="text-align:center">2x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Large</td>
+					<td style="text-align:center">2x</td>
+					<td style="text-align:center">4x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Huge</td>
+					<td style="text-align:center">4x</td>
+					<td style="text-align:center">8x</td>
+				</tr>
 			</table>
+		</description>
+		<sheet display="false">
+			<description>Your companions is:</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_2" />
+			<!-- <select type="Class Feature" name="Pocket Familiar 2" supports="Tamed Companion 2" /> -->
+		</rules>
+	</element>
+	<!-- Pocket Familiar 3 -->
+	<element name="Bespoke Familiar" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_BESPOKE_FAMILIAR_3">
+		<supports>Pocket Familiar 3</supports>
+		<description>
 			</description>
-			<sheet display="false">
-				<description>Your companions is:</description>
-			</sheet>
-			<rules>
-				<select type="Class Feature" name="Pocket Familiar 2" supports="Tamed Companion 2" />
-			</rules>
-		</element>
-
-		<!-- Pocket Familiar 3 -->
-		<element name="Bespoke Familiar" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_BESPOKE_FAMILIAR_3">
-			<supports>Pocket Familiar 3</supports>
-			<description>
-			</description>
-			<sheet display="false">
-				<description>Your Bespoke Familiars is:</description>
-			</sheet>
-			<rules>
-				<select type="Class Feature" name="Pocket Familiar 3" supports="Bespoke Companion" />
-			</rules>
-		</element>
-
-		<element name="Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_COMPANION_3">
-			<supports>Pocket Familiar 3</supports>
-			<description>
-				<p>You become bonded to a companion that accompanies you on your adventures and is trained to fight alongside you. Choose a Small or smaller creature with a challenge rating of 1/2 or lower that isn’t a humanoid, giant, or swarm to become your companion. When a creature becomes your companion, it has a maximum number of hit points equal to the average of its Hit Dice, as indicated in its statistics, and it can’t cast spells. Work with your GM to find a companion that suits your campaign world. This companion obeys your commands and is friendly to you and your allies.</p>
-			<p><strong>Vessel.</strong> When not summoned, your companion exists inside a magical vessel of your own design, such as a painted animal skull, bejewelled egg, or crystal sphere. While in this vessel, the companion has full cover from all attacks and other effects, is unaffected by area of effects that originate from outside the vessel, and exists in stasis; it doesn’t need to eat, drink, sleep, or breathe, and it is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralised. A companion at 0 hit points is instantly stabilised when it enters its vessel. If a vessel is broken, or a companion is released from its vessel for any other reason, the creature within it ceases to be a tamer’s companion. It acts according to its own wishes and retains any improvements it gained while a companion.</p>
-			<div class="sidebar"> 
-			<h5>Home Planes</h5>
-			<p>Some magical effects, like the banishment spell, have the ability to permanently banish a creature back to its home plane. When a creature becomes your companion, its home plane becomes the demiplane within its vessel. If the companion becomes permanently banished by such a spell, it simply reappears in this vessel.</p></div>
-			<p><strong>Summoning.</strong> As an action, you can summon your companion from a vessel, causing it to appear in an unoccupied space that you can see within 30 feet of you, or any unoccupied space within 5 feet of you. You can dismiss a companion within 30 feet of you as a bonus action or action, drawing it back into its vessel. To summon or dismiss a companion, you must be holding its vessel in hand. You can only have one companion summoned at a time.</p>
+		<sheet display="false">
+			<description>Your Bespoke Familiars is:</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Pocket Familiar 3" supports="Bespoke Companion" />
+		</rules>
+	</element>
+	<element name="Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_COMPANION_3">
+		<supports>Pocket Familiar 3</supports>
+		<description>
+			<p>You become bonded to a companion that accompanies you on your adventures and is trained to fight alongside you. Choose a Small or smaller creature with a challenge rating of 1/2 or lower that isn’t a humanoid, giant, or swarm to become your companion. When a creature becomes your companion, it has a maximum number of hit points equal to the average of its Hit Dice, as indicated in its statistics, and it can’t cast spells. Work with your GM to find a companion that suits your campaign world. This companion obeys your commands and is friendly to you and your allies.</p>
+			<p>
+				<strong>Vessel.</strong> When not summoned, your companion exists inside a magical vessel of your own design, such as a painted animal skull, bejewelled egg, or crystal sphere. While in this vessel, the companion has full cover from all attacks and other effects, is unaffected by area of effects that originate from outside the vessel, and exists in stasis; it doesn’t need to eat, drink, sleep, or breathe, and it is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralised. A companion at 0 hit points is instantly stabilised when it enters its vessel. If a vessel is broken, or a companion is released from its vessel for any other reason, the creature within it ceases to be a tamer’s companion. It acts according to its own wishes and retains any improvements it gained while a companion.
+			</p>
 			<div class="sidebar">
-			<h5>Dominated Companions</h5>
-			<p>A companion that is controlled by another creature, such as by the dominate monster spell, can try to resist being recalled into its vessel. When you try to recall such a creature into its vessel, it can make a Charisma saving throw against your tamer spell save DC. On a failed saving throw, it is recalled, while on a success, it is not.</p></div>
-			<p><strong>Combat.</strong> In combat, your companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action or action on your turn to command it to take different actions. Those actions can be in its statistics or some other action, bonus action, or object interaction. If you are incapacitated, the companion can take any action of its choice, not just Dodge. Your companion can’t take the Multiattack action until you reach 5th level in this class, even if it would otherwise be able to.</p>
-			<p><strong>Rest.</strong> A companion gains the benefits of a long rest when its tamer finishes a long rest; if it has at least 1 hit point, it regains all its hit points when you finish a long rest. Unlike other creatures, a companion can’t spend its own Hit Dice to recover hit points at the end of a short rest. See the Soul Bond feature for details on recovering hit points.</p>
-			<p><strong>Items.</strong> Armour, barding, and weapons can be equipped to enhance your companion. A companion can wear or carry any equipment that their size and body shape permits. However, your companion must be proficient with the armour or weapon to make full use of it. If your companion wears armour that it lacks proficiency with, it has disadvantage on any ability check, saving throw, or attack roll that involves Strength or Dexterity. A companion that is not proficient with a weapon type does not add its proficiency bonus to attack rolls made with that weapon type.</p>
-			<p><strong>Item Bonding.</strong> Over the course of an hour, you can bond a companion to one object that it can wear or carry that is not any sort of container or storage. When a companion is recalled, all items it is wearing or carrying that it is not bonded to are dropped in the space from which it was recalled. A companion can be bonded to up to 3 items at any one time. Companions can’t attune to magic items, unless they have a specific ability that allows them to do so (e.g. Proto-Attunement, page 238).</p>
-			<p><strong>Companion Barding.</strong> You can purchase armour for your companion. Any type of armour can be purchased as barding. The cost and weight is doubled for each size category above Medium, and halved for each size category below Small. In addition, the cost is further doubled if the companion is not humanoid in shape.</p>
-			<p><strong>Companion Barding Cost</strong></p>
+				<h5>Home Planes</h5>
+				<p>Some magical effects, like the banishment spell, have the ability to permanently banish a creature back to its home plane. When a creature becomes your companion, its home plane becomes the demiplane within its vessel. If the companion becomes permanently banished by such a spell, it simply reappears in this vessel.</p>
+			</div>
+			<p>
+				<strong>Summoning.</strong> As an action, you can summon your companion from a vessel, causing it to appear in an unoccupied space that you can see within 30 feet of you, or any unoccupied space within 5 feet of you. You can dismiss a companion within 30 feet of you as a bonus action or action, drawing it back into its vessel. To summon or dismiss a companion, you must be holding its vessel in hand. You can only have one companion summoned at a time.
+			</p>
+			<div class="sidebar">
+				<h5>Dominated Companions</h5>
+				<p>A companion that is controlled by another creature, such as by the dominate monster spell, can try to resist being recalled into its vessel. When you try to recall such a creature into its vessel, it can make a Charisma saving throw against your tamer spell save DC. On a failed saving throw, it is recalled, while on a success, it is not.</p>
+			</div>
+			<p>
+				<strong>Combat.</strong> In combat, your companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action or action on your turn to command it to take different actions. Those actions can be in its statistics or some other action, bonus action, or object interaction. If you are incapacitated, the companion can take any action of its choice, not just Dodge. Your companion can’t take the Multiattack action until you reach 5th level in this class, even if it would otherwise be able to.
+			</p>
+			<p>
+				<strong>Rest.</strong> A companion gains the benefits of a long rest when its tamer finishes a long rest; if it has at least 1 hit point, it regains all its hit points when you finish a long rest. Unlike other creatures, a companion can’t spend its own Hit Dice to recover hit points at the end of a short rest. See the Soul Bond feature for details on recovering hit points.
+			</p>
+			<p>
+				<strong>Items.</strong> Armour, barding, and weapons can be equipped to enhance your companion. A companion can wear or carry any equipment that their size and body shape permits. However, your companion must be proficient with the armour or weapon to make full use of it. If your companion wears armour that it lacks proficiency with, it has disadvantage on any ability check, saving throw, or attack roll that involves Strength or Dexterity. A companion that is not proficient with a weapon type does not add its proficiency bonus to attack rolls made with that weapon type.
+			</p>
+			<p>
+				<strong>Item Bonding.</strong> Over the course of an hour, you can bond a companion to one object that it can wear or carry that is not any sort of container or storage. When a companion is recalled, all items it is wearing or carrying that it is not bonded to are dropped in the space from which it was recalled. A companion can be bonded to up to 3 items at any one time. Companions can’t attune to magic items, unless they have a specific ability that allows them to do so (e.g. Proto-Attunement, page 238).
+			</p>
+			<p>
+				<strong>Companion Barding.</strong> You can purchase armour for your companion. Any type of armour can be purchased as barding. The cost and weight is doubled for each size category above Medium, and halved for each size category below Small. In addition, the cost is further doubled if the companion is not humanoid in shape.
+			</p>
+			<p>
+				<strong>Companion Barding Cost</strong>
+			</p>
 			<table>
 				<thead>
 					<tr>
@@ -1130,72 +1489,89 @@
 						<td class="col-30" style="text-align:center">Abstract Shape Cost</td>
 					</tr>
 				</thead>
-					<tr>
-						<td style="text-align:center">Tiny</td>
-						<td style="text-align:center">0.5x</td>
-						<td style="text-align:center">1x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Small</td>
-						<td style="text-align:center">1x</td>
-						<td style="text-align:center">2x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Medium</td>
-						<td style="text-align:center">1x</td>
-						<td style="text-align:center">2x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Large</td>
-						<td style="text-align:center">2x</td>
-						<td style="text-align:center">4x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Huge</td>
-						<td style="text-align:center">4x</td>
-						<td style="text-align:center">8x</td>
-					</tr>
+				<tr>
+					<td style="text-align:center">Tiny</td>
+					<td style="text-align:center">0.5x</td>
+					<td style="text-align:center">1x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Small</td>
+					<td style="text-align:center">1x</td>
+					<td style="text-align:center">2x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Medium</td>
+					<td style="text-align:center">1x</td>
+					<td style="text-align:center">2x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Large</td>
+					<td style="text-align:center">2x</td>
+					<td style="text-align:center">4x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Huge</td>
+					<td style="text-align:center">4x</td>
+					<td style="text-align:center">8x</td>
+				</tr>
 			</table>
+		</description>
+		<sheet display="false">
+			<description>Your companions is:</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_3" />
+			<!-- <select type="Class Feature" name="Pocket Familiar 3" supports="Tamed Companion 3" /> -->
+		</rules>
+	</element>
+	<!-- Pocket Familiar 4 -->
+	<element name="Bespoke Familiar" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_BESPOKE_FAMILIAR_4">
+		<supports>Pocket Familiar 4</supports>
+		<description>
 			</description>
-			<sheet display="false">
-				<description>Your companions is:</description>
-			</sheet>
-			<rules>
-				<select type="Class Feature" name="Pocket Familiar 3" supports="Tamed Companion 3" />
-			</rules>
-		</element>
-
-		<!-- Pocket Familiar 4 -->
-		<element name="Bespoke Familiar" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_BESPOKE_FAMILIAR_4">
-			<supports>Pocket Familiar 4</supports>
-			<description>
-			</description>
-			<sheet display="false">
-				<description>Your Bespoke Familiars is:</description>
-			</sheet>
-			<rules>
-				<select type="Class Feature" name="Pocket Familiar 4" supports="Bespoke Companion" />
-			</rules>
-		</element>
-
-		<element name="Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_COMPANION_4">
-			<supports>Pocket Familiar 4</supports>
-			<description>
-				<p>You become bonded to a companion that accompanies you on your adventures and is trained to fight alongside you. Choose a Small or smaller creature with a challenge rating of 1/2 or lower that isn’t a humanoid, giant, or swarm to become your companion. When a creature becomes your companion, it has a maximum number of hit points equal to the average of its Hit Dice, as indicated in its statistics, and it can’t cast spells. Work with your GM to find a companion that suits your campaign world. This companion obeys your commands and is friendly to you and your allies.</p>
-			<p><strong>Vessel.</strong> When not summoned, your companion exists inside a magical vessel of your own design, such as a painted animal skull, bejewelled egg, or crystal sphere. While in this vessel, the companion has full cover from all attacks and other effects, is unaffected by area of effects that originate from outside the vessel, and exists in stasis; it doesn’t need to eat, drink, sleep, or breathe, and it is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralised. A companion at 0 hit points is instantly stabilised when it enters its vessel. If a vessel is broken, or a companion is released from its vessel for any other reason, the creature within it ceases to be a tamer’s companion. It acts according to its own wishes and retains any improvements it gained while a companion.</p>
-			<div class="sidebar"> 
-			<h5>Home Planes</h5>
-			<p>Some magical effects, like the banishment spell, have the ability to permanently banish a creature back to its home plane. When a creature becomes your companion, its home plane becomes the demiplane within its vessel. If the companion becomes permanently banished by such a spell, it simply reappears in this vessel.</p></div>
-			<p><strong>Summoning.</strong> As an action, you can summon your companion from a vessel, causing it to appear in an unoccupied space that you can see within 30 feet of you, or any unoccupied space within 5 feet of you. You can dismiss a companion within 30 feet of you as a bonus action or action, drawing it back into its vessel. To summon or dismiss a companion, you must be holding its vessel in hand. You can only have one companion summoned at a time.</p>
+		<sheet display="false">
+			<description>Your Bespoke Familiars is:</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Pocket Familiar 4" supports="Bespoke Companion" />
+		</rules>
+	</element>
+	<element name="Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_COMPANION_4">
+		<supports>Pocket Familiar 4</supports>
+		<description>
+			<p>You become bonded to a companion that accompanies you on your adventures and is trained to fight alongside you. Choose a Small or smaller creature with a challenge rating of 1/2 or lower that isn’t a humanoid, giant, or swarm to become your companion. When a creature becomes your companion, it has a maximum number of hit points equal to the average of its Hit Dice, as indicated in its statistics, and it can’t cast spells. Work with your GM to find a companion that suits your campaign world. This companion obeys your commands and is friendly to you and your allies.</p>
+			<p>
+				<strong>Vessel.</strong> When not summoned, your companion exists inside a magical vessel of your own design, such as a painted animal skull, bejewelled egg, or crystal sphere. While in this vessel, the companion has full cover from all attacks and other effects, is unaffected by area of effects that originate from outside the vessel, and exists in stasis; it doesn’t need to eat, drink, sleep, or breathe, and it is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralised. A companion at 0 hit points is instantly stabilised when it enters its vessel. If a vessel is broken, or a companion is released from its vessel for any other reason, the creature within it ceases to be a tamer’s companion. It acts according to its own wishes and retains any improvements it gained while a companion.
+			</p>
 			<div class="sidebar">
-			<h5>Dominated Companions</h5>
-			<p>A companion that is controlled by another creature, such as by the dominate monster spell, can try to resist being recalled into its vessel. When you try to recall such a creature into its vessel, it can make a Charisma saving throw against your tamer spell save DC. On a failed saving throw, it is recalled, while on a success, it is not.</p></div>
-			<p><strong>Combat.</strong> In combat, your companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action or action on your turn to command it to take different actions. Those actions can be in its statistics or some other action, bonus action, or object interaction. If you are incapacitated, the companion can take any action of its choice, not just Dodge. Your companion can’t take the Multiattack action until you reach 5th level in this class, even if it would otherwise be able to.</p>
-			<p><strong>Rest.</strong> A companion gains the benefits of a long rest when its tamer finishes a long rest; if it has at least 1 hit point, it regains all its hit points when you finish a long rest. Unlike other creatures, a companion can’t spend its own Hit Dice to recover hit points at the end of a short rest. See the Soul Bond feature for details on recovering hit points.</p>
-			<p><strong>Items.</strong> Armour, barding, and weapons can be equipped to enhance your companion. A companion can wear or carry any equipment that their size and body shape permits. However, your companion must be proficient with the armour or weapon to make full use of it. If your companion wears armour that it lacks proficiency with, it has disadvantage on any ability check, saving throw, or attack roll that involves Strength or Dexterity. A companion that is not proficient with a weapon type does not add its proficiency bonus to attack rolls made with that weapon type.</p>
-			<p><strong>Item Bonding.</strong> Over the course of an hour, you can bond a companion to one object that it can wear or carry that is not any sort of container or storage. When a companion is recalled, all items it is wearing or carrying that it is not bonded to are dropped in the space from which it was recalled. A companion can be bonded to up to 3 items at any one time. Companions can’t attune to magic items, unless they have a specific ability that allows them to do so (e.g. Proto-Attunement, page 238).</p>
-			<p><strong>Companion Barding.</strong> You can purchase armour for your companion. Any type of armour can be purchased as barding. The cost and weight is doubled for each size category above Medium, and halved for each size category below Small. In addition, the cost is further doubled if the companion is not humanoid in shape.</p>
-			<p><strong>Companion Barding Cost</strong></p>
+				<h5>Home Planes</h5>
+				<p>Some magical effects, like the banishment spell, have the ability to permanently banish a creature back to its home plane. When a creature becomes your companion, its home plane becomes the demiplane within its vessel. If the companion becomes permanently banished by such a spell, it simply reappears in this vessel.</p>
+			</div>
+			<p>
+				<strong>Summoning.</strong> As an action, you can summon your companion from a vessel, causing it to appear in an unoccupied space that you can see within 30 feet of you, or any unoccupied space within 5 feet of you. You can dismiss a companion within 30 feet of you as a bonus action or action, drawing it back into its vessel. To summon or dismiss a companion, you must be holding its vessel in hand. You can only have one companion summoned at a time.
+			</p>
+			<div class="sidebar">
+				<h5>Dominated Companions</h5>
+				<p>A companion that is controlled by another creature, such as by the dominate monster spell, can try to resist being recalled into its vessel. When you try to recall such a creature into its vessel, it can make a Charisma saving throw against your tamer spell save DC. On a failed saving throw, it is recalled, while on a success, it is not.</p>
+			</div>
+			<p>
+				<strong>Combat.</strong> In combat, your companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action or action on your turn to command it to take different actions. Those actions can be in its statistics or some other action, bonus action, or object interaction. If you are incapacitated, the companion can take any action of its choice, not just Dodge. Your companion can’t take the Multiattack action until you reach 5th level in this class, even if it would otherwise be able to.
+			</p>
+			<p>
+				<strong>Rest.</strong> A companion gains the benefits of a long rest when its tamer finishes a long rest; if it has at least 1 hit point, it regains all its hit points when you finish a long rest. Unlike other creatures, a companion can’t spend its own Hit Dice to recover hit points at the end of a short rest. See the Soul Bond feature for details on recovering hit points.
+			</p>
+			<p>
+				<strong>Items.</strong> Armour, barding, and weapons can be equipped to enhance your companion. A companion can wear or carry any equipment that their size and body shape permits. However, your companion must be proficient with the armour or weapon to make full use of it. If your companion wears armour that it lacks proficiency with, it has disadvantage on any ability check, saving throw, or attack roll that involves Strength or Dexterity. A companion that is not proficient with a weapon type does not add its proficiency bonus to attack rolls made with that weapon type.
+			</p>
+			<p>
+				<strong>Item Bonding.</strong> Over the course of an hour, you can bond a companion to one object that it can wear or carry that is not any sort of container or storage. When a companion is recalled, all items it is wearing or carrying that it is not bonded to are dropped in the space from which it was recalled. A companion can be bonded to up to 3 items at any one time. Companions can’t attune to magic items, unless they have a specific ability that allows them to do so (e.g. Proto-Attunement, page 238).
+			</p>
+			<p>
+				<strong>Companion Barding.</strong> You can purchase armour for your companion. Any type of armour can be purchased as barding. The cost and weight is doubled for each size category above Medium, and halved for each size category below Small. In addition, the cost is further doubled if the companion is not humanoid in shape.
+			</p>
+			<p>
+				<strong>Companion Barding Cost</strong>
+			</p>
 			<table>
 				<thead>
 					<tr>
@@ -1204,72 +1580,89 @@
 						<td class="col-30" style="text-align:center">Abstract Shape Cost</td>
 					</tr>
 				</thead>
-					<tr>
-						<td style="text-align:center">Tiny</td>
-						<td style="text-align:center">0.5x</td>
-						<td style="text-align:center">1x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Small</td>
-						<td style="text-align:center">1x</td>
-						<td style="text-align:center">2x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Medium</td>
-						<td style="text-align:center">1x</td>
-						<td style="text-align:center">2x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Large</td>
-						<td style="text-align:center">2x</td>
-						<td style="text-align:center">4x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Huge</td>
-						<td style="text-align:center">4x</td>
-						<td style="text-align:center">8x</td>
-					</tr>
+				<tr>
+					<td style="text-align:center">Tiny</td>
+					<td style="text-align:center">0.5x</td>
+					<td style="text-align:center">1x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Small</td>
+					<td style="text-align:center">1x</td>
+					<td style="text-align:center">2x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Medium</td>
+					<td style="text-align:center">1x</td>
+					<td style="text-align:center">2x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Large</td>
+					<td style="text-align:center">2x</td>
+					<td style="text-align:center">4x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Huge</td>
+					<td style="text-align:center">4x</td>
+					<td style="text-align:center">8x</td>
+				</tr>
 			</table>
+		</description>
+		<sheet display="false">
+			<description>Your companions is:</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_4" />		
+			<!-- <select type="Class Feature" name="Pocket Familiar 4" supports="Tamed Companion 4" /> -->
+		</rules>
+	</element>
+	<!-- Pocket Familiar 5 -->
+	<element name="Bespoke Familiar" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_BESPOKE_FAMILIAR_5">
+		<supports>Pocket Familiar 5</supports>
+		<description>
 			</description>
-			<sheet display="false">
-				<description>Your companions is:</description>
-			</sheet>
-			<rules>
-				<select type="Class Feature" name="Pocket Familiar 4" supports="Tamed Companion 4" />
-			</rules>
-		</element>
-
-		<!-- Pocket Familiar 5 -->
-		<element name="Bespoke Familiar" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_BESPOKE_FAMILIAR_5">
-			<supports>Pocket Familiar 5</supports>
-			<description>
-			</description>
-			<sheet display="false">
-				<description>Your Bespoke Familiars is:</description>
-			</sheet>
-			<rules>
-				<select type="Class Feature" name="Pocket Familiar 5" supports="Bespoke Companion" />
-			</rules>
-		</element>
-
-		<element name="Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_COMPANION_5">
-			<supports>Pocket Familiar 5</supports>
-			<description>
-				<p>You become bonded to a companion that accompanies you on your adventures and is trained to fight alongside you. Choose a Small or smaller creature with a challenge rating of 1/2 or lower that isn’t a humanoid, giant, or swarm to become your companion. When a creature becomes your companion, it has a maximum number of hit points equal to the average of its Hit Dice, as indicated in its statistics, and it can’t cast spells. Work with your GM to find a companion that suits your campaign world. This companion obeys your commands and is friendly to you and your allies.</p>
-			<p><strong>Vessel.</strong> When not summoned, your companion exists inside a magical vessel of your own design, such as a painted animal skull, bejewelled egg, or crystal sphere. While in this vessel, the companion has full cover from all attacks and other effects, is unaffected by area of effects that originate from outside the vessel, and exists in stasis; it doesn’t need to eat, drink, sleep, or breathe, and it is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralised. A companion at 0 hit points is instantly stabilised when it enters its vessel. If a vessel is broken, or a companion is released from its vessel for any other reason, the creature within it ceases to be a tamer’s companion. It acts according to its own wishes and retains any improvements it gained while a companion.</p>
-			<div class="sidebar"> 
-			<h5>Home Planes</h5>
-			<p>Some magical effects, like the banishment spell, have the ability to permanently banish a creature back to its home plane. When a creature becomes your companion, its home plane becomes the demiplane within its vessel. If the companion becomes permanently banished by such a spell, it simply reappears in this vessel.</p></div>
-			<p><strong>Summoning.</strong> As an action, you can summon your companion from a vessel, causing it to appear in an unoccupied space that you can see within 30 feet of you, or any unoccupied space within 5 feet of you. You can dismiss a companion within 30 feet of you as a bonus action or action, drawing it back into its vessel. To summon or dismiss a companion, you must be holding its vessel in hand. You can only have one companion summoned at a time.</p>
+		<sheet display="false">
+			<description>Your Bespoke Familiars is:</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Pocket Familiar 5" supports="Bespoke Companion" />
+		</rules>
+	</element>
+	<element name="Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_COMPANION_5">
+		<supports>Pocket Familiar 5</supports>
+		<description>
+			<p>You become bonded to a companion that accompanies you on your adventures and is trained to fight alongside you. Choose a Small or smaller creature with a challenge rating of 1/2 or lower that isn’t a humanoid, giant, or swarm to become your companion. When a creature becomes your companion, it has a maximum number of hit points equal to the average of its Hit Dice, as indicated in its statistics, and it can’t cast spells. Work with your GM to find a companion that suits your campaign world. This companion obeys your commands and is friendly to you and your allies.</p>
+			<p>
+				<strong>Vessel.</strong> When not summoned, your companion exists inside a magical vessel of your own design, such as a painted animal skull, bejewelled egg, or crystal sphere. While in this vessel, the companion has full cover from all attacks and other effects, is unaffected by area of effects that originate from outside the vessel, and exists in stasis; it doesn’t need to eat, drink, sleep, or breathe, and it is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralised. A companion at 0 hit points is instantly stabilised when it enters its vessel. If a vessel is broken, or a companion is released from its vessel for any other reason, the creature within it ceases to be a tamer’s companion. It acts according to its own wishes and retains any improvements it gained while a companion.
+			</p>
 			<div class="sidebar">
-			<h5>Dominated Companions</h5>
-			<p>A companion that is controlled by another creature, such as by the dominate monster spell, can try to resist being recalled into its vessel. When you try to recall such a creature into its vessel, it can make a Charisma saving throw against your tamer spell save DC. On a failed saving throw, it is recalled, while on a success, it is not.</p></div>
-			<p><strong>Combat.</strong> In combat, your companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action or action on your turn to command it to take different actions. Those actions can be in its statistics or some other action, bonus action, or object interaction. If you are incapacitated, the companion can take any action of its choice, not just Dodge. Your companion can’t take the Multiattack action until you reach 5th level in this class, even if it would otherwise be able to.</p>
-			<p><strong>Rest.</strong> A companion gains the benefits of a long rest when its tamer finishes a long rest; if it has at least 1 hit point, it regains all its hit points when you finish a long rest. Unlike other creatures, a companion can’t spend its own Hit Dice to recover hit points at the end of a short rest. See the Soul Bond feature for details on recovering hit points.</p>
-			<p><strong>Items.</strong> Armour, barding, and weapons can be equipped to enhance your companion. A companion can wear or carry any equipment that their size and body shape permits. However, your companion must be proficient with the armour or weapon to make full use of it. If your companion wears armour that it lacks proficiency with, it has disadvantage on any ability check, saving throw, or attack roll that involves Strength or Dexterity. A companion that is not proficient with a weapon type does not add its proficiency bonus to attack rolls made with that weapon type.</p>
-			<p><strong>Item Bonding.</strong> Over the course of an hour, you can bond a companion to one object that it can wear or carry that is not any sort of container or storage. When a companion is recalled, all items it is wearing or carrying that it is not bonded to are dropped in the space from which it was recalled. A companion can be bonded to up to 3 items at any one time. Companions can’t attune to magic items, unless they have a specific ability that allows them to do so (e.g. Proto-Attunement, page 238).</p>
-			<p><strong>Companion Barding.</strong> You can purchase armour for your companion. Any type of armour can be purchased as barding. The cost and weight is doubled for each size category above Medium, and halved for each size category below Small. In addition, the cost is further doubled if the companion is not humanoid in shape.</p>
-			<p><strong>Companion Barding Cost</strong></p>
+				<h5>Home Planes</h5>
+				<p>Some magical effects, like the banishment spell, have the ability to permanently banish a creature back to its home plane. When a creature becomes your companion, its home plane becomes the demiplane within its vessel. If the companion becomes permanently banished by such a spell, it simply reappears in this vessel.</p>
+			</div>
+			<p>
+				<strong>Summoning.</strong> As an action, you can summon your companion from a vessel, causing it to appear in an unoccupied space that you can see within 30 feet of you, or any unoccupied space within 5 feet of you. You can dismiss a companion within 30 feet of you as a bonus action or action, drawing it back into its vessel. To summon or dismiss a companion, you must be holding its vessel in hand. You can only have one companion summoned at a time.
+			</p>
+			<div class="sidebar">
+				<h5>Dominated Companions</h5>
+				<p>A companion that is controlled by another creature, such as by the dominate monster spell, can try to resist being recalled into its vessel. When you try to recall such a creature into its vessel, it can make a Charisma saving throw against your tamer spell save DC. On a failed saving throw, it is recalled, while on a success, it is not.</p>
+			</div>
+			<p>
+				<strong>Combat.</strong> In combat, your companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action or action on your turn to command it to take different actions. Those actions can be in its statistics or some other action, bonus action, or object interaction. If you are incapacitated, the companion can take any action of its choice, not just Dodge. Your companion can’t take the Multiattack action until you reach 5th level in this class, even if it would otherwise be able to.
+			</p>
+			<p>
+				<strong>Rest.</strong> A companion gains the benefits of a long rest when its tamer finishes a long rest; if it has at least 1 hit point, it regains all its hit points when you finish a long rest. Unlike other creatures, a companion can’t spend its own Hit Dice to recover hit points at the end of a short rest. See the Soul Bond feature for details on recovering hit points.
+			</p>
+			<p>
+				<strong>Items.</strong> Armour, barding, and weapons can be equipped to enhance your companion. A companion can wear or carry any equipment that their size and body shape permits. However, your companion must be proficient with the armour or weapon to make full use of it. If your companion wears armour that it lacks proficiency with, it has disadvantage on any ability check, saving throw, or attack roll that involves Strength or Dexterity. A companion that is not proficient with a weapon type does not add its proficiency bonus to attack rolls made with that weapon type.
+			</p>
+			<p>
+				<strong>Item Bonding.</strong> Over the course of an hour, you can bond a companion to one object that it can wear or carry that is not any sort of container or storage. When a companion is recalled, all items it is wearing or carrying that it is not bonded to are dropped in the space from which it was recalled. A companion can be bonded to up to 3 items at any one time. Companions can’t attune to magic items, unless they have a specific ability that allows them to do so (e.g. Proto-Attunement, page 238).
+			</p>
+			<p>
+				<strong>Companion Barding.</strong> You can purchase armour for your companion. Any type of armour can be purchased as barding. The cost and weight is doubled for each size category above Medium, and halved for each size category below Small. In addition, the cost is further doubled if the companion is not humanoid in shape.
+			</p>
+			<p>
+				<strong>Companion Barding Cost</strong>
+			</p>
 			<table>
 				<thead>
 					<tr>
@@ -1278,72 +1671,89 @@
 						<td class="col-30" style="text-align:center">Abstract Shape Cost</td>
 					</tr>
 				</thead>
-					<tr>
-						<td style="text-align:center">Tiny</td>
-						<td style="text-align:center">0.5x</td>
-						<td style="text-align:center">1x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Small</td>
-						<td style="text-align:center">1x</td>
-						<td style="text-align:center">2x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Medium</td>
-						<td style="text-align:center">1x</td>
-						<td style="text-align:center">2x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Large</td>
-						<td style="text-align:center">2x</td>
-						<td style="text-align:center">4x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Huge</td>
-						<td style="text-align:center">4x</td>
-						<td style="text-align:center">8x</td>
-					</tr>
+				<tr>
+					<td style="text-align:center">Tiny</td>
+					<td style="text-align:center">0.5x</td>
+					<td style="text-align:center">1x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Small</td>
+					<td style="text-align:center">1x</td>
+					<td style="text-align:center">2x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Medium</td>
+					<td style="text-align:center">1x</td>
+					<td style="text-align:center">2x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Large</td>
+					<td style="text-align:center">2x</td>
+					<td style="text-align:center">4x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Huge</td>
+					<td style="text-align:center">4x</td>
+					<td style="text-align:center">8x</td>
+				</tr>
 			</table>
+		</description>
+		<sheet display="false">
+			<description>Your companions is:</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_5" />	
+			<!-- <select type="Class Feature" name="Pocket Familiar 5" supports="Tamed Companion 5" /> -->
+		</rules>
+	</element>
+	<!-- Pocket Familiar 6 -->
+	<element name="Bespoke Familiar" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_BESPOKE_FAMILIAR_6">
+		<supports>Pocket Familiar 6</supports>
+		<description>
 			</description>
-			<sheet display="false">
-				<description>Your companions is:</description>
-			</sheet>
-			<rules>
-				<select type="Class Feature" name="Pocket Familiar 5" supports="Tamed Companion 5" />
-			</rules>
-		</element>
-
-		<!-- Pocket Familiar 6 -->
-		<element name="Bespoke Familiar" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_BESPOKE_FAMILIAR_6">
-			<supports>Pocket Familiar 6</supports>
-			<description>
-			</description>
-			<sheet display="false">
-				<description>Your Bespoke Familiars is:</description>
-			</sheet>
-			<rules>
-				<select type="Class Feature" name="Pocket Familiar 6" supports="Bespoke Companion" />
-			</rules>
-		</element>
-
-		<element name="Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_COMPANION_6">
-			<supports>Pocket Familiar 6</supports>
-			<description>
-				<p>You become bonded to a companion that accompanies you on your adventures and is trained to fight alongside you. Choose a Small or smaller creature with a challenge rating of 1/2 or lower that isn’t a humanoid, giant, or swarm to become your companion. When a creature becomes your companion, it has a maximum number of hit points equal to the average of its Hit Dice, as indicated in its statistics, and it can’t cast spells. Work with your GM to find a companion that suits your campaign world. This companion obeys your commands and is friendly to you and your allies.</p>
-			<p><strong>Vessel.</strong> When not summoned, your companion exists inside a magical vessel of your own design, such as a painted animal skull, bejewelled egg, or crystal sphere. While in this vessel, the companion has full cover from all attacks and other effects, is unaffected by area of effects that originate from outside the vessel, and exists in stasis; it doesn’t need to eat, drink, sleep, or breathe, and it is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralised. A companion at 0 hit points is instantly stabilised when it enters its vessel. If a vessel is broken, or a companion is released from its vessel for any other reason, the creature within it ceases to be a tamer’s companion. It acts according to its own wishes and retains any improvements it gained while a companion.</p>
-			<div class="sidebar"> 
-			<h5>Home Planes</h5>
-			<p>Some magical effects, like the banishment spell, have the ability to permanently banish a creature back to its home plane. When a creature becomes your companion, its home plane becomes the demiplane within its vessel. If the companion becomes permanently banished by such a spell, it simply reappears in this vessel.</p></div>
-			<p><strong>Summoning.</strong> As an action, you can summon your companion from a vessel, causing it to appear in an unoccupied space that you can see within 30 feet of you, or any unoccupied space within 5 feet of you. You can dismiss a companion within 30 feet of you as a bonus action or action, drawing it back into its vessel. To summon or dismiss a companion, you must be holding its vessel in hand. You can only have one companion summoned at a time.</p>
+		<sheet display="false">
+			<description>Your Bespoke Familiars is:</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Pocket Familiar 6" supports="Bespoke Companion" />
+		</rules>
+	</element>
+	<element name="Companion" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_POCKET_FAMILIAR_COMPANION_6">
+		<supports>Pocket Familiar 6</supports>
+		<description>
+			<p>You become bonded to a companion that accompanies you on your adventures and is trained to fight alongside you. Choose a Small or smaller creature with a challenge rating of 1/2 or lower that isn’t a humanoid, giant, or swarm to become your companion. When a creature becomes your companion, it has a maximum number of hit points equal to the average of its Hit Dice, as indicated in its statistics, and it can’t cast spells. Work with your GM to find a companion that suits your campaign world. This companion obeys your commands and is friendly to you and your allies.</p>
+			<p>
+				<strong>Vessel.</strong> When not summoned, your companion exists inside a magical vessel of your own design, such as a painted animal skull, bejewelled egg, or crystal sphere. While in this vessel, the companion has full cover from all attacks and other effects, is unaffected by area of effects that originate from outside the vessel, and exists in stasis; it doesn’t need to eat, drink, sleep, or breathe, and it is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralised. A companion at 0 hit points is instantly stabilised when it enters its vessel. If a vessel is broken, or a companion is released from its vessel for any other reason, the creature within it ceases to be a tamer’s companion. It acts according to its own wishes and retains any improvements it gained while a companion.
+			</p>
 			<div class="sidebar">
-			<h5>Dominated Companions</h5>
-			<p>A companion that is controlled by another creature, such as by the dominate monster spell, can try to resist being recalled into its vessel. When you try to recall such a creature into its vessel, it can make a Charisma saving throw against your tamer spell save DC. On a failed saving throw, it is recalled, while on a success, it is not.</p></div>
-			<p><strong>Combat.</strong> In combat, your companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action or action on your turn to command it to take different actions. Those actions can be in its statistics or some other action, bonus action, or object interaction. If you are incapacitated, the companion can take any action of its choice, not just Dodge. Your companion can’t take the Multiattack action until you reach 5th level in this class, even if it would otherwise be able to.</p>
-			<p><strong>Rest.</strong> A companion gains the benefits of a long rest when its tamer finishes a long rest; if it has at least 1 hit point, it regains all its hit points when you finish a long rest. Unlike other creatures, a companion can’t spend its own Hit Dice to recover hit points at the end of a short rest. See the Soul Bond feature for details on recovering hit points.</p>
-			<p><strong>Items.</strong> Armour, barding, and weapons can be equipped to enhance your companion. A companion can wear or carry any equipment that their size and body shape permits. However, your companion must be proficient with the armour or weapon to make full use of it. If your companion wears armour that it lacks proficiency with, it has disadvantage on any ability check, saving throw, or attack roll that involves Strength or Dexterity. A companion that is not proficient with a weapon type does not add its proficiency bonus to attack rolls made with that weapon type.</p>
-			<p><strong>Item Bonding.</strong> Over the course of an hour, you can bond a companion to one object that it can wear or carry that is not any sort of container or storage. When a companion is recalled, all items it is wearing or carrying that it is not bonded to are dropped in the space from which it was recalled. A companion can be bonded to up to 3 items at any one time. Companions can’t attune to magic items, unless they have a specific ability that allows them to do so (e.g. Proto-Attunement, page 238).</p>
-			<p><strong>Companion Barding.</strong> You can purchase armour for your companion. Any type of armour can be purchased as barding. The cost and weight is doubled for each size category above Medium, and halved for each size category below Small. In addition, the cost is further doubled if the companion is not humanoid in shape.</p>
-			<p><strong>Companion Barding Cost</strong></p>
+				<h5>Home Planes</h5>
+				<p>Some magical effects, like the banishment spell, have the ability to permanently banish a creature back to its home plane. When a creature becomes your companion, its home plane becomes the demiplane within its vessel. If the companion becomes permanently banished by such a spell, it simply reappears in this vessel.</p>
+			</div>
+			<p>
+				<strong>Summoning.</strong> As an action, you can summon your companion from a vessel, causing it to appear in an unoccupied space that you can see within 30 feet of you, or any unoccupied space within 5 feet of you. You can dismiss a companion within 30 feet of you as a bonus action or action, drawing it back into its vessel. To summon or dismiss a companion, you must be holding its vessel in hand. You can only have one companion summoned at a time.
+			</p>
+			<div class="sidebar">
+				<h5>Dominated Companions</h5>
+				<p>A companion that is controlled by another creature, such as by the dominate monster spell, can try to resist being recalled into its vessel. When you try to recall such a creature into its vessel, it can make a Charisma saving throw against your tamer spell save DC. On a failed saving throw, it is recalled, while on a success, it is not.</p>
+			</div>
+			<p>
+				<strong>Combat.</strong> In combat, your companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action or action on your turn to command it to take different actions. Those actions can be in its statistics or some other action, bonus action, or object interaction. If you are incapacitated, the companion can take any action of its choice, not just Dodge. Your companion can’t take the Multiattack action until you reach 5th level in this class, even if it would otherwise be able to.
+			</p>
+			<p>
+				<strong>Rest.</strong> A companion gains the benefits of a long rest when its tamer finishes a long rest; if it has at least 1 hit point, it regains all its hit points when you finish a long rest. Unlike other creatures, a companion can’t spend its own Hit Dice to recover hit points at the end of a short rest. See the Soul Bond feature for details on recovering hit points.
+			</p>
+			<p>
+				<strong>Items.</strong> Armour, barding, and weapons can be equipped to enhance your companion. A companion can wear or carry any equipment that their size and body shape permits. However, your companion must be proficient with the armour or weapon to make full use of it. If your companion wears armour that it lacks proficiency with, it has disadvantage on any ability check, saving throw, or attack roll that involves Strength or Dexterity. A companion that is not proficient with a weapon type does not add its proficiency bonus to attack rolls made with that weapon type.
+			</p>
+			<p>
+				<strong>Item Bonding.</strong> Over the course of an hour, you can bond a companion to one object that it can wear or carry that is not any sort of container or storage. When a companion is recalled, all items it is wearing or carrying that it is not bonded to are dropped in the space from which it was recalled. A companion can be bonded to up to 3 items at any one time. Companions can’t attune to magic items, unless they have a specific ability that allows them to do so (e.g. Proto-Attunement, page 238).
+			</p>
+			<p>
+				<strong>Companion Barding.</strong> You can purchase armour for your companion. Any type of armour can be purchased as barding. The cost and weight is doubled for each size category above Medium, and halved for each size category below Small. In addition, the cost is further doubled if the companion is not humanoid in shape.
+			</p>
+			<p>
+				<strong>Companion Barding Cost</strong>
+			</p>
 			<table>
 				<thead>
 					<tr>
@@ -1352,46 +1762,48 @@
 						<td class="col-30" style="text-align:center">Abstract Shape Cost</td>
 					</tr>
 				</thead>
-					<tr>
-						<td style="text-align:center">Tiny</td>
-						<td style="text-align:center">0.5x</td>
-						<td style="text-align:center">1x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Small</td>
-						<td style="text-align:center">1x</td>
-						<td style="text-align:center">2x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Medium</td>
-						<td style="text-align:center">1x</td>
-						<td style="text-align:center">2x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Large</td>
-						<td style="text-align:center">2x</td>
-						<td style="text-align:center">4x</td>
-					</tr>
-					<tr>
-						<td style="text-align:center">Huge</td>
-						<td style="text-align:center">4x</td>
-						<td style="text-align:center">8x</td>
-					</tr>
+				<tr>
+					<td style="text-align:center">Tiny</td>
+					<td style="text-align:center">0.5x</td>
+					<td style="text-align:center">1x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Small</td>
+					<td style="text-align:center">1x</td>
+					<td style="text-align:center">2x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Medium</td>
+					<td style="text-align:center">1x</td>
+					<td style="text-align:center">2x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Large</td>
+					<td style="text-align:center">2x</td>
+					<td style="text-align:center">4x</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">Huge</td>
+					<td style="text-align:center">4x</td>
+					<td style="text-align:center">8x</td>
+				</tr>
 			</table>
-			</description>
-			<sheet display="false">
-				<description>Your companions is:</description>
-			</sheet>
-			<rules>
-				<select type="Class Feature" name="Pocket Familiar 6" supports="Tamed Companion 6" />
-			</rules>
-		</element>
-
+		</description>
+		<sheet display="false">
+			<description>Your companions is:</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_COMPANION_6" />	
+			<!-- <select type="Class Feature" name="Pocket Familiar 6" supports="Tamed Companion 6" /> -->
+		</rules>
+	</element>
 	<!-- Training Paradigm -->
 	<element name="Training Paradigm" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_TRAINING_PARADIGM">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_TRAINING_PARADIGM</requirements>
 		<description>
-			<p><em>3rd-level Tamer feature</em></p>
+			<p>
+				<em>3rd-level Tamer feature</em>
+			</p>
 			<p>You choose the type of Training Paradigm you follow from the list of available paradigms, which are detailed after the class’s description. Your choice grants you features at 3rd level and again at 7th, 10th, and 14th level. At 18th level, the 7th-level feature is improved.</p>
 		</description>
 		<sheet display="false">
@@ -1401,7 +1813,6 @@
 			<select type="Archetype" name="Training Paradigm" supports="Training Paradigm" level="3" />
 		</rules>
 	</element>
-
 	<!-- Ability Score Improvement -->
 	<element name="Ability Score Improvement" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_ABILITY_SCORE_IMPROVEMENT_TAMER">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TAMER_ABILITY_SCORE_IMPROVEMENT</requirements>
@@ -1418,81 +1829,95 @@
 			<select type="Class Feature" name="Improvement Option (Tamer 19)" supports="Improvement Option,Tamer,19" level="19" />
 		</rules>
 	</element>
-
 	<!-- Multiattack -->
 	<element name="Multiattack" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_MULTIATTACK">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_MULTIATTACK</requirements>
 		<description>
-			<p><em>5th-level Tamer feature</em></p>
+			<p>
+				<em>5th-level Tamer feature</em>
+			</p>
 			<p>Through rigorous training, you can access the innate fury of your companions. When you take a bonus action or action to command your companion, you can command it to use its Multiattack action, if it has one.</p>
 		</description>
 		<sheet>
 			<description>Command companion to Multiattack.</description>
 		</sheet>
 	</element>
-
 	<!-- Malleable Presence -->
 	<element name="Malleable Presence" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_MALLEABLE_PRESENCE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_MALLEABLE_PRESENCE</requirements>
 		<description>
-			<p><em>5th-level Tamer feature</em></p>
+			<p>
+				<em>5th-level Tamer feature</em>
+			</p>
 			<p>While your companion is within 100 feet of you, you can order it to change its behaviour towards one creature you can see as part of the bonus action or action you use to command it. Choose either the aggressive or cautious behaviours. At the start of each of the target creature’s turns for the next minute, it must succeed on a Wisdom saving throw versus your tamer spell save DC if it is within 30 feet of your companion and can see your companion. On a failure, it suffers the effects of the associated behaviour until the start of its next turn. On a success, it is unaffected.</p>
 			<ul>
-				<li><strong>Aggressive.</strong> The creature has disadvantage on attack rolls it makes against creatures other than your companion.</li>
-				<li><strong>Cautious.</strong> The creature has disadvantage on attack rolls against your companion if there is another creature hostile towards the attacker within 5 feet of the attacker.</li>
+				<li>
+					<strong>Aggressive.</strong> The creature has disadvantage on attack rolls it makes against creatures other than your companion.
+				</li>
+				<li>
+					<strong>Cautious.</strong> The creature has disadvantage on attack rolls against your companion if there is another creature hostile towards the attacker within 5 feet of the attacker.
+				</li>
 			</ul>
 			<p>After you use this feature, you can’t do so again until you finish a short or long rest.</p>
 		</description>
 		<sheet usage="1/Short Rest">
 			<description>Command behavior (Aggressive/Cautious). DC {{tamer:spellcasting:dc}} Wis save.</description>
 		</sheet>
-	</element>	
-
+	</element>
 	<!-- Alpha Strike -->
 	<element name="Alpha Strike" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_ALPHA_STRIKE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_ALPHA_STRIKE</requirements>
 		<description>
-			<p><em>6th-level Tamer feature</em></p>
+			<p>
+				<em>6th-level Tamer feature</em>
+			</p>
 			<p>While summoning a companion, your psychic connection is at its closest, allowing you to quickly relay your intent. As part of the action to summon a companion, you can command it to take an action in its stat block or some other action, which it does so on its turn. You can use this feature a number of times equal to your tamer spellcasting ability modifier (a minimum of once). You regain all expended uses of this feature when you finish a long rest.</p>
 		</description>
 		<sheet usage="{{tamer:spellcasting:min}}/Long Rest">
 			<description>As part of the Summon: companion takes action.</description>
 		</sheet>
 	</element>
-
 	<!-- Wilful Blows -->
 	<element name="Wilful Blows" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_WILFUL_BLOWS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_MAGICAL_WILFUL_BLOWS</requirements>
 		<description>
-			<p><em>6th-level Tamer feature</em></p>
+			<p>
+				<em>6th-level Tamer feature</em>
+			</p>
 			<p>Your magical potency is channeled through your companions’ strikes. Your companions’ attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
 		</description>
 		<sheet>
 			<description>Companion attacks are magical.</description>
 		</sheet>
 	</element>
-
 	<!-- Switcheroo -->
 	<element name="Switcheroo" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_SWITCHEROO">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_SWITCHEROO</requirements>
 		<description>
-			<p><em>13th-level Tamer feature</em></p>
+			<p>
+				<em>13th-level Tamer feature</em>
+			</p>
 			<p>You learn how to switch places with your companion in the nick of time. While you and your companion are within 100 feet of each other, you can use a bonus action, or a reaction when you or your companion is the target of an attack by an attacker you can see, to magically switch places with your companion. If performed as a reaction, the creature that appears in the targeted creature’s space becomes the new target of the attack. You have a number of uses of this feature equal to your tamer spellcasting ability modifier (minimum of once). You regain all expended uses when you finish a long rest.</p>
 		</description>
 		<sheet>
 			<description usage="{{tamer:spellcasting:min}}/Long Rest" action="Bonus Action/Reaction">Switch places with companion.</description>
 		</sheet>
 	</element>
-	
 	<!-- Magnificent Presence -->
 	<element name="Magnificent Presence" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_MAGNIFICENT_PRESENCE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_MAGNIFICENT_PRESENCE</requirements>
 		<description>
-			<p><em>17th-level Tamer feature</em></p>
+			<p>
+				<em>17th-level Tamer feature</em>
+			</p>
 			<p>While your companion is within 100 feet of you, you can order it to change its behaviour as part of the bonus action or action you use to command it. Choose either the provoking poise or shrinking violet behaviours.</p>
 			<ul>
-				<li><strong>Provoking Poise.</strong> For the next minute, your companion draws the attention of nearby creatures. While within 15 feet of your companion, any creature that is hostile towards your companion and that can see it has disadvantage on attack rolls it makes against creatures other than your companion.</li>
-				<li><strong>Shrinking Violet.</strong> For the next minute, your companion appears small and unassuming, making little noise. Any creature that is hostile towards your companion has disadvantage on attack rolls against your companion if there is another creature hostile towards the attacker within 15 feet of the attacker.</li>
+				<li>
+					<strong>Provoking Poise.</strong> For the next minute, your companion draws the attention of nearby creatures. While within 15 feet of your companion, any creature that is hostile towards your companion and that can see it has disadvantage on attack rolls it makes against creatures other than your companion.
+				</li>
+				<li>
+					<strong>Shrinking Violet.</strong> For the next minute, your companion appears small and unassuming, making little noise. Any creature that is hostile towards your companion has disadvantage on attack rolls against your companion if there is another creature hostile towards the attacker within 15 feet of the attacker.
+				</li>
 			</ul>
 			<p>After you use this feature, you can’t do so again until you finish a long rest.</p>
 		</description>
@@ -1500,12 +1925,13 @@
 			<description>Command behavior (Provoking Poise/Shrinking Violet).</description>
 		</sheet>
 	</element>
-
 	<!-- Summon the Horde -->
 	<element name="Summon the Horde" type="Class Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_CLASS_FEATURE_TAMER_SUMMON_THE_HORDE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_SUMMON_THE_HORDE</requirements>
 		<description>
-			<p><em>20th-level Tamer feature</em></p>
+			<p>
+				<em>20th-level Tamer feature</em>
+			</p>
 			<p>In times of great need, a tamer can summon many of its companions simultaneously. As an action, you can summon additional companions which remain summoned for 1 minute. You can have a maximum of three companions summoned simultaneously as a result of using this feature.</p>
 			<p class="indent">As an action on subsequent turns, you can issue mental commands to all your companions at once, allowing them to take an action in their stat block or some other action. You choose the order in which your companions act each round. After the minute elapses, all your companions bar one (which you choose) return to their vessels and a wave of lethargy sweeps over you; you can’t move or take actions until the end of your next turn. Once you use this feature, you can’t do so again until you finish a long rest.</p>
 		</description>
@@ -1513,7 +1939,6 @@
 			<description>Summon up to 3 companions (1 min). Action: command all.</description>
 		</sheet>
 	</element>
-
 	<!-- Feature Replacement Grants -->
 	<element name="Pocket Familiar Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_POCKET_FAMILIAR" />
 	<element name="Monster Trainer Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_MONSTER_TRAINER" />
@@ -1532,247 +1957,242 @@
 	<element name="Switcheroo Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_SWITCHEROO" />
 	<element name="Magnificent Presence Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_MAGNIFICENT_PRESENCE" />
 	<element name="Summon the Horde Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HGTMH_TAMER_SUMMON_THE_HORDE" />
-
 	<!-- Append Spell List -->
-	<append id="ID_PHB_SPELL_GUIDANCE">		
+	<append id="ID_PHB_SPELL_GUIDANCE">
 		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_LIGHT">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_RESISTANCE">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_SPARE_THE_DYING">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_VICIOUS_MOCKERY">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_CURE_WOUNDS">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_DETECT_MAGIC">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_FAERIE_FIRE">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_FALSE_LIFE">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_FEATHER_FALL">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_GREASE">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_HEALING_WORD">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_HEROISM">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_IDENTIFY">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_JUMP">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_LONGSTRIDER">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_PURIFY_FOOD_AND_DRINK">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_SANCTUARY">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_SHIELD_OF_FAITH">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_SILENT_IMAGE">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_SLEEP">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_AID">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_ALTER_SELF">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_ANIMAL_MESSENGER">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_BARKSKIN">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_BLUR">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_CALM_EMOTIONS">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_DARKVISION">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_DETECT_THOUGHTS">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_ENHANCE_ABILITY">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_ENLARGE_REDUCE">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_INVISIBILITY">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_LESSER_RESTORATION">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_LEVITATE">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_LOCATE_ANIMALS_OR_PLANTS">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_LOCATE_OBJECT">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_MIRROR_IMAGE">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_PASS_WITHOUT_TRACE">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_PROTECTION_FROM_POISON">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_SEE_INVISIBILITY">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_SILENCE">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_SPIDER_CLIMB">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_WARDING_BOND">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_BLINK">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_CREATE_FOOD_AND_WATER">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_DAYLIGHT">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_DISPEL_MAGIC">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_FEAR">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_FLY">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_HASTE">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_NONDETECTION">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_REMOVE_CURSE">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_TONGUES">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_WATER_BREATHING">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_WATER_WALK">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_CONTROL_WATER">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_DEATH_WARD">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_DIMENSION_DOOR">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_DOMINATE_BEAST">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_FIRE_SHIELD">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_GREATER_INVISIBILITY">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_LOCATE_CREATURE">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_STONESKIN">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_ANTILIFE_SHELL">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_AWAKEN">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_DOMINATE_PERSON">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_GEAS">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_GREATER_RESTORATION">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_LEGEND_LORE">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_MISLEAD">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_SCRYING">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
 	<append id="ID_PHB_SPELL_RARYS_TELEPATHIC_BOND">
-  		<supports>Tamer</supports>
+		<supports>Tamer</supports>
 	</append>
-
-
-
-
 </elements>
