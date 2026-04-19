@@ -4,7 +4,7 @@
 		<name>Raised By Yokai</name>
 		<description>Background from Ryoko's Guide to the Yokai Realms</description>
 		<update version="0.1.0">
-			<file name="background-raisedbyyokai.xml" url="https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Backgrounds/background-raisedbyyokai.xml" />
+			<file name="background-raisedbyyokai.xml" url="https://raw.githubusercontent.com/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/background-raisedbyyokai.xml" />
 		</update>
 	</info>
 
