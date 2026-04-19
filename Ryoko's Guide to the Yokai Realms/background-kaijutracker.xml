@@ -4,7 +4,7 @@
 		<name>Kaiju Tracker</name>
 		<description>Kaiju Tracker from Ryoko's Guide to the Yokai Realms</description>
 		<update version="0.1.0">
-			<file name="background-kaijutracker.xml" url="https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Backgrounds/background-kaijutracker.xml" />
+			<file name="background-kaijutracker.xml" url="/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/background-kaijutracker.xml" />
 		</update>
 	</info>
 
