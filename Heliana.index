@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
   <info>
-    <update version="1.8">
+    <update version="1.9">
       <file name="Heliana.index" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Heliana.index" />
     </update>
   </info>
@@ -78,6 +78,9 @@
     <file name="Betobeto-kun.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/Betobeto-kun.xml" /> 
     <file name="Bancho-gama.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/Bancho-gama.xml" />
     <file name="Tamer-Sensei.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/Tamer-Sensei.xml" />
+    <file name="background-kaijutracker.xml" url="https://raw.githubusercontent.com/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/background-kaijutracker.xml" />
+    <file name="background-raisedbyyokai.xml" url="https://raw.githubusercontent.com/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/background-raisedbyyokai.xml" />
+
 
     <!-- Wrath of the Kaiju -->
     <file name="Mushamushi.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/Mushamushi.xml" /> 
