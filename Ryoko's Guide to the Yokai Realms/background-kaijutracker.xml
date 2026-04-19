@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Kaiju Tracker</name>
+		<description>Kaiju Tracker from Ryoko's Guide to the Yokai Realms</description>
+		<update version="0.1.0">
+			<file name="background-kaijutracker.xml" url="https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Backgrounds/background-kaijutracker.xml" />
+		</update>
+	</info>
+
+	<!-- Kaiju Tracker Background -->
+	<element name="Kaiju Tracker" type="Background" source="Ryoko's Guide to the Yokai Realms" id="ID_RGTTYR_BACKGROUND_KAIJU_TRACKER">
+		<description>
+			<p>Across a twisted landscape uprooted by destruction and chaos, you follow the mighty footfalls of kaiju. You are a brazen traveller who tracks Gargantuan creatures over the realms, from icy mountain top to toxic swampland, ever seeking a glimpse of your primal quarry. The trail of a kaiju is a hard one to follow, and the skills you’ve gained during your travels have kept you alive and fed.</p>
+            <p>Perhaps a kaiju destroyed your home and family, and you seek it in the hope of exacting vengeance. Maybe you track kaiju in order to predict their movements, evacuating communities in their path and leading kaiju far from civilisation. It could be that you are simply a thrill seeker, chasing kaiju across the world to revel in the eye of the storm as they rampage. Whatever your motivation, your tale is one of endless migration, awe, and danger.</p>
+			<p class="indent"><b>Optional Ability Scores:</b> Dexterity, Constitution, Wisdom</p>
+            <p class="indent"><b>Optional Language:</b> One of: Draconic, Giant, or Primordial</p>
+            <p class="indent"><b>Feat:</b> Kaiju Hunter (page 218)</p>
+            <p class="indent"><b>Skill Proficiencies:</b> Athletics and Survival</p>
+			<p class="indent"><b>Tool Proficiencies:</b> Herbalism Kit</p>
+			<p class="indent"><b>Equipment:</b> Choose A or B: (A) Herbalism kit, backpack, traveller's clothes, a hunting trap, a grappling hook prosthesis*, 50 feet of hempen rope, 5 gp; or (B) 50 gp.</p>
+            <p class="indent">*See page 79</p>
+			<div element="ID_RGTTYR_BACKGROUND_FEATURE_TRAIL_OF_DESTRUCTION" />
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p>A life trailing a path of carnage has shown you much of the worst that people can suffer—shattered communities, broken families, and mass extinction are intimately familiar to you. It has also shown you the resilience of those who survive, the hope that can blossom in the wake of catastrophe, and the fragility of even the mightiest of kingdoms. Many kaiju trackers are gruff and nihilistic, inured to the suffering of others. Some are motivated by an unconquerable hatred or fascination with kaiju, finding purpose in their eternal chase. No matter their idiosyncrasies, all those who place themselves in the path of a kaiju share one trait: a near-suicidal level of bravery.</p>
+		</description>
+		<setters>
+			<set name="short">Athletics, Survival, Herbalism Kit. Trail of Destruction feature.</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+            <select type="Language" name="Language (Kaiju Tracker)" supports="ID_LANGUAGE_DRACONIC|ID_LANGUAGE_GIANT|ID_LANGUAGE_PRIMORDIAL" />
+			<grant type="Feat" id="ID_RGTTYR_FEAT_KAIJU_HUNTER" />
+			<grant type="Background Feature" id="ID_RGTTYR_BACKGROUND_FEATURE_TRAIL_OF_DESTRUCTION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+
+			<select type="List" name="Personality Trait (Kaiju Tracker)">
+				<item id="1">I live for the thrill of danger! Certainty of death? Small chance of success? What are we waiting for?</item>
+				<item id="2">I have seen devastation and loss that would break most people. I have survived by closing my heart to it.</item>
+				<item id="3">I will never settle down. I need to always be on the road, and I’ll die on my feet.</item>
+				<item id="4">Every dawn, without fail, I take an hour to clean and sharpen my weapons.</item>
+				<item id="5">I love myths of heroes and villains. I constantly retell old folktales and draw parallels to real life.</item>
+				<item id="6">I try to conscript anyone I meet into joining me on foolhardy adventures.</item>
+			</select>
+
+			<select type="List" name="Ideal (Kaiju Tracker)">
+				<item id="1"><b>Vengeance.</b> Once wronged, I never let go. I am seeking a way to exact vengeance on those who have done me harm.</item>
+				<item id="2"><b>Travel.</b> I want to see everything and be the first to traverse every plane in existence.</item>
+				<item id="3"><b>Harvester.</b> I believe the secret to mythical elixirs and weapons lies in harvesting components from incredible creatures. I want to harvest the bodies of gods.</item>
+				<item id="4"><b>Hasty.</b> If something is worth doing, it’s worth doing now. I have no time for debate or consideration.</item>
+				<item id="5"><b>Guardian.</b> I struggle to connect with people, but I want to keep them safe, even if they never know who I am.</item>
+				<item id="6"><b>Legend.</b> I want to be remembered and leave a legacy that bards will sing of for generations.</item>
+			</select>
+
+            <select type="List" name="Bond (Kaiju Tracker)">
+				<item id="1">There are many monsters in this world. I will protect those who cannot protect themselves.</item>
+				<item id="2">A kaiju destroyed my home and people. It will die by my hand, or I will die trying.</item>
+				<item id="3">Those I travel with are closer than kin.</item>
+				<item id="4">I am enamoured with kaiju—their size, grace, and power. I wish only to observe and understand how such beings exist.</item>
+				<item id="5">My faith has been shaken upon seeing the devastation wrought by the evils in this world. I am struggling to overcome my doubt in the god I have long served.</item>
+				<item id="6">I make friends with animals quickly and loathe to harm beasts, even dangerous ones.</item>
+			</select>
+
+			<select type="List" name="Flaw (Kaiju Tracker)">
+				<item id="1">My obsession with killing monsters risks turning me into one.</item>
+				<item id="2">I judge myself harshly. A single failure is enough to send me spiralling into despair.</item>
+				<item id="3">My thrill seeking behaviour puts me and others at risk.</item>
+				<item id="4">My word is absolute; I struggle to entertain other perspectives or ideas.</item>
+				<item id="5">My love for treasure and gold often leads my morals astray.</item>
+				<item id="6">Only the mission’s success matters; the body count is irrelevant.</item>
+			</select>
+		</rules>
+	</element>
+
+	<!-- Feature: Trail of Destruction -->
+	<element name="Feature: Trail of Destruction" type="Background Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_RGTTYR_BACKGROUND_FEATURE_TRAIL_OF_DESTRUCTION">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Nonmagical difficult terrain doesn’t impede your movement.</p>
+		</description>
+		<sheet alt="Trail of Destruction" />
+	</element>
+</elements>

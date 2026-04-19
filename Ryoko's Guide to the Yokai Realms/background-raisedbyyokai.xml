@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Raised By Yokai</name>
+		<description>Background from Ryoko's Guide to the Yokai Realms</description>
+		<update version="0.1.0">
+			<file name="background-raisedbyyokai.xml" url="https://raw.githubusercontent.com/StrangeMeta/homebrew/main/ryokos-guide-to-the-yokai-realms/Backgrounds/background-raisedbyyokai.xml" />
+		</update>
+	</info>
+
+	<!-- Raised By Yokai Background -->
+	<element name="Raised By Yokai" type="Background" source="Ryoko's Guide to the Yokai Realms" id="ID_RGTTYR_BACKGROUND_RAISED_BY_YOKAI">
+		<description>
+			<p>You were not raised among your kin. Yours was a childhood of magic, adventure, and isolation from others of your kind, for you were raised by a yokai spirit. It could be that you were abandoned by your parents, that your people were lost in a kaiju rampage, or that you followed a mesmerising creature deep into the jungle.</p>
+            <p>The circumstances of how you came to find your yokai family may not be known to you, but you owe your life to their protection and guidance. Perhaps they sustained you with magic, taught you to forage, or stole things they thought you might need from travelling caravans. In their care, you have come to know magic that no other Humanoid has seen and know the world to be singing with all manner of incredible, invisible life.</p>
+			<p class="indent"><b>Optional Ability Scores:</b> Dexterity, Constitution, Wisdom</p>
+            <p class="indent"><b>Optional Language:</b> One of: Abyssal, Sylvan, or Infernal</p>
+            <p class="indent"><b>Feat:</b> Spirit Bonded (page 220)</p>
+            <p class="indent"><b>Skill Proficiencies:</b> Animal Handling and Perception</p>
+			<p class="indent"><b>Tool Proficiency:</b> Poisoner's kit</p>
+			<p class="indent"><b>Equipment:</b> Choose A or B: (A) A dagger, a poisoner's kit, 2 pouches, traveller's clothes, a lamp, a vial of basic poison, a rare gem worth 10 gp; or (B) 50 gp.</p>
+			<div element="ID_RGTTYR_BACKGROUND_FEATURE_NATURAL_ENVOY" />
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p>Being raised apart from the rest of the world has its benefits. You have learned much of the natural world and its secrets but know very little of humanoid societies. It is easy to feel a little out of place entering a new world of cities, laws, money, and property, but there are great wonders to discover as well, such as bonds of fellowship, community, and romance.</p>
+		</description>
+		<setters>
+			<set name="short">Animal Handling, Perception, Poisoner's kit. Natural Envoy feature.</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+            <select type="Language" name="Language (Raised By Yokai)" supports="ID_LANGUAGE_ABYSSAL|ID_LANGUAGE_SYLVAN|ID_LANGUAGE_INFERNAL" />
+			<grant type="Feat" id="ID_RGTTYR_FEAT_SPIRIT_BONDED" />
+			<grant type="Background Feature" id="ID_RGTTYR_BACKGROUND_FEATURE_NATURAL_ENVOY" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+
+			<select type="List" name="Personality Trait (Raised By Yokai)">
+				<item id="1">I revere the natural world, finding tremendous delight in even the simplest aspects of nature.</item>
+				<item id="2">I care little for fancy foods or exuberance. I am baffled by the obsession with money shared by most humanoids.</item>
+				<item id="3">I prefer the company of animals and spirits. I find other people tiresome and dull.</item>
+				<item id="4">Having grown up surrounded by magic, I am extremely difficult to impress. Even the most dazzling displays of power from great wizards and sorcerers seem utterly mundane.</item>
+				<item id="5">Having been raised outside of typical societies, I am acutely aware of my unfamiliarity with most customs and go to tremendous lengths to avoid offending people.</item>
+				<item id="6">I become anxious and fidgety if I spend too long sitting or lying down, especially while indoors.</item>
+			</select>
+
+			<select type="List" name="Ideal (Raised By Yokai)">
+				<item id="1"><b>Family.</b> I want to reconnect with my kin; I am searching for my people and discovering my history.</item>
+				<item id="2"><b>Unity.</b> I have seen firsthand the patience and kindness of spirits. I wish to bring the material and spiritual realms closer together, creating a more harmonious world.</item>
+				<item id="3"><b>Power.</b> I grew up around powerful magic, and I’m looking for more.</item>
+				<item id="4"><b>Independence.</b> I don’t care what anyone else thinks or does. I didn’t need them before, and I don’t need them now. I’m on my own incredible journey, and they’re lucky to have a cameo in it.</item>
+				<item id="5"><b>Kindness.</b> I survived due to the nurture and protection of gentle yokai. I wish to extend that same gift of kindness to others.</item>
+				<item id="6"><b>Mischief.</b> I’ve embraced my chaotic life, and I take great pleasure in spreading a little chaos wherever I go.</item>
+			</select>
+
+            <select type="List" name="Bond (Raised By Yokai)">
+				<item id="1">My familiar and I share a bond so deep that we can’t survive without each other.</item>
+				<item id="2">Unbeknownst to me, my direct kin are famous, wealthy, and looking for me.</item>
+				<item id="3">I trust the yokai who raised me more than any humanoid ally.</item>
+				<item id="4">The yokai who raised me departed this world when I came of age. Now I search for where they went.</item>
+				<item id="5">My true kin were killed by a mysterious organisation, leaving me an orphan. I’m hunting them down to inflict retribution.</item>
+				<item id="6">I have strange dreams of kin I’ve never known being snatched away. I love my yokai family, but I’m secretly beginning to wonder if I was stolen by them as a child.</item>
+			</select>
+
+			<select type="List" name="Flaw (Raised By Yokai)">
+				<item id="1">The letter of the law means absolutely nothing to me; I am guided solely by my own moral compass.</item>
+				<item id="2">I hide my past, fearing I’ll never truly fit in with other people.</item>
+				<item id="3">I believe myself to be better than others; having been raised by yokai, I’ve witnessed magical feats that most could never dream of.</item>
+				<item id="4">I am very slow to trust humanoids and find it hard to take them at their word.</item>
+				<item id="5">I am extremely swift to anger when I believe someone has disrespected nature or the spirits that dwell therein.</item>
+				<item id="6">I put too much faith in my own abilities; I believe myself to be almost invincible.</item>
+			</select>
+		</rules>
+	</element>
+
+	<!-- Feature: Natural Envoy -->
+	<element name="Feature: Natural Envoy" type="Background Feature" source="Ryoko's Guide to the Yokai Realms" id="ID_RGTTYR_BACKGROUND_FEATURE_NATURAL_ENVOY">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You grew up surrounded by yokai and understand their ways and quirks better than most. You have advantage on ability checks to peacefully interact with Beasts and Yokai.</p>
+		</description>
+		<sheet alt="Natural Envoy" />
+	</element>
+</elements>
