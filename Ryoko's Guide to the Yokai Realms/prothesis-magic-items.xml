@@ -4,7 +4,7 @@
 		<name>Ryoko's Guide to the Yokai Realms - Prostheses and Magic Items</name>
 		<description>Prostheses and Magic Items from Ryoko's Guide to the Yokai Realms.</description>
 		<author url="https://www.kickstarter.com/projects/dndshorts/ryokos-guide-to-the-yokai-realms-a-5e-tome">Ryoko's Guide</author>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="prothesis-magic-items.xml"
 				url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/prothesis-magic-items.xml" />
 		</update>
@@ -205,6 +205,18 @@
 	</element>
 
 	<!-- Integrated Items -->
+	<element name="Integrated: Weapon" type="Magic Item" source="Ryoko's Guide to the Yokai RealmsRyoko's Guide to the Yokai Realms" id="ID_RGTTYR_MAGIC_ITEM_INTEGRATED_WEAPON">
+		<description>
+			<p>A weapon without the Heavy or Superheavy properties</p>
+		</description>
+		<setters>
+			<set name="category">Prostheses Properties</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="weapon">(ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED), (!ID_INTERNAL_WEAPON_PROPERTY_HEAVY, !ID_LT_WOK_WEAPON_PROPERTY_SUPERHEAVY)</set>
+			<set name="name-format">Integrated: {{parent}}</set>
+		</setters>
+	</element>
 	<element name="Integrated: Weapon" type="Item" source="Ryoko's Guide to the Yokai Realms" id="ID_RGTTYR_ITEM_PROSTHESIS_INTEGRATED_WEAPON">
 		<description>
 			<p>A weapon without the Heavy or Superheavy properties.</p>
