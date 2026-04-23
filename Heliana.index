@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
   <info>
-    <update version="1.9.1">
+    <update version="1.9.2">
       <file name="Heliana.index" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Heliana.index" />
     </update>
   </info>
@@ -80,6 +80,7 @@
     <file name="Tamer-Sensei.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/Tamer-Sensei.xml" />
     <file name="background-kaijutracker.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/background-kaijutracker.xml" />
     <file name="background-raisedbyyokai.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/background-raisedbyyokai.xml" />
+    <file name="prothesis-magic-items.xml" url="https://raw.githubusercontent.com/Julitutu/Heliana-s-Guide-to-Monster-Hunting/refs/heads/main/Ryoko's%20Guide%20to%20the%20Yokai%20Realms/prothesis-magic-items.xml" />
 
 
     <!-- Wrath of the Kaiju -->
